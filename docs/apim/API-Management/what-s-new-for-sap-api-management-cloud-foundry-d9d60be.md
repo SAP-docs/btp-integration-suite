@@ -80,7 +80,573 @@ Version
 <tr>
 <td valign="top">
 
+API Management
 
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for Unified Expressions Across API Artifacts Policies and Integration Steps
+
+</td>
+<td valign="top">
+
+API artifacts now support a unified set of Camel expressions, enabling consistent handling of dynamic expressions across supported policies and integration steps. To ensure reliable execution and compatibility, only a defined set of Camel expressions is supported within API artifacts. The documentation now clearly lists the supported dynamic expressions, including special expressions that apply only to specific policies. See, [Supported Dynamic Expressions for API Artifacts](https://help.sap.com/docs/integration-suite/sap-integration-suite/supported-camel-expressions-for-api-artifacts?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Supported Format for Uploading Private Keys in Manage Certificates
+
+</td>
+<td valign="top">
+
+Effective July 1, 2026, the only supported format for uploading private keys \(or private key/certificate pairs\) will be PKCS12/PFX \(.p12\). See, [Manage Certificates](https://help.sap.com/docs/integration-suite/sap-integration-suite/manage-certificates?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Default Client ID Expression for Quota Policy Identifier
+
+</td>
+<td valign="top">
+
+To simplify Quota policy configuration and reduce manual errors, the **Identifier** field in the Quota policy is now automatically pre-populated with the recommended client ID expression:
+
+`context.authn.getClientID()`
+
+Since the client ID is the recommended identifier for quota enforcement, this enhancement enables API developers to quickly configure standard quota policies without manually entering the expression. see, [Add Quota Policy to an API Endpoint](https://help.sap.com/docs/integration-suite/sap-integration-suite/adding-quota-policy-step-to-api-endpoint).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for Multiple Audience Values in External Auth Authentication Policies
+
+</td>
+<td valign="top">
+
+Previously, the Audience property in the External Auth mode of the Authentication policy was mandatory and supported only a single value. Since the audience value corresponds to the client ID used for IAS JWT token validation, this created a limitation when APIs were published to Developer Hub products. With this enhancement, the Authentication policy now supports multiple audience values. This allows multiple application client IDs to be configured, enabling developers to create and use multiple applications for the same published API product. See, [Add Quota Policy to an API Endpoint](https://help.sap.com/docs/integration-suite/sap-integration-suite/adding-quota-policy-step-to-api-endpoint), [Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4?version=CLOUD), and [Supported Dynamic Expressions for API Artifacts](https://help.sap.com/docs/integration-suite/sap-integration-suite/supported-camel-expressions-for-api-artifacts?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Product Permission Controls for Developer Hub Content
+
+</td>
+<td valign="top">
+
+You can now configure product-level permissions directly within the Permissions tab for all products created in the *Developer Hub* \> *Manage Content* section.
+
+The following permission settings are now available:
+
+*Discovery* – Controls whether users can discover the product and view its entities.
+
+*Subscription* – Controls whether users can subscribe to the product.
+
+These settings provide greater flexibility in managing product visibility and access within Developer Hub. See, [Configuring Permissions for Products](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-permissions-for-products?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for External OAuth Authentication in Developer Hub Products
+
+</td>
+<td valign="top">
+
+Developer Hub now supports APIs secured with External OAuth authentication providers in addition to tenant XSUAA. When APIs are discovered from a registered SAP Integration Suite business system, their authentication type is automatically derived from the OpenAPI Specification \(OAS\) and classified as either XSUAA or External OAuth. See, [Discover and Publish APIs with External Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/discover-and-publish-apis-with-external-authentication?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Flexible Audience Handling in Authentication Policy \(External OAuth\)
+
+</td>
+<td valign="top">
+
+Previously, the Audience field was mandatory and supported only a single value, restricting API access to one application \(client ID\). Now, the Audience field is optional and supports multiple comma-separated values, allowing the token’s aud claim to be validated against any configured value.
+
+This enhancement enables multiple applications to consume the same API and provides greater flexibility when exposing APIs through Developer Hub. See, [Authentication Policy](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2026-05-31
+
+</td>
+<td valign="top">
+
+2604
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Enhanced Product Creation Experience
+
+</td>
+<td valign="top">
+
+As part of ongoing UI improvements, the product creation workflow has been optimized to provide a more streamlined and consistent experience. You can now create products from APIs and events in a single step using a consolidated creation dialog. See, [Discover and Publish APIs from SAP Integration Suite on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/discover-and-publish-apis-from-sap-integration-suite-on-developer-hub?version=CLOUD), [Publish SAP S/4HANA APIs from Business Systems](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-products-from-consumption-bundles?version=CLOUD), and [Discover and Publish Events from Business Systems](https://help.sap.com/docs/integration-suite/sap-integration-suite/discovering-events-from-business-systems-and-publishing-them-in-catalog?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-03
+
+</td>
+<td valign="top">
+
+2026-05-03
+
+</td>
+<td valign="top">
+
+2603
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
 
 </td>
 <td valign="top">

@@ -70,11 +70,11 @@ Create a service instance using *devportal-apiaccess* plan.
 3.  Choose **API Management, Developer Hub**, *Instances* \> *New Instance*.
 4.  In the *Create Instance* dialog that opens, choose *devportal-apiaccess*.
 5.  Click *Next*.
-6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role you require.
+6.  In the section *Specify parameters*, provide the details as mentioned below, based on the role collection you require.
 
-    The roles that support API access in Developer Hub are `AuthGroup.API.Admin`, `AuthGroup.Content.Admin`, and `AuthGroup.API.ApplicationDeveloper`.
+    The role collections that support API access in Developer Hub are `AuthGroup.API.Admin`, `AuthGroup.Content.Admin`, `AuthGroup.API.ApplicationDeveloper`, and `AuthGroup.External.Reviewer`.
 
-    Create a service instance with the `AuthGroup.API.Admin` role to access the Developer Hub APIs \(applications and attributes, API packages, API proxies and products, app developer and metering\), and perform operations like create, update, and delete on various Developer Hub entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
+    Create a service instance with the `AuthGroup.API.Admin` role collection to access the Developer Hub APIs \(applications and attributes, API packages, APIs and products, app developer and metering\), and perform operations like create, update, and delete on various Developer Hub entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
     ```
     
@@ -84,7 +84,7 @@ Create a service instance using *devportal-apiaccess* plan.
     
     ```
 
-    Create a service instance with the `AuthGroup.Content.Admin` role to manage the domain categories in Developer Hub and add the related products into relevant categories.
+    Create a service instance with the `AuthGroup.Content.Admin` role collection to manage the domain categories in Developer Hub and add the related products into relevant categories.
 
     ```
     {
@@ -93,7 +93,7 @@ Create a service instance using *devportal-apiaccess* plan.
     
     ```
 
-    Create a service instance with the `AuthGroup.API.ApplicationDeveloper` role to access the Developer Hub APIs \(applications, API packages, and API proxies and products\), and perform operations like create, update, and delete on variousDeveloper Hub entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
+    Create a service instance with the `AuthGroup.API.ApplicationDeveloper` role collection to access the Developer Hub APIs \(applications, API packages, and API proxies and products\), and perform operations like create, update, and delete on variousDeveloper Hub entities as specified in the [Business Accelerator Hub](https://api.sap.com/package/APIMgmt?section=Artifacts).
 
     ```
     
@@ -101,6 +101,16 @@ Create a service instance using *devportal-apiaccess* plan.
         "role": "AuthGroup.API.ApplicationDeveloper"
         "developerId": "developerId"
     }
+    ```
+
+    Create a service instance with the `AuthGroup.External.Reviewer` role collection. The external administrator logs into the external system, such as a workflow built using SAP Build Process Automation, reviews the subscription request, and then approves or rejects it accordingly.
+
+    ```
+    
+    {
+        "role": "AuthGroup.External.Reviewer"
+    }
+    
     ```
 
     > ### Note:  
@@ -222,7 +232,7 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-    For admin role:
+    For admin:
 
     ```
     {
@@ -233,7 +243,7 @@ Generate a service key for the service instance that you created above:
     }
     ```
 
-    For developer role:
+    For developer:
 
     ```
     {
@@ -281,7 +291,7 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-    For admin role:
+    For admin:
 
     ```
     {
@@ -292,7 +302,7 @@ Generate a service key for the service instance that you created above:
     }
     ```
 
-    For developer role:
+    For developer:
 
     ```
     {
@@ -347,7 +357,7 @@ Generate a service key for the service instance that you created above:
     </td>
     <td valign="top">
     
-    For admin role:
+    For admin:
 
     ```
     {
@@ -360,7 +370,7 @@ Generate a service key for the service instance that you created above:
     }
     ```
 
-    For developer role:
+    For developer:
 
     ```
     {
@@ -382,7 +392,7 @@ Generate a service key for the service instance that you created above:
     
 5.  Click *Save*.
 
-The credentials like url, tokenUrl, developerId \(for developer role\), clientId, and clientSecret details are displayed for the given service key.
+The credentials like url, tokenUrl, developerId \(for developer\), clientId, and clientSecret details are displayed for the given service key.
 
 -   The application url is used to make API calls.
 -   The clientId and clientSecret are necessary credentials required to fetch the Bearer Token.

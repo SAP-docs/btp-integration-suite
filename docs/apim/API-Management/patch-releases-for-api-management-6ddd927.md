@@ -6,6 +6,50 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+## May 2026
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.15.3
+
+2.15.4
+
+</td>
+<td valign="top">
+
+This is security fix for SAP Approuter.
+
+</td>
+</tr>
+</table>
+
+
+
 ## February 2026
 
 

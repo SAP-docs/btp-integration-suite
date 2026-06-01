@@ -38,7 +38,7 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 
 5.  Select the type of certificate that you want to create.
 
-    -   *Trust Store* - A truststore contains certificates used to verify certificates received as part of SSL handshaking. If the certificate received by an SSL client is signed by a valid certificate authority \(CA\), then the client makes a request to the CA to authenticate the certificate else self-signed certificate can be uploaded in the truststore.
+    -   *Trust Store* - A truststore contains certificates used to verify certificates received as part of SSL handshaking. If the certificate received by an SSL client is signed by a valid certificate authority \(CA\), then the client makes a request to the CA to authenticate the certificate, else self-signed certificate can be uploaded in the truststore.
 
         > ### Note:  
         > If you are creating or renewing SSL \(mTLS\) certificate to connect to virtual hosts of your tenant, you must ensure that your client certificates include the Client Authentication Extended Key Usage \(EKU\) attribute. For more information, see SAP Note [3725252 - Client Authentication EKU Deprecation - Impact to Inbound API Management scenarios](https://me.sap.com/notes/3725252).
@@ -64,7 +64,7 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 
     ​ -----END ENCRYPTED PRIVATE KEY-----
 
-6.  You can either choose to use an existing store or create a new store and then add a new certificate in that store.
+6.  When renewing your existing certificate, always create a new Keystore/Truststore and add the renewed certificate to it.
 
 7.  If you choose to create a new store, then enter the following details: store name, certificate name and appropriate description.
 

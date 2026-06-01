@@ -47,18 +47,6 @@ This role provides access to the API portal user interface \(UI\) and services. 
 <tr>
 <td valign="top">
 
-APIPortal.Service.CatalogIntegration
-
-</td>
-<td valign="top">
-
-The client credentials, which are necessary for establishing a connection between the SAP Integration Suite API Management tenant and Developer Hub, are generated for this role.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 APIPortal.Configurator
 
 </td>
@@ -106,6 +94,9 @@ Use this role to access the API portal in read-only mode. You can view all APIs,
 </tr>
 </table>
 
+> ### Note:  
+> The **APIPortal.Service.CatalogIntegration** and **AuthGroup.ContentAuthor** role collections are intended solely for internal communication between API Portal \(both the standalone service and API Management within SAP Integration Suite\) and Developer Hub. These internal role collections must not be added to any custom role collection or assigned to users.
+
 The role collections **APIPortalAdministrator, APIPortal.Configurator, APIPortal.Developer, and APIPortal.Tester** enable enhanced governance and a clearer separation of responsibilities within API Management. By assigning roles based on specific job functions, you can improve both security and operational efficiency. For a detailed breakdown of the permissions and responsibilities associated with each role, see [Comprehensive Breakdown of Role Collections in API Management](comprehensive-breakdown-of-role-collections-in-api-management-f3049e2.md).
 
 
@@ -138,6 +129,13 @@ AuthGroup.SelfService.Admin
 
 Use this role during the onboarding of Developer Hub and to get access to it.
 
+To onboard the Developer Hub web page, the AuthGroup.SelfService.Admin role must me assigned to you. This is an one time activity.
+
+> ### Note:  
+> Please be aware that the *Authgroup.API.Admin* role is required for onboarding into Developer Hub. This role will be automatically assigned to your scope once you have been assigned the *AuthGroup.SelfService.Admin* role. After the onboarding process is completed, it is necessary for an *Authgroup.API.Admin* to assign the AuthGroup.Content.Admin role to a user in order to access and discover the APIs from different business systems in Developer Hub.
+
+For Developer Hub to appear in the product switcher on Integration Suite, assign the *AuthGroup.SelfService.Admin* role to yourself.
+
 </td>
 </tr>
 <tr>
@@ -150,7 +148,7 @@ AuthGroup.API.Admin
 
 Use this role to:
 
--   Manage an application developer’s access to the portal by either accepting or rejecting an application developer’s request. In addition, you can revoke the access of an existing application developer.
+-   Manage an application developer’s access to Developer Hub by either accepting or rejecting an application developer’s request. In addition, you can revoke the access of an existing application developer.
 -   Manage roles for a user by adding new roles or removing existing roles.
 
 -   On-behalf of an application developer, admin can also perform the following tasks:
@@ -166,23 +164,6 @@ Use this role to:
 <tr>
 <td valign="top">
 
-AuthGroup.ContentAuthor
-
-</td>
-<td valign="top">
-
-Use this role to:
-
--   Publish content to the Developer Hub.
--   Establish a connection from the API portal to the Developer Hub.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 AuthGroup.API.ApplicationDeveloper
 
 </td>
@@ -190,7 +171,7 @@ AuthGroup.API.ApplicationDeveloper
 
 Use this role to:
 
--   Access the Developer Hub.
+-   Access Developer Hub.
 -   Create, update, and delete applications.
 -   View analytics information on application usage, performance, and error count.
 -   View and download bills for subscribed applications.
@@ -240,7 +221,7 @@ AuthGroup.APIPortalRegistration
 </td>
 <td valign="top">
 
-This role is necessary for creating a connection request between the SAP Integration Suite API Management tenant and the Developer Hub. It's also used to update the connection request credentials.
+This role is required to create a connection request between multiple API portals and a centralized Developer Hub. It is also used to update the credentials associated with the connection request.
 
 </td>
 </tr>

@@ -36,7 +36,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
     We refer to the value of <content\> as `${S1_CERTIFICATE}`.
 
 2.  In the cockpit, navigate to the overview page of subaccount 1. Here you can see the landscape domain, subaccount ID, and subdomain. Below we refer to the landscape domain as `${S1_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S1_SUBACCOUNT_ID}` and to the subdomain as `${S1_SUBDOMAIN}`.
-3.  In your browser, call `https://${S1_SUBDOMAIN}.authentication.${S1_LANDSCAPE_DOMAIN}/saml/idp/metadata` and download the XML file. Within the XML file you can find the following structure:
+3.  In your browser, call `https://${S1_SUBDOMAIN}.authentication.${S1_LANDSCAPE_DOMAIN}/saml/metadata` and download the XML file. Within the XML file you can find the following structure:
 
     > ### Sample Code:  
     > ```
@@ -109,7 +109,7 @@ Propagate the identity of a user between two Cloud Foundry applications that are
 
 1.  In the cockpit, navigate to the overview page for subaccount 2.
 2.  Here you can see the landscape domain, subaccount ID and subdomain of subaccount 2. We refer to the landscape domain as `${S2_LANDSCAPE_DOMAIN}`, to the subaccount ID as `${S2_SUBACCOUNT_ID}` and to the subdomain as `${S2_SUBDOMAIN}`.
-3.  In your browser, call `https://${S2_SUBDOMAIN}.authentication.${S2_LANDSCAPE_DOMAIN}/saml/idp/metadata` and download the XML file. Within the XML file, you can find the following structure.
+3.  In your browser, call `https://${S2_SUBDOMAIN}.authentication.${S2_LANDSCAPE_DOMAIN}/saml/metadata` and download the XML file. Within the XML file, you can find the following structure.
 
     > ### Sample Code:  
     > ```

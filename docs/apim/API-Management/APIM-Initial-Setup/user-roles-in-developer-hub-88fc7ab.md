@@ -4,6 +4,9 @@
 
 After activating Developer Hub, assign users the necessary roles and role collections to access its various features and functionalities. Once you've assigned the appropriate roles, you can configure and customize Developer Hub to align with your organization's needs.
 
+> ### Note:  
+> When assigning these role collections from the SAP BTP Cockpit, you can choose the Identity Provider \(IdP\). However, when role collections are assigned from Developer Hub, they are automatically added across all available IdPs associated with the user.
+
 Access to different features on Developer Hub depends on the service plan you've subscribed to.
 
 
