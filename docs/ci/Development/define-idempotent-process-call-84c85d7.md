@@ -16,8 +16,14 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
 > -   The execution of a message in the subprocess is only marked as done when the complete subprocess was successful. If after the occurrence of an error in the subprocess, the sender system performs a retry, all steps are repeated that precede the step in which the error occurred. To avoid multiple sources of error, keep the subprocess. as simple as possible. Ideally, use only one step in the subprocess.
 > 
 > -   Exactly-once scenarios require an idempotent receiver. The duplicate detection via the Idempotent Process Call in the Integration Flow is only the second-best solution. There might still be problems if the call runs into a timeout or the target application doesn't acknowledge the call. In this case, it isn't clear if the message is successfully processed by the application and duplicates can't be completely ruled out.
-> 
 > -   Message IDs stored in the idempotent repository are deleted by default after 90 days. After this period, message IDs that have already been stored in the database can no longer be detected as duplicates during a new processing.
+
+> ### Note:  
+> The uniqueness check is bound to the specific flow step instance. That means:
+> 
+> -   Each instance of the idempotent process call is independent from other instances. If a message is marked as `done` by one flow step instance, this doesn't influence other flow step instances which use the same message ID.
+> 
+> -   If you delete and remodel the flow step, you get a new instance with an empty history. If a message was marked as `done` by a previous instance of the flow step, the new instance will not detect this.
 
 > ### Note:  
 > To learn how to use this feature to implement integration scenarios with quality of service **Exactly Once** \(see [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)\), check out the integration flow design guidelines and example integration flows:
@@ -107,11 +113,6 @@ The Idempotent Process Call is useful for modeling at-most-once or exactly-once 
     <td valign="top">
     
     To check against, enter a unique message ID. Use `${header.headername}` or `${property.propertyname}` to dynamically read the value from a header or a property.
-
-    > ### Note:  
-    > The uniqueness check happens for this flow step in this integration flow only.
-
-
     
     </td>
     </tr>

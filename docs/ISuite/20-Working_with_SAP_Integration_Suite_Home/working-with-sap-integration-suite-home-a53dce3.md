@@ -52,7 +52,7 @@ The *Capabilities* section displays the tiles of the capabilities activated for 
 Each capability tile also displays some quick links to allow you to start working with the capability.
 
 > ### Note:  
-> If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management](../50-Development/setting-up-api-management-f34e86c.md).
+> If you're working with APIs, and have activated the API Management capability, then the first thing displayed is the *Settings* tab. Choose *Settings* \> *API* to configure the service. For more information, see [Setting Up API Management](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f34e86cafb274d4bbef725a610ed225d.html "To create APIs, build API proxies as a service provider, or use APIs and other convenient services, you need to first set up the API Management capability.") :arrow_upper_right:.
 
 > ### Note:  
 > For Open Connectors, Integration Assessment, and Migration Assessment, you will be navigated out of SAP Integration Suite to the respective capability.
@@ -166,7 +166,7 @@ Design :pencil2:
 </td>
 <td valign="top">
 
-<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *Graph*
+<span style="color:#2B7D2B;"><span class="SAP-icons-V5"></span></span> *Design* \> *API Composition*
 
 </td>
 <td valign="top">

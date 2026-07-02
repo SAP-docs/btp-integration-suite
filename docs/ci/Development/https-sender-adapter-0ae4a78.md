@@ -15,7 +15,7 @@ You use the HTTPS sender adapter to communicate with receiver systems using HTTP
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -23,9 +23,11 @@ You use the HTTPS sender adapter to communicate with receiver systems using HTTP
 Supported Header:
 
 > ### Remember:  
-> The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix `camel` even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
+> -   The adapter adds the headers that follow and you can't add them manually. The adapter removes any custom header that you send with the prefix `camel` even if you add them as *Allowed Headers* in the *Runtime Configuration* of the integration flow.
 > 
-> Also, any query parameter \(with a key and value\) that you send to the adapter is automatically converted to a header. So, if you send a query and a header with same name, the adapter appends the query to the header.
+> -   Any query parameter \(with a key and value\) that you send to the adapter is automatically converted to a header. So, if you send a query and a header with same name, the adapter appends the query to the header.
+> 
+> -   All request and response header names and its values should be a string without whitespace. For more information, refer to [HTTP Specifications](https://datatracker.ietf.org/doc/html/rfc7230#section-3.2).
 
 -   SapAuthenticatedUserName
 
@@ -38,7 +40,7 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
     Refers to the complete URL called, without query parameters.
 
-    For example, `CamelHttpUrl=https://test.bsn.neo.ondemand.com/http/hello`.
+    For example, `CamelHttpUrl=http://test.bsn.neo.ondemand.com/http/hello`.
 
 -   **CamelHttpQuery**
 
@@ -58,10 +60,18 @@ The following HTTPS request headers for the sample HTTPS endpoint `https://test.
 
     For example, if the address in the channel is*/abcd/1234*, then *CamelServletContextPath* is */abcd/1234*.
 
+-   **CamelHttpPath**
+
+    Overrides the existing path set directly in the endpoint.
+
+    Refers to the dynamic part of the URL path of the integration flow endpoint.
+
+    For example, if you specify the endpoint address \(in the sender adapter\) as `/myEndpoint/*`, a sender system calls this integration flow using the address `/myEndpoint/abc/def`. In this case, header `CamelHttpPath` gets the value `abc/def`.
+
 
 > ### Note:  
 > -   Adapter tracing is supported for HTTPS adapter. For more information, see [Message Processing Log - Adapter Tracing](../Operations/message-processing-log-adapter-tracing-a9db4ea.md).
-> -   When you deploy an integration flow with HTTPS sender adapter, you can see the endpoint information of this integration flow in *Manage Integration Content* section of operations view.
+> -   When you deploy an integration flow with HTTPS sender adapter, you can review the endpoint information of this integration flow in *Manage Integration Content* section of operations view.
 
 When you have created a sender channel with HTTPS adapter, you can configure the following attributes:
 
@@ -93,66 +103,30 @@ Description
 </td>
 <td valign="top">
 
-Enter the URL of the HTTP system to connect to.
+Enter a relative path to address the integration flow.
+
+When deploying the integration flow, the path is appended to the address of the service instance, completed with `/http`. This results in the endpoint address through which a sending system can reach the integration flow.
+
+When as *Address* you enter `/myIntegrationFlow`, the endpoint address of the integration flow will finally be:
+
+`<service instance URL>/http/myIntegrationFlow`
+
+Example:
+
+`https://abcd-1234-efg-5678.it-xyz001-rt.cfapps.eu12.hana.ondemand.com/http/myIntegrationFlow`
+
+The service instance URL is also displayed in the *url* field of the service key created for the corresponding service instance \([Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md)\).
 
 > ### Note:  
-> -   Use the following pattern: `http://<host>:<port>/http` . This should be appended by the unique address specified in the channel.
 > -   The field value supports these characters **~, -, . , $** and **\*** .
 > -   The *Address* field should start with '/ ' and can contain alphanumeric values, '\_' and '/ '. For example a valid address is */test/123*.
 > -   In the example mentioned above, you can use **~** only for the address part which succeeds */test/*
 > -   You can use **$** only at the beginning of the address after **/**.
 > -   You cannot begin address with**.**, **\-** or **~**. Alphanumeric value or**\_** must succeed these characters.
 > -   You can use **\*** only at the extreme end of the address and no characters are allowed after **\***. A **\*** can only be preceded with**/**.
-> -   If you are using **/\***, it implies that URI containing the prefix preceding the **/\*** is supported. For example. if the address is */Customer/\** then URIs supported are *http://<host\>:<port\>/http/Customer/<Any-url\>*.
+> -   If you are using **/\***, it implies that URI containing the prefix preceding the **/\*** is supported. For example. if the address is */Customer/\** then URIs supported are `<service instance URLt>/http/Customer/<Any-url>`.
 > -   If you are using **/path /\***, then no other integration flows with the addresses `/path/any-URL` or `/path/any-URL/text` can be deployed across the tenant.
-> -   URIs are case insensitive. So, *http://<host\>:<port\>/http/test* and *http://<host\>:<port\>/http/Test* is treated as same.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Authorization* 
-
-</td>
-<td valign="top">
-
-Specifies the authorization option for the sender.
-
-You can select one of the following options:
-
--   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
-
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
-
-    -   *Basic authentication* \(using the credentials of the user\)
-
-        The authorizations for the user are checked based on user-to-role assignments defined on the tenant.
-
-    -   *Client-certificate authentication and certificate-to-user mapping*
-
-        The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
-
-
-
-Depending on your choice, you can also specify one of the following properties:
-
--   *Client Certificate Authorization*
-
-    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
-
-    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
-
--   *User Role*
-
-    Allows you to enter a role based on which the inbound authorization is checked.
-
-    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP which authorizes a sender system to process messages on a tenant.
-
+> -   URIs are case insensitive. So, `<service instance URLt>/http/test` and `<service instance URLt>/http/Test` are treated as same.
 
 
 
@@ -212,7 +186,7 @@ Body Size \(in MB\)
 </td>
 <td valign="top">
 
-Define the allowable size limit for processing the message body.
+
 
 </td>
 </tr>
@@ -223,17 +197,64 @@ Save the settings.
 > ### Note:  
 > -   Additional incoming request headers and URL parameters can be added to exchange headers for further processing in integration flow. You must define these headers and paramters in *Allowed Headers* list at integration flow level.
 > -   Once the integration flow processing completes, the HTTPS sender adapter returns header and body to end user and sets the response code. You can use *Content Modifier* element to send back specific http response and customize the response.
-> -   The sample integration flow is as shown below:![](images/HTTP3_e763f14.png)
+> -   The sample integration flow is as shown next:![](images/HTTP3_e763f14.png)
 > -   Address URLs for http endpoints across integration flow must be unique. If it is not unique then the integration flow does not start.
 > -   Adapter returns the following HTTP response code:
 > 
->     -   200 - Processing is successful
+>     **HTTP Response Code**
 > 
->     -   503 - Service is not available
+> 
+>     <table>
+>     <tr>
+>     <th valign="top">
+> 
+>     Runtime Version
+>     
+>     </th>
+>     <th valign="top">
+> 
+>     Response Code
+>     
+>     </th>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     For version 6.\*, runtime based on Apache Camel version 2.\*
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   200 - Processing successful
+> 
+>     -   503 - Service not available
 > 
 >     -   500 - Exception during integration flow processing
 > 
 > 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     Form version 8.\*, runtime based on Apache Camel version 3.\*
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   200 - Processing successful
+> 
+>     -   204 - Processing successful but no content to return
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     </table>
+>     
 >     Also, you can set the header *CamelHttpResponseCode* to customize the response code.
 > 
 > -   You can invoke the HTTP endpoints using the syntax **<Base URI\>/http/<Value of address field\>**. You can get *Base URI* value from *Services* tab in *Properties* view of a worker node.

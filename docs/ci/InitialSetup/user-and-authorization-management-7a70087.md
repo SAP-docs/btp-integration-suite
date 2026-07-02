@@ -13,7 +13,7 @@ A typical concept is to group permissions for individual activities along person
 
 For more information and a comparison of Cloud Foundry / Neo entities, check out the topics:
 
--   [Persona](../SecurityNeo/persona-2937e5c.md)
+-   [Personas](../SecurityNeo/personas-2937e5c.md)
 
 -   [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
 
@@ -27,8 +27,8 @@ Managing users and permissions is done differently in Cloud Foundry and in Neo.
 
 Due to the difference in the user and permission management, also the configuration of access policies is different in both environments:
 
--   Cloud Foundry: [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md)
+-   Cloud Foundry: [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md)
 
--   Neo: [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md)
+-   Neo: [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md)
 
 

@@ -39,7 +39,7 @@ This documentation summarizes the measures that are taken by SAP to fulfill thes
 
 [Security Aspects of Processes](security-aspects-of-processes-fcbf046.md "Processes that are related to the provisioning, update, and usage of the cloud-based integration platform meet the highest security standards.")
 
-[Security Aspects of Data, Data Flow for Cloud Integration](security-aspects-of-data-data-flow-for-cloud-integration-7895724.md "All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.")
+[Security Aspects of Data, Data Flow](security-aspects-of-data-data-flow-7895724.md "All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.")
 
 [Identity and Access Management](identity-and-access-management-f805b22.md "Identity and access management features are used during the lifecycle of an integration scenario.")
 

@@ -14,11 +14,11 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 -   You are familiar with the conversion rules for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="778aed733e3140cea0435f4615d53812.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
+    For more information see [Conversion Rules for XML to JSON Conversion](conversion-rules-for-xml-to-json-conversion-778aed7.md).
 
 -   You are familiar with the limitations for XML to JSON conversion.
 
-    For more information see  <?sap-ot O2O class="- topic/xref " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a60a282ce3b44927989388dc31d35263.xml" ?> .
+    For more information see [Limitations for XML-to-JSON Conversion](limitations-for-xml-to-json-conversion-a5b4641.md).
 
 -   You are familiar with streaming for XML to JSON conversion.
 
@@ -31,7 +31,7 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>*Transformation* \> *Converter* \> *XML to JSON Converter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>*Transformation* \> *Converter* \> *XML to JSON Converter*.
 
 2.  Insert the converter at the desired position in your integration process.
 
@@ -104,18 +104,6 @@ The XML to JSON converter enables you to transform messages in XML format to JSO
     Enter the JSON prefix separator to be used to separate the JSON prefix from the local part. The value used must not be used in the JSON prefix or local name.
 
     The following characters are allowed: colon\(:\), comma\(,\), dot\(.\), pipe\(|\), semicolon\(;\), and space.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Suppress JSON Root Element
-    
-    </td>
-    <td valign="top">
-    
-    Choose this option to create the JSON message without the root element tag.
     
     </td>
     </tr>

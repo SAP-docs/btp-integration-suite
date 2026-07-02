@@ -11,13 +11,18 @@ The IDoc sender adapter enables SAP Cloud Integration to receive Intermediate Do
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
+The IDoc sender adapter in Cloud Integration supports both Exactly Once and Exactly Once In Order. Which Quality of Service is used depends on how the IDoc communication is configured in the sending system.
+
+-   For Exactly Once In Order, the IDoc sender adapter sets the headers `SapPlainSoapQoS` and `SapPlainSoapQueueId` based on the IDoc control header `ARCKEY`, which can be used within the integration flow to model the message orchestration. Note that these headers are not set for the Exactly Once quality of service.
+-   The IDoc sender adapter saves the protocol-specific ID in the header `SapMessageId`.
+
 > ### Note:  
-> The IDoc sender adapter cannot process composite IDoc messages \(bulk messages\).
+> For Exactly Once In Order delivery, ensure that IDocs are sent in the sequence in which they were created and that the sequence is preserved when a message goes into an error. As a prerequisite, apply the SAP note [3519275](https://me.sap.com/notes/3519275) in the sending system.
 
 
 
@@ -25,21 +30,27 @@ The IDoc sender adapter enables SAP Cloud Integration to receive Intermediate Do
 
 ## Supported Headers
 
--   SapAuthenticatedUserName
-
-    Contains the user name of the client that calls the integration flow.
-
+Header `SapAuthenticatedUserName` contains the user name of the client that calls the integration flow.
 
 The following specific headers are set by the IDoc sender adapter and can be used in the subsequent steps of the integration flow.
 
--   SapIDocType
+-   `SapIDocType`
 
--   SapIDocTransferId
+-   `SapIDocTransferId` 
 
--   SapIDocDbId
+-   `SapIDocDbId` 
 
+-   `SapIDocContentType`
+-   `SapIdocSoapNamespace`
 
 More information: [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
+
+
+
+> ### Tip:  
+> The adapter supports processing of composite \(bulk\) messages if the composite message consists of individual messages with the same message type.
+> 
+> If a composite message is processed, the header `SapIDocTransferId` contains the ID of the first IDoc only. If you like to access all transfer IDs, you need to read the payload using an XPath expression \(for example, in a *Content Modifier* step\).
 
 
 
@@ -82,68 +93,7 @@ Relative endpoint address on which Cloud Integration can be reached by incoming 
 > ### Note:  
 > When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Authorization* 
-
-</td>
-<td valign="top">
-
-Specifies the authorization option for the sender.
-
-> ### Note:  
-> The option *client certificate* is not recommended. Instead, it is recommended to use the more secure option *role-based authorization with certificate-to-user mapping*.
-
-You can select one of the following options:
-
--   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
-
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
-
-    -   *Basic authentication* \(using the credentials of the user\)
-
-        The authorizations for the user are checked based on user-to-role assignments defined on the tenant.
-
-    -   *Client-certificate authentication and certificate-to-user mapping*
-
-        The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
-
-
-
-Depending on your choice, you can also specify one of the following properties:
-
--   *Client Certificate*
-
-    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
-
-    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
-
--   *User Role*
-
-    Allows you to select a role based on which the inbound authorization is checked.
-
-    Choose *Select* to get a list of all available roles.
-
-    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
-
-    > ### Note:  
-    > Note the following:
-    > 
-    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
-    > 
-    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
-    > 
-    > -   If you have selected a product profile for SAP Process Orchestration, the value help will only show the default role *ESBMessaging.send*.
-
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using separated endpoints for services.
 
 
 
@@ -255,9 +205,13 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 **Related Information**  
 
 
+[Blog: Ensuring Exactly Once In Order Quality of Service in Cloud Integration](https://community.sap.com/t5/integration-blog-posts/ensuring-exactly-once-in-order-quality-of-service-in-cloud-integration/ba-p/14180026)
+
 [Defining Permissions for Senders to Process Messages on a Runtime Node](../Operations/defining-permissions-for-senders-to-process-messages-on-a-runtime-node-24585cc.md "")
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 
 [Setting Up Inbound HTTP Connections \(Integration Flow Processing\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-integration-flow-processing-neo-environment-778c7e7.md "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.")
+
+[IDoc Sender Scenario](idoc-sender-scenario-7266628.md "")
 

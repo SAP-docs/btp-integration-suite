@@ -1,0 +1,309 @@
+<!-- loio144c64af999f4cda8c9b1912ac1edb92 -->
+
+# Edge Integration Cell Runtime Scope
+
+
+
+<a name="loio144c64af999f4cda8c9b1912ac1edb92__section_rlx_rmq_lvb"/>
+
+## Runtime Scope
+
+This section describes the scope when working with Edge Integration Cell. Refer to the SAP Note [3391207](https://me.sap.com/notes/3391207), to know more about the out of scope actions for Edge Integration Cell.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Resource
+
+</th>
+<th valign="top">
+
+Scope
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration content
+
+</td>
+<td valign="top">
+
+2 GB
+
+For more information, refer to the SAP Community blog: [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/)
+
+> ### Note:  
+> When the content size exceeds 250 MB, the metaspace increases accordingly. See the table below for more details:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Content Size
+> 
+> </th>
+> <th valign="top">
+> 
+> Container Size
+> 
+> </th>
+> <th valign="top">
+> 
+> Metaspace
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Up to 250 MB
+> 
+> </td>
+> <td valign="top">
+> 
+> 8 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 500 MB \(default\)
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 250-500 MB
+> 
+> </td>
+> <td valign="top">
+> 
+> 12 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 750 MB
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 500 MB- 1 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 16 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 1250 MB
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 1-2 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 20 GB
+> 
+> </td>
+> <td valign="top">
+> 
+> 1750 MB
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> Use the `JAVA_OPTS` parameter configuration to update the metaspace size. See: [Runtime Parameters](runtime-parameters-63c5276.md).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+X.509 keystores
+
+</td>
+<td valign="top">
+
+max. 20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Number of runtimes associated with a credential or X.509 keystore
+
+</td>
+<td valign="top">
+
+max. 20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Message processing log \(MPL\) persistence
+
+</td>
+<td valign="top">
+
+Depends on database storage size.
+
+See: [Cloud Integration – Setting the Log Level for Message Processing](https://blogs.sap.com/2017/06/22/cloud-integration-setting-the-log-level-for-message-processing/)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Partner Directory
+
+</td>
+<td valign="top">
+
+Read data about partners that are connected to an Edge Integration Cell. See: [Partner Directory](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0fe80dc9d3be4dfbbb89ee4c791d326e.html "The Partner Directory contains information on partners that are connected to a tenant in the context of a larger business partner network.") :arrow_upper_right: 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Data store message persistence
+
+</td>
+<td valign="top">
+
+Depends on database storage size.
+
+See: [Optimize Performance](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/491c80d16c3547c3b124cf38857f1332.html)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Disk space
+
+</td>
+<td valign="top">
+
+Depends on cluster node storage size.
+
+See: SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development in such a way that the integration flow doesn't run into the `No More Space left on Disk` error.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+X.509 keystore
+
+</td>
+<td valign="top">
+
+1 MB
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PGP keyrings \(secring & pubring\)
+
+</td>
+<td valign="top">
+
+1 MB
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Known Host file
+
+</td>
+<td valign="top">
+
+1 MB
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JDBC data sources
+
+</td>
+<td valign="top">
+
+500 per edge runtime
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Max. number of credentials for the following four credential types combined:
+
+-   User Credential
+
+-   Secure Parameter
+
+-   OAuth2 Client Credentials
+
+-   OAuth2 SAML Bearer Assertion
+
+
+> ### Note:  
+> OAuth2 Authorization Code credential isn't supported in Edge runtime.
+
+
+
+</td>
+<td valign="top">
+
+500 per runtime
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMS resources
+
+</td>
+<td valign="top">
+
+Depends on cluster node storage size.
+
+See: [JMS Resource Limits for Edge Integration Cell](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/17366b34b1714492ae60c8f01562ed6b.html "The following JMS resources are available per Edge Integration Cell node.") :arrow_upper_right:
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> *Delay Software Update*
+> 
+> The Delay Software Update feature isn't available for Edge Integration Cell, because customers manage the edge nodes themselves.
+

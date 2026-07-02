@@ -32,7 +32,7 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
 
 3.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 
-4.  Choose the user and select <span class="SAP-icons"></span> under *Role Collections* section and choose *Assign Role Collection*.
+4.  Choose the user and select <span class="SAP-icons-V5"></span> under *Role Collections* section and choose *Assign Role Collection*.
 
 5.  In the resulting dialog box, select the role collections that you want to assign and choose *Assign Role Collection*.
 
@@ -65,22 +65,7 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     </td>
     <td valign="top">
     
-    -   Discover and copy pre-shipped standard packages
-
-    -   Monitor integration flows and the status of integration artifacts.
-
-    -   View packages and package artifacts in *Design* workspace
-
-    -   View data store entries
-
-    -   View access policies
-
-    -   View B2B partner profiles and agreements
-
-    -   View design time artifact locks.
-
-
-
+    See [Read-only Persona](../SecurityNeo/personas-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__read)
     
     </td>
     </tr>
@@ -92,24 +77,7 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     </td>
     <td valign="top">
     
-    -   Discover and copy pre-shipped standard packages
-
-    -   Monitor integration flows and the status of integration artifacts.
-
-    -   Edit trace configuration and change log levels and archiving configuration.
-
-    -   View packages and package artifacts in *Design* workspace.
-
-    -   View data store entries.
-
-    -   View design time artifact locks.
-
-    -   Inspect usage of integration resources.
-
-    -   Edit B2B partner profiles and contact persons.
-
-
-
+    See [Business Expert Persona](../SecurityNeo/personas-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__bus)
     
     </td>
     </tr>
@@ -121,14 +89,7 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     </td>
     <td valign="top">
     
-    -   Do *PI\_Read\_Only* and *PI\_Business\_Expert* tasks.
-
-    -   Create, edit, import, export, delete package with its artifacts.
-
-    -   Deploy/undeploy artifacts.
-
-
-
+    See [Integration Developer Persona](../SecurityNeo/personas-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__dev)
     
     </td>
     </tr>
@@ -140,25 +101,12 @@ Finally, you assign the role collection to the users provided by the SAP ID serv
     </td>
     <td valign="top">
     
-    -   Do *PI\_Integration\_Developer* tasks.
-
-    -   Handle tenant level settings like transport, connection to SAP Process Orchestration systems, manage software updates, and a few more.
-
-    -   Manage access policies to restrict user access of integration content.
-
-    -   Deploy security content.
-
-    -   Delete messages from transient data store.
-
-    -   Delete design time artifact locks.
-
-
-
+    See [Tenant Administrator Persona](../SecurityNeo/personas-2937e5c.md#loio2937e5ca6ef448cfb21451a2461cc2a6__admin)
     
     </td>
     </tr>
     </table>
     
-    For detailed list of scope and actions for each role collection, see: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md).
+    For detailed list of scope and actions for each role, see: [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md).
 
 

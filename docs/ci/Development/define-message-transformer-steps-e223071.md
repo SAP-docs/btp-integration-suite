@@ -19,11 +19,11 @@ Message transformers convert messages in one format to another.
 
 [Define XML to JSON Converter](define-xml-to-json-converter-a60a282.md "The XML to JSON converter enables you to transform messages in XML format to JSON format.")
 
-[Define EDI to XML Converter](define-edi-to-xml-converter-6a3d12b.md "The EDI to XML converter enables you to transform single incoming EDI messages from EDI to XML format.")
+[Define EDI to XML Converter](define-edi-to-xml-converter-6a3d12b.md "The EDI to XML converter enables you to transform single incoming EDI message from EDI to XML format.")
 
 [Define a Decoder](define-a-decoder-c95697a.md "You use this task to decode the message received over the network to retrieve original data.")
 
-[Define XML to EDI Converter](define-xml-to-edi-converter-707973f.md "The XML to EDI converter transforms a XML message in XML format to EDI format.")
+[Define XML to EDI Converter](define-xml-to-edi-converter-707973f.md "The XML to EDI converter transforms a single XML message from XML format to EDI format.")
 
 [Define an Encoder](define-an-encoder-89f8bdd.md "You use this task to encode messages using an encoding scheme to secure any sensitive message content during transfer over the network.")
 
@@ -33,5 +33,5 @@ Message transformers convert messages in one format to another.
 
 [Define Message Digest](define-message-digest-e5d2867.md "This integration flow step is used to calculate a digest of the payload or parts of it and store the result in a message header.")
 
-[Define a Local Script Step](define-a-local-script-step-03b32eb.md "You can create a script step that is specific to an integration artifact to execute custom scripts (JavaScript or Groovy Script).")
+[Define a Local Script Step](define-a-local-script-step-03b32eb.md "Learn how to use a script step that’s specific to an integration artifact to create custom scripts (JavaScript or Groovy Script).")
 

@@ -4,9 +4,9 @@
 
 # Configure JDBC Drivers
 
-Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration service.
+Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration.
 
-JDBC connectivity provides a mechanism for integration flows deployed on Cloud Integration tenants in Cloud Foundry environments to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers on your Cloud Integration tenant to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a Cloud Integration tenant.
+JDBC connectivity provides a mechanism for integration flows deployed on Cloud Integration tenants to connect with Amazon RDS \(SQL Server and Oracle\) and HANA-aaS databases hosted on AWS using JDBC drivers. The tenant administrator configures JDBC drivers to enable you to establish connection to a database managed by a third-party vendor. Your database vendor should provide the driver or download it from their official website. We highly recommend that you work with the latest version of the third-party JDBC driver. All uploaded drivers undergo a security validation before being deployed on a tenant.
 
 > ### Note:  
 > Cloud Services may include features that permit third-party code or tools to be downloaded/uploaded into Customer’s Cloud Service account by \(i\) Customer or \(ii\) by SAP on behalf of and at the request of Customer from a non-SAP service for which Customer has a license, to facilitate the exchange of data or enable or improve other data processing activities. Such third-party code or tools are Customer Data. The code or tools may not be used to connect the Cloud Service or other software/cloud services to a third-party database licensed from SAP under a run-time license for use with specified SAP Applications. Customer must license a full-use license from the applicable database vendor to use such code or tools to replicate data from such database into the Cloud Service.
@@ -28,14 +28,16 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > <tr>
 > <td valign="top">
 > 
-> Microsoft JDBC Driver for SQL Server
+> [Microsoft JDBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#82) 
 > 
 > </td>
 > <td valign="top">
 > 
-> -   [msSQLDriver8.2.2](https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#82)
+> -   [msSQLDriver12.4.0](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/12.4.0.jre8)
+> -   [msSQLDriver11.2.3](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/11.2.3.jre8)
+> -   [msSQLDriver8.2.2](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.2.2.jre8/)
 > 
-> -   [msSQLDriver8.4.1](https://docs.microsoft.com/en-us/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver15#84)
+> -   [msSQLDriver8.4.1](https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.4.1.jre8/)
 > 
 > 
 > 
@@ -45,18 +47,18 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > <tr>
 > <td valign="top">
 > 
-> Oracle JDBC Driver
+> [Oracle JDBC Driver](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 > 
 > </td>
 > <td valign="top">
 > 
-> -   [oracleDB11.2.0.4](https://www.oracle.com/database/technologies/jdbc-upc-downloads.html)
+> -   [oracleDB11.2.0.4](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc6/)
 > 
-> -   [oracleDB12.2.0.1](https://www.oracle.com/database/technologies/jdbc-upc-downloads.html)
+> -   [oracleDB12.2.0.1](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/12.2.0.1/)
 > 
-> -   [oracleDB19.11.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
+> -   [oracleDB19.11.0.0](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/19.11.0.0/)
 > 
-> -   [oracleDB19.16.0.0](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19-11-c-downloads.html)
+> -   [oracleDB19.16.0.0](https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/19.16.0.0/)
 > 
 > 
 > 
@@ -77,6 +79,18 @@ JDBC connectivity provides a mechanism for integration flows deployed on Cloud I
 > 
 > 
 > 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> [MariaDB Connector](https://www.mariadb.com/docs/server/release-notes/mariadb-connector-j-3-3/3-3-3/) 
+> 
+> </td>
+> <td valign="top">
+> 
+> [mariadb-connector-j-3.3.3](https://dlm.mariadb.com/browse/java8_connector/293/1970/) 
 > 
 > </td>
 > </tr>
@@ -133,6 +147,7 @@ Before consuming the drivers in runtime, you must deploy the uploaded driver as 
 
     -   DB2
 
+    -   MariaDB
 
 
     
@@ -195,7 +210,7 @@ Helps to sort and filter the content of the table. You can define how the table 
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Reload\)
+<span class="SAP-icons-V5"></span> \(Reload\)
 
 </td>
 <td valign="top">

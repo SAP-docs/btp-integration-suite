@@ -23,32 +23,12 @@ Description
 <tr>
 <td valign="top">
 
-Deployment Status
+Runtime Profile
 
 </td>
 <td valign="top">
 
-Indicates if integration flow artifact is deployed on worker node.
-
-The following values are possible: *Deployed*, *Not Deployed*.
-
-If the status is *Deployed*, a link is shown. Click the link to navigate to the *Monitor* view of the artifact.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Runtime Status
-
-</td>
-<td valign="top">
-
-Indicates if deployed integration flow artifact is ready to operate and process messages.
-
-An entry is shown only if *Deployment Status* is *Deployed*.
-
-The runtime status can have the values as described under [Runtime Status](../Operations/runtime-status-c14a7b1.md).
+Shows the runtime profiles where the artifact is deployed. For example, or . For more information, see [Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md) 
 
 </td>
 </tr>
@@ -83,6 +63,25 @@ An entry is shown only if *Deployment Status* is *Deployed*.
 <tr>
 <td valign="top">
 
+Deployment Status
+
+</td>
+<td valign="top">
+
+Indicates if integration flow artifact is deployed on worker node.
+
+The following values are possible:
+
+-   *Deployed*
+-   *Not Deployed*
+
+If the status is *Deployed*, a link is shown. Click the link to navigate to the *Monitor* view of the artifact.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Deployed Version
 
 </td>
@@ -91,6 +90,34 @@ Deployed Version
 Version of artifact that is deployed
 
 An entry is shown only if *Deployment Status* is *Deployed*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Runtime Status
+
+</td>
+<td valign="top">
+
+Indicates if deployed integration flow artifact is ready to operate and process messages.
+
+An entry is shown only if *Deployment Status* is *Deployed*.
+
+The runtime status can have the values as described under [Runtime Status](../Operations/runtime-status-c14a7b1.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor Integration Content
+
+</td>
+<td valign="top">
+
+In this section, choose *Navigate* to view the detailed status of an integration flow in *Monitor* view.
 
 </td>
 </tr>
@@ -106,7 +133,7 @@ Additionally, on the header of integration flow editor, next to the artifact nam
 
 -   Upon a trigger for deployment, you see the deployment status in the integration flow editor itself. You need not open the *Monitor* view to see this status.
 
--   The link next to the deployment status points you to the *Monitor* view for integration flow, saving you clicks and time to see the runtime status.
+-   The navigate link points you to the *Monitor* view for integration flow, saving you clicks and time to see the runtime status.
 
 -   If the runtime status of the artifact goes into an error, you get to see an error message explaining the reason for the error. You need not open the *Monitor* view to see the details of the error.
 

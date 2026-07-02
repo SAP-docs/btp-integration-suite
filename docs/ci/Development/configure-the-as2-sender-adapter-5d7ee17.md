@@ -12,7 +12,10 @@
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+
+> ### Note:  
+> For Edge Integration Cell runtime fetching the values dynamically from partner directory is not supported.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -21,7 +24,7 @@
 > -   If you are configuring the sender channel to receive AS2 messages, select the AS2 message protocol.
 > -   If you want to call the AS2 sender channel, then use the pattern `https://<host>:<port>/as2/as2`; to call the AS2 MDN sender channel, use `https://<host>:<port>/as2/mdn` .
 > -   The JMS queue name contains the name of the AS2 sender channel. To analyze a troubleshooting scenario better, it's recommended to specify the name of the AS2 sender channel.
-> -   You must activate [Enterprise Messaging](../Operations/activating-enterprise-messaging-a74cddc.md)/ [Message Queue](../Operations/managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and below. From version 1.7 and above, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
+> -   You must activate [Enterprise Messaging](../Operations/activating-enterprise-messaging-a74cddc.md)/ [Message Queue](../Operations/managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and further. From version 1.7 and before, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
 > -   The expiration period for stored messages is 90 days, after which the messages are deleted.
 > -   The retention threshold for alerting is two days, by which the messages have to be fetched before an alert is raised.
 
@@ -109,7 +112,7 @@ The default value is `ESBMessaging.send`. This role authorizes a sender system t
 > ### Caution:  
 > The role name must not contain any umlaut characters \(for example, `ä`\).
 
-For more information on user roles, see[Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md) .
+For more information on user roles, see [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md) .
 
 </td>
 </tr>
@@ -160,10 +163,10 @@ Select among the following values to determine the source of Partner ID:
 -   *AS2 Partner ID Header*: to use the AS2 Partner ID header as partner ID.
 -   *Authorized User*: to fetch the partner ID from values specified in partner directory.
 
--   *Dynamic*: if you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory.
+-   *Dynamic*: If you select dynamic, you must specify `authorizedUser` or `as2PartnerID` value in `SAP_AS2_Pid_Resolution_Mode` parameter of partner directory with pid of authorized user. To learn more, see [Parameterizing Integration Flows Using the Partner Directory](parameterizing-integration-flows-using-the-partner-directory-b7812a5.md).
 
 > ### Note:  
-> This field will have no impact on any *Private Key Alias* fields.
+> This field does not impact any *Private Key Alias* fields.
 
 
 
@@ -373,7 +376,7 @@ The valid values are:
 Specify the private key alias to decrypt the AS2 message. To fetch details from partner directory, use pd:xxxx or pd:AS2OwnId:<certalias\> syntax.
 
 > ### Note:  
-> The private key alias for Cloud Integration is, `sap_cloudintegrationcertificate`
+> The private key alias for is, `sap_cloudintegrationcertificate`
 
 
 
@@ -523,14 +526,18 @@ To define this attribute dynamically, set *<required\>* or *<notRequired\>* valu
 </td>
 <td valign="top">
 
-Select the type of proxy you want to use to connect asynchronously to an AS2 sender system.
+In the *Cloud Integration* runtime, select the type of proxy you want to use to connect asynchronously to an AS2 sender system.
 
 -   Select *Internet* if you are connecting to a cloud system.
 
--   Select *On-Premise* if you are connecting to an on-premise system.
-
 -   If you select *Dynamic*, you must define *<default\>* or *<sapcc\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
 
+
+If you have activated *Edge Integration Cell* runtime, select the type of proxy you want to use for connecting to receiver system.
+
+-   *Dynamic*: If you select *Dynamic*, you must define *<default\>* or *<manual\>* value in `SAP_AS2_Inbound_Proxy_Type` key in partner directory.
+-   *Internet*: To connect to a cloud system.
+-   *Manual*: You can manually specify Proxy Host and Proxy Port \(using the corresponding entry fields\).
 
 
 
@@ -541,12 +548,40 @@ Select the type of proxy you want to use to connect asynchronously to an AS2 sen
 
 *Location ID*
 
-\(only if *Proxy Type* is *On-Premise* or *Dynamic*\)
+\(for *Cloud Integration* rutime, if *Proxy Type* is *On-Premise* or *Dynamic*\)
 
 </td>
 <td valign="top">
 
 If you use the SAP Cloud Connector to connect to your on-premise system, specify the virtual address that is configured in the SAP Cloud Connector settings. To fetch details from partner directory, use `pd:xxxx` syntax.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host you are using to connect to a receiver system.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port* 
+
+\(only if *Edge Integration Cell* runtime is activated and *Proxy Type* is selected as *Manual* and *Dynamic*\)
+
+</td>
+<td valign="top">
+
+Enter the port number you are using to connect to a receiver system.
 
 </td>
 </tr>
@@ -746,7 +781,7 @@ Description
 <tr>
 <td valign="top" colspan="2">
 
-The parameters in allowing*Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceed the configured limit are rejected from further processing and the sender receives an error message.
+The parameters in allowing *Maximum Message Size* you to set a maximum size limit for processing inbound messages. All inbound messages that exceed the configured limit are rejected from further processing and the sender receives an error message.
 
 > ### Note:  
 > The minimum allowable size limit is 1 MB.

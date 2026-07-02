@@ -4,145 +4,150 @@
 
 Inspect usage of the monitoring storage database for a given time period \(as selected with the *Time* parameter\).
 
+> ### Note:  
+> This information is relevant only when you use SAP Cloud Integration in the Cloud Foundry environment.
+
 At runtime, monitoring data is written to a database. For each integration flow processed at runtime, a message processing log is written that contains information about the processing steps \(see [Message Processing Log](message-processing-log-b32f8cd.md)\).
 
-> ### Tip:  
-> Each SAP Cloud Integration tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows .
+The default value of the assigned database capacity is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration).
 
-The usage of database storage is plotted in a bar graph against time.
+When the assigned database capacity for monitoring storage is exceeded, you're advised to use the *Inspect* feature to examine and minimize storage usage. Exceeding the assigned database limit for monitoring storage doesn't imply that message processing logs can't be persisted anymore. However, in this case SAP can't ensure optimal performance for message monitoring.
 
-The bar height shows the data volume \(in MB\) used by monitoring data for a given time period \(as selected with the *Time* parameter\).
 
-A green bullet represents the total count of message processing logs.
 
-The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\). The thresholds are based on the entitlement for monitoring storage consumption in the monitoring database.
+<a name="loio216dc43e45b7423eb670e6e1e7bd05e0__section_ant_4b2_2cc"/>
+
+## Screen Components
+
+The bar chart shows the consumption of the database storage for monitoring data for a defined time period, as shown in the image below:![](images/Monitoring_Storage_Usage_6f18dcf.png)
+
+You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
+
+> ### Note:  
+
+However, the value of a bar at the time period 11:00-12:00 doesn't represent the amount of monitoring data that was added during 11:00-12:00. But rather the total amount of monitoring data found in the database during 11:00-12:00.
+
+The database storage usage is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis indicates the total data store space used in MB.
+
+The thresholds are based on the assigned database capacity for monitoring storage consumption in the monitoring database.
+
+The usage level is represented by the following elements:
 
 
 <table>
 <tr>
 <th valign="top">
 
+Graphical Element
+
+</th>
+<th valign="top">
+
+Monitoring Storage Usage
+
+</th>
+<th valign="top">
+
 Level of Usage
 
 </th>
-<th valign="top">
-
-Bar Color
-
-</th>
-<th valign="top">
-
-Database Connection Usage
-
-</th>
 </tr>
 <tr>
 <td valign="top">
 
-Critical
+Orange Bar
 
 </td>
 <td valign="top">
 
-Red
+Entitlement exceeded
 
 </td>
 <td valign="top">
 
-More than 90%
+Warning: Monitoring storage usage exceeds the given limit.
+
+The bar height shows the data volume \(in MB\) used by monitoring data.
+
+The thresholds are based on the entitlement for storage consumption in the tenant database.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Warning
+Green Bar
 
 </td>
 <td valign="top">
 
-Orange
+Less than 100%
 
 </td>
 <td valign="top">
 
-Between 70% and 90%
+OK: Monitoring storage usage is within the given limit.
+
+The bar height shows the data volume \(in MB\) used by monitoring data.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-OK
+Blue Bullet
 
 </td>
 <td valign="top">
 
-Green
+Message Processing Log Count
 
 </td>
 <td valign="top">
 
-Less than 70%
+The count of message processing logs. You can filter the count of message processing logs by status with the *Message Processing Status* filter. The default value is *All*, which means that the total count of message processing logs is displayed.
 
 </td>
 </tr>
 </table>
 
-The default value of the entitlement is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration).
-
-If the entitlement is exceeded there is a risk of overloading the database storage, which might eventually cause problems in the database management system.
-
-The duration covered by a bar represents the average usage during:
-
--   One hour when *Past Day* is selected as *Time* 
-
--   One day when *Past Week* or *Past Month* is selected as *Time* 
+> ### Note:  
+> The system reads the resource consumption every hour. This means there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the **Inspect** feature.
 
 
-Click a bar to get more context information and to get access to the following functions \(the results are filtered according to the setting of the *Time* parameter\):
+
+<a name="loio216dc43e45b7423eb670e6e1e7bd05e0__section_i53_1d2_2cc"/>
+
+## Functions
+
+Choose a bar or a bullet to get more context information and access the following functions:
 
 -   *Show Messages*
 
-    Navigate to the *Monitor Message Processing* screen for the selected time period \(see [Monitor Message Processing](monitor-message-processing-314df3f.md)\).
+    Navigate to the *Monitor Message Processing* screen for the selected time period. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
-    Navigate to the *Top Integration Flows* screen that allows you to inspect the topic integration flows by message processing log count.
+    Navigate to the *Top Integration Flows* screen that allows you to inspect those integration flows that write the most message processing logs for a specific time period. For more information, see: [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md).
 
+-   *Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
 
-*Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
-
-> ### Note:  
-> The system reads the resource consumption once per hour. That means, that there can be a maximum lag of 1 hour between the processing of an integration flow writing monitoring data and the *Inspect* feature to show the impact of this integration flow.
-
-
-
-<a name="loio216dc43e45b7423eb670e6e1e7bd05e0__section_tqd_3w1_bxb"/>
-
-## Top Integration Flows
-
-On the *Top Integration Flows* screen, you can find more details in the section *Top Flows by Message Processing Log Count*.
-
-Shows those integration flows that write the most message processing logs for a specific time period \(as selected by the *Time* parameter\).
-
-Click a cell to display more context information for the selected integration flow \(result filtered according to the setting of the *Time* parameter\):
-
-See: [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)
 
 
 
 <a name="loio216dc43e45b7423eb670e6e1e7bd05e0__section_vgy_pw5_ywb"/>
 
-## What to Do in Critical Situations
+## Troubleshooting
 
-If the entitlement for the monitoring database volume is approached or even exceeded, you can inspect which integration flows are the top contributors \(see [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)\). For the top consuming integration flows you can ensure that the message processing *Log Level* parameter is set to *Info* 
+If the assigned capacity for the monitoring database volume is approached or even exceeded, you can inspect which integration flows are the top contributors \(see [Inspect Top Integration Flows by Message Processing Log Count](inspect-top-integration-flows-by-message-processing-log-count-696b65e.md)\). For the top consuming integration flows you can ensure that the message processing *Log Level* parameter is set to *Info* 
 
 To do that, in the *Monitor* section, click a tile in the *Manage Integration Content* section select the integration flow, and configure the *Log Configuration* parameter accordingly.
 
 See: [Setting Log Levels](setting-log-levels-4e6d3fc.md) 
 
 You can also check if there are integration flows showing many erroneous message processing logs. To filter for such integration flows, set the *Message Processing Status* filter to *Failed*. Check the respective integration flow and fix the root cause for the failures.
+
+You might see a critical status, even though there were not too many message processing logs in the past 24 hours. In this situation you have to extend the time selection to *Past Week* or even *Past Month*, to reveal the point of time when a large amount of message processing logs further in the past could have filled the monitoring storage to a critical level. Note also that monitoring data is removed only through an automated cleanup job, which removes monitoring data for which the retention period has expired \(30 days by default\).
 
 More information:
 

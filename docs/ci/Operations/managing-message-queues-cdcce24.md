@@ -38,7 +38,7 @@ To open the *Manage Message Queues* screen, perform the following steps:
 2.  Choose the *Message Queues* tile under *Manage Stores*.
 
     > ### Note:  
-    > The message queue service is only available, if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](activating-enterprise-messaging-a74cddc.md)
+    > The message queue service is only available if Enterprise Messaging is activated and a JMS Message broker is provisioned. \(See: [Activating Enterprise Messaging](activating-enterprise-messaging-a74cddc.md)\)
 
 
 
@@ -139,7 +139,7 @@ Description
 <tr>
 <td valign="top">
 
-*Check*\(<span class="SAP-icons"></span>\)
+*Check*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">
@@ -158,7 +158,7 @@ You can delete queues that aren't needed and generate missing queues by redeploy
 <tr>
 <td valign="top">
 
-*Reload*\(<span class="SAP-icons"></span>\)
+*Reload*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">
@@ -170,7 +170,7 @@ Reload the table.
 <tr>
 <td valign="top">
 
-*Sort*\(<span class="SAP-icons"></span>\)
+*Sort*\(<span class="SAP-icons-V5"></span>\)
 
 </td>
 <td valign="top">
@@ -188,9 +188,7 @@ Sort the table entries according to the displayed sorting criteria.
 
 [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/)
 
+[AS2 Adapter](../Development/as2-adapter-d3af635.md "")
+
 [JMS Adapter](../Development/jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
-
- <?sap-ot O2O class="- topic/link " href="63a96540c8494b578ec657bdfa5be6b8.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
-
- <?sap-ot O2O class="- topic/link " href="3208eda405674b8b8f14c4e2bfdf22ee.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/cdcce24f484a41c08ab46d12ab666451.xml" ?> 
 

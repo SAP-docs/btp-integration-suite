@@ -122,12 +122,36 @@ Name of the package the artifact was deployed from.
 <tr>
 <td valign="top">
 
-*Mode*\(if applicable\)
+*Mode* \(if applicable\)
 
 </td>
 <td valign="top">
 
 Indicates whether it is configure-only content.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Repository* \(if applicable\)
+
+</td>
+<td valign="top">
+
+Name of the GitHub repository to which the integration flow is linked to.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Branch* \(if applicable\)
+
+</td>
+<td valign="top">
+
+Name of the GitHub repository branch to which the integration flow is linked to.
 
 </td>
 </tr>

@@ -42,7 +42,7 @@ Edit your integration package to revise the header and overview sections, add or
 
     Furthermore, you've the option to upload a package image. The image is placed on top of the overview page.
 
-6.  In the *Artifacts* tab, choose <span class="SAP-icons"></span>.
+6.  In the *Artifacts* tab, choose <span class="SAP-icons-V5"></span>.
 
     You get the following functions. The list of functions varies for different artifact types.
 

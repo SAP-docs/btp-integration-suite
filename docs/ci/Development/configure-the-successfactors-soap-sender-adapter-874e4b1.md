@@ -11,7 +11,7 @@ The SuccessFactors \(SOAP\) sender adapter connects an SAP Cloud Integration ten
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -82,6 +82,8 @@ Description
 <td valign="top">
 
 URL of the SuccessFactors data center that you want to connect to. You can browse and select the SuccessFactors data center URL by using the *Select* option.
+
+You can edit and add the URL. For information on SuccessFactors URL list, see [List of SAP SuccessFactors API Servers](https://help.sap.com/docs/successfactors-platform/sap-successfactors-api-reference-guide-odata-v2/list-of-sap-successfactors-api-servers?version=2505)
 
 </td>
 </tr>

@@ -65,7 +65,7 @@ You’re assigned the *AuthGroup.API.Admin* role.
             </th>
             <th valign="top">
 
-            Descrition
+            Description
             
             </th>
             </tr>

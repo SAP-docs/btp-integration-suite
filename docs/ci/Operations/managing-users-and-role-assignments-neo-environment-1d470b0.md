@@ -89,5 +89,5 @@ Australia \(Sydney\)
 
 [Defining Authorizations for Integration Team Members](defining-authorizations-for-integration-team-members-3ec7679.md "To authorize selected people to work on the account as part of the integration team in the context of SAP Cloud Integration (for example, as integration developers), you assign roles to the associated users.")
 
-[Persona](../SecurityNeo/persona-2937e5c.md "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
+[Personas](../SecurityNeo/personas-2937e5c.md "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
 

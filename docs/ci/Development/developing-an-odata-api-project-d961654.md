@@ -7,7 +7,7 @@
 
 You can develop OData APIs that expose existing data sources, such as SOAP, as OData endpoints. These OData APIs can be consumed by SAP Fiori apps, SAP BTP Mobile Services, or any other custom app, to implement user-centric scenarios.
 
-![](images/OData_API_Overview_38d1448.png)
+![The grafic shows how to realise a user-centric scenario. OData APIs that expose existing data sources, such as SOAP, REST, OData or ODC, can be consumed by SAP Fiori apps, SAP BTP Mobile Services, or any other custom app.](images/OData_API_Overview_38d1448.png)
 
 
 

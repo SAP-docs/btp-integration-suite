@@ -11,10 +11,13 @@ The XI receiver adapter allows you to connect a tenant to a local Integration En
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
+> ### Note:  
+> Input messages must comply with the applicable RFCs. For non‑compliant input, adapter behavior is undefined.
 
 Consider the following when using the XI adapter.
 
@@ -51,12 +54,15 @@ Consider the following when using the XI adapter.
 > ### Note:  
 > -   The XI adapter does not support acknowledgments.
 > 
-> -   The XI adapter does not support ExactlyOnceInOrder \(EOIO\).
+> -   The XI adapter does not support the Exactly Once In Order \(EOIO\) delivery assurance option by default. However, you can model Exactly Once In Order by selecting the *Handled by Integration Flow* delivery assurance option. See: [Sender with XI Protocol and Receiver with SAP RM Protocol](sender-with-xi-protocol-and-receiver-with-sap-rm-protocol-090abf3.md).
 
 > ### Note:  
 > Message attachments are taken over into the resulting XI message. The attachment names are based on the attachment names as defined in the exchange. To set attachment names, you can, for example, use the Script step \(using the `addAttachmentObject` method of interface `Message`, see [SDK API](sdk-api-c5c7933.md)\).
 > 
 > For the payload, the name `MainDocument` is used in the XI message.
+
+> ### Note:  
+> This adapter doesn't support composite messages \(bulk messages\).
 
 When you have created a receiver channel \(with XI adapter selected\), you can configure the following attributes.
 
@@ -127,7 +133,7 @@ The integration engine address is composed in the following way:
 > ### Note:  
 > You can find out the constituents \(HTTPS port\) of the URL by choosing transaction `SMICM` in the receiver system and choosing *Goto* \> *Services*.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 The endpoint URL that has been used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `RealDestinationUrl`\).
 
@@ -141,25 +147,20 @@ The endpoint URL that has been used at runtime is displayed in the message proce
 </td>
 <td valign="top">
 
-The type of proxy that you are using to connect to the target system:
+The type of proxy that you are using to connect to the target system.
+
+If you are using or Process Orchestration runtime profile:
 
 -   Select *Internet* if you are connecting to a cloud system.
 
--   Select *On-Premise* if you are connecting to an on-premise system.
-
-    > ### Note:  
-    > If you select the *On-Premise* option, the following restrictions apply to other parameter values:
-    > 
-    > -   Do not use a HTTPS address for *Address* as it leads to errors when performing consistency checks or during deployment.
-    > 
-    > -   Do not use the option *Client Certificate* for the *Authentication* parameter as it leads to errors when performing consistency checks or during deployment.
-
-    > ### Note:  
-    > If you select the *On-Premise* option and use the SAP Cloud Connector to connect to your on-premise system, the *Address* field of the adapter references a virtual address, which has to be configured in the SAP Cloud Connector settings.
-
 -   If you select *Manual*, you can manually specify the *Proxy Host* and the *Proxy Port* \(by using the corresponding entry fields\).
 
-    This option is only available if you have chosen a *Process Orchestration* product profile.
+
+If you are using SAP Cloud Integration runtime profile:
+
+-   Select *Internet* if you are connecting to a cloud system.
+
+-   Select *On Premise* if you are connecting via Cloud Connector, and use the parameter `Location ID`.
 
 
 
@@ -208,7 +209,7 @@ There are the following options:
 
 -   *Principal Propagation* 
 
-    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system. You can only use principal propagation if you have selected *Best Effort* as the *Quality of Service*.
+    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system. You can only use principal propagation if you have selected *On Premise* as *Proxy-Type* and *Best Effort* as the *Quality of Service*.
 
     > ### Remember:  
     > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
@@ -238,7 +239,7 @@ There are the following options:
 
 Name of the *User Credentials* artifact that needs to be deployed separately on the tenant \(it contains user name and password for the user to be authenticated\).
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -254,7 +255,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Optional entry to specify the alias of the private key to be used for authentication. If you leave this field empty, the system checks at runtime for any valid key pair in the tenant keystore.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -394,7 +395,7 @@ Description
 
     A communication party typically represents a larger unit involved in an integration scenario. You usually use a communication party to address a company.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 -   *Communication Component*
 
@@ -402,7 +403,7 @@ Description
 
     You typically use a communication component to address a business system as the sender or receiver of messages.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
     > ### Note:  
     > To get this information, go to the receiver system and choose transaction `SLDCHECK`. In section *LCR\_GET\_OWN\_BUSINESS\_SYSTEM*, you find the business system ID \(which typically has the form `<SID>_<client>`\).
@@ -413,7 +414,7 @@ Description
 
     The receiver interface is described according to how interfaces are defined in the Enterprise Services Repository, that means, with a name and a namespace.
 
-    You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+    You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
     > ### Caution:  
     > Currently, you can only configure both parameters dynamically or hard-coded. A combination of dynamic configuration and hard-coding is not supported.
@@ -515,7 +516,25 @@ There are the following options:
 
     The message is sent asynchronously. This means that the tenant does not wait for a response before continuing processing. It is expected that the receiver guarantees that the message is processed exactly once.
 
-    If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under **\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
+    If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under *Temporary Storage*\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
+
+-   *Handled by Integration Flow*
+
+    Quality of service is managed within the integration flow itself, and the XI adapter doesn't add any quality of service handling \(such as retry storage or duplicate checks\).
+
+    The XI sender channel sets the headers `SapQualityOfService` and `SapQueueId` for the XI quality of service and queue ID of the incoming message. These headers can also be used to set the quality of service and queue ID for the message to be processed by the XI receiver channel.
+
+    > ### Remember:  
+    > Add the headers `SapQualityOfService` and `SapQueueId` to the list of allowed headers. Otherwise, they won't get propagated to the receiver channel.
+
+    `SapQualityOfService` can have the following values:
+
+    -   `BestEffort`
+    -   `ExactlyOnce`
+    -   `ExactlyOnceInOrder`
+
+    > ### Note:  
+    > *Handled by Integration Flow* is currently not supported when using the XI adapter with Request/Reply and Send steps.
 
 
 
@@ -683,6 +702,9 @@ In such cases, a lock entry is created which you can view and release in the *Mo
 
 Use this option to avoid out-of-memory situations \(caused in many cases by large messages\).
 
+> ### Note:  
+> This option does not work for normal integration errors, only for node crashes or similar scenarios.
+
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
 </td>
@@ -731,9 +753,9 @@ Enter the number of days after which the stored messages are deleted \(default i
 
 ## Explicit Retry Configuration Using Specific Headers
 
-When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries the message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(who will then receive an alert email\). You can do this by using one of the following headers in a dynamic expression.
+When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries the message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(which will then receive an alert email\). You can do this by using one of the following headers in a dynamic expression.
 
-Which header you can use, depends on the kind of temporary storage chosen.
+The kind of header you use will depend on the chosen kind of temporary storage:
 
 -   If as *Temporary Storage* you have chosen the option *Data Store*, you can use the header `SAP_DataStoreRetries`.
 
@@ -749,6 +771,64 @@ Which header you can use, depends on the kind of temporary storage chosen.
 > 
 > In this example, the message is routed to the related receiver after 5 retries.
 
+For more information on the retry pattern, see [Apply the Retry Pattern](apply-the-retry-pattern-97789c9.md).
+
+Find a description of each header at [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
+
+
+
+<a name="loio5d2670fdfed640db8fd43991440d6da7__section_b2r_xlc_fhc"/>
+
+## Dynamic Headers
+
+The XI sender and receiver adapters handle dynamic headers within XI messages. The `DynamicConfiguration` tag is converted from the incoming message into exchange properties in the XI sender adapter which can be accessed in the integration flow. Each record from this tag has two exchange properties with the `SapDynamicConfiguration` prefix as seen in following table:
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`SapDynamicConfiguration_<Name of the Record>`
+
+</td>
+<td valign="top">
+
+Value of the record
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`SapDynamicConfiguration_<Name of the Record>_Namespace`
+
+</td>
+<td valign="top">
+
+Namespace of the record
+
+</td>
+</tr>
+</table>
+
+You can read or modify these properties via content modifier or script.
+
+The receiver adapter checks for these properties and adds them as records within the `DynamicConfiguration` tag for the outgoing message.
+
 **Related Information**  
 
 
@@ -758,13 +838,13 @@ Which header you can use, depends on the kind of temporary storage chosen.
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 
-[https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/)
+[Blog:Configuring Scenario Using the XI Receiver Adapter](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-receiver-adapter/)
 
-[https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
+[Blog: Configuring Scenario Using the XI Sender Adapter](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
 
-[https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
+[Blog: Configuring Explicit Retry in Exception Sub-Process for XI Adapter Scenarios](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
 
-[https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/](https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/)
+[Blog: Usage of XI Adapter in Send and Request Reply Step](https://blogs.sap.com/2018/09/21/cloud-integration-usage-of-xi-adapter-in-send-and-request-reply-step/)
 
-[https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/](https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/)
+[Blog: Configuring Id Mapping in XI Receiver Adapter](https://blogs.sap.com/2018/11/16/cloud-integration-configuring-id-mapping-in-xi-receiver-adapter/)
 

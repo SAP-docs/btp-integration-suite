@@ -434,9 +434,7 @@ Enter the alias of the private key from the Cloud Integration keystore.
 
 After you've imported the collection *Partner Directory Example Integration Flows Postman Collection*, it's displayed in the collections area in Postman.
 
-The collection contains 2 folder structures for the different environments \(Cloud Foundry \(Cloud Foundry\) and Neo\).
-
-![](images/696aa291b22443a09bef0e5f11248b5a.xml)
+The collection contains 2 folder structures for the different environments \(Cloud Foundry and Neo\).
 
 Each environment-specific folder contains the following sub folders.
 

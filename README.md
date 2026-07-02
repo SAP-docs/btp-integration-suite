@@ -11,10 +11,20 @@ You can currently make contributions to the following guides in this repository:
 |[SAP Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/5cc6987511104c418b7cb4c25f3d9cb0.html?version=CLOUD) | SAP Integration Suite connects and contextualizes processes and data while enabling new content-rich applications to be assembled faster with less dependence on IT. |
 |[SAP API Management in the Cloud Foundry Environment](https://help.sap.com/docs/sap-api-management/sap-api-management/sap-api-management-in-cloud-foundry-environment?version=Cloud) | SAP API Management is a standalone service that lets you publish, promote, and oversee APIs in a secure and scalable environment.  |
 |[SAP Cloud Integration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/sap-cloud-integration)|SAP Cloud Integration facilitates the integration of business processes spanning different companies, organizations, or departments within an organization.|
+|[Integrations and APIs](https://help.sap.com/docs/integreation-suite/isuite-integrations-apis)|Cloud Integration, as capability of SAP Integration Suite, facilitates the integration of business processes spanning different companies, organizations, or departments within an organization. API Management addresses all enterprise requirements for API security and governance, letting you publish, promote, and oversee APIs in a secure and scalable environment.|
+|[Event Mesh](https://help.sap.com/docs/integration-suite/isuite-event-mesh/event-mesh)|Event Mesh helps you manage your business events by letting you publish and consume events across applications.|
+|[Integration Advisor](https://help.sap.com/docs/integration-suite/isuite-integration-advisor)|Integration Advisor helps you simplfy and streamline the implementation flow of your B2B/A2A and B2G integration process.|
+|[Trading Partner Management](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management)|Trading Partner Management streamlines the management and governance of B2B relationships, agreements, and interactions with external trading partners.|
+|[OData Provisioning](https://help.sap.com/docs/integration-suite/isuite-odata-provisioning)|OData Provisioning exposes business data and business logic as OData services on SAP BTP, enabling you to run user-centric applications.|
+|[Data Space Integration](https://help.sap.com/docs/integration-suite/isuite-data-space-integration)|Data Space Integration helps you exchange data within data spaces by letting you offer, consume, and maintain data space assets.|
+|[Migration Assessment](https://help.sap.com/docs/integration-suite/migration-assessment)|Migration Assessment helps you estimate the technical effort involved in the migration process to SAP Integration Suite and evaluates how various integration scenarios might be migrated.|
+|[Integration Assessment](https://help.sap.com/docs/integration-suite/integration-assessment)|Integration Assessment helps you define integration patterns and ensure consistent usage of the Integration Solution Advisory Methodology.|
+|[API Composition](https://help.sap.com/docs/integration-suite/api-composition)|API Composition enables you to expose all your business data in the form of a semantically connected data graph, accessed via a single unified and powerful API.|
+|[Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell)|Edge Integration Cell is an optional hybrid integration runtime offered as part of SAP Integration Suite, which enables you to manage APIs and run integration scenarios within your private landscape.|
 
 ## Requirements
 
-For contributions, it's required that you have a GitHub account. For more information, see [Signing up for a new GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) in the GitHub documentation.
+For contributions, you must have a GitHub account. For more information, see [Signing up for a new GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) in the GitHub documentation.
 
 
 ## Contributing

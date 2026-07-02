@@ -2,7 +2,7 @@
 
 # AMQP Sender for SAP Event Mesh
 
-Enables SAP Cloud Integration to consume messages from queues or topic subscriptions in SAP Event Mesh.
+Enables SAP Cloud Integration to consume messages from queues in SAP Event Mesh.
 
 
 
@@ -13,20 +13,20 @@ Enables SAP Cloud Integration to consume messages from queues or topic subscript
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Cloud Integration. In SAP Cloud Integration, the integration flows using the AMQP adapter are monitored and the messages are sent to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored by using tools provided by the message broker provider. Those monitors are not integrated into SAP Cloud Integration. Using SAP Cloud Integration, you can only monitor the integration flows using the AMQP adapter and the messages that are sent to or consumed from the message broker.
 
 > ### Note:  
-> To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
+> To be able to connect to queues, you have to create queues and/or topics in the message broker. This needs to be done in the message broker, with the configuration tools provided by the message broker. In some messaging systems, you need to configure a *Lock Duration* to make sure that the message is not consumed more than once. This timeout must be longer than the expected processing time of the message, otherwise this would lead to duplicate messages.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 
 
-To connect Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way:
+To connect to SAP Event Mesh, make sure to specify the following parameters in the described way:
 
 When creating the channel \(see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md)\), select adapter type *AMQP* \> *WebSocket*.
 
@@ -323,13 +323,15 @@ By default, this option is deactivated.
 Define the number of retries to be executed before a different delivery status is sent to the message broker.
 
 > ### Note:  
-> With the default setting \(`0`\), any message that is marked as a retried message is directly returning the outcome configured in *Delivery Status After Max. Retries* to the message broker and does not even start processing the message. Be aware of the fact that any delivery attempt by the message broker, even a failed one \(for example, due to network issues\), increases the delivery counter of the message sent by the message broker.
+> If this parameter is left empty, endless retries are executed. Ensure to specify a value to prevent this behavior.
+> 
+> If this parameter is set to \(`0`\), any message that is marked as a retried message is directly returning the outcome configured in *Delivery Status After Max. Retries* to the message broker and does not even start processing the message. Be aware of the fact that any delivery attempt by the message broker, even a failed one \(for example, due to network issues\), increases the delivery counter of the message sent by the message broker.
 > 
 > If the value is set to a number bigger than `0`, the AMQP adapter returns the outcome configured in *Delivery Status After Max. Retries* to the message broker if the delivery count of the message exceeds the configured value. Otherwise, it processes the message and returns a released outcome in case of an error and an accepted outcome in case of a successful message processing.
 > 
 > The consequences of the provided outcome depend on the message broker and the queue configuration on the message broker. An accepted outcome usually removes the message from the queue. A released outcome usually triggers a redelivery. A rejected outcome may trigger a redelivery or move the message to a dead letter queue \(maybe only if the message was rejected for a configured number of times\). The same applies to a modified outcome with the undeliverable flag set, which also might transit the message on the message broker to some undeliverable state.
 > 
-> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As consequence, this can result in an unplanned high load of your tenant and message broker.
+> If the message broker is not configured properly, this behavior can lead to unwanted side effects. For example, the messaging system constantly re-sends the message, no other messages are being processed, and no additional message processing logs are written. As a consequence, this can result in an unplanned high load of your tenant and message broker.
 
 
 
@@ -354,7 +356,7 @@ Don't select *MODIFIED\_FAILED\_UNDELIVERABLE*.
 > ### Note:  
 > See this [general information on AMQP](http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-complete-v1.0.pdf) on delivery statuses and their meaning.
 > 
-> See this [blog](https://blogs.sap.com/2019/11/20/cloud-integration-connecting-to-external-messaging-systems-using-the-amqp-adapter/) for a summary of the capabilities supported by the different brokers.
+> For most message brokers, you can use the `JMSRedelivered` and `JMSXDeliveryCount`headers to configure a delay in retry processing. For more information, see the SAP Community blog [Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://community.sap.com/t5/technology-blogs-by-sap/cloud-integration-connecting-to-messaging-systems-using-the-amqp-adapter/ba-p/13419906). This blog also contains an overview of the recommended settings for different message brokers. For a description of the mentioned headers, see [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
 
 
 
@@ -368,7 +370,7 @@ Don't select *MODIFIED\_FAILED\_UNDELIVERABLE*.
 
 ## Further Constraints
 
-The following constraints and limitations apply when using the AMQP adapter to connect Cloud Integration to SAP Event Mesh:
+The following constraints and limitations apply when using the AMQP adapter to connect to SAP Event Mesh:
 
 -   You can configure retry by setting the header `JMSRedelivered`.
 

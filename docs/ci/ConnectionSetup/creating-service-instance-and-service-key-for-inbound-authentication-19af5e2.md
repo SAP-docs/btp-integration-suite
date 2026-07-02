@@ -1,5 +1,7 @@
 <!-- loio19af5e205fe14af6a4f8a9fd80d4dc92 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Creating Service Instance and Service Key for Inbound Authentication
 
 With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Cloud Integration, a service instance is the definition of an OAuth client.
@@ -10,7 +12,7 @@ With a service instance, you define how to access a certain SAP BTP service. In 
 Create a service instance to implement inbound communication. A service instance is an OAuth client \(with grant type `Client Credentials`\).
 
 > ### Note:  
-> How to specify the parameters, depends on the plan and authentication option.
+> How to specify the parameters depends on the plan and authentication option.
 > 
 > For more information on the inbound authentication options for senders calling integration flow endpoints \(*integration-flow* plan\):
 > 
@@ -40,9 +42,9 @@ Create a service instance to implement inbound communication. A service instance
 3.  Choose your subaccount, navigate to *Services* \> *Service Marketplace*, and select *Process Integration Runtime*.
 
     > ### Note:  
-    > This tile is only displayed when you've created a runtime instance.
+    > The Process Integration Runtime tile is only displayed when you've created a runtime instance and a space.
 
-    ![](images/2101_Instance-Creation_1b8a322.png)
+    ![Screenshot: Process Integration Runtime tile in the subaccount service marketplace](images/2101_Instance-Creation_1b8a322.png)
 
 4.  Choose *Create*.
 
@@ -78,7 +80,7 @@ Create a service instance to implement inbound communication. A service instance
 
         To define inbound authentication of senders calling integration flow endpoint \(on an SAP Cloud Integration worker node\).
 
-        See: [Set Up Integration Suite](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html)
+        See: [Set Up SAP Integration Suite](https://developers.sap.com/tutorials/cp-starter-isuite-onboard-subscribe.html)
 
     -   *api*
 
@@ -142,6 +144,9 @@ Create a service instance to implement inbound communication. A service instance
 
     We recommend choosing *Form* as the more convenient option.
 
+    > ### Note:  
+    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
+
     Specify the following parameters.
 
 
@@ -168,9 +173,14 @@ Create a service instance to implement inbound communication. A service instance
     
     The selection of roles depend on the chosen option for *Plan*.
 
-    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role \(see [Managing User Roles, Cloud Foundry Environment](../Operations/managing-user-roles-cloud-foundry-environment-4e86f0d.md)\).
+    -   When as *Plan* you've chosen *integration-flow*, you can either keep the standard role `ESBMessaging.send` or enter a custom role.
 
-        You're able to add multiple roles by pressing enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
+        The default role `ESBMessaging.send` is already predefined. To define a custom role, go to the *Monitor* view of , and select the *User Roles* tile in the *Manage Security* section \(for more information, see [Managing User Roles, Cloud Foundry Environment](../Operations/managing-user-roles-cloud-foundry-environment-4e86f0d.md)\).
+
+        > ### Note:  
+        > Custom roles for this use case are **not** defined using the cockpit.
+
+        You're able to add multiple roles by selecting enter after each role. The default is set to the standard role \(`ESBMessaging.send`\).
 
         > ### Tip:  
         > When defining a service instance with *integration-flow* plan, you assign a role to it that enables the associated user to process the integration flow on the worker node. Simply spoken, this role defines permission for a sender to process an integration flow.
@@ -223,7 +233,7 @@ Create a service instance to implement inbound communication. A service instance
     </td>
     <td valign="top">
     
-    Enter the redirect URIs for authorization code grant type. Hit *Enter* after typing your uri and proceed with the next uri.
+    Enter the redirect URIs for authorization code grant type. Select *Enter* after filling out your uri and proceed with the next uri.
     
     </td>
     </tr>
@@ -239,7 +249,7 @@ Create a service instance to implement inbound communication. A service instance
 
     The following values have been set as default:
 
-    -   for plan `api`: `4300` \(12 hours\)
+    -   for plan `api`: `43200` \(12 hours\)
 
     -   for plan `integration-flow`: `3600` \(1 hour\)
 
@@ -250,9 +260,6 @@ Create a service instance to implement inbound communication. A service instance
     </tr>
     </table>
     
-    > ### Note:  
-    > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
-
 9.  Optional: Choose *Next* to review and verify the instance details.
 
 10. Choose *Create*.
@@ -272,7 +279,7 @@ With this step, you create a service key for the instance.
 
 2.  Select the service instance.
 
-3.  Under *Actions \(°°°\)*, choose *Create Service Key*.
+3.  Under <span class="SAP-icons-V5"></span> Actions, choose *Create Service Key*.
 
 4.  Enter a name for the service key under *Service Key Name*. You can use up to 32 characters.
 
@@ -351,7 +358,7 @@ With this step, you create a service key for the instance.
 
     Don't enter the whole certificate chain.
 
-    Make sure that the certificate is signed by a certification authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
+    Make sure that the certificate is signed by a Certification Authority supported by the load balancer \(see [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)\).
 
     You can only use a single certificate once across all existing service instances. To assign multiple roles, don't create multiple service instances. Instead, maintain multiple roles within one service instance.
     
@@ -390,7 +397,7 @@ With this step, you create a service key for the instance.
     > 
     > -   or one certificate with pinning enabled and another certificate with the same subjectDN and issuerDN where pinning is disabled.
 
-    .
+
     
     </td>
     </tr>
@@ -424,12 +431,12 @@ With this step, you create a service key for the instance.
     </tr>
     </table>
     
-6.  > ### Note:  
+    > ### Note:  
     > Selecting *JSON*, you can also pass these parameters in a valid JSON object that contains service-specific configuration parameters, provided either in-line or in a file \(see [Specifying Service Instance and Service Key Parameters in JSON Format](specifying-service-instance-and-service-key-parameters-in-json-format-ae419b6.md)\).
 
-7.  Choose *Create*.
+6.  Choose *Create*.
 
-8.  Choose the newly created service key to display the details of the service key. You need the values of the service key for later reference.
+7.  Choose the newly created service key to display the details of the service key. You need the values of the service key for later reference.
 
     Depending on the chosen *Key Type*, the service key contains certain parameters. The following table lists the parameters that are required to configure the client application:
 
@@ -512,7 +519,7 @@ With this step, you create a service key for the instance.
     > ### Note:  
     > To enable the related HTTP client to support this authentication option, you need to format the certificate \(including the certificate chain\) and the key accordingly. In particular, make sure to replace all `\n` in the SAP-generated certificate or key by line breaks.
     > 
-    > A suitable certificate, for example, would then look like:
+    > A suitable certificate, for example, would then look like the following:
     > 
     > ```
     > -----BEGIN CERTIFICATE-----
@@ -606,7 +613,7 @@ You can update an existing service instance. To do that, perform the following s
 
 2.  Select the service instance.
 
-3.  Under *Actions \(°°°\)*, choose *Update*.
+3.  Under <span class="SAP-icons-V5"></span> Actions, choose *Update*.
 
 4.  Check out the parameter settings and, if necessary, change them.
 

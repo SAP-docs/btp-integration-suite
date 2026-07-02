@@ -13,29 +13,36 @@ Configure the OData receiver adapter by understanding the adapter parameters.
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
+> ### Note:  
+> If you want to pass on null values to the receiver, your request must contain such null values with the attribute ***xsi:nil="true"*** 
+> 
+> For this to work, the XML namespace declaration xmlns:xsi= `"http://www.w3.org/2001/XMLSchema-instance"` must be present in your request.
+> 
+> Also note that the responses from the adapter contain null values represented as ***xsi:nil="true"***
 
 OData receiver adapter supports externalization. To externalize the parameters of this adapter, choose *Externalize* and follow the steps mentioned in [Externalize Parameters of an Integration Flow](externalize-parameters-of-an-integration-flow-45b2a07.md).
 
 > ### Note:  
 > -   OData adapter doesn’t support `$format` and `$inlineCount` in query options.
 > 
-> -   OData adapter supports sending error response in exception subprocess. The error response body is part of expression `${in.body}`.
+> -   OData adapter supports sending an error response in the exception subprocess. The error response body is part of expression `${in.body}`.
 > 
 > -   OData API response code is captured in the `camelhttpresponsecode` header.
 > 
-> -   OData adapter doesn’t support incoming payload in JSON format. The adapter only supports payload in XML format.
+> -   OData adapter doesn’t support incoming payload in JSON format – both the body to be sent and the response from a server. The adapter only supports a payload in XML format.
 > 
 > -   OData adapter doesn't support the word `link` in your payload. The word is reserved for creating reference links.
 > 
-> -   The adapter enables you to use connection pool while connecting to OData backend. For more information, see SAP Note [2863657](https://me.sap.com/notes/2863657).
+> -   The adapter enables you to use the connection pool while connecting to the OData back end. For more information, see SAP Note [2863657](https://me.sap.com/notes/2863657).
 > 
 > -   You can enable tracing for the adapter and analyze its log. For more information, see SAP Note [2852998](https://me.sap.com/notes/2852998).
 
-Select the *General* tab and provide values in the fields as follows.
+Select the *General* tab and provide the values in the fields as follows.
 
 **General**
 
@@ -67,7 +74,7 @@ Enter the name of the channel.
 </tr>
 </table>
 
-Select the *Connection* tab and provide values in the fields as follows.
+Select the *Connection* tab and provide the values in the fields as follows.
 
 **Connection**
 
@@ -105,7 +112,7 @@ URL of the OData V2 service that you want to connect to.
 </td>
 <td valign="top">
 
-The type of proxy you want to use for establishing connection with OData V2 service.
+The type of proxy you want to use for establishing connection with the OData V2 service.
 
 Currently, you can choose between *Internet* \(default\) and *On-Premise*.
 
@@ -133,7 +140,7 @@ Location ID that you’ve configured in the cloud connector installed on your sy
 </td>
 <td valign="top">
 
-Authentication method that you want to use for connecting to the OData V2 service. Currently, you can choose from
+Authentication method that you want to use for connecting to the OData V2 service. Currently, you can choose from:
 
 -   *None*
 
@@ -144,8 +151,22 @@ Authentication method that you want to use for connecting to the OData V2 servic
     > ### Remember:  
     > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
 
+    *Principal Propagation* – only if the *Proxy Type* is *On-premise*.The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
 
-The following options are enabled only if you choose *Proxy Type* as *Internet*
+
+Follow the steps to configure technical user in Cloud Foundry:
+
+-   Add a Certificate to Subaccount - Create a new service instance using the Process Integration Runtime service with an Integration Flow plan. Once the instance is created, generate a new service key. Select key type as External Certificate from the dropdown. In the External Certificate, provide the X590 public certificate. Once the service key is created, the service key will generate a Client ID, which will be used as a technical user.
+-   Configuration in the Cloud Connector - Cloud Connector should read the technical user principal and add it as Common Name \(CN\) in the certificate that is generated by Cloud Connector. To read the technical user principal there are two configuration options:
+    1.  Read the principal using the subject pattern \($\{client\_id\}\).
+    2.  In case of migration from Neo to Cloud Foundry and you don't want to change existing mapping in the *On-premise* system, then you can read the client\_id and map it against the actual user that is mapped in the *On-premise* system.
+
+        For example: In the *On-premise* system if you have mapped a string MIKE to a business user BSR\_USA, then in Cloud Connector in the condition, provide the pattern $\{client\_id\} and in the value provide the client id generated in CPI subaccount, In the subject pattern provide the string MIKE.
+
+
+-   Map the Client ID to the actual user in the *On-premise* system.
+
+The following options are enabled only if you choose *Proxy Type* as *Internet*.
 
 -   *Client Certificate*
 
@@ -168,7 +189,7 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*
 </td>
 <td valign="top">
 
-Credential name of the credentials that you’ve deployed in *Security Material* section of :eye:.
+Credential name of the credentials that you’ve deployed in the *Security Material* section of :eye:.
 
 </td>
 </tr>
@@ -182,7 +203,7 @@ Credential name of the credentials that you’ve deployed in *Security Material*
 </td>
 <td valign="top">
 
-Enter the private key alias that enables the system to fetch the private key from keystore for authentication.
+Enter the private key alias that enables the system to fetch the private key from the keystore for authentication.
 
 > ### Restriction:  
 > The values `true` and `false` aren’t supported for this field.
@@ -199,7 +220,7 @@ Enter the private key alias that enables the system to fetch the private key fro
 </td>
 <td valign="top">
 
-Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user
+Keep this option selected \(default setting\). It ensures that your integration flow is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
 
 </td>
 </tr>
@@ -211,7 +232,33 @@ Keep this option selected \(default setting\). It ensures that your integration 
 </td>
 <td valign="top">
 
-The option is enabled by default. This option enables the reuse of connection objects from the internal connection pool which in turn improves the network turnaround time for multiple communications to a same end point.
+This option enables the reuse of connection objects from the internal connection pool, which improves network turnaround time for multiple communications to the same endpoint. This option is enabled by default with a connection lifetime of 5 minutes. You can configure the maximum connection live time using the `SAP_connMaxLiveMinutes` property.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Delete Idle Connection*
+
+</td>
+<td valign="top">
+
+Select this option to automatically delete idle connections from the connection pool after the configured idle timeout period.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Idle Timeout \(in seconds\)*
+
+\(Only if you select *Delete Idle Connection* checkbox.\)
+
+</td>
+<td valign="top">
+
+Specifies the duration, in seconds, after which an idle connection is removed from the connection pool.
 
 </td>
 </tr>
@@ -261,23 +308,39 @@ The operation that you want to perform on the selected OData entity or resource.
 
 -   Function Import
 
+-   Dynamic
+
 
 To leverage all operations, always use the latest version of the adapter.
 
 > ### Note:  
 > For non-GET operations, if the server responds with HTTP 2xx series code, the same response code is accepted for message processing.
 
-For the *POST* operation, the automatic Primary Key generation is handled in 2 different ways based on the implementation in the backend server:
+For the *POST* operation, the automatic Primary Key generation is handled in two different ways based on the implementation in the back end server:
 
--   If the backend supports the primary key entry in the payload and later overwrites the entry value after receiving, you can enter a dummy value for the primary key.
+-   If the back end supports the primary key entry in the payload and later overwrites the entry value after receiving, you can enter a dummy value for the primary key.
 
--   If the primary key entry in the payload isn’t supported by the backend, then the payload must be sent without a primary key value. If mapping step is used, you can disable the entry by performing one of the following steps:
-    -   Disable the primary key value in the mapping
+-   If the primary key entry in the payload isn’t supported by the back end, then the payload must be sent without a primary key value. If the mapping step is used, you can disable the entry by performing one of the following steps:
+    -   Disable the primary key value in the mapping.
 
-    -   Manually remove the primary key entry from the schema and use that schema in mapping
+    -   Manually remove the primary key entry from the schema and use that schema in mapping.
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expression*
+
+\(Applicable only if you select *Dynamic* option from the *Operation Details*\)
+
+</td>
+<td valign="top">
+
+The expression field allows you to enter a simple expression that specifies the dynamic operation for the OData V2 call. For example, you can define that the method is determined dynamically by reading a value from a message header or property such as `${header.abc}` or `${property.abc}`. If the header or property doesn’t exist or its value is empty, the **POST** method is used by default.
 
 </td>
 </tr>
@@ -366,11 +429,11 @@ Additional query options that aren’t available in the *Model Operation* wizard
 </td>
 <td valign="top">
 
-Type of content that you’re sending to the OData V2 backend service. The adapter supports following content types:
+Type of content that you’re sending to the OData V2 back end service. The adapter supports the following content types:
 
 -   *Atom* \(default\): Select this option to convert an XML payload to ATOM XML format.
 
--   *JSON*: Select this option to convert XML payload to JSON format.
+-   *JSON*: Select this option to convert the XML payload to JSON format.
 
 
 
@@ -387,7 +450,7 @@ Type of content that you’re sending to the OData V2 backend service. The adapt
 </td>
 <td valign="top">
 
-Encoding type used for sending content to OData API.
+The encoding type used for sending content to the OData API.
 
 </td>
 </tr>
@@ -438,7 +501,7 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 This option isn’t enabled for *Content Enricher*.
 
 > ### Note:  
-> You can pass custom HTTP headers to OData receiver if you’ve defined the header in content modifier or script element and the element is placed before OData receiver adapter in an integration flow.
+> You can pass custom HTTP headers to OData receiver if you’ve defined the header in a content modifier or script element and the element is placed before the OData receiver adapter in an integration flow.
 
 
 
@@ -452,7 +515,7 @@ This option isn’t enabled for *Content Enricher*.
 </td>
 <td valign="top">
 
-Maximum time the adapter must wait for receiving a response from the OData V2 service.
+The maximum time the adapter must wait for receiving a response from the OData V2 service.
 
 </td>
 </tr>
@@ -466,7 +529,7 @@ Maximum time the adapter must wait for receiving a response from the OData V2 se
 
 By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
 
-Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+Having these attachments during message processing failures can be unnecessary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occur, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.ODataV2` in the message exchange with the value `true`.
 
@@ -480,11 +543,13 @@ If you're using older versions of the adapter where you don't see the option, de
 </td>
 <td valign="top">
 
-*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData backend
+For adapter version 1.29 and above, `traceparent` is included by default in the Request and Response Headers field.
+
+*Request Headers*: Provide the **| \(Pipe\)**separated value list of HTTP request headers that has to be sent to the OData back end.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
-*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values will then be converted to message/exchange headers.
+*Response Headers*: Provide a **| \(Pipe\)** separated value list of HTTP response headers. The received header values are then converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
 
@@ -493,19 +558,143 @@ If the value \* is entered, **all** the HTTP response header values are converte
 <tr>
 <td valign="top">
 
-*Metadata Details* 
+*METADATA DETAILS* 
 
 </td>
 <td valign="top">
 
-OData receiver adapter makes a $metadata call, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers \(for example header `apikey`, which is a customer authorization header to invoke API endpoints\) or parameters then you can provide the same in the request headers and query parameters.
+The adapter makes an internal $metadata call during the message processing, before the actual endpoint call. Not all headers or query parameters are passed to the $metadata call. If your service needs some headers or parameters, provide the same in the request headers and query parameters fields.
 
-Request headers provide comma-separated HTTP request headers to be sent to $metadata call. Custom query parameters enter key value pairs of query parameters, separated by *&* for multiple entries.
+*Request Headers* – provide a pipe-separated \(|\) list of HTTP request headers to be sent to the $metadata call.
+
+*Custom Query Parameters* – provide an ampersand-separated \(&\) list of key-value pairs.
 
 > ### Note:  
-> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property `SAP_ODataV2_RefreshCacheOnExpiry` and set the value to `false`. This can be done using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
+> The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property `SAP_ODataV2_RefreshCacheOnExpiry` and set the value to `false`. You can do this using a Content Modifier or Script step before the adapter. Upon using this property, the adapter stops invalidating the cache and looking for metadata every hour.
 
 
+
+</td>
+</tr>
+</table>
+
+Select the *Retry* tab and provide values in the fields as follows.
+
+> ### Remember:  
+> Ensure a careful idempotency design to prevent duplicate business transactions when retry mechanisms execute multiple calls for the same business operation. See [Receiver Is Idempotent](receiver-is-idempotent-f5b22ba.md)
+
+**Retry**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry on Exception* 
+
+</td>
+<td valign="top">
+
+By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of exceptions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Exception Details*
+
+\(Only if *Retry on Exception* is enabled\)
+
+</td>
+<td valign="top">
+
+In this section, you can **add**, **update**, or **delete** exception entries along with their descriptions.
+
+When a message processing failure occurs, you can retrieve the relevant exception details from the **Message Processing Log** and add them here. Once configured, if the integration flow encounters any of these specified exceptions, it will automatically initiate a retry.
+
+Choose *Add* to add a new exception, enter the following details:
+
+-   *Name*: You can Add a full qualified name.
+-   *Description*: It is recommended to add descriptions for exception to maintain the context.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry on Error Response* 
+
+</td>
+<td valign="top">
+
+By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of failed HTTP requests.
+
+In case of failed HTTP requests where the target system itself provides Retry-After information, the configurations in the HTTP receiver adapter is overridden with the values coming from the target system.
+
+> ### Note:  
+> If you use a exception sub process, the same is invoked only after all retry iterations are over and an connection error continues to persist.
+
+> ### Remember:  
+> The feature is available from software version **7.18.xx \(Neo environment\) and** 8.x \(Cloud Foundry environment\).
+
+For detailed information, see [Inbuilt Retry option for HTTP Receiver Adapter](https://blogs.sap.com/2023/10/25/sap-integration-suite-inbuilt-retry-option-for-http-receiver-adapter/)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HTTP Error Response Codes*
+
+\(Only if *Retry on Error Response* is enabled\)
+
+</td>
+<td valign="top">
+
+Specify HTTP error response codes for which the integration flow must retry request to the target system. Add each code separately by pressing Enter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Interval \(in seconds\)*
+
+\(Only if *Retry on Exception* or *Retry on Error Response* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the duration, in seconds, for which the integration flow must wait before retrying a request. The maximum interval between two retry attempts you can configure is 60 seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Retry Iterations*
+
+\(Only if *Retry on Exception* or *Retry on Error Response* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the number of retry attempts that the integration flow must make in case of failed HTTP requests to the target system. The maximum number of retry attempts you can configure is three.
 
 </td>
 </tr>
@@ -520,7 +709,7 @@ This adapter provides a wizard for modeling operations easily. It’s recommende
 There are three main steps in this wizard:
 
 1.  *Connect to System:* In this step, you provide the details required for connecting to the Web Service that you’re accessing.
-2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation on. After selecting the entity, you also select the fields, filtering and sorting conditions.
+2.  *Select Entity and Define Operation:* In this step, you select the operation you want to perform and the entity on which you want to perform the operation. After selecting the entity, you also select the fields, filtering and sorting conditions.
 3.  *Configure Filter & Sorting:* This step is available only for data fetch operations, where you can define the order in which the records are fetched in the response payload and filter for the fields that you require.
 
 **Connect to System**
@@ -549,7 +738,7 @@ Description
 
 You can choose between *Remote* and *EDMX*.
 
-If you choose *Remote*, you’ve to manually specify all the details like address and authentication details.
+If you choose *Remote*, you’ve have to manually specify all the details like address and authentication details.
 
 If you choose *Local EDMX File*, you select the service definition EDMX file that contains all these details that you specified manually when you selected *Remote*.
 
@@ -668,7 +857,7 @@ The adapter supports *Function Import* for the following return types:
 -   Void
 
 
-*Function Import*can also be consumed in the *$batch* mode.
+*The function Import*can also be consumed in the *$batch* mode.
 
 </td>
 </tr>
@@ -730,7 +919,7 @@ Fields associated with the entity that you want to perform the operation on.
 </td>
 <td valign="top">
 
-Type the field name that you are looking for to narrow down your search.
+Type the field name that you're looking for out to narrow down your search.
 
 </td>
 </tr>
@@ -764,7 +953,7 @@ For more information, see **Skip System Query Option \($skip\)** in [OData V2 UR
 </tr>
 </table>
 
-This step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
+The following step is available only for data fetch operations, *Query\(GET\), and* *Read\(GET\)*.
 
 **Configure Filter & Sorting**
 
@@ -790,7 +979,7 @@ Description
 </td>
 <td valign="top">
 
-Select the field that you want to use as reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
+Select the field that you want to use as a reference for filtering, choose the operation \(ex: *Less Than or Equal*\), and provide a value.
 
 > ### Note:  
 > The *IN* operation is available with filtering when editing the query manually. This operation isn’t available in the Query Modeling wizard.
@@ -814,7 +1003,7 @@ Select the field that you want to use as reference for filtering, choose the ope
 </td>
 <td valign="top">
 
-Select the field that you want to use as sorting parameter and choose *Ascending* or *Descending* order.
+Select the field that you want to use as a sorting parameter and choose *Ascending* or *Descending*.
 
 </td>
 </tr>

@@ -22,5 +22,5 @@ To act on errors that occur during message processing, you might need to notify 
 **Related Information**  
 
 
-[Define a Local Script Step](define-a-local-script-step-03b32eb.md "You can create a script step that is specific to an integration artifact to execute custom scripts (JavaScript or Groovy Script).")
+[Define a Local Script Step](define-a-local-script-step-03b32eb.md "Learn how to use a script step that’s specific to an integration artifact to create custom scripts (JavaScript or Groovy Script).")
 

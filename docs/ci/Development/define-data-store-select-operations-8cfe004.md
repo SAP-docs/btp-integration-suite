@@ -42,7 +42,7 @@ This step selects messages from the data store and provides as output a bulk mes
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Data Store Operations* \> *Select*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Data Store Operations* \> *Select*.
 
 2.  Place the *Select* element in the integration process and define the message path.
 
@@ -73,8 +73,6 @@ This step selects messages from the data store and provides as output a bulk mes
     <td valign="top">
     
     Specifies the name of the data store \(no white spaces\).
-
-    You can dynamically define the data store name based on a header or exchange property. Use the format `${header.headername}` to dynamically read the name from a header, or `${property.propertyname}` to read it from an exchange property.
 
     The maximum length allowed for the data store name is 40 characters. If you enter a longer string, a validation error is raised. Note that this length restriction applies to the value that is used for this parameter at runtime. Therefore, if you configure this parameter dynamically, make sure that the expected header or property value does not exceed this length restriction. Otherwise, a runtime error will be raised.
     
@@ -239,6 +237,7 @@ When you deploy and run the integration flow once, the received message looks li
 >     </Product>
 >   </Products>
 > </message>
+> </messages>
 > ```
 
 In the data store Select step, specify a value bigger than `1` for the parameter *Number of Polled Messages*. Then, in the first content modifier \(on the *Body* tab\), specify a different value for the element `productIdentifier` than for the first message processing run. When you deploy and run the integration flow again, the resulting message \(after the integration flow has been processed\) should look like this:

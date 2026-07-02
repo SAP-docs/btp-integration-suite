@@ -8,7 +8,7 @@
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then ** \> *Escalation*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span>, then ** \> *Escalation*.
 
 2.  Specify the *Escalation Category*.
 

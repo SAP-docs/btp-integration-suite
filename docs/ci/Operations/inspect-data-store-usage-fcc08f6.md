@@ -2,200 +2,205 @@
 
 # Inspect Data Store Usage
 
-Inspect data store usage of the tenant database for a given time period \(as selected with the *Time* parameter\).
+Inspect the data store usage and message size of the tenant database for a given time period.
 
-> ### Tip:  
-> Each SAP Cloud Integration tenant is associated with a physical database that has a limited size. This database is used by certain steps during the runtime of integration flows .
+> ### Note:  
+> This information is relevant only when you use SAP Cloud Integration in the Cloud Foundry environment.
 
-The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
+Each SAP Cloud Integration tenant is associated with a physical database that has a limited size. The data store is a logical storage that consumes tenant database volume. It can be accessed to by certain integration flows steps \(read and write access\) to read and write the message payload or variables during runtime. There are two kinds of data stores:
 
--   Local data store: Can be accessed explicitly by a single integration flow
+-   Local data store. It can be accessed explicitly by a single integration flow.
 
--   Global data store: Can be accessed by all integration flows deployed on a tenant
+-   Global data store. It can be accessed by all integration flows deployed on a tenant.
 
 
-There are certain integration flow steps that allow you to write data to the data store and to read the data from it \(see [Define Data Store Operations](../Development/define-data-store-operations-79f63a4.md)\).
+This database is used by certain steps during the runtime of integration flows. These steps allow you to write data to the data store and to read the data from it \(see [Define Data Store Operations](../Development/define-data-store-operations-79f63a4.md)\). These integration flows, consequently, use tenant database volume.
 
-These integration flows, consequently, use tenant database volume.
+The default value of the entitlement for the total data store space usage is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration). If the entitlement is exceeded there's a risk of overloading the database storage, which might eventually cause problems in the database management system and impact message processing.
 
-The database usage is plotted in a bar graph against time.
 
-The bar height shows the data volume \(in MB\) used by data stores for a given time period \(as selected with the *Time* parameter\).
 
-A blue bullet represents the data volume \(in MB\) used specifically by global data stores.
+<a name="loiofcc08f6a450543b7bbed16e7de81e70e__section_g5k_p3y_bcc"/>
 
-The level of usage is indicated by the bar height and color \(from green for low usage, up to red for critical usage\). The thresholds are based on the entitlement for storage consumption in the tenant database.
+## Screen Components
+
+You can choose to display either the *Total Data Store Space Usage* or the *Data Store Message Size* in a graphical format using the *Resource* dropdown menu.
+
+
+
+### *Total Data Store Space Usage*
+
+The bar chart indicates the tenant database's data store usage over a defined period, as shown in the image below:
+
+![](images/Data_Store_Usage_a5e3f55.png)
+
+You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
+
+> ### Note:  
+
+The data store usage is plotted in a bar graph against time. The horizontal axis shows the time window, and the vertical axis indicates the total data store space used in MB.
+
+The usage level is represented by the following elements:
+
+****
 
 
 <table>
 <tr>
 <th valign="top">
 
-Level of Usage
+Graphical Element
 
 </th>
 <th valign="top">
 
-Bar Color
+Data Store Usage
 
 </th>
 <th valign="top">
 
-Database Connection Usage
+Meaning
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-Critical
+Dark Green Bar
 
 </td>
 <td valign="top">
 
-Red
+Global \(OK\)
 
 </td>
 <td valign="top">
 
-More than 90%
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Warning
-
-</td>
-<td valign="top">
-
-Orange
-
-</td>
-<td valign="top">
-
-Between 70% and 90%
+Global data store usage is within the given limit.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-OK
+Light Green Bar
 
 </td>
 <td valign="top">
 
-Green
+Local \(OK\)
 
 </td>
 <td valign="top">
 
-Less than 70%
+Local data store usage is within the given limit.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Dark Orange Bar
+
+</td>
+<td valign="top">
+
+Global \(Entitlement Exceeded\)
+
+</td>
+<td valign="top">
+
+Global data store usage exceeds the given limit.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Light Orange Bar
+
+</td>
+<td valign="top">
+
+Local \(Entitlement Exceeded\)
+
+</td>
+<td valign="top">
+
+Local data store usage exceeds the given limit.
 
 </td>
 </tr>
 </table>
 
-The default value of the entitlement is 35 GB, as documented at [What Is SAP Cloud Integration?](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration).
+The bar height represents the average data volume \(in MB\) used by data stores, whether global or local. The threshold is based on the storage consumption entitlement for the tenant database.
 
-If the entitlement is exceeded there is a risk of overloading the database storage, which might eventually cause problems in the database management system and impact message processing.
-
-The duration covered by a bar represents the average usage during:
-
--   One hour when *Past Day* is selected as *Time* 
-
--   One day when *Past Week* or *Past Month* is selected as *Time* 
+> ### Note:  
+> The system reads the resource consumption every hour. This means that there can be a maximum lag of 1 hour between processing an integration flow with a certain transaction setting and displaying the latest integration flow usage in the *Inspect* feature.
 
 
-Click a bar to get more context information and to get access to the following functions \(the results are filtered according to the setting of the *Time* parameter\):
+
+### **Data Store Message Size**
+
+The line chart for *Data Store Message Size* displays the size of messages stored in the data stores over a specific time period, as shown in the image below:
+
+![](images/Data_Store_Message_Size_ae2a3d5.png)
+
+The line height indicates the size that messages reached at different points in time. Select one of the bullet points to view the exact message size at the chosen time.
+
+You can use the **Message Size** filter to choose between displaying the **Average** or **Maximum** message size. The average is calculated over hourly or daily intervals, depending on the time period you select in the **Time** filter. While the average usage of data stores might seem uncritical, usage could reach warning or critical levels for short periods. To inspect this situation, select **Maximum** in the **Message Size** filter.
+
+
+
+<a name="loiofcc08f6a450543b7bbed16e7de81e70e__section_zg5_q3y_bcc"/>
+
+## Functions
+
+Choose a bar or a bullet to get more context information and access the following functions:
 
 -   *Show Messages*
 
-    Navigate to the *Monitor Message Processing* screen for the selected time period \(see [Monitor Message Processing](monitor-message-processing-314df3f.md)\).
+    Navigate to the *Monitor Message Processing* screen for the selected time period. For more information, see [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
--   *Inspect Usage*
+-   *Inspect Top Consumers*
 
     Navigate to the *Top Data Stores* screen that allows you to inspect tenant database usage by data stores in more detail.
 
+    The target screen shows:
 
-*Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
+    -   Local data stores that are identified as top consumers of the tenant database for a specific time period \(as selected by the *Time* parameter\).
 
-> ### Note:  
-> The system reads the resource consumption once per hour. That means, that there can be a maximum lag of 1 hour between the processing of an integration flow consuming data store resources and the *Inspect* feature to show the impact of this integration flow.
-
-
-
-<a name="loiofcc08f6a450543b7bbed16e7de81e70e__section_tqd_3w1_bxb"/>
-
-## Top Data Stores
-
-On the *Top Data Stores* screen, you can find more details in the following sections:
+    -   Global data stores that are identified as top consumers of the tenant database for a specific time period \(as selected by the *Time* parameter\).
 
 
-<table>
-<tr>
-<th valign="top">
+    See:
 
-Section
+    [Inspect Top Data Stores by Usage](inspect-top-data-stores-by-usage-55670e6.md)
 
-</th>
-<th valign="top">
+    [Inspect Top Data Stores by Message Size](inspect-top-data-stores-by-message-size-00431bf.md)
 
-Description
+-   *Show Data Stores*
 
-</th>
-</tr>
-<tr>
-<td valign="top">
+    Navigate to the *Manage Data Stores* screen for the selected time period . For more information, see [Managing Data Stores](managing-data-stores-ac39f1d.md).
 
-*Top Local Data Stores by Usage* 
+-   *Zoom Out* and *Zoom In* to extend/reduce the selected time period. 
 
-</td>
-<td valign="top">
-
-Shows those local data stores that are identified as top consumers of the tenant database for a specific time period \(as selected by the *Time* parameter\).
-
-Click a cell to display more context information for the selected integration flow \(result filtered according to the setting of the *Time* parameter\):
-
-See: [Inspect Top Local Data Stores by Usage](inspect-top-local-data-stores-by-usage-55670e6.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Top Global Data Stores by Usage* 
-
-</td>
-<td valign="top">
-
-Shows those global data stores that are identified as top consumers of the tenant database for a specific time period \(as selected by the *Time* parameter\).
-
-Click a cell to display more context information for the selected integration flow \(result filtered according to the setting of the *Time* parameter\):
-
-See: [Inspect Top Global Data Stores by Usage](inspect-top-global-data-stores-by-usage-00431bf.md)
-
-</td>
-</tr>
-</table>
 
 
 
 <a name="loiofcc08f6a450543b7bbed16e7de81e70e__section_vgy_pw5_ywb"/>
 
-## What to Do In Critical Situations
+## Troubleshooting
 
 If there's a critical situation with a data store, check if the data store is used at all in any integration scenario. Also check if you can reduce the setting for *Expiration Time*.
 
-Check if the data stores shown as main consumers contain many overdue entries. In this case, check why these entries are not being consumed in a timely manner, and consider deleting the overdue entries if they are no longer required, in order to free up storage space.
+Check if the data stores shown as main consumers contain many overdue entries. In this case, check why these entries aren't being consumed in a timely manner, and consider deleting the overdue entries if they're no longer required, in order to free up storage space.
 
 In order to reduce storage consumption by large data stores, consider reducing the *Expiration Period* \(see [Define Data Store Write Operations](../Development/define-data-store-write-operations-46260ee.md)\). 
 
-It is not recommended to use data stores for monitoring purposes, for example, by storing all failed messages for inspection. Data stores are intended as temporary storage for transactional data.
+It isn't recommended to use data stores for monitoring purposes, for example, by storing all failed messages for inspection. Data stores are intended as temporary storage for transactional data.
 
-If you are using the *Data Store Write* integration flow steps for development and testing purposes, this means, if you want to inspect how messages are being processed, use the integration flow tracing feature \(see [Guidelines and Best Practices for Message Monitoring](guidelines-and-best-practices-for-message-monitoring-6f598b4.md)\).
+If you're using the *Data Store Write* integration flow steps for development and testing purposes, this means, if you want to inspect how messages are being processed, use the integration flow tracing feature \(see [Guidelines and Best Practices for Message Monitoring](guidelines-and-best-practices-for-message-monitoring-6f598b4.md)\).
 
 More information:
 

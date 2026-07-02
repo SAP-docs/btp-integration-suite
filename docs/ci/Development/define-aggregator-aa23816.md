@@ -26,7 +26,7 @@ You want to combine related individual messages so that they can be processed in
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span>, then choose** \> *Aggregator*.
+1.  In the palette, choose *Message Routing*<span class="SAP-icons-V5"></span>, then choose** \> *Aggregator*.
 
 2.  Place *Aggregator* in the integration process and define the message path.
 
@@ -166,6 +166,25 @@ You want to combine related individual messages so that they can be processed in
 
         Processing of the aggregate has been finished because the *Completion Condition* has been fulfilled.
 
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Timeout Measured From*
+    
+    </td>
+    <td valign="top">
+    
+    Choose when to start measuring timeout period.
+
+    You can select one of the following options:
+
+    -   *Arrival Time of First Message for Aggregation*. The timeout period starts when the first message arrives. It defines the maximum time after the first message is received before the aggregation completes automatically.
+    -   *Arrival Time of Lat Message for Aggregation*. The timeout period starts when the last message arrives. It defines the maximum time after the last message is received before the aggregation completes automatically.
 
 
     

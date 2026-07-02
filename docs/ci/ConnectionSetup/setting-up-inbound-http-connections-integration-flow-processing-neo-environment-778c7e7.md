@@ -29,6 +29,11 @@ The following table lists the options for setting up secure connections for the 
 > ### Note:  
 > If an SAP system based on Application Server ABAP sends requests to Cloud Integration and there are 2 or more worker nodes enabled on Cloud Integration side, you can receive an `HTTP/1.1 403` authentication error. The root cause is that the SAP kernel encodes the cookies' value by default, which breaks the load-balancing feature. To solve the issue, set profile parameter `ict/disable_cookie_urlencoding` to `1` or `2` depending on kernel level. For more information, see SAP note [2681175](https://me.sap.com/notes/2681175).
 
+> ### Note:  
+> For *Client-Certificate with certificate-to-user mapping*, ensure that you have the required service keys and access configured. To generate SAP Cloud Root CA based certificates via the Destination Service REST API using a locally generated CSR \(Certificate Signing Request\), see [Manage Certificates Issued by the SAP Cloud Root CA](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/manage-certificates-issued-by-sap-cloud-root-ca?version=Cloud) and the video below.
+
+
+
 ****
 
 
@@ -69,6 +74,17 @@ Client-Certificate with certificate-to-user mapping
 <td valign="top">
 
 Load balancer authenticates sender based on a client certificate and, if the check is successful, forwards the certificate's issuer and subject DNs to the tenant in the message header. Tenant evaluates if a certificate-to-user mapping is defined \(for the certificate\) and, if so, checks whether the user \(derived from the certificate-to-user mapping\) is authorized to process the integration flow on the tenant. This step is performed based on user-to-role assignments \(defined for the subaccount for the runtime node\) and by checking the user role specified in the sender adapter.
+
+> ### Note:  
+> The client certificate is validated at the SAP BTP platform load balancer before the request reaches the Cloud Integration runtime. The certificate must include the Client Authentication Extended Key Usage \(EKU\) with `OID 1.3.6.1.5.5.7.3.2`.
+> 
+> Certificates without this EKU are rejected during the TLS handshake.
+> 
+> Ensure that the required EKU is present while renewing certificates from public Certificate Authorities. Some public CAs no longer include this EKU in newly issued TLS certificates.
+> 
+> Use certificates issued via SAP Cloud Root CA \(for example via SAP BTP Destination Service\) or configure a custom domain with a customer-managed certificate trust model.
+
+Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
 
 > ### Note:  
 > We recommend using this option for HTTP inbound connections.
@@ -232,11 +248,9 @@ More information:
 **Related Information**  
 
 
-[https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/](https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
-
 [Authentication and Authorization Options \(Inbound\)](authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 
- <?sap-ot O2O class="- topic/link " href="7679ddc6a0b34d2d943d8de76fd37a34.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/778c7e7835ff46408aafe0d499720dc7.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="7679ddc6a0b34d2d943d8de76fd37a34.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/778c7e7835ff46408aafe0d499720dc7.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Setting Up Inbound HTTP Connections \(with Certificate-to-User Mapping\), Neo Environment](setting-up-inbound-http-connections-with-certificate-to-user-mapping-neo-environment-9949c61.md "Using this option, authentication of a sender is performed based on a client certificate. With a certificate-to-user mapping, the certificate is mapped to a user, whose authorizations are checked on the tenant.")
 

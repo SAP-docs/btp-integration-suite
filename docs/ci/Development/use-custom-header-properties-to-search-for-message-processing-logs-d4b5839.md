@@ -73,6 +73,8 @@ Value
 
 po\_number
 
+\(Not a standard header, applicable for above example only.\)
+
 </td>
 <td valign="top">
 

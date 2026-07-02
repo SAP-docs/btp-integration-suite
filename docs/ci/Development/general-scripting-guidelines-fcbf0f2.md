@@ -21,8 +21,11 @@ Follow these general guidelines when using the *Script* step.
 
     -   Don't access credentials to write them into http headers. Instead, use standard channels with User Credential Artifacts.
 
+
+-   Avoid exposing sensitive information in scripts.
     -   When accessing credentials via scripts, try to avoid storing them as headers or properties directly, as Cloud Integration features such as tracing can make them visible in clear text.
 
+    -   When using the *Optimize* feature, ensure that the source code of Groovy scripts doesn't contain any sensitive information. For more details, see [3542713](https://me.sap.com/notes/3542713).
 
 -   Direct usage of Open Source classes isn't supported.
 
@@ -38,9 +41,7 @@ Follow these general guidelines when using the *Script* step.
 
     > ### Sample Code:  
     > ```
-    > Reader reader = message.getBody(Reader)
-    > def rootNode = new XmlSlurper().parse(reader)
-    > 
+    > Reader reader = message.getBody(Reader)def rootNode = new XmlSlurper().parse(reader)
     > ```
 
 -   Avoid generating pretty-printed versions of xml/json documents. Compacted \(or minified\) documents are normally smaller in size as new line characters and indents are removed from the output. For that reason, a compacted version is preferred when transmitting large documents, for example: `<xml><a>123</a></xml>`.
@@ -55,27 +56,28 @@ Follow these general guidelines when using the *Script* step.
 
 -   When adding logs in the script, use a switcher that allows to activate or deactivate them. Use the log level of the integration flow or the externalized parameters as switcher.
 
+    > ### Note:  
+    > To read the actual log level at runtime during integration flow processing, you can use a Groovy script. An example script is given at [Setting Log Levels](../Operations/setting-log-levels-4e6d3fc.md).
+    > 
+    > If you want to configure a scenario so that a specific log level is set for an integration flow at runtime, follow these steps: Pass the header `SAP_MessageProcessingLogLevel` with the input message and choose the desired log level as the header value. The processing of the integration flow will then be recorded at runtime with the specified log level \(see also [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)\).
+
 -   Don't use string objects for string literals that are frequently changed. This causes performance issues as several string objects are created in memory that are consecutively concatenated. This can cause problems when processing large payloads, for example:
 
     > ### Sample Code:  
     > ```
-    > def text = ''
-    > 10.times { text += "Line ${it}\r\n" }
-    > println(text)
-    > 
+    > def text = ''10.times { text += "Line ${it}\r\n" }println(text)
     > ```
 
     Instead, use the corresponding StringBuilder and StringBuffer classes, which help to avoid the creation of multiple intermediate string objects, for example:
 
     > ### Sample Code:  
     > ```
-    > StringBuilder sb = new StringBuilder()
-    > 10.times { sb.append("Line ${it}\r\n") }
-    > def text = sb.toString()
-    > 
+    > StringBuilder sb = new StringBuilder()10.times { sb.append("Line ${it}\r\n") }def text = sb.toString()
     > ```
 
     This pattern can be applied, for example, when you construct the output message payload iteratively and compose it from smaller pieces put together.
+
+    With regards to the differences between StringBuilder and StrinBuffer \(while both are used to create mutable objects that can be further stringified\), StringBuffer's public methods are synchronized, leading to thread safety of StringBuffer objects in a multi-threaded environment; whereas StringBuilder is not thread-safe. Yet, thread safety comes at the cost of performance overhead. As a result, as a user, evaluate and assess if thread safety / synchronization is needed. If so, consider using StringBuffer. If thread safety is not a concern, the performance can be further optimized by using StringBuilder instead.
 
 -   Don't use the script editor in the Cloud Integration *Design* section, if the code isn’t a simple transformation. Use other external tools \(like IntelliJ IDEA, for example\), which enhance the developer experience.
 
@@ -88,5 +90,32 @@ Follow these general guidelines when using the *Script* step.
 -   Don't use the `TimeZone.setDefault` method. This method changes the default time zone of the virtual machine, which can lead to multiple technical issues, for example, issues with database connectivity.
 
     To learn what to do instead of using this method, see SAP note [3289679](https://me.sap.com/notes/3289679).
+
+-   Define your script’s import statement so that it consumes native APIs from one of the following APIs:
+
+    -   SDK Groovy API
+
+        See:
+
+        [SDK API](sdk-api-c5c7933.md)
+
+        [Groovy SDK Java doc](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html)
+
+    -   Native Groovy APIs
+
+        See: [Groovy JDK API Documentation](https://groovy-lang.org/gdk.html)
+
+        In particular, all supported APIs up to Groovy runtime version 2.4.21 are supported.
+
+        See also: [Define a Local Script Step](define-a-local-script-step-03b32eb.md)
+
+
+    We don’t recommend to consume external code \(uploaded as integration flow resource\). If you do so, a warning is raised.
+
+-   Use CodeNarc to analyze your Groovy code for defects, bad practices, inconsistencies, and style issues, for example \(static check\).
+
+    Supported CodeNarc version: 3.4.0
+
+    See: [CodeNarc](https://github.com/CodeNarc/CodeNarc)
 
 

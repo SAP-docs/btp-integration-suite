@@ -17,7 +17,7 @@ The user role monitor allows a tenant administrator to manage user roles which t
 
 You open the area with the following action:
 
-In the *Monitor* view, click the *User Roles* tile in the *Manage Security* section. User roles defined by SAP and by the tenant administrator are displayed.
+In the *Monitor* view, select the *User Roles* tile in the *Manage Security* section. User roles defined by SAP and by the tenant administrator are displayed.
 
 
 
@@ -118,11 +118,14 @@ Choose one of the two buttons to perform an action. The available actions are:
 </table>
 
 > ### Note:  
-> The technical user role **ESBMessaging.send** is predefined by SAP and cannot be removed or changed.
+> The technical user roles **ESBMessaging.send** and **API.invoke** is predefined by SAP and cannot be removed or changed.
+
+> ### Note:  
+> There is no default role collection available for the **API.invoke** role. Therefore, the tenant administrator must create a custom role collection that includes this role and make it available for assignment to IDP users in order to support the IDP user-based flow.
 
 To sort and filter the content of the table, choose *Table Settings* \(:gear:\) displayed above the table. On the subsequent screen, you can define how the table entries are to be sorted \(by specifying an attribute and whether the entries are to be sorted for that attribute in ascending or descending order\). You can also filter the table entries for certain attributes.
 
-You also have the option to refresh the table by clicking *Reload content* \(<span class="SAP-icons"></span>\).
+You also have the option to refresh the table by selecting *Reload content* \(<span class="SAP-icons-V5"></span>\).
 
 
 
@@ -134,13 +137,13 @@ The following actions are available:
 
 -   *Add*
 
-    After clicking the button, a subsequent input box appears where you need to specify the role name and the role description. Only the role description is editable afterwards.
+    After you have chosen *Add*, a subsequent input box appears where you need to specify the role name and the role description. Only the role description is editable afterwards.
 
 -   *Download to JSON*
 
     A JSON file of the selected user roles is downloaded. You need to import the JSON file in the *Process Integration Runtime* tile to create a service instance in the Cloud Foundry environment that is associated with a user role. Only then, you can call an integration flow endpoint and ensure the processing of the integration flow on the runtime node.
 
-    You can either use a custom role that you created, or use the predefined role **ESBMessaging.send**. The JSON content of the role **ESBMessaging.send** is:
+    You can either use a custom role that you created, or use the predefined roles **ESBMessaging.send** or **API.invoke**. The JSON content of the role **ESBMessaging.send** is:
 
     > ### Sample Code:  
     > ```
@@ -151,7 +154,18 @@ The following actions are available:
     > }
     > ```
 
-    Instead of downloading the JSON file, you can also use the button *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons"></span>\) above the table. In the next step, you can use the copied format to create, as an example, a new service instance.
+    Similarly, the JSON content of the predefined role **API.invoke** is:
+
+    > ### Sample Code:  
+    > ```
+    > {
+    >   "roles":[
+    >     "API.invoke"
+    >   ]
+    > }
+    > ```
+
+    Instead of downloading the JSON file, you can also use *Copy selected roles in JSON format to the clipboard* \(<span class="SAP-icons-V5"></span>\) at the beginning of the table. In the next step, you can use the copied format to create, as an example, a new service instance.
 
 
 
@@ -162,7 +176,7 @@ The following actions are available:
 
 For a detailed instruction on how to create a service instance and a service key, visit [Creating Service Instance and Service Key for Inbound Authentication](../ConnectionSetup/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
 
-Watch the below video to see a basic inbound authentication end-to-end scenario.
+Watch the next video to know more about a basic inbound authentication end-to-end scenario.
 
 > ### Note:  
 > This video was created before our branding changes related to SAP technology were announced in January 2021.

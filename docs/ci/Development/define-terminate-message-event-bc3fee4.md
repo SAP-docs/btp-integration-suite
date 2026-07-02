@@ -13,7 +13,7 @@ A Terminate Message event stops further processing of a message.
 You use a Terminate Message event if you want to stop a message from further processing. This can be the case if, for example, you have defined specific values on the payload. If the payload doesn't match those values, the process is terminated.
 
 > ### Note:  
-> The message status displayed in the message processing log is `Completed`, because it has terminated the message succesfully.
+> The message processing log displays the status as `Completed`, because it indicates that the system has successfully terminated the message.
 
 If you like to configure your integration flow that way that the message status displayed in the message processing log is `Failed` \(even in case an exception occurs during the processing sequence which has been handled successfully in an Exception Subprocess\), you have the following options:
 
@@ -28,7 +28,7 @@ This blog provides more information on the different message events that you can
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \> :radio_button:*Terminate Message*
+1.  In the palette, choose <span class="SAP-icons-V5"> Events</span> \> :radio_button:*Terminate Message*
 
 2.  Place the event icon in the desired location of your integration flow.
 

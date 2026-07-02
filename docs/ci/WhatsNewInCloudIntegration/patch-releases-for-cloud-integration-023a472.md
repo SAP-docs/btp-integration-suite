@@ -1,12 +1,14 @@
 <!-- loio023a4725bb734f86be8a5625abe54110 -->
 
-# Patch Releases for Cloud Integration
+# Patch Releases for Cloud Integration 
 
-This topic provides information on patch releases for Cloud Integration for hotfixes, bugfixes, and code enhancements.
+This topic provides information on patch releases for hotfixes, bugfixes, and code enhancements.
 
 
 
-The following patch release information covers the most recent changes made to the latest version of the software. For earlier patch release notes, see [Archive - Patch Release Notes for Cloud Integration](archive-patch-release-notes-for-cloud-integration-f4b7126.md).
+This topic covers patches for SAP Cloud Integration and Integration Advisor.
+
+The following patch release information covers the most recent changes made to the latest version of the software.
 
 
 
@@ -73,13 +75,15 @@ The following patch release information covers the most recent changes made to t
 > 
 > If you now update to software version 6.20.12, this patch provides you with bugfix B **and** bugfix C.
 
+Patches for different components are associated with different major software version numbers. For example, patches for Cloud Integration in the Cloud Foundry environment have major software version 6 \(for example, `6.53.23`\). For more information, see [Understanding Software Version Numbers](understanding-software-version-numbers-caad468.md).
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_d44_zpb_bzb"/>
 
-## October 2023
+## June 2026
 
-**Software Increment: 2308**
+Software Increment: 2604
+
+****
 
 
 <table>
@@ -103,68 +107,251 @@ Description
 <tr>
 <td valign="top">
 
-Integration Suite
+Cloud Integration
 
 </td>
 <td valign="top">
 
-5.52.11
+6.79.80
 
 </td>
 <td valign="top">
 
-There is an issue with customer database connection, as existing drivers are incompatible with the customer database. To allowlist the new SQL Server Driver 11.2.3 with this patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Suite
-
-</td>
-<td valign="top">
-
-6.44.12
-
-</td>
-<td valign="top">
-
-Back-up keystore entries were not shown due to an issue in the UI. This patch fixes the issue.
+This patch fixes the issue where Aggregator V1.1 remains active indefinitely. A race condition caused timeout-based completion to fail because of optimistic locking.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Integration Advisor
+Cloud Integration
 
 </td>
 <td valign="top">
 
-1.78.5
+8.43.23
 
 </td>
 <td valign="top">
 
-Customers are unable to activate their MAGs due to a code issue as the UI generates duplicate mappings for the target nodes. This patch fixes this issue.
+This patch fixes the issue where Aggregator V1.1 remains active indefinitely. A race condition caused timeout-based completion to fail because of optimistic locking.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Integration Suite
+Cloud Integration
 
 </td>
 <td valign="top">
 
-6.44.13
+8.43.22
 
 </td>
 <td valign="top">
 
-As the external logging activation is not synchronized with Kafka activation, depending on the timing, the external logging activation can terminate during start-up and activation changes are no longer processed. External logging activation must be manually restarted. This patch fixes the issue.
+This patch includes the following updates:
+
+-   Updated the Neethi library to version 3.2.2 and Apache CXF to 3.4.8-sap-10 to resolve issues caused by circular references during WS-Policy normalization.
+-   Implemented JMX-based monitoring for the RFC Receiver adapter to automatically detect long-running integration flows and raise Dynatrace notifications.
+-   Fixed a backward compatibility issue that prevented integration flows from opening or deploying after a system rollback.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.79.79
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Updated the Neethi library to version 3.2.2 and Apache CXF to 3.4.8-sap-10 to resolve issues caused by circular references during WS-Policy normalization.
+-   Implemented JMX-based monitoring for the RFC Receiver adapter to automatically detect long-running integration flows and raise Dynatrace notifications.
+-   Fixed a backward compatibility issue that prevented integration flows from opening or deploying after a system rollback.
+-   Improved the MPL cleanup job by optimizing a long-running query to handle high data volumes more efficiently.
+-   Fixed an issue that prevented trading partner parameters from being saved in agreement templates and caused errors during agreement export.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.43.20
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   This fix prevents the manifest name in the outgoing XI message from being modified when you have an attachment name with a `+` character. It avoids replacing `+` with a space `‘ ‘`.
+-   Removed a database migration script that caused datasource initialization failures when you use agreement versioning.
+-   Optimized the data source housekeeping threads to avoid out-of-memory errors in the application.
+-   Removed incorrectly stored PIDs inside the agreement that caused activation failures.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.79.73
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   This fix prevents the manifest name in the outgoing XI message from being modified when you have an attachment name with a `+` character. It avoids replacing `+` with a space `‘ ‘`.
+-   A patch release for `it-b2b-calm` and `it-b2b-archiving` was performed without including the corresponding assembly.
+-   Removed a database migration script that caused datasource initialization failures when you use agreement versioning.
+-   Optimized the data source housekeeping threads to avoid out-of-memory errors in the application.
+-   Removed incorrectly stored PIDs inside the agreement that caused activation failures.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.79.69
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed a race condition issue that occurred in the *it-rc-web* application.
+-   Resolved an issue with time zone parsing in extracted data.
+-   Adjusted API rate limits to accommodate higher traffic loads, reducing the occurrence of throttling errors \(HTTP 429\) during peak usage.
+-   Enhanced the data cleanup job to handle larger volumes more efficiently by supporting configurable time ranges, improving overall system reliability.
+-   Significantly improved loading performance when navigating to the *Agreements* page, eliminating long wait times especially for customers with large agreement portfolios.
+-   Fixed an XML parsing issue.
+-   Resolved read time-out errors that occurred during Kafka topic setup as part of the deployment process.
+-   Removed the lower bound restriction for the JDBC Netty Worker Thread Count setting. It can now be configured below the default value of 256, providing greater flexibility for resource-constrained environments.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.43.19
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed a race condition issue that occurred in the *it-rc-web* application.
+-   Significantly improved loading performance when navigating to the *Agreements* page, eliminating long wait times especially for customers with large agreement portfolios.
+-   Removed the lower bound restriction for the JDBC Netty Worker Thread Count setting. It can now be configured below the default value of 256, providing greater flexibility for resource-constrained environments.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.79.60
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed an issue where rollback did not update the correct version in the UI.
+-   Security-relevant fixes have been back-ported to the Camel 3.14.7 branch, along with a custom Aggregator fix.
+-   The B2B Document cast error has been resolved through a new implementation and native query.
+-   Added the missing dependency `liquibase-extension-lockservice` to the class path.
+-   Resolved a security compliance vulnerability.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.52.11
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Introduction of a certificate validation method to support the new `sap_cloudintegrationcertificate` issued by the SAP Cloud Platform Client CA.
+-   Security-relevant fixes have been back-ported to the Camel 3.14.7 branch, along with a custom Aggregator fix.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.43.17
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Security-relevant fixes have been back-ported to the Camel 3.14.7 branch, along with a custom Aggregator fix.
+-   Resolved a security compliance vulnerability.
+
+
 
 </td>
 </tr>
@@ -172,11 +359,11 @@ As the external logging activation is not synchronized with Kafka activation, de
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_wd4_c52_qyb"/>
+## May 2026
 
-## September 2023
+Software Increment: 2603
 
-**Software Increment: 2305**
+****
 
 
 <table>
@@ -205,12 +392,225 @@ Cloud Integration
 </td>
 <td valign="top">
 
-2.64.1
+6.78.63
 
 </td>
 <td valign="top">
 
-On some tenants, it was impossible to create or update integration flows using the JMS enterprise capability, due to a missing configuration on the on the enterprise licensing information. This patch fixes the issue.
+This patch includes the following updates:
+
+-   Fixed issues in Service Interface artifact creation and proxy generation when using local XSD references. The patch also resolves agreement import failures by ensuring imported data is properly rolled back during failed import operations, preventing duplicate resource entries during re-import.
+-   Fixed an issue where OFTP Sender Channel matching did not work correctly for different VFNs.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.42.14
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed an issue where OFTP Sender Channel matching did not work correctly for different VFNs.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.78.61
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Enhanced certificate handling by migrating Ruby PEM certificate processing to use the native Ruby OpenSSL library. This update improves performance, removes external CLI dependencies, and supports FIPS 140-2 compliance.
+-   Improved readiness feature handling to safeguard against 404 errors until the configured timeout period is reached. The update also improves worker startup reliability during software updates.
+-   Applied a fix for aggregator processing in Camel.
+-   Fixed an issue with parsing deeply nested XML data.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.51.12
+
+</td>
+<td valign="top">
+
+This patch includes the following update:
+
+-   Applied a fix for aggregator processing in Camel.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.78.56
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Removed the commercial logo from community content search results.
+-   Filtered out Groovy Script Version 2 artifacts from Message Mappings, as this version is currently not supported in Message Mapping scenarios.
+-   Updated Spring Boot and Spring Security patch versions to address identified security vulnerabilities.
+-   Added explicit handling for large CLOB data when using Oracle drivers.
+-   Fixed an issue where TPM could fail to load due to stale cache handling during background cleanup operations. This enhancement improves datasource cache cleanup stability and prevents recurring TPM loading issues.
+-   Fixed a regression issue where custom mappings stopped functioning after editing and reactivating agreements. Required Partner Directory parameters are now correctly updated during reactivation.
+-   Resolved a Message Mapping validation issue introduced after migrating backend validation services to Java 25. The fix addresses schema parsing restrictions affecting deeply nested XML structures.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.51.11
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Filtered out Groovy Script Version 2 artifacts from Message Mappings, as this version is currently not supported in Message Mapping scenarios.
+-   Added explicit handling for large CLOB data when using Oracle drivers.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.42.11
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed a regression issue where custom mappings stopped functioning after editing and reactivating agreements. Required Partner Directory parameters are now correctly updated during reactivation.
+-   Resolved a Message Mapping validation issue introduced after migrating backend validation services to Java 25. The fix addresses schema parsing restrictions affecting deeply nested XML structures.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.78.49
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Enables you to add user-centric comments during the PUT call when updating an integration flow.
+-   Implemented code enhancements in the design-service to address out-of-memory issues caused by delays in report summary generation.
+-   Improved deployment stability in the IT-CO application by optimizing the handling of large data volumes during deployment-related operations, resulting in more efficient execution under load.
+-   Fixed an issue where TPM could fail to load after updating to increment 2603.
+-   Updated Apache Commons subsystem library versions to the latest supported release.
+-   Fixed a subsystem deployment order issue that could cause integration flows to intermittently enter Starting or Error states before returning to Started status.
+-   Corrected keystore navigation and update handling to improve processing of section-based names and ensure reliable validation of popup options.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.51.9
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Implemented code enhancements in the design-service to address out-of-memory issues caused by delays in report summary generation.
+-   Updated Apache Commons subsystem library versions to the latest supported release.
+-   Corrected keystore navigation and update handling to improve processing of section-based names and ensure reliable validation of popup options.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.42.10
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Corrected keystore navigation and update handling to improve processing of section-based names and ensure reliable validation of popup options.
+
+
 
 </td>
 </tr>
@@ -218,11 +618,11 @@ On some tenants, it was impossible to create or update integration flows using t
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_slp_hbl_jyb"/>
+## April 2026
 
-## August 2023
+Software Increment: 2602
 
-**Software Increment: 2305**
+****
 
 
 <table>
@@ -251,31 +651,19 @@ Cloud Integration
 </td>
 <td valign="top">
 
-5.49.14
+6.77.47
 
 </td>
 <td valign="top">
 
-The cluster migration to different brokers using the system property `com.sap.core.messaging.admin.client.group` was causing a mismatch between CMN and TMN leading to a break in the communication.
+This patch includes the following items:
 
-This patch fixes the issue by clearing out the system property in the TMN.
+-   Fixes intermittent failures in Script Optimization requests caused by false positives from Azure prompt filtering by improving prompt handling.
+-   Ensures compatibility by filtering out unsupported version 2 Groovy scripts in Message Mappings.
+-   Removes unnecessary logging of database details to improve logging efficiency.
+-   Implements a security fix by removing unnecessary logging of database details.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
 
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.41.32
-
-</td>
-<td valign="top">
-
-mTLS based XSUAA keys might get expired. This patch fixes the issue by extending the validity of mTLS based keys to 150 days.
 
 </td>
 </tr>
@@ -287,12 +675,161 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.41.30
+7.50.10
 
 </td>
 <td valign="top">
 
-The integration flow execution was getting impacted during Neo to Cloud Foundry migration. This patch fixes the issue by improving the integration flow execution time.
+This patch ensures compatibility by filtering out unsupported version 2 Groovy scripts in Message Mappings.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.77.42
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Upgrades Netty from version 4.2.6.Final to 4.2.11.Final to address security vulnerabilities, including protection against potential DDoS and HTTP request smuggling attacks.
+-   Fixes security vulnerabilities by upgrading Spring Boot and Spring Security to newer versions, ensuring improved application security.
+-   Fixes an issue where message processing failed when trace log level was enabled for the mail receiver using AES-GCM encryption.
+-   Improves performance by reducing excessive database calls during each flow deployment, resulting in better overall system performance.
+-   Fixes a data inconsistency issue in NS2 where deleted bindings were still visible in the UI, preventing users from performing further delete operations.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.41.16
+
+</td>
+<td valign="top">
+
+This patch fixes an issue where message processing failed when trace log level was enabled for the mail receiver using AES-GCM encryption.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.77.38
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Removes unnecessary explicit transactions \(BEGIN/COMMIT\) for read-only \(SELECT\) queries in the StatementExecutor, preventing database connection retention and avoiding connection pool exhaustion under load.
+-   Prevents out-of-memory conditions that caused the IT-TPM application to crash intermittently, improving overall application stability.
+-   Adds additional logging and retry mechanisms in the JDBC Adapter to address intermittent service reference null issues and improve stability.
+-   Fixes an issue where re-adding alternative partner agencies after recreating a Partner Directory \(PID\) entry could result in duplicate entry errors. All agencies can now be added successfully without errors in EIC.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.50.7
+
+</td>
+<td valign="top">
+
+This patch adds additional logging and retry mechanisms in the JDBC Adapter to address intermittent service reference null issues and improve stability.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.41.15
+
+</td>
+<td valign="top">
+
+This patch adds additional logging and retry mechanisms in the JDBC Adapter to address intermittent service reference null issues and improve stability.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.77.32
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Configures the thread pool size of the RFM poller to enhance resiliency by increasing the pool size from 5 to 10, reducing the risk of thread unavailability for RFM poller tasks.
+-   Fixes an issue where CMS encryption and signing were always disabled on the OFTP Receiver channel.
+-   Resolves a metering processing failure caused by missing mandatory MPL IDs after enabling the new metering database structure, especially when the log level was set to None. This ensures proper handling of records in the metering database.
+-   Removes an additional logger that was unnecessarily logging database details, improving logging efficiency.
+-   Fixes failures in Script Optimization requests observed in Canary due to rejection by the Azure content filter.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.41.14
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Configures the thread pool size of the RFM poller to enhance resiliency by increasing the pool size from 5 to 10, reducing the risk of thread unavailability for RFM poller tasks.
+-   Fixes an issue where CMS encryption and signing were always disabled on the OFTP Receiver channel.
+-   Removes an additional logger that was unnecessarily logging database details, improving logging efficiency.
+-   Fixes failures in Script Optimization requests observed in Canary due to rejection by the Azure content filter.
+
+
 
 </td>
 </tr>
@@ -300,11 +837,11 @@ The integration flow execution was getting impacted during Neo to Cloud Foundry 
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_l42_2wn_fyb"/>
+## March 2026
 
-## July 2023
+Software Increment: 2601
 
-**Software Increment: 2305**
+****
 
 
 <table>
@@ -333,29 +870,12 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.41.26
+8.40.27
 
 </td>
 <td valign="top">
 
-Transporting integration content from Transport Management Service or CTS+ to Cloud Integration was failing for some customers in the Cloud Foundry environment. This patch fixes the issue by allowing to fetch the required parameter before constructing the URL attribute.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.41.26
-
-</td>
-<td valign="top">
-
-When `itspace` was included in the URL path of the *Monitor* \> *Integrations* \(message processing log monitoring\) application of SAP Integration Suite, the navigation between *Monitor* \> *Integrations* \(message processing log monitoring\) and *Monitor* \> *B2B Scenarios* was not possible. To fix the issue, with this patch `itspace` was removed from the SAP Integration Suite address.
+This patch fixes the issue of network errors in the OData V2 receiver, caused by stale connections remaining in the pool after a timeout, by implementing a background job that periodically clears these stale connections when the system variable `SAP_ODATA2_CONNECTION_POOL_CLEANUP_ENABLED` is set to `True`.
 
 </td>
 </tr>
@@ -367,33 +887,12 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.41.25
+6.76.46
 
 </td>
 <td valign="top">
 
-Customers were facing sporadic issues during script collection deployment. This patch fixes the issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.41.24
-
-</td>
-<td valign="top">
-
-1.  Due to object store issues, customers were not able to perform deployments or undeployments. This patch has enhanced logs to help identify root cause of the issue.
-
-2.  There were CO crashes observed due to high CPU usage. This patch has a fix which improves the efficiency.
-
-
+This patch fixes the issue of network errors in the OData V2 receiver, caused by stale connections remaining in the pool after a timeout, by implementing a background job that periodically clears these stale connections when the system variable `SAP_ODATA2_CONNECTION_POOL_CLEANUP_ENABLED` is set to `True`.
 
 </td>
 </tr>
@@ -405,12 +904,123 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.41.23
+8.40.26
 
 </td>
 <td valign="top">
 
-When trying to deploy a message mapping artifact, the deployment was failing. This patch fixes the issue.
+This patch fixed an issue that prevented the deletion of service keys for Process Integration Runtime service instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.45
+
+</td>
+<td valign="top">
+
+This patch fixed an issue that prevented the deletion of service keys for Process Integration Runtime service instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.40.25
+
+</td>
+<td valign="top">
+
+This patch includes the following:
+
+-   It enhances partner `Delete` for PD in Edge Integration Cell \(EIC\).
+-   Ensures that the exception subprocess functionality for API artifacts in EIC works correctly, preventing deployment failures in environments running older worker versions.
+-   Improves the reliability of the HTTP Receiver Adapter by introducing configurable retry support for I/O-related connection errors, reducing message failures caused by intermittent network connection resets. \(Retry is disabled by default and can be enabled by SAP operations\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.49.13
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Introduces Retry mechanisms to the JDBC adapter to mitigate short-term failures with connectivity services or database interruptions. Retry operations are configured via tenant level ENV variables to enhance stability.
+-   Resolves errors with the OData V4 adapter failing to parse `202 Accepted` responses when the `Prefer: respond-async` header is included. This patch ensures successful processing of async requests.
+-   Enhances the JDBC adapter with additional loggers and Retry mechanisms to resolve Service Reference Null issues.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.44
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   It enhances the JDBC adapter with additional loggers and Retry mechanisms to resolve Service Reference Null issues.
+-   Stale artifact metadata in the microservice database is now automatically cleaned up, fixing issues where artifacts were incorrectly displayed as *Starting* during rapid deploy/undeploy or redeploy actions. This ensures accurate monitoring status.
+-   The cleanup expiry configuration was reduced from 7 to 3 days to prevent the buildup of outdated artifacts.
+-   Calling integration flow endpoints with an expired OAuth token now returns the correct `HTTP 401` response code instead of `HTTP 500`, ensuring accurate authentication error reporting.
+-   Partner `Delete` enhancement for PD in EIC.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.76.36
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Resolves issues with software updates getting stuck by fixing the deployment automation script.
+-   Fixes an issue with the generation of the evaluation report.
+-   It enhances the JDBC adapter with additional loggers and Retry mechanisms to resolve Service Reference Null issues.
+
+
 
 </td>
 </tr>
@@ -418,122 +1028,11 @@ When trying to deploy a message mapping artifact, the deployment was failing. Th
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ghz_gbm_1yb"/>
+## March 2026
 
-## July 2023
+Software Increment: 2513
 
-**Software Increment: 2304**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.74.3
-
-</td>
-<td valign="top">
-
-There was an issue with activating agreements. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.40.20
-
-</td>
-<td valign="top">
-
-There was the issue that when designing APIs \(using the *API Management* capability\) deployed integration flows could not be fetched. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.40.18
-
-5.48.14
-
-</td>
-<td valign="top">
-
-There was an issue with long-running transactions that resulted in exhaustion of database resources. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ycv_t1x_5xb"/>
-
-## June 2023
-
-**Software Increment: 2303**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ir2_xh3_mxb"/>
-
-## May 2023
-
-**Software Increment: 2303**
+****
 
 
 <table>
@@ -562,2880 +1061,19 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.39.18
+6.75.51
 
 </td>
 <td valign="top">
 
-There was an issue wis the de-commissioning of tenants. This patch fixes the issue.
+This patch includes the following items:
 
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.73.2
-
-</td>
-<td valign="top">
-
-For pre-transformation of message implementation guidelines, only a limited amount of source nodes was selectable. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.39.17
-
-5.47.9
-
-</td>
-<td valign="top">
-
-There have been issues with the usage of JMS adapters. This patch fixes the issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Assessment
-
-</td>
-<td valign="top">
-
-6.39.16
-
-</td>
-<td valign="top">
-
-There have been issues with maintaining the sequence of questions in Integration Assessment questionnaires. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_bqs_d4l_cxb"/>
-
-## April 2023
-
-**Software Increment: 2302**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.72.3
-
-</td>
-<td valign="top">
-
-You were not able to finish the expected pre-transformation step, as some nodes from the source message implementation weren't shown in the drop down box and couldn't be selected.
-
-Therefore it was not possible to save the mapping guidelines. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Trading Partner Management
-
-</td>
-<td valign="top">
-
-6.38.23
-
-</td>
-<td valign="top">
-
-The SAP UI5 dropdown box entries are limited to 100. If you have more than 100 tradings partners for example, the ones exceeding the limit will not be shown and cannot be selected for further operations. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.38.22
-
-</td>
-<td valign="top">
-
-The deployment of artifacts from packages with names containing non ASCII characters was impossible in the Cloud Foundry environment with latest software version. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.38.21
-
-5.46.13
-
-</td>
-<td valign="top">
-
-The upcoming Netty version upgrade requests additional loggers to collect **request and response headers** for the AS2 adapter, to avoid incompatibility. This patch is for runtime data collection.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.38.20
-
-</td>
-<td valign="top">
-
-There have been issues in productive tenants with too much logging, when the database connection is used in an uncategorized context. This makes the log analysis difficult. The default log level should be “Info” and only changed on demand. This patch fixes the issues
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Migration Assessment
-
-</td>
-<td valign="top">
-
-6.38.19
-
-</td>
-<td valign="top">
-
-There have been issues with mapping projects that can’t be completed because of erroneous mapping lines contained in the corresponding MAG. These line are due to ambiguous node Ids, created during pre-transformation. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.38.16
-
-</td>
-<td valign="top">
-
-There has been an issue with the script collection not being available after undeployment and redeployment. This causes the message processing to fail for the integration flows referring to the script collection. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_dqr_f35_vwb"/>
-
-## March 2023
-
-**Software Increment: 2301**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.37.26
-
-</td>
-<td valign="top">
-
-There has been an issue with the *Trace* log level that resulted in message processing failure when multiple integration flows have been traced. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.37.25
-
-</td>
-<td valign="top">
-
-There has been an issue with the activation of endpoints with self-signed certificates \(for example, involved when using external logging with Splunk trial instances\). This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.45.13
-
-</td>
-<td valign="top">
-
-There has been an issue with the aggregator integration flow step resulting in aborted message processing and error messages. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.45.11
-
-</td>
-<td valign="top">
-
-There was an issue with the failover feature. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.71.3
-
-</td>
-<td valign="top">
-
-There has been an issue with the export of MIGs based on old custom messages. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ufp_c35_vwb"/>
-
-## February 2023
-
-**Software Increment: 2213**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.36.20
-
-</td>
-<td valign="top">
-
-There was an issue with integration flows that processed many calls to adapters writing attributes \(for example, RFC adapter\). The time required to persist message processing logs increased quadratically with the number of adapter attributes. This resulted in failures and infinite retries. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_abx_1jl_jwb"/>
-
-## February 2023
-
-**Software Increment: 2212**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.35.20
-
-</td>
-<td valign="top">
-
-There was an issue with the data archiving feature as customers were unable to activate data archiving with client credentials. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.35.19
-
-</td>
-<td valign="top">
-
-There was an issue in the DB when a large amount of data is being fetched, setting a transaction into "read only"mode and blocking the message transfer. The patch now allows the explicit closing of the transaction, setting the "read only" mode to "false" and restores the dirty connection.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.35.18
-
-</td>
-<td valign="top">
-
-There were issues in some micro-services: if the Operations applications are restarted under load, a data race condition can cause the startup to fail and require a manual restart. No database connections can be made and all requests are rejected until the application is manually restarted. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.35.14
-
-</td>
-<td valign="top">
-
-There has been an issue with the OData API resource `IntegrationRuntimeArtifacts` \(of the `Integration Content` API\) . This patch fixes the issue, and you can now use the following paths to fetch artifact information in the CLoud Foundry environment:
-
-`/IntegrationRuntimeArtifacts(Id='{id}')/{property}/$value` 
-
-`/IntegrationRuntimeArtifacts(Id='{id}')`
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_af3_nnm_fwb"/>
-
-## January 2023
-
-**Software Increment: 2212**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.43.7
-
-6.35.15
-
-</td>
-<td valign="top">
-
-There was an issue with the XI sender adapter: Attachments with content types `text/*` and without `Content-Transfer-Encoding` header have been lost when parameter *Quality Of Service* was set to *Exactly Once*. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.35.13
-
-</td>
-<td valign="top">
-
-There was a coding error that had an impact on the data consistency on the customer tenant. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.43.6
-
-</td>
-<td valign="top">
-
-There was the issue that older versions of the SuccessFactors receiver adapter didn't show all available data centers in the *Address* field. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_v1n_jf4_dwb"/>
-
-## January 2023
-
-**Software Increment: 2210**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.33.32
-
-</td>
-<td valign="top">
-
-In high volume situations, few customers observed intermittent SQL exception errors such as `Cannot execute INSERT/DELETE/UPDATE/SELECT FOR UPDATE in read-only mode` during runtime processing of messages. The patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Trading Partner Management
-
-</td>
-<td valign="top">
-
-6.33.31
-
-</td>
-<td valign="top">
-
-With this patch, user accounts that contain vertical bars can be parsed successfully.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_gqp_cdm_vvb"/>
-
-## December 2022
-
-**Software Increment: 2210**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.33.26
-
-</td>
-<td valign="top">
-
-With this patch, the following change has been implemented:
-
-A check has been introduced for the process of copying an integration adapter package from the *Discover* to the *Design* section. This new check validates if the integration adapter contained in the package is supposed to be available for your service plan.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.67.5
-
-</td>
-<td valign="top">
-
-There have been issues with the mapping documentation and the import and export feature. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.33.25
-
-</td>
-<td valign="top">
-
-With this patch, the following change has been implemented:
-
-The pretransformation feature was available for Integration Advisor as part of standalone SAP Cloud Integration \(but not in SAP Integration Suite\). With this patch, the feature is also available for SAP Integration Suite.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ikw_kks_jvb"/>
-
-## November 2022
-
-**Software Increment: 2209**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.66.9
-
-</td>
-<td valign="top">
-
-A coding error has resulted in customizing data being wrongly displayed. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.40.9
-
-</td>
-<td valign="top">
-
-There was the issue that messages aren't processed by the following sender adapters: SOAP SOAP 1.x, SOAP SAP RM, XI, IDoc. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Migration Tooling \(Beta\)
-
-</td>
-<td valign="top">
-
-6.32.24
-
-</td>
-<td valign="top">
-
-There have been issues with certain Migration Tooling \(Beta\) templates. This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.32.23
-
-</td>
-<td valign="top">
-
-There was an issue with the integration flow simulation feature \(mapping simulations run into a timeout\). This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.32.19
-
-</td>
-<td valign="top">
-
-There had been the following issue with the XI receiver adapter. Under certain conditions, the adapter doesn't send messages as expected: The message contains an attachment that already contains a content ID. The content ID is used to create the request without checking if the content ID is in accordance with the specification. The patch provides a bugfix that enables the XI receiver adapter to generate a new content ID in the described case and, that way, to make sure that message processing doesn't fail.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.32.18
-
-</td>
-<td valign="top">
-
-There had been the following issue: An integration flow disappears from the Web UI after the first deployment, when the runtime location status transitions from NEW to ACTIVE. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_yth_4mw_bvb"/>
-
-## October 2022
-
-**Software Increment: 2208**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.31
-
-</td>
-<td valign="top">
-
-Customers are unable to access/navigate to the Integration Suite capabilities via home page, as the XUSAA token is giving an incorrect URL and impacting the token exchange flow. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.30
-
-</td>
-<td valign="top">
-
-Integration flow simulations time out if kafka consumer rebalancing occurs during the simulation process, impairing the use of the simulation feature. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.26
-
-</td>
-<td valign="top">
-
-If a stuck artifact is identified, deployment of new artifacts is disabled. This fix allows deployments/undeployment of artifacts and improves exception handling during the same.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.25
-
-</td>
-<td valign="top">
-
-Due to a missing path in the Integration Studio router, customers could not use the CPI Discovery feature for APIM in the Integration Studio context. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.24
-
-</td>
-<td valign="top">
-
-Due an existing bug, message processing can occasionally continue even if an artifact was undeployed. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.23
-
-</td>
-<td valign="top">
-
-There were issues when using the environment variable `IT_TENANT_UX_DOMAIN` for URL calculation on Integration Studio tenants, as the environment variable value was changed.The value of `IT_TENANT_UX_DOMAIN` has been reset, and we introduced a new environment variable `IT_TENANT_ISTUDIO_UX_DOMAIN` to be used on Integration Studio tenants for URL calculation pointing to the Web UI.
-
-For non-Integration-Studio tenants you still have to use `IT_TENANT_UX_DOMAIN` for all URL calculations.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.31.20
-
-</td>
-<td valign="top">
-
-There is an issue in the JMS queue, as large messages are blocking the queue and stopping all messages deliveries. This patch fixes the issue in the API.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.39.13
-
-</td>
-<td valign="top">
-
-The integration flow deployment is impossible if a test artifact stays in deploying state. This patch fixes this issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_ekg_b1j_s5b"/>
-
-## September 2022
-
-**Software Increment: 2207**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.30.16
-
-5.38.13
-
-</td>
-<td valign="top">
-
-There was an issue with the XMLFactory due to missing libraries in OData V2 receiver. This patch fixes the issue and contains log enhancements for trouble shooting.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.30.13
-
-</td>
-<td valign="top">
-
-Due to an inconsistency in the unlocking/unlocking processes, timer based integration flow executions are overlapping. This patch fixes the issue
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.30.11
-
-</td>
-<td valign="top">
-
-There is an issue in the simulation request execution for integration flows, message mappings and other artifacts. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.38.12
-
-6.30.10
-
-</td>
-<td valign="top">
-
-In some cases, DB connections are not closed in case of errors. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.30.9
-
-</td>
-<td valign="top">
-
-The Integration flow deployment was failing due to worker configurations. The default worker was updated configuration to resolve the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.38.11
-
-</td>
-<td valign="top">
-
-Due to a stricter URL-parsing introduced by a recent SAP JVM patch, LDAP operations are failing. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.38.10
-
-</td>
-<td valign="top">
-
-There is an issue in reading the metadata of the Cluster Lock table, resulting in locks not being acquired, and message processing failure for timer-based messages, as they are moved to “discarded” state. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_qpt_wns_j5b"/>
-
-## August 2022
-
-**Software Increment: 2206**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.17
-
-</td>
-<td valign="top">
-
-Improved the application parameters for optimized database communication during “Determination of Artifact status" and "On-demand deployment of Artifacts"
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.63.6
-
-</td>
-<td valign="top">
-
-Due to missing name documentation for some nodes, the MIGs’ migration based on a custom message and containing qualified nodes is not possible. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.63.6
-
-</td>
-<td valign="top">
-
-Since the validation check for messages requiring prefixes is failing, the use of MIG simulation for MIGs based on Edifact, Eancom and X12 TypeSystems is impossible. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.16
-
-</td>
-<td valign="top">
-
-The TRM deployment experienced issues due to circular dependencies. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.15
-
-5.37.7
-
-</td>
-<td valign="top">
-
-In some cases, prepackaged content from “Order Management Foundation” \(OMF\) is adding debug information via scripts to MPLs, even if the log level is set to “info” due to a change in CPI behavior. This patch makes sure that the restriction on log level “debug” is considered again by the prepackaged content.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.14
-
-5.37.6
-
-</td>
-<td valign="top">
-
-The IDoc adapter generates and sets a new DOCNUM field in the payload when starting, but usually, the receiver system rejects this field. This patch deactivates this functionality for the customer.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.14
-
-</td>
-<td valign="top">
-
-Optimize Database access to improve performance.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Assessment
-
-</td>
-<td valign="top">
-
-6.29.13
-
-</td>
-<td valign="top">
-
-Activation of SAP Integration Suite Integration Assessment capability was failing. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.29.12
-
-5.37.5
-
-</td>
-<td valign="top">
-
-Concurrent connections to the same FTP server could run into communication errors. This patch fixes this issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_jd4_fhd_c5b"/>
-
-## July 2022
-
-**Software Increment: 2204**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.27.24
-
-</td>
-<td valign="top">
-
-Since object store calls are taking more time than expected, artifacts are stuck in intermediate state, impacting subsequent deployment and undeployment. To considerably improve the situation and allow further analysis, we removed redundant object store calls and added a log statement for the time taken for each call .
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Assessment
-
-</td>
-<td valign="top">
-
-6.27.23
-
-</td>
-<td valign="top">
-
-Memory optimization.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.27.22
-
-</td>
-<td valign="top">
-
-Exceptions are not caught up properly on the worker instance when number ranges artifacts are not able to create DB sequences. This leads to artifacts not being deployed, and blocks further deployments as well.
-
-This patch fixes the issues.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_l5x_d4v_5tb"/>
-
-## June 2022
-
-**Software Increment: 2204**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.61.3
-
-</td>
-<td valign="top">
-
-Customers were not able to use the export/import feature if source and target tenant were in the same region. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.35.9
-
-6.27.16
-
-</td>
-<td valign="top">
-
-In some high load situations and using JMS, the following issues have been observed:
-
--   Cloud Integration raises the following error message: `400: Too Many Producers`.
-
--   A JMS thread blocking Issue
-
-
-This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.35.8
-
-6.27.16
-
-</td>
-<td valign="top">
-
-If using the AS2 adapter requesting a signed MDN with SHA1 algorithm and configured to verify MIC, verification of the MDN fails because value of *Received-content-MIC* has been changed from `sha1` to `sha-1`. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Trading Partner Management
-
-</td>
-<td valign="top">
-
-6.27.14
-
-</td>
-<td valign="top">
-
-There was an issue when converting the ASC\_X12 payload with a fixed value of *UN*. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.27.13
-
-</td>
-<td valign="top">
-
-The SAP Master Data Integration adapter didn't process the parameters *Address*, *ODM Entity Type*, and *ODM Entity Version* when configured dynamically using a header or an exchange property. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.27.11
-
-</td>
-<td valign="top">
-
-If there's a runtime error during the start of an integration flow, an error message is shown. This error can also be accessed using the Cloud Integration OData API \(*Error Information of Runtime Artifact* resource of [Integration Content API](https://api.sap.com/api/IntegrationContent/resource)\). However, when displaying the error message using the OData API, an HTTP 204 empty body was retrieved. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.27.10
-
-</td>
-<td valign="top">
-
-Integration flows containing script collections often started before the dependent script collection. This inconsistency of order resulted in messages not being processed. The patch addresses the issue by correcting the deployment order.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.35.6
-
-</td>
-<td valign="top">
-
-Cloud Integration displayed the deployment and runtime status as *Not Deployed* even for deployed artifacts. This patch fixes this issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_y1v_fpp_stb"/>
-
-## June 2022
-
-**Software Increment: 2203**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.26.21
-
-</td>
-<td valign="top">
-
-SOAP-based sender adapters didn’t work on Alibaba Cloud. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.26.20
-
-</td>
-<td valign="top">
-
-Integration flows with LDAP connections failed. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.34.13
-
-</td>
-<td valign="top">
-
-There have been issues with performing software update on certain tenants. This patch fixes these issues.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_yyl_wyr_4tb"/>
-
-## May 2022
-
-**Software Increment: 2203**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.26.19
-
-</td>
-<td valign="top">
-
-Customers have been billed for their test tenant. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.26.18
-
-</td>
-<td valign="top">
-
-On undeployment of erroneous artifact, the artifact state is stuck in stopping state. The patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.34.12
-
-</td>
-<td valign="top">
-
-If there are multiple worker nodes, the `IntegrationRuntimeArtifacts` resource of the `Integration Content` API doesn’t return all artifacts’ runtime errors. Only those errors are returned that have occurred on the last active node. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.34.11
-
-</td>
-<td valign="top">
-
-This patch fixes the following issue:
-
-OData batch processing response parsing was failing because of a bug in the Apache Olingo library. While processing the response, Apache Olingo threw an exception if there was a mismatch of the numbers of requests and responses. With this patch, this situation is now handled smartly.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.34.10
-
-</td>
-<td valign="top">
-
-This patch fixes the following issue:
-
-On demand deployment and un-deployment has been disabled in presence of stuck artifacts. This patch fixes the issue so that on demand deployments and un-deployments are accepted even if some artifacts are stuck on some workers. Furthermore, the patch provides an improvement of the related error messages.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-1.60.2
-
-</td>
-<td valign="top">
-
-For preprocessing of message implementation guidelines, the qualification of simple content was missing. As a result, wrong runtime artifacts have been created for Cloud Integration. This caused errors in processing of the affected integration flows. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_kdc_fqx_2tb"/>
-
-## May 2022
-
-**Software Increment: 2202**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.22
-
-</td>
-<td valign="top">
-
-There was the issue that customers have been billed for their test tenant. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.20
-
-</td>
-<td valign="top">
-
-There have been issues with processing UPDATE requests to the `ValueMapping` resource from the Integration Content API of the [Cloud Integration OData API](https://api.sap.com/api/IntegrationContent/resource). This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.19
-
-</td>
-<td valign="top">
-
-There have been issues with processing GET requests to the `ValueMapping` resource from the Integration Content API of the [Cloud Integration OData API](https://api.sap.com/api/IntegrationContent/resource). This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.33.14
-
-</td>
-<td valign="top">
-
-There were issues with connecting to the Partner Directory \(HTTP 503 error code was raised\). This patch fixes these issues
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.18
-
-</td>
-<td valign="top">
-
-There was an issue with processing timestamps that led to cases where system log entries showed dates in the future. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_afg_gw3_ltb"/>
-
-## April 2022
-
-**Software Increment: 2202**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.17
-
-</td>
-<td valign="top">
-
-Cloud integration deployments fail after software update, and artifacts can't be viewed in the package view, because of the rate limiting applied to the service manager connection. With this patch, the service manager binding, which is defined as optional, is removed.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Advisor
-
-</td>
-<td valign="top">
-
-6.25.17
-
-</td>
-<td valign="top">
-
-There is an issue with the Integration Advisor showing a busy status when qualifying a node using a MIG Local Codelist. This patch fixes the issue.
-
-Customers are unable to migrate their MIGs if multiple values are selected in a business context. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.33.13
-
-</td>
-<td valign="top">
-
-Before this patch has been applied, artifact redeployment worked in the following way: The existing artifact is deleted, and the new artifact is inserted into the database. These two operations are part of separate transactions. This resulted in issues with the update of certificate-to-user mappings: If a database insertion error occurs during the update of a certificate-to-user mapping, all existing certificate-to-user mappings are deleted.
-
-With this patch, both operations are now part of a single transaction. This results in the following behaviour: If inserting a new artifact into the database fails, the existing artifact remains in the database as well. This patch, therefore, fixes the issue with the certificate-to-user mapping update.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Integration Assessment
-
-</td>
-<td valign="top">
-
-6.25.16
-
-</td>
-<td valign="top">
-
-Activation of SAP Integration Suite Integration Assessment capability was failing. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.15
-
-5.33.12
-
-</td>
-<td valign="top">
-
-In some cases, there have been issues with multiple concurrent SuccessFactors OData requests resulting in network errors. This patch fixes the issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.25.14
-
-</td>
-<td valign="top">
-
-If the creation of a service instance fails, the service instance will be in state *Creation Failed* and the instance can't be used or deleted. This patch allows the deletion of the service instance.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_jzx_zhw_wsb"/>
-
-## March 2022
-
-**Software Increment: 2201**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.24.29
-
-5.32.14
-
-</td>
-<td valign="top">
-
-In some cases, there have been issues with multiple concurrent SF ODATA requests, as our current connection reuse implementation has shortcomings, and multiple connections are left idle. This is leading to network errors. This patch fixes the issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.32.13
-
-</td>
-<td valign="top">
-
-As of now, the receiver information of the MPL wasn’t available in the Cloud Reporting. It has been added and is now visible there.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.32.12
-
-</td>
-<td valign="top">
-
-There have been issues with telemetry results when using script collection or message mapping. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.32.11
-
-</td>
-<td valign="top">
-
-There was an issue during data extraction, preventing the data from being displayed in the Cloud Reporting. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-1.58.4
-
-</td>
-<td valign="top">
-
-There was an issue in activating multiple versions of a Custom message. This patch fixes the issue.
-
-Creation of a draft version of a MIG or a MAG was prohibited, if an active version doesn’t exist. This limitation has been removed.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.24.26
-
-</td>
-<td valign="top">
-
-A security vulnerability was found that can lead to denial-of-service \(DoS\) attacks. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.32.10
-
-</td>
-<td valign="top">
-
-There have been issues updating or adding certificates to the keystore, because of a gap in the keystore profile discovery. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.24.25
-
-</td>
-<td valign="top">
-
-There have been issues with execution of timer-based integration flows because of an incorrect datasource reference. This was only seen with subset of tenants who uses JDBC driver for their JDBC adapter scenarios. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.24.20
-
-6.24.22
-
-</td>
-<td valign="top">
-
-There has been an issue that the Cloud Integration database reached its limit that resulted in deployment failures. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.24.21
-
-5.32.9
-
-</td>
-<td valign="top">
-
-There was an issue in the connection management logic of the OData Adapter during retry causing an exception and leading to message failures. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_hh5_njg_psb"/>
-
-## February 2022
-
-**Software Increment: 2113**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.23.13
-
-</td>
-<td valign="top">
-
-A security vulnerability was found that can lead to denial-of-service \(DoS\) attacks. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.23.12
-
-</td>
-<td valign="top">
-
-Activation of SAP Integration Suite capabilities was failing. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.31.9
-
-</td>
-<td valign="top">
-
-There have been issues with the synchronization of integration content. These issues resulted in situations where integration flows and security material metadata have been removed from the tenant without any notice. This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.23.11
-
-</td>
-<td valign="top">
-
-There have been the following issues:
-
--   Only on trial tenants: Issues using Cloud Integration and deploying artifacts.
-
--   Issues with the deployment of Cloud Integration artifacts in the correct sequence.
-
-    This resulted in situations such like the following one: An integration flow using a value mapping is started before the value mapping. As consequence, the integration flow can't find and process the value mapping at runtime.
-
-
-This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.31.7
-
-</td>
-<td valign="top">
-
-There have been issues with the deployment of Cloud Integration artifacts in the correct sequence. This resulted in situations such like the following one: An integration flow using a value mapping is started before the value mapping. As consequence, the integration flow can't find and process the value mapping at runtime. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.23.10
-
-</td>
-<td valign="top">
-
-There have been issues with the Cloud Integration user interface: It was either not opened, or a *session expired* error message being shown. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.23.9
-
-</td>
-<td valign="top">
-
-In some cases, under high load, customers get JMS transaction-related errors like: `javax.jms.JMSException: Error rollback - internal error (Operation ROLLBACK disallowed in state COMMITTING.)` or `com.solacesystems.jcsmp.InvalidOperationException: Operation CREATEFLOW disallowed in state COMMITTING`. The error messages can vary but they all refer to transactional operations. This patch prevents the occurrence of these errors.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_av3_1qd_hsb"/>
-
-## January/February 2022
-
-**Software Increment: 2112**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.14
-
-</td>
-<td valign="top">
-
-This bugfix prevents Cloud Integration from consuming too many platform resources.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.13
-
-</td>
-<td valign="top">
-
-The initialization of the repository destination XXX failed because of a library update, causing an RFC principal propagation issue. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.12
-
-</td>
-<td valign="top">
-
-In some cases, during integration flow deployment, “the request reply generation” is skipped. This behaviour stops the execution of the integration flow. As the current log size is insufficient to identify the root cause, we increase the log size with this patch.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.11
-
-5.30.11
-
-</td>
-<td valign="top">
-
-Sometimes, the aggregator component does not release the lock set on the aggregate. This leads to a continuous aggregation until the lock is released manually. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.30.10
-
-</td>
-<td valign="top">
-
-Redundant data logging from CI applications caused the system to report a log volume size issue and increased the load on the platform infrastructure. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
+-   It fixes an issue with the generation of the evaluation report.
+-   Resolves errors with the OData V4 adapter failing to parse `202 Accepted` responses when the `Prefer: respond-async` header is included. This patch ensures successful processing of async requests.
 
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.8
-
-5.30.9
-
-</td>
-<td valign="top">
-
-There has been an issue when storing the headers of a message processing log in a customer hosted CMS system. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.8
-
-</td>
-<td valign="top">
-
-There have been concurrency issues with the process that updates the artifact instances in the database. Because of these issues, it took time for the system to get integration flows from status *Starting* to status *Started*. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.22.6
-
-</td>
-<td valign="top">
-
-There was the following issue with scenarios using the HTTP receiver adapter: If the set-cookie header \(from the response message\) isn’t stored in a cookie, in some cases the *HTTP Session Reuse* feature doesn’t work. The reason is that the Cloud Integration runtime code doesn’t check if the set-cookie header is case insensitive. This patch fixes the issue.
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_m5l_nml_vrb"/>
-
-## December/January 2021
-
-**Software Increment: 2110**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.28.17
-
-5.28.17
-
-</td>
-<td valign="top">
-
-Cloud Integration raised an error when transferring ELSTER messages \(for LStA, LStB and ELStAM\) using the ELSTER adapter. The error was caused by a wrong version of the ERiC library included in Cloud Integration. This patch fixes the issue. Now, the correct ERiC library version is included. For more information, see SAP Note [3137796](https://me.sap.com/notes/3137796).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.20.22
-
-</td>
-<td valign="top">
-
-There have been issues with the deployment of integration content. This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.20.20
-
-5.28.16
-
-</td>
-<td valign="top">
-
-A concurrency conflict caused an error in JMS processing and resulted in a retry in message processing. This patch resolves this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.20.19
-
-</td>
-<td valign="top">
-
-There have been issues with the deployment of *Number Range Object* artifacts. This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.20.17
 
-5.28.15
 
 </td>
-<td valign="top">
-
-Improvement in Content Security Policy \(CSP\).
-
-</td>
-</tr>
-</table>
-
-
-
-<a name="loio023a4725bb734f86be8a5625abe54110__section_shd_g4k_hrb"/>
-
-## October/November 2021
-
-**Software Increment: 2109**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Technical Component
-
-</th>
-<th valign="top">
-
-Software Version
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.25
-
-</td>
-<td valign="top">
-
-There have been issues with successfully saving changes for existing integration flows, as well as with integration flows not getting unlocked. This was corrected.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.24
-
-6.19.23
-
-</td>
-<td valign="top">
-
-There have been issues with scenarios using the HTTP receiver adapter with *Authentication* parameter set to `OAuth2 Client Credentials` or `OAuth2 SAML Bearer Assertion`. The default *Timeout* setting wasn't used as expected. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.22
-
-5.27.14
-
-</td>
-<td valign="top">
-
-When using an FTP sender adapter with the *Post Processing* parameter set to *Move File*, Cloud Integration waits for a timeout during command completion. The patch fixes the issue so that, first, the command is completed and, secondly, the file is moved. That way, the file processing order is kept.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.21
-
-</td>
-<td valign="top">
-
-With this patch, we have optimized CPU usage for the Kafka broker.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.20
-
-5.27.13
-
-</td>
-<td valign="top">
-
-With this patch, you get the option to relax the name check in the JSON-to-XML converter. The relaxed check does allow that JSON member names can contain letters, digits, hyphens \(‘-‘\), underscores \(‘\_’\), periods \(‘.’\), hash characters \(‘\#’\), spaces, and at-signs \(‘@’\), but the original name check does only allow JSON names that are compliant with the name specification of XML names \(see: [https://www.w3.org/TR/2008/REC-xml-20081126/\#NT-NameChar’](https://www.w3.org/TR/2008/REC-xml-20081126/#NT-NameChar’)\). By default, the relaxed check isn't active. In order to activate the relaxed check, open a ticket on component LOD-HCI-PI-CON-SOAP and request that the Java System Property `com.sap.it.xmljson.name.checker.simplified.active=true` is to be configured for the worker nodes.
-
-See also: [3112970 - JSON-to-XML Converter Exception Caused by Invalid JSON Member Name](https://launchpad.support.sap.com/#/notes/3112970) \(Knowledge Base Article\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.19
-
-</td>
-<td valign="top">
-
-Improvement in telemetry \(payload size\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.18
-
-</td>
-<td valign="top">
-
-Improvement in telemetry \(message size\).
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3444,137 +1082,20 @@ Cloud Integration
 
 </td>
 <td valign="top">
-
-6.19.17
 
-5.27.12
+6.75.48
 
 </td>
 <td valign="top">
 
 This patch fixes the following issues:
 
--   Several JMS problems such as blocking undeployment of integration flows have been fixed.
-
--   Logging support for scenarios that involve the OpenConnectors adapter has been improved.
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.19.15
-
-</td>
-<td valign="top">
-
-There have been issues on tenants using the XI adapter with a JMS license but without provisioned broker. This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.27.11
-
-</td>
-<td valign="top">
-
-This patch fixes the following issues:
-
--   Issues on tenants using the XI adapter with a JMS license but without provisioned broker.
-
--   Several JMS problems such as blocking undeployment of integration flows.
+-   Ensures that Exception Subprocess functionality for API artifacts in Edge Integration Cell \(EIC\) works correctly, preventing deployment failures in environments running older worker versions.
+-   Fixes a data conversion issue during data extraction that could cause the extraction process to fail.
+-   Updates third-party dependencies identified by the OSS security scanner as vulnerable to denial-of-service attacks.
+-   Introduces a retry mechanism in the JDBC adapter to improve resilience during temporary connectivity service interruptions or database outages. Retry behavior can be configured using tenant-level environment variables.
 
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.27.10
-
-6.19.14
-
-</td>
-<td valign="top">
-
-Messages have no grace period to finish processing, when integration flows are getting undeployed. This patch fixes this issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.27.9
-
-6.19.12
-
-</td>
-<td valign="top">
-
-The Ariba adapter failed to read the content from the attachment after fetching it from pending queue. This was because of a bug in the adapter, and the content was lost. This patch fixes this issue with the Ariba adapter.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.27.8
-
-6.19.11
-
-</td>
-<td valign="top">
-
-The Ariba adapter failed to fetch messages with attachment from pending queue. This patch fixes this issue with the adapter.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.27.7
-
-</td>
-<td valign="top">
-
-An unexpected response was obtained while reading keystore secret. This patch fixes the issue with `getTokenCredential` API to provide expected outcome when reading the `TokenCredential` from keystore, and when no keystore with specific name is provided.
 
 </td>
 </tr>
@@ -3582,11 +1103,11 @@ An unexpected response was obtained while reading keystore secret. This patch fi
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_kqv_rdk_crb"/>
+## February 2026
 
-## September 2021
+Software Increment: 2513
 
-**Software Increment: 2108**
+****
 
 
 <table>
@@ -3615,100 +1136,14 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.18.17
-
-</td>
-<td valign="top">
-
-This patch fixes the mapping simulation failures because the high number of Kafka producer threads on CO.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.26.15
-
-</td>
-<td valign="top">
-
-There was an error during internal database schema optimization. This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-6.18.16
-
-</td>
-<td valign="top">
-
-There have been the following issues:
-
--   Users weren't able to open message monitoring and to deploy integration flows.
-
--   Integration adapter redeployment failed after deployment failure.
-
-
-This patch fixes these issues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.26.14
-
-6.18.14
-
-</td>
-<td valign="top">
-
-There has been an issue with archiving of message processing logs if a message contained multiple attachments with the same name.
-
-This patch fixes the issue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Integration
-
-</td>
-<td valign="top">
-
-5.26.13
-
-6.18.13
+8.39.12
 
 </td>
 <td valign="top">
 
 This patch fixes the following issues:
 
--   An issue with PGP keyring caching: In some cases, the system didn't cache PGP keyrings correctly on the worker nodes.
-
--   An issue with failed messages when using the SuccessFactors OData receiver adapter with the *OAuth2 SAML Bearer Assertion* authentication option.
-
--   An issue with errors during database maintenance
-
+-   Ensures headers configured under Metadata Details are sent only for metadata and service document calls across all message processing logs, preventing unintended header propagation.
 
 
 
@@ -3722,16 +1157,86 @@ Cloud Integration
 </td>
 <td valign="top">
 
-6.18.12
-
-5.26.12
+7.48.13
 
 </td>
 <td valign="top">
 
-There was an issue with the tenant database when Number Ranges artifacts were involved in the scenario.
+This patch fixes the following issues:
 
-This patch fixes the issue.
+-   Ensures headers configured under Metadata Details are sent only for metadata and service document calls across all message processing logs, preventing unintended header propagation.
+-   Improves the reliability of the HTTP Receiver Adapter by introducing configurable retry support for I/O-related connection errors, reducing message failures caused by intermittent network connection resets. \(Retry is disabled by default and can be enabled by SAP operations.\)
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.44
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures headers configured under Metadata Details are sent only for metadata and service document calls across all message processing logs, preventing unintended header propagation.
+-   Improves the reliability of the HTTP Receiver Adapter by introducing configurable retry support for I/O-related connection errors, reducing message failures caused by intermittent network connection resets. \(Retry is disabled by default and can be enabled by SAP operations.\)
+-   Enhances HTTP runtime resilience and Java compatibility by enabling configurable retries for I/O exceptions, supporting both Kafka client 3 and Kafka client 4, and extending compatibility with JDK 17 and higher.
+-   Enables visibility of the API Provider option for the Edge Integration Cell \(EIC\) profile, improving configuration consistency for EIC scenarios.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.38
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Ensures recently created or updated artifacts are displayed correctly on the home page.
+-   Fixes health check failures that caused incorrect system status across multiple landscapes.
+-   Resolves issues loading *Company Profile* \> *Security Configurations* in the UI and during Agreement exports.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.75.36
+
+</td>
+<td valign="top">
+
+This patch does the following:
+
+-   Corrects the release version for Migration Assessment and Integration Assessment to 1.50.
+-   Deactivates the script to create custom domains.
+
+
 
 </td>
 </tr>
@@ -3739,11 +1244,11 @@ This patch fixes the issue.
 
 
 
-<a name="loio023a4725bb734f86be8a5625abe54110__section_q5y_xqv_gqb"/>
+## February 2026
 
-## August 2021
+Software Increment: 2512
 
-**Software Increment: 2107**
+****
 
 
 <table>
@@ -3772,29 +1277,19 @@ Cloud Integration
 </td>
 <td valign="top">
 
-1.51.4
+6.74.44
 
 </td>
 <td valign="top">
 
-Back navigation to Integration Suite landing page wasn't possible from trial with a risk for the onboarding of new tenants. This patch fixes the issue.
+This patch fixes the following issues:
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+-   Fixed tenant migration failures caused by a duplicate Liquibase changeset ID.
+-   Resolved UCL formation creation, deletion, and synchronization failures with Integration Suite caused by Provisioning App callbacks not working. Updated configuration has restored successful callback.
+-   Fixed an OSS vulnerability in the transitive dependency qs by updating the affected component.
+-   Optimized database query handling by reducing the number of update operations, improving efficiency and overall interaction stability.
 
-Cloud Integration
 
-</td>
-<td valign="top">
-
-1.51.3
-
-</td>
-<td valign="top">
-
-Subscription wasn't possible for plan enterprise. This patch fixes the issue.
 
 </td>
 </tr>
@@ -3806,14 +1301,65 @@ Cloud Integration
 </td>
 <td valign="top">
 
-5.25.11
-
-6.17.21
+8.38.13
 
 </td>
 <td valign="top">
 
-The errors in the interceptors caused by undeployment can lead to a successful HTTP response code for inflight messages although the messages failed. This patch fixes this issue.
+This patch optimized database query handling by reducing the number of update operations, improving efficiency and overall interaction stability.
+
+</td>
+</tr>
+</table>
+
+
+
+## January 2026
+
+Software Increment: 2512
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.74.39
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Resolved an MTMS scaling configuration issue where the instance count of `it-ai-service-java` was left at 1 instead of the expected 3.
+-   Fixed an issue in API creation where menu options were incorrectly displayed for Edge Integration Cell integrations due to profile matching logic. Strict detection now ensures only relevant options are shown.
+-   Resolved frequent not-found errors when loading individual TPM resources.
+-   Improved performance of Config Service APIs to handle higher request volumes efficiently.
+
+
 
 </td>
 </tr>
@@ -3825,12 +1371,58 @@ Cloud Integration
 </td>
 <td valign="top">
 
-5.25.10
+8.38.12
 
 </td>
 <td valign="top">
 
-The integration flow deployment failure issue caused by insufficient column length to store the artifacts description is resolved with this patch.
+This patch improved the performance of Config Service APIs to handle higher request volumes efficiently.
+
+</td>
+</tr>
+</table>
+
+
+
+## December 2025
+
+Software Increment: 2510
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.29
+
+</td>
+<td valign="top">
+
+This patch added the `MALLOC_ARENA_MAX` environment variable to optimize memory allocation. This improves garbage collection behavior in the old generation heap.
 
 </td>
 </tr>
@@ -3842,16 +1434,4870 @@ Cloud Integration
 </td>
 <td valign="top">
 
-5.25.8
-
-6.17.18
+6.72.69
 
 </td>
 <td valign="top">
 
-In scenarios with an outbound connection to an on-premise system \(with *Proxy Type* set to *On-Premise* and the *Location ID* parameter specified in the HTTP receiver channel\), the following issue was observed: Custom headers with a wildcard character \(`*`\) specified by the *Request Headers* parameter have not been sent to the receiver system. As a result, Cloud Integration didn't send any X-CSRF token to the receiver system, causing in an HTTP 403 error.
+This patch added the `MALLOC_ARENA_MAX` environment variable to optimize memory allocation. This improves garbage collection behavior in the old generation heap.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.67
+
+</td>
+<td valign="top">
+
+This patch enhances the Metabase information and also improves the efficiency of the ObjectStoreCleanupTask by limiting the cleanup scan to the /tasks folder instead of scanning the entire object store.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.45.31
+
+</td>
+<td valign="top">
+
+This patch enhances the Metabase information and fixes the Decommission task.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.65
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Improved Azure Shared File System lock handling to prevent frequent 404 errors
+
+-   Resolved intermittent issues when saving API artifacts and importing OpenAPI definitions, improving overall reliability and user experience.
+
+-   Enhanced the CXF library with a scheduled cleanup mechanism to ensure temporary files created during message processing are properly removed after a configurable delay.
+
+-   Fixed a NullPointerException in the Xi Sender Adapter that could occur when payload attachments were missing from the Xi manifest, preventing message processing failures in this scenario.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.45.29
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Enhanced the CXF library with a scheduled cleanup mechanism to ensure temporary files created during message processing are properly removed after a configurable delay.
+
+-   Fixed a NullPointerException in the Xi Sender Adapter that could occur when payload attachments were missing from the Xi manifest, preventing message processing failures in this scenario.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.29
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Improved Azure Shared File System lock handling to prevent frequent 404 errors
+
+-   Enhanced the CXF library with a scheduled cleanup mechanism to ensure temporary files created during message processing are properly removed after a configurable delay.
+
+-   Fixed a NullPointerException in the Xi Sender Adapter that could occur when payload attachments were missing from the Xi manifest, preventing message processing failures in this scenario.
+
+-   Improved the efficiency of the ObjectStoreCleanupTask by limiting the cleanup scan to the /tasks folder instead of scanning the entire object store.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.61
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Added enhanced logging to help investigate an edge case where the jMS retry interval behaved differently from the configured value, even without a worker crash
+
+-   Updated the list of supported database drivers to include the IBM DB2 z/OS driver with the required license, enabling customers to use the approved driver provided by IBM.
+
+-   Fixed an issue with identifying Camel temporary files after a file-naming change introduced in newer Camel versions, preventing duplicate reporting of the same files.
+
+-   Fixed an issue in EDI flow steps where X12 payloads ending with the **TA1** keyword were not processed correctly, ensuring such payloads are now processed as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.45.27
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Fixed ConcurrentModificationException issue in message processing flow.
+
+-   Updated the list of supported database drivers to include the IBM DB2 z/OS driver with the required license, enabling customers to use the approved driver provided by IBM.
+
+-   Fixed an issue in EDI flow steps where X12 payloads ending with the **TA1** keyword were not processed correctly, ensuring such payloads are now processed as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.26
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Updated the list of supported database drivers to include the IBM DB2 z/OS driver with the required license, enabling customers to use the approved driver provided by IBM.
+
+-   Fixed an issue in EDI flow steps where X12 payloads ending with the **TA1** keyword were not processed correctly, ensuring such payloads are now processed as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.72.59
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Closed a gap in the PGP Decryptor related to checksum handling.
+
+-   Fixed an issue where the Virtual Host was shown incorrectly as the default.
+
+-   Upgraded the Eric library to versions 43.2.6 and 43.3.2.
+
+-   Added malloc-arena-max in the worker configuration to reduce crashes.
+
+-   Fixed an issue in the IDoc Receiver Adapter where MessageId determination using the Map option did not work as expected.
+
+-   Fixed a cache-related issue.
+
+-   Fixed permission management errors for TPM dedicated roles.
+
+-   Removed the time restriction on archived data to ensure all data is archived when the job is triggered.
+
+-   Fixed ConcurrentModificationException issue in message processing flow.
+
+-   Made the ConnectorInstance artifact type available in the itco service.
+
+-   Applied memory optimization parameters to reduce micro service crashes.
+
+-   Fixed some errors for the UI and DBSL context fix.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.45.24
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Upgraded the Eric library to versions 43.2.6 and 43.3.2.
+
+-   Fixed an issue in the IDoc Receiver Adapter where MessageId determination using the Map option did not work as expected.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.36.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Upgraded the Eric library to version 43.2.6.
+
+-   Fixed ConcurrentModificationException issue in message processing flow.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## December 2025
+
+Software Increment: 2509
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.49
+
+</td>
+<td valign="top">
+
+Fixed a regex issue in Inspect to correctly detect Camel temporary files after the naming convention update in Camel.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_w3f_yjj_fhc"/>
+
+## November 2025
+
+Software Increment: 2509
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.48
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Fixed TPM issues and connection problems between TPM and TRM.
+
+-   Fixed an issue by adopting the correct IA versions for NS2 to ensure proper version alignment.
+
+-   Fixed an issue with spreadsheet report generation where excessive attributes caused problems with cell style limits.
+
+-   Added a health check for it-is-app-prov-route.
+
+-   Fixed a checksum handling issue in the PGP Decryptor.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.35.15
+
+</td>
+<td valign="top">
+
+Fixed a checksum handling issue in the PGP Decryptor.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.42
+
+</td>
+<td valign="top">
+
+Improved performance for Message Mapping validation by optimizing memory consumption, preventing design service crashes due to high memory usage.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.40
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Fixed an issue with the deploy dialog during cross-deployment.
+
+-   Fixed an issue with Custom Mapping Payloads when Archiving is enabled.
+
+-   Fixed an issue causing a continuous increase in JVM threads in the worker application.
+
+-   Fixed an issue in the OAuth token server response missing the expires\_in field, ensuring correct handling of such responses and proper formation of subsequent token requests.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.44.14
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   A message mapping deployment issue that occurs in certain Process Integration/Process Orchestration migrated message mappings which contain parameters.
+-   The calculation of offsets and tokens in the generation of the next link of OData results. This link is required for client-side pagination of result sets greater than 1000 rows.
+
+-   Fixed an issue with the deploy dialog during cross-deployment.
+-   Fixed an issue with Custom Mapping Payloads when Archiving is enabled.
+-   Fixed an issue in the OAuth token server response missing the expires\_in field, ensuring correct handling of such responses and proper formation of subsequent token requests.
+-   Improved performance for Message Mapping validation by optimizing memory consumption, preventing design service crashes due to high memory usage.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.35.14
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Fixed an issue causing a continuous increase in JVM threads in the worker application.
+
+-   Fixed an issue in the OAuth token server response missing the expires\_in field, ensuring correct handling of such responses and proper formation of subsequent token requests.
+
+-   Improved performance for Message Mapping validation by optimizing memory consumption, preventing design service crashes due to high memory usage.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.36
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   The calculation of offsets and tokens in the generation of the next link of OData results. This link is required for client-side pagination of result sets greater than 1000 rows.
+
+-   Switched back to SAP JBP v1 to resolve the OutOfMemory issues.
+
+-   The namespace location to resolve dependencies when calculating dependent schemas in the primary artifact. This allows users to import artifacts with dependents even when the namespace format includes a pipe symbol.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.33
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   A message mapping deployment issue that occurs in certain Process Integration/Process Orchestration migrated message mappings which contain parameters.
+-   A validation issue in message mapping that occurs when multiple XSDs with different namespaces are used as source or target schemas.
+-   This patch improves the catching mechanism.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_arc_1ll_dhc"/>
+
+## October 2025
+
+Software Increment: 2509
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.71.31
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   It fixes the order of the ArtifactInstanceType enum to correctly mark artifacts with the correct instance type.
+-   It brings the latest code to Edge Integration Cell and maintains version parity.
+-   It fixes default configuration for service deployment.
+-   It introduces a flag that enables or disables the MCP feature.
+-   It restores the rendering of the Analytics user interfaces.
+-   It fixes KPI data rendering for classic runtime in tenants with multi-runtime enabled.
+-   It fixes the standalone message mapping simulation issue for certain payloads.
+-   It enhances connection handling in key rotation scheduler.
+-   This patch resolves the issue where you can't select any defined number ranges other than the first number range in the Receiver Interchange. You can now also define an identifier with a custom scheme code.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.35.12
+
+</td>
+<td valign="top">
+
+This patch brings the latest code to Edge Integration Cell and maintains version parity.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_yfs_tn4_xgc"/>
+
+## October 2025
+
+Software Increment: 2507
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.25
+
+</td>
+<td valign="top">
+
+This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and Handled by Integration Flow \(HBI\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.64
+
+</td>
+<td valign="top">
+
+This patch fixes deployment issues for integration flows using XI adapters, ensuring successful execution for version 1.15 and above. It supports Quality of Service settings: At Least Once \(ALO\), Exactly Once \(EO\), and Handled by Integration Flow \(HBI\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.24
+
+</td>
+<td valign="top">
+
+Any receiver adapter connecting to an on-premise system may fail with an HTTP 429 error from XSUAA during token fetch from connectivity service. This patch introduces a robust retry mechanism, as recommended in the XSUAA help documentation, to prevent such iFlow failures.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.63
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   This patch makes the timeout for physical database creation configurable. The issue is fixed by handling it from the application.
+-   Any receiver adapter connecting to an on-premise system may fail with an HTTP 429 error from XSUAA during token fetch from connectivity service. This patch introduces a robust retry mechanism, as recommended in the XSUAA help documentation, to prevent such iFlow failures.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.61
+
+</td>
+<td valign="top">
+
+This patch adds mitigation mechanism to toggle gzip compression for message mapping save.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.60
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Renewing the refresh token for Authorization Code Grant credentials was not possible due to a misconfigured audit log. This could lead to integration flow startup failures or message processing errors.
+-   This patch updates the build pack from sap\_java\_buildpack to sap\_java\_buildpack\_to\_be\_removed for the Java 8 and Java 17 aliases. The original name of SAP JBP v1 remains available only until October 26. After that date, it will be removed from the landscapes.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   It enables automatic generation of the thread if any artifacts are stuck in an intermediate state.
+
+-   Issues with generating the thread dump, as the stack trace depth is currently limited to eight. This limitation hides important details that aid in detailed analysis. Additionally, there's a plan to implement a named thread pool for deploy threads. This feature is helpful for debugging issues.
+-   The renewal of the Refresh Token of an Authorization Code Grant credentials was not possible due to a misconfigured auditlog. This caused integration flows startup to fail or messages processing failures.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_bwm_psr_pgc"/>
+
+## September 2025
+
+Software Increment: 2507
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.22
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   A validation issue in message mappings in which the recursive node of a duplicated node is expanded and mapped while the recursive node in the original node of the duplicated node is not expanded.
+
+-   Some nodes in message mappings created using recursive and duplicate operations don’t resolve in the UI. This patch improves the logic for rendering such nodes and makes them accessible.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.58
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   A validation issue in message mappings in which the recursive node of a duplicated node is expanded and mapped while the recursive node in the original node of the duplicated node is not expanded.
+-   Some nodes in message mappings created using recursive and duplicate operations don’t resolve in the UI. This patch improves the logic for rendering such nodes and makes them accessible.
+-   An issue with length at DB side.
+-   An issue with evaluation.
+-   An issue with the application in integration policy.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+2.3.2
+
+</td>
+<td valign="top">
+
+This patch fixes incorrect Venetian Blind XSD file name generation for EDIFACT MIGs with Syntax Version 2.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.42.15
+
+</td>
+<td valign="top">
+
+This patch includes fixes for the following items:
+
+-   A validation issue in message mappings in which the recursive node of a duplicated node is expanded and mapped while the recursive node in the original node of the duplicated node is not expanded.
+-   Some nodes in message mappings created using recursive and duplicate operations don’t resolve in the UI. This patch improves the logic for rendering such nodes and makes them accessible.
+-   The issue where not all message queues are shown.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   The issue where not all message queues are shown.
+-   The issue with the reduced snapshot size not being logged.
+-   This patch adds fallback support for changing log level via custom or default JMX MBean.
+-   This patch addresses the issue observed in Ariba’s RNIF servlet-based adapter, where the servlet fails to register after an Out of Memory \(OOM\) error. As a result, customers were receiving a 404 error for inbound calls to that node.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.42.14
+
+</td>
+<td valign="top">
+
+This patch addresses the issue observed in Ariba’s RNIF servlet-based adapter, where the servlet fails to register after an Out of Memory \(OOM\) error. As a result, customers were receiving a 404 error for inbound calls to that node.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.42.13
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with opening of Groovy scripts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.57
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   The syntax version always shows Release 2.8.0-SNAPSHOT in the display mode, even when it should display a different value.
+-   Reduced snapshot size not being logged.
+
+where
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.56
+
+</td>
+<td valign="top">
+
+This patch addresses the following issues:
+
+-   An issue with synchronous interfaces showing "0" in message throughput.
+-   The intermittent issue that occurs when opening integration flows, particularly those that are complex.
+-   This patch adds fallback support for changing log level via custom or default JMX MBean.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.54
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   LLM model tuning for improved AI service efficiency and accuracy.
+
+-   Fix for synchronous interface throughput issue, addressing incorrect display of "0" messages.
+
+-   Intermittent integration flow opening issue when complex integration flows are opened.
+
+-   Fixes the rate limit 429 issue.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.49
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter moved to a stable version.
+
+-   Enhancements related to load distribution.
+
+-   Updates related to Message Processing Log Attachment view on Monitor Message Processing screen.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.69.45
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   When the syntax version is null, the UI incorrectly displays "Release undefined." The UI now shows this field as empty.
+-   Fixes an internal dependency alignment with Jakarta-compliant libraries identified during DTS consumption.
+-   Basic Auth was failing for API Management capability + Integration Cell use cases due to credential store separation for Integration Cell specific scenarios. The patch fixes this by creating the key in the generic secure store.
+-   The patch addresses issues related to the Design Page during API Management capability and Integration Cell reactivation.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.42.11
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter moved to a stable version.
+
+-   Updates related to Message Processing Log Attachment view on Monitor Message Processing screen.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.33.18
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter moved to a stable version.
+
+-   Enhancements related to load distribution.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_hhl_pqr_pgc"/>
+
+## September 2025
+
+Software Increment: 2506
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.26
+
+</td>
+<td valign="top">
+
+This patch fixes issues with Unicode characters parsing in extracted XML files.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_epj_r1i_3fa"/>
+
+## August 2025
+
+Software Increment: 2506
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.11
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with artifact deployments timeouts and incorrect status displayed on the monitoring page, due to a race condition caused by frequent deployments of Number Range Objects. Artifacts now show the correct status, and deployments complete successfully in the latest software version.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.24
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with artifact deployments timeouts and incorrect status displayed on the monitoring page, due to a race condition caused by frequent deployments of Number Range Objects. Artifacts now show the correct status, and deployments complete successfully in the latest software version.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.10
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   During concurrent message processing, following the startup of workers—often triggered by a system restart or software update—a surge of simultaneous token requests is sent to the XSUAA server. This sudden burst can exceed the server’s rate limit of 60 requests per second. As a result, the message flow may fail.
+
+-   When splitter is used as part of exception subprocess.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.22
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   This patch makes the job scheduler initialization asynchronous. This change reduces the startup time of the it-design-service and minimizes potential crashes.
+
+-   During concurrent message processing, following the startup of workers—often triggered by a system restart or software update—a surge of simultaneous token requests is sent to the XSUAA server. This sudden burst can exceed the server’s rate limit of 60 requests per second. As a result, the message flow may fail.
+
+-   When splitter is used as part of exception subprocess.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+2.2.4
+
+</td>
+<td valign="top">
+
+This patch resolves the issue about MIG Migration deleting segments which follow qualified nodes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.16
+
+</td>
+<td valign="top">
+
+This patch enhances the check for Trading Partner Management enablement to avoid issues during dedicated database creation.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.41.11
+
+</td>
+<td valign="top">
+
+This patch fixes the issue when splitter is used as part of exception subprocess.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.68.15
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Adds improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+
+-   Enables dynamic log level adjustment through a new MBean \(LogLevelManager\). If unavailable, the system now falls back to the default Logback JMXConfigurator MBean.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.32.7
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Adds improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+
+-   Enables dynamic log level adjustment through a new MBean \(LogLevelManager\). If unavailable, the system now falls back to the default Logback JMXConfigurator MBean.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.41.10
+
+</td>
+<td valign="top">
+
+This patch includes the Improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1i_3fa"/>
+
+## August 2025
+
+Software Increment: 2505
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.36
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Improvements to the Zip Splitter, ensuring better stability and efficiency across multiple tenants and data centers.
+-   Optimizes memory usage during design time with the latest version of the Saxon library \(12x\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.18
+
+</td>
+<td valign="top">
+
+This patch ensures optimized memory usage during design time with the latest version of the Saxon library \(12x\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.40.18
+
+</td>
+<td valign="top">
+
+This patch ensures optimized memory usage during design time with the latest version of the Saxon library \(12x\).
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_c3k_mqb_1gc"/>
+
+## July 2025
+
+Software Increment: 2505
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.34
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter has been updated to a stable version with enhanced logging to help identify problematic JDBC URLs.
+-   Supports the message mappings that contain recursive nodes within duplicate nodes, ensuring they are correctly generated in the mapping output..
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.17
+
+</td>
+<td valign="top">
+
+With this patch, the JDBC component has been updated to a stable version with enhanced logging to help identify problematic JDBC URLs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.40.17
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   JDBC adapter has been updated to a stable version with enhanced logging to help identify problematic JDBC URLs.
+-   Supports the message mappings that contain recursive nodes within duplicate nodes, ensuring they are correctly generated in the mapping output..
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.40.15
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Improved performance for integration scenarios that use XSLT Mapping with dynamic resolution such as Partner Directory, which have higher memory consumption.
+-   Improved logic for rendering nodes in message mapping that were created using a combination of recursive and duplicate operations. This improved logic makes the nodes accessible ensuring resolution.
+-   Support for upcoming HTTP feature updates.
+-   Resolved `StackOverflowError` by integrating Camel patch \(CAMEL-22147\) for transactions split that could cause deep stack frames.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.33
+
+</td>
+<td valign="top">
+
+This patch improves logic for rendering nodes in message mapping that were created using a combination of recursive and duplicate operations. This improved logic makes the nodes accessible ensuring resolution.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.31.16
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Fixes to the liquibase script execution avoiding app crashes during startup.
+-   Enabled stream download for Poll Enrich to support large file processing with SFTP sender.
+-   Support for upcoming HTTP feature updates.
+-   Enhanced support for on-premise connections enabled within the starter edition runtime profile.
+-   Resolved `StackOverflowError` by integrating Camel patch \(CAMEL-22147\) for transactions split that could cause deep stack frames.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.67.32
+
+</td>
+<td valign="top">
+
+This patch includes the following items:
+
+-   Fixes to the liquibase script execution avoiding app crashes during startup.
+-   Enhanced logging capabilities to track when credentials are retrieved after a recent software update.
+-   Enabling of the G1 Garbage Collector \(G1GC\).
+-   Support for upcoming HTTP feature updates.
+-   Enhanced support for on-premise connections enabled within the starter edition runtime profile.
+-   Resolved `StackOverflowError` by integrating Camel patch \(CAMEL-22147\) for transactions split that could cause deep stack frames.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1k_3fa"/>
+
+## July 2025
+
+Software Increment: 2504
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.30.17
+
+</td>
+<td valign="top">
+
+This patch fixes a bug in Camel that receives the file size as integer instead of long. Files with sizes greater than 2.3 GB aren't processed properly, and the application throws an out of memory exception.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.47
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Customers of a specific tenant might see or modify Security Artifacts or view Data Store/JMS entries belonging to another customer's tenant. This issue can occur when there is a high load on the Key Management microservice or the Runtime API.
+-   A bug in Camel that receives the file size as integer instead of long. Files with sizes greater than 2.3 GB aren't processed properly, and the application throws an out of memory exception..
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_i2v_s5f_qfc"/>
+
+## June 2025
+
+Software Increment: 2504
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.39.18
+
+</td>
+<td valign="top">
+
+This patch fixes issues with Role Check modifications in the Script Collection Deploy scenario.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.44
+
+</td>
+<td valign="top">
+
+This patch fixes issues with Role Check modifications in the Script Collection Deploy scenario.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.30.16
+
+</td>
+<td valign="top">
+
+This patch adds an additional logs to facilitate detailed analysis of customer incidents.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.39.17
+
+</td>
+<td valign="top">
+
+This patch adds an additional logs to facilitate detailed analysis of customer incidents.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.41
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Compatibility issues with main XSDs that reference types from external XSDs within mappings.
+-   Incorporates an additional logs to facilitate detailed analysis of customer incidents.
+-   Mitigates CVE-2025-49146 by deploying an updated version of the PostgreSQL library
+-   Regeneration failures during artifact deployment by resolving a database insert error.
+-   Migration mapping that have names exceeding 60 characters.
+-   Security enhancements.
+-   Validation for the undeployment activity in the OData DELETE API.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.39.16
+
+</td>
+<td valign="top">
+
+This patch adds a check for the old standard sap hcicertificate in security artifact transport.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.66.37
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Memory usage issue in `it-co`.
+-   Regeneration failures during artifact deployment by resolving a database insert error.
+-   Validation for the undeployment activity in the OData DELETE API.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_emj_r1k_3fc"/>
+
+## May 2025
+
+Software Increment: 2503
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.18
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.40
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Memory usage issue in `it-co`.
+-   Management of suspended tenants, ensuring effective xsuaa key rotation within the configuration service.
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Enabling tenant-specific configuration service for xsuaa key rotation.
+-   Security enhancements.
+-   Retention of archival settings in integration flow monitoring during a Camel upgrade.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.17
+
+</td>
+<td valign="top">
+
+This patch includes security enhancements.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.38.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Queue monitor failing issues to load messages due to multiple JMS broker connection requests.
+-   Security Enhancements.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.36
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Queue monitor failing issues to load messages due to multiple JMS broker connection requests.
+-   Security Enhancements.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.29.16
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Gather issue with ZipAggregationStrategy.
+-   In camel-3.x runtime, when multiple calls are made to MDI using the MDI receiver adapter in a single message processing, the local ID sent to the MDI service was incorrect.
+-   Kafka sender adapter where the "Retry Failed Messages" functionality is not working.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.38.18
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   The issue with the Kafka sender adapter, restoring full functionality to the "Retry Failed Messages" feature.
+-   Security Enhancements.
+-   The issue where security artifact migration from the NEO tenant to the CF tenant fails if the CF tenant is on an extension landscape. For example, an extension landscape URL looks like this: https://tenantxy.integrationsuite.cfapps.eu10-004.hana.ondemand.com/shell/home. The "004" is the extension number.
+-   Gather issue with ZipAggregationStrategy.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.65.34
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Unable to set the MPLL log level due to a redirection issue from the config service to TRM. The redirection URL formation has been updated to resolve this issue.
+-   Gather issue with ZipAggregationStrateggy.
+-   In camel-3.x runtime, when multiple calls are made to MDI using the MDI receiver adapter in a single message processing, the local ID sent to the MDI service was incorrect.
+-   An update for the Apache HTTP Client is required to fix CVE-2025-27820.
+-   Kafka sender adapter where the "Retry Failed Messages" functionality is not working
+-   Input validation for old service instances improved.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.99.6
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where MAG simulation fails if one of the MIGs uses a custom codelist.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.99.5
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Pretransformation fail due to the use of wrong ArtifactValue.
+
+-   Incorrect SAP telemetry destination name in the code.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## April 2025
+
+Software Increment: 2502
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.31
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Hanging issues and facilitates a smooth Camel 3x migration with transaction-enabled XSLT Mapping Components.
+-   Intermittent access issue affecting over 10 customers in Integration Suite, following the "@sap/approuter" update to version 19.0.0 to address a vulnerability identified by Blackduck.
+-   Failure of MTMS Software Update on `it-rc-web` in larger systems.
+-   Non-functional learn more banners and learning journey links.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.37.18
+
+</td>
+<td valign="top">
+
+This patch fixes the hanging issues and facilitates a smooth Camel 3x migration with transaction-enabled XSLT Mapping Components.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.28.10
+
+</td>
+<td valign="top">
+
+This patch fixes the hanging issues and facilitates a smooth Camel 3x migration with transaction-enabled XSLT Mapping Components.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.28
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Improved handling of migrated message mappings, enabling the opening of expanded recursive nodes with duplicate subtrees.
+-   Splitter component by setting a default value to the SapGroup header when it is empty.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.37.17
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Improved handling of migrated message mappings, enabling the opening of expanded recursive nodes with duplicate subtrees.
+-   Splitter component by setting a default value to the SapGroup header when it is empty.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.28.9
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the Kafka Sender Adapter, restoring full functionality to the "Retry Failed Messages" feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.26
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Deployment failure for `cp_it_resource_cockpit` due to revoked admin privileges from the Postgres user.
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Customers to deploy Message Mappings containing JSON schemas.
+-   Queue monitor not loading messages due to multiple JMS broker connection requests.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.98.4
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where Push to Partner Directory or Export of runtime artifacts of a MAG was taking considerably longer time.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.37.15
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Performance enhancements related to content deployment.
+-   Kafka Sender Adapter where the "Retry Failed Messages" functionality is not working.
+-   Customers to deploy Message Mappings containing JSON schemas.
+-   Queue monitor not loading messages due to multiple JMS broker connection requests.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.64.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Temp store accumulation by cleaning up ZIP files.
+-   Critical CPU usage in Inspect's dedicated Postgres `it-db-rc`, suspected to be caused by Azure hyperscaler, observed exclusively in `eu20-001`.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.37.11
+
+</td>
+<td valign="top">
+
+This patch includes performance enhancements related to content deployment.
+
+</td>
+</tr>
+</table>
+
+
+
+## April 2025
+
+Software Increment: 2501
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Splitter issue in Camel by enabling rollback capability.
+-   The 'Handled By Integration Flow' option in an XI sender channel causes errors due to the absence of a payload in synchronous responses when sending XI messages with Quality of Service BestEffort.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.47
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Splitter issue in Camel by enabling rollback capability.
+-   The 'Handled By Integration Flow' option in an XI sender channel causes errors due to the absence of a payload in synchronous responses when sending XI messages with Quality of Service BestEffort.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.36.30
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Performance enhancements related to content deployment.
+-   Splitter issue in Camel by enabling rollback capability.
+-   The 'Handled By Integration Flow' option in an XI sender channel causes errors due to the absence of a payload in synchronous responses when sending XI messages with Quality of Service BestEffort.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.21
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Truncated message after GZIP flow step.
+-   Groovy metadata cache clearance.
+-   Integration flows failing during worker instance restart due to network issues impacting Audit Logger activation. The dependency causing errors has been removed to ensure smoother operations.
+-   Feature to cache the `KeyManagerin` OData V2 Receiver is reverted.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.45
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Truncated message after GZIP flow step.
+-   MPL Status for asynchronous messages.
+-   Exclusive queue-related fixes:
+    -   Reordering on reload.
+    -   Duplicate entries in the move messages dialog.
+    -   Issue with route generation when *Quality Of Service* type *Handled By Integration Flow* is selected.
+    -   An error message was added for long loading times.
+
+-   Deployment and staging of application `it-op-eic-admincockpit` on Ali Cloud tenants.
+-   Groovy metadata cache clearance.
+-   Integration flows failing during worker instance restart due to network issues impacting Audit Logger activation. The dependency causing errors has been removed to ensure smoother operations.
+-   Feature to cache the `KeyManagerin` OData V2 Receiver is reverted.
+-   Wrong claims in LLM-generated Script Optimization Report.
+-   Redacted strings showing in script optimization proposals.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.36.28
+
+</td>
+<td valign="top">
+
+This patch fixes the following items:
+
+-   Groovy metadata cache clearance.
+-   Truncated message after GZIP flow step.
+-   MPL Status for asynchronous messages.
+-   Exclusive queue-related fixes:
+    -   Reordering on reload.
+    -   Duplicate entries in the move messages dialog.
+    -   Issue with route generation when *Quality Of Service* type *Handled By Integration Flow* is selected.
+    -   An error message was added for long loading times.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## March 2025
+
+Software Increment: 2501
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.27.16
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Security enhancements.
+-   Exchange headers are retained during exceptions, aligning functionality with Camel 2.x.
+-   Attachment content is consistently of type String in Camel 3, maintaining compatibility with Camel 2.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.63.39
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Retrieval of MPL Attachments through MPL OData APIs to 1000 items per request, ensuring more efficient data handling with the endpoint `/MessageProcessingLogs(<MPL ID>)/Attachments`.
+-   Security enhancements.
+-   Exchange headers are retained during exceptions, aligning functionality with Camel 2.x.
+-   Attachment content is consistently of type String in Camel 3, maintaining compatibility with Camel 2.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.36.24
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Security enhancements.
+-   Exchange headers are retained during exceptions, aligning functionality with Camel 2.x.
+-   Attachment content is consistently of type String in Camel 3, maintaining compatibility with Camel 2.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.36.26
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with the feature to cache the `KeyManegerin` OData V2 Receiver.
+
+</td>
+</tr>
+</table>
+
+
+
+## March 2025
+
+Software Increment: 2413
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.26.19
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   PD usage in the mail receiver adapter for encryption.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive stuck in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.62.57
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   PD usage in the mail receiver adapter for encryption.
+-   Frequent crashing issue of the IT-CO application caused by low disk space.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive stuck in the starting state by providing exception handling and ensuring accurate artifact status updates in the UI.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.35.29
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   PD usage in the mail receiver adapter for encryption.
+-   Download of the Certificate Signing Request in NEO Camelupdate Version with Java 17 for Elliptic Curve keys.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## February 2025
+
+Software Increment: 2413
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.26.17
+
+</td>
+<td valign="top">
+
+This patch fixes the aggregator issue on Camel 3.x.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.62.51
+
+</td>
+<td valign="top">
+
+This patch fixes the aggregator issue on Camel 3.x.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.35.27
+
+</td>
+<td valign="top">
+
+This patch fixes the aggregator issue on Camel 3.x.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.26.16
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Metaspace consumption during script execution.
+-   Runtime artifact generation by making stage timeout configurable.
+-   Message processing fails when using the Mail receiver adapter with signature/encryption and a dynamic alias set via property.
+-   Errors while using SOAP Sender adapter with OneWay, WS Standard, and WS Addressing configurations.
+-   Errors during message processing on Camel 3.x with larger attribute size by increasing the XML max attribute to 120.000.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.62.50
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Metaspace consumption during script execution
+-   Design time loading issue by disabling Telemetry Kafka topics.
+-   Runtime artifact generation by making stage timeout configurable.
+-   Function Library cannot access certain packages included in the Java core library due to missing import-package entries in those java core libraries.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive remain in the starting state for an extended period.
+-   Message processing fails when using the Mail receiver adapter with signature/encryption and a dynamic alias set via property.
+-   Switchable legacy behavior for:
+    -   String functions with line separator in XSLT mapping.
+    -   Message History, which is by default switched off in Camel 3.x.
+
+-   Errors while using SOAP Sender adapter with OneWay, WS Standard, and WS Addressing configurations.
+-   Thread blocking in the design service that causes crashes.
+-   Errors during message processing on Camel 3.x with larger attribute size by increasing the XML max attribute to 120.000.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.35.26
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Function Library cannot access certain packages included in the Java core library due to missing import-package entries in those java core libraries.
+-   Message Mapping, Value Mapping, Function Library, and Imported Archive remain in the starting state for an extended period.
+-   Message processing fails when using the Mail receiver adapter with signature/encryption and a dynamic alias set via property.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.35.23
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Switchable legacy behavior for:
+    -   String functions with line separator in XSLT mapping.
+    -   Message History, which is by default switched off in Camel 3.x.
+
+-   Errors while using SOAP Sender adapter with OneWay, WS Standard, and WS Addressing configurations.
+-   Artifacts were undeployed by the sync task even when those were not marked for undeployment.
+-   Thread blocking in the design service that causes crashes.
+-   Errors during message processing on Camel 3.x with larger attribute size by increasing the XML max attribute to 120.000.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_ctb_2cq_yyc"/>
+
+## January 2025
+
+Software Increment: 2412
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.41
+
+</td>
+<td valign="top">
+
+This patch fixes the following issues:
+
+-   Skip regeneration for artifacts that are deployed in Cloud Integration runtime location will.
+-   Credential rotation is optimized for unused keys.
+-   Data conversion affecting the interpretation of search results in the PI/PO system.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.69.15
+
+7.34.20
+
+6.61.37
+
+</td>
+<td valign="top">
+
+This patch fixes:
+
+-   The issue that occurs while editing a datasource in the JDBC adapter.
+-   The issue with process direct adapter that occurs while identifying addresses with spaces along with their respective integration flow names.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.36
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of excessive file descriptors usage detected in camel stream cache.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.69.15
+
+7.34.20
+
+6.61.35
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of message mapping script functions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.69.14
+
+7.34.19
+
+</td>
+<td valign="top">
+
+This patch fixes the issue of content discovery for neo tenants.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.69.13
+
+7.34.18
+
+6.61.34
+
+</td>
+<td valign="top">
+
+This patch fixes the blocking issue caused by the codenarc scans for groovy scripts during deployment.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.32
+
+</td>
+<td valign="top">
+
+This patch fixes login related issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.30
+
+</td>
+<td valign="top">
+
+This patch fixes the loading issue of the Capabilities section on the Home Page.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.29
+
+</td>
+<td valign="top">
+
+This patch fixes the billing related issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.95.4
+
+</td>
+<td valign="top">
+
+MAG Simulation and export of runtime artifacts suddenly started failing while looking-up for some codelist after the release of 1.95.3. This patch fixes this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.61.28
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with creating and rendering design time artifacts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.34.16
+
+6.61.27
+
+</td>
+<td valign="top">
+
+With this patch, for FTP Sender adapter, *Streaming* is enabled only if *Change Directory Stepwise* is disabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.34.16
+
+6.61.27
+
+</td>
+<td valign="top">
+
+With this patch, for FTP Sender adapter, *Streaming* is enabled only if *Change Directory Stepwise* is disabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.34.15
+
+6.61.25
+
+</td>
+<td valign="top">
+
+This patch fixes the issue with integration flows when using Process Direct Adapter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.34.14
+
+</td>
+<td valign="top">
+
+This patch fixes an issue with class loading during tenant restarts that occur during software updates and adds logs for further verification.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.69.11
+
+7.34.13
+
+6.61.24
+
+</td>
+<td valign="top">
+
+This patch restores the download option for PGP Keys.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.34.12
+
+</td>
+<td valign="top">
+
+The 7.34.10 release introduced a change in request handling that caused errors in the SOAP Sender channel when using the Asynchronous One-Way Message Exchange pattern. This patch resolves the issue by reverting to the original behavior.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_ctb_2cq_ydc"/>
+
+## January 2025
+
+Software Increment: 2410
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.32.21
+
+5.67.21
+
+6.59.53
+
+</td>
+<td valign="top">
+
+JDBC exceptions and file descriptor overflow were reported due to too many open files.
+
+This patch resolves the issue by advising the user to keep the Datasource limit at 49, as recommended.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_nwm_jf5_qdc"/>
+
+## December 2024
+
+Software Increment: 2410
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.32.15
+
+6.59.39
+
+</td>
+<td valign="top">
+
+In the Camel 3.x migration, internal properties in Exchange weren't being propagated when using the Process Direct Adapter.
+
+This patch enables the selective migration of certain properties based on an environment variable. If the environment variable is turned ON, only specific properties migrate. If the environment variable is absent or turned OFF, the default behavior allows the migration of all properties, both internal and external.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.93.4
+
+</td>
+<td valign="top">
+
+This patch resolves issues with the Pre, Post, and Mag XSLTs generated during the MAG runtime export, when the MIG contains a default namespace with unqualified nodes. Before, the default namespace was incorrectly assigned to certain nodes.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_i5x_kr5_4dc"/>
+
+## December 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.31.21
+
+8.22.17
+
+</td>
+<td valign="top">
+
+Internal properties in Exchange were not being propogated when using ProcessDirect adapter in Camel 3x migration. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.40
+
+8.22.15
+
+</td>
+<td valign="top">
+
+On Cloud Foundry, the Cloud Integration worker application failed to connect to the Credential Store Service due to network issues, causing the keystore to be unavailable. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_h4k_drs_ldc"/>
+
+## November 2024
+
+Software Increment: 2409
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.58.31
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 is currently not available in Camel 3.x tenants due to a version difference in the command \(cmd\) between the Camel 2.x and 3.x branches. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.31.12
+
+</td>
+<td valign="top">
+
+This patch fixes the usage of $\{property\} expressions in the ID Mapper flow step for tenants on Camel 3.x.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gp4_42n_vcc"/>
+
+## October 2024
+
+**Software Increment: 2409**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.31.10
+
+8.22.9
+
+</td>
+<td valign="top">
+
+The Process Direct Adapter with Camel 3.x software was stuck in the processing state when called for Dynamic Address Resolution for the process direct consumer. This patch resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.66.6
+
+7.31.8
+
+6.58.24
+
+</td>
+<td valign="top">
+
+The JDBC Adapter version 1.5 was unavailable in Camel 3x tenants due to the command version difference between the Camel 2x and 3x branches. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_gv4_42n_vcc"/>
+
+## September 2024
+
+**Software Increment: 2408**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.57.31
+
+7.30.18
+
+</td>
+<td valign="top">
+
+This patch fixes the unexpected long processing time of the integration flows.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.57.28
+
+</td>
+<td valign="top">
+
+Fix for content deployment failures caused by authentication issue between the underlying microservices.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.91.6
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   Display problems with mapping lines in MAG when an invalid mapping element is present.
+
+-   MIG Simulation not working correctly with EDI Flat files.
+
+-   EDI Flat files not being accepted for the customization of MIG during its creation.
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_oy3_prr_ncc"/>
+
+## August 2024
+
+**Software Increment: 2407**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.90.2
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.64.14
+
+7.29.18
+
+</td>
+<td valign="top">
+
+Integration flows were undeployed automatically because database queries were executed in non-transactional manner along with lack of synchronization between related tasks. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.64.14
+
+7.29.18
+
+6.56.33
+
+</td>
+<td valign="top">
+
+In the tenants using Apache Camel 3.14 runtime the integration flows utilizing AS2 and AS4 adapters experience frequent retries during message processing failures. For more details and solution, see [3516264](https://me.sap.com/notes/3516264)
 
 This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_td5_gcw_hcc"/>
+
+## August 2024
+
+**Software Increment: 2406**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+1.89.3
+
+</td>
+<td valign="top">
+
+Issues were reported when activating a MAG with target MIG based on a custom message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.63.17
+
+7.28.20
+
+6.55.21
+
+8.19.14
+
+</td>
+<td valign="top">
+
+A recent security fix for GHAS/CodeQL message mapping runtime, which blocked XML payloads containing Document Type Declarations \(DTDs\), has been reverted due to customer impact. This patch withdraws the security fix.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.28.17
+
+</td>
+<td valign="top">
+
+There was the issue that the payload got lost after being fetched by the Mail sender adapter if mail was signed/encrypted. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.28.14
+
+6.55.13
+
+</td>
+<td valign="top">
+
+The following issues have been fixed with this patch:
+
+-   The conversion from property to exchangeProperty was not properly implemented for the generation step, thus preventing the initiation of integration flows.
+
+-   The default to use breadcrumb has been changed with Camel 3.x from `true` to `false`. As some customers rely on that header, the value has been reverted back to `true`
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.55.12
+
+5.63.11
+
+</td>
+<td valign="top">
+
+OEM adapters will be upgraded to Apache Camel version 3.x during the migration to Camel 3.x. This patch provides a change that makes this step transparent on the user interface.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_vyv_klk_2cc"/>
+
+## July 2024
+
+**Software Increment: 2405**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.62.17
+
+</td>
+<td valign="top">
+
+Message failures were reported in IDoc packages when the field DOCNUM was not set for some messages. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.62.16
+
+7.27.19
+
+</td>
+<td valign="top">
+
+Timer failures were reported when worker ljs was restarted\(OOM\) after camel 3x migration. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_r1l_g42_sbc"/>
+
+## June 2024
+
+**Software Increment: 2404**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.26.10
+
+</td>
+<td valign="top">
+
+Message processing failures with the message `Too many open files` have been observed after migrating to Camel 3x. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.31
+
+7.26.8
+
+</td>
+<td valign="top">
+
+A null pointer exception was thrown when sending an XI message. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.29
+
+7.26.7
+
+5.61.10
+
+</td>
+<td valign="top">
+
+During software update, a *Timer* step configured with a start date triggered the writing of a message processing log at an unscheduled time.
+
+This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.27
+
+5.61.9
+
+</td>
+<td valign="top">
+
+The JDBC Kafka consumer took too much time in case of an error.
+
+The patch fixes the issue so that processing happens in asynchronous mode now.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.53.25
+
+</td>
+<td valign="top">
+
+Content transport was impacted by an outdated service key stored in the credential store. The patch fixes this issue and ensures a consistent update of the affected entry in the credential store. and ensures a consistent update of the affected entry in the credential store.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.61.8
+
+6.53.23
+
+7.26.6
+
+</td>
+<td valign="top">
+
+stream. Special characters got converted to invalid characters. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_pr1_hzx_3bc"/>
+
+## May 2024
+
+**Software Increment: 2403**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.20
+
+</td>
+<td valign="top">
+
+There have been DNS cache issues with JCo library resulting in the RFC receiver adapter to throw the error `Opening socket to partner failed: error 111 - Connection refused`. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.60.9
+
+7.25.10
+
+6.52.18
+
+</td>
+<td valign="top">
+
+The missing DOCNUM field in the request payload was causing an error “Mandatory IDoc SOAP header missing”. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.52.17
+
+</td>
+<td valign="top">
+
+There was an issue with number range redeployment that lead to artifacts getting stuck. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.60.8
+
+7.25.9
+
+</td>
+<td valign="top">
+
+There have been issues with integration flow deployment. This patch fixes the issues.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_blr_mdf_cbc"/>
+
+## April 2024
+
+**Software Increment: 2402**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.59.13
+
+7.24.10
+
+</td>
+<td valign="top">
+
+After a software update, the following issue has been observed: Integration flows with *Timer* events that were already in *Deployed* or *Started* state went to *Failed* state during software update \(if *Timer* was scheduled to run with the past date\). This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.28
+
+</td>
+<td valign="top">
+
+There have been problems to load *Monitor* page. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.27
+
+</td>
+<td valign="top">
+
+There were some issues with the generation of key-pairs with X.509 certificates using elliptic curve algorithms \(for example, secp192k1, secp256k1, secp192r1, and others\). This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+There has been a performance issue with the Inspect feature. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.51.25
+
+</td>
+<td valign="top">
+
+There was an issue with a potential negative impact on the deployment and undeployment of integration artifacts. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.59.12
+
+7.24.9
+
+</td>
+<td valign="top">
+
+Integration flows that use the *Timer* event have been discarded after the upgrade to Camel 3x. This patch fixes the issue and also improves the upgrade process to Camel 3x.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.59.11
+
+6.51.23
+
+7.24.8
+
+</td>
+<td valign="top">
+
+System performance has been improved and truncation of value mapping has been fixed by changing the way XML files are read.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_g3d_cvj_51c"/>
+
+## March 2024
+
+**Software Increment: 2401**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.11
+
+6.50.23
+
+7.23.15
+
+</td>
+<td valign="top">
+
+There have been outages where scenarios stopped working. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.10
+
+7.23.14
+
+6.50.22
+
+</td>
+<td valign="top">
+
+For some customers, scenarios using the SFTP adapter stopped working. Even after already having patched this issue, few customers observed continuation in following error message being raised: `SSH_MSG_DISCONNECT: 2 Failed to read binary`. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.9
+
+7.23.13
+
+</td>
+<td valign="top">
+
+There were multiple timer executions during camel 3x migration. This patch fixes the issue.There were multiple timer executions, during camel 3x migration. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.58.9
+
+7.23.12
+
+</td>
+<td valign="top">
+
+Some customers experienced issues with SFTP scenarios which stopped working and receiving connection errors from servers with message SSH\_MSG\_DISCONNECT: 2 Failed to read binary packet data! this patch fixes the issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.23.11
+
+8.14.8
+
+</td>
+<td valign="top">
+
+As the behavior of Camel 3x has changed, some customers face an execution error in an edge case, when setting and reading the body within the same Groovy script. This patch fixes the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_esy_5zq_51c"/>
+
+## March 2024
+
+**Software Increment: 2313**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.57.10
+
+7.22.9
+
+</td>
+<td valign="top">
+
+Due to an OData metadata version reported as “1.0”, modern OData client applications are refusing to parse service definitions correctly. This patch changes the version to “2.0” and resolves the issue.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_p24_3d4_m1c"/>
+
+## February 2024
+
+**Software Increment: 2313**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.57.10
+
+7.22.9
+
+</td>
+<td valign="top">
+
+Due to an OData metadata version reported as “1.0”, modern OData client applications are refusing to parse service definitions correctly. This patch changes the version to “2.0” and resolves the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.49.27
+
+</td>
+<td valign="top">
+
+This patch ensures that the API returns the details of the artifact version which is available on worker even if the multiple versions are available in CO db after executing regeneration.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.57.9
+
+7.22.7
+
+6.49.25
+
+</td>
+<td valign="top">
+
+There have been partly broken integration flow processes, due to Database Timeouts happening upon degraded encryption/decryption performance. This patch fixes this issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.57.7
+
+6.49.4
+
+</td>
+<td valign="top">
+
+EDI splitter threw an exception in integration flow for the Partners sending the EDIFACT payload without line feed and ?’ \(escape character + segment terminator\) in one segment. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.57.7
+
+7.22.5
+
+6.49.21
+
+</td>
+<td valign="top">
+
+There was a performance degradation for message processing caused by repetitively calling NM functionality to retrieve the tenant name. This patch fixes the issue by caching this single value to avoid redundant calls.
+
+</td>
+</tr>
+</table>
+
+
+
+<a name="loio023a4725bb734f86be8a5625abe54110__section_nyz_rrv_11c"/>
+
+## January 2024
+
+**Software Increment: 2312**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.48.22
+
+8.12.2
+
+</td>
+<td valign="top">
+
+The patch addresses performance degradation issues.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.48.20
+
+7.21.3
+
+8.12.1
+
+</td>
+<td valign="top">
+
+There has been an issue with upsert operations when using the JDBC adapter. This patch fixes the issue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+5.54.18
+
+7.19.16
+
+</td>
+<td valign="top">
+
+With this patch, the AMQP adapters have been updated to consume the ActiveMQ 5.16.7 version.
 
 </td>
 </tr>

@@ -56,7 +56,7 @@ You're in the edit mode of the MAG editor.
     <tr>
     <td valign="top">
     
-    <span class="SAP-icons"></span> \(create new copy of this snippet\)
+    <span class="SAP-icons-V5"></span> \(create new copy of this snippet\)
     
     </td>
     <td valign="top">

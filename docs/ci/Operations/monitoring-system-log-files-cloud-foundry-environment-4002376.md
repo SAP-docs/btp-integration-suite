@@ -85,7 +85,7 @@ Displays thenumber of entries in the log file.
 </td>
 <td valign="top">
 
-You can either download the file by selecting <span class="SAP-icons"></span> or get the URL by selecting <span class="SAP-icons"></span>.
+You can either download the file by selecting <span class="SAP-icons-V5"></span> or get the URL by selecting <span class="SAP-icons-V5"></span>.
 
 </td>
 </tr>

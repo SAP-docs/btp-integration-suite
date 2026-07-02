@@ -34,11 +34,11 @@ You use this procedure to add integration packages to your customer workspace.
 
 ## Procedure
 
-1.  If you want to copy integration package in catalog to your customer workspace, mouse-over the integration package tile and choose <span class="SAP-icons"></span>.
+1.  If you want to copy integration package in catalog to your customer workspace, mouse-over the integration package tile and choose <span class="SAP-icons-V5"></span>.
 
 2.  If you want to upload an integration package from your local file system to your customer workspace, perform the following substeps.
 
-    1.  Choose <span class="SAP-icons"></span>, then *Design*.
+    1.  Choose <span class="SAP-icons-V5"></span>, then *Design*.
 
     2.  Choose *Import*.
 

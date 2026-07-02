@@ -221,7 +221,7 @@ Creating a Mapping Guideline
 
 You can now copy a mapping guideline using two different options.
 
-See: [Creating a New Mapping Guideline](../IntegrationAdvisor/creating-a-new-mapping-guideline-a42920e.md)
+See: [Creating Standard Graphical Mapping Guidelines](../IntegrationAdvisor/creating-standard-graphical-mapping-guidelines-a42920e.md)
 
 </td>
 <td valign="top">
@@ -1055,9 +1055,9 @@ The scope of access policies now includes the protection of:
 
 See:
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
 
 
@@ -1582,7 +1582,7 @@ Simulating a Message Implementation Guideline
 
 You now have the option to rerun simulation on a message implementation guideline based on example data or payload data.
 
-See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simulating-a-message-implementation-guideline-42b45c5.md) 
+See: [Simulating Message Implementation Guidelines](../IntegrationAdvisor/simulating-message-implementation-guidelines-42b45c5.md) 
 
 </td>
 <td valign="top">
@@ -1630,7 +1630,7 @@ Simulating a Mapping Guideline
 
 You can now view all the potential instances of a node after simulating a mapping guideline, independent of whether the instances are created or not.
 
-See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping-guideline-b18178b.md) 
+See: [Simulating Mapping Guidelines](../IntegrationAdvisor/simulating-mapping-guidelines-b18178b.md) 
 
 </td>
 <td valign="top">
@@ -1773,9 +1773,9 @@ Improvements to Access Policies in Design Time
 
 Message mappings and value mappings can also be protected using access policies. See
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
 
 
@@ -1966,7 +1966,7 @@ Conditional Mapping
 
 You can now view the details of the input and outcome of a conditional mapping after simulating a mapping guideline.
 
-See: [Simulating a Mapping Guideline](../IntegrationAdvisor/simulating-a-mapping-guideline-b18178b.md) 
+See: [Simulating Mapping Guidelines](../IntegrationAdvisor/simulating-mapping-guidelines-b18178b.md) 
 
 </td>
 <td valign="top">
@@ -2063,7 +2063,7 @@ Message Implementation Guideline
 -   You can now view the distinction between nonexisting and empty leaf nodes after simulating the mapping structure of a message implementation guideline.
 
 
-See: [Simulating a Message Implementation Guideline](../IntegrationAdvisor/simulating-a-message-implementation-guideline-42b45c5.md) 
+See: [Simulating Message Implementation Guidelines](../IntegrationAdvisor/simulating-message-implementation-guidelines-42b45c5.md) 
 
 </td>
 <td valign="top">
@@ -2393,9 +2393,9 @@ Improvements of Access Policies in Design Time
 
 OData APIs can also be protected using access policies. See
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
 
 
@@ -2638,7 +2638,7 @@ Mapping Guideline
 
 You can now view the distinction between nonexisting and empty leaf nodes after simulating the mapping structure of a mapping guideline.
 
-See: [Working with a Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-a-mapping-guideline-mag-0803ca6.md) 
+See: [Working with Mapping Guidelines \(MAGs\)](../IntegrationAdvisor/working-with-mapping-guidelines-mags-0803ca6.md) 
 
 </td>
 <td valign="top">
@@ -3208,9 +3208,9 @@ Improvement of Access Policies in Design Time
 
 REST and SOAP APIs can also be protected using access policies. See
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
 
 
@@ -3352,7 +3352,7 @@ Message Implementation Guideline
 
 You can now activate a message implementation guideline that is based on a custom message by activating the custom message first.
 
-See: [Versioning a Message Implementation Guideline](../IntegrationAdvisor/versioning-a-message-implementation-guideline-12784f9.md) 
+See:  <?sap-ot O2O class="- topic/xref " href="12784f9d34444f929f9ea72ef38f7e02.xml" text="" desc="" xtrc="xref:69" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/df65cdee56d04965a2e4bd863bc2410b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
 
 </td>
 <td valign="top">
@@ -3489,7 +3489,7 @@ Introducing Script Collection Artifact
 </td>
 <td valign="top">
 
-You can create script collection artifacts that can contain supported script resources like Groovy script, JavaScripit, and Jar \(archive\) files in it. Script collection comes with benefits like reusable script resources, reduced memory usage, ease of maintenance. See [Developing Script and Script Collection](../Development/developing-script-and-script-collection-e60f706.md).
+You can create script collection artifacts that can contain supported script resources like Groovy script, JavaScripit, and Jar \(archive\) files in it. Script collection comes with benefits like reusable script resources, reduced memory usage, ease of maintenance. See [Working with Script and Script Collection](../Development/working-with-script-and-script-collection-e60f706.md).
 
 </td>
 <td valign="top">
@@ -3578,9 +3578,9 @@ Consuming Access Policies in Design Time
 
 As a tenant administrator, you can now apply access policies for the integration artifacts at design time. Earlier, you could only protect the business data created during the runtime execution of integration artifacts. See
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
 
 
@@ -4401,9 +4401,9 @@ SAP has released two adapters to enhance your integration and connectivity optio
 
 See:
 
--   [ServiceNow Receiver Adapter](../Development/servicenow-receiver-adapter-1e3bcf4.md) 
+-    <?sap-ot O2O class="- topic/xref " href="1e3bcf40403441d4898e6badd53c2b79.xml" text="" desc="" xtrc="xref:88" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/df65cdee56d04965a2e4bd863bc2410b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
 
--   [Workday Receiver Adapter](../Development/workday-receiver-adapter-0c6e670.md) 
+-    <?sap-ot O2O class="- topic/xref " href="0c6e67020af9433cb09a56736d73ca76.xml" text="" desc="" xtrc="xref:89" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/df65cdee56d04965a2e4bd863bc2410b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
 
 
 
@@ -4450,9 +4450,9 @@ Access Policy Update
 
 Access policies now also guard the access to variables.
 
--   [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md) 
+-   [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md) 
 
--   [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md) 
+-   [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md) 
 
 
 
@@ -5689,7 +5689,7 @@ Deleting a Mapping Guideline
 
 You can now choose to delete a MAG including its history or only the specific version of a MAG.
 
-See: [Deleting a Mapping Guideline](../IntegrationAdvisor/deleting-a-mapping-guideline-8e3a934.md) 
+See: [Deleting Mapping Guidelines](../IntegrationAdvisor/deleting-mapping-guidelines-8e3a934.md) 
 
 </td>
 <td valign="top">

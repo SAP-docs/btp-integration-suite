@@ -82,7 +82,7 @@ For *Proxy Type* `OnPremise`
 
 -   The CMS Repository and replace host and port by the virtual host and port configured in the SAP Cloud Connector.
 
-The required protocol in the URL is HTTP. This protocol isn't a security risk, as you can specify HTTPS in the SAP Cloud Connector configuration and thus ensure that the route from cloud connector on the on-premise system is encrypted. The connection between cloud connector and application VM in the cloud is always encrypted, as shown in: [https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/8db6945e70b44c5d8e0873c3e9fb3bf2.html\#loio8db6945e70b44c5d8e0873c3e9fb3bf2\_\_oP](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/8db6945e70b44c5d8e0873c3e9fb3bf2.html#loio8db6945e70b44c5d8e0873c3e9fb3bf2__oP)
+The required protocol in the URL is HTTP. This protocol isn't a security risk, as you can specify HTTPS in the SAP Cloud Connector configuration and thus ensure that the route from cloud connector on the on-premise system is encrypted. The connection between cloud connector and application VM in the cloud is always encrypted, as shown in: [Configuration of On-Premise Systems](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/8db6945e70b44c5d8e0873c3e9fb3bf2.html#loio8db6945e70b44c5d8e0873c3e9fb3bf2__oP)
 
 > ### Note:  
 > The default binding is the browser-binding. Unless you specify `AtomPub` as `BindingType`, you've to specify the URL for the browser binding. WebServices binding isn't supported.
@@ -210,12 +210,12 @@ We require a keystore to be uploaded via the â€œUpload and Delete Certificatesâ€
 
 The keystore has to meet the following requirements:
 
-1.  The keystore must be in the JKS format
+1.  The keystore must be in the JKS format.
 
 2.  The keystore must contain exactly one keypair, containing the private key and the certificate chain required for the client.
 3.  The keystore and key pair must be password protected with the **same** password.
 
-After updloading the keystore, enter a name by selecting it from the dropdown list.
+After uploading the keystore, enter a name by selecting it from the dropdown list.
 
 </td>
 </tr>
@@ -427,6 +427,11 @@ The keys in the JSON are the names as provided by SAP, the values are the names 
 
 The name of the type you create is the value of `mpl:message` in the JSON. In the sample code, the type name is `sapcpi_mpl_message`.
 
+> ### Note:  
+> The archived values of `mpl:sender` and `mpl:receiver` have a maximum length of 40 character. If the sender or receiver value of a message processing log exceeds 40 characters, the system truncates the value to 40 characters in the archive.
+
+
+
 </td>
 </tr>
 <tr>
@@ -519,22 +524,25 @@ We recommend using this parameter only if the performance observed, isn't accept
 </tr>
 </table>
 
-The screenshots are for illustrative purposes only. You can use all additional properties independently from the authentication type.
-
-Example of an archiving destination with OAuth2ClientCredentials with required properties, without mTLS:
-
-![](images/Destination_OAUTH2Client_f42c852.png)
-
-Example of an archiving destination with required properties with OAuth2ClientCredentials with required properties, with mTLS
-
-![](images/CI_OAuth2ClientCred_mTLS_01877d7.png)
-
-Example of an archiving destination with BasicAuthentication and all additional properties:
-
-![](images/ArchivingDestination1_571a411.png)
+> ### Example:  
+> These screenshots are for illustrative purposes only. You can use all additional properties independently from the authentication type.
+> 
+> -   This example shows an archiving destination that uses OAuth2 client credentials with the required properties \(without mTLS\):
+> 
+>     ![](images/destination_conf_1_bf0cadf.png)
+> 
+> -   This example shows an archiving destination that uses OAuth 2.0 client credentials and includes the required properties with mTLS:
+> 
+>     ![](images/destination_conf_2_1280dbe.png)
+> 
+> -   Example of an archiving destination with BasicAuthentication and all additional properties:
+> 
+>     ![](images/Destination_3_e66347f.png)
+> 
+>     ![](images/destination_conf_3_1_b456c89.png)
 
 **Related Information**  
 
 
-[Enable Archiving in the Cloud Foundry Environment](enable-archiving-in-the-cloud-foundry-environment-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the official OData API.")
+[Enable Archiving in the Cloud Foundry Environment](enable-archiving-in-the-cloud-foundry-environment-0fbbe93.md "To enable data archiving on a tenant in the Cloud Foundry environment, use the OData API.")
 

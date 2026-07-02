@@ -232,7 +232,7 @@ How to use SAP API Management
         -   [Customize the Visual Format of Developer Hub](API-Management/customize-the-visual-format-of-developer-hub-2eacd52.md)
         -   [Manage Domain Categories](API-Management/manage-domain-categories-bd9691d.md)
         -   [Manage Notifications](API-Management/manage-notifications-df32457.md)
-        -   [Configure the Visibility of Graph Navigator](API-Management/configure-the-visibility-of-graph-navigator-f5bd17d.md)
+        -   [Configure the Visibility of Navigator](API-Management/configure-the-visibility-of-navigator-f5bd17d.md)
         -   [Manage Access](API-Management/manage-access-9df3ece.md)
         -   [Product Subscriptions for Application](API-Management/product-subscriptions-for-application-daffdc5.md)
             -   [Create New Product Subscription for Application](API-Management/create-new-product-subscription-for-application-a501a6d.md)

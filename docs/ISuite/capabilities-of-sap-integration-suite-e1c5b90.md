@@ -4,7 +4,19 @@
 
 Working with SAP Integration Suite capabilities.
 
-SAP Integration Suite brings together the features and functionality of various capabilities such as Cloud Integration, API Management, Graph, Event Mesh, Integration Advisor, Trading Partner Management, OData Provisioning,Data Space Integration, Open Connectors, Integration Assessment, and Migration Assessment.
+SAP Integration Suite brings together the features and functionality of various capabilities such as:
+
+-   Cloud Integration and API Management \([Integrations and APIs](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/build-your-integrations-and-apis?version=CLOUD)\)
+    -   [API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/what-is-api-composition?version=CLOUD)
+
+-   [Event Mesh](https://help.sap.com/docs/integration-suite/isuite-event-mesh/event-mesh?version=CLOUD)
+-   [Integration Advisor](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/integration-advisor?version=CLOUD)
+-   [Trading Partner Management](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management/trading-partner-management?version=CLOUD)
+-   [OData Provisioning](https://help.sap.com/docs/integration-suite/isuite-odata-provisioning/odata-provisioning?version=CLOUD)
+-   [Data Space Integration](https://help.sap.com/docs/integration-suite/isuite-data-space-integration/data-space-integration?version=CLOUD)
+-   [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home)
+-   [Integration Assessment](https://help.sap.com/docs/integration-suite/isuite-integration-assessment/integration-assessment?version=CLOUD)
+-   [Migration Assessment](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/migration-assessment?version=CLOUD).
 
 To work with these capabilities, you must:
 

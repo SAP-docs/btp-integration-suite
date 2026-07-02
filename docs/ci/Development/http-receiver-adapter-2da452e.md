@@ -11,85 +11,147 @@ Use the HTTP receiver adapter to communicate with target systems using HTTP mess
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
-
 > ### Note:  
-> -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
+> -   If you want to dynamically override the configuration of the adapter, you can set the following headers before calling the HTTP adapter:
 > 
-> -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
+>     ****
 > 
+> 
+>     <table>
+>     <tr>
+>     <th valign="top">
+> 
+>     Header Name
+>     
+>     </th>
+>     <th valign="top">
+> 
+>     Description
+>     
+>     </th>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **HTTP Content-Length header**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   The HTTP Receiver adapter works well with target systems that supports either chunked transfer encoding or rely on the existence of the HTTP Content-Length header.
+>     -   The adapter automatically decompresses the received '.gzip' response, so the HTTP Content-Length header reflects the uncompressed size.
+>     -   For versions 1.10 and lower, the adapter works only with target systems that support chunked transfer encoding and may not rely on the existence of the HTTP Content-Length header.
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **CamelHttpUri**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   Overrides the existing URI set directly in the endpoint.
+>     -   This header can be used to dynamically change the URI to be called.
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **CamelHttpQuery**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   Refers to the query string that is contained in the request URL.
+>     -   In the context of a receiver adapter, this header can be used to dynamically change the URI to be called.
+> 
+>         > ### Example:  
+>         > `CamelHttpQuery=abcd=1234`
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **Content-Type**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   SAP recommends you add content-type header that indicates type of payload before you make an HTTP outbound call.
+>     -   HTTP content type that fits to the body of the request.
+>     -   The content type is composed of two parts: a type and a subtype.
+> 
+>         For example, `image/jpeg` \(where `image` is the type and `jpeg` is the subtype\).
+> 
+>         > ### Example:  
+>         > -   `text/plain` for unformatted text
+>         > -   `text/html` for text formatted with HTML syntax
+>         > -   `image/jpeg` for a jpeg image file
+>         > -   `application/json` for data in JSON format to be processed by an application that requires this format
+> 
+>         More information on the available types: [4 The Content-Type Header Field](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
+> 
+>         The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml).
+> 
+>     -   If transferring text/\* content types, you can also specify the character encoding in the HTTP header using the charset parameter.
+> 
+>         > ### Example:  
+>         > `Content-Type: text/html; charset=utf-8`
+> 
+>     -   The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
+> 
+>     -   If you want to override the character encoding and avoid encoding issues when you use special characters, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property.
+> 
+>         > ### Example:  
+>         > If you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`.
+> 
+> 
+> 
+>     
+>     </td>
+>     </tr>
+>     <tr>
+>     <td valign="top">
+>     
+>     **Content-Encoding**
+>     
+>     </td>
+>     <td valign="top">
+>     
+>     -   HTTP content encoding that indicates the encoding used during message transport.
+> 
+>         > ### Example:  
+>         > `gzip` for GZIP file compression.
+> 
+>     -   This information is used by the receiver to retrieve the media type that is referenced by the `content-type` header.
+>     -   If this header is not specified, the default value `identity` \(no compression\) is used.
+> 
+>     More information: [Hypertext Transfer Protocol – HTTP/1.1](https://tools.ietf.org/html/rfc2616)
+> 
+>     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[HTTP Content Coding Registry](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
+>     
+>     </td>
+>     </tr>
+>     </table>
+>     
 > -   The adapter can process payloads having an attachment or MIME multipart messages that are converted to byte array via script steps. For target systems that supports chunked transfer, you need not convert the payload to a byte array.
-
-> ### Note:  
-> If you want to dynamically override the configuration of the adapter, you can set the following headers before calling the HTTP adapter:
-> 
-> -   **CamelHttpUri**
-> 
->     Overrides the existing URI set directly in the endpoint.
-> 
->     This header can be used to dynamically change the URI to be called.
-> 
-> -   **CamelHttpQuery**
-> 
->     Refers to the query string that is contained in the request URL.
-> 
->     In the context of a receiver adapter, this header can be used to dynamically change the URI to be called.
-> 
->     For example, `CamelHttpQuery=abcd=1234`.
-> 
-> -   Content-Type
-> 
->     HTTP content type that fits to the body of the request.
-> 
->     The content type is composed of two parts: a type and a subtype.For example, `image/jpeg` \(where `image` is the type and `jpeg` is the subtype\).
-> 
->     Examples:
-> 
->     -   `text/plain` for unformatted text
-> 
->     -   `text/html` for text formatted with HTML syntax
-> 
->     -   `image/jpeg` for a jpeg image file
-> 
->     -   `application/json` for data in JSON format to be processed by an application that requires this format
-> 
-> 
->     More information on the available types: [https://www.w3.org/Protocols/rfc1341/4\_Content-Type.html](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)
-> 
->     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see [http://www.iana.org/assignments/media-types/media-types.xhtml](http://www.iana.org/assignments/media-types/media-types.xhtml).
-> 
-> -   **Content-Encoding**
-> 
->     HTTP content encoding that indicates the encoding used during message transport \(for example, `gzip` for GZIP file compression\).
-> 
->     This information is used by the receiver to retrieve the media type that is referenced by the `content-type` header.
-> 
->     If this header is not specified, the default value `identity` \(no compression\) is used.
-> 
->     More information: [https://tools.ietf.org/html/rfc2616](https://tools.ietf.org/html/rfc2616) \(section 14.11\)
-> 
->     The list of available content types is maintained by the Internet Assigned Numbers Authority \(IANA\). For more information, see:[http://www.iana.org/assignments/http-parameters/http-parameters.xhtml\#content-coding](http://www.iana.org/assignments/http-parameters/http-parameters.xhtml#content-coding).
-
-> ### Note:  
-> If transferring `text/*` content types, you can also specify the character encoding in the HTTP header using the `charset` parameter.
-> 
-> Here is an example of such a header:
-> 
-> `Content-Type: text/html; charset=utf-8`
-> 
-> The default character encoding that will be applied for `text/*` content types depends on the HTTP version: `us-ascii` for HTTP 1.0 and `iso-8859-1` for HTTP 1.1.
-> 
-> If you want to override the character encoding and avoid encoding issues when you use special characters, you can use the Content Modifier step and specify the `CamelCharsetName` Exchange property. Consider the following example configuration:
-> 
-> If you want to send `iso-8859-1`-encoded data to a receiver, make sure that you specify the `CamelCharsetName` Exchange property \(either header or property\) as `iso-8859-1`.
-
-> ### Note:  
-> Adapter tracing is supported for HTTP adapter. For more information, see [Message Processing Log - Adapter Tracing](../Operations/message-processing-log-adapter-tracing-a9db4ea.md).
+> -   Adapter tracing is supported for HTTP adapter. For more information, see [Message Processing Log - Adapter Tracing](../Operations/message-processing-log-adapter-tracing-a9db4ea.md).
 
 Once you've created a receiver channel and selected the HTTP receiver adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -216,9 +278,9 @@ When you specify the *Query* field of the HTTP adapter as `${header.a}`, at runt
 > 
 > Note that %5B , %5D, %2B and %22 are UTF-8 URL encoded values for special characters \[, \], + and " respectively.
 > 
-> Individual parameter-value pairs must be separated with an ”&” and there must be an “=” between the name of a parameter and its value as shown in example above.
+> Individual parameter-value pairs must be separated with an ”&” and there must be an “=” between the name of a parameter and its value as shown in previous example.
 > 
-> Some special characters need URL encoding as shown above and some do not such as &.
+> Some special characters need URL encoding as previously shown and some do not such as &.
 
 
 
@@ -249,8 +311,6 @@ The type of proxy that you are using to connect to the target system:
     > If you select the *On-Premise* option and use the SAP Cloud Connector to connect to your on-premise system, the *Address* field of the adapter references a virtual address, which has to be configured in the SAP Cloud Connector settings.
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
-
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
 
     This option is only available if you have chosen a *Process Orchestration* product profile.
 
@@ -377,17 +437,33 @@ You can select one of the following authentication methods:
 
     It's a prerequisite that user credentials are specified in a Basic Authentication artifact and deployed on the related tenant.
 
--   *Principal Propagation* – only if the *Proxy Type* is *On-premise*.
+-   *Principal Propagation* – only if the *Proxy Type* is *On-premise*.The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
 
-    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
+    Follow the steps to configure technical user in Neo:
+
+    -   Certificate-to-User mapping -See: [Managing Certificate-to-User Mappings, Neo Environment](../Operations/managing-certificate-to-user-mappings-neo-environment-88ea2e5.md)
+    -   Configuration in the Cloud Connector - Cloud Connector should read the technical g principal directly from the attribute \($\{ name\}\) and add it as Common Name \(CN\) in the certificate that is generated by Cloud Connector.
+    -   Map the name of user to the actual user in the *On-premise* system.
+
+    Follow the steps to configure technical user in Cloud Foundry:
+
+    -   Add a Certificate to Subaccount - Create a new service instance using the Process Integration Runtime service with an Integration Flow plan. Once the instance is created, generate a new service key. Select key type as External Certificate from the dropdown. In the External Certificate, provide the X590 public certificate. Once the service key is created, the service key will generate a Client ID, which will be used as a technical user.
+    -   Configuration in the Cloud Connector - Cloud Connector should read the technical user principal and add it as Common Name \(CN\) in the certificate that is generated by Cloud Connector. To read the technical user principal there are two configuration options:
+        1.  Read the principal using the subject pattern \($\{client\_id\}\).
+        2.  In case of migration from Neo to Cloud Foundry and you don't want to change existing mapping in the *On-premise* system, then you can read the client\_id and map it against the actual user that is mapped in the *On-premise* system.
+
+            For example: In the *On-premise* system if you have mapped a string MIKE to a business user BSR\_USA, then in Cloud Connector in the condition, provide the pattern $\{client\_id\} and in the value provide the client id generated in CPI subaccount, In the subject pattern provide the string MIKE.
+
+
+    -   Map the Client ID to the actual user in the *On-premise* system.
+
+    Technical user *Principal Propagation* is supported from the Cloud Connector version 2.15 for Cloud Foundry.
 
     > ### Remember:  
     > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
 
     > ### Note:  
     > The token for principal propagation expires after 30 minutes. If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
-
-    For special use cases, this authentication method can also be used with the AS2 adapter.
 
 -   *OAuth2 Client Credentials* – Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user. For more information, see [Deploying an OAuth2 Client Credentials Artifact](../Operations/deploying-an-oauth2-client-credentials-artifact-801b106.md).
 
@@ -449,7 +525,7 @@ Although you can configure this feature, it is not supported when using the corr
 
 *Private Key Alias*
 
-\(only if you select *Client Certificate* for authentication\)
+\(only if you select *Client Certificate*
 
 </td>
 <td valign="top">
@@ -482,6 +558,109 @@ Note that the timeout setting has no influence on the Transmission Control Proto
 <tr>
 <td valign="top">
 
+*Streaming* 
+
+</td>
+<td valign="top">
+
+When streaming is enabled, the adapter uses disk space to process the payload once the system memory usage exceeds defined thresholds. This reduces memory usage and helps handle very large messages.
+
+When streaming is disabled, the entire payload is loaded into memory before processing. This can increase memory consumption and may cause message processing to fail if the response size exceeds 2 GB.
+
+See [Optimize Integration Flow Design for Streaming](optimize-integration-flow-design-for-streaming-396941a.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Idle Timeout \(in ms\)* 
+
+</td>
+<td valign="top">
+
+Maximum idle timeout for connections in the pool.
+
+The default value is 300000 milliseconds \(5 minutes\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Header Details* 
+
+</td>
+<td valign="top">
+
+*Request Headers*:
+
+Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system. Alternatively, you can dynamically pass on the values by defining a property that includes a list of headers.
+
+For adapter version 1.19 and above, `traceparent` is included by default in the Request Headers field.
+
+> ### Remember:  
+> Use an `*` separately. If you use an `*` and custom header together that are separated by a pipe \(|\), only the custom header is considered.
+> 
+> You must have defined the custom headers in the previous flow steps like content modifiers or scripts before you mention them in the HTTP Receiver Adapter.
+
+The adapter doesn't support regular expressions like `SAP*`.
+
+All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) and the below listed HTTP protocol headers are excluded even if you specify them.
+
+-   content-length
+
+-   host
+
+-   cache-control
+
+-   connection
+
+-   pragma
+
+-   trailer
+
+-   transfer-encoding
+
+-   upgrade
+
+-   via
+
+-   warning
+
+
+*Response Headers*:
+
+Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an `*` to receive all the headers from the target system, which is also the default value.
+
+</td>
+</tr>
+</table>
+
+Select the *Retry* tab and provide values in the fields as follows.
+
+> ### Remember:  
+> Ensure a careful idempotency design to prevent duplicate business transactions when retry mechanisms execute multiple calls for the same business operation. See [Receiver Is Idempotent](receiver-is-idempotent-f5b22ba.md)
+
+**Retry**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
 *Throw Exception on Failure* 
 
 </td>
@@ -503,92 +682,119 @@ This option allows you to receive all responses irrespective of the HTTP status 
 <tr>
 <td valign="top">
 
-*Attach Error Details on Failure* 
+*Attach Error Details on Failure*
+
+\(Only if *Throw Exception on Failure* is enabled\)
 
 </td>
 <td valign="top">
 
 By default, the option is enabled. This option enables the creation of attachments for request header, response headers, and response body when the message processing fails.
 
-Having these attachments during message processing failures can be unneccesary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
+Having these attachments during message processing failures can be unnecessary as it leads to persistence of attachments that doesn't help. Especially, if multiple message processing failures occurs, you have attachments piled up for each failure. If you don't require the attachments for failure scenarios, disable the option. Though you disable the creation of attachments, the content of the same are added to the message processing logs.
 
 If you're using older versions of the adapter where you don't see the option, define the property `SAP.DisableAttachments.HTTP` in the message exchange with the value `true`.
 
 </td>
 </tr>
-</table>
-
-**Header Details**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Parameter
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
 <tr>
 <td valign="top">
 
-*Request Headers* 
+*Retry on Exception* 
 
 </td>
 <td valign="top">
 
-Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system. Alternatively, you can dynamically pass on the values by defining a property that includes a list of headers.
+By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of exceptions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Exception Details*
+
+\(Only if *Retry on Exception* is enabled\)
+
+</td>
+<td valign="top">
+
+In this section, you can **add**, **update**, or **delete** exception entries along with their descriptions.
+
+When a message processing failure occurs, you can retrieve the relevant exception details from the **Message Processing Log** and add them here. Once configured, if the integration flow encounters any of these specified exceptions, it will automatically initiate a retry.
+
+Choose *Add* to add a new exception, enter the following details:
+
+-   *Name*: You can Add a full qualified name.
+-   *Description*: It is recommended to add descriptions for exception to maintain the context.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry on Error Response*
+
+\(Only if *Throw Exception on Failure* is enabled\)
+
+</td>
+<td valign="top">
+
+By default, the option is disabled. This option lets the integration flow to retry requests to the target system, in case of failed HTTP requests.
+
+In case of failed HTTP requests where the target system itself provides Retry-After information, the configurations in the HTTP receiver adapter is overridden with the values coming from the target system.
+
+> ### Note:  
+> If you use a exception sub-process, the same is invoked only after all retry iterations are over and an connection error continues to persist.
 
 > ### Remember:  
-> Use an `*` separately. If you use an `*` and custom header together that are separated by a pipe \(|\), only the custom header is considered.
-> 
-> You must have defined the custom headers in the previous flow steps like content modifiers or scripts before you mention them in the HTTP Receiver Adapter.
+> The feature is available from software version **7.18.xx \(Neo environment\) and** 8.x \(Cloud Foundry environment\).
 
-The adapter doesn't support regular expressions like `SAP*`.
-
-All Camel-specific headers \(that starts with `camel` or `org.apache.camel`\) and the below listed HTTP protocol headers are excluded even if you specify them.
-
--   content-length
-
--   content-type
-
--   host
-
--   cache-control
-
--   connection
-
--   pragma
-
--   trailer
-
--   transfer-encoding
-
--   upgrade
-
--   via
-
--   warning
-
-
-
+For detailed information, see [Inbuilt Retry option for HTTP Receiver Adapter](https://blogs.sap.com/2023/10/25/sap-integration-suite-inbuilt-retry-option-for-http-receiver-adapter/)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Response Headers* 
+*HTTP Error Response Codes*
+
+\(Only if *Retry on Error Response* is enabled\)
 
 </td>
 <td valign="top">
 
-Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an `*` to receive all the headers from the target system, which is also the default value.
+Specify HTTP error response codes for which the integration flow must retry request to the target system. Add each code separately by pressing **Enter**.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Interval \(in seconds\)*
+
+\(Only if *Retry on Exception* or *Retry on Error Response* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the duration, in seconds, for which the integration flow must wait before retrying a request. The maximum interval between two retry attempts you can configure is 60 seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Retry Iterations*
+
+\(Only if *Retry on Exception* or *Retry on Error Response* is enabled\)
+
+</td>
+<td valign="top">
+
+Select the number of retry attempts that the integration flow must make in case of failed HTTP requests to the target system. The maximum number of retry attempts you can configure is three.
 
 </td>
 </tr>

@@ -52,7 +52,7 @@ If the incoming payload contains namespace declarations including default namesp
 
 ## Procedure
 
-1.  To model a *Gather* step, in the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Gather*.
+1.  To model a *Gather* step, in the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Gather*.
 
 2.  Place the *Gather* element in the integration process and define the message path.
 
@@ -128,7 +128,7 @@ If the incoming payload contains namespace declarations including default namesp
 
     -   *Concatenate* \(can only be selected if for *Incoming Format* you have selected *Plain Text*\)
 
-        Concatenate the information from the different sources one after another
+        Concatenate the information from the different sources one after another.
 
     -   *Zip* 
 

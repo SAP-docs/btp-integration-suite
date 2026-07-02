@@ -56,13 +56,13 @@ You can create OAuth client credentials to access your SAP Cloud Integration ten
 
 7.  Choose *Create Instance*.
 
-8.  Choose <span class="SAP-icons"></span> \(Actions\) and then select *Create Service Key* on the service instance created in the previous step.
+8.  Choose <span class="SAP-icons-V5"></span> \(Actions\) and then select *Create Service Key* on the service instance created in the previous step.
 
 9.  In the *New Service Key* dialog box, enter a value in the *Service key name* field and choose *Create*.
 
     The service key is created successfully. You can view the service key under the *Service Keys* section.
 
-10. Choose <span class="SAP-icons"></span> \(Actions\) and then select *View* on the service key to display the details.
+10. Choose <span class="SAP-icons-V5"></span> \(Actions\) and then select *View* on the service key to display the details.
 
     The service key details containing the OAuth client credentials including the clientid, clientsecret, and token url are displayed.
 

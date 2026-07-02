@@ -28,12 +28,12 @@ Link
 <tr>
 <td valign="top">
 
-SAP Cloud Integration
+Integrations and APIs
 
 </td>
 <td valign="top">
 
-[Accessibility Features in Cloud Integration](accessibility-features-in-cloud-integration-c7be6b6.md)
+[Accessibility in APIs and Integrations | SAP Help Portal](https://help.sap.com/docs/integration-suite/integrations-and-apis/accessibility-in-apis-and-integrations)
 
 </td>
 </tr>
@@ -45,19 +45,19 @@ Integration Advisor
 </td>
 <td valign="top">
 
-[Accessibility Features in Integration Advisor](accessibility-features-in-integration-advisor-2b33756.md)
+[Accessibility Features in Integration Advisor | SAP Help Portal](https://help.sap.com/docs/integration-suite/integration-advisor/accessibility-features-in-integration-advisor)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-API Management
+Integration Assessment
 
 </td>
 <td valign="top">
 
-[Accessibility Features in API Management](https://help.sap.com/docs/SAP_CLOUD_PLATFORM_API_MANAGEMENT/66d066d903c2473f81ec33acfe2ccdb4/479e5b4e0ba44a978acba41e6b80e1d9.html?version=Cloud)
+[Accessibility Features in Integration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/integration-assessment/accessibility-features-in-integration-assessment)
 
 </td>
 </tr>
@@ -69,7 +69,7 @@ SAP Trading Partner Management
 </td>
 <td valign="top">
 
-[Accessibility Features in SAP Trading Partner Management](accessibility-features-in-sap-trading-partner-management-c17213a.md)
+[Accessibility Features in SAP Trading Partner Management | SAP Help Portal](https://help.sap.com/docs/integration-suite/trading-partner-management/accessibility-features-in-sap-trading-partner-management)
 
 </td>
 </tr>
@@ -81,7 +81,43 @@ Data Space Integration
 </td>
 <td valign="top">
 
-[Accessibility Features in Data Space Integration](accessibility-features-in-data-space-integration-dc5c2ee.md)
+[Accessibility Features in Data Space Integration | SAP Help Portal](https://help.sap.com/docs/integration-suite/data-space-integration/accessibility-features-in-data-space-integration)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Event Mesh
+
+</td>
+<td valign="top">
+
+[Accessibility Features in Event Mesh | SAP Help Portal](https://help.sap.com/docs/integration-suite/event-mesh/accessibility-features-in-event-mesh)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OData Provisioning
+
+</td>
+<td valign="top">
+
+[Accessibility Features in OData Provisioning | SAP Help Portal](https://help.sap.com/docs/integration-suite/odata-provisioning/accessibility-features-in-odata-provisioning)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Migration Assessment
+
+</td>
+<td valign="top">
+
+[Accessibility Features in Migration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/migration-assessment/accessibility-features-in-migration-assessment)
 
 </td>
 </tr>

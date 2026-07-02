@@ -8,20 +8,6 @@ Familiarize yourself with the main features and controls of the Advanced API Ana
 
 
 
-<a name="loio1f96ba3b6d2447e1953b0dbaae585170__section_mr2_2rp_thb"/>
-
-## Help and Notifications Menu
-
-45678
-
-Every page in Analytics dashboard gives you access to notifications, help documentation, and lets you manage your account. This menu is available at the top-right corner of the analytics dashboard.
-
-Click :bell: to know about the latest news and updates for .
-
-Click <span class="SAP-icons-V5"></span> to view the version of , access the online help documentation, and logout of .
-
-
-
 <a name="loio1f96ba3b6d2447e1953b0dbaae585170__section_eff_grp_thb"/>
 
 ## Report Pages

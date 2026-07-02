@@ -11,7 +11,7 @@ The XI sender adapter allows you to connect a tenant to a local Integration Engi
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -22,7 +22,10 @@ The XI sender adapter allows you to connect a tenant to a local Integration Engi
 
 ## Use
 
-With this adapter, you can connect an on-premise backend system to SAP Cloud Integration. The XI sender adapter communicates \(receive messages\) over the XI 3.0 protocol.
+With this adapter, you can connect an on-premise back end system to SAP Cloud Integration. The XI sender adapter communicates \(receive messages\) over the XI 3.0 protocol.
+
+> ### Note:  
+> Input messages must comply with the applicable RFCs. For non‑compliant input, adapter behavior is undefined.
 
 
 
@@ -57,7 +60,7 @@ Consider the following when using the XI adapter.
 > ### Note:  
 > -   The XI adapter doesn't support acknowledgments.
 > 
-> -   The XI adapter doesn't support ExactlyOnceInOrder \(EOIO\).
+> -   The XI adapter doesn't support the Exactly Once In Order \(EOIO\) Delivery Assurance option by default. However, you can model Exactly Once In Order by selecting the *Handled by Integration Flow* Delivery Assurance option. See: [Sender with XI Protocol and Receiver with SAP RM Protocol](sender-with-xi-protocol-and-receiver-with-sap-rm-protocol-090abf3.md).
 > 
 > -   For XI packaging, the incoming package message appears in the MPL.
 
@@ -126,7 +129,7 @@ Address under which a sender system can reach the tenant.
 > ### Note:  
 > When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using separated endpoints for services.
 
 
 
@@ -149,7 +152,25 @@ You can select one of the following options:
 
 -   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
 
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
+    This option allows you to select one or more client certificates \(based on which the inbound authorization is checked\). Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
+
+    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
+
+-   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. Choose *Select* to get a list of all available roles.
+
+    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
+
+    > ### Note:  
+    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
+    > 
+    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
+    > 
+    > -   If you have selected a product profile for SAP Process Orchestration, the value help only shows the default role *ESBMessaging.send*.
+
+    You can use *User Role* with different authentication options, such as:
+
+    > ### Note:  
+    > These examples are not the only supported options. For a list of supported authentication methods for HTTP-based inbound communication, refer to [Authentication Options \(Inbound\)](../ConnectionSetup/authentication-options-inbound-5495ee0.md).
 
     -   *Basic authentication* \(using the credentials of the user\)
 
@@ -159,34 +180,6 @@ You can select one of the following options:
 
         The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
 
-
-
-Depending on your choice, you can also specify one of the following properties:
-
--   *Client Certificate*
-
-    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
-
-    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
-
--   *User Role*
-
-    Allows you to select a role based on which the inbound authorization is checked.
-
-    Choose *Select* to get a list of all available roles.
-
-    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
-
-    > ### Note:  
-    > Note the following:
-    > 
-    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
-    > 
-    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
-    > 
-    > -   If you have selected a product profile for SAP Process Orchestration, the value help will only show the default role *ESBMessaging.send*.
 
 
 
@@ -290,7 +283,7 @@ There are the following options:
 
     The message is sent asynchronously. This means that an immediate response is given back to the sender system and the message is retried from the temporary storage to ensure a processing of the message.
 
-    This option guarantees that the message is processed exactly once on the tenant. If a message with identical XI message ID is received multiple times from a sender, only the first one will be processed. The subsequent messages can be identified as duplicates \(based on the value of the message header `SapMessageIdEx`, see below\) and won't be processed.
+    This option guarantees that the message is processed exactly once on the tenant. If a message with identical XI message ID is received multiple times from a sender, only the first one will be processed. The subsequent messages can be identified as duplicates \(based on the value of the message header `SapMessageIdEx`, see as follows\) and won't be processed.
 
     > ### Note:  
     > For *Exactly Once* handling, the sender XI adapter saves the protocol-specific message ID in the header `SapMessageIdEx`. If this header is set, XI receiver uses the content of this header as the message ID for outbound communication. Usually, this is the desired behavior and enables the receiver to identify any duplicates. However, if the sender system is also the receiver system, or several variants of the message are sent to the same system \(for example, in an external call or multicast\), the receiver system will incorrectly identify these messages as duplicates. In this case, the header `SapMessageIdEx` must be deleted \(for example, using a content modifier\) or overwritten with a new generated message ID. This deactivates *Exactly Once* processing \(that is, duplicates are no longer recognized by the protocol\).
@@ -305,8 +298,42 @@ There are the following options:
 
     If you choose this option, the message needs to be temporarily stored on the tenant \(in the storage configured under *Temporary Storage*\). As soon as the message is successfully stored there, the sender receives a successful status message. If an error occurs, the message is retried from the temporary storage.
 
+-   *Handled by Integration Flow*
+
+    Quality of service is managed within the integration flow itself, and the XI adapter doesn't add any quality of service handling \(such as retry storage or duplicate checks\).
+
+    The XI sender channel sets the headers `SapQualityOfService` and `SapQueueId` for the XI quality of service and queue ID of the incoming message. These headers can also be used to set the quality of service and queue ID for the message to be processed by the XI receiver channel.
+
+    > ### Remember:  
+    > Add the headers `SapQualityOfService` and `SapQueueId` to the list of allowed headers. Otherwise, they won't get propagated to the receiver channel.
+
+    `SapQualityOfService` can have the following values:
+
+    -   `BestEffort`
+    -   `ExactlyOnce`
+    -   `ExactlyOnceInOrder`
+
+    > ### Note:  
+    > *Handled by Integration Flow* is currently not supported when using the XI adapter with Request/Reply and Send steps.
 
 
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*XI to XI Application Fault Handling* 
+
+\(only if *Quality of Service* is *Best Effort*\)
+
+</td>
+<td valign="top">
+
+When this option is enabled, if the XI receiver adapter gets an application error message, the XI sender returns the response from the receiver with an HTTP status code of 200, and the message processing will finish successfully. When disabled, a SOAP fault is returned with a 500 status code.
+
+This feature is only applicable in an XI to XI scenario when the *Quality of Service* is set to *Best Effort*, and is available for the XI sender adapter version 1.20 onwards. Error details can still be accessed in the message logs.
 
 </td>
 </tr>
@@ -337,7 +364,7 @@ You can choose among the following storage types:
     > 
     > This automatically generated name is subject to a length restriction and must be no more than 40 characters \(including the underscore\). If the data store name exceeds this limit, you must shorten the participant name or channel name accordingly.
     > 
-    > Below the data store name, you find a reference to the associated integration flow in the following form: `<integration flow name>/XI`
+    > After the data store name, you find a reference to the associated integration flow in the following form: `<integration flow name>/XI`
 
 -   *JMS Queue* \(only if *At Least Once* is selected for *Quality of Service*\)
 
@@ -404,14 +431,14 @@ Enter a value for the timeout of the in-progress repository. After this time, a 
 </td>
 <td valign="top">
 
-Specify the poll interval in seconds to wait before consuming messages from the data store. The default is set to 1 s, the max. is set to 300 s.
+Specify the poll interval in seconds to wait before consuming messages from the data store. The default is set to 1 second, the max. is set to 300 seconds.
 
 The adapter continuously consumes messages from the data store if the data store contains entries that are ready to be processed.
 
 The poll interval only becomes effective as soon as the data store doesn't contain such entries anymore. From that point in time, the adapter waits for the time specified by the *Poll Interval* parameter and then again tries to consume messages from the data store.
 
 > ### Note:  
-> The smaller the poll interval \(for example, 1 s or less\), the more load is put on the data store.
+> The smaller the poll interval \(for example, 1 second or less\), the more load is put on the data store.
 
 
 
@@ -471,6 +498,9 @@ In such cases, a lock entry is created which you can view and release in the *Mo
 
 Use this option to avoid out-of-memory situations \(caused in many cases by large messages\).
 
+> ### Note:  
+> This option does not work for normal integration errors, only for node crashes or similar scenarios.
+
 For more information, read the SAP Community blog [Cloud Integration – Configure Dead Letter Handling in JMS Adapter](https://blogs.sap.com/2017/07/17/cloud-integration-configure-dead-letter-handling-in-jms-adapter/).
 
 </td>
@@ -517,30 +547,6 @@ Enter the number of days after which the stored messages are deleted \(default i
 
 
 
-<a name="loio41a1a57bf54644d1bd351ca689cf531d__section_xr3_vpw_q2b"/>
-
-## Explicit Retry Configuration Using Specific Headers
-
-When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(who will then receive an alert email\). You can do this by using one of the following mentioned headers in a dynamic expression.
-
-Which header you can use, depends on the chosen kind of temporary storage.
-
--   If as *Temporary Storage* you have chosen the option *Data Store*, you can use header `SAP_DataStoreRetries`.
-
--   If as *Temporary Storage* you have chosen the option *JMS Queue*, you can use header `SAPJMSRetries`.
-
-
-> ### Tip:  
-> Example
-> 
-> When as *Temporary Storage* you have chosen the option *Data Store*, you can use the following expression in the route that is supposed to forward the message to the receiver of the alert email:
-> 
-> `${header.SAP_DataStoreRetries} > '5'`
-> 
-> In this example, the message is routed to the related receiver after 5 retries.
-
-
-
 Select the *Conditions* tab and specify the following parameter.
 
 **Conditions**
@@ -582,6 +588,34 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 </tr>
 </table>
 
+
+
+<a name="loio41a1a57bf54644d1bd351ca689cf531d__section_xr3_vpw_q2b"/>
+
+## Explicit Retry Configuration Using Specific Headers
+
+When as *Quality of Service* you have selected *Exactly Once*, you can use certain headers to specify that after a defined number of message retries, message processing is changed in a specific way. For example, you can configure the integration flow so that after 5 retries the message is routed to a specific receiver \(which will then receive an alert email\). You can do this by using one of the following mentioned headers in a dynamic expression.
+
+The kind of header you use will depend on the chosen kind of temporary storage:
+
+-   If as *Temporary Storage* you have chosen the option *Data Store*, you can use header `SAP_DataStoreRetries`.
+
+-   If as *Temporary Storage* you have chosen the option *JMS Queue*, you can use header `SAPJMSRetries`.
+
+
+> ### Tip:  
+> Example
+> 
+> When as *Temporary Storage* you have chosen the option *Data Store*, you can use the following expression in the route that is supposed to forward the message to the receiver of the alert email:
+> 
+> `${header.SAP_DataStoreRetries} > '5'`
+> 
+> In this example, the message is routed to the related receiver after 5 retries.
+
+For more information on the retry pattern, see [Apply the Retry Pattern](apply-the-retry-pattern-97789c9.md).
+
+Find a description of each header at [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md).
+
 **Related Information**  
 
 
@@ -593,9 +627,9 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 
 [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md "")
 
-[https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
+[Configuring a Scenario Using the XI Sender Adapter](https://blogs.sap.com/2018/06/04/cloud-integration-configuring-scenario-using-the-xi-sender-adapter/)
 
-[https://blogs.sap.com/2018/12/04/cloud-integration-configuring-scenario-with-xi-sender-handling-multiple-interfaces/](https://blogs.sap.com/2018/12/04/cloud-integration-configuring-scenario-with-xi-sender-handling-multiple-interfaces/)
+[Cloud Integration - Configuring Scenario with XI Sender handling Multiple Interfaces](https://blogs.sap.com/2018/12/04/cloud-integration-configuring-scenario-with-xi-sender-handling-multiple-interfaces/)
 
-[https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
+[Cloud Integration - Configuring Explicit Retry in Exception Sub-Process for XI Adapter Scenarios](https://blogs.sap.com/2018/08/15/cloud-integration-configuring-explicit-retry-in-exception-sub-process-for-xi-adapter-scenarios/)
 

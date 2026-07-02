@@ -9,8 +9,6 @@ The API is protected by basic authentication and OAuth.
 
 
 
-:
-
 1.  Register the client application as the OAuth client in the consumer account using the SAP Cloud Integration SAP BTP cockpit \(in the *Security*** \> *OAuth* section, go to the *Clients* tab\).
 
     Also specify a subscription in order to restrict the authorizations associated with the access token on the particular runtime node.
@@ -87,7 +85,10 @@ The API is protected by basic authentication and OAuth.
         > ### Note:  
         > For modifying calls in the Neo environment, a CSRF-Token is required in the same way as for basic authentication.
 
-        See: [HTTP Calls and URI Components](../Development/http-calls-and-uri-components-ca75e12.md)
 
 
+**Related Information**  
+
+
+[HTTP Calls and URI Components](../Development/http-calls-and-uri-components-ca75e12.md "")
 

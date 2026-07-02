@@ -210,11 +210,11 @@ Perform the following initial steps with Postman.
 
 1.  Initially create the Partner Directory entries.
 
-    Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
+2.  Start the Postman Runner and select collection *CPI Partner Directory Example Flows*.
 
-    Depending on the Cloud environment, select folder *Update PD \(CF\)* or *Update PD \(Neo\)*. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
+3.  Select folder *Update PD \(CF\)*or *Update PD \(Neo\)* depending on the Cloud environment. This folder contains a request that automatically creates the sample partner `PartnerA` with the entities listed in table above.
 
-    Start the Postman runner for folder *Update PD \(CF\)* or *Update PD \(Neo\)*.
+4.  Start the Postman runner for folder *Update PD \(CF\)*or *Update PD \(Neo\)*.
 
 
 **Related Information**  

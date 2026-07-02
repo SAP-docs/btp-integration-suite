@@ -11,9 +11,15 @@ Many web servers use OAuth 2.0 for authorization purposes. If you want to connec
 You can edit and deploy an OAuth2 Client Credentials artifact.
 
 > ### Note:  
+> Set the token expiry to at least 10 minutes. Otherwise, since the token is refreshed 5 minutes before its expiry, it can create a continuous refresh loop and trigger rate limits from the token server.
+
+> ### Note:  
 > -   The adapter using the OAuth 2 Client Credentials accesses the OAuth token and caches it against the name of the credential. The adapter uses the same token until it expires. Also, if you use the same credential in another adapter simultaneously, the token is reused.
 > 
 > -   Every time you edit an OAuth2 Client Credentials artifact, you must re-enter the Client Secret.
+
+> ### Note:  
+> Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
 
 More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
 
@@ -23,11 +29,13 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
 
 1.  Choose *Monitor*.
 
-2.  Choose the tile *Security Material*.
+2.  Click the *Security Material* tile in the *Manage Security* section.
 
-3.  Choose *Create* \> *OAuth2 Client Credentials*.
+3.  Choose *Add*.
 
-4.  Specify the following attributes:
+4.  As *Type*, select *OAuth2 Client Credentials*.
+
+5.  Specify the following attributes:
 
 
     <table>
@@ -58,23 +66,6 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <tr>
     <td valign="top">
     
-    Grant Type
-    
-    </td>
-    <td valign="top">
-    
-    The relevant type of grant for authorizing the client to interact with the server. By default, the value is *Client Credentials* which you can't change.
-
-    > ### Note:  
-    > Read [SAP Cloud Integration – Principal Propagation with SuccessFactors OData V2](https://blogs.sap.com/2018/07/30/sap-cloud-platform-integration-principal-propagation-with-successfactors-odata-v2/), to design and deploy an integration flow that talks to SuccessFactors OData V2 endpoint with OAuth2 authentication.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Description
     
     </td>
@@ -93,6 +84,25 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     <td valign="top">
     
     URL of the OAuth2 authorization server that issues the access token.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Grant Type
+    
+    </td>
+    <td valign="top">
+    
+    Allows you to use grant type as one of the following.
+
+    -   *Send as part of URL*: This includes grant type as part of the URL and is set by default for credentials that are already deployed or existing.
+
+    -   *Send as part of body*: This includes grant type in the request body sent to the token authentication server.
+
+
+
     
     </td>
     </tr>
@@ -188,7 +198,24 @@ More information on OAuth: [https://tools.ietf.org/html/rfc6749](https://tools.i
     </tr>
     </table>
     
-5.  Choose *Deploy*.
+    **Custom Parameter**
+
+    Add or delete additional parameters in the custom parameter table, which includes three columns: *Key*, *Value*, and *Send as Part of*.
+
+    Each custom parameter can be sent in the request body, request header, or request URL, depending on specific requirements.
+
+    > ### Note:  
+    > -   Duplicate combinations of *Key*, *Value*, and *Send as Part of* fields are not allowed.
+    > 
+    > -   The *Key* cannot be "client\_id," "client\_secret," or "grant\_type".
+    > 
+    > -   Fields cannot be empty or consist only of whitespace.
+    > 
+    > -   The maximum length of the fields can be 1024 characters.
+    > 
+    > -   You can add a maximum of 20 key-value pairs.
+
+6.  Choose *Deploy*.
 
 
 **Related Information**  

@@ -10,6 +10,10 @@ The mentioned options allow you to transport always complete integration package
 
 -   Integration flows
 
+-   APIs
+
+-   MCP Servers
+
 -   Value mappings
 
 -   OData APIs
@@ -22,13 +26,13 @@ The mentioned options allow you to transport always complete integration package
 > ### Note:  
 > However, additional artifacts are required to use integration content on a tenant that cannot be transported along with integration content.
 > 
-> For example, to run an integration flow that uses authentication to a receiver system based on OAuth2 client credentials grant, you also need to deploy an *OAuth2 Client Credentials* artifact on the tenant and refer to the artifact alias in the integration flow.
+> For example, to run an integration flow or API that uses authentication to a receiver system based on OAuth2 client credentials grant, you also need to deploy an *OAuth2 Client Credentials* artifact on the tenant and refer to the artifact alias in the integration flow or API.
 > 
-> After you have transported an integration flow using this authentication type, you need to separately deploy a new *OAuth2 Client Credentials* artifact on the target tenant \(ideally with the same alias as used on the source tenant\).
+> After you have transported an integration flow or API using this authentication type, you need to separately deploy a new *OAuth2 Client Credentials* artifact on the target tenant \(ideally with the same alias as used on the source tenant\).
 
 Other examples for non-transportable content are keystore entries \(key pairs and certificates\).
 
-For more information on objects that cannot be transported and how to deal with them in a transport scenario, see [Handling Integration Artifacts When Reusing an Integration Flow on Multiple Tenants](handling-integration-artifacts-when-reusing-an-integration-flow-on-multiple-tenants-2a1d598.md).
+For more information on objects that cannot be transported and how to deal with them in a transport scenario, see [Handling Integration Artifacts across Multiple Tenants](handling-integration-artifacts-across-multiple-tenants-2a1d598.md).
 
 **Related Information**  
 

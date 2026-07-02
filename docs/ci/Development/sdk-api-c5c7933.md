@@ -2,7 +2,7 @@
 
 # SDK API
 
-SDK APIs refer to the overall set of APIs like the Generic API, Adapter API, Script API
+SDK APIs refer to the overall set of APIs like the Generic API, Adapter API, Script API.
 
 Application programming interfaces \(APIs\) are available for the following use cases:
 
@@ -34,7 +34,7 @@ Some of the public APIs are available in the Maven Central Repository. Look out 
 
 Use Adapter APIs if you want to develop custom adapters.
 
-To access the Adapter API from Maven Central Repository, do the following steps:
+To access the Adapter API from [Maven Central Repository](https://central.sonatype.com/artifact/com.sap.cloud.adk/adapter.api), do the following steps:
 
 1.  Look out for the latest public API in Maven Central Repository. The group ID is `com.sap.cloud.adk` and artifact ID is `adapter.api`.
 
@@ -62,7 +62,7 @@ To access the Adapter API from Maven Central Repository, do the following steps:
     > ```
 
 
-The [javadoc for Adapter API](https://help.sap.com/doc/11615149a5364a279cb901903794a3f8/Cloud/en-US/index.html) contains the complete set of packages and classes.
+From the [versions](https://central.sonatype.com/artifact/com.sap.cloud.adk/adapter.api/versions) tab on Maven central repository, choose *Browse* for the respetive version to access the [javadoc](https://javadoc.io/doc/com.sap.cloud.adk/adapter.api/latest/index.html). The javadoc for Adapter API contains the complete set of packages and classes.
 
 > ### Note:  
 > On how to consume cluster lock feature from the package, see [Component Metadata](component-metadata-550b19e.md).
@@ -73,9 +73,11 @@ The [javadoc for Adapter API](https://help.sap.com/doc/11615149a5364a279cb901903
 
 ## Script API
 
-Use the Script APIs if you want to use the Script step in your integration flow.
+Use the Script APIs \(version 1 or 2\) if you want to use the Script step in your integration flow.
 
-Look out for the latest public API in Maven Central Repository. Use the maven coordinates that follow in your project to consume the script API.
+Look out for latest public script API [version 1](https://central.sonatype.com/artifact/com.sap.cloud.script/script.api) and [version 2](https://central.sonatype.com/artifact/com.sap.cloud.script/script.v2.api) from Maven Central Repository. Use the maven coordinates that follow in your project to consume the script API.
+
+**For Script version 1 \(v1\)**:
 
 > ### Sample Code:  
 > ```
@@ -91,7 +93,25 @@ Look out for the latest public API in Maven Central Repository. Use the maven co
 > 
 > ```
 
-The [javadoc for Script API](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html) contains the complete set of packages and classes.
+The [javadoc for Script v1 API](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf45b2e26/Cloud/en-US/index.html) contains the complete set of packages and classes.
+
+**For Script version 2 \(v2\)**:
+
+> ### Sample Code:  
+> ```
+> 
+> 
+> <dependency>
+> 	<groupId>com.sap.cloud.script</groupId>
+> 		<artifactId>script.v2.api</artifactId>
+> 		<version>XX.YY.ZZ</version>
+> 		<!-- replace XX.YY.ZZ with the latest version -->
+> </dependency>
+> 
+> 
+> ```
+
+The [javadoc for Script v2 API](https://javadoc.io/doc/com.sap.cloud.script/script.v2.api/latest/index.html) contains the complete set of packages and classes.
 
 
 
@@ -101,7 +121,7 @@ The [javadoc for Script API](https://help.sap.com/doc/a56f52e1a58e4e2bac7f7adbf4
 
 Generic APIs are common for Script step and developing custom adapters.
 
-To access the Generic API from Maven Central Repository, do the following steps:
+To access the Generic API from[Maven Central Repository](https://central.sonatype.com/artifact/com.sap.cloud.adk/generic.api/overview), do the following steps:
 
 1.  Look out for the latest public API in Maven Central Repository. The group ID is `com.sap.cloud.adk` and artifact ID is `generic.api`.
 
@@ -129,7 +149,7 @@ To access the Generic API from Maven Central Repository, do the following steps:
     > ```
 
 
-The [javadoc for Generic API](https://help.sap.com/doc/471310fc71c94c2d913884e2ff1b4039/Cloud/en-US/index.html) contains the complete set of packages and classes.
+From the [versions](https://central.sonatype.com/artifact/com.sap.cloud.adk/generic.api/versions) tab on Maven central repository, choose *Browse* for the respetive version to access the javadoc. The [javadoc](https://javadoc.io/doc/com.sap.cloud.adk/generic.api) for Generic API contains the complete set of packages and classes.
 
 
 

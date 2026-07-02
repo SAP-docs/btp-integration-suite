@@ -101,7 +101,7 @@ Content filter
 
 Define conditions for XPath elements.
 
-To see some examples, see [Examples](examples-eb2e601.md).
+To review some examples, see [Examples](examples-eb2e601.md).
 
 </td>
 <td valign="top">
@@ -202,12 +202,19 @@ Incoming message body
 
 Incoming message body
 
+> ### Note:  
+> The expression `${in.body}` is deprecated and may stop working in future major releases of Apache Camel.
+> 
+> We recommend using `${body}` to ensure future compatibility.
+> 
+> For more information, see [3383659](https://me.sap.com/notes/3383659)
+
+
+
 </td>
 <td valign="top">
 
-`${in.body}`
-
-This expression is deprecated from Apache Camel version 3.12.x.
+`${in.body}` 
 
 </td>
 </tr>
@@ -299,40 +306,6 @@ Refers to header with name `<key>` converted to compatible class
 <tr>
 <td valign="top">
 
-`property.foo` 
-
-</td>
-<td valign="top">
-
-Refers to foo \(forward declaration\) in exchange property
-
-</td>
-<td valign="top">
-
-`${property.token.length}` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`property.foo.OGNL` 
-
-</td>
-<td valign="top">
-
-Refers to foo \(forward declaration\) in exchange property with OGNL \(Object-Graph Navigation Language\) expresssion
-
-</td>
-<td valign="top">
-
-`${property.token.split(',')[0]}` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `sys.foo` 
 
 </td>
@@ -355,7 +328,7 @@ Refers to foo \(forward declaration\) in system \(runtime container\)
 </td>
 <td valign="top">
 
-Refers to foo \(forward declaration\) in system enviroment
+Refers to foo \(forward declaration\) in system environment
 
 </td>
 <td valign="top">
@@ -379,7 +352,7 @@ Creates date specified in command and uses `SimpleDateFormat` notation
 
 `Processed at ${date:now-2h}`
 
-Othe rexample: To write the current timestamp into a message header, define a header with the following value \(and *Type* set to *Expression*\):
+Other example: To write the current timestamp into a message header, define a header with the following value \(and *Type* set to *Expression*\):
 
 `${date:now:yyyy-MM-dd HH:mm:ss}`
 
@@ -405,7 +378,7 @@ Same as `date`, but with timezone
 </table>
 
 > ### Note:  
-> The content modifier Does not process *Equality or Comparison* expressions.
+> The content modifier does not process *Equality or Comparison* expressions.
 > 
 > Example: The following expression is not supported:
 > 

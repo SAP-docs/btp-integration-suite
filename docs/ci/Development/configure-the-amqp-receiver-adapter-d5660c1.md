@@ -2,7 +2,7 @@
 
 # Configure the AMQP Receiver Adapter
 
-You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from SAP Cloud Integration to queues or topics in an external message broker.
+You use the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send messages from SAP Cloud Integration to queues or topics in an external message broker.
 
 
 
@@ -13,20 +13,20 @@ You se the Advanced Message Queuing Protocol \(AMQP\) receiver adapter to send m
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Cloud Integration. In SAP Cloud Integration, the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into . In , the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 
 
-Once you have created a receiver channel and selected the AMQP receiver adapter \(TCP or WebSocket\), you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a receiver channel and selected the AMQP receiver adapter \(TCP or WebSocket\), you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 
 
@@ -149,7 +149,7 @@ Select *Internet* if you’re connecting directly to the message broker.
 
 Select *On-Premise* if you’re connecting to an on-premise message broker.
 
-For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+For more information, see: [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
 </td>
 </tr>
@@ -205,22 +205,20 @@ Select the authentication method the message broker supports. *SASL* is selected
 
     Select to use Simple Authentication and Security Layer \(SASL\).
 
--   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\)
+-   *OAuth2 Client Credentials* \(only when *WebSocket* has been selected for *Transport Protocol* while creating the connection\).
 
-    Select to use OAuth 2.0 client credentials grant. At runtime, Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, Cloud Integration fetches an access token from a token service. In a subsequent step, Cloud Integration uses the access token to get access to the protected resources in the connected system.
+    Select to use OAuth 2.0 client credentials grant. At runtime, SAP Cloud Integration gets access to the protected resources in two steps: After presenting a set of client credentials, SAP Cloud Integration fetches an access token from a token service. In a subsequent step, SAP Cloud Integration uses the access token to get access to the protected resources in the connected system.
 
     More information: [OAuth 2.0 Client Credentials Grant](../ConnectionSetup/oauth-2-0-3823134.md#loio6316af5a7f2c4f3e870a997fd2d3e04e)
 
--   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection and if *Internet* is selected for *Proxy Type*\)
+-   *Client Certificate* \(only when *TCP* has been selected for *Transport Protocol* while creating the connection\).
 
-    At runtime, Cloud Integration authenticates itself against the connected system using a client certificate.
+    At runtime, SAP Cloud Integration authenticates itself against the connected system using a client certificate.
 
     It's a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
 
     > ### Note:  
     > This authentication option implies that Transport Layer Security \(TLS\) is used for the connection.
-
-    More information:  <?sap-ot O2O class="- topic/xref " href="ce627b59a3c2492a8f4263c27e8750a8.xml" text="REFCONT: Product Name Variables" desc="" xtrc="xref:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d5660c146a93483692335e9d79a8c58f.xml" ?> 
 
 -   *None*
 
@@ -352,7 +350,7 @@ Define the message type to be used for sending the message to the message broker
 > ### Note:  
 > Select *Binary* or *Text* only if your application receiving the message requires a specific message type.
 > 
-> Also, if you select *Binary* or *Text*, you can define the character encoding with the help of `CamelCharsetName` \(either header or property\) in the *Content Modifier*. In case you don't set the `CamelCharsetName` header or property, the transformation will use UTF-8 character encoding. See [Content Modifier Basics](content-modifier-basics-b0576a8.md) and [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md).
+> Also, if you select *Binary* or *Text*, you can define the character encoding with the help of `CamelCharsetName` \(either header or property\) in the *Content Modifier*. In case you don't set the `CamelCharsetName` header or property, the transformation will use UTF-8 character encoding. See: [Content Modifier Basics](content-modifier-basics-b0576a8.md) and [About Headers and Exchange Properties](about-headers-and-exchange-properties-0974c4f.md).
 
 
 
@@ -389,4 +387,6 @@ There are two options for forwarding the message header name:
 [Blog: Cloud Integration – Connecting to Messaging Systems using the AMQP Adapter](https://blogs.sap.com/2019/11/20/cloud-integration-connecting-to-external-messaging-systems-using-the-amqp-adapter/)
 
 [Blog: Cloud Integration – How to Connect to an On-Premise AMQP server via Cloud Connector](https://blogs.sap.com/2020/01/17/cloud-integration-how-to-connect-to-an-on-premise-amqp-server-via-cloud-connector/)
+
+[Supported Settings for Specific Message Brokers](supported-settings-for-specific-message-brokers-059bd96.md "Learn how to connect external message brokers using the AMQP adapter.")
 

@@ -19,7 +19,12 @@ You need to create key store and trust store certificates to configure 2-way SSL
 > ### Caution:  
 > When renewing your existing certificate, always create a new Keystore/Truststore and add the renewed certificate to it. Be sure to reference the newly created Keystore/Truststore in your API providers, API proxies, and related configurations.
 
-The following are the supported file format for certificates: .cer, .jar \(signed jar\), .der, .pem, .p12, .pkcs
+The following are the supported file format for :
+
+-   Keystore: PKCS12/PFX \(.p12\)
+
+-   Truststore: .DER, .PEM
+
 
 > ### Note:  
 > Whenever you’re trying to establish a connection between your client and the API Management gateway, certificate pinning ensures that the TLS connection is set up using a particular certificate only. This can help you in situations where you may run into the risk of trusting certificate authorities that you shouldn't. However, the certificate pinning feature isn’t supported currently in API Management.
@@ -66,34 +71,27 @@ The following are the supported file format for certificates: .cer, .jar \(signe
 
 6.  When renewing your existing certificate, always create a new Keystore/Truststore and add the renewed certificate to it.
 
-7.  If you choose to create a new store, then enter the following details: store name, certificate name and appropriate description.
+7.  If you choose to create a new keystore or a truststore, then enter the following details: *store name*, *certificate name* and appropriate *description*.
 
     > ### Note:  
     > It is recommended that you keep your certificate name in a Keystore to no more than 25 characters.
 
-8.  If you have chosen to create a key store, then execute the sub-steps below:
+    -   If you have chosen to create a *Keystore*, then execute the sub-steps below:
+        1.  Create a PKCS12/PFX \(.p12\) file containing your private key, and certificate. To create PKCS12/PFX \(.p12\) file, use the below command:
 
-    1.  Create a JAR file containing your private key, certificate, and a manifest. For example, the JAR file must contain the following files and directories: `/META-INF/descriptor.properties, <main>.pem, <privateKey>.pem`![](images/API_Cetrificate_4ceb060.png)
+            `openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.pem`
 
-        > ### Note:  
-        > Ensure to create certificate with unique name. In case if a certificate with the same name exists in your system, then the newly created certificate with overwrite the existing one, and you’ll lose your old certificate data.
+            > ### Note:  
+            > Ensure to create a certificate with unique name. In case if a certificate with the same name exists in your system, then the newly created certificate will overwrite the existing one, and you’ll lose your old certificate data.
+            > 
+            > If you have a certificate chain, all certs in the chain must be appended into a single PEM file, where the last certificate is signed by a CA. The certs must be appended to the PEM file in the correct order, meaning: `cert -> intermediate cert(1) -> intermediate cert(2) -> … -> root`
 
-        A keystore JAR can contain only one certificate. If you have a certificate chain, all certs in the chain must be appended into a single PEM file, where the last certificate is signed by a CA. The certs must be appended to the PEM file in the correct order, meaning: `cert -> intermediate cert(1) -> intermediate cert(2) -> … -> root`
-
-    2.  In the directory containing your key pair and certificate, create a directory called /META-INF. Then, create a file called descriptor.properties in /META-INF with the following contents: `certFile=<main>.pem` `keyFile=<privateKey>.pem`![](images/API_Certificate_Prop_86b9a54.png)
-
-    3.  Generate the JAR file containing your key pair and certificate: `$ jar -cf myKeystore.jar main.pem privateKey.pem`
-
-    4.  Add descriptor.properties to your JAR file: `$ jar -uf myKeystore.jar META-INF/descriptor.properties`
-
-    5.  Upload the JAR file.
+        2.  Upload the PKCS12/PFX \(.p12\) file.
 
 
-9.  If you have chosen to create a trust store, then upload only the PEM file.
+    -   If you have chosen to create a *Truststore*, then upload only the PEM file and choose *Create.* 
 
-10. Choose *Create*.
-
-    Once you create a certificate, you can then associate it with the API provider at the time of API provider registration.
+8.  Once you create a certificate, you can then associate it with the API provider at the time of API provider registration.
 
     > ### Note:  
     > When your certificate expires or you need to rotate your credentials, create a new Keystore and upload the updated certificate to this new store.

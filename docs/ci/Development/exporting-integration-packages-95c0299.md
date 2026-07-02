@@ -14,7 +14,7 @@ Download your integration packages to your local system, so that you can provide
 
 3.  Choose *Export*.
 
-    By default, the downloaded file takes the name of the integration package. In case the name contains special characters, the browser changes the file name by appending them. The destination of export depends on the default browser setting.
+    By default, the current active version of the artifact gets downloaded. The downloaded file takes the name of the integration package. In case the name contains special characters, the browser changes the file name by appending them. The destination of export depends on the default browser setting.
 
     > ### Note:  
     > Configure-only content can't be downloaded.

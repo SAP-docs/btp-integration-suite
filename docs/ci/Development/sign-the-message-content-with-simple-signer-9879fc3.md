@@ -91,6 +91,11 @@ You work with the Simple Signer to make the identity of the sender known to the 
     Select a signature algorithm for the RSA or DSA private key type.
 
     Supported algorithms for content signing \(digest and encryption algorithm\): MD5/RSA, MD2/RSA, RIPEMD160andMGF1/RSA-ISO9796-2-2-3, RIPEMD128/RSA, RIPEMD160/RSA, RIPEMD256/RSA, SHA/RSA, SHA/DSA, SHA224/RSA, SHA256/RSA, SHA384/RSA, SHA512/RSA, SHAandMGF1/RSA-ISO9796-2-2-3, SHA256withDSA, SHA224withDSA, SHA3-224/RSA, SHA3-256/RSA, SHA3-384/RSA, SHA3-512/RSA, SHA3-512/DSA, SHA3-384/DSA, SHA3-256/DSA, SHA3-224/DSA, SHA512/DSA, SHA384/DSA, SHA3-224/ECDSA, SHA3-256/ECDSA, SHA3-384/ECDSA, SHA3-512/ECDSA, SHA512/ECDSA, SHA384/ECDSA, SHA256/ECDSA, SHA224/ECDSA, SHA1/ECDSA.
+
+    > ### Caution:  
+    > Algorithms starting with SHA1, MD2, or MD5 are still supported for compatibility reasons, but they no longer meet today's security requirements. Therefore, we recommend using stronger algorithms where possible. Check with your security experts or authorities like NIST for more detailed security recommendations.
+
+
     
     </td>
     </tr>

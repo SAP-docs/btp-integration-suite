@@ -15,13 +15,6 @@ Here is a simple overview of your journey to implement a B2B/A2A/B2G integration
 
 ![](images/Image_Map_IA_Overview_893e261.png)
 
-Here's a short video that gives you a quick overview of SAP Integration Advisor.
-
-> ### Note:  
-> This video was created before our branding changes related to SAP technology were announced in January 2021.
-
-
-
 **Table of Contents**
 
 -   [Terminology & Glossary for SAP Integration Advisor](terminology-glossary-for-sap-integration-advisor-9c221b4.md)
@@ -29,11 +22,11 @@ Here's a short video that gives you a quick overview of SAP Integration Advisor.
 -   [Library of Type Systems](library-of-type-systems-740136b.md)
 -   [Managing Licence for Type Systems](managing-licence-for-type-systems-ed1e961.md)
 -   [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md)
-    -   [Creating a New Message Implementation Guideline](creating-a-new-message-implementation-guideline-b894de0.md)
+    -   [Creating Message Implementation Guidelines](creating-message-implementation-guidelines-b894de0.md)
     -   [Working with a Message Implementation Guideline](working-with-a-message-implementation-guideline-9d1c1df.md)
 
 -   [Mapping Guidelines \(MAGs\)](mapping-guidelines-mags-42124f4.md)
-    -   [Creating a New Mapping Guideline](creating-a-new-mapping-guideline-a42920e.md)
-    -   [Working with a Mapping Guideline \(MAG\)](working-with-a-mapping-guideline-mag-0803ca6.md)
+    -   [Creating Standard Graphical Mapping Guidelines](creating-standard-graphical-mapping-guidelines-a42920e.md)
+    -   [Working with Mapping Guidelines \(MAGs\)](working-with-mapping-guidelines-mags-0803ca6.md)
 
 

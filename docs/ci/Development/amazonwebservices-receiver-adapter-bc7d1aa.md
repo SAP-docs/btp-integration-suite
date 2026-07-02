@@ -2,20 +2,6 @@
 
 # AmazonWebServices Receiver Adapter
 
-Amazon Web Services \(AWS\) receiver adapter enables SAP Cloud Integration to transfer of data with AWS cloud platform.
-
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
-
-> ### Note:  
-> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
-
 Use the receiver adapter to accelerate the implementation time and reduce the complexity of connecting to AWS. You configure the receiver channel with the AWS adapter, based on a desired protocol, to streamline Outbound data transfer to AWS platform. The adapter supports the following protocols:
 
 -   S3: Simple Cloud Storage
@@ -63,6 +49,20 @@ Description
 <tr>
 <td valign="top">
 
+*Host* 
+
+</td>
+<td valign="top">
+
+Specify the domain of the AWS region.
+
+Defualt value: amazonaws.com
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Region Name* 
 
 </td>
@@ -81,6 +81,25 @@ Select the AWS Region. If the region doesn’t exist in the preconfigured list, 
 <td valign="top">
 
 Specify the name of the bucket to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type.
+
+-   *Access and Secret Key* for access with long term credentials.
+-   *Security Token Service \(AssumeRole\)*for temporary IAM role-based access.
+-   *Security Token Service \(AssumeRoleWithWebldentity\)* to use an Identity Provider.
+-   *Security Token Service \(IAMRolesAnywhere\)* to use IAM Roles on systems outside of AWS.
+
+
 
 </td>
 </tr>
@@ -111,12 +130,125 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 <tr>
 <td valign="top">
 
+*OIDC Credential Name*
+
+\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth2 Client Credentials security artifact created for a Web Identity Provider.
+
+Example: Microsoft Entra ID or SAP IAS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role ARN Alias*
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Role ARN.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role Session Name*
+
+</td>
+<td valign="top">
+
+Specify the Role Session Name for a session of the same role assumed with different principals.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*External ID Alias*
+
+\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the External ID, as defined in the condition of the IAM role’s trust relationship.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Profile ARN Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the profile ARN. A profile defines which IAM roles can be assumed and applies session policies to control the permissions granted to authenticated workloads.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Trust Anchor Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Trust Anchor ARN. A trust anchor is the configured Certificate Authority \(CA\) that IAM Roles Anywhere trusts to verify certificates and grant access to IAM roles.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Key Pair Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the alias of the key pair \(private key and certificate\) stored in the Keystore.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Requester Pays*
 
 </td>
 <td valign="top">
 
 Select the checkbox to make the requester pay for the data transfer and the request.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Legacy Connectivity*
+
+</td>
+<td valign="top">
+
+Select this option to enable the AWS legacy connectivity.
+
+> ### Note:  
+> This option is disabled by default.
+
+
 
 </td>
 </tr>
@@ -150,6 +282,7 @@ Select to specify if the files are written or read from the S3 bucket. The defau
 
 -   *Write Operation* 
 -   *Read Operation* 
+-   *List Operation*
 
 
 
@@ -183,7 +316,7 @@ Specify the location on the S3 bucket where the file is written.
 </td>
 <td valign="top">
 
-Specify the name of the file to be written. If the field is left blank, the filename is created using the Cloud Integration message ID.
+Specify the name of the file to be written. If the field is left blank, the filename is created using the message ID.
 
 > ### Example:  
 > `Test.json`
@@ -204,6 +337,18 @@ Specify the name of the file to be written. If the field is left blank, the file
 <td valign="top">
 
 Select to append the date and timestamp to the filename.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Append MessageId*
+
+</td>
+<td valign="top">
+
+Use this option to append messageId to the filename.
 
 </td>
 </tr>
@@ -300,9 +445,21 @@ Select the file handling behavior, if a file with the same name exists in the di
 <tr>
 <td valign="top">
 
+*Upload Message Attachments*
+
+</td>
+<td valign="top">
+
+Select this option to upload each message attachment in the exchange as an S3 object.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Post-Processing*
 
-\(only if Operation is Write Operation\)
+\(only if  Operation is Read Operation\)
 
 </td>
 <td valign="top">
@@ -329,12 +486,75 @@ Specify the action taken after the file is processed. Select from the following 
 
 *Customer Decryption Key Alias*
 
-\(only if Operation is Write Operation\)
+\(only if  Operation is Read Operation\)
 
 </td>
 <td valign="top">
 
 Specify the name of the secured parameter that contains the decryption key for the Amazon S3 to decrypt data.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Keys*
+
+</td>
+<td valign="top">
+
+Specify the maximum number of keys to be returned in the response. This value cannot exceed 1000.
+
+Example: "750".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Include Sub-Directories*
+
+</td>
+<td valign="top">
+
+Select the checkbox to list all the files in the directory and subdirectory.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Continuation Token*
+
+</td>
+<td valign="top">
+
+Specify the token to continue listing on the current bucket.
+
+Example: "place\_holder".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sorting*
+
+</td>
+<td valign="top">
+
+The property on which sorting should be done while listing the files. The sorting will be done in ascending order of the option selected. Available options:
+
+-   File Name: The sorting is performed based on the filename.
+
+-   File Size: Sorting is performed based on file size.
+
+-   Time Stamp: Sorting is performed based on the timestamp.
+
+-   None \(default\): No sorting is performed. This is the default option for sorting.
+
+
+
 
 </td>
 </tr>
@@ -421,6 +641,20 @@ Description
 <tr>
 <td valign="top">
 
+*Host* 
+
+</td>
+<td valign="top">
+
+Specify the domain of the AWS region.
+
+Defualt value: amazonaws.com
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Region Name* 
 
 </td>
@@ -457,6 +691,25 @@ Specify the AWS Queue name where the data needs to be written.
 <tr>
 <td valign="top">
 
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type.
+
+-   *Access and Secret Key* for access with long term credentials.
+-   *Security Token Service \(AssumeRole\)* for temporary IAM role-based access.
+-   *Security Token Service \(AssumeRoleWithWebldentity\)* to use an Identity Provider.
+-   *Security Token Service \(IAMRolesAnywhere\)* to use IAM Roles on systems outside of AWS.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Access Key Alias*
 
 </td>
@@ -475,6 +728,102 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OIDC Credential Name*
+
+\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth2 Client Credentials security artifact created for a Web Identity Provider.
+
+Example: Microsoft Entra ID or SAP IAS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role ARN Alias*
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Role ARN.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role Session Name*
+
+</td>
+<td valign="top">
+
+Specify the Role Session Name for a session of the same role assumed with different principals.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*External ID Alias*
+
+\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the External ID, as defined in the condition of the IAM role’s trust relationship.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Profile ARN Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the profile ARN. A profile defines which IAM roles can be assumed and applies session policies to control the permissions granted to authenticated workloads.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Trust Anchor Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Trust Anchor ARN. A trust anchor is the configured Certificate Authority \(CA\) that IAM Roles Anywhere trusts to verify certificates and grant access to IAM roles.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Key Pair Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the alias of the key pair \(private key and certificate\) stored in the Keystore.
 
 </td>
 </tr>
@@ -563,6 +912,48 @@ Description
 <tr>
 <td valign="top">
 
+*Enable Large Payload*
+
+</td>
+<td valign="top">
+
+Enable the checkbox to process large-size messages. If this option is enabled, then all the payload having a size above the specified threshold will be sent via an S3 bucket and a notification with the S3 object Id will be received in the SQS Queue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message Size Threshold*
+
+\(Only available when Enable Large Payload is enabled.\)
+
+</td>
+<td valign="top">
+
+The threshold value of the payload size above which the payload will be sent to the S3 bucket. Possible values: 0 to 262144 \(256Kb\).
+
+The Default Value is 262144 \(256Kb\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Bucket Name*
+
+\(Only available when Enable Large Payload is enabled.\)
+
+</td>
+<td valign="top">
+
+Enable the checkbox to process large-size messages. If this option is enabled, then all the payload having a size above the specified threshold will be sent via an S3 bucket and a notification with the S3 object Id will be received in the SQS Queue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Message Attribute*
 
 </td>
@@ -597,6 +988,20 @@ Description
 <tr>
 <td valign="top">
 
+*Host* 
+
+</td>
+<td valign="top">
+
+Specify the domain of the AWS region.
+
+Defualt value: amazonaws.com
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Region Name* 
 
 </td>
@@ -626,7 +1031,26 @@ Specify the 12-digit AWS account number for the queue.
 </td>
 <td valign="top">
 
-Specify the AWS Topic name where the data needs to be written.
+Specify the AWS Topic name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type.
+
+-   *Access and Secret Key*for access with long term credentials.
+-   *Security Token Service \(AssumeRole\)* for temporary IAM role-based access.
+-   *Security Token Service \(AssumeRoleWithWebldentity\)*to use an Identity Provider.
+-   *Security Token Service \(IAMRolesAnywhere\)* to use IAM Roles on systems outside of AWS.
+
+
 
 </td>
 </tr>
@@ -654,6 +1078,102 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*OIDC Credential Name*
+
+\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth2 Client Credentials security artifact created for a Web Identity Provider.
+
+Example: Microsoft Entra ID or SAP IAS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role ARN Alias*
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Role ARN.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role Session Name*
+
+</td>
+<td valign="top">
+
+Specify the Role Session Name for a session of the same role assumed with different principals.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*External ID Alias*
+
+\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the External ID, as defined in the condition of the IAM role’s trust relationship.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Profile ARN Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the profile ARN. A profile defines which IAM roles can be assumed and applies session policies to control the permissions granted to authenticated workloads.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Trust Anchor Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Trust Anchor ARN. A trust anchor is the configured Certificate Authority \(CA\) that IAM Roles Anywhere trusts to verify certificates and grant access to IAM roles.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Key Pair Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the alias of the key pair \(private key and certificate\) stored in the Keystore.
+
+</td>
+</tr>
 </table>
 
 **Processing**
@@ -671,6 +1191,24 @@ Parameter
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+*Topic Type*
+
+</td>
+<td valign="top">
+
+Select the type of topic to be used. Possible options include:
+
+> ### Note:  
+> -   Standard
+> -   FIFO
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -711,12 +1249,71 @@ Select the structure of the message from the following options:
 <tr>
 <td valign="top">
 
+*Enable Large Payload*
+
+</td>
+<td valign="top">
+
+Enable the checkbox to process large-size messages. If this option is enabled, then all the payloads having a size above the specified threshold will be sent to the S3 bucket and a notification with the S3 object Id will be received in the SQS Queue.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message Size Threshold*
+
+\(Only available when Enable Large Payload is
+
+enabled.\)
+
+</td>
+<td valign="top">
+
+The threshold value of the payload size above which the payload will be sent to the S3 bucket.
+
+Possible values: 0 to 262144 \(256Kb\).
+
+Default Value: 262144 \(256Kb\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Bucket Name*
+
+\(Only available when Enable Large Payload is
+
+enabled.\)
+
+</td>
+<td valign="top">
+
+The name of the S3 bucket where the large files should be written.
+
+> ### Note:  
+> The bucket name should not contain “.” characters.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Message Attribute*
 
 </td>
 <td valign="top">
 
-Specify any additional message attribute name-value pairs that you can send to AWS.
+Specify any additional message attribute name-datatype-value pairs that you can send to AWS.
+
+-   Name: Specify the custom header name to be passed in the request to AWS. Value can also be read dynamically.
+-   Datatype: Specify the required datatype. The available options include String, String.Array, Number, and Binary actions. Value can also be read dynamically.
+-   Value: Specify the custom header value to be passed in the request to AWS. Value can also be read dynamically.
+
+
 
 </td>
 </tr>
@@ -757,12 +1354,45 @@ Description
 <tr>
 <td valign="top">
 
+*Host* 
+
+</td>
+<td valign="top">
+
+Specify the domain of the AWS region.
+
+Defualt value: amazonaws.com
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Region Name* 
 
 </td>
 <td valign="top">
 
 Select the AWS Region. If the region doesn’t exist in the preconfigured list, then the user can manually enter the region name in the text box.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication Type*
+
+</td>
+<td valign="top">
+
+Select the authentication type.
+
+-   *Access and Secret Key* for access with long term credentials.
+-   *Security Token Service \(AssumeRole\)* for temporary IAM role-based access.
+-   *Security Token Service \(AssumeRoleWithWebldentity\)* to use an Identity Provider.
+-   *Security Token Service \(IAMRolesAnywhere\)*to use IAM Roles on systems outside of AWS.
+
+
 
 </td>
 </tr>
@@ -787,6 +1417,102 @@ Specify the name of the Secure Parameter artifact that contains the AWS access k
 <td valign="top">
 
 Specify the name of the Secure Parameter artifact that contains the AWS secret key needed to connect to AWS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OIDC Credential Name*
+
+\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the OAuth2 Client Credentials security artifact created for a Web Identity Provider.
+
+Example: Microsoft Entra ID or SAP IAS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role ARN Alias*
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Role ARN.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Role Session Name*
+
+</td>
+<td valign="top">
+
+Specify the Role Session Name for a session of the same role assumed with different principals.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*External ID Alias*
+
+\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the External ID, as defined in the condition of the IAM role’s trust relationship.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Profile ARN Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the profile ARN. A profile defines which IAM roles can be assumed and applies session policies to control the permissions granted to authenticated workloads.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Trust Anchor Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter that stores the Trust Anchor ARN. A trust anchor is the configured Certificate Authority \(CA\) that IAM Roles Anywhere trusts to verify certificates and grant access to IAM roles.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Key Pair Alias*
+
+\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+
+</td>
+<td valign="top">
+
+Specify the alias of the key pair \(private key and certificate\) stored in the Keystore.
 
 </td>
 </tr>

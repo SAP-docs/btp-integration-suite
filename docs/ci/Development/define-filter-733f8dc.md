@@ -40,7 +40,7 @@ For more examples, see [Examples](examples-eb2e601.md).
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> and, then *Filter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> and, then *Filter*.
 
 2.  Place *Filter* in the integration process and define the message path.
 

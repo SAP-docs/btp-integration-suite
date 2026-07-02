@@ -11,7 +11,7 @@ Configure the SuccessFactors OData V2 receiver adapter by understanding the adap
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -27,11 +27,6 @@ The SuccessFactors OData V2 receiver adapter supports externalization. To extern
 > 
 > -   Retry for *Upsert* operation is now enabled for inner error code 412. Retry will be executed once and after 1 minute only.
 > -   Learn how to construct the required payload for SuccessFactors OData V2 Upsert operation from the [blog](https://blogs.sap.com/2019/09/15/payload-structure-for-successfactors-upsert-in-sap-cloud-platform-integration/).
-
-> ### Remember:  
-> You must enable *HTTP Session Reuse*, either *On Exchange* level or *On Integration Flow* level.
-> 
-> For more information, refer to [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md).
 
 Select the *General* tab and provide information as described as follows:
 
@@ -104,6 +99,8 @@ Description
 URL of the SuccessFactors data center that you're connecting to.
 
 You can browse and select a SuccessFactors data center URL by using the *Select* option.
+
+You can edit and add the URL. For information on SuccessFactors URL list, see [List of SAP SuccessFactors API Servers](https://help.sap.com/docs/successfactors-platform/sap-successfactors-api-reference-guide-odata-v2/list-of-sap-successfactors-api-servers?version=2505)
 
 </td>
 </tr>
@@ -285,6 +282,11 @@ The fields in the entity that you want to modify. You can add this using the [Mo
 
 Additional options that you want to add to the query like `$top` or how to order the results using *orderby*. You can add this using the Model Operation Wizard.
 
+> ### Remember:  
+> While forming queries, either using the wizard or manually, you must follow the query structure recommended by SuccessFactors. For example, if you want to query records effective on a defined date, you must use the `asOfDate` parameter as recommended by SuccessFactors [documentation](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/fce067c46f5d4d4f85a21fc9bb9b21c3.html). If a query that you form doesn't follow the recommended structure, the adapter won't be able to show errors during the design time, in turn, leading to unexpected results at runtime. This is a known limitation of the adapter.
+
+
+
 </td>
 </tr>
 <tr>
@@ -375,7 +377,9 @@ By default the value is set to *Server Snapshot-Based* which is the recommended 
 
 
 > ### Remember:  
-> For server-side pagination, session reuse must be set to **Mandatory**. If it set to **None**, deployment fails with a validation error. For more information, see [Pagination](https://help.sap.com/viewer/d599f15995d348a1b45ba5603e2aba9b/latest/en-US/93ef8631b93b4d58be235b047dae2b57.html).
+> You must enable *HTTP Session Reuse*, either *On Exchange* level or *On Integration Flow* level.
+> 
+> For more information, refer to [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md).
 
 
 
@@ -461,7 +465,7 @@ This option isn’t enabled for *Content Enricher*.
 </td>
 <td valign="top">
 
-Maximum time the system waits for a response before terminating the connection.
+Maximum time the system waits for a response before terminating the connection. For more information about the supported session duration, see SAP Note [3063733](https://me.sap.com/notes/3063733).
 
 </td>
 </tr>
@@ -477,7 +481,7 @@ Maximum time the system waits for a response before terminating the connection.
 
 If the value \* is entered, **all** the message headers are converted to HTTP request headers and forwarded.
 
-*Response Headers* : Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are converted to message/exchange headers.
+*Response Headers*: Provide the **| \(Pipe\)** separated value list of HTTP response headers. The received header values are converted to message/exchange headers.
 
 If the value \* is entered, **all** the HTTP response header values are converted to message/exchange headers.
 

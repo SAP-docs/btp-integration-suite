@@ -2,7 +2,7 @@
 
 # Use Scripting Appropriately
 
-You can use the Script step to apply script operations on the message content.
+You can use the script step to apply script operations on the message content.
 
 
 
@@ -16,6 +16,9 @@ The Script step type supports the following script languages:
 
 -   JavaScript
 
+
+> ### Note:  
+> Upgrade your groovy script step to version 2.0 to ensure your groovy scripts are clean, consistent, and prepared for future software and runtime version upgrades. See  <?sap-ot O2O class="- topic/xref " href="917e014b47094620b2616c125e1a86f3.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d4dc13c927b044b2a38e458f4cea9da5.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  and [Ensure Upgrade Readiness](ensure-upgrade-readiness-6adb0ca.md).
 
 For more information on this feature, see [Define a Local Script Step](define-a-local-script-step-03b32eb.md).
 
@@ -65,7 +68,7 @@ If you don't consider the proposed guidelines during integration design, there's
 
 ## Script Collection
 
-A script collection is a bundle of scripts which can be used by all the integration artifacts belonging to the same integration package. See [Developing Script and Script Collection](developing-script-and-script-collection-e60f706.md) for information on how to create and use a script collection.
+A script collection is a bundle of scripts which can be used by all the integration artifacts belonging to the same integration package. See [Working with Script and Script Collection](working-with-script-and-script-collection-e60f706.md) for information on how to create and use a script collection.
 
 The advantages of using script collections instead of local scripts are:
 

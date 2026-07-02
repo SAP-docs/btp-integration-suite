@@ -8,11 +8,11 @@
 
 ## Permissions, Cloud Foundry Environment
 
-The the role template `AuthGroup_TenantPartnerDirectoryConfigurator` grants permissions to access \(read and write\) the Partner Directory.
+The role template `AuthGroup_TenantPartnerDirectoryConfigurator` grants permissions to access \(read and write\) the Partner Directory.
 
 More information:
 
-[Persona](../SecurityNeo/persona-2937e5c.md)
+[Personas](../SecurityNeo/personas-2937e5c.md)
 
 [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
 
@@ -44,11 +44,11 @@ Write access is protected by the role `TenantPartnerDirectory.write`. This role 
 -   AuthGroup.TenantPartnerDirectoryConfigurator
 
 
-Additionally; the authorization group `AuthGroup.TenantPartnerDirectoryConfigurator` contains the roles `NodeManager.deploycredentials` and `NodeManager.readcredentials` for deploying and reading UserCredentialParameters via the Partner Directory OData API.
+Additionally, the authorization group `AuthGroup.TenantPartnerDirectoryConfigurator` contains the roles `NodeManager.deploycredentials` and `NodeManager.readcredentials` for deploying and reading UserCredentialParameters via the Partner Directory OData API.
 
 More information:
 
-[Persona](../SecurityNeo/persona-2937e5c.md)
+[Personas](../SecurityNeo/personas-2937e5c.md)
 
 [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)
 

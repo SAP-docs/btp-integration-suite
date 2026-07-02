@@ -4,15 +4,16 @@
 
 # Custom Type Systems
 
-The library of custom type systems allows you to upload custom messages – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the SAP Integration Advisor . With this feature, you can:
+The library of custom type systems allows you to upload custom messages, IDocs, SOA messages and custom codelists – this enables you to create MIGs and MAGs based on your own message structures. Use cases for this could be proprietary messages, standard messages extended by you and messages from B2B standards not available in the system. Within each custom type system, you can:
 
--   Upload custom interface xsd files
+-   Create custom messages based on xsd and wsdl files
 
+-   Create custom codelists
 -   Create MIG and MAG
 -   Customize your MIG
 -   View the list of your custom messages
 
-To upload and use custom messages in SAP Integration Advisor , you need to have a custom type system. Follow the procedure given below to do the same.
+To upload and use custom messages/codelists, you need to have a custom type system. Follow the procedure given below to do the same.
 
 
 
@@ -20,12 +21,12 @@ To upload and use custom messages in SAP Integration Advisor , you need to have 
 
 ## Procedure
 
-1.  Navigate to *Custom Type Systems* <span class="SAP-icons"></span> icon from the left pane of your application.
+1.  Navigate to *Custom Type Systems* <span class="SAP-icons-V5">()</span> from the left pane of your application.
 
-2.  Choose *Enable* to create a custom type system.
+2.  Choose *Add* to create a custom type system.
 
     > ### Note:  
-    > Currently SAP Integration Advisor supports only one custom type system which serves as container for all your custom messages.
+    > Currently the application supports only one custom type system for each kind \(XML/IDoc/SOA/Codelists\).
 
 3.  Choose and open the type system. The *Overview* tab provides you with the following details :
     -   General information
@@ -34,5 +35,7 @@ To upload and use custom messages in SAP Integration Advisor , you need to have 
     -   Administrative Data
 
 
-To know how to add a message to the custom type system, see: [Adding a Custom Message](adding-a-custom-message-8b7eb45.md)
+To know how to add a message to the custom type system, see: [Adding a Custom Message](adding-a-custom-message-8b7eb45.md).
+
+To know how to add a codelist to the custom type system, see: [Adding a Custom Codelist](adding-a-custom-codelist-fa0c76f.md).
 

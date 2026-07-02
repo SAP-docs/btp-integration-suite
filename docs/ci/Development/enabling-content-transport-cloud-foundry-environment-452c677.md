@@ -5,7 +5,7 @@
 All the tasks mentioned here are one-time activities. The tenant administrator performs these tasks to enable content transport.
 
 > ### Note:  
-> To use the automatic transport options \(CTS+ or Cloud Transport Management\), you must enable an additional service – *Content Agent Service*. This service is responsible for packaging the integration content objects \(integration packages with their artifacts\) into MTAR files and handing them over to the transport mechanism. This service is always needed independently of the transport mechanism, whether CTS+ or Cloud Transport Management.
+> To use the automatic transport options \(CTS+ or Cloud Transport Management\), you must enable an additional service – *Content Agent Service*. This service is responsible for packaging the integration content objects \(integration packages with their artifacts\) into MTAR files and handing them over to the transport mechanism. This service is always needed independently of the transport mechanism, whether CTS+ or.
 
 > ### Note:  
 > This information is relevant only when you use SAP Cloud Integration in the Cloud Foundry environment.
@@ -48,7 +48,7 @@ When prompted to select a role for the service plan, choose the role *WorkspaceP
 
 The content transport mechanism provides you the flexibility of directly exporting integration content to CTS+ and Cloud Transport Management system, or exporting the content as an MTAR file to a local file system. To use either of the modes, you must enable *Transport Mode* found in *Settings*.
 
-Navigate to *Settings* and move to the *Transport* tab. Based on your requirement, select either *CTS+*, or *Transport Management Service*, or *MTAR Download* from the dropdown list.
+Navigate to *Tenant Settings* and move to the *Transport* tab. Based on your requirement, select either *CTS+*, or *Transport Management Service*, or *MTAR Download* from the dropdown list.
 
 > ### Remember:  
 > -   This step must be performed on the tenant from which you want to export content. For example, if you're exporting content from your **Test** tenant, you need to perform this step only in the **Test** tenant.

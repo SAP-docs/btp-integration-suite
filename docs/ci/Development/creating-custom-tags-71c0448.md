@@ -17,7 +17,7 @@ You can tag your integration package using custom attributes that can be created
 
 3.  Enter a name for the tag under *Tag Name*.
 
-4.  By default, the *Mandatory* check box is enabled. Uncheck the check box if you don’t want to set your tag mandatory.
+4.  By default, the *Mandatory* check box is enabled to enforce integration developers to add specific values before saving the package. Uncheck the check box if you don’t want to set your tag mandatory.
 
 5.  In the *Permitted Values* field, type in the possible custom values from which you want the integration developers to choose. For example, with a custom tag name `Department`, you can provide permitted values like `HR`, `Finance`, `Sales`, and `Marketing`. Leave the field blank, if you want the integration developers to type their own values.
 

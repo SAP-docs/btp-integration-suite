@@ -166,5 +166,5 @@ INTAS\_ViewOnly
 **Related Information**  
 
 
-[Integration Assessment Process](../integration-assessment-process-5769fcd.md "Define, document, and govern your integration technology strategy.")
+[Integration Assessment Process](https://help.sap.com/viewer/70da72e10fd6446ab24db52465b1fa5c/CLOUD/en-US/5769fcd4209b470ba85d2aa5ad32b397.html "Define, document, and govern your integration technology strategy.") :arrow_upper_right:
 

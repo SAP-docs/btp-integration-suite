@@ -2,7 +2,7 @@
 
 # API Details
 
-The API details correspond to the details shown in the SAP Business Accelerator Hub for SAP Cloud Integration: [SAP Cloud Integration API Package](https://api.sap.com/package/CloudIntegrationAPI?section=Artifacts)
+The API details correspond to the details shown in the SAP Business Accelerator Hub for : [SAP Cloud Integration API Package](https://api.sap.com/package/CloudIntegrationAPI?section=Artifacts)
 
 **Related Information**  
 

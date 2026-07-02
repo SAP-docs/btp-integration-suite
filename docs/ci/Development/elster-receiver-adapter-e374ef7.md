@@ -11,14 +11,14 @@ This adapter enables an SAP BTP tenant to send a tax document to the ELSTER serv
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 ELSTER \(acronym for the German term *Elektronische Steuererklärung*\) is used by the German fiscal management to process tax declarations exchanged over the Internet.
 
-To enable a client to send tax data to German tax authorities, those organizations provide the *ERiC* \(*ELSTER Rich Client*\) library for sending tax documents. The ELSTER adapter is designed that way that it complies with the requirements of this library and, therefore, enables Cloud Integration to connect as a client to the ELSTER server.
+To enable a client to send tax data to German tax authorities, those organizations provide the *ERiC* \(*ELSTER Rich Client*\) library for sending tax documents. The ELSTER adapter is designed that way that it complies with the requirements of this library and, therefore, enables to connect as a client to the ELSTER server.
 
 > ### Note:  
 > Using this adapter makes only sense in the context of a standard integration scenario \(predefined by SAP or an SAP partner\) that includes the communication with German tax authorities.
@@ -27,7 +27,7 @@ The adapter supports validate and send operations.
 
 The input payload for the ELSTER adapter is supposed to be a complete, valid payload \(tax document\) including the transfer header. Note that, however, the XML document can have an arbitrary encoding \(if this is properly defined in the XML preamble\). The adapter ensures that the payload is converted to the encoding the ELSTER server supports \(currently *ISO-8859-15*, in future versions this will change to *UTF-8*\).
 
-The output payload \(sent by Cloud Integration through the ELSTER receiver adapter\) will be validated by the ELSTER server.
+The output payload \(sent by through the ELSTER receiver adapter\) will be validated by the ELSTER server.
 
 The inclusion of the transfer header implies that only applications that are registered with the German tax authorities and have a valid vendor ID can actually send messages through the ELSTER adapter.
 
@@ -116,6 +116,10 @@ The following operations are supported:
 
     The response contains the major, minor, and micro ERiC version \(for example, `29.6.2`\).
 
+-   *Receive from OTTER*
+
+    Downloads objects from an object store \(OTTER\) provided by the financial authorities.
+
 -   *Validate*
 
     Validates the tax document.
@@ -134,7 +138,72 @@ The following operations are supported:
 <tr>
 <td valign="top">
 
-*Data Type* 
+*Proxy Type* 
+
+</td>
+<td valign="top">
+
+Proxy type to be used to connect to the SFTP server. Choose between the following options:
+
+-   *Internet*
+
+-   *Manual*
+
+    This option is only available if *Edge* has been selected as runtime.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data Type*
+
+\(only available if *Validate* or *Validate and Send* is selected for *Operation*\)
 
 </td>
 <td valign="top">
@@ -150,7 +219,41 @@ You can also dynamically configure this parameter with an expression such like `
 <tr>
 <td valign="top">
 
-*Private Key Alias for Encryption* 
+*Object ID*
+
+\(only available if *Receive from OTTER* is selected for *Operation*\)
+
+</td>
+<td valign="top">
+
+ID for the object to retrieve.
+
+You can dynamically configure this parameter with an expression such like `${header.objectid}` or `${property.objectid}` to retrieve the data format dynamically at runtime.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Vendor ID*
+
+\(only available if *Receive from OTTER* is selected for *Operation*\)
+
+</td>
+<td valign="top">
+
+ID for software vendor for data retrieval.
+
+You can also dynamically configure this parameter with an expression such like `${header.vendorid}` or `${property.vendorid}` to retrieve the data format dynamically at runtime.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias for Encryption*
+
+\(only available if *Validate and Send* or *Receive from OTTER* is selected for *Operation*\)
 
 </td>
 <td valign="top">
@@ -166,7 +269,9 @@ You can also dynamically configure this parameter with an expression such like `
 <tr>
 <td valign="top">
 
-*Private Key Alias for Signing* 
+*Private Key Alias for Signing*
+
+\(only available if *Validate and Send* or *Receive from OTTER* is selected for *Operation*\)
 
 </td>
 <td valign="top">

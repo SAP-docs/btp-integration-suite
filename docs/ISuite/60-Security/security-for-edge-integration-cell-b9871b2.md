@@ -6,7 +6,7 @@ Get an overview of the security-relevant information for Edge Integration Cell.
 
 For more information about Edge Lifecycle Management security considerations, see [Security Considerations](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/f69c8352d53d477394915f5ed610eba8.html).
 
-For secure runtime parameter configurations and operations, see [Runtime Parameters](../runtime-parameters-63c5276.md).
+For secure runtime parameter configurations and operations, see [Runtime Parameters](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/63c52764cb58458aba7e58bbf678d453.html "View the runtime parameters of the components of your Edge Integration Cell.") :arrow_upper_right:.
 
 **Related Information**  
 
@@ -21,5 +21,5 @@ For secure runtime parameter configurations and operations, see [Runtime Paramet
 
 [Kubernetes](kubernetes-f06bfa1.md "")
 
-[Technical Landscape \(Edge Integration Cell\)](../technical-landscape-edge-integration-cell-f60efc1.md "Get to know the system landscape and the components of Edge Integration Cell.")
+[Technical Landscape (Edge Integration Cell)](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/f60efc1363f04d17bb324d7e5f203ee9.html "Get to know the system landscape and the components of Edge Integration Cell.") :arrow_upper_right:
 

@@ -218,7 +218,7 @@ At receiver side, the scenario uses the SOAP \(SAP RM\) receiver adapter. When c
 
 See: [Configure the SOAP \(SAP RM\) Receiver Adapter](configure-the-soap-sap-rm-receiver-adapter-8366495.md)
 
-These integration flow settings ensure that Cloud Integration passes on a unique ID to the receiver system. If there's an error during message processing, Cloud Integration retries the message from the data store. Because the retry is performed within the same instance of the message processing log, the message processing log ID and, as a result, the mapped unique ID remain the same.
+These integration flow settings ensure that Cloud Integration passes on a unique ID to the receiver system. If there's an error during message processing, Cloud Integration retries the message from the data store.
 
 If message delivery fails, the data store ensures that the message is retried. If the message hasn't been sent to the receiver in the first place, a unique ID does not have any effect anyway. If the message has been delivered successfully to the receiver, however, the positive acknowledgment got lost in between, a unique and repeatable ID is required. Otherwise, this behavior can lead to duplicate messages arriving at the receiver. Because the receiver is idempotent, it recognizes the duplicate message based on the ID and discards it.
 

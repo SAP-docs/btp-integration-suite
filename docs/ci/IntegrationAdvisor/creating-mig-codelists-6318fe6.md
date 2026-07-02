@@ -4,7 +4,7 @@
 
 # Creating MIG Codelists
 
-Create new Message Implementation Guideline \(MIG\) codelists if the reusable or type-system based codelists don’t meet your requirements.
+If the reusable or type-system based codelists don’t meet your requirements, you can create new message implementation guideline \(MIG\) codelists.
 
 
 
@@ -12,13 +12,13 @@ Create new Message Implementation Guideline \(MIG\) codelists if the reusable or
 
 ## Prerequisites
 
-You’ve opened the MIG in the edit mode.
+You’ve opened the message implementation guideline in the edit mode.
 
 <a name="task_ahs_bcp_gpb"/>
 
 <!-- task\_ahs\_bcp\_gpb -->
 
-## Creating MIG codelists by manually adding code values
+## Adding Code Values
 
 
 
@@ -26,28 +26,26 @@ You’ve opened the MIG in the edit mode.
 
 ## Procedure
 
-1.  On the *MIG Codelists* tab, choose *Add* to create a new codelist.
+1.  On the *MIG Codelists* tab, choose *Create* to create a new codelist.
 
 2.  Specify the codelist identifier, name, and definition in the corresponding fields under *MIG Codelists*.
 
-3.  Choose *CodeValues*.
+3.  Choose *Code Values*.
 
-4.  On the *Code Values* tab, in the resulting panel, choose *Add* to enter the required values.
+4.  On the *Code Values* tab, add new code values by choosing one of the following options:
 
-5.  Optional: Filter code values using *Search*.
+    -   *Create*: Enter a value, name, and definition.
+    -   *Create* \> *Create Empty Code Value*: Enter a name and definition. The value `(empty)` is not editable.
+    -   *Upload*: Import a CSV file containing code values. See the section *Adding Code Values by Uploading a CSV File*.
 
-6.  Optional: Sort code values using <span class="SAP-icons"></span> \(sort\) icon in ascending or descending order.
-
-7.  Optional: Delete code values using :wastebasket: icon.
-
-8.  Optional: Download the code values in **csv** format using the *Download* option. The dowloaded file will correspond to the csv template used for the codelist upload. This helps when you want to update the downloaded csv file and upload it again. Follow the procedure below to upload a csv file.
+5.  You can download the code values in **CSV** format using the *Download* option. The downloaded file corresponds to the CSV template used for the codelist upload. You can use it, for example, to update the downloaded CSV file and re-upload it.
 
 
 <a name="task_rym_x3p_gpb"/>
 
 <!-- task\_rym\_x3p\_gpb -->
 
-### Creating MIG codelists by uploading a csv file
+### Adding Code Values by Uploading a CSV File
 
 
 
@@ -55,38 +53,35 @@ You’ve opened the MIG in the edit mode.
 
 ## Procedure
 
-1.  On the *MIG Codelists* tab, choose *Add* to create a new codelist.
+1.  On the *MIG Codelists* tab, choose *Create* to create a new codelist.
 
 2.  Specify the codelist identifier, name, and definition in the corresponding fields under *MIG Codelists*.
 
-3.  Choose *CodeValues*.
+3.  Choose *Code Values*.
 
-4.  On the *Code Values* tab, in the resulting panel, choose *Upload* to import the csv file containing code values.
+4.  On the *Code Values* tab, choose *Upload* to import a CSV file containing code values.
 
-    > ### Note:  
-    > You can also download a standard codelist from a type system in `csv` format and upload it here. To do so,
-    > 
-    > -   Go to *Type Systems* and open the type system that you require.
-    > 
-    > -   Navigate to the *Codelists* tab and select a version of the codelist that you want to download.
-    > -   In the *Code Values* tab, choose *Download*. This will download the standard codelist in `csv` format.
+5.  In the *Code Value Upload* dialog box, choose *Select*, and browse and upload the CSV file containing code values. You have the following options for uploading a file:
 
-5.  In the *Code Value Upload* dialog box, choose *Select*, and browse and upload the csv file containing code values.
+    -   If you already have a **CSV file**containing code values, choose <span class="SAP-icons-V5"></span> Browse or drop a file and select the file.
 
-    > ### Note:  
-    > If you do not have a csv file but need to enter the values in a file, in the *Code Value Upload* dialog, choose *How to* \> ** *Download the template* option. This will download the csv file template locally with the name `CodeValueDownload.csv`. Edit the downloaded template file `CodeValueDownload.csv` to enter the required values and save.
-    > 
-    > Ensure you do not change or remove the header of the template.
-    > 
-    > Once done, you can choose *Select* to upload the updated file containing code values.
+    -   You can **download a standard codelist** from a type system in CSV format and upload it here:
 
-6.  If the csv file contains any code value with an escape character, on uploading the file the list of those code values are displayed. Select the rows for which you want the escape character to be removed and choose *Remove*.
+        1.  Go to *Type Systems* and open the required type system.
+        2.  Go to the *Codelists* tab and select the version you want to download.
+        3.  In the *Code Values* tab, choose *Download*.
 
-7.  If you want to skip this step, choose *Skip All*.
+    -   If you **don't have a CSV file** yet, in the *Code Value Upload* dialog, you can download a template by choosing *How to...* \> ** *Download the template \(\*.CSV\)*. The file is saved locally with the name `CodeValueDownload.csv`. Edit the downloaded template file `CodeValueDownload.csv` to enter the required values and save, but make sure not to change or remove the template header. Then, select the file in the upload dialog.
 
-8.  If you want to add more code values to the uploaded values, choose *Add* and enter the required fields in the new entry.
+    -   You can use the upload option even if there are **already code values in the list**. In that case, the code values from the file are appended to the existing list.
 
-    > ### Note:  
-    > You can use the upload option even if code values exist already. The code values in the file get appended to the existing list. However, if there are conflicting values between the list and the csv file, during upload the dialog box displays the list of already existing values. You can select the checkbox of those values that you wish to overwrite and choose *Overwrite*.
+        However, if there are **duplicate values** between the list and the CSV file, during the upload, a dialog displays the list of already existing values. Select the checkbox of the values that you want to overwrite and choose *Overwrite*.
+
+
+6.  If the selected CSV file contains any code value with an escape character, the list of those code values is displayed when on uploading the file. Select the rows for which you want the escape character to be removed and choose *Remove*.
+
+    To skip this step, choose *Skip All*.
+
+7.  You can add more code values manually by choosing *Create* and entering the required fields.
 
 

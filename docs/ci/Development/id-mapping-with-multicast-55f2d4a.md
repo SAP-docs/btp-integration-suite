@@ -149,7 +149,7 @@ Value
 </td>
 <td valign="top">
 
-`${property.SplitMessageID}` 
+`${header.SapMessageIdEx}` 
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ Value
 </td>
 <td valign="top">
 
-`${property.SplitMessageID}` 
+`${header.SapMessageIdEx}` 
 
 </td>
 </tr>

@@ -21,9 +21,24 @@ SAP Cloud Integration offers a range of authentication methods when accessing in
 
 Just as it’s recommended to always prefer secure transport protocols, this guideline suggests preferring the more secure authentication methods wherever possible. Be aware of the pros and cons of each authentication method.
 
-**No authentication** is the most insecure method and is to be avoided. Anybody can send messages to the endpoint, e.g. faking messages or overloading the endpoint processing for denial of service. If authentication isn't possible, consider other means for securing your communication – e.g. via signatures and encryption on message level \(see guide for Message Level Security\).
+> ### Note:  
+> SAP Cloud Integration recommends to avoid using generic user roles for sender-side authorization of an integration flow execution. You must create a custom role for inbound communication. For more information, see [Managing User Roles, Cloud Foundry Environment](../Operations/managing-user-roles-cloud-foundry-environment-4e86f0d.md).
 
-Note that *inbound* communication to CPI must always be authenticated, so this option is currently only available for *outbound* receiver adapters.
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_u4t_jnk_bcc"/>
+
+## No Authentication
+
+No authentication is the most insecure method and is to be avoided. Anybody can send messages to the endpoint, e.g. faking messages or overloading the endpoint processing for denial of service. If authentication isn't possible, consider other means for securing your communication – e.g. via signatures and encryption on message level \(see guide for Message Level Security\).
+
+Note that inbound communication to CPI must always be authenticated, so this option is currently only available for outbound receiver adapters.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_mzm_nnk_bcc"/>
+
+## Basic Authentication
 
 The standard **Basic Authentication** is supported by all sender and receiver channels, whenever it’s appropriate for the chosen transport protocol. Basic authentication has several drawbacks:
 
@@ -36,9 +51,27 @@ The standard **Basic Authentication** is supported by all sender and receiver ch
 
 For these reasons, always consider using more secure authentication methods, if available.
 
-**Principal Propagation** uses SAML assertions to forward existing login information from another Identity Provider to CPI \(or from CPI to another receiver\). The authentication depends on a trust relation to the issuing Identity Provider.
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_o1j_pnk_bcc"/>
+
+## Principal Propagation
+
+Principal Propagation uses SAML assertions to forward existing login information from another Identity Provider to CPI \(or from CPI to another receiver\). The authentication depends on a trust relation to the issuing Identity Provider.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_h2s_qnk_bcc"/>
+
+## SASL
 
 **SASL** \(Simple Authentication and Security Layer\) is a framework that includes multiple authentication mechanisms and also allows for data encryption and integrity-checking.
+
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_a5t_qnk_bcc"/>
+
+## OAuth
 
 **OAuth Authentication** flows are based on tokens, which allow a resource owner to grant restricted access to clients. These flows are designed to support technical communications. Some benefits of OAuth compared to basic authentication:
 
@@ -54,6 +87,12 @@ OAuth authentication is supported for the following adapters:
 -   Receiver channel: OData, AMQP, HTTP, SuccessFactors, Twitter, and Facebook adapters
 
 
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_b35_qnk_bcc"/>
+
+## Client Certificate
+
 **Client Certificate Authentication** is based on a public/private key cryptography. It therefore does not require a shared secret, which could be guessed or unveiled by brute-force attacks. Client Certificate Authentication is supported by the following HTTP transport protocol-based adapters:
 
 -   SOAP, IDoc, HTTP, SuccessFactors, SAP XI, AS2, OData
@@ -61,11 +100,17 @@ OAuth authentication is supported for the following adapters:
 
 How to setup client certificate authentication is described in more detail in this guideline and illustrated by an example integration flow.
 
+
+
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_tdw_qnk_bcc"/>
+
+## Public Key
+
 **Public Key Authentication** is currently supported exclusively by the SFTP adapter \(sender and receiver channel\). The security of Public Key Authentication is comparable to client certificate authentication.
 
 
 
-<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_mxt_nbc_xkb"/>
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_xqg_ynk_bcc"/>
 
 ## Implementation Example with Client Certificate Authentication
 
@@ -119,7 +164,7 @@ The example integration flow can be used without further effort because a certif
 
 
 
-<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_q2q_vkc_xkb"/>
+<a name="loio3d46d45ab3b34581bebf9dddfafe47d5__section_crg_ynk_bcc"/>
 
 ## More Information
 
@@ -127,16 +172,16 @@ The following SAP Community blogs provide more information:
 
 **Basic Authentication:**
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html)
+-   [Inbound](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/2c4c2d98e9de4b92a3b3af2ba9483909.html)
 
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html)
+-   [Outbound](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a5d77b12ff16483c965cce936aa1b698.html)
 
 
 **Client Certificate Authentication:**
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html)
+-   Inbound: [Client Certificate Authentication, Neo Environment](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c1eeeab4877147ffa6a5997c76eaaaca.html)
 
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html)
+-   Outbound: [Client Certificate Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html)
 
 -   [How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
@@ -147,19 +192,19 @@ The following SAP Community blogs provide more information:
 -   [Setup Secure HTTP Inbound Connection with Client Certificates and Custom Roles in Cloud Foundry](https://blogs.sap.com/2019/08/14/cloud-integration-on-cf-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
 
-**OAuth Authentication:** [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html)
+**OAuth Authentication:** [OAuth 2.0](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/382313443b8d4453b0fd536b82b9e15d.html)
 
--   OAuth Client Credentials Grant: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth)
+-   [OAuth Client Credentials Grant](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/cf611eca57744d29be588b7d4ec900e1.html?q=OAuth)
 
--   Blog: [https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/](https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/)
+-   Blog: [Blog: Cloud Integration – Inbound HTTP Connections using OAuth Client Credentials Grant](https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/)
 
--   [https://oauth.net/2/](https://oauth.net/2/)
+-   [OAuth 2.0 website](https://oauth.net/2/)
 
 
 **SFTP with Public Key Authentication:**
 
--   [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22)
+-   [How SFTP Works](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/fc8467b6dc7e40479d3d568cd79a3c1c.html?q=%22Public%20Key%20Authentication%22)
 
--   Inbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html)
--   Outbound: [https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html)
+-   [Inbound SFTP With Public Key Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/97e2baafd4184e98916f246c373af3bf.html)
+-   [Outbound SFTP With Public Key Authentication](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/d96b2d7720eb469ca39133cc40cff6d7.html)
 

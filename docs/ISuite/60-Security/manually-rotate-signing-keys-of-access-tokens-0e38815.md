@@ -10,7 +10,7 @@ You can manually rotate the signing keys for the access tokens of the Edge Local
 
 ## Context
 
-The Edge Local Authentication and Authorization component periodically rotates the signing keys used for signing and verifying access tokens. This rotation happens automatically. You can also manually rotate the signing keys for access tokens via *Component Monitor* in the Operations Cockpit. For more information, see [Component Monitor](../component-monitor-49f487e.md).
+The Edge Local Authentication and Authorization component periodically rotates the signing keys used for signing and verifying access tokens. This rotation happens automatically. You can also manually rotate the signing keys for access tokens via *Component Monitor* in the Operations Cockpit. For more information, see [Component Monitor](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/49f487ec05c54861a0f970e9bdc529e5.html "Get information on your components.") :arrow_upper_right:.
 
 Follow these steps to manually rotate the signing keys:
 
@@ -43,5 +43,5 @@ Follow these steps to manually rotate the signing keys:
 **Related Information**  
 
 
-[Fix Signing key Rotation Issues](../fix-signing-key-rotation-issues-8cb1033.md "Troubleshoot errors related to manual signing key rotation for access tokens issued by Edge Local Authentication and Authorization.")
+[Fix Signing key Rotation Issues](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/8cb10332523e4a2a85b4204701a26a43.html "Troubleshoot errors related to manual signing key rotation for access tokens issued by Edge Local Authentication and Authorization.") :arrow_upper_right:
 

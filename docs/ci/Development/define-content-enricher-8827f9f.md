@@ -264,7 +264,7 @@ The enriched message is in the following format.
 
 1.  If you want to add a *Content Enricher* step to the integration process, perform the following substeps.
 
-    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope:. In the submenu, choose :gear:
+    1.  In the palette, choose ![](images/external_call_bfbf8b0.png) \(Call\) and then choose :envelope::gear:
 
     2.  Place the *Content Enricher* shape in the integration process and define message path.
 

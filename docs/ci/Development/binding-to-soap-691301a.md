@@ -33,15 +33,15 @@ You can use this procedure to bind function imports and operations of entity set
 
 5.  Enter the Endpoint URI where the operation is located. If the OData model was imported from a WSDL file and an operation was selected from this WSDL, the corresponding Endpoint URI is auto-populated.
 
-6.  Choose *OK*. The Service Designer page appears and the *Action* column for this operation now displays *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\) and *Delete Binding* \(:wastebasket:\) buttons.
+6.  Choose *OK*. The Service Designer page appears and the *Action* column for this operation now displays *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\) and *Delete Binding* \(:wastebasket:\) buttons.
 
     A predefined integration flow with mapping steps is generated for the operation. For more information, see [Predefined Integration Flows for SOAP](predefined-integration-flows-for-soap-383f7d1.md).
 
-    You can update the integration flow to better suit your business scenario by choosing *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\). For more information, see [Editing an Integration Flow](editing-an-integration-flow-ccd062a.md).
+    You can update the integration flow to better suit your business scenario by choosing *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\). For more information, see [Editing an Integration Flow](editing-an-integration-flow-ccd062a.md).
 
     In case you need to update the binding information, you can do it in one of the following ways:
 
-    -   Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons"></span>\) and update the Endpoint URI information in the receiver channel.
+    -   Choose *Navigate to Integration Flow Editor* \(<span class="SAP-icons-V5"></span>\) and update the Endpoint URI information in the receiver channel.
     -   Choose *Delete Binding* \(:wastebasket:\) and repeat the binding procedure.
 
 7.  Choose *Save* to save your changes to the OData API artifact.

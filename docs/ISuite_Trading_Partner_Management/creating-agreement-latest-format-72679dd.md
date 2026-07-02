@@ -1,0 +1,633 @@
+<!-- loio72679dde3e5a499c9eb7863572c52ef3 -->
+
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
+# Creating Agreement - Latest Format
+
+Create agreements using the latest template format.
+
+
+
+## Context
+
+The new agreement template consists of alias-based configurations that help you with maintaining information, such as trading partner details and B2B transaction details, directly in the agreement template. With this template, there could be situations where multiple trading partners have the same B2B scenarios defined. In such cases, if a change has to be done for a B2B scenario, you need to make individual changes in each of the agreement consisting of that scenario. To help avoid this, while creating an agreement, you can now choose to copy or reference the B2B scenarios from the template.
+
+-   With Copy mode, the agreement that you create has its own set of B2B scenarios \(replicated from the agreement template\) and you can edit them.
+
+-   With Reference mode, your agreement only refers to the B2B scenarios that exist in the template. In this mode, the B2B scenarios are not editable in the agreement and they can be updated only by editing them in the actual agreement template. If you have multiple trading partners using the same B2B scenarios, then with Reference mode, you can make the changes only once in the referenced template and the changes are updated in the agreements directly.
+
+You can choose between the following two modes at the time of agreement creation:
+
+-   *Copy from Template* copies the B2B scenarios from the template into your agreement and you can edit them directly in your agreement. The changes made to the B2B scenarios are only applicable for that agreement.
+
+-   *Bind with Template* binds your agreement with the template by referencing the B2B scenarios available in the agreement template. The newly created agreement then has B2B scenarios that are read only. If you want to update the transactions, you can do so by editing them in their referencing template, which automatically applies the changes to the referencing agreements.
+
+
+> ### Note:  
+> The *Bind with Template* mode doesn't apply for the templates with *Outdated Format*.
+
+The creation modes apply only for the agreements you newly create. The agreements that were created in the past don't have the *Creation Mode* field displayed and can no longer be edited or copied. They must be migrated to the latest format to continue editing. Follow the steps mentioned in [Migrating Agreements](migrating-agreements-bdcf534.md) to migrate your old agreements to this new format.
+
+
+
+## Procedure
+
+1.  Log on to your application.
+
+2.  Choose *Design* \> *B2B Scenarios*.
+
+3.  Navigate to *Agreements* tab and choose *Create*.
+
+4.  This displays a list of agreement templates available in the system. The templates with outdated format have the label *Outdated Format* right after the name. Select a template without the label if you want to use the latest format for your agreement and choose *Next*.
+
+    > ### Note:  
+    > SAP doesn't provide any predefined templates. Ensure you have the required template created before creating an agreement. See [Creating an Agreement Template](creating-an-agreement-template-9692cb1.md).
+
+5.  The next screen displays the *Agreement Creation Mode* with the following options:
+
+    1.  *Copy from Template*: Copy the B2B scenarios into your agreement from the template. You can edit the transactions in the agreement.
+
+    2.  *Bind with Template*: Bind your agreement with the template by creating a reference of the *B2B Scenarios* in the agreement. Here you can't edit the transactions in the agreement. They can be edited only in the referenced agreement template and updated in the agreement.
+
+        Select an option depending on your requirement.
+
+
+6.  Under the *Transactions* table, select the transactions for your agreement.
+
+7.  Select the trading partner from the drop-down list under *Select Trading Partner* section and choose *Open Draft*.
+
+8.  If you have created this agreement from a template that has communication partner in it, you can see the relevant detail in the *Communication Partner* field in the *Trading Partner Details* section.
+
+9.  The newly created agreement has a field called *Creation Mode*, which displays the mode that you chose for your agreement. If you chose to copy them into your agreement, it displays *Copied from Template*. If you chose to only reference the B2B scenarios, it displays *Bound with Template* and you can select *Refresh* button if you want to see any latest update on the B2B scenarios. A timestamp near this button displays the last update that was applied on the agreement.
+
+10. If you've maintained the necessary alias information in the template, the corresponding trading partner details are filled in automatically in the agreement. Steps number 10–13 are optional.
+
+    > ### Note:  
+    > As the new agreement template is alias-based, ensure you maintain the right alias across the system. Only then, the right trading partner configuration can be picked up using the alias when creating the agreement.
+
+11. In the *Overview* tab, maintain the following fields under the *Details* section:
+
+    **Details**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Name of the agreement
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Description
+    
+    </td>
+    <td valign="top">
+    
+    Provide a description of your agreement
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Initiator
+    
+    </td>
+    <td valign="top">
+    
+    The initiator triggers the first business transaction of this agreement. To change the initiator, select a company or trading partner from the drop-down list, according to your business needs.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Version
+    
+    </td>
+    <td valign="top">
+    
+    Enter a version for your agreement
+    
+    </td>
+    </tr>
+    </table>
+    
+12. Maintain the following fields under *My Company Details* section:
+
+    **My Company Details**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    System
+    
+    </td>
+    <td valign="top">
+    
+    Select a system from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select a type system from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Contact Person
+
+    This field appears only when you choose *GS1 XML* as the type system.
+    
+    </td>
+    <td valign="top">
+    
+    Select a contact person from the drop-down list.
+
+    > ### Note:  
+    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2c6214a3228e4b4cba207f49fda92ed4.html "Assign the required roles and role collections to users for accessing the individual capabilities.") :arrow_upper_right:.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Type System Version
+    
+    </td>
+    <td valign="top">
+    
+    Select a type system version from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier in Company Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select an identifier using the value help provided. You can also create an identifier using the :heavy_plus_sign: button.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier as Trading Partner Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select an identifier from your company that will be the trading partner. This field can be set only after defining the *Type System* field of the trading partner. You can also create an identifier using the :heavy_plus_sign: button.
+    
+    </td>
+    </tr>
+    </table>
+    
+13. Maintain the following fields under *Trading Partner Details* section. The *Name* of the trading partner is autofilled based on the value that you chose in Step 6.
+
+    **Trading Partner Details**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Name of the trading partner
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    System
+    
+    </td>
+    <td valign="top">
+    
+    Select a system from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select a type system from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Contact Person
+
+    This field appears only when you choose *GS1 XML* as the type system.
+    
+    </td>
+    <td valign="top">
+    
+    Select a contact person from the drop-down list.
+
+    > ### Note:  
+    > You need to have the Business Expert to assign a contact person. To know more on assigning roles, see [Configuring User Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2c6214a3228e4b4cba207f49fda92ed4.html "Assign the required roles and role collections to users for accessing the individual capabilities.") :arrow_upper_right:.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Type System Version
+    
+    </td>
+    <td valign="top">
+    
+    Select a type system version from the drop-down list
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier in Trading Partner Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select an identifier using the value help provided. You can also create an identifier using the :heavy_plus_sign: button.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identifier in Company Type System
+    
+    </td>
+    <td valign="top">
+    
+    Select an identifier from the trading partner for the company. You can also create an identifier using the :heavy_plus_sign: button.
+    
+    </td>
+    </tr>
+    </table>
+    
+14. Choose *Save*.
+
+15. Once you save the agreement, the field *Creation Mode* is displayed showing the creation mode that you chose for your agreement. If you chose to copy the template into your agreement, it displays *Copied from Template*.
+
+    If you chose to only reference the B2B scenarios, it displays *Bound with Template*. Select *Refresh* to see any latest update on the B2B scenarios. A timestamp near this button displays the last update that was applied on the agreement.
+
+    The *Trading Partner Details* section also displays the *Purpose* of the type system that you chose.
+
+16. Navigate to the *B2B Scenarios* tab. This tab displays the transactions that you chose from the agreement template. Choose *Edit* to start working with the transactions.
+
+    > ### Remember:  
+    > The *Edit* option is available only if you chose *Copy from Template* at the time of agreement creation. For referenced B2B scenarios, you can only view them in this tab.
+    > 
+    > Steps 12–35 are optional if you have the template filled with the necessary alias information. With the new template, you can configure all the steps of the transaction including the *Mapping* step.
+
+17. Choose the *Communication Channel* step on the sender side.
+
+18. Select a value from the drop-down list for the field *Communication*.
+
+19. Select a value from the drop-down list for the field *Communication for Sender Functional Acknowledgement*.
+
+    > ### Note:  
+    > This field appears only for the AS2 adapter.
+    > 
+    > You can view the status of the functional acknowledgment through the *Monitor* tab. See [Update Agreements](update-agreements-b5e1fc9.md).
+
+20. Select the *Interchange* step on the sender side.
+
+21. Set the target decimal value of the incoming payload in the *Target Decimal Character* field.
+
+    > ### Note:  
+    > This field appears only for the **UN/EDIFACT** type system.
+
+22. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+
+    If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field. Once you choose a MIG, the message type used within that MIG is displayed under the *Message Type* field.
+
+    > ### Note:  
+    > -   Ensure you have the required MIG created in the Integration Advisor.
+    > 
+    > -   Trading Partner Management only supports the following type systems:
+    >     -   Edifact
+    > 
+    >     -   VDA Message
+    > 
+    >         > ### Note:  
+    >         > Trading Partner Management uses only the first 7 characters of the message type from Integration Advisor. The PID computation only considers the first 7 character even if different variants of the same generic message type are used in different activities. For example, two agreements using VDA4905:3 and VDA4905:4 both generate their PID based on VDA4905. This results in PID conflicts and prevents simultaneous deployment.
+    > 
+    >         VDA Message is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*.
+    > 
+    >     -   X12
+    >     -   SAP IDoc
+    >     -   SAP SOAP On-Premise
+    >     -   SAP SOAP Cloud
+    >     -   GS1 XML
+    >     -   Tradacoms
+    > 
+    >         Tradacoms is supported only in the 2.0 version of the integration package *Cloud Integration - Trading Partner Management V2*
+    > 
+    > 
+    > -   For Type Systems *ASC X12* and *UN/EDIFACT*, you can edit their version numbers in the *Type System Version* field.
+
+23. Select a value from the drop-down list for the field *Create Acknowledgement*.
+
+    > ### Note:  
+    > This field appears only for the following type systems:
+    > 
+    > -   UN/EDIFACT
+    > 
+    > -   ASC X12
+    > 
+    > You can view the status of the functional acknowledgment through the *Monitor* tab. To know more, see [Update Agreements](update-agreements-b5e1fc9.md).
+
+24. If you're planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox for the field *Customized Pre-Processing*.
+
+25. Provide the address of your custom integration flow in the *Process Direct Address* field.
+
+    > ### Note:  
+    > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
+
+26. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+27. The *Enable Payload Validation* checkbox allows the system to validate the incoming payload. Check/Uncheck the option if you want to enable or disable the payload validation.
+
+    If enabled, the generic integration flow performs a validation check for the sender interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+28. The *Enable Syntax Validation* checkbox allows the system to validate the syntax using EDI splitter and this option is selected by default. Check/Uncheck the option if you want to enable or disable the syntax validation.
+
+    > ### Note:  
+    > This option applies only to the following sender type systems:
+    > 
+    > -   ASC X12
+    > 
+    > -   UN/EDIFACT
+    > 
+    > If the identifier used in the agreement has **Custom Scheme Code**, this option is skipped irrespective of the field selection.
+    > 
+    > This option isn't editable if you've created the agreement with reference mode \(created using *Bind with Template* option\).
+
+29. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+
+30. Choose the *Mapping* step.
+
+    As *Mapping Option*, you can select *Integration Advisor*, *Custom Integration Flow*, or *Sequential Mapping*.
+
+31. Select a mapping guideline using the value help provided for the field *Mapping Guideline \(MAG\)*.
+
+    If you selected *Integration Advisor*, you can select a mapping guideline using the value help provided for the field *Mapping Guideline \(MAG\)*.
+
+    To view the details of the MAG that you chose, open the link provided under the *MAG Version* field.
+
+32. If you want to use custom integration flow for the Mapping process, enable the checkbox for *Customized Mapping Processing* and provide the address of the integration flow under the field *Process Direct Address* field.
+
+    If you selected *Custom Integration Flow*, you can provide the address of the integration flow in the field *Process Direct Address* field
+
+    > ### Note:  
+    > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To learn more about it, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md)
+
+33. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+34. Select *Sequential Mapping* if you want to use a single CPI message mapping \(MMAP\), a single customized XSLT, or a sequential combination of multiple MMAPs, XSLTs, and custom integration flows.
+
+    1.  To use sequential mapping, you first need to create a mapping sequence in the *Sequential Mapping* tab, and then select the corresponding sequential mapping under *Sequential Mapping* in the *Mapping* section. For more information on creating sequential mappings, see the following notes.
+
+        > ### Note:  
+        > -   The sequential mapping you create can only be used in one or more business activities of the current agreement. A business activity can only reference one sequential mapping, but a sequential mapping can be referenced by multiple business activities.
+        > 
+        > -   Sequential mapping doesn’t support Integration Advisor mapping.
+
+        > ### Note:  
+        > **Sequential mappings** allow you to use a single Cloud Integration message mapping \(MMAP\), a single customized XSLT, or a sequential combination of one or more mapping types such as MMAP, XSLT, or custom integration flow.
+        > 
+        > Get started with sequential mapping as follows:
+        > 
+        > 1.  In the *Sequential Mapping* tab, choose *Create*, enter *Name* \(required\) and *Description* \(optional\), and save.
+        > 2.  Open the new entry. In the upcoming table, choose *Create* to create a new mapping. You can create at most 50 mappings.
+        > 3.  A new dialog opens. The *sequence* is automatically incremented by the system, but you can edit it after the creation.
+        > 
+        >     Select one of the following *mapping types*:
+        > 
+        >     1.  *MMAP*: Select the corresponding message mapping as reference.
+        >     2.  *XSLT*: Select the corresponding XSLT from the Partner Directory. If it doesn't exist yet, choose *Upload*, or upload the XSLT using the Partner Directory under *Monitor* \> *Integrations and APIs* \> *Partner Directory*. See [Managing Partner Directory Entries](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/managing-partner-directory-entries).
+        >     3.  *Customized Mapping*: Select the corresponding custom integration flow in the *Reference* field. See step 32.
+        > 
+        > 4.  Save your changes. The mapping is added to the list of mappings.
+        > 
+        >     In this list, you can edit the mappings by choosing :pencil2:, and delete them by choosing :wastebasket:.
+        > 
+        > 5.  If your sequential mapping contains multiple mappings, you can change their order by choosing <span class="SAP-icons-V5"></span> Move Up or <span class="SAP-icons-V5"></span> Move Down.
+        > 6.  To edit the name or description of a sequential mapping, go back to the *Sequential Mapping* tab and choose :pencil2:. Make your changes and save them.
+        > 7.  To delete a sequential mapping, choose :wastebasket: and confirm the deletion.
+        > 
+        >     You can't delete sequential mappings if they're already referenced in a business activity.
+
+    2.  If *Sequential Mapping* is selected, the drop-down field *Schema Source \(Sequential Mapping\)* appears in the sender and receiver interchanges. Its default value is *Manual Input*.
+
+        If you've selected *Manual Input*, the following dependencies apply:
+
+        -   First, upload the conversion and validation XSDs to the Partner Directory, and then select the corresponding XSD from the Partner Directory.
+
+        -   If **payload validation** is enabled, select the validation XSD in *Payload Validation Schema*.
+
+        -   If the **sender payload is EDI**, select the conversion XSD in *EDI to XML Conversion / Syntax Validation*.
+
+        -   If the **receiver payload is EDI**, select the conversion XSD in *XML to EDI Conversion Schema*.
+
+        -   Manually enter type system version and message type.
+
+
+
+35. Choose the *Communication Channel* on the receiver side and select a value from the drop-down list for the field *Communication*.
+
+36. Select the value for the field *Receiver Functional Acknowledgement Channel*.
+
+    > ### Note:  
+    > This field appears only for the AS2 adapter.
+    > 
+    > You can view the status of the functional acknowledgment through the *Monitor* tab. See [Update Agreements](update-agreements-b5e1fc9.md).
+
+37. Select the *Interchange* shape on the receiver side.
+
+38. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+
+    > ### Note:  
+    > If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
+
+39. Select a value from the drop-down list for the field *Number Range*.
+
+    > ### Note:  
+    > A number range is used to insert unique sequence numbers.
+    > 
+    > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
+
+40. Similar to the Sender, if you want to use custom integration flows for your Pre/Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+
+    > ### Note:  
+    > The application now provides you with the *ProcessDirect* adapter that allows you to use your customized integration flow within the generic integration flow. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
+
+41. Provide the address path of your custom integration flow in the *Process Direct Address* field.
+
+    > ### Note:  
+    > To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
+
+42. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+
+    Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
+
+43. The *Enable Payload Validation* checkbox allows the system to validate the outgoing payload. It is selected by default. Uncheck the option if you want to disable the payload validation.
+
+    If enabled, the generic integration flow performs a validation check for the receiver interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
+
+44. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+
+45. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
+
+    > ### Note:  
+    > This option is available only for UN/EDIFACT and ASC X12 type systems.
+
+    -   Segment Terminator
+
+    -   Composite Separator
+    -   Data Element Separator
+    -   Escape Character
+
+46. Select the *Enable* checkbox under *Receiver Functional Acknowledgement* if you want to enable the functional acknowledgment for the receiver.
+
+    > ### Note:  
+    > This option is available only for the following type systems:
+    > 
+    > -   UN/EDIFACT
+    > -   ASC X12
+    > 
+    > 
+    > You also need to maintain the functional acknowledgment in the receiver side.
+
+47. If you've enabled *Receiver Functional Acknowledgement*, choose *Communication* on the receiver side and set the following values:
+
+    1.  *Communication*: It should be of type AS2. This detail has to be maintained in the trading partner profile. To know more, see [Creating a Trading Partner Profile](creating-a-trading-partner-profile-542fb11.md).
+
+    2.  *Receiver Functional Acknowledgement Channel*: Select a value from the drop-down list.
+
+
+48. If you want to specify which separators to be used in the interchange message payload, select the checkbox for the field *Use Custom Separators*. This enables the following fields. Set the character from the drop-down list for each of the separator.
+
+    -   *Segment Terminator*
+
+    -   *Composite Separator*
+    -   *Data Element Separator*
+    -   *Escape Character*
+
+    > ### Note:  
+    > You can also manually specify the custom separator for these fields. Enter the hexadecimal value for the separator that you want to use in the respective field. For example, enter `#x2b` to use **\+** as the separator.
+
+49. Choose *Save*.
+
+
+
+
+<a name="loio72679dde3e5a499c9eb7863572c52ef3__result_msp_22q_ygc"/>
+
+## Results
+
+You have successfully created a trading partner agreement.
+
+You can view the agreement details under the *Agreements* tab.
+
+You can also view the administrative information under the tab. To enable those fields, choose :gear:, select the following fields, and choose *OK*:
+
+-   Created By
+-   Created Date
+-   Last Modified By
+-   Modified Date
+
+
+
+<a name="loio72679dde3e5a499c9eb7863572c52ef3__postreq_alw_n2q_ygc"/>
+
+## Next Steps
+
+For further configurations, see the following:
+
+-   [Adding Activity Parameters](adding-activity-parameters-655a594.md)
+-   [Adding Custom Search Attributes](adding-custom-search-attributes-934bbcd.md)
+

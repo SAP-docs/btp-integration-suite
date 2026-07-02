@@ -17,9 +17,12 @@ You have the *Integration\_Provisioner* role assigned to you.
 The *Integration\_Provisioner* role:
 
 -   Gives you initial access to the SAP Integration Suite.
--   Lets you add and manage capabilities. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md)
+-   Lets you add and manage capabilities. See [Activating and Managing Capabilities](activating-and-managing-capabilities-2ffb343.md).
 
 You can assign this role by following steps 1-5 described in the [Procedure](configuring-user-access-to-sap-integration-suite-2c6214a.md#loio2c6214a3228e4b4cba207f49fda92ed4__section_xbf_glz_l2c) and choosing the role *Integration\_Provisioner*.
+
+> ### Remember:  
+> Once you assign the role collection to your user, clear your web browser cache and cookies. Then access the application by navigating to *Services* \> *Instances and Subscription* and then select the instance of the application. If the instance of SAP Integration Suite is open, be sure to logout and login again for the changes to be applied.
 
 
 
@@ -45,6 +48,9 @@ For more information on role collections, see [Roles and Role Collections](https
 3.  Enter the *User Name* and *E-Mail*, and choose *Create*.
 4.  Choose the user and under *Role Collections* section select <span class="SAP-icons-V5"></span> Additional Options and choose *Assign Role Collection*.
 5.  In the resulting dialog box, select the checkbox of the role collection that you want to assign to the user and choose *Assign Role Collection*.
+
+> ### Remember:  
+> Once you assign the role collection to your user, clear your web browser cache and cookies. Then access the application by navigating to *Services* \> *Instances and Subscription* and then select the instance of the application. If the instance of SAP Integration Suite is open, be sure to logout and login again for the changes to be applied.
 
 Expand the following sections to learn about the role collections available for that capability of SAP Integration Suite.
 
@@ -145,9 +151,9 @@ Task
 <td valign="top">
 
 -   Complete the onboarding process
--   Access the *API Settings* page. See [Setting Up API Management](50-Development/setting-up-api-management-f34e86c.md) 
+-   Access the *API Settings* page. See [Setting Up API Management](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f34e86cafb274d4bbef725a610ed225d.html "To create APIs, build API proxies as a service provider, or use APIs and other convenient services, you need to first set up the API Management capability.") :arrow_upper_right: 
 
-For more information on relevant roles, see [Role Collections in API Management](role-collections-in-api-management-7010b58.md).
+For more information on relevant roles, see [Role Collections in API Management](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/7010b58f57494a71a6a02c475a3548e8.html "Use role collections to group together different roles that can be assigned to API management users. In API Management, a role collection is a grouping mechanism that allows you to manage and assign multiple roles to users more efficiently.") :arrow_upper_right:.
 
 For end-to end instructions on how to set up and configure API Management, refer the tutorial [Set Up API Management from Integration Suite | Tutorials for SAP Developers](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html).
 
@@ -162,7 +168,7 @@ Role Collection for Developer Hub: *AuthGroup.SelfService.Admin*
 <td valign="top">
 
 -   Onboard to Developer Hub.
--   Gain access to Developer Hub. See [Setting Up API Management](50-Development/setting-up-api-management-f34e86c.md)
+-   Gain access to Developer Hub. See [Setting Up API Management](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f34e86cafb274d4bbef725a610ed225d.html "To create APIs, build API proxies as a service provider, or use APIs and other convenient services, you need to first set up the API Management capability.") :arrow_upper_right:
 
 
 
@@ -171,7 +177,7 @@ Role Collection for Developer Hub: *AuthGroup.SelfService.Admin*
 <tr>
 <td valign="top">
 
-Role Collection for Graph: *Graph.KeyUser* 
+Role Collection for API Composition: *Graph.KeyUser* 
 
 </td>
 <td valign="top">
@@ -186,24 +192,24 @@ See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-s
 <tr>
 <td valign="top">
 
-Role Collection for Graph: *GraphNavigator.Viewer* 
+Role Collection for API Composition: *GraphNavigator.Viewer* 
 
 </td>
 <td valign="top">
 
-Use the Graph Navigator in SAP Developer Hub to inspect business data graphs. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
+Use the API Composition Navigator in SAP Developer Hub to inspect business data graphs. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Role Collection for Graph: *Graph.Guest* 
+Role Collection for API Composition: *Graph.Guest* 
 
 </td>
 <td valign="top">
 
-Assign the Graph\_Guest authorization role to one or more users so that they have read-only access to Graph and the Graph Configuration API. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
+Assign the Graph\_Guest authorization role to one or more users so that they have read-only access to API Composition and the API Composition Configuration API. See [Define Users](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-12ad448225ac47049982d9faab7978a3?version=CLOUD#3-define-users-for-graph).
 
 </td>
 </tr>
@@ -785,20 +791,6 @@ Task
 <tr>
 <td valign="top">
 
-PIMAS\_Admin
-
-</td>
-<td valign="top">
-
--   Read and maintain system data, rule data, and effort data.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 PIMAS\_IntegrationAnalyst
 
 </td>
@@ -814,8 +806,22 @@ PIMAS\_IntegrationAnalyst
 
 </td>
 </tr>
-</table>
+<tr>
+<td valign="top">
+
+PIMAS\_Admin
+
+</td>
+<td valign="top">
+
+-   Read and maintain system data, rule data, and effort data.
 
 > ### Note:  
-> Clear your web browser cache and cookies before accessing to the application, by navigating to *Services* \> *Instances and Subscription* and then select the instance of the application.
+> PIMAS\_Admin doesn't work if assigned alone, so use this role in addition to PIMAS\_IntegrationAnalyst. Otherwise, when using PIMAS\_Admin as a single role to access Migration Assessment, you get a 403 error.
+
+
+
+</td>
+</tr>
+</table>
 

@@ -251,11 +251,9 @@ Currently only used for KeyType="EC": Either this property or the property "KeyS
 
 Possible values:
 
-secp112r1, secp112r2,
+secp160k1,secp160r1,secp160r2,secp192k1,
 
-secp128r1,secp128r2,secp160k1,secp160r1,secp160r2,secp192k1,
-
-secp192r1,NIST P-192,X9.62 prime192v1,secp224k1,secp224r1,NIST P-224,secp256k1,secp256r1,NIST P-256,X9.62 prime256v1,secp384r1,NIST P-384,secp521r1,NIST P-521,X9.62 prime192v2,X9.62 prime192v3,X9.62 prime239v1,X9.62 prime239v2,X9.62 prime239v3,sect113r1,sect113r2,sect131r1,sect131r2,sect163k1,
+secp192r1,NIST P-192,X9.62 prime192v1,secp224k1,secp224r1,NIST P-224,secp256k1,secp256r1,NIST P-256,X9.62 prime256v1,secp384r1,NIST P-384,secp521r1,NIST P-521,X9.62 prime192v2,X9.62 prime192v3,X9.62 prime239v1,X9.62 prime239v2,X9.62 prime239v3,sect163k1,
 
 NIST K-163,sect163r1,sect163r2,NIST B-163,sect193r1,sect193r2,sect233k1,NIST K-233,sect233r1,NIST B-233,sect239k1,sect283k1,NIST K-283,sect283r1,NIST B-283,sect409k1,NIST K-409,sect409r1,NIST B-409,sect571k1,NIST K-571,sect571r1,NIST B-571,X9.62 c2tnb191v1,X9.62 c2tnb191v2,X9.62 c2tnb191v3,X9.62 c2tnb239v1,X9.62 c2tnb239v2,X9.62 c2tnb239v3,X9.62 c2tnb359v1,X9.62 c2tnb431r1
 

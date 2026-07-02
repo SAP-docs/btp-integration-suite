@@ -180,12 +180,7 @@ Secure Parameter
 
 Represents a *Secure Parameter* artifact \(see [Deploying a Secure Parameter Artifact](../Operations/deploying-a-secure-parameter-artifact-4641d6c.md)\).
 
-You use this artiact type to deploy confidential data, for example, for custom adapters.
-
-> ### Note:  
-> This resource is available only for SAP Cloud Integration in the Neo environment.
-
-
+You use this artifact type to deploy confidential data, for example, for custom adapters.
 
 </td>
 </tr>

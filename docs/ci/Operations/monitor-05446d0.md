@@ -25,6 +25,18 @@ Allows you to ...
 <tr>
 <td valign="top">
 
+*Monitor Status Overview* 
+
+</td>
+<td valign="top">
+
+Monitor the status overview of your messages according to your custom filters.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Monitor Message Processing* 
 
 </td>
@@ -153,7 +165,7 @@ The *Designtime Artifact Locks* tile provides an overview of the locked design t
 
 Each section contains tiles, which show filter settings and the number of messages/artifacts that correspond to the filter settings.
 
-Clicking a tile opens a page with more information.
+Selecting a tile opens a page with more information.
 
 The start page is automatically refreshed every 5 seconds. The autorefresh ends after 5 minutes \(indicated by a message\).
 
@@ -164,7 +176,7 @@ The start page is automatically refreshed every 5 seconds. The autorefresh ends 
 
 ## Managing Tiles
 
-You can customize the start page to fit your personal needs by adding new tiles \(by clicking an empty tile containing a `+` symbol\) or deleting existing ones. You can also rearrange the start page by dragging and dropping tiles to another location. For example, you can customize the start page so that it shows only data related to integration flows that are edited by you.
+You can customize the start page to fit your personal needs by adding new tiles \(by selecting an empty tile containing a `+` symbol\) or deleting existing ones. You can also rearrange the start page by dragging and dropping tiles to another location. For example, you can customize the start page so that it shows only data related to integration flows that are edited by you.
 
 > ### Note:  
 > You can rearrange tiles only within the same section.
@@ -206,13 +218,13 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Certificate-to-User Mappings, Neo Environment](managing-certificate-to-user-mappings-neo-environment-88ea2e5.md "The Manage Security area provides an overview of security-related artifacts. It also provides access to all certificate-to-user mappings defined for the tenant.")
 
-[Managing Access Policies, Neo Environment](managing-access-policies-neo-environment-18f06d4.md "Specifics for Access Policies in the Neo Environment.")
+[Creating Custom Roles for Access Policies, Neo Environment](creating-custom-roles-for-access-policies-neo-environment-18f06d4.md "Create custom roles to define access policies in the Neo environment.")
 
-[Managing Access Policies, Cloud Foundry Environment](managing-access-policies-cloud-foundry-environment-7db3c87.md "Specifics for Access Policies in the Cloud Foundry Environment.")
+[Creating Custom Roles for Access Policies, Cloud Foundry Environment](creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md "Define a custom role to be associated with an access policy.")
 
 [Managing User Roles, Cloud Foundry Environment](managing-user-roles-cloud-foundry-environment-4e86f0d.md "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.")
 
-[Managing JDBC Material](managing-jdbc-material-32ee7cd.md "Learn how JDBC Materials supports SAP Cloud Integration service for interacting with your database server.")
+[Managing JDBC Material](managing-jdbc-material-32ee7cd.md "Learn how JDBC Materials supports Cloud Integration for interacting with your database server.")
 
 [Performing Connectivity Tests](performing-connectivity-tests-d5b2fae.md "You can test the connectivity to a receiver system.")
 
@@ -224,7 +236,7 @@ When you add or edit a tile, you can specify the following filter categories:
 
 [Managing Number Ranges](managing-number-ranges-b6e17fa.md "The topic provides an overview of number ranges related artifacts.")
 
-[Access Logs, Neo Environment](access-logs-neo-environment-d5a4113.md "The Access Logssection allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).")
+[Access Logs, Neo Environment](access-logs-neo-environment-d5a4113.md "The Access Logs section allows you to monitor audit logs (resulting from system changes) and to analyze errors that occurred during inbound HTTP processing (and documented in system log files).")
 
 [Monitoring Audit Log, Neo Environment](monitoring-audit-log-neo-environment-2d6031f.md "The audit log contains information on system changes. These events can be for example the deployment of an integration flow as well as a configuration change.")
 

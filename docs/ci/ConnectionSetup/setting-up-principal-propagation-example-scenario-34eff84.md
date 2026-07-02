@@ -4,6 +4,32 @@
 
 Use principal propagation to forward the principal \(identity of a user\) across several connections in a complex system landscape.
 
+
+
+<a name="loio34eff846cfb84011b09ad1fb1894ce14__section_vcm_w5d_p1c"/>
+
+## Cloud Foundry Environment
+
+For more information on how to set up a scenario with principal propagation end-to-end, check out:
+
+[Principal Propagation in SAP Integration Suite](https://community.sap.com/t5/technology-blogs-by-sap/principal-propagation-in-sap-integration-suite/ba-p/13528717) \(SAP Community blog series\)
+
+In the following scenarios described there the component is involved:
+
+-   Propagate identity from an external system to an On-Premise SAP Backend with mediation
+
+-   Propagate identity from a BTP application to an On-Premise SAP Backend with mediation
+
+
+> ### Note:  
+> The adapters that allow you to set the authorization method *Principal Propagation* support such a scenario. However, when setting up such a scenario that spans multiple components and systems, you are responsible for configuring each component in the right way.
+
+
+
+<a name="loio34eff846cfb84011b09ad1fb1894ce14__section_x5s_15d_p1c"/>
+
+## Neo Environment
+
 In the following example setup, the principal of the inbound user is forwarded to SAP Cloud Connector, and from there to the back-end receiver system.
 
 ![](images/Principal_Propagation_Scenario_5024193.png)
@@ -34,8 +60,6 @@ To configure principal propagation for this setup, perform the following steps.
 
     > ### Note:  
     > Note that currently only the following \(sender\) adapter types can be used on the inbound side: HTTPS, SOAP \(SOAP 1.x\), SOAP \(SAP RM\), and IDoc.
-    > 
-    > For special use cases, this authentication method can also be used with the AS2 adapter.
 
 2.  In the receiver channel of the integration flow, as *Authorization* option, enable *Principal Propagation*.
 
@@ -50,11 +74,11 @@ To configure principal propagation for this setup, perform the following steps.
 
     SAP Cloud Connector forwards the identity \(to be propagated\) in a short-living X.509 certificate in HTTP header SSL\_CLIENT\_CERT.
 
-    More information: [Configuring a CA Certificate for Principal Propagation](https://help.hana.ondemand.com/help/frameset.htm?d0c4d5675d4f4bc78a5b7a7b8687c841.html)
-
 4.  In SAP Cloud Connector, configure the trust relationship with the SAP BTP application.
 
-    More information: [Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector)
+    More information:
+
+    [Connectivity for the Neo Environment](https://help.sap.com/docs/connectivity/sap-btp-connectivity-neo/connectivity-for-neo-environment)
 
 5.  Configure the receiver system. You need to do the following:
 

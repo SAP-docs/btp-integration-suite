@@ -30,7 +30,7 @@ The integration flow consists of 2 integration processes:
 
 -   The *Integration Process - Write* integration process receives the request from the client, writes the request in a data store, and sends back a response to the calling client.
 
--   The *Integration Process - Read* integration process reads the request from the same data store, and then performs the actual long running service call and \(eventually\) further message orchestration steps.
+-   The *Integration Process - Read* integration process polls the request from the same data store, and then performs the actual long running service call and \(eventually\) further message orchestration steps.
 
 
 

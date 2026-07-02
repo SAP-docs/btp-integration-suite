@@ -1,0 +1,53 @@
+<!-- loio0101869f1b1d4118bd76a48feb9ba6e8 -->
+
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
+# Creating a Qualifier Marker
+
+Create qualifier markers that can be used to qualify a node.
+
+
+
+<a name="loio0101869f1b1d4118bd76a48feb9ba6e8__prereq_dsp_b1d_cqb"/>
+
+## Prerequisites
+
+-   You've opened the MIG in the edit mode.
+-   You've selected both the qualifying node and the node that you want to qualify to include them in your MIG.
+-   A qualifier marker from the qualifying node to the node you want to qualify isn't available in the *Constraint* column.
+-   The cardinality of the qualifying node must be either \[1..1\] or \[0..1\].
+-   The qualifying node has a codelist assigned to it. For more information, see [Working with Codelists](working-with-codelists-770f7be.md).
+
+
+
+<a name="loio0101869f1b1d4118bd76a48feb9ba6e8__context_kc1_gbq_cqb"/>
+
+## Context
+
+The qualifier feature allows you to set a qualifier marker that identifies the element that is qualified by another data element. Qualifier markers are either automatically provided by message templates from type systems, or you can create your own qualifier markers to suit your business context. The following procedure explains how to create a qualifier marker.
+
+
+
+## Procedure
+
+1.  On the *Structure* tab, select the leaf node that you want to use as the qualifying node.
+
+2.  On the *Details* tab of the resulting pane, choose :heavy_plus_sign: in the *Qualifiers* field.
+
+3.  In the resulting *Qualifiable Nodes* dialog, select the node you want to qualify from the list of qualifiable nodes.
+
+    The list of qualifiable nodes contains all sibling nodes of the qualifying node and suitable ancestor nodes. The ancestor nodes are shown up to the first repeatable ancestor node \(maximum cardinality \> 1\).
+
+    Message root nodes and the technical *IDOC* node \(in MIGs for SAP IDocs\) can't be qualified and are therefore not listed.
+
+4.  Choose *Create*.
+
+
+
+
+<a name="loio0101869f1b1d4118bd76a48feb9ba6e8__result_y2f_m2q_cqb"/>
+
+## Results
+
+The selected qualifiable node appears in the list of *Qualifiers* and a new qualifier marker arrow appears in gray from the qualifying node to the qualifiable node.
+

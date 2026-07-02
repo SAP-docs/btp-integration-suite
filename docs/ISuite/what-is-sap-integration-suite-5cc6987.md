@@ -18,7 +18,7 @@ SAP Integration Suite is built to support a wide range of integration scenarios 
 -   **Open Connectors** simplify and accelerate integration with third-party applications and growing business networks.
 -   **Data Space Integration** supports the exchange of data across new and emerging platforms, enabling greater collaboration and ecosystem connectivity.
 -   **Integration Advisor** and **Trading Partner Management** bring intelligence to B2B integrations, using AI to simplify mappings, agreements, and partner configurations.
--   **API Management** and **Graph** offer secure, scalable ways to create, manage, and govern APIs, making data and services easily accessible.
+-   **API Management** and **API Composition** offer secure, scalable ways to create, manage, and govern APIs, making data and services easily accessible.
 -   **Advanced Event Mesh** supports distributed, event-driven architectures, allowing for real-time responsiveness across the enterprise.
 -   **Migration Assessment** helps organizations transition from legacy SAP Process Orchestration environments, easing the path to modernization.
 -   **Edge Integration Cell** gives businesses the flexibility to run integrations within customer-managed environments, ideal for scenarios with strict data or deployment requirements.
@@ -78,7 +78,7 @@ Manage APIs
 </b></dt>
 <dd>
 
-Discover, protect, govern, and publish APIs to developers with API Management and Graph. Ensure that your APIs comply with best-practice security policies.
+Discover, protect, govern, and publish APIs to developers with API Management and API Composition. Ensure that your APIs comply with best-practice security policies.
 
 
 
@@ -207,7 +207,7 @@ Description
 <tr>
 <td valign="top">
 
-[Cloud Integration](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_Cloud_Integration)
+ <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Cloud Integration" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">
@@ -219,9 +219,9 @@ Integrate SAP and non-SAP, cloud, and on-premise applications and process messag
 <tr>
 <td valign="top">
 
-[API Management](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_APIM)
+ <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="API Management" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
-[Graph](https://help.sap.com/docs/graph)
+[API Composition](https://help.sap.com/docs/graph)
 
 </td>
 <td valign="top">
@@ -235,7 +235,7 @@ Expose all your business data in the form of a semantically connected data graph
 <tr>
 <td valign="top">
 
-[Event Mesh](event-mesh-3129673.md)
+[Event Mesh](https://help.sap.com/viewer/a01a83f4826d486b9fc66d1df0de9da4/CLOUD/en-US/3129673ca39d4055b4a4152d65e7f525.html "The Event Mesh capability in SAP Integration Suite helps you manage your business events. You can publish and consume events across applications using Event Mesh.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -259,7 +259,7 @@ Build seamless integrations with over 160 non-SAP applications using prebuilt co
 <tr>
 <td valign="top">
 
-[Integration Advisor](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_Integration_Advisor)
+ <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Integration Advisor" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">
@@ -271,7 +271,7 @@ Accelerate the development of business-oriented interfaces and mappings, generat
 <tr>
 <td valign="top">
 
-[Trading Partner Management](50-Development/development-de1ae81.md#loiode1ae814218247c6bac4975cb486e431__section_TPM)
+ <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Trading Partner Management" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">
@@ -283,7 +283,7 @@ Manage B2B relationships with multiple trading partners through this easy-to-use
 <tr>
 <td valign="top">
 
-[OData Provisioning](odata-provisioning-d257fc3.md) 
+[OData Provisioning](https://help.sap.com/viewer/c0ec55d6862d4b01af33a70e79ed1a2e/CLOUD/en-US/d257fc3a8cc2494cbafce8b2789939de.html "OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP Business Technology Platform, enabling you to run user-centric applications.") :arrow_upper_right: 
 
 </td>
 <td valign="top">
@@ -295,7 +295,7 @@ Access data from SAP Business Suite using OData services.
 <tr>
 <td valign="top">
 
-[Data Space Integration](data-space-integration-8bb6972.md)
+[Data Space Integration](https://help.sap.com/viewer/c6f026f9206e4a60948e827535eef449/CLOUD/en-US/8bb6972c4e6f4de7ab95ab0e1bc84837.html "Learn how to work with Data Space Integration as a provider or consumer.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -307,7 +307,7 @@ Offer, consume, and maintain assets in a data space.
 <tr>
 <td valign="top">
 
-[Integration Assessment](integration-assessment-310067e.md)
+[Integration Assessment](https://help.sap.com/viewer/70da72e10fd6446ab24db52465b1fa5c/CLOUD/en-US/310067e3e49342ddbe5a90c8f33a1910.html "Integration Assessment implements the Integration Solution Advisory Methodology thus supporting the definition of the integration landscape. It helps you to define integration patterns and to ensure consistent usage of the integration technology.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -319,7 +319,7 @@ Define integration landscape, based on the Integration Solution Advisor Methodol
 <tr>
 <td valign="top">
 
-[Migration Assessment](migration-assessment-5c5e50e.md)
+[Migration Assessment](https://help.sap.com/viewer/37c02ad991d24d33b1472b00c1a05378/CLOUD/en-US/5c5e50ee2d644cc59d864409d5b7871c.html "Find out how to migrate your existing integration scenarios to SAP Integration Suite with Migration Assessment.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -330,7 +330,7 @@ Assess your existing integration scenarios to migrate them to SAP Integration Su
 </tr>
 </table>
 
-For more information on the connectivity options, see [Connectivity Options](connectivity-options-93d82e8.md).
+For more information on the connectivity options, see [Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:.
 
 > ### Note:  
 > Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
@@ -343,7 +343,7 @@ For SAP Integration Suite, the free service plan is available. For more informat
 
 ## Connectivity Options
 
-More information: [Connectivity Options](connectivity-options-93d82e8.md)
+More information: [Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 
 
 
@@ -351,7 +351,7 @@ More information: [Connectivity Options](connectivity-options-93d82e8.md)
 
 ## System Scope
 
-More information: [System Scope for Cloud Integration](system-scope-for-cloud-integration-8ea3822.md)
+More information: [System Scope for Cloud Integration](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/8ea3822bfb654e219b456959aad672c2.html "") :arrow_upper_right:
 
 
 
@@ -371,5 +371,5 @@ Check out the following resources:
 **Related Information**  
 
 
-[Connectivity Options](connectivity-options-93d82e8.md "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.")
+[Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 

@@ -1023,7 +1023,7 @@ Monitor
 </td>
 <td valign="top">
 
-Download keystore, public/prviate keyring, known host, .. artifact
+Download keystore, public/private keyring, known host, artifact
 
 </td>
 <td valign="top">

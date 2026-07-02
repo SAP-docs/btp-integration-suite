@@ -15,5 +15,5 @@ You are a global account administrator. After you've received your logon data by
 > ### Note:  
 > SAP Integration Suite service runs only on the SAP BTP, Cloud Foundry environment.
 > 
-> If you’ve subscribed to Process Integration, API Management, or Open Connector services in your existing subaccount, then please subscribe to the SAP Integration Suite service in a new subaccount. For more details, see [KBA](https://itsm.services.sap/now/cwf/agent/record/kb_template_kcs_article/57881a6e3b907a1c4ec2519e53e45a5b)
+> If you’ve subscribed to Process Integration, API Management, or Open Connector services in your existing subaccount, then please subscribe to the SAP Integration Suite service in a new subaccount. For more details, see [0003664111](https://me.sap.com/notes/0003664111)
 

@@ -70,7 +70,7 @@ In the inbound case, the tenant acts as receiver that either decrypts or verifie
 
 To implement message-level security for OpenPGP, you use PGP keys.
 
-![](images/Keys_for_Message_Level_Security_PGP_Inbound_0c58adc.png)
+![](images/32652156b71046e39909d2a2ac80f1e1.image)
 
 
 

@@ -19,6 +19,6 @@ Verify whether all the users that you have added to the subaccount have access t
     > 
     > If you get an *Access Denied* error even though you have correctly assigned the required user roles, please check the SSO certificates in your browser. The browser might be using another user for the SSO logon instead of the S-user that you defined in the roles and authorizations.
     > 
-    > If you are still facing issues, create a ticket using the component LOD-HCI-PI-OP-SRV. The SAP Cloud Operations team will look into the issue and provide a solution.
+    > If you are still facing issues, create a ticket using the component LOD-HCI-PI-MPL. The SAP Cloud Operations team will look into the issue and provide a solution.
 
 

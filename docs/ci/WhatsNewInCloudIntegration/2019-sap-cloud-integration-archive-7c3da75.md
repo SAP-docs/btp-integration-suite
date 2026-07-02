@@ -376,7 +376,7 @@ AS4 Receiver Adapter
 
 Now you can partition AS4 messages between the exchange participants.
 
-See: [Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md).
+See: [Configure Receiver Channel with ebMS3 Push](../Development/configure-receiver-channel-with-ebms3-push-449f6e9.md).
 
 </td>
 <td valign="top">
@@ -3580,7 +3580,7 @@ Security enhancements have been implemented for SOAP-based messages. You can now
 
 See:
 
-[Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md)
+[Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-ebms3-push-449f6e9.md)
 
 </td>
 <td valign="top">
@@ -3911,7 +3911,7 @@ You can now upload a valid XML file via the EDMX uploader in the *Resources* vie
 
 See:
 
-[Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
+[Manage Resources of an Integration Flow](../Development/manage-references-b5968b2.md)
 
 </td>
 <td valign="top">

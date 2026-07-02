@@ -19,6 +19,8 @@ Let us consider the example of replicating employee details from system A to sys
 
 In the same scenario, let us assume that the date of birth in system A is in YYYY-MM-DD format. You want to change the format to DD-MM-YYYY, the format in system B. In this case, you can use a mapping function that transforms the data into the format that you want, which in this case is DD-MM-YYYY.
 
+For more details on using 'AND' standard fucntion see, [0003653876](https://me.sap.com/notes/0003653876)
+
 ![](images/mapping_function_8ea50e9.png)
 
 The mapping editor provides some standard functions like *Arithmetic*, *Boolean*, *Constants*, *Conversions*, and *Date*.
@@ -28,9 +30,9 @@ The mapping editor provides some standard functions like *Arithmetic*, *Boolean*
 
 If you're unable to achieve the desired transformation using standard functions, you can create a custom function in one of the following ways.
 
--   Choose <span class="SAP-icons"></span> \(create script\) to create a custom-mapping function by manually entering the script.
+-   Choose <span class="SAP-icons-V5"></span> \(create script\) to create a custom-mapping function by manually entering the script.
 
--   Choose <span class="SAP-icons"></span> \(add script file\) to upload a script file that contains the custom-mapping function.
+-   Choose <span class="SAP-icons-V5"></span> \(add script file\) to upload a script file that contains the custom-mapping function.
 
 
 
@@ -39,14 +41,17 @@ If you're unable to achieve the desired transformation using standard functions,
 
 ## Testing Message Mapping
 
-The mapping editor provides 2 ways of testing message mapping:
+The mapping editor provides two ways of testing message mapping:
 
 1.  Simulate – for testing the entire mapping XML.
 2.  Display Queue – for testing a specific node of the XML.
 
 **1. Simulate:** The mapping simulates option enables you to test the entire mapping structure. The system shows if the mapping contains any errors, giving you a chance to fix these errors before deploying the integration flow. Once you complete the mapping, you can choose *Simulate* to run a simulation of the mapping.
 
-**2. Display Queue:** The display queue option enables you to test the mapping of a specific node. In the *Mapping expression* area, provide a *Test Input File* and choose <span class="SAP-icons"></span> \(Display Queue\) to display the simulated output for the provided test input file.
+> ### Restriction:  
+> Simulation for message mappings doesn't work if you've activated in your tenants.
+
+**2. Display Queue:** The display queue option enables you to test the mapping of a specific node. In the *Mapping expression* area, provide a *Test Input File* and choose <span class="SAP-icons-V5"></span> \(Display Queue\) to display the simulated output for the provided test input file.
 
 > ### Note:  
 > -   Even if the integration flow isn't in edit mode you can execute simulate and display queue test. You can hence perform the tests for configure only content as well.

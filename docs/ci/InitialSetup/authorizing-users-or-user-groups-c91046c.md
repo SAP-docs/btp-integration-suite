@@ -27,7 +27,7 @@ Furthermore, you can give permissions on two different detail levels:
 
 -   You can give permissions for a typical set of tasks associated with a persona such like an integration developer. In that case, you assign an authorization group to the user.
 
-    More information: [Persona](../SecurityNeo/persona-2937e5c.md)
+    More information: [Personas](../SecurityNeo/personas-2937e5c.md)
 
 -   You can give the permission for an individual task such like
 

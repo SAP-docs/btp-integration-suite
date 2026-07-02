@@ -17,11 +17,15 @@ To set up a connection using basic authentication or username token authenticati
 
 ## Procedure
 
-1.  Click the *Security Material* tile in the *Manage Security Material* section.
+1.  Choose *Monitor*.
 
-2.  Choose *Create* \> *User Credentials*.
+2.  Select the *Security Material* tile in the *Manage Security* section.
 
-3.  Specify the following properties:
+3.  Choose *Add*.
+
+4.  As *Type*, select *User Credentials*.
+
+5.  Specify the following properties:
 
 
     <table>
@@ -45,7 +49,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    A name for the artifact
+    A name for the artifact.
 
     The artifact name is used as an alias for the confidential data assigned by this parameter.
     
@@ -59,7 +63,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    A description of the artifact \(optional\)
+    A description of the artifact \(optional\).
     
     </td>
     </tr>
@@ -94,7 +98,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    The user that calls the receiver system
+    The user that calls the receiver system.
     
     </td>
     </tr>
@@ -106,7 +110,7 @@ To set up a connection using basic authentication or username token authenticati
     </td>
     <td valign="top">
     
-    Password against which the user has to be authenticated
+    Password against which the user has to be authenticated.
 
     This parameter has a maximum length of 255 characters.
     
@@ -114,7 +118,7 @@ To set up a connection using basic authentication or username token authenticati
     </tr>
     </table>
     
-4.  Choose *Deploy*.
+6.  Choose *Deploy*.
 
 
 

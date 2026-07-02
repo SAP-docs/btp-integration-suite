@@ -21,13 +21,17 @@
 
 After you've configured the connection to ES Repository, you can import content from it in the *References* tab of the integration flow editor. Currently, you can import:
 
--   Message mapping
+-   Mapping
 
--   Value mapping
+    -   [Message Mapping](https://help.sap.com/docs/integration-suite/integrations-and-apis-9519789d5664487f8b9cd89eba514477/creating-message-mapping-as-artifact?state=CLOUD#import-a-message-mapping-from-enterprise-services-repository-(esr))
 
--   Operation mapping
+    -   [Operation Mapping](../Development/operation-mapping-05b9569.md)
+    -   Value Mapping
 
--   WSDL
+-   Schema
+
+    -   WSDL
+
 
 
 > ### Restriction:  
@@ -35,7 +39,6 @@ After you've configured the connection to ES Repository, you can import content 
 > 
 >     -   It contains XSLT references.
 > 
->     -   The interfaces contain more than one cardinality.
 >     -   The interfaces are asynchronous in type.
 > 
 > -   The import process fails if the message mapping contains:
@@ -48,6 +51,8 @@ After you've configured the connection to ES Repository, you can import content 
 > -   Importing, viewing, and editing of Java UDF is supported.
 > 
 > -   Message Mapping containing reference to Value Mapping isn't supported at runtime.
+> 
+> -   Import of a message mapping object fails if it contains a XSD in the source or target message.
 
 Here's how you can do it:
 
@@ -57,9 +62,9 @@ Here's how you can do it:
 
 1.  Choose *References* \> *Local* tab in the integration flow properties sheet.
 
-    If you don't see the *References* tab, click the empty space in the integration flow editor. You see the *References* tab at the bottom of the integration flow editor.
+    If you can't find the *References* tab, choose the empty space in the integration flow editor. You will find the *References* tab at the end of the integration flow editor.
 
-2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md).
+2.  Choose *Add* and select a supported resource. See the supported sources here: [Manage References](../Development/manage-references-b5968b2.md).
 
 3.  Choose *ES Repository* as the source.
 

@@ -448,7 +448,7 @@ Pre-Transformation of a Message Implementation Guideline
 
 You can now use the *Pre-Transformation* feature in a mapping guideline to transform the structure of your message implementation guideline before mapping.
 
-See: [Pre- Transformation of a Message Implementation Guideline](../IntegrationAdvisor/pre-transformation-of-a-message-implementation-guideline-b287e5e.md)
+See: [Pretransforming a Message Implementation Guideline](../IntegrationAdvisor/pretransforming-a-message-implementation-guideline-b287e5e.md)
 
 </td>
 <td valign="top">
@@ -1921,7 +1921,7 @@ Creating a Message Implementation Guideline
 
 You can now directly create a Message Implementation Guideline from a specific message type of a type system/custom type system.
 
-See: [Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-a-new-message-implementation-guideline-b894de0.md) 
+See: [Creating Message Implementation Guidelines](../IntegrationAdvisor/creating-message-implementation-guidelines-b894de0.md) 
 
 </td>
 <td valign="top">
@@ -4429,7 +4429,7 @@ Self-Service to Delay Software Update
 </td>
 <td valign="top">
 
-Tenant administrators can now configure their tenants to delay the monthly updates from SAP. See:  <?sap-ot O2O class="- topic/xref " href="ee8ba5b4c9354fbb8c07c24199f7540f.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/eca4d788800c4b37b38f738be5410ff1.xml" ?> .
+Tenant administrators can now configure their tenants to delay the monthly updates from SAP. See:  <?sap-ot O2O class="- topic/xref " href="ee8ba5b4c9354fbb8c07c24199f7540f.xml" text="" desc="" xtrc="xref:56" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/eca4d788800c4b37b38f738be5410ff1.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 </td>
 <td valign="top">

@@ -16,7 +16,7 @@ When you have applied the Tar Splitter on a file archive, SAP Cloud Integration 
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *Tar Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *Tar Splitter*.
 
 2.  Place the *Tar Splitter* element in the integration process and define the message path.
 

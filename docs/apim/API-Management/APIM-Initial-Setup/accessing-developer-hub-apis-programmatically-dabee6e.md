@@ -437,6 +437,28 @@ Make a note of these credentials as you will need them in the next steps to obta
 
 
 
+<a name="loiodabee6e347f645a6805ec5b29f5d578c__section_ccb_vxj_fmb"/>
+
+## Updating a Service Instance in the API Management, Developer Hub
+
+You can update an already provisioned service instance of an API access plan by performing the following steps:
+
+**Prerequisite:**
+
+You must have the Cloud Foundry CLI installed.
+
+1.  Log in to the Cloud Foundry CLI by running the `cf login` command.
+2.  Select *Org*.
+3.  Run the following command to update your service instance. `cf update-service <service-instance-name> -c <empty-json-file>.json`.
+
+    > ### Sample Code:  
+    > ```
+    > Sample json: {}
+    > ```
+
+
+
+
 <a name="loiodabee6e347f645a6805ec5b29f5d578c__section_khs_pht_ylb"/>
 
 ## Next Steps

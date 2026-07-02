@@ -38,7 +38,7 @@ Authorization
 </td>
 <td valign="top">
 
-In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assigning Role Collections to Users](../assigning-role-collections-to-users-80bb02e.md).
+In API Management, you provide authorization to users by assigning relevant roles. For more information on how to provide authorizations, see [Assigning Role Collections to Users](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/80bb02ed7bf34570b7e8b3ad01aa9ad3.html "Role collections enable you to group together the roles you create. The role collections you define can be assigned to users logged on to SAP ID service.") :arrow_upper_right:.
 
 </td>
 </tr>

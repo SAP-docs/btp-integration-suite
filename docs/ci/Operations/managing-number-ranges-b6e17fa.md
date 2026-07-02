@@ -80,6 +80,11 @@ Maximum value of the artifact should be less than 15 digit.
 
 Displays a value that can be used the next time you invoke this artifact.
 
+> ### Note:  
+> The **Next Value** shown in the UI corresponds to the **Current Value** in the API. The difference is only in terminology.
+
+
+
 </td>
 </tr>
 <tr>
@@ -96,7 +101,7 @@ If the value of this attribute is 4 and the value of **current value** attribute
 
 If the value of this attribute is 0 then the value of **current value** attribute is flashed as it is with no padding on the number range.
 
-The maximum value allowed for this attribute is 99.
+The maximum value allowed for this attribute is 14.
 
 </td>
 </tr>

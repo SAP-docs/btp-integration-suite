@@ -116,7 +116,7 @@ Import request is delegated to deploy-service using destination D4.
     > ### Note:  
     > If your Org Name has spaces, add escape characters in place of spaces, for example, SAP BTP should be written as SAP%20BTP.
 
-    For `<myspace>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space inside the subaccount that has the Cloud Transport Management instance subscribed.
+    For `<myspace>` details navigate to your subaccount in BTP cockpit and choose *Overview* on the left pane. Choose *Cloud Foundry Environment* on the *Overview* page and copy the *Space name* that appears in this section. This is the space for target destination subaccount.
     
     </td>
     </tr>

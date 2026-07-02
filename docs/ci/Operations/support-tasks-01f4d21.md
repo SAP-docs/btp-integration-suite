@@ -18,5 +18,5 @@ Provide the tenant administrator \(at customer side\) with the user ID of the SA
 **Related Information**  
 
 
-[Persona](../SecurityNeo/persona-2937e5c.md "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
+[Personas](../SecurityNeo/personas-2937e5c.md "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
 

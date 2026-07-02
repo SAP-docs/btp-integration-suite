@@ -1,0 +1,116 @@
+<!-- loio4909d3fd2dd94227bdd6d6b515fd60da -->
+
+# Configuring Connector Setup
+
+Onboard with Catena-X and get started in Data Space Integration by entering your data space identifiers and Cloud Integration parameters.
+
+
+
+<a name="loio4909d3fd2dd94227bdd6d6b515fd60da__prereq_ic1_kkd_l1c"/>
+
+## Prerequisites
+
+-   You've completed the steps described in [Preparatory Steps](preparatory-steps-95366b2.md) where you activate SAP Integration Suite and the Cloud Integration capability.
+
+-   You've completed the steps described in [Activating the Capability](activating-the-capability-b49ad35.md) where you add Data Space Integration to your list of active capabilities of SAP Integration Suite.
+
+-   You've completed the steps described in [Configuring User Access](configuring-user-access-6ae0ff7.md) where you define user roles for Data Space Integration.
+
+-   You've completed the steps described in [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md) where you create Cloud Integration service keys.
+
+-   You've completed the steps described in [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md) where you create two technical users in the landscape portal of your chosen data space.
+
+
+
+
+<a name="loio4909d3fd2dd94227bdd6d6b515fd60da__steps_yct_rkd_l1c"/>
+
+## Procedure
+
+1.  First, register the connector in Data Space Integration.
+
+    1.  Open SAP Integration Suite and navigate to *Settings* \> *Data Spaces*. Choose *Onboard*.
+
+        > ### Note:  
+        > If *Settings* \> *Data Spaces* isn't visible to you, you might not have the correct role assigned to your user. Only users with the role `DataspaceTechnicalAdmin` can perform the onboarding.
+
+    2.  In the first tab *Connect to a Data Space*, select the *Landscape* you want to onboard to. It must be the same landscape in which you've created the *Identity Wallet Management* and *Connector Management* role in [Creating Technical Users in Landscape Portal](creating-technical-users-in-landscape-portal-b95f0ef.md).
+
+    3.  Enter the *Business Partner Number* of the company account.
+
+    4.  Choose a *Connector Name* under which you want the connector to be registered in the portal. The *Default Connector URL* is prefilled automatically.
+
+        The default connector URL is listed in the data space discovery API. If your business partner uses the discovery API to get your connector URL, they must **add the suffix `/api/v1/dsp` to the URL** to reach your catalog.
+
+        If you want to overwrite the *Default Connector URL*, you can enter a *Custom Connector URL*. This URL then replaces the default connector externally. If you don't require a custom connector URL, leave this field empty.
+
+    5.  Fill in the *Offer Management User* information. You can retrieve these details from the *Connector Management* user that you created in the landscape portal.
+
+    6.  In the section *Identity Wallet Management*, select the source of the *Wallet* you're using: *Landscape Portal*, *Third Party* \(for example, self-hosted\), or *Decentralized Identity Verification*. Depending on your choice, some fields in this section come prefilled.
+
+        > ### Note:  
+        > Before you can use Decentralized Identity Verification here, you must have activated it in the capability management. The activation automatically creates a wallet for you, and you can find its details, such as the dashboard URL of the newly created instance, in your SAP BTP subaccount.
+        > 
+        > For the setup process with a wallet in Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md). See also [Activating the Capability](activating-the-capability-b49ad35.md) and, to learn more about Decentralized Identity Verification, see [What Is Decentralized Identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
+
+        Provide the following information:
+
+        -   Find the *IATP STS OAuth Token URL* in your landscape portal as follows:
+
+            1.  For Catena-X, go to *Your Profile* \> *Connector Management* and choose your connector configuration details to view a dialog with all your details. Copy the *iatp.sts.oauth.token\_url*.
+
+            2.  For Cofinity-X, go to *Technical Setup* \> *Technical User Management*. Open the technical user details for the user with the Identity Wallet Management permission and copy the URL you find under *Service Endpoint*. Now, add the suffix `/oauth/token` to the URL \(after `.com`\), otherwise the onboarding runs into an error.
+
+
+        -   Retrieve the corresponding *Client ID* and *Client Secret* from the *Identity Wallet Management* user located in the landscape portal.
+
+        -   If you use a third party wallet, you must enter the remaining details manually as well.
+
+    7.  Choose *Save*.
+
+        Wait for 5 minutes before continuing while the control planes of Data Space Integration are being restarted. You can then move on to the next tab, *Prepare Connection to Cloud Integration*.
+
+
+2.  In the *Prepare Connection to Cloud Integration* tab, you're preparing the connection to Cloud Integration, for which you need to enter two service keys.
+
+    1.  Enter the required *API Parameters* from the Cloud Integration service key *Process Integration Runtime*, plan `api`. You can enter the parameters manually or choose *Paste Service Key* to paste the data.
+
+        To get these parameters, access the SAP BTP cockpit, go to *Instances and Subscriptions*, and select the relevant service key. In the expanding details view, choose *key* and then *Copy JSON*. See also [Preparing Cloud Integration](preparing-cloud-integration-07f81f2.md).
+
+    2.  Repeat the previous step for the *Runtime Parameters*, with service key *Process Integration Runtime*, plan `integration-flow`.
+
+    3.  Choose *Save* and again, wait for 5 minutes before continuing.
+
+
+3.  Finally, continue to the tab *Onboard the Data Plane*.
+
+    Simply choose *Onboard*. Data Space Integration then starts deploying the integration package in Cloud Integration using the parameters that you provided in the previous steps.
+
+    The onboarding of Data Space Integration can take up to 20 minutes. Wait until it reaches a final status \(`Error` or `Success`\).
+
+
+
+
+<a name="loio4909d3fd2dd94227bdd6d6b515fd60da__result_zqw_syd_l1c"/>
+
+## Results
+
+You can now use Data Space Integration.
+
+
+
+<a name="loio4909d3fd2dd94227bdd6d6b515fd60da__postreq_a2b_xlc_kcc"/>
+
+## Next Steps
+
+Depending on your role, you can now get started with one of the following tasks:
+
+-   Learn how to work with assets, policies, and contract definitions as a provider. See [Design within Data Spaces](design-within-data-spaces-079b342.md).
+
+-   Learn how to discover offers and consume assets provided by other participants of a data space. See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
+
+-   Monitor your active contract agreements. See [Monitoring Agreements](monitoring-agreements-a247cc4.md).
+
+-   Discover the APIs Data Space Integration provides on the SAP Business Accelerator Hub and how to work with them. See [Using APIs to Work With Data Space Integration](using-apis-to-work-with-data-space-integration-411fd1e.md).
+
+

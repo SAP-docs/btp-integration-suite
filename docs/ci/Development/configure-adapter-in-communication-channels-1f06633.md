@@ -2,6 +2,9 @@
 
 # Configure Adapter in Communication Channels
 
+> ### Remember:  
+> During blue-green deployment of worker nodes, connection counts may temporarily double due to the nature of the deployment strategy. This occurs because both old and new worker nodes establish connections simultaneously during the switchover phase. Plan your target system connection thresholds accordingly to avoid connection pool exhaustion errors during new node startup. To proactively manage this, configure connection count alerts on your target systems and ensure your service plan's connection limits can accommodate the temporary spike. JDBC, JMS, AMQP, and other database-connected adapters may experience connection saturation when both blue and green environments maintain active pools to shared backend systems.
+
 You should configure the adapters assigned to communication channels before deploying the integration flow.
 
 The following adapter types are available:
@@ -155,6 +158,46 @@ See: [AMQP Receiver for SAP Event Mesh](amqp-receiver-for-sap-event-mesh-0b7cc2f
 <tr>
 <td valign="top">
 
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Cloud Integration to consume messages from SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQ Sender for SAP Integration Suite, advanced event mesh](amq-sender-for-sap-integration-suite-advanced-event-mesh-be1e496.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Cloud Integration to send messages to SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQP Receiver for SAP Integration Suite, advanced event mesh](amqp-receiver-for-sap-integration-suite-advanced-event-mesh-5f229c0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AMQP for Microsoft Azure Service Bus*
 
 Sender adapter
@@ -168,7 +211,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Microsoft Azure Service Bus](amqp-sender-for-microsoft-azure-service-bus-7384ac3.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -188,7 +231,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Microsoft Azure Service Bus](amqp-receiver-for-microsoft-azure-service-bus-9c64d80.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -208,7 +251,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Solace PubSub+](amqp-sender-for-solace-pubsub-c9ab47d.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -228,7 +271,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Solace PubSub+](amqp-receiver-for-solace-pubsub-19f18d8.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -248,7 +291,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Sender for Apache Qpid Broker-J](amqp-sender-for-apache-qpid-broker-j-b4983f7.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -268,7 +311,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Receiver for Apache Qpid Broker-J](amqp-receiver-for-apache-qpid-broker-j-622aa1d.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -288,7 +331,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](amqp-sender-for-apache-activemq-5-and-apache-activemq-artemis-dc4c564.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -308,7 +351,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](amqp-receiver-for-apache-activemq-5-and-apache-activemq-artemis-76c4dd3.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -328,7 +371,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for IBM MQ](amqp-sender-for-ibm-mq-f6cc0e4.md)
+See: [Configure the AMQP Sender Adapter](configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -348,7 +391,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for IBM MQ](amqp-receiver-for-ibm-mq-990fa99.md)
+See: [Configure the AMQP Receiver Adapter](configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -469,6 +512,38 @@ Receiver adapter:
 
 
 See: [AS4 Receiver Adapter](as4-receiver-adapter-3a2fde8.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*BigCommerce GraphQL*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce GraphQL Admin APIs using the GraphQL message protocol. The GraphQL message protocol is used to connect to the GraphQL-based Admin APIs of a BigCommerce store.
+
+See  <?sap-ot O2O class="- topic/xref " href="3dbf284ae5d54f59b7b9cc8f97d41fed.xml" text="" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*BigCommerce REST*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce REST Admin APIs, using the REST message protocol. The REST message protocol is used to connect to the REST-based Admin APIs of a BigCommerce store.
+
+See  <?sap-ot O2O class="- topic/xref " href="f36aab9b289a4d5b8d835ad100ed812a.xml" text="" desc="" xtrc="xref:39" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>
@@ -1019,7 +1094,7 @@ Supported versions:
 
 -   OData version 4.0
 
-    Supported operations: Create \(POST\), Query \(GET\), Update \(PUT\)
+    Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
 
 -   The outgoing request payload must be in XML format.
 
@@ -1184,7 +1259,7 @@ Connects SAP Cloud Integration to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 The sender adapter allows you to define a schedule for polling data from the connected system.
 
@@ -1206,7 +1281,7 @@ Connects SAP Cloud Integration to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 See: [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md)
 
@@ -1510,7 +1585,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 **Related Information**  
 
 
-[AMQP Adapter](amqp-adapter-5cc1a71.md "In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol (AMQP) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.")
+[AMQP Adapter](amqp-adapter-5cc1a71.md "In many integration scenarios, messages or events have to be exchanged between applications or systems via message brokers. With the Advanced Message Queuing Protocol (AMQP) adapter, SAP Cloud Integration can be used as a provider or a consumer of such messages or events. SAP Cloud Integration can connect to external message brokers using the AMQP protocol, consume messages or events using the AMQP sender adapter, or store messages or events in the message broker using the AMQP receiver adapter.")
 
 [Ariba Adapter](ariba-adapter-98da76c.md "You use this procedure to configure a sender and receiver channel of an integration flow with the Ariba Network adapter. These channels enable the SAP and non-SAP cloud applications to send and receive business-specific documents in cXML format to and from the Ariba Network. Examples of business documents are purchase orders and invoices.")
 
@@ -1520,9 +1595,9 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [AS4 Receiver Adapter](as4-receiver-adapter-3a2fde8.md "Provides basic insights on how the AS4 messaging protocol enables message exchange between message service handlers (MSHs).")
 
-[AmazonWebServices Sender Adapter](amazonwebservices-sender-adapter-16772e3.md "Amazon Web Services (AWS) sender adapter enables SAP Cloud Integration to do transfer of data with AWS cloud platform.")
+[AmazonWebServices Sender Adapter](amazonwebservices-sender-adapter-16772e3.md)
 
-[AmazonWebServices Receiver Adapter](amazonwebservices-receiver-adapter-bc7d1aa.md "Amazon Web Services (AWS) receiver adapter enables SAP Cloud Integration to transfer of data with AWS cloud platform.")
+[AmazonWebServices Receiver Adapter](amazonwebservices-receiver-adapter-bc7d1aa.md)
 
 [ELSTER Receiver Adapter](elster-receiver-adapter-e374ef7.md "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.")
 
@@ -1536,7 +1611,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [IDoc Adapter](idoc-adapter-6042250.md "The IDoc adapter enables SAP Cloud Integration to exchange Intermediate Document (IDoc) messages with systems that support communication via SOAP Web services.")
 
-[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Cloud Integration to cloud databases.")
+[JDBC Receiver Adapter](jdbc-receiver-adapter-88be644.md "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Cloud Integration to cloud or on-premise databases.")
 
 [JMS Adapter](jms-adapter-0993f2a.md "You configure the JMS adapter to enable asynchronous messaging using message queues.")
 
@@ -1550,7 +1625,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [OData Adapter](odata-adapter-2d82511.md "The OData adapter allows you to communicate with an OData API using OData protocol. You use messages in ATOM or JSON format for communication. This OData adapter uses OData V2 message protocol.")
 
-[ODC Receiver Adapter](odc-receiver-adapter-3cdbc29.md "he ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.")
+[ODC Receiver Adapter](odc-receiver-adapter-3cdbc29.md "The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.")
 
 [OpenConnectors Receiver Adapter](openconnectors-receiver-adapter-1a27cee.md "You use the OpenConnectors receiver adapter in integration flows to communicate with more than 170 non-SAP cloud applications that are supported by Open Connectors.")
 
@@ -1558,9 +1633,9 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [RFC Receiver Adapter](rfc-receiver-adapter-5c76048.md "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).")
 
-[Salesforce Receiver Adapter](salesforce-receiver-adapter-a548be9.md "The Salesforce receiver adapter enables an SAP Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting to Salesforce.")
+[Salesforce Receiver Adapter](salesforce-receiver-adapter-a548be9.md)
 
-[ServiceNow Receiver Adapter](servicenow-receiver-adapter-1e3bcf4.md "ServiceNow receiver adapter enables SAP Cloud Integration and SAP Integration Suite to accelerate the implementation time and reduce the complexity of connecting to ServiceNow.")
+ <?sap-ot O2O class="- topic/link " href="1e3bcf40403441d4898e6badd53c2b79.xml" text="" desc="" xtrc="link:26" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/1f066330e8314324bf3ebe3b6adc21b2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [SFTP Adapter](sftp-adapter-e3dce88.md "Use SFTP adapter to encrypt and exchange sensitive business data between trading partners.")
 
@@ -1580,7 +1655,7 @@ If you are developing an OData API, you can configure a SOAP, OData or HTTP adap
 
 [Twitter Receiver Adapter](twitter-receiver-adapter-453c174.md "You use the Twitter receiver adapter to extract information from the Twitter platform based on certain criteria such as keywords, user data, for example. As one example, you can use this feature to send, search for and receive Twitter feeds.")
 
-[Workday Receiver Adapter](workday-receiver-adapter-0c6e670.md "Workday receiver adapter enables SAP Cloud Integration and SAP Integration Suite to accelerate the implementation time and reduce the complexity of connecting to Workday.")
+ <?sap-ot O2O class="- topic/link " href="0c6e67020af9433cb09a56736d73ca76.xml" text="" desc="" xtrc="link:36" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/1f066330e8314324bf3ebe3b6adc21b2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [XI Adapter](xi-adapter-8fedc92.md "The XI adapter connects an SAP Cloud Integration tenant to a remote system that can process the XI message protocol.")
 

@@ -6,15 +6,22 @@
 
 ## Context
 
-The *Manage Stores* section provides an overview of storages on the tenant, which are temporarily used to persist data of different kind during message processing.
+The *Manage Stores* section provides an overview of storages that are temporarily used to persist data of different kind during message processing.
+
+> ### Caution:  
+> The monitor displays a maximum of 100000 data store entries per data store. If the data store contains more than this limit, search results may be incomplete, and not all relevant entries may be displayed. Keep this limitation in mind when interpreting search results.
+> 
+> If you need to search through more than 100000 records, we recommend using the [Message Stores API's](https://api.sap.com/api/MessageStore/overview) *Data Stores* resource for efficient querying and retrieval \(see also [Message Stores](../Development/message-stores-1aab5e9.md)\).
 
 
 
 ## Procedure
 
-1.  To open the *Manage Data Stores* view, choose the *Data Stores* tile.
+1.  Choose *Monitor*.
 
-2.  On the left pane of *Manage Data Stores* the the name of the data store is displayed.
+2.  Choose the *Data Stores* tile.
+
+3.  On the left pane of *Manage Data Stores* the name of the data store is displayed.
 
     Below the data store name the following information is displayed:
 
@@ -23,7 +30,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
 
     Furthermore, the number of entries available in the data store and \(if applicable\) the number of overdue entries is shown for each data store.
 
-3.  On top of the list of data stores, you can access the following functions:
+4.  On top of the list of data stores, you can access the following functions:
 
 
     <table>
@@ -94,7 +101,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
     </tr>
     </table>
     
-4.  On the right side of the screen, details about the data store selected from the left side are shown.
+5.  On the right side of the screen, details about the data store selected from the left side are shown.
 
     The following attributes are displayed for each data store entry:
 
@@ -195,7 +202,7 @@ The *Manage Stores* section provides an overview of storages on the tenant, whic
     </tr>
     </table>
     
-5.  Use the following options available on the header above the table to manage the entries:
+6.  Use the following options available on the header above the table to manage the entries:
 
 
     <table>

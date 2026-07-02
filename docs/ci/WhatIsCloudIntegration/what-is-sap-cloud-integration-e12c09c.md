@@ -31,10 +31,19 @@ SAP Cloud Integration helps you to connect cloud and on-premise applications wit
 
 ## Environment
 
-This service runs in the Neo and Cloud Foundry \(CF\) environments. Integration content artifacts designed in the Neo environment are also compatible in Cloud Foundry environment with certain limitations as mentioned in the following.
+This service is available in the following environments:
 
-> ### Remember:  
-> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
+-   Neo environment
+
+-   Cloud Foundry environment
+
+    Integration content artifacts designed in the Neo environment are also compatible in Cloud Foundry environment with certain limitations as mentioned in the following.
+
+    > ### Remember:  
+    > There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
+
+-   Kyma environment
+
 
 
 
@@ -121,12 +130,23 @@ Orchestrate business processes and integrate data in synchronous as well as in a
 
 </dd><dt><b>
 
-Integrate with SAP Process Orchestration 
+Integrate with SAP Process Orchestration
 
 </b></dt>
 <dd>
 
 Use SAP Cloud Integration and SAP’s on-premise integration Platform, SAP Process Orchestration, seamlessly integrated.
+
+
+
+</dd><dt><b>
+
+Benefit from multitenancy support
+
+</b></dt>
+<dd>
+
+Use this service in tenant-aware \(multitenant\) applications. Run them on a shared compute unit that can be used by multiple consumers \(tenants\).
 
 
 
@@ -205,196 +225,16 @@ The Cloud Integration reporting dashboard is part of the Integration Suite conte
 
 
 
-<a name="loioe12c09cc8e9b4574b092d8964b049ce6__section_evb_mvj_srb"/>
+<a name="loioe12c09cc8e9b4574b092d8964b049ce6__section_ud1_1rm_jcc"/>
 
-## System Scope in the Cloud Foundry Environment
+## System Scope
 
-This section describes the system scope for Cloud Integration tenants that are deployed in the Cloud Foundry environment. Read the recommendations to know how to optimize the resources when exceeding the scope:
+More information:
 
+-   [System Scope in the Cloud Foundry Environment](system-scope-in-the-cloud-foundry-environment-8ea3822.md)
 
-<table>
-<tr>
-<th valign="top">
+-   [System Scope in the Neo Environment](system-scope-in-the-neo-environment-4ef131c.md)
 
-Resource
-
-</th>
-<th valign="top">
-
-Scope
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-**Integration content**
-
-</td>
-<td valign="top">
-
-500 MB
-
-Refer to the blog on [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/) learn how to reduce your integration content size.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**JMS queues**
-
-</td>
-<td valign="top">
-
-9 GB, 150 transactions \(default configuration with 30 queues\)
-
-Can be scaled up to 30 GB, 500 transactions \(with 100 queues\)
-
-See the blog on [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) for further guidance on how to set the queue size to restrict the limit and on how to delete unused queues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**Message processing log persistence**
-
-</td>
-<td valign="top">
-
-35 GB
-
-See: [Cloud Integration – Setting the Log Level for Message Processing](https://blogs.sap.com/2017/06/22/cloud-integration-setting-the-log-level-for-message-processing/)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**Data store message persistence**
-
-</td>
-<td valign="top">
-
-35 GB
-
-See: [Optimize Performance](../Development/optimize-performance-491c80d.md)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**Disk space**
-
-</td>
-<td valign="top">
-
-4 GB
-
-Refer to SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development to prevent the integration flow from running into the “No More Space left on Disk” error.
-
-</td>
-</tr>
-</table>
-
-For more information on the available data storage features, refer to [Data Storages](../Development/data-storages-31efe35.md).
-
-
-
-<a name="loioe12c09cc8e9b4574b092d8964b049ce6__section_psk_1rz_fnb"/>
-
-## System Scope in the Neo Environment
-
-This section describes the system scope for Cloud Integration tenants that are deployed in the Neo environment. Read the recommendation to know how to optimize the resources when exceeding the scope:
-
-
-<table>
-<tr>
-<th valign="top">
-
-Resource
-
-</th>
-<th valign="top">
-
-Scope
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-**Integration content**
-
-</td>
-<td valign="top">
-
-500 MB
-
-Refer to the blog on [Content Size Limits](https://blogs.sap.com/2020/08/02/cloud-integration-content-size-limits/) learn how to reduce your integration content size.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**JMS queues**
-
-</td>
-<td valign="top">
-
-9 GB
-
-9 GB, 150 transactions \(default configuration with 30 queues\)
-
-Can be scaled up to 30 GB, 500 transactions \(with 100 queues\)
-
-See the blog on [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) for further guidance on how to set the queue size to restrict the limit and on how to delete unused queues.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**ASE database**
-
-</td>
-<td valign="top">
-
-32 GB
-
-See the following blogs for information on how to:
-
--   [Avoid Storing Payloads in the Message Processing Log](https://blogs.sap.com/2017/07/24/avoid-storing-payloads-in-the-message-processing-log/)
-
--   [Avoid Excessive Storage Load caused by Using MPL Attachments](https://blogs.sap.com/2018/02/12/how-to-avoid-excessive-storage-load-caused-by-using-mpl-attachments-for-message-logging/)
-
--   [Set the Log Level for Message Processing](https://blogs.sap.com/2017/06/22/cloud-integration-setting-the-log-level-for-message-processing/)
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-**Disk space**
-
-</td>
-<td valign="top">
-
-2 GB
-
-Refer to SAP Note [2648415](https://me.sap.com/notes/2648415) to learn how to optimize the integration flow development to prevent the integration flow from running into the “No More Space left on Disk” error.
-
-</td>
-</tr>
-</table>
-
-For more information on the available data storage features, refer to [Data Storages](../Development/data-storages-31efe35.md).
 
 
 

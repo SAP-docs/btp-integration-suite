@@ -209,7 +209,7 @@ LDAPS
 > 
 > -   [Security Aspects of Data, Data Flow](../SecurityNeo/security-aspects-of-data-data-flow-702ddb5.md) \(for the Neo environment\)
 > 
-> -   [Security Aspects of Data, Data Flow for Cloud Integration](../SecurityCF/security-aspects-of-data-data-flow-for-cloud-integration-7895724.md) \(for the Cloud Foundry environment\)
+> -   [Security Aspects of Data, Data Flow](../SecurityCF/security-aspects-of-data-data-flow-7895724.md) \(for the Cloud Foundry environment\)
 
 > ### Note:  
 > Most Internet protocols initially started simple to support unencrypted cleartext message formats. Only later when security became more important, additional encrypted protocol versions were introduced. For compatibility with legacy systems, Cloud Integration includes a long list of both encrypted and unencrypted protocol variants.

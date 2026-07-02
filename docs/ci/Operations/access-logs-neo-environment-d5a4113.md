@@ -2,7 +2,7 @@
 
 # Access Logs, Neo Environment
 
-The *Access Logs*section allows you to monitor audit logs \(resulting from system changes\) and to analyze errors that occurred during inbound HTTP processing \(and documented in system log files\).
+The *Access Logs* section allows you to monitor audit logs \(resulting from system changes\) and to analyze errors that occurred during inbound HTTP processing \(and documented in system log files\).
 
 > ### Note:  
 > This information is relevant only when you use SAP Cloud Integration in the Neo environment.

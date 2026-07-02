@@ -246,7 +246,7 @@ MIG Payload Import is Optional
 
 You can choose to use payload values as example values in your MIG.
 
-See: [Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-a-new-message-implementation-guideline-b894de0.md)
+See: [Creating Message Implementation Guidelines](../IntegrationAdvisor/creating-message-implementation-guidelines-b894de0.md)
 
 </td>
 <td valign="top">
@@ -1449,7 +1449,7 @@ AS4 Receiver Adapter
 
 AS4 Receiver adapter with Push Message Protocol now supports Type attribute. This attribute helps the receiver participant to identify the payload.
 
-See: [Configure Receiver Channel with Push Message Protocol](../Development/configure-receiver-channel-with-push-message-protocol-449f6e9.md)
+See: [Configure Receiver Channel with ebMS3 Push](../Development/configure-receiver-channel-with-ebms3-push-449f6e9.md)
 
 </td>
 <td valign="top">
@@ -2852,7 +2852,7 @@ Mapping Guidelines\(MAG\)
 
 You can now map nodes of type *Date*, *Time* and *DateTime* between the source and target structure in MAG editor.
 
-See: [Working with a Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-a-mapping-guideline-mag-0803ca6.md)
+See: [Working with Mapping Guidelines \(MAGs\)](../IntegrationAdvisor/working-with-mapping-guidelines-mags-0803ca6.md)
 
 </td>
 <td valign="top">
@@ -3201,7 +3201,7 @@ Mapping Guidelines
 
 You can now push mapping artifacts from Mapping Guidelines\(MAG\) editor to your SAP Cloud Platform Integration tenant.
 
-See: [Push Mapping Artifacts to SAP Cloud Integration](../IntegrationAdvisor/push-mapping-artifacts-to-sap-cloud-integration-47ad97e.md)
+See: [Inject Mapping Artifacts to SAP Cloud Integration](../IntegrationAdvisor/inject-mapping-artifacts-to-sap-cloud-integration-47ad97e.md)
 
 </td>
 <td valign="top">
@@ -3726,7 +3726,7 @@ Message Implementation Guideline
 
 Values present in the uploaded XML payload will now be considered as example values while creating the MIG.
 
-See: [Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-a-new-message-implementation-guideline-b894de0.md) 
+See: [Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-message-implementation-guidelines-b894de0.md) 
 
 </td>
 <td valign="top">
@@ -3807,7 +3807,7 @@ Managing Access Policies in CF
 
 The access policies monitor allows you to show and maintain access policies in the Cloud Foundry environment.
 
-see: [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md)
+see: [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md)
 
 </td>
 <td valign="top">
@@ -4275,7 +4275,7 @@ Mapping Guidelines
 
 You can now use the new mapping type *String Processing* to connect the mapping elements of type *String* and *Token*.
 
-See: [Working with Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-a-mapping-guideline-mag-0803ca6.md)
+See: [Working with Mapping Guideline \(MAG\)](../IntegrationAdvisor/working-with-mapping-guidelines-mags-0803ca6.md)
 
 </td>
 <td valign="top">
@@ -5002,7 +5002,7 @@ You can now use the new and improvised wizard for creating a Message Implementat
 
 You can now upload xml file while creating a MIG to design your message structure.
 
-See:[Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-a-new-message-implementation-guideline-b894de0.md) 
+See:[Creating a New Message Implementation Guideline](../IntegrationAdvisor/creating-message-implementation-guidelines-b894de0.md) 
 
 </td>
 <td valign="top">
@@ -5680,7 +5680,7 @@ Managing Access Policies
 
 In SAP Cloud Integration , user permissions are granted based on tasks that can be performed on all artifacts and data. Access Policies provide a way to additionally protect a subset of artifacts and data.
 
-See [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md)
+See [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md)
 
 </td>
 <td valign="top">
@@ -6278,7 +6278,7 @@ Message Mapping
 
 You can now download MMAP files along with their dependent resources.
 
-See: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
+See: [Manage Resources of an Integration Flow](../Development/manage-references-b5968b2.md)
 
 </td>
 <td valign="top">
@@ -6534,14 +6534,14 @@ You can now use AS4 Sender adapter for receiving data from a trading partner and
 
 See:
 
--   [Configuring Sender Channel with ebMS3 Pull](../Development/configuring-sender-channel-with-ebms3-pull-4f5ddb3.md)
+-   [Configure the Sender Channel with ebMS3 Pull](../Development/configure-the-sender-channel-with-ebms3-pull-4f5ddb3.md)
 
--   [Configuring Sender Channel with ebMS3 Push](../Development/configuring-sender-channel-with-ebms3-push-3dc3907.md)
+-   [Configure the Sender Channel with ebMS3 Push](../Development/configure-the-sender-channel-with-ebms3-push-3dc3907.md)
 
 
 To know more on how to configure the sender adapter to generate a receipt upon successfully processing the incoming AS4 push message.
 
-See: [Configuring Sender Channel with ebMS3 Receipt](../Development/configuring-sender-channel-with-ebms3-receipt-428ae65.md)
+See: [Configure the Sender Channel with ebMS3 Receipt](../Development/configure-the-sender-channel-with-ebms3-receipt-428ae65.md)
 
 </td>
 <td valign="top">
@@ -6799,7 +6799,7 @@ Message Mapping
 
 You can now copy MMAP files to your integration flow from other integration flow from the same or different package.
 
-See: [Manage Resources of an Integration Flow](../Development/manage-resources-of-an-integration-flow-b5968b2.md)
+See: [Manage Resources of an Integration Flow](../Development/manage-references-b5968b2.md)
 
 </td>
 <td valign="top">
@@ -7257,9 +7257,9 @@ User Interface
 </td>
 <td valign="top">
 
--   The user announcement is finally here. Be updated with all the latest releases and new features by clicking the <span class="SAP-icons"></span> in your web application.
+-   The user announcement is finally here. Be updated with all the latest releases and new features by clicking the <span class="SAP-icons-V5"></span> in your web application.
 
--   You can now access integration flow design guidelines and the troubleshooting guide through the user menu <span class="SAP-icons"></span> in your web application.
+-   You can now access integration flow design guidelines and the troubleshooting guide through the user menu <span class="SAP-icons-V5"></span> in your web application.
 
 
 

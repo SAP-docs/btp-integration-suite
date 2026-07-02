@@ -14,7 +14,7 @@ Use a PKCS\#7/CMS Splitter if you want to break down a PKCS7 Signed Data message
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *PKCS\#7/CMS Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *PKCS\#7/CMS Splitter*.
 
 2.  Place the *PKCS\#7/CMS Splitter* element in the integration process and define the message path.
 

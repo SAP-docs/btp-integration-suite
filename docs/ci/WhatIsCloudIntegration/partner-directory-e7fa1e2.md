@@ -80,10 +80,6 @@ The following integration flow components are parameterizable so that partner-sp
 
 -   HTTP sender adapter: sender partner-specific user or client certificate
 
--   AS2 receiver adapter: receiver address, partner X509 certificate to encrypt message \(however, one common user or client certificate is used to call the partner system\)
-
--   AS2 sender adapter: sender partner X.509 certificate to verify partner signature, sender partner-specific user or client certificate
-
 -   SOAP receiver adapter: user credential
 
 -   Script: for accessing partner-specific information and performing partner-specific operations
@@ -91,7 +87,7 @@ The following integration flow components are parameterizable so that partner-sp
 
 
 
-For Partner Directory parameters of AS2 Sender Adapter, see[Configure the AS2 Sender Adapter](../Development/configure-the-as2-sender-adapter-5d7ee17.md) .
+For Partner Directory parameters of AS2 Sender Adapter, see [Configure the AS2 Sender Adapter](../Development/configure-the-as2-sender-adapter-5d7ee17.md).
 
 For Partner Directory parameters of AS2 MDN Sender Adapter, see [Configure the AS2 MDN Sender Adapter](../Development/configure-the-as2-mdn-sender-adapter-c54effe.md)
 
@@ -140,7 +136,7 @@ If you upload a whole keystore \(`.jks` file\) to the tenant, the maximum keysto
 
 
 
-For more informatin on the entities of the Partner Directory and how to work with them, check out the OData API section of this documentation.
+For more information on the entities of the Partner Directory and how to work with them, check out the OData API section of this documentation.
 
 
 
@@ -160,7 +156,7 @@ For detailed step-by-step descriptions how to use the Partner Directory, see the
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="bbccb60d93474163a1e278bacb64ecb3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e7fa1e2cd16049b7bfefe938355a574c.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="bbccb60d93474163a1e278bacb64ecb3.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/e7fa1e2cd16049b7bfefe938355a574c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Partner Authorization \(Inbound\)](../Development/partner-authorization-inbound-c0c9950.md "For inbound calls (when a partner sends a message to the integration platform), a partner authorization check evaluates whether the logged-in user has permission to execute messages with a particular sender partner ID.")
 

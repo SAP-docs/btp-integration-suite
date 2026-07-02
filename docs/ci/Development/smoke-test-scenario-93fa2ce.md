@@ -12,9 +12,7 @@ This is a simple test to verify that your SAP Cloud Integration simulation is wo
 
 In this scenario, you run a simulation without deploying the integration flow and you can check the trace results in the message envelope.
 
-In the course of this exercise, you execute a simulation tool on the following integration flow.
-
-![](images/da4c128eeb1e45bbab6a2a99bbbcdc01.xml)
+In the course of this exercise, you execute a simulation tool on an integration flow.
 
 > ### Note:  
 > Create an integration flow, add the following details, and save.
@@ -29,9 +27,9 @@ In the course of this exercise, you execute a simulation tool on the following i
 
 1.  Choose an Integration flow and keep it in a read-only mode.
 
-2.  Select the connector line between *Timer* and *Content Modifier* and choose *Simulation Start Point* <span class="SAP-icons"></span> .
+2.  Select the connector line between *Timer* and *Content Modifier* and choose *Simulation Start Point* <span class="SAP-icons-V5"></span> .
 
-3.  Select the connection between *XML to JSON Converter* and *End Message* and choose Simulation End Point <span class="SAP-icons"></span> . 
+3.  Select the connection between *XML to JSON Converter* and *End Message* and choose Simulation End Point <span class="SAP-icons-V5"></span> . 
 
     You can see that the first two icons of the simulation tool have been enabled.
 
@@ -39,18 +37,18 @@ In the course of this exercise, you execute a simulation tool on the following i
 
 5.  Choose the *Simulation Start Point*, a dialog opens to *Add Simulation Input*. Provide an input payload in the *Body* section and choose *OK*. The subset of an integration flow now filters the incoming payload based on the XPath provided in the Filter step.
 
-    Use the following payload:-
+    Use the following payload:
 
     `<root><order><orderno>OD100</orderno></order></root>`
 
 6.  Select simulation tool and choose *Run Simulation*:arrow_forward:
 
-7.  You can see a toast message that the simulation completed successfully, the simulation *End Point* turns from black color to green and a message envelope :envelope: appears between start and end point.
+7.  You receive a toast message that the simulation completed successfully, the simulation *End Point* turns from black color to green and a message envelope :envelope: appears between start and end point.
 
 8.  Choose*Message Envelope* located next to *XML to JSON Converter*. A message content opens, check the body section and verify that the input payload has been simulated. Based on the input and the XPath provided, the output message consist of the order details.
 
     You can check that based on the filter criteria, the resulting message has been generated correctly.
 
-9.  Choose <span class="SAP-icons"></span> *Clear Simulation* located in the simulation tool to clear all defined simulation path.
+9.  Choose *Clear Simulation*<span class="SAP-icons-V5"></span> located in the simulation tool to clear all defined simulation path.
 
 

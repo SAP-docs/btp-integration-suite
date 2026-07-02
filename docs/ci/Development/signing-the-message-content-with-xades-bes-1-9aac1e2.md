@@ -50,6 +50,18 @@ For more information on XAdES, see:
     Select this option if you want to add the signing time to the signature.
 
     This measure helps to provide evidence that the signature key was valid at the time the signature was created.
+
+    If you like to change the time zone used for the `SigningTime` element of the signature, you can set property `SAP_XadesSigningTimeZone`. The *XML Signer* step then transforms the value of the `SigningTime` element into the time zone specified by the property value.
+
+    Example: Assume that the following signing time is generated for the signature if the property isn’t set \(uses GMT time zone\):
+
+    `<xades:SigningTime>2024-04-01T20:00:00Z</xades:SigningTime>`
+
+    If you specify the value of property `SAP_XadesSigningTimeZone` as `GMT+3:00`, the element created by the XML Signer step is changed to:
+
+    `<xades:SigningTime>2024-04-01T23:00:00+03:00</xades:SigningTime>`
+
+    See also: [Headers and Exchange Properties Provided by the Integration Framework](headers-and-exchange-properties-provided-by-the-integration-framework-d0fcb09.md)
     
     </td>
     </tr>

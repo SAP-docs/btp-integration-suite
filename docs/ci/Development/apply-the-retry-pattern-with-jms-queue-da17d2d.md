@@ -2,10 +2,7 @@
 
 # Apply the Retry Pattern with JMS Queue
 
-SAP Cloud Integration offers storage to persist data in transit during message processing, namely the message queue storage used by the JMS adapter. Use this storage to persist the message at the beginning of the processing sequence. That way, processing is executed faster for the sender, who immediately receives a response with HTTP code 202 \(Accepted\), and the subsequent processing steps are executed asynchronously.
-
-> ### Note:  
-> Note that this option is only available if you have purchased the Enterprise Edition.
+SAP Cloud Integration offers storage to persist data in transit during message processing, namely the message queue storage used by the JMS adapter. Use this storage to persist the message at the beginning of the processing sequence. That way, processing happens faster for the sender, who immediately receives a response with HTTP code 202 \(Accepted\), and the subsequent processing steps are done asynchronously.
 
 With this storage option, a retry mechanism is also in place that works as follows: If message processing fails due to a temporary error when calling an external component, the storage can be used to persist the failed messages. The JMS adapter polls the storage regularly for content, and triggers the reprocessing of the respective messages.
 
@@ -64,22 +61,33 @@ To configure the retry behavior, the JMS sender adapter provides a set of attrib
 
 -   *Retry Interval*
 
-    The time after which the first retry is executed
+    The time after which the first retry occurs. The default value is `1`.
+
+    For exclusive queues, the maximum retry interval is 60 minutes.
 
 -   *Exponential Backoff*
 
-    Allows you to avoid too many retries in a short time by doubling the retry interval after each unsuccessful retry.
+    Allows you to avoid too many retries in a short time by doubling the retry interval after each unsuccessful retry. By default, the *Exponential Backoff* is activated.
 
 -   *Maximum Retry Interval*
 
-    Allows you to specify the maximum amount of time to wait before retrying message delivery \(to avoid an uncontrolled increase of the retry interval in case *Exponential Backoff* is activated\).
+    Allows you to specify the maximum amount of time to wait before retrying message delivery \(to avoid an uncontrolled increase of the retry interval in case *Exponential Backoff* is activated\). The default value is `60`.
+
+    > ### Note:  
+    > This attribute is only configurable when *Exponential Backoff* is selected.
+
+    > ### Note:  
+    > For exclusive queues, the value should be between 10 to 180 minutes, inclusive.
 
 -   *Dead-Letter Queue* 
 
     Enables Cloud Integration to take a message out of processing and mark it as *Blocked* in the queue if the respective message caused two worker node crashes.
 
+    > ### Note:  
+    > This attribute is only available when the *Non-Exclusive* access type is selected.
 
-![](images/JMS_Sender_Adapter_Retry_6934cb9.png)
+
+![Screenshot of the attribute options screen under Connection.](images/Screenshot_of_the_attribute_options_screen_under_Connection_8333c30.png)
 
 **Related Information**  
 

@@ -9,7 +9,7 @@
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -159,14 +159,9 @@ To know more about using the adapter from external clients, see:
 
 -   [Use CSRF Protection](use-csrf-protection-a0765d5.md)
 
--   [Setting Up OAuth Inbound Authentication with Client Credentials Grant for API Clients](../ConnectionSetup/setting-up-oauth-inbound-authentication-with-client-credentials-grant-for-api-clients-040d811.md)
+-   [OAuth with Client Credentials Grant for API Clients](../ConnectionSetup/oauth-with-client-credentials-grant-for-api-clients-20e26a8.md)
 
 
 > ### Note:  
 > Upon deployment, the endpoint of an integration artifact with OData Sender Adapter is derived from the name of the artifact.
-
-**Related Information**  
-
-
-[Setting Up Inbound HTTP Connections \(Integration Flow Processing\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-integration-flow-processing-neo-environment-778c7e7.md "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.")
 

@@ -2,29 +2,6 @@
 
 # Salesforce Sender Adapter
 
-The Salesforce sender adapter enables Cloud Integration to accelerate the implementation time and reduce the complexity of connecting and retrieving events from Salesforce.
-
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
-
-> ### Note:  
-> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
-
-> ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/SalesforceAdapter?section=Overview).
-> 
-> After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
-> 
-> -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
-> 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information, see [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
-
 Once you have created a sender channel and selected the *Salesforce* adapter, you can configure its attributes.
 
 The *General* tab shows general information such as the adapter type, its direction \(sender\), the transport protocol, and the message protocol.
@@ -55,14 +32,13 @@ Description
 </td>
 <td valign="top">
 
-Specify the type of Authentication to be used when connecting to Salesforce.
+Select the type of authentication to be used when connecting to Salesforce:
 
-Select one of the following types:
+-   *OAuth 2.0 Username-Password*
 
--   *OAuth Client Credentials*
+-   *OAuth 2.0 JWT Bearer*
 
--   *OAuth JWT Bearer*
-
+-   *OAuth 2.0 Client Credentials*
 
 
 
@@ -73,7 +49,7 @@ Select one of the following types:
 
 *Address*
 
-\(if *Authentication* is *OAuth Client Credentials*\)
+\(if *Authentication* is *OAuth 2.0 Client Credentials* or *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
@@ -87,12 +63,12 @@ Specifies the recipient's endpoint URL, the Salesforce login base URL, for user 
 
 *Basic Credential Name*
 
-\(if *Authentication* is *OAuth Client Credentials*\)
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
 
-Specifies the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the *User Credentials* security material deployed on Cloud Integration.
+Specifies the name of the *User Credentials* artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the *User Credentials* security material deployed on SAP Cloud Integration.
 
 </td>
 </tr>
@@ -101,12 +77,12 @@ Specifies the name of the *User Credentials* artifact that contains the credenti
 
 *Security Token Alias*
 
-\(if *Authentication* is *OAuth Client Credentials*\)
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
 
-Specifies the name of the *Secure Parameter* artifact that contains the security token needed to connect to Salesforce. This property enables the system to fetch the Security Token from the security material deployed on Cloud Integration. This field can be omitted if your IP has been whitelisted on Salesforce
+Specifies the name of the *Secure Parameter* artifact that contains the security token needed to connect to Salesforce. This property enables the system to fetch the Security Token from the security material deployed on SAP Cloud Integration. This field can be omitted if your IP has been whitelisted on Salesforce
 
 </td>
 </tr>
@@ -115,14 +91,14 @@ Specifies the name of the *Secure Parameter* artifact that contains the security
 
 *OAuth Credential Name*
 
-\(if *Authentication* is *OAuth Client Credentials*\)
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
 
 ​
 
-Specifies the name of the *OAuth Client Credentials* artifact that contains the Salesforce’s OAuth consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed on Cloud Integration.
+Specifies the name of the *OAuth Client Credentials* artifact that contains the Salesforce’s OAuth consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed on SAP Cloud Integration.
 
 </td>
 </tr>
@@ -131,7 +107,7 @@ Specifies the name of the *OAuth Client Credentials* artifact that contains the 
 
 *Audience*
 
-\(if *Authentication* is *OAuth JWT Bearer*\)
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
 
 </td>
 <td valign="top">
@@ -156,7 +132,7 @@ By default, the URL `https://login.salesforce.com` is used. Based on your scenar
 
 *Subject Alias*
 
-\(if *Authentication* is *OAuth JWT Bearer*\)
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
 
 </td>
 <td valign="top">
@@ -170,7 +146,7 @@ The alias name of the deployed *Secure Parameter* artifact. It specifies the Sal
 
 *Issuer Alias*
 
-\(if *Authentication* is *OAuth JWT Bearer*\)
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
 
 </td>
 <td valign="top">
@@ -184,7 +160,7 @@ The alias name of the deployed *Secure Parameter* artifact. It specifies the OAu
 
 *Keystore Alias*
 
-\(if *Authentication* is *OAuth JWT Bearer*\)
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
 
 </td>
 <td valign="top">
@@ -198,12 +174,26 @@ The alias name of the added JKS file in the keystore as a key pair. It consists 
 
 *Expiration*
 
-\(if *Authentication* is *OAuth JWT Bearer*\)
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
 
 </td>
 <td valign="top">
 
 Specifies the validity of the assertion in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth2 Client Credentials*
+
+\(if *Authentication* is *OAuth 2.0 Client Credentials*\)
+
+</td>
+<td valign="top">
+
+The alias name of the deployed OAuth2 Client Credentials artifact created using Consumer Key and Consumer Secret of your external client app.
 
 </td>
 </tr>
@@ -229,7 +219,7 @@ Specifies the polling interval expressed in milliseconds. The polling interval a
 
 Select this option to treat errors while connecting to Salesforce as events.
 
-*Process Errors as an Event* creates message exceptions in Cloud Integration for each connection error during Salesforce Streaming. Errors that prevent Cloud Integration from picking up events via streaming are raised as a message exception in Cloud Integration. An example exception message during streaming is `Organization concurrent user limit exceeded`.
+*Process Errors as an Event* creates message exceptions in SAP Cloud Integration for each connection error during Salesforce Streaming. Errors that prevent Cloud Integration from picking up events via streaming are raised as a message exception in Cloud Integration. An example exception message during streaming is `Organization concurrent user limit exceeded`.
 
 </td>
 </tr>
@@ -292,18 +282,30 @@ There are 3 possible settings:
 
 -   *Events from latest position \(-1\)* 
 
-    Enables Cloud Integration to receive any new events. It represents `Replay ID` value `-1`. Note that the integration flow needs to be deployed and running for any new event to be received. Any event generated while the integration flow is not available will be missed.
+    Enables SAP Cloud Integration to receive any new events. It represents `Replay ID` value `-1`. Note that the integration flow needs to be deployed and running for any new event to be received. Any event generated while the integration flow is not available will be missed.
 
 -   *Events from earliest position \(-2\)*
 
-    Enables Cloud Integration to receive all events that have not yet expired. It represents `Replay ID` value `-2`.
+    Enables SAP Cloud Integration to receive all events that have not yet expired. It represents `Replay ID` value `-2`.
 
 -   *Events from a specific position*
 
-    This option gives the possibility to specify any `Replay ID`. If chosen, Cloud Integration receives all events that were created after the specified Replay ID. If the `Replay ID` is `5`, a message containing Replay Id 6, 7, 8, and so forth, is retrieved.
+    This option gives the possibility to specify any `Replay ID`. If chosen, SAP Cloud Integration receives all events that were created after the specified Replay ID. If the `Replay ID` is `5`, a message containing Replay Id 6, 7, 8, and so forth, is retrieved.
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Replay Id*
+
+</td>
+<td valign="top">
+
+Refers to the position of the event in the event stream. The *Replay Id* is populated by Salesforce and refers to the position of the event in the event stream. Note that the *Replay Id* values are not guaranteed to be continuous for consecutive events. By specifying the value of the *Replay Id*, the integration flow retrieves events that are within the retention window and that have followed the specified *Replay Id*. Example: If *Replay Id* 6 is specified, the integration flow receives all messages with a *Replay Id* greater than 6.
 
 </td>
 </tr>
@@ -327,19 +329,26 @@ Specifies the operation to perform towards Salesforce by choosing one of the pro
 </td>
 <td valign="top">
 
-Made of a Topic name preceded with a prefix. For instance, a PushTopic can be prefixed with `/topic/`. Example: `/topic/MyPushTopic`. Note that in general the names are case-sensitive.
+Made of a Topic name preceded with a prefix. For instance, a PushTopic can be prefixed with `/topic/`.
+
+Example: `/topic/MyPushTopic`. Note that in general the names are case-sensitive.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Replay Id*
+*Max Buffer Size \(in bytes\)*
 
 </td>
 <td valign="top">
 
-Refers to the position of the event in the event stream. The *Replay Id* is populated by Salesforce and refers to the position of the event in the event stream. Note that the *Replay Id* values are not guaranteed to be continuous for consecutive events. By specifying the value of the *Replay Id*, the integration flow retrieves events that are within the retention window and that have followed the specified *Replay Id*. Example: If *Replay Id* 6 is specified, the integration flow receives all messages with a *Replay Id* greater than 6.
+Specify the maximum permissible capacity \(in bytes\) of the response content, which may contain many messages.
+
+> ### Note:  
+> It is recommended to keep a minimum value of 10 MB \(which is the default value\) as suggested by Salesforce and only increase it for a high volume scenario.
+
+
 
 </td>
 </tr>
@@ -351,7 +360,7 @@ Refers to the position of the event in the event stream. The *Replay Id* is popu
 </td>
 <td valign="top">
 
-Specifies the version of the API to be used for retrieving data from Salesforce. The default version is 51.0.
+Specifies the version of the API to be used for retrieving data from Salesforce.
 
 </td>
 </tr>
@@ -363,7 +372,7 @@ Specifies the version of the API to be used for retrieving data from Salesforce.
 </td>
 <td valign="top">
 
-Specifies the format of the request message to be sent to and the response to be returned from Salesforce. Possible values include *Application/XML* and *Application/JSON*. Note that the default value is *Application/XML* 
+Specifies the format of the request message to be sent to and the response to be returned from Salesforce. Possible values include *Application/XML* and *Application/JSON*. Note that the default value is *Application/XML*.
 
 </td>
 </tr>
@@ -379,5 +388,59 @@ Select the *Pretty Print* option to have the XML payload nicely formatted and it
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Subscription Mechanism*
+
+</td>
+<td valign="top">
+
+Select the subscription mode to choose single/multi node subscriptions model:
+
+-   *Subscribe on all runtime nodes* creates a subscription for every runtime node in the tenant
+-   *Subscribe one one runtime node* creates a single subscription on one worker node, regardless of the number of runtime nodes.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Subscription Behaviour on Reset*
+
+</td>
+<td valign="top">
+
+Select the subscription behavior on reset:
+
+-   *Replay from last processed message* restarts the subscription from the last replay ID successfully consumed by the iFlow.
+-   *Replay from UI Configured Value* restarts from the replay ID defined in the Replay ID approach setting.
+
+> ### Note:  
+> Resubscription may occur due to many reasons such as errors in the subscription listener, restart of worker node, redeployment of iFlow etc.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Network Control \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum network delay for subscription. This is the maximum time \(in milliseconds\) the client will wait for a response to a connect request before timing out.
+
+</td>
+</tr>
 </table>
+
+**Related Information**  
+
+
+[SAP Blog: Understanding Subscription Behavior in the Salesforce Adapter](https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-subscription-behavior-in-the-salesforce-adapter/ba-p/14380624)
 

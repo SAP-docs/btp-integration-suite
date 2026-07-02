@@ -19,11 +19,15 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
 
 ## Procedure
 
-1.  Click the tile in the *Manage Security Material* section.
+1.  Choose *Monitor*.
 
-2.  Choose *Create* \> *OAuth2 Authorization Code*.
+2.  Click the *Security Material* tile in the *Manage Security* section.
 
-3.  Specify the following attributes:
+3.  Choose *Add*.
+
+4.  As *Type*, select *OAuth2 Authorization Code*.
+
+5.  Specify the following attributes:
 
     ****
 
@@ -123,7 +127,7 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     </td>
     <td valign="top">
     
-    Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth2.0 Authorization Code Grant](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/oauth-2-0#loio508a70db7eac4addbb6ac69a06d46e79) 
+    Displays the URL you need, when creating the OAuth Clients/App im OAuth Authorization Server/Token Server. For more information, see [OAuth 2.0 Authorization Code Grant](../ConnectionSetup/oauth-2-0-3823134.md#loio508a70db7eac4addbb6ac69a06d46e79).
     
     </td>
     </tr>
@@ -211,7 +215,7 @@ You can edit and deploy an OAuth2 Authorization Code. See also: [OAuth 2.0](../C
     </tr>
     </table>
     
-4.  Choose *Deploy*.
+6.  Choose *Deploy*.
 
 
 **Related Information**  

@@ -4,16 +4,13 @@
 
 There is a wide range of integration capabilities that define different ways how messages can be processed on the integration platform and exchanged between sender and receiver systems.
 
-> ### Remember:  
-> There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
-
-SAP Cloud Integration supports various integration patterns, or ways how applications can be integrated with each other.
+Cloud Integration supports various integration patterns, or ways how applications can be integrated with each other.
 
 The following figure illustrates, as one example, the routing pattern, that allows you to forward a message from one participant to multiple receivers.
 
 ![](images/HCI_Integration_Pattern_Routing_4a51110.png)
 
-When using SAP Cloud Integration, you specify the desired integration pattern by adding a dedicated **integration flow step** or a combination of various integration flow steps to an integration flow.
+When using Cloud Integration, you specify the desired integration pattern by adding a dedicated **integration flow step** or a combination of various integration flow steps to an integration flow.
 
 The following table lists the available integration capabilities, arranged by the related integration flow step types.
 
@@ -159,21 +156,6 @@ Encoder
 <td valign="top">
 
 Encodes the message using an encoding scheme to secure any sensitive message content during transfer over the network.
-
--   *Base64 Encode*
-
-    Encodes the message content using base64.
-
--   *GZIP Compress*: Compresses the message content using GNU zip \(GZIP\).
-
--   *ZIP Compress*: Compresses the message content using zip \(only zip archives with a single entry supported\).
-
--   *MIME Multipart Encode*: Transforms the message content into a MIME multipart message.
-
-    If you want to send a message with attachments, but the protocol \(for example, HTTP or SFTP\) does not support attachments, you can send the message as a MIME multipart instead.
-
-    > ### Note:  
-    > Note that SAP Cloud Integration does not support the processing of MIME multipart messages that contain multiple attachments with the same file name.
 
 
 
@@ -397,6 +379,8 @@ Supported splitters:
 
 -   Zip splitter: Splits an inbound archive file \(.zip\) into individual files.
 
+-   Tar splitter: Splits an archive \(.tar\) file into individual files.
+
 
 Certain constraints apply with regard to the supported data formats \(as described in the product documentation\).
 
@@ -615,7 +599,7 @@ Mapping transforms \(maps\) sender into receiver data structures.
 
 In scenarios spanning different application systems or different organizations and enterprises, it is very likely that the structure of the data exchanged between two participants will differ on both sides of a connection due to business-related reasons. To enable a seamless exchange of data, the data structures on both sides of a connection have to be transformed \(or: mapped\) into each other. There is the option to apply structural mapping of XML documents.
 
-You can re-use existing on-premise content \(service interfaces / message mappings / operation mappings / XSLT based mappings\) from an SAP Enterprise Services Repository \(EHP 1 for SAP NetWeaver 7.3\).
+You can re-use existing on-premise content \(service interfaces / message mappings / operation mappings / XSLT based mappings\) from an SAP Enterprise Services Repository.
 
 Value mappings allow you to map different representations of an object to each other.
 
@@ -623,23 +607,4 @@ Value mappings are useful when performing a dynamic value lookup of an object th
 
 > ### Note:  
 > For example: You can use a value mapping to map a Merchant ID to a Customer ID, where Merchant ID is an external application representation of a customer, while Customer ID is an internal SAP representation.
-
-**Related Information**  
-
-
-[Working with Mapping](../Development/working-with-mapping-68d816a.md "")
-
-[Define Events](../Development/define-events-4c33ae8.md "")
-
-[Define Routing Steps](../Development/define-routing-steps-ad0a19a.md "Message routers enable you to define the message path. You can also perform operations like splitting the message based on configured conditions and routing the split messages to different message paths.")
-
-[Define Message Transformer Steps](../Development/define-message-transformer-steps-e223071.md "Message transformers convert messages in one format to another.")
-
-[Define Security-Related Steps](../Development/define-security-related-steps-0f71687.md "")
-
-[Define Message Persistence Steps](../Development/define-message-persistence-steps-cd48445.md "You can define steps to access the tenant database.")
-
-[Validating Message Payload against XML Schema](../Development/validating-message-payload-against-xml-schema-360dc70.md "The XML validator validates the message payload in XML format against the configured XML schema.")
-
-[Define Call Steps](../Development/define-call-steps-376619d.md "You can define various steps that execute a call into a remote (external) component or into a sub process of the integration flow.")
 

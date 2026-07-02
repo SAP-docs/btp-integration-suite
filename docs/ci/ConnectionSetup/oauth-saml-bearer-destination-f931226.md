@@ -15,9 +15,8 @@ To configure the scenario, an OAuth2SAMLBearerAssertion destination has to be sp
 
 More information:
 
-[SAML Assertion Authentication](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/saml-assertion-authentication?state=DRAFT&q=assertion%20authentication)
-
-[Principal Propagation to OAuth-Protected Applications](https://help.sap.com/docs/btp/sap-btp-neo-environment/principal-propagation-to-oauth-protected-applications?version=Cloud)
+-   [SAML Assertion Authentication](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/saml-assertion-authentication?state=DRAFT&q=assertion%20authentication)
+-   [Principal Propagation to OAuth-Protected Applications](https://help.sap.com/docs/btp/sap-btp-neo-environment/principal-propagation-to-oauth-protected-applications?version=Cloud)
 
 > ### Note:  
 > This option is supported for the following sender adapter types: SOAP \(SOAP 1.x\), SOAP \(SAP RM\), HTTPS, and OData.
@@ -43,7 +42,7 @@ Perform the following steps for both the sender and receiver account:
 
 To configure the settings, go to SAP BTP cockpit and choose *Security* \> *Trust*.
 
-Proceed as described under ID Federation with the Corporate Identity Provider[Application Identity Provider](https://help.sap.com/docs/btp/sap-btp-neo-environment/application-identity-provider?version=Cloud#loiob6cfc4bb4bff4ace90afc71b0962fcb5).
+Proceed as described under ID Federation with the[Application Identity Provider](https://help.sap.com/docs/btp/sap-btp-neo-environment/application-identity-provider?version=Cloud#loiob6cfc4bb4bff4ace90afc71b0962fcb5).
 
 
 
@@ -53,7 +52,7 @@ Configure the OAuth settings for the receiver account. In this way, you register
 
 Go to SAP BTP cockpit and choose *Security* \> *OAuth* \(*Clients* tab\).
 
-Proceed as described under Configuring OAuth 2.0[OAuth 2.0 Configuration](https://help.sap.com/docs/btp/sap-btp-neo-environment/oauth-2-0-configuration?version=Cloud).
+Proceed as described under [OAuth 2.0 Configuration](https://help.sap.com/docs/btp/sap-btp-neo-environment/oauth-2-0-configuration?version=Cloud).
 
 Note the following specific settings:
 

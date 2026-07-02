@@ -20,7 +20,7 @@ You can also configure Cloud Integration to use your own custom identity provide
 
 More information:
 
-[Persona](../SecurityNeo/persona-2937e5c.md)
+[Personas](../SecurityNeo/personas-2937e5c.md)
 
 
 
@@ -162,7 +162,7 @@ More information:
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="4b3bb3b1f4784cdbaf6ab103c18ea4a8.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/58ff94fc64784e3d9e53f357f08a0bce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="4b3bb3b1f4784cdbaf6ab103c18ea4a8.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/58ff94fc64784e3d9e53f357f08a0bce.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Connecting a Customer System to Cloud Integration](../ConnectionSetup/connecting-a-customer-system-to-cloud-integration-7cfe913.md "You can set up the technical connection between a tenant and different kinds of remote systems (in many cases located in the customer landscape).")
 

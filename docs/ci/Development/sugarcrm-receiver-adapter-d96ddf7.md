@@ -11,7 +11,7 @@ The SugarCRM receiver adapter enables an SAP Cloud Integration tenant to acceler
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -34,13 +34,16 @@ You configure the receiver channel with the SugarCRM adapter to enable your tena
 
 
 > ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/SugarCRMAdapter?section=Overview).
+> For Neo environment:
 > 
-> After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
+> 1.  Download the adapter from SAP Software Download Center.
 > 
-> -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
+> 2.  After you complete the download, uncompress and extract the files to your local system. Then import and deploy the adapter on your tenant. For more information, see [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
 > 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information see, [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
+> 
+> You can find more information on the download navigation path [here](https://api.sap.com/package/SugarCRMAdapter/overview).
+> 
+> In the Cloud Foundry environment, you can trigger auto-import and auto-deploy of the adapter. For more information, see [Consuming Integration Adapters from SAP Business Accelerator Hub](consuming-integration-adapters-from-sap-business-accelerator-hub-b9250fb.md).
 
 Once you’ve created a receiver channel and selected the SugarCRM adapter, you can configure its parameters by referring the following description:
 

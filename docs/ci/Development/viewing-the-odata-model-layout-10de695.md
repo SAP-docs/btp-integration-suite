@@ -19,10 +19,10 @@ You can use this procedure to view the overall layout of an OData model in the G
 
 ## Procedure
 
-1.  Choose *Graphical Model Viewer* \(<span class="SAP-icons"></span>\) on the Service Designer page. The OData model is rendered in a graphical format.
+1.  Choose *Graphical Model Viewer* \(<span class="SAP-icons-V5"></span>\) on the Service Designer page. The OData model is rendered in a graphical format.
 
     You can use the navigation control and viewing options to customize your viewing preferences. For more information, see [Graphical Model Viewer Features](graphical-model-viewer-features-a53aeed.md).
 
-2.  Choose *Back* \(<span class="SAP-icons"></span>\) to get back to the Service Designer page.
+2.  Choose *Back* \(<span class="SAP-icons-V5"></span>\) to get back to the Service Designer page.
 
 

@@ -40,7 +40,7 @@ Speakers;HT-1091;0.1300;KG;m;0.1750;0.1100;1.400;Blaster Extreme
 
 This message is now to be transformed into an XML message. The CSV to XML Converter flow step is configured as follows.
 
-An XSD file has been selected that fits to the parameter names of the CSV format. If you click the *Select* button, you've the option to upload an XSD file from the file system. This is then added to the resources of the integration flow.
+An XSD file has been selected that fits to the parameter names of the CSV format. To provide the XML schema, choose **Select** next to the **XML Schema** field. In the dialog, choose **Upload from File System** to upload an XSD file from your local machine. The uploaded XSD is added to the integration flow resources and can then be selected for use in the converter.
 
 Each row in the CSV file creates a new `Product` node. Therefore, as *Path to Target Element in XSD* the XPath expression *Products/Product* is specified.
 

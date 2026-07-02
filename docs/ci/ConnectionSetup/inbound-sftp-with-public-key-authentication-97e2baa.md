@@ -84,7 +84,7 @@ A tenant can connect as an SFTP client to an SFTP server \(the latter either hos
 
 The following figure shows the basic setup of components used for SFTP for inbound communication \(when the data flow is directed from an SFTP server to the tenant\).
 
-![](images/Inbound_SFTP_26595de.png)
+![](images/Inbound_SFTP_959f228.png)
 
 To specify the technical details of the message flow from the SFTP sender to the tenant \(SFTP client\), a **sender SFTP adapter** has to be configured for the related integration flow.
 

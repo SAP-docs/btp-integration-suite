@@ -4,7 +4,7 @@
 
 # ODC Receiver Adapter
 
-he ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.
+The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.
 
 > ### Note:  
 > In the following cases certain features might not be available for your current integration flow:
@@ -13,7 +13,7 @@ he ODC adapter enables you to communicate with systems that expose data through 
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -106,7 +106,7 @@ enter the version of the service.
 </td>
 <td valign="top">
 
-Select the tuthentication method you want to use for connecting to the system.
+Select the authentication method you want to use for connecting to the system.
 
 -   `Basic Authentication`
 

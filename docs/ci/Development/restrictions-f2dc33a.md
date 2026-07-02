@@ -73,7 +73,7 @@ Configure only one outgoing sequence flow and parallel processing using a multic
 
 The following step types include *transactional database processing*.
 
-If one of the below listed steps is contained in an integration flow, the processing of the message is executed in one transaction.
+If one of the following listed steps is contained in an integration flow, the processing of the message is executed in one transaction.
 
 -   Data Store Operations step
 
@@ -96,7 +96,7 @@ If one of the below listed steps is contained in an integration flow, the proces
 > ### Caution:  
 > Such steps might lead to resource shortages because long running transactions can cause node instability and impede other processes that are running in transactions.
 > 
-> Some of the above mentioned steps or adapters persist data in the database. In case of an error, the whole process is rolled back and the original state is being re-established. That means, data from failed processes remain and, in case message processing fails, customers normally cannot access data about the failed processing \(due to the roll-back\).
+> Some of the above mentioned steps or adapters persist data in the database. In case of an error, the whole process is rolled back and the original state is being reestablished. That means, data from failed processes remain and, in case message processing fails, customers normally cannot access data about the failed processing \(due to the roll-back\).
 > 
 > In case an error is propagated back to the calling component, all data that have been written in the course of the \(failed\) transaction are being removed \(in other words: not persisted in the database\). For the calling component, an error implies, therefore, to restart the integration flow.
 > 

@@ -25,8 +25,6 @@ For more information, check out:
 -   [Cloud Integration on CF – How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2019/08/14/cloud-integration-on-cf-how-to-setup-secure-http-inbound-connection-with-client-certificates/) \(SAP Community blog\)
 
 
-In detail, perform the following steps:
-
 
 
 <a name="loio7f84d16aa42741efb08dc9875743e47c__steps_kwy_4st_5hb"/>
@@ -198,6 +196,10 @@ In detail, perform the following steps:
     </tr>
     </table>
     
+    If you use an external certificate, the certificate needs to be signed by a certification authority that is supported by the load balancer.
+
+    See: [Load Balancer Root Certificates Supported by SAP](load-balancer-root-certificates-supported-by-sap-4509f60.md)
+
 4.  Configure the sender system.
 
     1.  Make sure that the sender keystore contains the root certificate of the load balancer server certificate.
@@ -215,7 +217,7 @@ In detail, perform the following steps:
 
     1.  Go to the SAP Cloud Integration *Design* section and edit the relevant integration flow.
 
-    2.  Create a sender channel with the adapter type that supports this authentication option, and click the connection for the associated sender adapter.
+    2.  Create a sender channel with the adapter type that supports this authentication option, and select the connection for the associated sender adapter.
 
     3.  For *Authorization*choose *User Role* and specify the role. You can keep the default role name*ESBmessaging.send*. You can also select a custom role if you want to use a dedicated role to control authorization to the process the integration flow.
 
@@ -228,7 +230,7 @@ In detail, perform the following steps:
 
     4.  After you have finished configuring the integration flow, including the processing steps for your scenario, deploy the integration flow on the tenant.
 
-        To do this, save the integration flow and click *Deploy*.
+        To do this, save the integration flow and select *Deploy*.
 
 
 
@@ -249,7 +251,7 @@ With the request, the sender has to pass on a certificate chain that contains a 
     > ### Note:  
     > To enable the related HTTP client to support this authentication option, you need to format the certificate \(including the certificate chain\) and the key accordingly. In particular, make sure to replace all `\n` in the SAP-generated certificate or key by line breaks.
     > 
-    > A suitable certificate, for example, would then look like:
+    > A suitable certificate, for example, would then look like the following:
     > 
     > ```
     > -----BEGIN CERTIFICATE-----

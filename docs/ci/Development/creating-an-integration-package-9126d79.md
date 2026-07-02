@@ -19,3 +19,8 @@ Create an integration package that is specific to your integration scenario.
 5.  Navigate to other tabs of the package to explore what else you can do with the package.
 
 
+**Related Information**  
+
+
+[Creating an Integration Flow](creating-an-integration-flow-da53d93.md "Add an integration flow to an integration package.")
+

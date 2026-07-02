@@ -66,9 +66,11 @@ More information: [Keystore](../ConnectionSetup/keystore-b163513.md)
 
 ## Procedure
 
-1.  Choose the *Keystore* tile in the *Manage Security* section.
+1.  Choose *Monitor*.
 
-2.  The *Current* tab shows the keystore entries available for the tenant.
+2.  Choose the *Keystore* tile in the *Manage Security* section.
+
+3.  The *Current* tab shows the keystore entries available for the tenant.
 
     For each keystore, the single entries are displayed \(by alias\).
 
@@ -185,7 +187,7 @@ More information: [Keystore](../ConnectionSetup/keystore-b163513.md)
     </td>
     <td valign="top">
     
-    Choose the <span class="SAP-icons"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
+    Choose the <span class="SAP-icons-V5"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
 
     -   *Rename*
 

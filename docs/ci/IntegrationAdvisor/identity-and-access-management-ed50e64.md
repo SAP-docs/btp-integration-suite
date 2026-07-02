@@ -48,7 +48,7 @@ Roles Required in Application
 </th>
 <th valign="top">
 
-Roles Required in SAP BTPAccount
+Roles Required in SAP BTP Account
 
 </th>
 </tr>
@@ -149,6 +149,39 @@ Guidelines.Administrator
 Guidelines.ReadWrite
 
 Typesystem.Read
+
+</td>
+<td valign="top">
+
+None
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Content Read
+
+</td>
+<td valign="top">
+
+View and browse customer content
+
+-   Read type system libraries, message implementation guidelines, mapping guidelines, and custom type systems
+
+-   Simulate message implementation guidelines and mapping guidelines
+
+-   Export artifacts
+
+
+
+
+</td>
+<td valign="top">
+
+Typesystem.Read
+
+Guidelines.Read
 
 </td>
 <td valign="top">

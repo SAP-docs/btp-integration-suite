@@ -18,6 +18,11 @@
 
     The resource pane and editor comes up on the left and right sides respectively.
 
+    The script collection artifact consists of the following tabs:
+
+    -   *Script Collection*: Used to create and update scripts.
+    -   *Design Guidelines*: Used to view and execute the design guidelines applicable to this artifact.
+
 2.  In the resource pane, perform one of the following tasks:
 
 
@@ -33,7 +38,7 @@
 
 ## Procedure
 
-1.  In the resource pane, choose *Create* \> *Groovy Script* or *Create* \> *JavaScript* based on your requirement.
+1.  In the resource pane of the *Script Collection* tab, choose *Create* \> *Groovy Script* or *Create* \> *JavaScript* based on your requirement.
 
 2.  Enter a name for the script resource and choose *Create*.
 
@@ -56,9 +61,28 @@
 
 ## Procedure
 
-1.  In the resource pane, choose *Upload*
+1.  In the resource pane of the *Script Collection* tab, choose *Upload*
 
-2.  In the *Source* list, select one of the following options:
+2.  Choose one of the following:
+
+    -   *Archive*
+
+    -   *Groovy Script*
+
+        1.  *Script 1.x*
+
+        2.  *Script 2.x*: Groovy script 2.x is a future ready script which uses advanced groovy features and utilizes Groovy runtime 4.0.29. For more information about upgrading scripts from 1.x to 2.x see  <?sap-ot O2O class="- topic/xref " href="917e014b47094620b2616c125e1a86f3.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/ed9b52c29bd44d26ad00fcb38afb50ce.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
+            > ### Caution:  
+            > -   Ensure that you are upgrading correct versions to avoid any runtime failures.
+            > 
+            > -   When referencing Groovy scripts in a Groovy Script step, always ensure the selected script version matches the step version, else the step may be upgraded or downgraded automatically. For example, if the Groovy script step version is 1.0 and you select the version 2.x of the script resource, the step will be upgraded and vice versa.
+
+
+    -   *JavaScript*
+
+
+3.  In the *Source* list, select one of the following options:
 
     1.  *File System* – upload a file from your local machine.
 
@@ -75,5 +99,20 @@
         4.  Choose *Save* to keep the changes you made to the script collection.
 
 
+
+
+<a name="task_mvq_vyz_c2c"/>
+
+<!-- task\_mvq\_vyz\_c2c -->
+
+## Improve a Script
+
+
+
+## Procedure
+
+1.  On the *Script Collection* tab, choose the script you want to improve from the resource pane.
+
+2.  Include the guidelines highlighted in the *Problems* view to improve your script. For more information, see [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
 
 

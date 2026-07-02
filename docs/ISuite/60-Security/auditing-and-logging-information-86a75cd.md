@@ -4,7 +4,7 @@
 
 Here you can find a list of the security events that are logged by SAP Integration Suite.
 
-The documentation of the security events is grouped along the SAP Integration Suite capabilities.
+The documentation of the security events is grouped along the SAP Integration Suite capabilities. To know more about audit logging in the Cloud Foundry environment see [Audit Logging in the Cloud Foundry Environment | SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-logging-in-cloud-foundry-environment?version=Cloud).
 
 **Related Information**  
 

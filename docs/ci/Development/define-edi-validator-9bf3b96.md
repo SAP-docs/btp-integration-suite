@@ -17,6 +17,7 @@ EDI validator supports UN-EDIFACT, ODETTE and ASC-X12 document types. You use th
 > -   EDI Validator version 1.4 and above supports EDIFACT Syntax version 2 in addition to version 3 and 4.
 > -   Contact the Cloud Integration Team to obtain EDI related XSD files.
 > -   EDI Validator version 1.5 and above supports LS/LE segments.
+> -   EDI Validator version 1.7.0 and above supports same group name with different definition in XSD.
 
 
 

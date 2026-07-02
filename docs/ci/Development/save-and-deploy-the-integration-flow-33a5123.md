@@ -25,11 +25,9 @@ Save and deploy the integration flow on the tenant to process it.
     > ### Note:  
     > In case of a modeling error, instead of this message, a `Validation Failed` message is displayed. Only when you've fixed the error, the deployment of the integration flow is triggered.
 
-5.  Choose the *Operations* view to check the status of the deployment.
+5.  Choose the *Monitor* \> *Integrations and APIs* \> *Manage Integration Content* view to check the status of the deployment.
 
-6.  Select a tile in the section *Manage Integration Content*.
-
-    ![](images/Deploy_iFlow_Manage_Integration_Content_d97f504.png)
+6.  ![](images/Deploy_iFlow_Manage_Integration_Content_d97f504.png)
 
     You can check the deployment status of your integration flow.
 
@@ -43,5 +41,5 @@ Save and deploy the integration flow on the tenant to process it.
 > ### Tip:  
 > There's an alternative approach to deploy an integration flow:
 > 
-> Open the integration package that contains the integration flow to. Go to the *Artifacts* tab, select the *Actions* button \(next to the name of the integration flow that you like to deploy\) and select *Deploy*.
+> Open the integration package that contains the integration flow. Go to the *Artifacts* tab, select the *Actions* button \(next to the name of the integration flow that you like to deploy\) and select *Deploy*.
 

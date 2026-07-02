@@ -23,5 +23,5 @@ If you want to learn about the new and updated features that have been released 
 
 ## Patch Release Notes
 
-SAP Integration Suite releases patches in irregular intervals, updating the latest version of the software. For details about the patch releases, see [Patch Release Notes for SAP Integration Suite](patch-release-notes-for-sap-integration-suite-58595b5.md).
+SAP Integration Suite releases patches in irregular intervals, updating the latest version of the software. For details about the patch releases, see [Patch Release Notes for SAP Integration Suite](https://help.sap.com/viewer/8f90f23288224b23bda82af020dd0243/CLOUD/en-US/58595b51441942d2bcf6992080a613d2.html "This topic provides information on patch releases for SAP Integration Suite capabilities.") :arrow_upper_right:.
 

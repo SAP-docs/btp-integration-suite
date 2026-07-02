@@ -11,12 +11,12 @@ You use the OpenConnectors receiver adapter in integration flows to communicate 
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
-The OpenConnectors adapter connects with non-SAP cloud applications through REST APIs and is not Cross-Site Request Forgery \(CSRF\) protected. Youcan set the content-type to either JSON or XML format while processing the request or response for a transaction. The adapter also allows you to make calls using common HTTP methods on RESTful API services for outbound transactions.
+The OpenConnectors adapter connects with non-SAP cloud applications through REST APIs and is not Cross-Site Request Forgery \(CSRF\) protected. You can set the content-type to either JSON or XML format while processing the request or response for a transaction. The adapter also allows you to make calls using common HTTP methods on RESTful API services for outbound transactions.
 
 > ### Remember:  
 > OpenConnectors receiver adapter cannot process payloads that have an attachment.

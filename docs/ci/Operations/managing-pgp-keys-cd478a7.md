@@ -199,7 +199,7 @@ Download a single key as file.
 </td>
 <td valign="top">
 
-To download a dedicated key as a file, click the download button \(<span class="SAP-icons"></span>\) at the end of the row of the key.
+To download a dedicated key as a file, click the download button \(<span class="SAP-icons-V5"></span>\) at the end of the row of the key.
 
 When downloading a secret key, you need to specify the key passphrase twice.
 

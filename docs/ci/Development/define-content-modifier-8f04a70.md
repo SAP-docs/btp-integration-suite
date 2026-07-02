@@ -27,7 +27,7 @@ Note that data written to the message header during a processing step, for examp
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 
 
@@ -39,7 +39,7 @@ Note that data written to the message header during a processing step, for examp
 
 2.  If you want to add *Content Modifier* step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\)and then choose :envelope:
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\) and then choose :envelope:
 
     2.  Place *Content Modifier* step in the integration process.
 
@@ -47,7 +47,7 @@ Note that data written to the message header during a processing step, for examp
 3.  Go to the *Message Header* or *Exchange Property* tab \(depending on whether you want to modify a message header or write data to the exchange property\).
 
     > ### Note:  
-    > Name defined for an *Exchange Property* is case-sensitive. This is a known behavior of the camel framework.
+    > Name defined for an *Exchange Property* is case-sensitive. This is a known behavior of the Camel framework.
 
 4.  Choose *Add* to define a new entry.
 
@@ -285,7 +285,12 @@ Note that data written to the message header during a processing step, for examp
     </td>
     <td valign="top">
     
-    The default value is *Expression*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
+    The default value is *Constant*. If the payload contains expressions within it, then set the type as *Expression*; if the payload is huge and it has no expressions within it, then it is recommended to use the type *Constant*.
+
+    > ### Remember:  
+    > If the payload size is more than 256 KB, the system doesn't let you use the type expression. If there are actual expressions used and you can't reduce the size of the text, use a groovy script.
+
+
     
     </td>
     </tr>
@@ -437,4 +442,8 @@ As a result, the final message \(after the 2 content modifiers\) has the followi
 [Avoiding Encoding Issues](avoiding-encoding-issues-3018480.md "The integration runtime supports the following two kinds of (internal) data representations: binary data and string (sequence of characters). Conversions between these representations may cause issues that can result in erroneous message processing.")
 
 [Content Modifier Basics](content-modifier-basics-b0576a8.md "")
+
+[Smoke Test Scenario](smoke-test-scenario-8c83fcf.md "")
+
+[Smoke Test Scenario with External Data Source](smoke-test-scenario-with-external-data-source-e4bef74.md "")
 

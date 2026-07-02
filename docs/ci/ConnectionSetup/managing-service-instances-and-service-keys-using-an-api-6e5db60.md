@@ -27,9 +27,7 @@ To get the base URL for the API calls, perform the following steps:
 
 1.  Go to SAP Business Technology Platform cockpit and select your subaccount \(for which you like to manage the service instances and service keys\).
 
-2.  On the *Overview* page, go to section *Cloud Foundry Environment*.
-
-    ![](images/BTP_Cockpit_API_ENdpoint_ee6a6ff.png)
+2.  On the *Overview* page, go to section *Cloud Foundry Environment*.![](images/SAP_BTP_Cockpit_915802f.png)
 
     The *API Endpoint* entry is the base URL to use.
 
@@ -103,7 +101,7 @@ Using Postman, set up the API call in the following way:
     </td>
     <td valign="top">
     
-    Enter the address of the token server that issues tha access token to request the API endpoint.
+    Enter the address of the token server that issues the access token to request the API endpoint.
 
     Assume that your API endpoint address has the following form:
 
@@ -148,6 +146,11 @@ Using Postman, set up the API call in the following way:
     <td valign="top">
     
     Enter the password of the user.
+
+    > ### Note:  
+    > For 2 factor authentication users, enter the password and second factor authentication, for example: `<password>:<pin><rsa-code>`. This may vary depending on the configured second factor.
+
+
     
     </td>
     </tr>

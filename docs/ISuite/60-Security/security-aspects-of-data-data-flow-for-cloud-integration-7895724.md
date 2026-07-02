@@ -5,7 +5,7 @@
 All data in transit, either exchanged with remote components or internal, can be protected by methods such as encryption.
 
 > ### Note:  
-> Mutual TLS \(mTLS\) is equivalent to client certificate authentication. While setting up the TLS connection, client and server exchange certificates. With mTLS, not only server certificates, but also client certificates are validated based on the signatures provided by certification authorities. For more information, see [Client Certificate Authentication \(Outbound\)](../40-RemoteSystems/client-certificate-authentication-outbound-c4e4a15.md) and [Keystore](../40-RemoteSystems/keystore-b163513.md).
+> Mutual TLS \(mTLS\) is equivalent to client certificate authentication. While setting up the TLS connection, client and server exchange certificates. With mTLS, not only server certificates, but also client certificates are validated based on the signatures provided by certification authorities. For more information, see [Client Certificate Authentication (Outbound)](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/c4e4a1570d6b4896b7426f67ae053a5e.html "") :arrow_upper_right: and [Keystore](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b1635139eb1f42728e249004ae2d617b.html "Certificates and key pairs are stored in one keystore per tenant, referred to also as tenant keystore.") :arrow_upper_right:.
 
 During a scenario, the connected remote systems exchange data with each other based on the configured transport protocol. These protocols support different options to protect the exchanged data against unauthorized access. In addition to security at the transport level, the content of the exchanged messages can also be protected by means of digital encryption and signature.
 
@@ -364,11 +364,11 @@ Signing/verification of SOAP body
 
 [Connectivity (Adapters)](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/55325f2a722c4f67bb7752b369b09ff8.html "You have the option to specify which technical protocols should be used to connect a sender or a receiver to the tenant.") :arrow_upper_right:
 
-[Authentication and Authorization Options \(Inbound\)](../40-RemoteSystems/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
+[Authentication and Authorization Options (Inbound)](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/983f2a5f994146ab8daff1f97d6db3dd.html "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.") :arrow_upper_right:
 
-[Authentication Options \(Outbound\)](../40-RemoteSystems/authentication-options-outbound-58a7537.md "For outbound communication through HTTPS (when the tenant sends a message to a receiver), the following authentication options are supported.")
+[Authentication Options (Outbound)](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/58a75377cc154f44bb81c0376d330901.html "For outbound communication through HTTPS (when the tenant sends a message to a receiver), the following authentication options are supported.") :arrow_upper_right:
 
-[Certificate Management](../40-RemoteSystems/certificate-management-feb9c2f.md "")
+[Certificate Management](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/feb9c2f0213d4f20af8a23475dc4f37b.html "") :arrow_upper_right:
 
-[Message-Level Security](../40-RemoteSystems/message-level-security-463a908.md "Several standards are supported to protect the message content (message-level security).")
+[Message-Level Security](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/463a9085156d4672bc4ee9095277e453.html "Several standards are supported to protect the message content (message-level security).") :arrow_upper_right:
 

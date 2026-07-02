@@ -23,7 +23,7 @@ You use SAP Integration Suite to design integration content. However, for the de
 -   Deploying and operating the integration content in the private cloud environment of the customer \(which is referred to as Edge Integration Cell runtime, or Edge runtime for short\).
 
     > ### Note:  
-    > For more security-related information on the technical landscape when Edge Integration Cell is used, see [Technical Landscape \(Edge Integration Cell\)](../technical-landscape-edge-integration-cell-f60efc1.md).
+    > For more security-related information on the technical landscape when Edge Integration Cell is used, see [Technical Landscape (Edge Integration Cell)](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/f60efc1363f04d17bb324d7e5f203ee9.html "Get to know the system landscape and the components of Edge Integration Cell.") :arrow_upper_right:.
     > 
     > For more information about Edge Lifecycle Management security considerations, see [Security Considerations](https://help.sap.com/docs/EDGE_LIFECYCLE_MANAGEMENT/9d5719aae5aa4d479083253ba79c23f9/f69c8352d53d477394915f5ed610eba8.html).
 
@@ -101,7 +101,7 @@ Describes …
 
 [Security Aspects of Data, Data Flow for Cloud Integration](security-aspects-of-data-data-flow-for-cloud-integration-7895724.md)
 
-[Connectivity Options](../connectivity-options-93d82e8.md)
+[Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -113,9 +113,9 @@ The supported transport protocols and connectivity options
 <tr>
 <td valign="top">
 
-[Using Data Storage Features When Designing Integration Flows](../50-Development/using-data-storage-features-when-designing-integration-flows-a836b4e.md)
+[Using Data Storage Features When Designing Integration Flows](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/a836b4e38d1a45f6be7071b9b697c2a3.html "SAP Integration Suite comes with various options for storing data during the execution of an integration scenario. There are also various options for consuming such data during message processing or after message processing has finished.") :arrow_upper_right:
 
-[Data Storages](../50-Development/data-storages-31efe35.md)
+[Data Storages](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/31efe35bdf65422a8df18a08c4e4160f.html "Cloud Integration comes with the following data storage features.") :arrow_upper_right:
 
 </td>
 <td valign="top">

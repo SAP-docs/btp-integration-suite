@@ -11,7 +11,7 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -30,18 +30,34 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 
 ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
 
-
-
-### 
-
 > ### Note:  
 > This adapter does **not** support connections to FTP servers.
 > 
-> See: [FTP Adapter](ftp-adapter-4464f89.md).
+> See [FTP Adapter](ftp-adapter-4464f89.md)
 
-As a prerequisite to use this adapter, you need to set up a connection to an SFTP server as described under: [Setting Up Inbound SFTP Connections \(Details\)](../ConnectionSetup/setting-up-inbound-sftp-connections-details-e72eba4.md).
 
-[Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+
+
+
+### Prerequisite
+
+-   Set up a connection to an SFTP server as described in [Setting Up Inbound SFTP Connections \(Details\)](../ConnectionSetup/setting-up-inbound-sftp-connections-details-e72eba4.md).
+-   To develop an integraion scenario in the integration flow editor, see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+
+
+
+### Authentication Backoff
+
+Upon three consecutive authentication failures during polling, the system initiates a backoff mechanism to prevent excessive failed attempts and reduce server load.
+
+It will skip the next five polling attempts or wait for 15 minutes before the next poll, whichever is longer. Following these skipped polls, another authentication attempt is triggered. If this attempt fails, the system will skip twice as many polls as the previous skip count. This exponential backoff continues until a successful authentication. If the next polling attempt \(after skipped attempts\) fails due to a reason other than authentication, the backoff mechanism is reset and is initiated again only after three consecutive authentication failures.
+
+> ### Note:  
+> -   **Maximum Poll Interval**: If the poll skip interval reaches 24 hours, the system ensures that at least one poll occurs every 24 hours.
+> -   Exclusion: The skipping process does not apply to integration flows with a polling frequency greater than 24 hours.
+> -   **Credential** Update: If credentials are updated, you must:
+>     -   Use the [*connectivity test*](../Operations/performing-connectivity-tests-d5b2fae.md) to verify new credentials after updating the [*security material*](../Operations/managing-security-material-b8ccb53.md).
+>     -   Either [*restart*](../Operations/manage-integration-content-09a7223.md) the integration flow or wait until the system reaches the skip threshold to resume polling. Note that restarting the integration flow resets the backoff mechanism.
 
 Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
@@ -108,26 +124,38 @@ Relative path to read the file from a directory. Example: `parentdirectory/child
 <tr>
 <td valign="top">
 
+*Regex Filtering*
+
+\(Supported for adapter version 1.17 and above\)
+
+</td>
+<td valign="top">
+
+Select to evaluate the entered filename as a real[regular expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftp_regex).
+
+Else, the file name will be evaluated as a [simple expression](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftpsender_filename2).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *File Name* 
 
 </td>
 <td valign="top">
 
-Name of the file to be read.
-
-If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read.
+Name of the file to be read. If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read. When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated. For more information, see [3529367](https://me.sap.com/notes/3529367)
 
 > ### Note:  
-> **Usage of expressions and file name patterns:**
+> For simple expressions:
 > 
-> Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
+> -   Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
 > 
-> -   The expression `*` replaces no character or an arbitrary number of characters.
+> -   The expression \* replaces no character or an arbitrary number of characters.
 > 
-> -   The expression `?` replaces exactly one arbitrary character.
+> -   The expression ? replaces exactly one arbitrary character.
 > 
-> 
-> When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated.
 > 
 > Examples:
 > 
@@ -136,6 +164,13 @@ If you do not enter a file name and the parameter remains blank, all the files i
 > -   If you specify `file*.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, as well as `file.txt` and `file1234.txt`, and so on.
 > 
 > -   If you specify `file?.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, and so on, but **not** the files `file.txt` or `file1234.txt`.
+
+> ### Note:  
+> For regular expressions:
+> 
+> -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
+> -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
+> -   In the JSch library, the characters `?` and `*` and `%` are used as wild card symbols for pattern matching. File names containing these characters are treated as wild cards, which means they might not be processed as literal file names. Hence, avoid using ? and \* and % in file names.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:
@@ -174,10 +209,79 @@ Proxy type that you are using to connect to the target system.
 
 -   Select *Internet* if you are connecting directly to the SFTP server.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
+
 -   Select *On-Premise* if you are connecting to an on-premise SFTP server.
 
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type* and if *HTTP* or *SOCKS Version 5* is selected for *Proxy Protocol*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>
@@ -198,59 +302,7 @@ To connect to an SAP Cloud Connector instance associated with your account, ente
 <tr>
 <td valign="top">
 
-*Authentication* 
-
-</td>
-<td valign="top">
-
-Authentication option for the connection to the SFTP server. You've the following options:
-
--   *Public Key*
-
-    SFTP server authenticates the calling component \(tenant\) based on a public key.
-
--   *User Name/Password*
-
-    SFTP server authenticates the calling component \(tenant\) based on the user name and password. To make this configuration setting work, you need to define the user name and password in a *User Credential* artifact and deploy the artifact on the tenant.
-
--   *Dual*
-
-    SFTP server authenticates the calling component \(tenant\) with two authentication methods: based on a public key and based on user credentials.
-
-    At runtime, the system evaluates the values of additional parameters in the following way:
-
-    -   For the authentication step based on user credentials: Credentials from the deployed artifact with the name given by the *Credential Name* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-    -   For the authentication step based on public key: User name contained in the deployed artifact with name given by the *Credential Name* parameter and the key identified by the *Private Key Alias* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-
-    If selected, you can specify the *User Credentials* artifact \(that contains user name and password\) with the *Credential Name* parameter and the key to be used from the keystore with the *Private Key Alias* parameter.
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Credential Name*
-
-\(only if *User Name/Password* or *Dual* is selected for *Authentication*\)
-
-</td>
-<td valign="top">
-
-Name of the *User Credentials* artifact that contains the user name and password.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*User Name*
-
-\(only if *Public Key* is selected for *Authentication*\)
+*User Name* 
 
 </td>
 <td valign="top">
@@ -399,7 +451,105 @@ Prevents files that are in the process of being written from being read from the
 <tr>
 <td valign="top">
 
-*Sorting* 
+*Read Lock Check Interval*\(in ms\)
+
+</td>
+<td valign="top">
+
+Specify the interval value \(in milliseconds\) used for pausing between attempts to acquire the read lock.
+
+The timeout value for this **Read Lock** is four times the interval value. This timeout defines the maximum waiting time to acquire a read lock on a file before skipping it, ensuring that the file is not consumed while being written. If the lock cannot be acquired within this timeout, file processing is skipped and attempted again during the next polling cycle.
+
+> ### Caution:  
+> Avoid setting the interval value:
+> 
+> -   Too high as it can result in longer times to acquire the read lock and may also delay subsequent polling cycles.
+> -   Too low as it may cause files to be skipped during polling. The recommended minimum value is **100 ms**.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Empty File Handling* 
+
+</td>
+<td valign="top">
+
+Specify the protocol for managing empty files i.e., files with 0 bytes.
+
+-   *Process Empty File*: Processes the empty files through the integration flow like any other files.
+
+-   *Skip Empty File*: Bypasses the empty files, without generating [Message Processing Log](../Operations/message-processing-log-b32f8cd.md) or executing any post-processing.
+-   *MPL With Post Processing Only*: Excludes the files from primary processing while still generating a [Message Processing Log](../Operations/message-processing-log-b32f8cd.md) and executing post-processing tasks, such as moving, archiving, or deleting the files, as selected from the [*Post-Processing*](configure-the-sftp-sender-adapter-2de9ee5.md#loio2de9ee58737247969eb7dc9e68b1b121__sftp_sender_postprocessing) options.
+
+    > ### Note:  
+    > Use *MPL With Post Processing Only* when you want to maintain traceability of empty files without triggering the main integration logic making it ideal for audit or archival purposes.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Poll on One Worker Only* 
+
+</td>
+<td valign="top">
+
+In case the integration flow is deployed on multiple worker nodes, each worker node is connected as separate consumer to the SFTP server.
+
+When this option is selected, the polling process is performed on a single worker node at a time. This feature is important in scenarios when either the processing order of files is relevant or if you want to restrict the number of parallel connections to the SFTP server.
+
+> ### Note:  
+> This parameter determines how the parameters *Sorting* and *Max. Messages per Poll* influence message processing at runtime in the following way:
+> 
+> It is important to know that:
+> 
+> -   The SFTP server provides the files in an order that is not controlled by SAP Cloud Integration.
+> 
+> -   The order of messages is only maintained per worker.
+> 
+> -   The technical communication between workers prevents processing of the same file on multiple workers.
+> 
+> 
+> Therefore, the setting of this parameter has the following impact on how the two other parameters behave at runtime, as explained under  <?sap-ot O2O class="- topic/xref " href="95bb34ab3856474eb6a7bae93160cd0b.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2de9ee58737247969eb7dc9e68b1b121.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Stop on Exception*
+
+Only if *Poll on One Worker Only* is enabled
+
+</td>
+<td valign="top">
+
+Select to stop the processing of the current file batch if any exception or error is encountered. The polling will be resumed in the next polling cycle.
+
+If you use an [Exception Subprocess](define-exception-subprocess-690e078.md) with *Stop on Exception* enabled, ensure to end it with an *Error End* event. This is to ensure that the exceptions are not suppressed, in-turn disabling *Stop on Exception*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sorting*
+
+This field is enabled only if *Poll on One Worker Only* is checked.
+
+> ### Note:  
+> From adpater version 1.16 onwards, the *Sorting* field is accessible only when *Poll on One Worker Only* is enabled.
+
+
 
 </td>
 <td valign="top">
@@ -411,14 +561,6 @@ Select the type of sorting to use to poll files from the SFTP server:
 -   *File Name*: Files are polled sorted by file name.
 -   *File Size*: Files are polled sorted by file size.
 -   *Time Stamp*: Files are polled sorted by the modification time stamp of the file.
-
-> ### Note:  
-> In this context, it is important to know that the SFTP server provides the files in an order that is not controlled by Cloud Integration. Before evaluating the *Sorting* setting, the system determines the maximum number of messages to be read from the SFTP server per poll \(as configured by the *Max. Messages per Poll* parameter\). For example, if there are 1000 files on the SFTP server and for *Max. Messages per Poll* you have specified `500`, the SFTP adapter reads the first 500 files from the SFTP server and, after this step, sorts these files according to the *Sorting* settings.
-
-> ### Caution:  
-> Be aware that a definitive, controlled sequence of messages cannot be achieved even if the processing parameters have been configured correctly because, usually in scenarios, multiple worker nodes are polling and processing messages in parallel and independently of each other.
-> 
-> Since the order of messages is only maintained per worker and the only communication between workers occurs to prevent the processing the same file on multiple workers, users can run into a situation in which messages that are later in the sorting order can overtake other messages which are currently being processed on a different worker. This disturbs the sequence of messages.
 
 
 
@@ -462,6 +604,9 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 > 
 > Set the value for *Max. Messages per Poll* to a small number larger than `0` \(for example, `20`\). This ensures proper logging of the message processing status at runtime.
 
+> ### Note:  
+> If there’s an error during message processing, the system continues to process the next messages in the same polling batch \(see option *Max. Messages per Poll*\). After the batch is completed, the erroneous message may be processed again. Therefore, processing is not achieved in the original order anymore. If you rely on strict “in order” processing, you need to set *Max. Messages per Poll* to `1`. However, note that this comes with a negative performance impact, in particular, if there’s a large numbers of files on the SFTP server.
+
 
 
 </td>
@@ -474,7 +619,7 @@ The system uses locks to ensure that each file from the SFTP server is only proc
 </td>
 <td valign="top">
 
-Specify how long to wait before trying to process the file again in the event of a Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
+Specify how long to wait before trying to process the file again in the event of SAP Cloud Integration outage. If it takes a very long time to process the scenario, you may need to increase the timeout to avoid parallel processing of the same file. This value should be higher than the processing time required for the number of messages specified by *Max. Messages per Poll*.
 
 Default: `15`
 
@@ -489,6 +634,8 @@ Default: `15`
 <td valign="top">
 
 Select this option to change directory levels one at a time.
+
+To learn more, refer to [Stepwise changing directories](https://camel.apache.org/components/4.8.x/ftp-component.html#_stepwise_changing_directories).
 
 </td>
 </tr>
@@ -550,11 +697,11 @@ You can select one of the following options:
 
 -   *Keep File and Mark as Processed in Idempotent Repository*: Prevents a file from being consumed twice. For that purpose, an idempotent repository is activated.
 
-    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
+    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When SAP Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
 
     Select this option for SFTP servers that do not allow deletion or moving of files, but the files are to be read only once.
 
-    Note that when you choose this option, the system only takes into account the file name to decide whether it is the same file or not. Attributes such like file size, timestamp, hash value, for example, are ignored.
+    \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.Note that when you choose this option, the system only takes into account the file name to decide whether it is the same file or not. Attributes such like file size, timestamp, hash value, for example, are ignored. \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
 
     If you have also selected *Done File Expected* as *Read Lock Strategy*, an entry will be created in the idempotent repository; the done file will not be deleted.
 
@@ -610,6 +757,54 @@ You can select one of the following idempotent repository options:
 Specifies the target directory where to move the file.
 
 Make sure that you specify a relative file path for the target directory. Note that the specified file path is defined relative to the directory specified with the *Directory* parameter. If you specify an absolute file path, it may occur that the file cannot be stored correctly at runtime. You can also specify the target directory dynamically, for example, using the timestamp of the message. The following example uses backup folders with timestamps and replaces the file extension with `bak: backup/${date:now:yyyyMMdd}/${file:name.noext}.bak`.
+
+</td>
+</tr>
+</table>
+
+Select the *Conditions* tab and provide values in the field as follows.
+
+**Conditions**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum File Size
+
+</td>
+<td valign="top">
+
+This parameter allows you to configure the maximum allowed file size in megabytes \(MB\).
+
+> ### Note:  
+> This feature is supported in SFTP Sender Adapter Version 1.15 and above.
+
+The file size limit :
+
+-   Default Value: 40 MB
+
+-   Minimum Value: 0 MB
+-   Maximum Value: 2024 MB
+
+**Polling Criteria:**
+
+File size must be less than or equal to the configured Maximum File Size. Files exceeding the maximum size will be ignored.
+
+If a file is ignored due to exceeding the Maximum File Size limit, use the Connectivity Test feature to verify the actual file size on the server. Refer to SAP Note [3519063](https://me.sap.com/notes/3519063) for more information.
 
 </td>
 </tr>
@@ -732,6 +927,52 @@ Monthly
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="2">
+
+*Advanced*
+
+\(Option is available for adapter version 1.20 and above\)
+
+</td>
+<td valign="top">
+
+-   *Seconds*
+
+-   *Minutes*
+
+-   *Hours*
+
+-   *Days*
+
+-   *Months*
+
+-   *Years*
+
+
+
+
+</td>
+<td valign="top">
+
+Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule is a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
+
+With the *Advanced* scheduler option, you can configure complex and granular schedules using a combination of various units of time measurement. For example, the last day of the month, the last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample use cases, read the [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-integration-suite-advanced-scheduler-configuration/ba-p/13564143).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time Zone*
+
+</td>
+<td valign="top">
+
+The time zone that you want to use as a reference for the configured date and time.
 
 </td>
 </tr>

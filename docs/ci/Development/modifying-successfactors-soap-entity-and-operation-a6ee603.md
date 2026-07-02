@@ -188,7 +188,7 @@ You use the following procedure to change the entity and modify the operation fo
     > ### Note:  
     > You can select multiple fields by selecting their respective checkboxes. Choose the operation you want to perform.
 
-6.  If you want to specify filter conditions, choose the <span class="SAP-icons"></span> icon, select the operation you want to use, and perform the following substeps:
+6.  If you want to specify filter conditions, choose the <span class="SAP-icons-V5"></span> icon, select the operation you want to use, and perform the following substeps:
 
     1.  In the *Filter By* field, enter the fields that you want to filter.
 
@@ -203,7 +203,7 @@ You use the following procedure to change the entity and modify the operation fo
     6.  Choose :gear: ** \> *Add* to add more than one filter condition.
 
 
-7.  If you want to specify sorting conditions, choose <span class="SAP-icons"></span> and perform the following substeps:
+7.  If you want to specify sorting conditions, choose <span class="SAP-icons-V5"></span> and perform the following substeps:
 
     1.  In the *Field* field, enter the field on which you want to do the sorting.
 

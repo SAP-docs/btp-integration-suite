@@ -11,5 +11,5 @@ Provision a Cloud Integration tenant and receive a consumer-specific URL to acce
 ## Prerequisites
 
 > ### Note:  
-> You can neither provision a new tenant using your exisitng Process Integration or Cloud Integration subscription nor subscribe to Cloud Integration anymore. For a new subscription of Cloud Integration, subscribe to SAP Integration Suite. See: [Initial Setup of SAP Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/3dcf507f92f54597bc203600bf8f94c5.html?version=CLOUD).
+> You can neither provision a new tenant using your existing Process Integration or Cloud Integration subscription nor subscribe to Cloud Integration anymore. For a new subscription of Cloud Integration, subscribe to SAP Integration Suite. See: [Initial Setup of SAP Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/3dcf507f92f54597bc203600bf8f94c5.html?version=CLOUD).
 

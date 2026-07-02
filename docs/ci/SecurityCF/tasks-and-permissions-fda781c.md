@@ -4,6 +4,8 @@
 
 The following table provides an overview of which roles are required in order to accomplish the various tasks related to Cloud Integration. It's also indicated in how far the tasks and roles are relevant for the main persona defined for Cloud Integration.
 
+
+
 In the different environments, these persona are mapped to different objects.
 
 -   In the Neo environment, a persona is realized by an authorization group \(beginning with the string *AuthGroup*\).
@@ -11,13 +13,15 @@ In the different environments, these persona are mapped to different objects.
 -   In the Cloud Foundry environment, a persona ia realized by a role collection.
 
 
-The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Persona](../SecurityNeo/persona-2937e5c.md).
+The mapping of the persona to the authorization groups \(Neo\) or role collections \(Cloud Foundry\) is described under [Personas](../SecurityNeo/personas-2937e5c.md).
 
 In the different environments, the permissions to execute certain tasks are given by different objects.
 
 -   In the Neo environment, a permission to execute a task is given by a role.
 
 -   In the Cloud Foundry environment, a permission to execute a task is given by a role template.
+
+
 
 
 **Tasks and Permissions**
@@ -256,6 +260,8 @@ WebToolingWorkspace.Read
 
 WebTooling.IntegrationFlowConfigure
 
+WebToolingWorkspace.RuntimeConfigure
+
 </td>
 <td valign="top">
 
@@ -288,6 +294,8 @@ NodeManager.read
 GenerationAndBuild.generationandbuildcontent
 
 NodeManager.deploycontent
+
+WebToolingWorkspace.RuntimeConfigure
 
 </td>
 <td valign="top">
@@ -432,6 +440,70 @@ AuthGroup\_TenantPartnerDirectoryConfigurator
 <td valign="top">
 
 Partner Directory configurator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Design
+
+</td>
+<td valign="top">
+
+Delete design time artifact locks
+
+</td>
+<td valign="top">
+
+WebToolingWorkspace.Read
+
+WorkspaceArtifactLocks.Delete
+
+</td>
+<td valign="top">
+
+WorkspaceArtifactLocksDelete
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Design
+
+</td>
+<td valign="top">
+
+Read design time artifact locks
+
+</td>
+<td valign="top">
+
+WebToolingWorkspace.Read
+
+WorkspaceArtifactLocks.Read
+
+</td>
+<td valign="top">
+
+WorkspaceArtifactLocksRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
 
 </td>
 </tr>
@@ -715,6 +787,68 @@ Monitor
 </td>
 <td valign="top">
 
+View user roles
+
+</td>
+<td valign="top">
+
+Roles.Read
+
+</td>
+<td valign="top">
+
+MonitoringDataRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Create, edit, delete user roles
+
+</td>
+<td valign="top">
+
+n.a.
+
+</td>
+<td valign="top">
+
+UserRolesEdit
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
 View deployed security material
 
 </td>
@@ -909,7 +1043,7 @@ Monitor
 </td>
 <td valign="top">
 
-Download keystore, public/prviate keyring, known host, .. artifact
+Download keystore, public/private keyring, known host, artifact
 
 </td>
 <td valign="top">
@@ -1117,7 +1251,7 @@ AccessPolicies.Read
 </td>
 <td valign="top">
 
- 
+AccessPoliciesRead
 
 </td>
 <td valign="top">
@@ -1150,7 +1284,7 @@ AccessPolicies.Write
 </td>
 <td valign="top">
 
- 
+AccessPoliciesEdit
 
 </td>
 <td valign="top">
@@ -1291,6 +1425,35 @@ Monitor
 </td>
 <td valign="top">
 
+Configure data stores and queues
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ESBDataStore.Config
+
+</td>
+<td valign="top">
+
+DataStoresAndQueuesConfig
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
 View payload of stored messages from message store
 
 </td>
@@ -1396,7 +1559,7 @@ Monitor
 
 Override access policies
 
-Get access to data \(for example, JMS queues, message processing log attachments\) although the data is protected by access policies. Note that when this role is assigned to a user, it overrides all access policies that might prevent the user from accessing data processed by certain artifacts \(for example, integration flows\). However, the role AccessPoliciesArtifacts.AccessAll doesn't grant permission to access payload data.
+Get access to data \(for example, JMS queues, message processing log attachments\) although the data is protected by access policies. Note that when this role is assigned to a user, it overrides all access policies that might prevent the user from accessing data processed by certain artifacts \(for example, integration flows\). However, this role doesn't grant permission to access payload data.
 
 </td>
 <td valign="top">
@@ -1406,7 +1569,7 @@ AccessPoliciesArtifacts.AccessAll
 </td>
 <td valign="top">
 
-AccessPoliciesArtifacts.AccessAll
+AccessAllAccessPoliciesArtifacts
 
 </td>
 <td valign="top">
@@ -1423,7 +1586,7 @@ Monitor
 </td>
 <td valign="top">
 
-Add/Edit/undeploy number ranges
+Add, edit, or undeploy number ranges, and undeploy integration flows
 
 </td>
 <td valign="top">
@@ -1474,6 +1637,35 @@ Integration Developer
 Business Expert
 
 Read-Only Persona/System Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Activate or deactivate queues
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ESBDataStore.Activate
+
+</td>
+<td valign="top">
+
+QueuesActivate
+
+</td>
+<td valign="top">
 
 Tenant Administrator
 
@@ -1619,6 +1811,35 @@ Monitor
 </td>
 <td valign="top">
 
+Access the ID Mapper \(using the `Message Processing Logs` OData API\).
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+MessageProcessingLocks.Read
+
+</td>
+<td valign="top">
+
+MessageProcessingLocksRead
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
 Delete runtime processing locks
 
 </td>
@@ -1668,6 +1889,70 @@ CredentialsRead
 <td valign="top">
 
 Integration Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Activate external logging
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ExternalLogging.Activate
+
+</td>
+<td valign="top">
+
+ExternalLoggingActivate
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Monitor
+
+</td>
+<td valign="top">
+
+Read the activation state of external logging
+
+</td>
+<td valign="top">
+
+IntegrationOperationServer.read
+
+ExternalLoggingActivation.Read
+
+</td>
+<td valign="top">
+
+ExternalLoggingActivationRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
 
 Tenant Administrator
 
@@ -1893,6 +2178,101 @@ Tenant Administrator
 <tr>
 <td valign="top">
 
+Monitor
+
+</td>
+<td valign="top">
+
+Read data metrics for the health check monitoring API. This covers, for example, JMS queue statistics, certificate expiry dates\)
+
+</td>
+<td valign="top">
+
+ESBDataStore.read
+
+NodeManager.read
+
+ResourceUsageData.Read
+
+</td>
+<td valign="top">
+
+HealthCheckMonitoringDataRead
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Operate
+
+</td>
+<td valign="top">
+
+Get read-only access to Operations Cockpit.
+
+The Operations Cockpit is the central control point for operating edge integration cells and allows the administrator to monitor and adjust system configurations and resources.
+
+</td>
+<td valign="top">
+
+n.a.
+
+</td>
+<td valign="top">
+
+IntegrationCellOperationCockpitRead
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+Business Expert
+
+Read-Only Persona/System Developer
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Operate
+
+</td>
+<td valign="top">
+
+Get full access to the Operations Cockpit.
+
+The Operations Cockpit is the central control point for operating edge integration cells and allows the administrator to monitor and adjust system configurations and resources.
+
+</td>
+<td valign="top">
+
+n.a.
+
+</td>
+<td valign="top">
+
+IntegrationCellOperationCockpitWrite
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Inspect
 
 \(only when using SAP Cloud Integration in the Cloud Foundry environment\)
@@ -1933,7 +2313,7 @@ Settings
 </td>
 <td valign="top">
 
-View/change runtime profile
+View and change runtime profile
 
 </td>
 <td valign="top">
@@ -1976,6 +2356,170 @@ WebToolingSettingsProductProfiles.savetenantconfiguration
 <td valign="top">
 
 Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Settings
+
+</td>
+<td valign="top">
+
+Configure *Design Guidelines* settings
+
+</td>
+<td valign="top">
+
+WorkspaceDesignGuidelines.Configure
+
+</td>
+<td valign="top">
+
+WorkspaceDesignGuidelinesConfigure
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the read-only persona \(see [Personas](../SecurityNeo/personas-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.ReadOnly
+
+</td>
+<td valign="top">
+
+AuthGroup\_ReadOnly
+
+</td>
+<td valign="top">
+
+Read-Only Persona
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the tenant administrator persona \(see [Personas](../SecurityNeo/personas-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.Administrator
+
+WebToolingWorkspace.RuntimeConfigure
+
+</td>
+<td valign="top">
+
+AuthGroup\_Administrator
+
+</td>
+<td valign="top">
+
+Tenant Administrator
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the business expert persona \(see [Personas](../SecurityNeo/personas-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.BusinessExpert
+
+</td>
+<td valign="top">
+
+AuthGroup\_BusinessExpert
+
+</td>
+<td valign="top">
+
+Business Expert
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+Provides permission for the integration developer persona \(see [Personas](../SecurityNeo/personas-2937e5c.md)\)
+
+</td>
+<td valign="top">
+
+AuthGroup.IntegrationDeveloper
+
+</td>
+<td valign="top">
+
+AuthGroup\_IntegrationDeveloper
+
+</td>
+<td valign="top">
+
+Integration Developer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+General
+
+</td>
+<td valign="top">
+
+This role/role template is only relevant for partners and internal SAP developers developing and publishing content to SAP Business Accelerator Hub. Further details can be found in the partner documentation.
+
+</td>
+<td valign="top">
+
+AuthGroup.ContentPublisher
+
+</td>
+<td valign="top">
+
+AuthGroup\_ContentPublisher
+
+</td>
+<td valign="top">
+
+n.a.
 
 </td>
 </tr>

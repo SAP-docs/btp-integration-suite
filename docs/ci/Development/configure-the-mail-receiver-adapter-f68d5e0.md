@@ -11,14 +11,14 @@ You use the mail receiver adapter to send encrypted messages by e-mail.
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 The mail receiver adapter opens a connection to a mail server and sends messages \(as e-mail\) to it.
 
-![](images/Mail_Receiver_8c3073e.png)
+![This graphic offers a simplified overview of a tenant which can send messages to a mail server either via request or data flow.](images/Mail_Receiver_8c3073e.png)
 
 > ### Note:  
 > For an example of how to configure the mail receiver adapter in a dedicated demo integration scenario, check out the following topic: [Create the Mail Receiver Channel](create-the-mail-receiver-channel-a6966fd.md).
@@ -606,6 +606,23 @@ Under *Signer Parameters*, add the reference to one or multiple private keys tha
 
     Specifies the algorithm used to sign the content using the private key.
 
+    You can choose the following algorithms:
+
+    -   *SHA/RSA*
+
+    -   *SHA1withRSAandMFG1/RSA-PSS*
+
+    -   *SHA223/RSA*
+
+    -   *SHA256/RSA*
+
+    -   *SHA256withRSAandMFG1/RSA-PSS*
+
+    -   *SHA384/RSA*
+
+    -   *SHA512withRSAandMFG1/RSA-PSS*
+
+
 -   *Include Certificates*
 
     Specifies whether you allow recipients to send encrypted and signed messages to you. To allow that, make sure that this field is set to *true*, so that your signing certificates are selected.
@@ -629,7 +646,18 @@ You can specify the following parameters for the secret key \(used to encrypt th
 
 -   *Content Encryption Algorithm*
 
-    Specifies the symmetric \(block\) cipher. Choose *DESede* only if the destination system or mail client doesn’t support AES.
+    Specifies the symmetric \(block\) cipher.
+
+    You can choose the following algorithms:
+
+    -   *AES/CBC/PKCS5Padding*
+
+    -   *AES/GCM/NoPadding*
+
+    -   *DESede/CBC/PKCS5Padding*
+
+        Choose this option only if the destination system or mail client doesn’t support AES.
+
 
 -   *Secret Key Length*
 
@@ -661,7 +689,7 @@ Under *Receiver Public Key*, specify one or more certificates \(from the tenant 
 
 To understand the parameters available in the section *ENCRYPTION*, you need to know the following: Message content encryption works as a process where secret keys and a private/public key pair are involved. A simplified process is depicted in the following figure. The figure only shows one receiver system, but note that the tenant can send an email to multiple receivers.
 
-![](images/Encryption_Process_82ee90d.png)
+![The Cloud Integration communicates with a receiver system and sends an encrypted message to the latter one. The figure shows the keys that are required to support this security level: The tenant uses its own private key to encrypt the content of the message and the receiver public key to encrypt the secret key. The receiver uses a private key to decrypt the secret key which it had received from the tenant and, finally, the decrypted secret key decrypts the message content.](images/Encryption_Process_82ee90d.png)
 
 The following steps are accomplished behind the scenes when a message is encrypted:
 

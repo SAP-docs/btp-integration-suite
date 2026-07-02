@@ -136,7 +136,7 @@ You can restore keystore entries that you have backed up. For example, you can r
     </td>
     <td valign="top">
     
-    Choose the <span class="SAP-icons"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
+    Choose the <span class="SAP-icons-V5"></span> \(Actions\) button for a key pair or certificate to perform an action. The available actions depend on the type of the keystore entry and whether it is owned by SAP.
 
     -   *Rename*
 

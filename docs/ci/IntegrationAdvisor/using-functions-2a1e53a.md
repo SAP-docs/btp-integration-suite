@@ -36,7 +36,12 @@ Use functions to specify a data transformation between source and target nodes w
     4.  Optional: Choose *Edit* to modify the shared code snippet. The changes are saved globally.
 
 
-4.  To pass a parameter to a function, perform the following:
+4.  Choose *Validate* to validate your XSLT code snippet. If there are errors in your code snippet, the validation will display the errors in detail along with the line numbers for easy identification.
+
+    > ### Tip:  
+    > Once resolving the errors, re-run the validation to confirm that your code is error-free.
+
+5.  To pass a parameter to a function, perform the following:
 
     1.  On the *Function* tab, choose *Add new parameter*.
 
@@ -47,11 +52,11 @@ Use functions to specify a data transformation between source and target nodes w
     4.  Select the required global parameter from the *Global Parameters* list. Alternatively, you can also filter for a parameter using *Search*.
 
 
-5.  Optional: Select the *Confidential Function Content* option if your code snippet contains any confidential information such as a specific business partner ID or any personal information.
+6.  Optional: Select the *Confidential Function Content* option if your code snippet contains any confidential information such as a specific business partner ID or any personal information.
 
     > ### Remember:  
     > You can choose this option if you don't want your code snippet to be published to the Global Index Server used by the proposal service.
 
-6.  *Save* the changes.
+7.  *Save* the changes.
 
 

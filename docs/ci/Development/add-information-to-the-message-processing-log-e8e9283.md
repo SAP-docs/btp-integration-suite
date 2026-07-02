@@ -164,7 +164,7 @@ When monitoring the message in the Cloud Integration *Monitor* section under *Mo
 
 ![](images/Custom_Header_Properties_ddb7cbd.png)
 
-You find an example scenario here: [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md).
+You find an example scenario following the next link: [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md).
 
 </td>
 </tr>

@@ -44,16 +44,16 @@ How to get the service root URI, depends on the environment:
 
 -   Neo environment:
 
-    Check out the address of your Cloud Integration user interface \(Web UI\). It ends with `/itspaces`.
+    Check out the address of your Cloud Integration user interface \(Web UI\). It ends with `/itspaces/shell/integration`.
 
-    Remove the `/itspaces` and replace it by `/api/v1`.
+    Remove the `/itspaces/shell/integration` and replace it by `/api/v1`.
 
-    The service root URI is then: <code>&lt;Cloud Integration user interface address without /itspaces&gt;/api/v1</code>.
-
-
+    The service root URI is then: <code>&lt;Cloud Integration user interface address without /itspaces/shell/integration&gt;/api/v1</code>.
 
 
-For more information about the service root URI, resource path, and query options, see [http://www.odata.org/documentation/odata-version-2-0/uri-conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions).
+
+
+For more information about the service root URI, resource path, and query options, see [URI Conventions \(OData Version 2.0\)](http://www.odata.org/documentation/odata-version-2-0/uri-conventions).
 
 > ### Caution:  
 > The browser translates space characters to `%20`. If you paste a URL from this documentation to the browser, the OData call therefore works. The string `%20` is left out of the example URLs to make them easier to read.

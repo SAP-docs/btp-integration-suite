@@ -33,3 +33,11 @@ Due to the tenant isolation concept, data from different customers \(stored in d
 
 The customer can grant people outside its organization permissions to execute specific tasks on its cluster \(for example, to SAP employees to execute error analysis tasks in support cases\).
 
+
+
+<a name="loio183637c9cdcf4a2e8b3dbb602d888e0e__section_nfl_ryf_vyb"/>
+
+## Using
+
+Customer data can be stored by dedicated steps during message processing. stores data in the edge environment using persistent volumes. Amazon Web Services \(AWS\) and Microsoft Azure support data encryption at rest. For more information, check the documentation of the related platform.
+

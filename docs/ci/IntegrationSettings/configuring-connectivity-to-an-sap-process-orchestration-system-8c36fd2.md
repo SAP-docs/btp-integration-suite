@@ -18,7 +18,10 @@ Learn how to connect an SAP Process Orchestration system.
 
 ## Prerequisites
 
-You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+-   You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+
+-   You have completed the tasks mentioned in [Importing Content from SAP Process Orchestration System](importing-content-from-sap-process-orchestration-system-53db5fb.md).
+
 
 
 
@@ -34,9 +37,15 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
 
 3.  Choose :heavy_plus_sign: to connect an SAP PO system.
 
-4.  Provide a name and description for the PO system that you want to connect to.
+4.  Provide a *System Name* for the PO system that you want to connect to.
 
-5.  Enter values in fields based on description in the following table:
+    The name that you provide here appears at all places in the tenant when integration developers try to fetch content from a PO system. Make sure that you provide a meaningful name.
+
+5.  Select the *Version* of your PO system.
+
+6.  Optional: Provide a description that explains the PO system.
+
+7.  Enter values in fields based on description in the following table:
 
     **Integration Directory**
 
@@ -63,6 +72,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
+
+    > ### Note:  
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field in your Cloud Connector. Then, provide the updated URL. An underscore is a likely candidate for such connection failures.
+
+
     
     </td>
     </tr>
@@ -139,7 +153,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     </tr>
     </table>
     
-6.  **Optional**: If you're using a central Enterprise Services Repository \(ESR\), uncheck the *Same as Integration Directory* check box. Enter values in fields based on description in the following table:
+8.  **Optional**: If you're using a central Enterprise Services Repository \(ESR\), uncheck the *Same as Integration Directory* check box. Enter values in fields based on description in the following table:
 
     **ES Repository**
 
@@ -166,6 +180,11 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     <td valign="top">
     
     Provide the URL from Cloud Connector that connects to your PO system.
+
+    > ### Note:  
+    > If the test connection fails, try removing the charcter "`_`" \(underscore\) in the address field in your Cloud Connector. Then, provide the updated URL. An underscore is a likely candidate for such connection failures.
+
+
     
     </td>
     </tr>
@@ -228,7 +247,7 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
     </tr>
     </table>
     
-7.  Choose *Save*.
+9.  Choose *Save*.
 
 
 <a name="task_jzq_y3z_wxb"/>
@@ -236,6 +255,17 @@ You must have tenant administrator role to configure connectivity to an SAP Proc
 <!-- task\_jzq\_y3z\_wxb -->
 
 ## Alternative Approach: Creating Destinations in SAP BTP Subaccount
+
+
+
+<a name="task_jzq_y3z_wxb__prereq_chm_cjx_3dc"/>
+
+## Prerequisites
+
+-   You must have tenant administrator role to configure connectivity to an SAP Process Orchestration system.
+
+-   You have completed the tasks mentioned in [Importing Content from SAP Process Orchestration System](importing-content-from-sap-process-orchestration-system-53db5fb.md).
+
 
 
 

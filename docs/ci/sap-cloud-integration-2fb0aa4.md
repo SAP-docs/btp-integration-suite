@@ -7,11 +7,11 @@ SAP Cloud Integration facilitates the integration of business processes spanning
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="c5631b19ea154c1caa325c32771a101d.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="c5631b19ea154c1caa325c32771a101d.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [SAP Cloud Integration](WhatsNewInCloudIntegration/sap-cloud-integration-72ef31d.md)
 
-[Patch Releases for Cloud Integration](WhatsNewInCloudIntegration/patch-releases-for-cloud-integration-023a472.md "This topic provides information on patch releases for Cloud Integration for hotfixes, bugfixes, and code enhancements.")
+[Patch Releases for Cloud Integration](WhatsNewInCloudIntegration/patch-releases-for-cloud-integration-023a472.md "This topic provides information on patch releases for hotfixes, bugfixes, and code enhancements.")
 
 [Initial Setup](InitialSetup/initial-setup-0a556d5.md "Includes links to concepts and activities required to set up and start using Cloud Integration.")
 
@@ -29,7 +29,7 @@ SAP Cloud Integration facilitates the integration of business processes spanning
 
 [Operating and Monitoring Cloud Integration](Operations/operating-and-monitoring-cloud-integration-c401afc.md "Operate a Cloud Integration cluster and monitor messages and integration artifacts at runtime")
 
- <?sap-ot O2O class="- topic/link " href="0875355bc75b41d8af00fcf2a6fb9929.xml" text="" desc="" xtrc="link:12" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="0875355bc75b41d8af00fcf2a6fb9929.xml" text="" desc="" xtrc="link:12" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/2fb0aa4dc5194b589adcd1c5534901e3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [API Documentation](Development/api-documentation-3fd9fc9.md "Cloud Integration provides various application programming interfaces (APIs) with which you can access data.")
 

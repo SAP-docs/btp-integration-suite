@@ -2,7 +2,7 @@
 
 # Guidelines on Role Assignments
 
-The combined usage of the following role collections, respectively, authorization groups \(as described under [Persona](../SecurityNeo/persona-2937e5c.md)\) gives you full control of the tenant in terms of design, monitoring, and administration.
+The combined usage of the following role collections, respectively, authorization groups \(as described under [Personas](../SecurityNeo/personas-2937e5c.md)\) gives you full control of the tenant in terms of design, monitoring, and administration.
 
 Assigning these role collections/authorization groups to a user is a good choice for the source tenant \(development system\). However, assigning these role collections/authorization groups to a user on target tenants can lead to undesired behavior and inconsistencies with the transport system. To avoid that a user gets too many permissions in the target system, it's necessary to define permissions on a more detailed level on the target tenant \(test and production\).
 

@@ -16,11 +16,23 @@ You’ve created an integration package. For more information, see [Creating an 
 
 ## Context
 
-An integration flow is a graphical representation of the flow and processing of messages between two or more participants using an integration runtime platform, ensuring successful communication.
+Create integration flows in your package either by creating or uploading.
+
+<a name="task_hrn_4f5_jjc"/>
+
+<!-- task\_hrn\_4f5\_jjc -->
+
+## Add Integrations Manually
+
+<a name="task_ik5_5wl_wbc"/>
+
+<!-- task\_ik5\_5wl\_wbc -->
+
+## Create Integration Flow
 
 
 
-<a name="loioda53d93cd8fb47ff9ea55b6b278cd85e__steps_sh3_tcl_jt"/>
+<a name="task_ik5_5wl_wbc__steps_xsp_ywl_wbc"/>
 
 ## Procedure
 
@@ -30,7 +42,9 @@ An integration flow is a graphical representation of the flow and processing of 
 
 3.  Navigate to the *Artifacts* tab and choose *Add* \> *Integration Flow*.
 
-4.  If you want to create a new integration flow, execute the following substeps:
+4.  In the *Add Integration Flow* dialog, choose the method *Add Integrations manually*.
+
+5.  If you want to create a new integration flow, execute the following substeps:
 
     1.  Choose the *Create* radio button.
 
@@ -47,15 +61,15 @@ An integration flow is a graphical representation of the flow and processing of 
 
     4.  Enter *Description* for the integration flow.
 
-    5.  Choose <span class="SAP-icons"></span> search values to add *Sender* and *Receiver* systems. The search values provide a list of sender and receiver systems maintained by SAP.
+    5.  Choose <span class="SAP-icons-V5"></span> search values to add *Sender* and *Receiver* systems. The search values provide a list of sender and receiver systems maintained by SAP.
 
         > ### Tip:  
         > If you don't find a sender or receiver system of your choice, or want to add your own values, type in the *Sender* and *Receiver* fields and press [tab\] button in your keyboard. You can also add multiple values if it's necessary.
 
-    6.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
+    6.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
 
 
-5.  If you want to upload an integration flow, execute the following substeps:
+6.  If you want to upload an integration flow, execute the following substeps:
 
     1.  Choose the *Upload* radio button.
 
@@ -66,35 +80,76 @@ An integration flow is a graphical representation of the flow and processing of 
         > 
         > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
 
-    3.  Choose *OK*. Alternatively, you can press the [Enter\]/[Return\] key to create the integration flow.
-
-        > ### Note:  
-        > You can copy an integration flow by choosing <span class="SAP-icons"></span> in the *Action* column, and then *Copy*.
-        > 
-        > -   An integration flow can be copied within the same package or to a different package.
-        > -   The copied integration flow has the same version as the source.
-        > -   An integration flow can be copied from a configure-only package to a non-configure-only package.
-        > -   An integration flow can’t be copied from a non-configure-only package to a configure-only package.
+    3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
 
 
 
 
 
-<a name="loioda53d93cd8fb47ff9ea55b6b278cd85e__result_r3d_3ws_c5b"/>
+<a name="task_ik5_5wl_wbc__result_r3d_3ws_c5b"/>
 
 ## Results
 
-A template-based integration flow with the following shapes is created:
+An integration flow with the following shapes is created:
 
 -   *Sender*: Represents your sender system.
 
 -   *Receiver*: Represents the receiver system.
 
--   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant. This shape has two tabs:
-
-    -   *General*: allows you to set the name of the integration process
-
-    -   *Processing*: allows you to maintain the *Transaction Handling* and the *Timeout* details under *Transaction Management*.
+-   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant.
 
 
+<a name="task_cy1_yf5_jjc"/>
+
+<!-- task\_cy1\_yf5\_jjc -->
+
+## Upload Integration Flow
+
+
+
+## Procedure
+
+1.  Choose *Design* to view the list of integration packages.
+
+2.  Select the integration package in which you want to add an integration flow and choose *Edit*.
+
+3.  Navigate to the *Artifacts* tab and choose *Add* \> *Integration Flow*.
+
+4.  In the *Add Integration Flow* dialog, choose the method *Add Integrations manually*.
+
+5.  To upload an integration flow, execute the following substeps:
+
+    1.  Choose the *Upload* radio button.
+
+    2.  Choose *Browse* to select the integration project archive from your local file system. When you select the archive file, the *Name* and *ID* fields in the dialog box are filled automatically.
+
+        > ### Note:  
+        > -   The integration flow *ID* needs to be unique across the tenant, but you can specify the same *Name* multiple times. When you create a new integration flow, by default the entry for *ID* is generated automatically based on the string entered for *Name* \(with underscore replacing space characters\).
+        > 
+        > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
+
+    3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
+
+
+
+
+
+## Results
+
+An integration flow with the following shapes is created:
+
+-   *Sender*: Represents your sender system.
+
+-   *Receiver*: Represents the receiver system.
+
+-   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant.
+
+
+<a name="concept_e1l_bqv_jjc"/>
+
+<!-- concept\_e1l\_bqv\_jjc -->
+
+## Related Information
+
+[Configure Integration Flow Components](configure-integration-flow-components-3171795.md)
 

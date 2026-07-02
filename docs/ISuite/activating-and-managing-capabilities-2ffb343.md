@@ -27,7 +27,8 @@ This topic describes how to add and activate relevant capabilities in SAP Integr
 
 -   API Management
 
-    -   Graph
+    -   Developer Hub
+    -   API Composition
 
 -   Event Mesh
 
@@ -111,10 +112,10 @@ You can watch a short video about activating capabilities, and getting access to
 
     If you want to consume APIs and events published on Developer Hub—a web-based platform that allows organizations to publish their APIs and events for developers to discover, explore, and use—you need to select the *Developer Hub* checkbox.
 
-    To expose your business data as a semantically connected data graph, select the *Graph* checkbox.
+    To expose your business data as a semantically connected data graph, select the *API Composition* checkbox.
 
     > ### Note:  
-    > The Developer Hub checkbox must be selected in order to activate Graph.
+    > The Developer Hub checkbox must be selected in order to activate API Composition.
 
     For end-to end instructions on how to activate the API Management capability, see [Activating and Configuring API Management Capability](https://help.sap.com/docs/integration-suite/sap-integration-suite/enabling-api-management-capability-from-integration-suite). You can also refer to the [Set Up API Management from Integration Suite](https://developers.sap.com/tutorials/api-mgmt-isuite-initial-setup.html) tutorial for visual instructions.
 
@@ -154,7 +155,7 @@ You can watch a short video about activating capabilities, and getting access to
     
     *Access data in SAP Business Suite*
 
-    For end-to-end instructions on activating the OData Provisioning capability, see [Runtime Access and Role Assignment for OData Provisioning](runtime-access-and-role-assignment-for-odata-provisioning-b46816c.md)
+    For end-to-end instructions on activating the OData Provisioning capability, see [Runtime Access and Role Assignment for OData Provisioning](https://help.sap.com/viewer/c0ec55d6862d4b01af33a70e79ed1a2e/CLOUD/en-US/b46816c20e02415597d5546b1e277e23.html "Steps to complete the activation of the OData Provisioning capability by providing runtime access and assigning roles.") :arrow_upper_right:
     
     </td>
     </tr>
@@ -256,15 +257,15 @@ You can watch a short video about activating capabilities, and getting access to
 ## Results
 
 -   Capabilities are displayed on the home page as tiles. To access the functionalities offered by these capabilities, users must have the required role collections assigned. See [Configuring User Access to SAP Integration Suite](configuring-user-access-to-sap-integration-suite-2c6214a.md).
--   After activating Cloud Integration, create a service broker instance. See [Creating Service Instance and Service Key for Inbound Authentication](40-RemoteSystems/creating-service-instance-and-service-key-for-inbound-authentication-19af5e2.md).
+-   After activating Cloud Integration, create a service broker instance. See [Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/19af5e205fe14af6a4f8a9fd80d4dc92.html "With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.") :arrow_upper_right:.
 
--   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](additional-configurations-for-api-management-5ac63ab.md).
--   The Event Mesh capability needs an additional configuration step before usage. See: [Initiating the Message Broker](initiating-the-message-broker-61eb5dd.md).
+-   The API Management capability needs a few more configuration steps before activation. See [Additional Configurations for API Management](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5ac63ab89ed64fb89a28382fc4b55990.html "In this section, you'll find information about different plans for managing API Management, API portal and Developer Hub.") :arrow_upper_right:.
+-   The Event Mesh capability needs an additional configuration step before usage. See: [Initiating the Message Broker](https://help.sap.com/viewer/a01a83f4826d486b9fc66d1df0de9da4/CLOUD/en-US/61eb5dd788ee4d5ba476842a5e5aa135.html "Initiate the message broker before you get started with the Event Mesh capability.") :arrow_upper_right:.
 
--   After activating Data Space Integration, continue with the additional preparatory steps. See [Preparatory Steps](preparatory-steps-95366b2.md).
+-   After activating Data Space Integration, continue with the additional preparatory steps. See [Preparatory Steps](https://help.sap.com/viewer/c6f026f9206e4a60948e827535eef449/CLOUD/en-US/95366b2757d64a89aaa4efa6027a8fb4.html "Before you can perform the onboarding steps that are specific to Data Space Integration, you must be onboarded to SAP Integration Suite and have enabled Cloud Integration.") :arrow_upper_right:.
 
 **Related Information**  
 
 
-[Centralized Developer Hub](50-Development/centralized-developer-hub-38422de.md "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.")
+[Centralized Developer Hub](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/38422de917ee40e1a47df0b368def295.html "Developer Hub is a central API catalog, allowing application developers to consume APIs and other assets, from a common platform.") :arrow_upper_right:
 

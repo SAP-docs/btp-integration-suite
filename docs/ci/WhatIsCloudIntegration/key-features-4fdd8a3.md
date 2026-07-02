@@ -49,7 +49,7 @@ More information: [Runtime Profiles](../IntegrationSettings/runtime-profiles-800
 
 There is a wide range of supported ways how Cloud Integration can process messages and exchanged them with sender and receiver systems \(see: [Integration Capabilities](integration-capabilities-e32cede.md) and [Connectivity \(Adapters\)](connectivity-adapters-55325f2.md)\).
 
-For the delivery of messages received from a sender system Cloud Integration supports quality of service *at least once*. This means that the platform guarantees to process an inbound message at least once on the tenant. When you use the one of the following adapters, you can configure additional quality of service settings:
+For the delivery of messages received from a sender system Cloud Integration supports quality of service *at least once*. This means that the platform guarantees to process an inbound message at least once on the tenant. When you use one of the following adapters, you can configure additional quality of service settings:
 
 
 <table>
@@ -124,7 +124,7 @@ If a message with identical message ID \(for example, XI message ID\) is receive
 > 
 > -   AS2 sender adapter \(see: [Configure the AS2 Sender Adapter](../Development/configure-the-as2-sender-adapter-5d7ee17.md)\)
 > 
-> -   AS4 sender adapter with ebMS3 receipt \(see: [Configuring Sender Channel with ebMS3 Receipt](../Development/configuring-sender-channel-with-ebms3-receipt-428ae65.md)\)
+> -   AS4 sender adapter with ebMS3 receipt \(see: [Configure the Sender Channel with ebMS3 Receipt](../Development/configure-the-sender-channel-with-ebms3-receipt-428ae65.md)\)
 > 
 > -   XI sender adapter \(see: [Configure the XI Sender Adapter](../Development/configure-the-xi-sender-adapter-41a1a57.md)\)
 > 
@@ -176,7 +176,7 @@ More information: [OData API](../Development/odata-api-a617d6f.md)
 
 ## Partner Directory
 
-The Partner Directory allows you to store information about communication partners and to parameterize integration flows using this information. You can manage the content of the Partner Drectory using the OData API.
+The Partner Directory allows you to store information about communication partners and to parameterize integration flows using this information. You can manage the content of the Partner Directory using the OData API.
 
 A use case for the Partner Directory is the design and operation of business-to-business scenarios.
 

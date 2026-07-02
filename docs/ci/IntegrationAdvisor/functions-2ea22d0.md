@@ -8,12 +8,12 @@ You can use functions to transform or compute data within the Mapping Guidelines
 
 The *Function* tab on the mapping pane is available only when leaf nodes are mapped or when a function is assigned to a target leaf node with no corresponding source node. You can create and assign a function to a target leaf node that isn't mapped to any source node.
 
-The *XSLT Code* editor in the *Function* tab of the mapping pane is used to formulate expressions based on XSLT V2.0 or XPath 2.0. A default code snippet is available when you map a source leaf node to a target leaf node. You can create your own implementation of the XSLT function by editing the default code snippet to meet your data transformation requirements.
+The *XSLT Code* editor in the *Function* tab of the mapping pane is used to formulate expressions based on XSLT V3.0 or XPath 3.1. A default code snippet is available when you map a source leaf node to a target leaf node. You can create your own implementation of the XSLT function by editing the default code snippet to meet your data transformation requirements.
 
 You can use parameters to pass values to functions. For instance, you can define a default value for the parameter *PARAM* and pass it to a function as an argument. You can create a new parameter by choosing *Add New Parameter* on the *Function* tab and bind it to a parameter defined in the *Global Parameters* tab. Use the shared code feature to create frequently used code snippets and reuse it as required within your MAG.
 
 > ### Note:  
-> -   All XSLT 2.0 and XPath 2.0 functions are supported.
+> -   All XSLT 3.0 and XPath 3.1 functions are supported.
 > 
 > -   For more information, refer to XSLT or XPath specification published by W3C.
 

@@ -11,7 +11,7 @@ The FTP \(File Transfer Protocol\) receiver adapter connects SAP Cloud Integrati
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -33,7 +33,7 @@ If you’ve configured a receiver FTP adapter, message processing is performed a
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -48,7 +48,7 @@ If you’ve configured a receiver FTP adapter, message processing is performed a
 > 
 > -   You can establish a connection to your on-premise system by using Cloud Connector: [SAP Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e933fd930039402c907d5afaa75eb0e1.html).
 > 
-> -   This adapter doesn’t support connections to SFTP servers. See [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
+> -   This adapter doesn’t support connections to SFTP servers. See: [Configure the SFTP Receiver Adapter](configure-the-sftp-receiver-adapter-4ef52cf.md).
 
 Once you’ve created a receiver channel and selected the FTP receiver adapter, you can configure the following attributes. Select the *General* tab and provide values in the fields as follows.
 
@@ -112,7 +112,7 @@ Use the relative path to write the file to a directory.
 
 Example: `parentdirectory/childdirectory`
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -126,10 +126,10 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Name of the file to be written.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 > ### Note:  
-> If you don’t enter a file name and the parameter remains blank, the content of the `CamelFileName` header isn’tused as file name. If this header is specified, the Exchange ID is used as file name.
+> If you don’t enter a file name and the parameter remains blank, the content of the `CamelFileName` header is used as file name. If this header is specified, the Exchange ID is used as file name.
 
 The endpoint URL that is actually used at runtime is displayed in the message processing log \(MPL\) in the message monitoring application \(MPL property `ProduceFile`\). Note that you can manually configure the endpoint URL using the *FileName* attribute of the FTP adapter. However, you can dynamically override the value of this attribute by using the Camel header `CamelFileName`.
 
@@ -152,7 +152,7 @@ If the file has an extension \(for example, .xml\), the timestamp is appended to
 ***myfile20151201170800.xml***
 
 > ### Note:  
-> Be aware of the following behavior if you’ve configured the file name dynamically: Ifyou’ve selected the *Append Timestamp* option, the timestamp overrides the file name defined dynamically via the header \(`CamelFileName`\).
+> Be aware of the following behavior if you’ve configured the file name dynamically: If you’ve selected the *Append Timestamp* option, the timestamp overrides the file name defined dynamically via the header \(`CamelFileName`\).
 > 
 > *Append Timestamp* and dynamically configuring *File Name* \(through a Camel simple expression\) must not be used together. The reason is that using the *Append Timestamp* option results in generating a simple expression for the date. Both simple expressions result in an invalid expression that can’t be processed correctly.
 
@@ -173,7 +173,7 @@ If the file has an extension \(for example, .xml\), the timestamp is appended to
 
 Host name or IP address of the FTP server and an optional port, for example, `my.host.org:21`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -191,7 +191,7 @@ The type of proxy that you’re using to connect to the target system.
 
 -   Select *On-Premise* if you are connecting to an on-premise system.
 
-    For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+    For more information, see: [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
 
     For more information on how to use the *On-Premise* option to connect to an on-premise FTP server, check out the SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
 
@@ -216,7 +216,7 @@ The type of proxy that you’re using to connect to the target system.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -255,35 +255,12 @@ Specify the transport encryption. You can choose between the following options:
 <tr>
 <td valign="top">
 
-*Credential Name* 
-
-</td>
-<td valign="top">
-
-Name of the *User Credential* artifact that contains the user name and password.
-
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-> ### Note:  
-> The FTP receiver adapter supports the possibility of logging in anonymously: In *Manage Security Material*, choose *Add User Credentials* and provide a user name `ANONYMOUS` and an empty password \(or a different username/password according to the FTP server’s requirements\).
-> 
-> See [Deploying a User Credentials Artifact](../Operations/deploying-a-user-credentials-artifact-6912d63.md).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Timeout \(in ms\)* 
 
 </td>
 <td valign="top">
 
 Maximum time to wait for the FTP server to be contacted while establishing a connection. The default is set to 10000 ms.
-
-The timeout should be more than 0, but less than five minutes.
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime.
 
@@ -440,7 +417,7 @@ Define how existing files should be treated.
 -   *Override*: replaces existing file and saves it under existing name
 
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>

@@ -2,7 +2,7 @@
 
 # Define Validator Steps
 
-Valildators checkk the content of the message against a defined schema.
+Validators check the content of the message against a defined schema.
 
 **Related Information**  
 

@@ -18,13 +18,13 @@ Before continuing to the routing step, we first add a local integration process 
 
 4.  Add a Content Modifier to the right of the Filter step \(you can find this under *Message Transformers* in the palette\).
 
-    On the *Message Body* tab, enter the following:
+    On the *Message Body* tab, for type dropdown choose *Expression* and enter the following:
 
     > ### Sample Code:  
     > ```
     > <ns1:Messages xmlns:ns1="http://sap.com/xi/XI/SplitAndMerge">
     > <ns1:Message1> 
-    > ${property.originalpayload}
+    > ${property.original_payload}
     > </ns1:Message1>
     > <ns1:Message2>
     > ${in.body}

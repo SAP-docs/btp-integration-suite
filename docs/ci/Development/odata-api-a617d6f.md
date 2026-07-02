@@ -8,7 +8,7 @@ The OData API is implemented as a REST API and the technical protocol is Open Da
 
 You can find the OData API on SAP Business Accelerator Hub at:
 
-[https://api.sap.com/package/CloudIntegrationAPI/odata](https://api.sap.com/package/CloudIntegrationAPI/odata)
+[SAP Cloud Integration](https://api.sap.com/package/CloudIntegrationAPI/odata)
 
 A prerequisite for using the OData API is that your user is connected to Cloud Integration and that you have access to an OData client.
 
@@ -104,9 +104,21 @@ Get, write, or delete security content, for example, keystore entries, user cred
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+ <?sap-ot O2O class="- topic/xref " href="da1abc0c46514798bea0d283f0fb418a.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a617d6f37ddc43db8eeb1279662ed5c2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
+</td>
+<td valign="top">
+
+Access your Edge Integration Cell data even during offline mode when the Operations Cockpit user interface is unavailable. You can retrieve information such as component status, pods, event logs, metrics, and runtime parameters.
+
+</td>
+</tr>
 </table>
 
-The OData API is structured by a number of entities, grouped on SAP Business Accelerator Hub according to the sections listed in the table above. Each entity \(resource\) is specified by a number of properties, to which filtering options can also be applied.
+The OData API is structured by a number of entities, grouped on SAP Business Accelerator Hub according to the sections listed in the previous table. Each entity \(resource\) is specified by a number of properties, to which filtering options can also be applied.
 
 You can address the collection of entries or a single entry within a collection.
 
@@ -115,7 +127,7 @@ How the entities are related to each other is described in the entity data model
 This documentation provides an overview of the available resources and summarizes the supported HTTP methods and query options for each resource.
 
 > ### Tip:  
-> For more information about the programming model and how the HTTP methods and query options work, see [http://www.odata.org](http://www.odata.org).
+> For more information about the programming model and how the HTTP methods and query options work, see [OData - the Best Way to REST](http://www.odata.org).
 > 
 > OData specification version 2.0 is supported by the Cloud Integration API.
 
@@ -146,6 +158,17 @@ To keep the load on the network manageable, we therefore recommend that you use 
 
 -   Note that when you use the OData API, you navigate to MessageStore entities starting from the MessageProcessingLog entity. Apply filter options to the MessageProcessingLog rather than the MessageStore entities.
 
+
+> ### Note:  
+> The DataStore and Variables APIs do not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
 
 **Related Information**  
 

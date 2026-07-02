@@ -126,7 +126,7 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 <!-- task\_hcc\_c3j\_syb -->
 
-## Import a Message Mapping from ES Repository
+## Import a Message Mapping from Enterprise Services Repository \(ESR\)
 
 
 
@@ -134,18 +134,10 @@ Use this option to upload a message mapping artifact stored on your computer. On
 
 ## Prerequisites
 
--   You've created an integration package and opened it in edit mode.
-
 -   You've established connection to your SAP Process Orchestration system. See: [Configuring Connectivity to an SAP Process Orchestration System](../IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md).
 
+-   You've created an integration package and opened it in edit mode.
 
-
-
-<a name="task_hcc_c3j_syb__context_yty_d3j_syb"/>
-
-## Context
-
-Use this option to import a message mapping object from the Enterprise Services Repository \(ES Repository\).
 
 
 
@@ -167,21 +159,34 @@ Use this option to import a message mapping object from the Enterprise Services 
 
 5.  Select a message mapping object that you want to import. Choose *Next*.
 
-6.  In the *Dependent Resources* tab, provide a name, ID, and an optional description for the message mapping artifact. You also see a list of dependent files of the message mapping object like function library objects and WSDL files that are to be imported too. Choose *Next*.
+6.  In the *Dependent Resources* tab, provide a name, ID, and an optional description for the message mapping artifact. You also see a list of dependent objects like WSDL files that are to be imported too. Choose *Next*.
 
-7.  Optional, only if the source message mapping object has function library objects: Select one or more Function Libraries artifacts to contain all dependent function library objects of the source mapping object.
+    > ### Note:  
+    > If the message mapping is unsupported because it uses JDBC or RFC lookup functions, etc. and you still wish to import the message mapping, choose *Import Selected Message Mapping* checkbox.
 
-    In , a function library object from ES Repository must be imported to a Function Libraries artifact. You can't add a function library object directly to a message mapping or an integration package. See:  <?sap-ot O2O class="- topic/xref " href="dd8c30d1c103437298f173fa5d06e96c.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/1d52a7ba8c71438d90f3ea0d8e13a052.xml" ?> .
-
-8.  Choose *Add*.
+7.  Choose *Submit*.
 
     A message mapping artifact is created.
 
-    If there are dependent function library objects, they are imported to the selected Function Libraries artifact. References to the dependent function library objects are also created.
+    If there are dependent objects, they are imported appropriately. References to the dependent objects are also created.
 
-9.  Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
+    Cloud Integration supports the import of PI/PO message mapping objects with simple type and adapter type parameters of the kind import. The imported parameters are used as message properties and are automatically pre-filled in the standard built-in functions wherever they are defined in the PI/PO message mapping object. Although export and adapter \(channel\) type parameters are shown, they are not used or rendered within the message-mapping expression editor. For more information, see [Parameterized Mapping Programs](https://help.sap.com/docs/SAP_NETWEAVER_750/0b9668e854374d8fa3fc8ec327ff3693/4bf4190deaca4c86e10000000a42189e.html).
 
-10. Choose *Deploy*.
+    > ### Note:  
+    > Importing message mappings with parameters is not supported for local message mappings.
+    > 
+    > If an imported mapping uses objects like JDBC lookups, Simple Type or Adapter‑type parameters, or functional libraries with Simple Type parameters, Dynamic Configuration APIs for accessing Adapter-Specific Message Attributes, the integration flow must be manually adjusted to ensure correct execution.
+    > 
+    > > ### Example:  
+    > > -   JDBC Lookup: If the imported mapping uses a JDBC lookup, the integration flow must include a JDBC adapter. The lookup response must be written to a header or property and then consumed inside the message mapping according to your use case.
+    > > -   Adapter Specific Message Attributes \(ASMAs\): If the imported mapping uses ASMA, you must manually create equivalent headers or properties in a Content Modifier or a Groovy script. These values should then be stored in the message headers/properties and used later in the message mapping or Groovy logic as required.
+
+    > ### Note:  
+    > The import of message mapping with parameters is only available on the Cloud Foundry environment.
+
+8.  Open the message mapping artifact and choose *Edit* to change the source and target messages, create mappings, and perform operations. Choose *Save*.
+
+9.  Choose *Deploy*.
 
     Before consuming a message mapping artifact, you must first deploy it.
 

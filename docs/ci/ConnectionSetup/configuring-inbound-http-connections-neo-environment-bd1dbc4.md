@@ -4,7 +4,7 @@
 
 HTTP connections enable:
 
--   Sender systems to call integration flow endpoints \(through onne of the adapters based on the HTTP protocol like, for example, the HTTPS adapter or the SOAP adapter\)
+-   Sender systems to call integration flow endpoints \(through one of the adapters based on the HTTP protocol like, for example, the HTTPS adapter or the SOAP adapter\)
 
 -   API clients to call the OData API
 

@@ -11,7 +11,7 @@ The SOAP \(SOAP 1.x\) sender adapter enables a SAP BTP tenant to exchange messag
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -34,7 +34,7 @@ Supported Header \(Sender Adapter\):
 > ### Caution:  
 > Usage of Different WSDL Binding Styles:
 > 
-> Note that messages that contain RPC-style bindings aren't supported by the SOAP sender channel. Also WSDL files using RPC-style bindings aren'tnot supported. Use document-style payloads and WSDL files.
+> Note that messages that contain RPC-style bindings aren't supported by the SOAP sender channel. Also WSDL files using RPC-style bindings aren't supported. Use document-style payloads and WSDL files.
 > 
 > A WSDL binding describes how the service is bound to a message protocol. For the processing of SOAP messages, you can choose from the following binding types:
 > 
@@ -112,7 +112,7 @@ Relative endpoint address on which the integration runtime expects incoming requ
 > ### Note:  
 > When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using separated endpoints for services.
 
 
 
@@ -202,7 +202,7 @@ To select the WSDL from a source, you've the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see [Manage References](manage-references-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 
@@ -220,7 +220,7 @@ To select the WSDL from a source, you've the following options:
 > 
 >     We recommend that you don't use blanks in WSDL names or directories, as this can lead to runtime issues.
 
-You can download the WSDL from the Web UI *Monitor* section by selecting the deployed integration flow \(under *Manage Integration Content*\). Under Endpoints, below the integration flow endpoint address, you find download options \(*WSDL* or *WSDL without policies*\).
+You can download the WSDL from the Web UI *Monitor* section by selecting the deployed integration flow \(under *Manage Integration Content*\). Under Endpoints, after the integration flow endpoint address, you find download options \(*WSDL* or *WSDL without policies*\).
 
 The WSDL download doesn't work for WSDLs with external references because these WSDLs can't be parsed.
 
@@ -290,7 +290,25 @@ You can select one of the following options:
 
 -   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
 
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
+    This option allows you to select one or more client certificates \(based on which the inbound authorization is checked\). Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
+
+    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
+
+-   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. Choose *Select* to get a list of all available roles.
+
+    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
+
+    > ### Note:  
+    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
+    > 
+    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
+    > 
+    > -   If you have selected a product profile for SAP Process Orchestration, the value help only shows the default role *ESBMessaging.send*.
+
+    You can use *User Role* with different authentication options, such as:
+
+    > ### Note:  
+    > These examples are not the only supported options. For a list of supported authentication methods for HTTP-based inbound communication, refer to [Authentication Options \(Inbound\)](../ConnectionSetup/authentication-options-inbound-5495ee0.md).
 
     -   *Basic authentication* \(using the credentials of the user\)
 
@@ -300,34 +318,6 @@ You can select one of the following options:
 
         The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
 
-
-
-Depending on your choice, you can also specify one of the following properties:
-
--   *Client Certificate*
-
-    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
-
-    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
-
--   *User Role*
-
-    Allows you to select a role based on which the inbound authorization is checked.
-
-    Choose *Select* to get a list of all available roles.
-
-    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
-
-    > ### Note:  
-    > Note the following:
-    > 
-    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
-    > 
-    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
-    > 
-    > -   If you have selected a product profile for SAP Process Orchestration, the value help will only show the default role *ESBMessaging.send*.
 
 
 
@@ -400,7 +390,7 @@ Specifies the way how WS-Security settings are to be configured.
 
 -   *Via Manual Configuration in Channel*
 
-    The security settings are manually to be configured \(see below listed attributes\).
+    The security settings are manually to be configured \(see listed attributes next\).
 
 -   *None*
 
@@ -462,7 +452,7 @@ The tenant private key is used to sign the response message \(that is sent back 
 </td>
 <td valign="top">
 
-Specify an alias for the public key that is to be used to encrypt the response message \(that is sent back to the sender/WS consumer\)..
+Specify an alias for the public key that is to be used to encrypt the response message \(that is sent back to the sender/WS consumer\).You can also enter $\{header.headername\} or $\{property.propertyname\} to read the name dynamically from a header or exchange property.
 
 The sender public key is used to sign the response message. This key has to be part of the tenant keystore.
 

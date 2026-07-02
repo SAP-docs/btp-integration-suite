@@ -40,6 +40,18 @@ Setting
 <tr>
 <td valign="top">
 
+Local Integration Process
+
+</td>
+<td valign="top">
+
+Local Integration Process: Send message to receiver
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Message ID
 
 </td>

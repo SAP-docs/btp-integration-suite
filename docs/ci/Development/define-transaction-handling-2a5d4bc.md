@@ -22,7 +22,7 @@ For example, consider a process with a Data Store Write operation. If transactio
 > 
 > With the 1.1 version or higher of Integration Process and Local Integration Process, you can configure transaction handling explicitly. If not needed, you can disable transaction handling to improve the processing performance.
 > 
-> If your integration flow still contains the old version of Integration Process pool, migrate it to a new version to be able to disable transactional behavior. For more information, see [Migrate an Integration Flow Component to a New Version](migrate-an-integration-flow-component-to-a-new-version-61bf6a2.md).
+> If your integration flow still contains the old version of Integration Process pool, migrate it to a new version to be able to disable transactional behavior. For more information, see [Update Version of an Integration Flow Component](update-version-of-an-integration-flow-component-61bf6a2.md).
 
 > ### Remember:  
 > From 1.2 version of Integration Process, the default value for *Transaction Handling* is set to *Not Required*. This design in turn, improves the processing performance. If necessary for your integration use case, you can change the value as mentioned in the following table.
@@ -96,107 +96,6 @@ If you choose *Not Required*, the related database operation is committed for ea
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-*JMS sender adapter* 
-
-This also applies to scenarios that include the AS2 adapter.
-
-</td>
-<td valign="top">
-
-*Not Required*
-
-In general, no transaction handling is required.
-
-> ### Note:  
-> These adapters don't require JMS transaction handling. Their retry handling works independently from the selected transaction handler.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*JMS sender adapter* together with JDBC resources \(*Data Store*, *Aggregator*, *Write* variables\)
-
-This also applies to scenarios that include the AS2 adapter.
-
-</td>
-<td valign="top">
-
-*Required for JDBC*
-
-> ### Note:  
-> We recommend that you don't use transactional JMS resources and JDBC resources in parallel.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*JMS receiver adapter* in a *Send* step
-
-</td>
-<td valign="top">
-
-*Required for JMS* \(mandatory\)
-
-This setting is mandatory to ensure that the data is consistently updated in the JMS queue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Several *JMS receiver adapters* together with a *JMS sender adapter* 
-
-</td>
-<td valign="top">
-
-*Required for JMS* \(mandatory\)
-
-This setting is mandatory to ensure that the data is consistently updated in the JMS queue.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-One *JMS receiver adapter* \(without Splitter or sequential Multicast\)
-
-</td>
-<td valign="top">
-
-*Not Required*
-
-No JMS transaction handler is required.
-
-> ### Note:  
-> Distributed transactions between JMS and JDBC resources are not supported.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Several *JMS receiver adapters* or a sequential *Multicast* or *Splitter* step followed by a *JMS receiver adapter* 
-
-</td>
-<td valign="top">
-
-*Required for JMS* 
-
-This setting is mandatory to ensure that the data is consistently updated in all JMS queues.
-
-</td>
-</tr>
 </table>
 
 Note that **asynchronous parallel processing of messages can't be transactional**.
@@ -262,29 +161,6 @@ Let us assume that you want to configure a message multicast and the integration
     <tr>
     <td valign="top">
     
-    *Required for JMS* 
-    
-    </td>
-    <td valign="top">
-    
-    You can specify that Java Message Service \(JMS\) transactional database processing is applied \(to ensure that the process is accomplished within one transaction\).
-
-    You can define a *Transaction Timeout* \(in minutes\).
-
-    > ### Caution:  
-    > The maximum timeout setting is 12 hours.
-    > 
-    > It's recommended that the timeout setting doesn't exceed 1 hour \(because long running transactions can cause issues with the JMS broker\).
-    > 
-    > In future, transactions that take longer than 1 hour is stopped.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     *Not Required* 
     
     </td>
@@ -323,27 +199,6 @@ Let us assume that you want to configure a message multicast and the integration
     <td valign="top">
     
     Transactional processing is inherited from the calling process. The value defined for the calling process is used as the timeout.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Required for JMS* 
-    
-    </td>
-    <td valign="top">
-    
-    You can specify that Java Message Service \(JMS\) transactional database processing is applied.
-
-    > ### Caution:  
-    > The maximum timeout setting is 12 hours.
-    > 
-    > It's recommended that the timeout setting doesn't exceed 1 hour \(because long running transactions can cause issues with the JMS broker\).
-    > 
-    > In future, transactions that take longer than 1 hour is stopped.
-
-
     
     </td>
     </tr>

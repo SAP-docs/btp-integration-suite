@@ -13,7 +13,18 @@ OData system query options are provided by the OData framework and documented in
 This section provides a summary of the supported query options.
 
 > ### Caution:  
-> Not all quer options listed below are always supported by each entity type of the Cloud Integration OData API.
+> Not all query options listed below are always supported by each entity type of the Cloud Integration OData API.
+> 
+> For example, The DataStore and Variables APIs do not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+> 
 > 
 > For more information on the supported query options, check out the description of the individual resources on SAP Business Accelerator Hub.
 
@@ -67,7 +78,7 @@ For example, adding the query `$expand=AdapterAttributes` to an OData request ad
 </td>
 <td valign="top">
 
-Returns a subset of records according to the resource path section of the URI\) and to the filter expression.
+Returns a subset of records according to the resource path section of the URI and to the filter expression.
 
 </td>
 </tr>
@@ -186,11 +197,29 @@ Examples for the `$filter` query option:
 
     Addresses all message processing logs with the ApplicationMessageId `applicationID`.
 
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=ApplicationMessageType eq 'application-message-type'`
+
+    Adresses all message processing logs with the ApplicationMessageType `application-message-type`
+
 -   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00' and LogEnd lt datetime'2014-09-02T00:00:00'`
 
     Addresses all message processing logs with log end time between the two datetime literals `2014-09-01T00:00:00Z` and `2014-09-02T00:00:00`.
 
+    You can also use `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00' and LogStart lt datetime'2014-09-02T00:00:00'` to get all Message Processing Logs inside the chosen time interval.
+
     Currently, parsing of time zone information in datetime literals is not supported. All datetime literals are interpreted as UTC \(Universal Time Coordinated\). Therefore, a zone offset cannot be interpreted. For example, a call with the following syntax will not be interpreted correctly: `https://<tmn>/api/v1/MessageProcessingLogs?$filter=LogEnd gt datetime'2014-09-01T00:00:00Z' and LogEnd lt datetime'2014-09-02T00:00:00Z'`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Sender eq 'sender'`
+
+    Returns all message processing logs, where the associated messages were sent by `sender`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Receiver eq 'receiver'`
+
+    Returns all message processing logs, where the associated messages were addressed to `receiver`.
+
+-   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=CustomStatus eq 'ERROR'`
+
+    Returns all message processing logs, where the associated messages are in CustomStatus, here ERROR.
 
 -   `https://<tmn>/api/v1/MessageProcessingLogs?$filter=Status eq 'ERROR'`
 
@@ -200,6 +229,9 @@ Examples for the `$filter` query option:
 
     Returns all messages that are correlated by the CorrelationId `AbCd-jshkdgsz23jds-T`.
 
+
+> ### Tip:  
+> You can combine other filters into one OData request, but it is recommended to use filters containing MessageGuid, CorrelationID and ApplicationMessageID separately from other filters.
 
 
 
@@ -219,4 +251,77 @@ Example:
  <link href="https://<tmn>/api/v1/MessageProcessingLogs?$skiptoken=1000" rel="next" />
 </feed>
 ```
+
+
+
+<a name="loio99f4b708b1e4474ebe8af1a653aa4c55__section_wdm_vmp_fzb"/>
+
+## Filtering Message Processing Logs for Custom Header Properties
+
+You can set custom header properties to filter message processing logs. The *Monitor* application shows these custom header properties in the filtering section of the message processing log screen.
+
+When requesting message processing logs \(MPLs\) using the OData API, you can use additional query options to filter MPLs along custom header properties as well as to ge tinformation on the available custom header properties.
+
+You can combine filter for custom properties with other query parameters such like `filter`, `format`, `orderby`, and `top`, for example.
+
+Let's assume that you have MPLs with the custom header property `po_number` which can have different values \(`12345`, for example\).
+
+If you like to return MPLs with given custom header properties and values \(for the example above\), perform one of the following API calls:
+
+`/MessageProcessingLogs?filterCustomHeaderProperties='po_number' eq '12345'`
+
+`/MessageProcessingLogs?$format=json&…&$filter=<different-filters>&filterCustomHeaderProperties='po_number' eq '12345'`
+
+The response contains the MPL details.
+
+Let's assume that you don't know which custom properties and values are available and you like to get a list of all custom header properties used in different MPLs, perform the following API call:
+
+`/MessageProcessingLogCustomHeaderProperties` 
+
+The response contains one or many of the following sections with the custom header properties and their values \(for example\):
+
+```
+<content type="application/xml">
+            <m:properties>
+                <d:Id>1234</d:Id>
+                <d:Name>po_number</d:Name>
+                <d:Value>12345</d:Value>
+            </m:properties>
+        </content>
+
+```
+
+You can use following request to get information about MPLs using a specific custom header property:
+
+`/MessageProcessingLogCustomHeaderProperties('1234')/Log`g
+
+To return information about a specific custom header property, perform the following call:
+
+`/MessageProcessingLogCustomHeaderProperties?$filter=Name eq 'custom_property_name' and Value eq 'custom_Property_value'`
+
+For example, assume that there are MPLs with the custom header property `po_number` and you perform the following API call:
+
+`/MessageProcessingLogCustomHeaderProperties?$filter=Name eq 'po_number' and Value eq '12345'` 
+
+The response contains the following section with the custom header property, its value, and an Id:
+
+```
+<content type="application/xml">
+            <m:properties>
+                <d:Id>1234</d:Id>
+                <d:Name>po_number</d:Name>
+                <d:Value>12345</d:Value>
+            </m:properties>
+        </content>
+
+```
+
+Now that you know the custom header property Id, you can use following request to get information about MPLs associated with the custom header property with this Id:
+
+`/MessageProcessingLogCustomHeaderProperties('1234')/Log`
+
+The response contains the MPL details.
+
+> ### Tip:  
+> For more information on how to set custom header properties, see [Use Custom Header Properties to Search for Message Processing Logs](use-custom-header-properties-to-search-for-message-processing-logs-d4b5839.md).
 

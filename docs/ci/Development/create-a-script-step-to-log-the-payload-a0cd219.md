@@ -1,5 +1,7 @@
 <!-- loioa0cd219f731d42e79e2ce788d6644816 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create a Script Step to Log the Payload
 
 Add a Script step to log the message payload.
@@ -22,7 +24,7 @@ With a Groovy Script step, you can configure the integration in such a way that 
 
     ![](images/Script_Step_after_CM_6fd2366.png)
 
-5.  Choose the*\+* icon.
+5.  Choose the <span class="SAP-icons-V5"></span> icon.
 
 6.  The default script coding of the step is displayed.
 

@@ -14,11 +14,15 @@ You can store secure data like passwords in a secure store and use an alias name
 
 ## Procedure
 
-1.  Click the *Security Material* tile in the *Manage Security Material* section.
+1.  Choose *Monitor*.
 
-2.  Choose *Create* \> *Secure Parameter*.
+2.  Click the *Security Material* tile in the *Manage Security* section.
 
-3.  Specify the following attributes.
+3.  Choose *Add*.
+
+4.  As *Type*, select *Secure Parameter*.
+
+5.  Specify the following attributes.
 
 
     <table>
@@ -95,7 +99,7 @@ You can store secure data like passwords in a secure store and use an alias name
     </tr>
     </table>
     
-4.  Choose *Deploy*.
+6.  Choose *Deploy*.
 
 
 

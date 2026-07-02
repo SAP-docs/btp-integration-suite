@@ -78,9 +78,9 @@ When a sender system calls the integration platform using HTTPS-based \(inbound\
 **Related Information**  
 
 
-[Load Balancer Root Certificates Supported by SAP](../40-RemoteSystems/load-balancer-root-certificates-supported-by-sap-4509f60.md "The load balancer supports a certain list of root certificates.")
+[Load Balancer Root Certificates Supported by SAP](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4509f605e83c4c939a91b81eb3a6cdea.html "The load balancer supports a certain list of root certificates.") :arrow_upper_right:
 
-[Authentication and Authorization Options \(Inbound\)](../40-RemoteSystems/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
+[Authentication and Authorization Options (Inbound)](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/983f2a5f994146ab8daff1f97d6db3dd.html "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.") :arrow_upper_right:
 
 [Personas](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/4b4ba1c553474259b5be661f4ef0702c.html "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.") :arrow_upper_right:
 

@@ -68,7 +68,7 @@ Example:
 </td>
 <td valign="top">
 
-[Different Methods of Creating an API Proxy](../50-Development/different-methods-of-creating-an-api-proxy-4ac0431.md) 
+[Different Methods of Creating an API Proxy](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/4ac0431ddc80469ca31dcd938edc9076.html "An API proxy is the data object that contains all the functionality to be executed when an external user wants to access the backend service.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ Example:
 </td>
 <td valign="top">
 
-[Edit an API Proxy](../50-Development/edit-an-api-proxy-a64b952.md) 
+[Edit an API Proxy](https://help.sap.com/viewer/38c3df3f8da44a809f937220b3579607/Cloud/en-US/a64b952578f84161829439c3ee6e967b.html "Once you’ve created an API proxy you can further change the proxy, either on the API portal, or by using the embedded API designer.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -194,7 +194,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create a Product](../50-Development/create-a-product-d769622.md) 
+[Create a Product](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/d7696221f36947a481b154335b89010d.html "Create products to publish a bundle of API proxies together.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -446,7 +446,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create an API Provider](../50-Development/create-an-api-provider-6b263e2.md) 
+[Create an API Provider](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/6b263e2c1b2d4d9ba20bcd7872eedd9e.html "Define the details of the host you want an application to reach by creating an API provider.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -572,7 +572,7 @@ Example:
 </td>
 <td valign="top">
 
-[Onboarding an Application Developer](../50-Development/onboarding-an-application-developer-786d107.md) 
+[Onboarding an Application Developer](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/786d107e1dbf414ca15ae9ddb2cb49e6.html "As API administrators, you can onboard application developers, enabling them to access Developer Hub.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1164,7 +1164,7 @@ Example:
 </td>
 <td valign="top">
 
-[Key Value Map](../50-Development/key-value-map-3722a39.md) 
+[Key Value Map](https://help.sap.com/viewer/38c3df3f8da44a809f937220b3579607/Cloud/en-US/3722a394e4364711b2b176f6f5b976ed.html "A key value map lets you create and manage collections of arbitrary key value pairs for any number of API proxies. Each key value pair is stored in a map as an entry.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1290,7 +1290,7 @@ Example:
 </td>
 <td valign="top">
 
-[Create a Key Value Map](../50-Development/create-a-key-value-map-90d8d41.md) 
+[Create a Key Value Map](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/90d8d4186c28475b9fec2f4cf2f45113.html "Create a key value map using the create and manage collections of arbitrary key value pairs for any number of API proxies.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1332,7 +1332,7 @@ Example:
 </td>
 <td valign="top">
 
-[Update a Key Value Map](../50-Development/update-a-key-value-map-4961431.md) 
+[Update a Key Value Map](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/4961431b0cbf4e18bbc037d9c6e9f5f5.html "Update a key value map.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1374,7 +1374,7 @@ Example:
 </td>
 <td valign="top">
 
-[Delete a Key Value Map](../50-Development/delete-a-key-value-map-24fbb01.md) 
+[Delete a Key Value Map](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/24fbb01bcc61480ea21962900aaecb04.html "Delete a key value map which is not in use.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1543,7 +1543,7 @@ Example:
 </td>
 <td valign="top">
 
-[Manage Certificates](../50-Development/manage-certificates-c665875.md) 
+[Manage Certificates](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/c6658758fa1a4d29a4140a247f5505bb.html "By using certificates, you can ensure that whenever a call is made to your API, there’s a certificate attached to it that confirms the identity of the caller and only if you recognize this identity the API can be processed and return data can be provided.") :arrow_upper_right: 
 
 </td>
 </tr>

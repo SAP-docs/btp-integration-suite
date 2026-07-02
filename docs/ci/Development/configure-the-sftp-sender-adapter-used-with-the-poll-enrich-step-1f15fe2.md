@@ -11,7 +11,7 @@ The SFTP sender adapter connects an SAP Cloud Integration tenant to a remote sys
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -34,21 +34,6 @@ If you have configured a **sender** SFTP adapter, message processing is performe
 **SFTP Sender Adapter: Tenant reads files from SFTP server**
 
 ![](images/SFTP_Sender_Adapter_-_Tenat_reads_from_server_2081741.png "SFTP Sender Adapter: Tenant reads files from SFTP server")
-
-
-
-### 
-
-> ### Note:  
-> This adapter does **not** support connections to FTP servers.
-> 
-> See: [FTP Adapter](ftp-adapter-4464f89.md).
-
-As a prerequisite to use this adapter, you need to set up a connection to an SFTP server as described under: [Setting Up Inbound SFTP Connections \(Details\)](../ConnectionSetup/setting-up-inbound-sftp-connections-details-e72eba4.md).
-
-[Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
-
-Once you have created a sender channel and selected the SFTP sender adapter, you can configure the following attributes.
 
 **General**
 
@@ -108,7 +93,23 @@ Description
 
 Relative path to read the file from a directory. Example: `parentdirectory/childdirectory`
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Regex Filtering*
+
+\(Supported for adapter version 1.8 and above\)
+
+</td>
+<td valign="top">
+
+Select to evaluate the entered filename as a real [regular expression](configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md#loio1f15fe2e8ccc4c078f099ee609f65185__regex).
+
+Else, the file name will be evaluated as a [simple expression](configure-the-sftp-sender-adapter-used-with-the-poll-enrich-step-1f15fe2.md#loio1f15fe2e8ccc4c078f099ee609f65185__simple).
 
 </td>
 </tr>
@@ -120,19 +121,17 @@ You can configure this parameter by entering a dynamic expression such like `${p
 </td>
 <td valign="top">
 
-Name of the file to be read.
+Name of the file to be read. If you do not enter a file name and the parameter remains blank, all the files in the specified directory are read. When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated. For more information, see [3529367](https://me.sap.com/notes/3529367)
 
 > ### Note:  
-> **Usage of expressions and file name patterns:**
+> For simple expressions:
 > 
-> Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
+> -   Expressions, such as `ab*`, `a.*`, `*a*`, `*a`, `?b`, and so on, are supported.
 > 
-> -   The expression `*` replaces no character or an arbitrary number of characters.
+> -   The expression \* replaces no character or an arbitrary number of characters.
 > 
-> -   The expression `?` replaces exactly one arbitrary character.
+> -   The expression ? replaces exactly one arbitrary character.
 > 
-> 
-> When you use an expression to include files from subdirectories, the relative path from the root directory of the user and the actual file name are evaluated.
 > 
 > Examples:
 > 
@@ -141,6 +140,13 @@ Name of the file to be read.
 > -   If you specify `file*.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, as well as `file.txt` and `file1234.txt`, and so on.
 > 
 > -   If you specify `file?.txt` as the *File Name*, the following files are polled by the adapter: `file1.txt`, `file2.txt`, and so on, but **not** the files `file.txt` or `file1234.txt`.
+
+> ### Note:  
+> For regular expressions:
+> 
+> -   Ensure that too complex regex patterns are not entered. A default value of 5 seconds is set for evaluation of regex expression.
+> -   Regex pattern must be valid; invalid patterns may lead to unexpected results or errors.
+> -   In the JSch library, the characters `?` and `*` and `%` are used as wild card symbols for pattern matching. File names containing these characters are treated as wild cards, which means they might not be processed as literal file names. Hence, avoid using ? and \* and % in file names.
 
 > ### Caution:  
 > Files with file names longer than 100 characters are processed as follows:
@@ -151,7 +157,7 @@ Name of the file to be read.
 > 
 > -   The option *Keep File and Mark as Processed in Idempotent Repository* \(for sender channels under *Processing*\) will not work for these files.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -165,7 +171,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Host name or IP address of the SFTP server and an optional port, for example, `wdfd00213123:22`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -183,12 +189,81 @@ Proxy type that you're using to connect to the target system.
 
 -   Select *On-Premise* if you’re connecting to an on-premise SFTP server.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
+
 -   Select *Dynamic* to let the system determine at runtime which proxy type to use. The value of property `SAP_FtpProxyType` is used for that purpose \(possible values `internet` or `onPremise`\).
 
     If you've selected this option and if the property isn't defined \(for example, in a preceding step\), an error is raised at runtime.
 
 
 For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md). For more information on how to use the *On-Premise* option to connect to an on-premise SFTP server, check out SAP Community blog [Cloud Integration – How to Connect to an On-Premise sftp server via Cloud Connector](https://blogs.sap.com/2018/11/16/cloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector/).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>
@@ -204,74 +279,14 @@ For more information, see [Using SAP Cloud Connector with Cloud Integration Adap
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration of SAP BTP cockpit.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Authentication* 
-
-</td>
-<td valign="top">
-
-Authentication option for the connection to the SFTP server. You've the following options:
-
--   *Public Key*
-
-    SFTP server authenticates the calling component \(tenant\) based on a public key.
-
--   *User Name/Password*
-
-    SFTP server authenticates the calling component \(tenant\) based on the user name and password. To make this configuration setting work, you need to define the user name and password in a *User Credential* artifact and deploy the artifact on the tenant.
-
--   *Dual*
-
-    SFTP server authenticates the calling component \(tenant\) with two authentication methods: based on a public key and based on user credentials.
-
-    At runtime, the system evaluates the values of additional parameters in the following way:
-
-    -   For the authentication step based on user credentials: Credentials from the deployed artifact with the name given by the *Credential Name* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-    -   For the authentication step based on public key: User name contained in the deployed artifact with name given by the *Credential Name* parameter and the key identified by the *Private Key Alias* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-
-    If selected, you can specify the *User Credentials* artifact \(that contains user name and password\) with the *Credential Name* parameter and the key to be used from the keystore with the *Private Key Alias* parameter.
-
--   *Dynamic*
-
-    The authentication method is determined dynamically based on the value of the property `SAP_FtpAuthMethod` \(possible values: `user`, `key`, or `dual`\). If the property isn't defined \(for example, in a preceding step\), an error is raised at runtime.
-
-    If this option is selected, you can configure the following parameters to further specify how the dynamically determined authentication method is to be applied: *Credential Name*, *User Name*, and *Private Key Alias*. Depending on the value of property `SAP_FtpAuthMethod`, the system evaluates the values of the parameters relevant for the given authentication option.
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Credential Name*
-
-\(only if *User Name/Password* or *Dual* is selected for *Authentication*\)
-
-</td>
-<td valign="top">
-
-Name of the *User Credentials* artifact that contains the user name and password.
-
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*User Name*
-
-\(only if *Public Key* is selected for *Authentication*\)
+*User Name* 
 
 </td>
 <td valign="top">
@@ -280,7 +295,7 @@ ID of the user performing the file transfer.
 
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -296,7 +311,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -396,6 +411,93 @@ Description
 <tr>
 <td valign="top">
 
+*Processing Mode*
+
+\(Supported for adapter version 1.9 and above\)
+
+</td>
+<td valign="top">
+
+Retrieves list of files from an SFTP server without reading its contents.
+
+Select one of the following based on how you want to process the files.
+
+-   *Process File*: Follows the default behaviour of poll enrich where a single file is processed.
+
+-   *List Files Only*: Lists the files from the source directory. The fields *Read Lock Strategy*, *Use Fast Exists Check* and *Post-Processing* are not relevant hence disabled.
+
+    The file list, along with associated metadata such as name, size, timestamps, and permissions, is placed directly into the Camel message body, enabling subsequent steps in the integration flow to access and act on this information. It also supports including subdirectories in the search and applies the same default filtering logic used in the poll enrich option, ensuring consistency in file selection.
+
+    The output of this feature is an xml structure
+
+    The FileList XML structure is designed to encapsulate detailed information about files in a directory. It comprises a collection of <file\> elements under a root <files\> element. Each <file\> element contains metadata about an individual file, including its path, name, modification details, size, and permissions.
+
+    Default sort is not applied to the list of files, they are dependent on the file system.
+
+
+> ### Sample Code:  
+> Output
+> 
+> ```
+> <fileList>
+>     <files>
+>         <file>
+>             <absoluteFilePath>teal/user/noopTests/filenoop2.txt</absoluteFilePath>
+>             <endpointPath>teal/user/noopTests</endpointPath>
+>             <relativeFilePath>filenoop2.txt</relativeFilePath>
+>             <parent>teal/user/noopTests</parent>
+>             <fileNameOnly>filenoop2.txt</fileNameOnly>
+>             <lastModified>1753257921000</lastModified>
+>             <lastModifiedInString>Wed Jul 23 08:05:21 UTC 2025</lastModifiedInString>
+>             <fileSeparator>/</fileSeparator>
+>             <fileLength>0</fileLength> <permissionString>-rw-r-r--</permissionString>
+>         </file>
+>         <file>
+>             <absoluteFilePath>teal/user/noopTests/subdir1/file3subdir.txt</absoluteFilePath>
+>             <endpointPath>teal/user/noopTests</endpointPath>
+>             <relativeFilePath>subdir1/file3subdir.txt</relativeFilePath>
+>             <parent>teal/user/noopTests/subdir1</parent>
+>             <fileNameOnly>file3subdir.txt</fileNameOnly>
+>             <lastModified>1753257952000</lastModified>
+>             <lastModifiedInString>Wed Jul 23 08:05:52 UTC 2025</lastModifiedInString>
+>             <fileSeparator>/</fileSeparator>
+>             <fileLength>0</fileLength> <permissionString>-rw-r-r--</permissionString>
+>         </file>
+>     </files>
+> </fileList>
+> 
+> ```
+
+Tag Description:
+
+-   <absoluteFilePath\>: Full path of the file as per the system directory from the home directory of the user.
+
+-   <endpointPath\>: Directory path of the designated endpoint.
+
+-   <relativeFilePath\>: File path relative to the endpoint location.
+
+-   <parent\>: Parent directory of the file.
+
+-   <fileNameOnly\>: File name with extension.
+
+-   <lastModified\>: Timestamp indicating last modification \(milliseconds since epoch\).
+
+-   <lastModifiedInString\>: Human-readable format of modification time in UTC.
+
+-   <fileSeparator\>: Character used for separating file path components.
+
+-   <fileLength\>: File size in bytes.
+
+-   <permissionString\>: File permissions in UNIX format.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Read Lock Strategy* 
 
 </td>
@@ -489,7 +591,7 @@ You can select one of the following options:
 
 -   *Keep File and Mark as Processed in Idempotent Repository*: Prevents a file from being consumed twice. For that purpose, an idempotent repository is activated.
 
-    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
+    The idempotent repository contains information about files already been consumed from the SFTP server. Being stored in the idempotent repository, a file can be identified by the file name. When SAP Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the SFTP server.
 
     Select this option for SFTP servers that don't allow deletion or moving of files, but the files are to be read only once.
 

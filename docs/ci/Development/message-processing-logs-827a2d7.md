@@ -4,7 +4,11 @@
 
 Get an overview of the messages processed on a tenant and get the details for individual messages. The message processing log \(MPL\) stores data about the messages processed on a tenant. Furthermore, it stores information about the individual processing steps for each processed message.
 
-You can access the OData API and find the basic operations at: [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource)
+You can access the OData API and learn about its basic operations at:
+
+-   [Message Processing Logs](https://api.sap.com/api/MessageProcessingLogs/resource) for Cloud Integration.
+-   [Message Processing Logs](https://api.sap.com/api/sap-int-eic-message-processing-logs-v1/overview) for Edge Integration Cell
+
 
 This documentation provides additional information.
 
@@ -32,11 +36,15 @@ To authorize an API client to access the OData API:
 
     `MonitoringDataRead` \(see [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)\)
 
+    To access the ID Mapper, assign role template `MessageProcessingLocksRead`.
+
 -   In the **Neo** environment, perform the steps described in: [Setting Up Inbound HTTP Connections \(for API Clients\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-for-api-clients-neo-environment-fbae09c.md) 
 
     Assign the following roles:
 
     `IntegrationOperationServer.read`, `NodeManager.read` \(see [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md)\)
+
+    To access the ID Mapper, assign role template `MessageProcessingLocks.Read`.
 
 
 
@@ -121,6 +129,11 @@ Attachments
 
 Represents attachments of message processing logs.
 
+> ### Note:  
+> To be able to view attachments, you need the following role in the NEO environment :`esbmessagestorage.read`. In the Cloud Foundry environment, you need the role template `MessagePayloadsRead`\).
+
+
+
 </td>
 </tr>
 <tr>
@@ -145,7 +158,24 @@ More information: [Use Custom Header Properties to Search for Message Processing
 <tr>
 <td valign="top">
 
+Error Information
+
+</td>
+<td valign="top">
+
+Represents error information for message processing logs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 ID Mapper
+
+> ### Note:  
+> Not supported in.
+
+
 
 </td>
 <td valign="top">
@@ -159,6 +189,11 @@ Allows you to get all target IDs for the given source ID \(stored in the ID mapp
 
 Idempotent Repository
 
+> ### Note:  
+> Not supported in .
+
+
+
 </td>
 <td valign="top">
 
@@ -167,7 +202,7 @@ Represents the idempotent repository.
 > ### Note:  
 > The `Idempotent Repository` resource of the `Message Processing Logs` API has been deprecated and replaced by a new one.
 
-The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregator step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the server.
+The idempotent repository contains information about files that have already been consumed from the connected server in scenarios where one or more of the following features are used: Aggregation step, FTP, adapter, JMS adapter, SFTP adapter, or XI adapter. Files that are stored in the idempotent repository can be identified by the file name. When Cloud Integration tries to process the file, the system can detect if the file has already been consumed \(based on its idempotent repository entry\) and that way can prevent it from being consumed a second time from the server.
 
 More information:
 
@@ -183,6 +218,20 @@ More information:
 
 
 Certain values \(when indicated as `<hexalias>`\) need to be provided in hexadecimal notation. String characters are stored by the computer as numbers. When the hexadecimal notation is required, the text is to be provided not as decimal number but as a hexadecimal number instead. For example: The string `my alias` is expressed by the following decimal numbers: `109 121 32 97 108 105 97 115` because, according to the American Standard Code for Information Interchange \(ASCII \), the letter `m` is translated to the decimal number `109`, and so forth. If you convert each number to a hexadecimal number, you get: `6D 79 20 61 6C 69 61 73`. Note that `6D` is the hexadecimal representation of `109`, and so forth. If you want to specify `my alias` in an example request, enter `6D7920616C696173`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+External Logging \(only available in the Cloud Foundry environment.\)
+
+</td>
+<td valign="top">
+
+Allows you to activate or deactivate external logging.
+
+More information: [External Logging Cloud Foundry Environment](../Operations/external-logging-cloud-foundry-environment-ad719c1.md)
 
 </td>
 </tr>
@@ -230,6 +279,11 @@ On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
 You can find the relative resource path for each operation on SAP Business Accelerator Hub.
+
+
+
+> ### Note:  
+> A sandbox environment isn't available for .
 
 **Related Information**  
 

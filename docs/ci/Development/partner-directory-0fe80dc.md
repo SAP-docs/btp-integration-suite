@@ -4,18 +4,17 @@
 
 The Partner Directory contains information on partners that are connected to a tenant in the context of a larger business partner network.
 
-You can access the OData API at:
+You can access the OData API and learn about its basic operations at:
 
-[https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/)
-
-There, you find the basic operations.
+-   [https://api.sap.com/api/PartnerDirectory/](https://api.sap.com/api/PartnerDirectory/) for Cloud Integration.
 
 This documentation provides additional information.
 
 > ### Note:  
 > There's also a Java API to access the Partner Directory using a programming language like Java Script or Groovy. For more information, check out the JavaDoc linked to at [SDK API](sdk-api-c5c7933.md) \(for example, check out the package `com.sap.it.api.pd`\).
 
-There's no dedicated user interface to access the Partner Directory. You can access its content only based on APIs.
+> ### Caution:  
+> The data is stored unencrypted in the Partner Directory. Therefore, make sure that the data does not contain any sensitive information \(for example, passwords or personal information\).
 
 
 
@@ -53,7 +52,7 @@ More information on the concepts: [Partner Directory Concepts](partner-directory
 <tr>
 <th valign="top">
 
-Resource
+Entity Type
 
 </th>
 <th valign="top">
@@ -72,11 +71,9 @@ Alternative Partners
 
 Represents an alternative partner.
 
-The API allows you to access \(read, write, delete\) an alternative partner.
+You can access \(read, write, delete\) an alternative partner.
 
-A partner can be identified by different identifiers. For example, a bank can be identified by the German bank code number \(Bankleitzahl or: BLZ\) or the international Bank Identifier Code \(BIC\).
-
-Each alternative partner has three string fields: Agency, Scheme, and ID.
+See: [Partner Directory Entity Types](../Operations/partner-directory-entity-types-950f4b2.md)
 
 </td>
 </tr>
@@ -90,11 +87,9 @@ Authorized Users
 
 Represents the user with which a partner sender system can log in into SAP Cloud Integration.
 
-The API allows you to access \(read, write, delete\) an authorized user.
+You can access \(read, write, delete\) an authorized user.
 
-This entity is required for the authorization of the partner sender system when calling Cloud Integration. If the partner uses HTTPS with client certificate authentication to connect to Cloud Integration, a certificate-to-user-mapping is required \(in the Neo environment\).
-
-An authorized user has a `user` property \(name of the authorized user\) and a `Pid` property \(internal identifier of the associated partner\).
+See: [Partner Directory Entity Types](../Operations/partner-directory-entity-types-950f4b2.md)
 
 </td>
 </tr>
@@ -106,17 +101,11 @@ Binary Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
-
-A Partner Directory parameter has a value and a type. The currently supported predefined types are `Binary` and `String`.
-
-A binary parameter has a maximum size of 1,5 MB.
-
-The following content types are supported \(defined by the `ContentType` parameter\): xml, xsl, xsd, json, text, zip, gz \(for GZIP files\), zlib, crt \(for DER encoded X.509 certificates\)
+You can access \(read, write, delete\) a binary parameter of the Partner Directory \(for example, for an XSD document\).
 
 Here, you can also specify the encoding for xml, xsl, xsd, json, and text \(separated by semicolon\), for example: `xml;encoding=UTF-8`
 
-The parameter `Value` of this entity can have a maximum length of 262144 bytes.
+See: [Partner Directory Entity Types](../Operations/partner-directory-entity-types-950f4b2.md)
 
 </td>
 </tr>
@@ -128,11 +117,15 @@ Partners
 </td>
 <td valign="top">
 
-The API allows you to read all partners or delete a partner from the Partner Directory.
+You can read all partners or delete a partner from the Partner Directory.
 
 A partner is identified by an internal identifier \(referred to as `Pid`\) \(which is unique within the tenant partner directory and has a maximum length of 60 characters\).
 
+The *PID* may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
+
 A partner can have parameters \(StringParameter, BinaryParameter, or UserCredentialParameter\). The parameter is uniquely identified by the Pid of the partner to which the parameter belongs and its Id.
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 </td>
 </tr>
@@ -144,11 +137,9 @@ String Parameters
 </td>
 <td valign="top">
 
-The API allows you to access \(read, write, delete\) a string parameter of the Partner Directory.
+You can access \(read, write, delete\) a string parameter of the Partner Directory.
 
-A Partner Directory parameter has a value and a type. The currently supported predefined types are Binary and String.
-
-A string parameter has a maximum length of 4000 characters.
+See: [Partner Directory Entity Types](../Operations/partner-directory-entity-types-950f4b2.md)
 
 </td>
 </tr>
@@ -162,11 +153,13 @@ User Credential Parameters
 
 Represents a *User Credentials* artifact \(that is to be used for outbound calls to a partner system\).
 
-The API allows you to access \(read, write, delete\) a *User Credentials* artifact.
+You can access \(read, write, delete\) a *User Credentials* artifact.
 
 You use this parameter to configure and deploy *User Credentials* artifacts.
 
 The *User Credentials* parameter contains a user and a password \(both maximum length of 200 characters\).
+
+The ID of this entity may consist of alphanumeric characters \(A-Z, a-z, 0-9\), as well as the following special characters: '-', '.', '\_', '~', '<', '\>', and '@'.
 
 Note that the user credentials \(user and password\) relate to the receiver \(partner\) system that is targeted by an outbound call \(where these credentials are used for basic authentication\).
 
@@ -187,40 +180,6 @@ Note that the user credentials \(user and password\) relate to the receiver \(pa
 </table>
 
 For general information about query options, see [Query Options](query-options-99f4b70.md).
-
-
-
-<a name="loio0fe80dc9d3be4dfbbb89ee4c791d326e__section_ssw_lzr_r2b"/>
-
-## More Information on AlternativePartner
-
-Each alternative partner has the following properties:
-
--   *Agency*
-
-    Abbreviation for the organization that defines the identification scheme and that issues names for the partner to be identified \(maximum length of 120 characters\)
-
--   *\(Identification\) Scheme*
-
-    Reference framework within which partners are uniquely identified by names \(maximum length of 120 characters\)
-
--   *Id*
-
-    Identifier for the partner \(issued by the agency\) \(maximum length of 225 characters\)
-
-    Example: A person can be identified in many different ways, for example, by their customer number at a mail order company, or their name or employee number at their place of work. To able to identify a person uniquely, it isn't sufficient to just know the customer number, for example, you must know that **this** number is a customer number. Only once the frame of reference \(the identification scheme `Customer Number` \) is also known can a person be identified uniquely \(by using the number\). In the example, the agency `Mail Order Company` manages the identification scheme `Customer Number` . Different customers are issued unique names \(customer numbers\) within this scheme.
-
--   Pid
-
-    Internal identifier of the associated partner
-
-
-Restriction:
-
--   The triple `Agency`, `Scheme`, `Id` must be unique.
-
--   The triple `Agency`, `Scheme`, `Pid` must be unique \(only then you can look up the alternative partner Id from such a triple\).
-
 
 
 
@@ -307,4 +266,6 @@ For detailed step-by-step descriptions how to use the Partner Directory, see the
 [Partner Directory Concepts](partner-directory-concepts-f917d6e.md "")
 
 [Partner Directory Example Requests](partner-directory-example-requests-30e9cd6.md "")
+
+[Managing Partner Directory Entries](../Operations/managing-partner-directory-entries-3d6eee7.md "Manage Partner Directory entries that can be used to parameterize integration flows.")
 

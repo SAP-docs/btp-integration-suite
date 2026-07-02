@@ -21,7 +21,7 @@ The JSON to XML conversion has the following limitations:
     > 
     > Add a content modifier before the JSON to XML converter that changes the message body. In the entry field in tab *Message Body*, enter:
     > 
-    > `{"root": ${in.body}}`
+    > `{ "root": ${in.body} }`
 
 -   If no XML namespace is defined for a JSON prefix, the full member name with the prefix and JSON delimiter is set as the element name: "p:A" -\> <p:A\>.
 
@@ -57,6 +57,4 @@ See also: [3112970 - JSON-to-XML Converter Exception Caused by Invalid JSON Memb
 [Define JSON to XML Converter](define-json-to-xml-converter-5a7c0cd.md "The JSON to XML converter enables you to transform messages in JSON format to XML format.")
 
 [Conversion Rules for JSON to XML Conversion](conversion-rules-for-json-to-xml-conversion-232a9cf.md "To ensure a successful conversion of you data, you should make yourself familiar with the conversion rules.")
-
- <?sap-ot O2O class="- topic/link " href="a5b4641c393f406bb544987497c90a72.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/3a02829ea84e4f7dac62bdd10d06b084.xml" ?> 
 

@@ -33,7 +33,7 @@ You perform this task to assign XSLT mapping that is available in your local wor
 
 ## Procedure
 
-1.  Click on *Edit*.
+1.  Choose *Edit*.
 
 2.  In the palette, choose *XSLT Mapping*.
 
@@ -41,16 +41,13 @@ You perform this task to assign XSLT mapping that is available in your local wor
 
 4.  In the *Processing* tab, select either *Integration Flow* or *Header* for mapping *Source* field.
 
-    1.  If you select integration flow as source, then click on *Select* to choose the xslt or xsl file from *Resource* folder or file system.
+    1.  If you select integration flow as source, then *Select* to choose the xslt or xsl file from *Resource* folder or file system.
 
         > ### Note:  
         > -   To view or modify content of xslt mapping in the editor, click on the resource name in the *Resource* field.
         > -   For XSLT mapping, you can select the output format of the message to be either string or bytes from the *Output Format* field.
 
     2.  If you select header as source, then enter name for the header in the *Header Name* field.
-
-        > ### Note:  
-        > To assign xslt mapping for partner directory, the valid format for value of header name is `pd:<Partner ID>:<Parameter ID>:<Parameter Type>`, where the parameter type is either Binary or String. For example, the correct header name is **pd:SenderABC:SenderXSD:Binary**.
 
 
 5.  Save or deploy the changes.

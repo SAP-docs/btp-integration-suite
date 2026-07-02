@@ -11,7 +11,7 @@ Select a message from the list. In the view section, the header shows the integr
 > ### Remember:  
 > The dates and times diplayed are converted to the local time zone set for the browser.
 
-Below, you can select and display *Status*, *Properties* and *Logs*. If the processing of a integration flow failed, the retry runs performed are displayed in the *Logs* section.
+Next, you can select and display *Status*, *Properties* and *Logs*. If the processing of a integration flow failed, the retry runs performed are displayed in the *Logs* section.
 
 ![](images/MessageProcessingMonitoring_e08775e.png)
 
@@ -41,7 +41,7 @@ Description
 </td>
 <td valign="top">
 
-Displays the sequential number of the run
+Displays the sequential number of the run.
 
 </td>
 </tr>
@@ -107,17 +107,17 @@ Displays the intermediate status of the message processing log after this run.
 </tr>
 </table>
 
-You open the message processing log by clicking on the **log level** of one of the runs.
+You open the message processing log by selecting the **log level** of one of the runs.
 
-The detailed view shows the list of the *Run Steps* on the left.
+The detailed view shows the list of the *Run Steps*.
 
-If an error occurred in one of the run steps, it is shown by a red exclamation mark in the run step list. To display the error message, click on the exclamation mark.
+If an error occurred in one of the run steps, it is shown by a red exclamation mark in the run step list. To display the error message, follow the exclamation mark.
 
 If a **Split** or **Multicast Step** is used, the steps belonging to one sub-message get the same segment number. They can therefore be grouped together.
 
 To view the *Log Content*, select one run step from the list and choose *Log Content*. The log content displays the *Properties* and the *Activities* of the step. If more than one step is related to a flow element, all of them are selected within the list and you can scroll from one step to the next by using the arrows in the element info bar and view the properties and activities accordingly.
 
-The *Message Content* section is only visible, if the log level has been set to **trace**.
+You can only review the *Message Content* section, if the log level has been set to **trace**.
 
 > ### Note:  
 > The names of the flow elements can only be shown in the run step list if the integration flow model is loaded. If the model cannot be loaded, the system only shows the run steps IDs.
@@ -126,9 +126,9 @@ The *Integration Flow Model* is displayed on the right hand side, if it is deplo
 
 You can view the path taken by the message in the integration flow. If you select a run step for the list, it is highlighted in the integration flow model.
 
-You can also select an element of the *Integration Flow Model* and the related run step will be highlighted in the run step list on the left hand side
+You can also select an element of the *Integration Flow Model* and the related run step will be highlighted in the run step list on the left hand side.
 
-The properties view of the selected integration flow element is displayed at the page bottom.
+The properties view of the selected integration flow element is displayed at the end of the page.
 
 The availability of the trace data is also visualized in the integration flow model as envelope icons.
 

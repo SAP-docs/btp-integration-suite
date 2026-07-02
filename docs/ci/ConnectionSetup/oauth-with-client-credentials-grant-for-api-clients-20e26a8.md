@@ -285,7 +285,7 @@ To set up a sequence of requests for an OAuth workflow with the client credentia
 >             > ### Note:  
 >             > To enable the related HTTP client to support this authentication option, you need to format the certificate \(including the certificate chain\) and the key accordingly. In particular, make sure to replace all `\n` in the SAP-generated certificate or key by line breaks.
 >             > 
->             > A suitable certificate, for example, would then look like:
+>             > A suitable certificate, for example, would then look like the following:
 >             > 
 >             > ```
 >             > -----BEGIN CERTIFICATE-----

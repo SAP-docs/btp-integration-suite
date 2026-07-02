@@ -2,7 +2,7 @@
 
 # Configure Integration Flow Components
 
-Cloud Integration allows you to configure integration flow components in an editor.
+SAP Cloud Integration allows you to configure integration flow components in an editor.
 
 **Components of the Integration Flow Editor**
 
@@ -47,24 +47,12 @@ You can specify general properties of the integration flow. For more information
 <tr>
 <td valign="top">
 
-*Error Configuration* 
-
-</td>
-<td valign="top">
-
-Define how to handle errors when message processing fails at runtime. For more information, see [Define Error Configuration](define-error-configuration-77d0041.md).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Resources* 
 
 </td>
 <td valign="top">
 
-Manage different different categories of file types associated within an integration content. For more information, see [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md).
+Manage different different categories of file types associated within an integration content. For more information, see [Manage References](manage-references-b5968b2.md).
 
 </td>
 </tr>

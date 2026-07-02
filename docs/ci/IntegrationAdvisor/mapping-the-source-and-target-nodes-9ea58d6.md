@@ -387,7 +387,7 @@ Description
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -406,7 +406,7 @@ Denotes
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -442,7 +442,7 @@ Constant
 <tr>
 <td valign="top">
 
-<span class="SAP-icons-TNT"></span>
+<span class="SAP-icons-TNT-V3"></span>
 
 </td>
 <td valign="top">
@@ -454,7 +454,7 @@ Code value mapping
 <tr>
 <td valign="top">
 
-<span class="SAP-icons-TNT"></span>
+<span class="SAP-icons-TNT-V3"></span>
 
 </td>
 <td valign="top">
@@ -467,7 +467,30 @@ Conditional mapping
 
 You can also search for a particular node in the target or source structure using the search bar provided.
 
-If you want to search for a particular entry in the *Mapping List* tab, select the relevant column name and enter the search value in the filter <span class="SAP-icons"></span> field. The filter option is also avaliable for the *Code Value Mapping* that allows you to filter values both in the source and target code values.
+If you want to search for a particular entry in the *Mapping List* tab, select the relevant column name and enter the search value in the filter <span class="SAP-icons-V5"></span> field. The filter option is also avaliable for the *Code Value Mapping* that allows you to filter values both in the source and target code values.
+
+
+
+<a name="loio9ea58d63c6f64516b33c46079cc694e9__section_iwv_gsw_31c"/>
+
+## Duplicate Target Nodes
+
+You can now duplicate a target node and map other source nodes to the duplicated target node. This feature applies for both group and leaf node. To do so,
+
+1.  Select the context menu <span class="SAP-icons-V5"></span> of the target node you wish to copy and select *Duplicate*.
+
+2.  The *Duplicate Node* dialog box appears with the details of the selected node and a *Duplicates* table. Select *Add*.
+3.  This will create a copy of the original node in the *Duplicates* table. You can maintain the name and cardinality of this new node.
+
+    > ### Note:  
+    > By default, to distinguish the duplicated nodes from the original node, the duplicate names are prefixed with a number in square \[\] brackets.
+
+4.  You can create multiple duplicates of the node. Just select *Add* to create another copy of the node.
+5.  After maintaining the necessary information, select *Apply*. The copied nodes will behave the same as the original node.
+
+    > ### Note:  
+    > If the original node is changed, then the changes will be applied to the duplicates as well.
+
 
 
 

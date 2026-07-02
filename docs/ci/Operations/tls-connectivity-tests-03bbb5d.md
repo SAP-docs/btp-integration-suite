@@ -102,7 +102,7 @@ Choosing *Include new SAP Key* allows you to execute the connectivity test with 
 
 Using this option, you can test the backend connectivity before activating the new SAP key.
 
-For further information, see: [Activating a New Key Pair Provided by SAP](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/383be7ad9c8840e38facf9323619907b.html?version=Cloud&q=new%20sap%20key).
+For further information, see [Activating a New Key Pair Provided by SAP](activating-a-new-key-pair-provided-by-sap-383be7a.md).
 
 > ### Note:  
 > The connectivity test checks if the TLS handshake uses the key certificate pair. However, it doesn't validate any authorizations in the target system.

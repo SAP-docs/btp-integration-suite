@@ -10,7 +10,7 @@
 
 ## Prerequisites
 
-You have created a message implementation guideline \(MIG\). For more information on creating a new MIG, see [Creating a New Message Implementation Guideline](creating-a-new-message-implementation-guideline-b894de0.md). You have accessed the MIG that you want to work with by creating a new MIG or choosing one from *Message Implementation Guidelines \(MIGs\)* section of SAP Integration Advisor home page.
+You have created a message implementation guideline \(MIG\). For more information on creating a new MIG, see [Creating Message Implementation Guidelines](creating-message-implementation-guidelines-b894de0.md). You have accessed the MIG that you want to work with by creating a new MIG or choosing one from *Message Implementation Guidelines \(MIGs\)* section of SAP Integration Advisor home page.
 
 
 
@@ -33,7 +33,7 @@ Here are a few considerations to be mindful of before you work with MIG:
     > ### Note:  
     > Ensure that the MIG you are trying to edit is not locked by other users. The *Locked By* field displays the ID of ths user who's currently editing the MIG. You need to have admin rights to unlock it. To know more about the role, see [Assigning Users for SAP Integration Advisor](assigning-users-for-sap-integration-advisor-b5226b9.md)
 
-2.  Use <span class="SAP-icons"></span> and <span class="SAP-icons"></span> to expand and collapse nodes.
+2.  Use <span class="SAP-icons-V5"></span> and <span class="SAP-icons-V5"></span> to expand and collapse nodes.
 
     > ### Tip:  
     > -   If you want to search for specific elements in the MIG, select the column header. This activates a *Filter* where you can manually enter your filter criteria.
@@ -59,19 +59,6 @@ Here are a few considerations to be mindful of before you work with MIG:
     2.  *Compare the structure*, documentation, properties, code values, status and example values of multiple MIGs
 
 
-    Here are some videos to help you in further understanding the capabilities of MIG editor.
-
-    > ### Note:  
-    > These videos were created before our branding changes related to SAP technology were announced in January 2021.
-
-    **Navigate MIG Structure:** 
-
-    **Customize MIG Structure:**
-
-    **Get MIG Proposal:**
-
-    **Create and Add MIG Codelist:**
-
 
 **Related Information**  
 
@@ -82,7 +69,7 @@ Here are a few considerations to be mindful of before you work with MIG:
 
 [Primitive Data Types](primitive-data-types-72a8e9e.md "Primitive data types are the basic building blocks that you use to define entities or structure types within a MIG.")
 
-[Simulating a Message Implementation Guideline](simulating-a-message-implementation-guideline-42b45c5.md "This chapter shows you how to simulate a message implementation guideline.")
+[Simulating Message Implementation Guidelines](simulating-message-implementation-guidelines-42b45c5.md "Learn how to simulate a message implementation guideline.")
 
-[Versioning a Message Implementation Guideline](versioning-a-message-implementation-guideline-12784f9.md "This chapter covers the lifecycle of a message implementation guideline, the purpose of each status that a MIG goes through and the procedure to activate the MIG.")
+ <?sap-ot O2O class="- topic/link " href="12784f9d34444f929f9ea72ef38f7e02.xml" text="" desc="" xtrc="link:5" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/9d1c1df6ab184841a3be60e46560da66.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

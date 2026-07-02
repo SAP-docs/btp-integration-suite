@@ -13,20 +13,20 @@ Enables SAP Cloud Integration to send messages to queues or topics in SAP Event 
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > To be able to connect to queues or topics, you have to create queues and/or topics in the message broker. This needs to be done in the message broker with the configuration tools provided by the message broker.
 
 > ### Note:  
-> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into SAP Cloud Integration. In SAP Cloud Integration, the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
+> Queues, topics, and messages can only be monitored using tools provided by the message broker. Those monitors are not integrated into . In , the integration flows using the AMQP adapter are monitored and the messages send to or consumed from the message broker.
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
 
 
 
-To connect Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way:
+To connect SAP Cloud Integration to SAP Event Mesh, make sure to specify the following parameters in the described way:
 
 When creating the channel \(see [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md)\), select adapter type *AMQP* \> *WebSocket*.
 
@@ -363,7 +363,7 @@ There are two options for forwarding the message header name:
 
 ## Further Constraints
 
-The following constraints and limitations apply when using the AMQP adapter to connect Cloud Integration to SAP Event Mesh:
+The following constraints and limitations apply when using the AMQP adapter to connect SAP Cloud Integration to SAP Event Mesh:
 
 -   Exclusive queues are supported.
 

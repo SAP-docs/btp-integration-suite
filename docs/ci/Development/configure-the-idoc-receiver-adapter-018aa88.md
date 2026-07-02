@@ -14,7 +14,7 @@ The IDoc receiver adapter enables SAP Cloud Integration to send Intermediate Doc
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -79,7 +79,7 @@ Description
 </td>
 <td valign="top">
 
-Endpoint address on which Cloud Integration posts the outbound message, for example `http://<host>:<port>/payment`.
+Endpoint address on which posts the outbound message, for example `http://<host>:<port>/payment`.
 
 You can dynamically configure this field by entering an expression such like `${header.a}` or `${property.a}`, depending on whether you like to use a header or an Exchange property for dynamic configuration.
 
@@ -117,24 +117,10 @@ The type of proxy that you are using to connect to the target system:
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
 
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
-
     This option is only available if you have chosen a *Process Orchestration* product profile.
 
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Location ID*only in case *On-Premise* is selected for *Proxy Type.*
-
-</td>
-<td valign="top">
-
-To connect to a cloud connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side. You can also enter an expression such like `${header.headername}` or `${property.propertyname}` \(example\) to dynamically read the value from a header or a property.
 
 </td>
 </tr>
@@ -148,23 +134,36 @@ To connect to a cloud connector instance associated with your account, enter the
 
 There are the following options:
 
-*Application/x-sap.doc*
+-   *Application/x-sap.idoc*
 
--   Allows only single IDoc record for each request.
+    -   Allows only single IDoc record for each request.
 
--   Enables message sequencing.
+        Using this content type, composite IDoc messages aren’t supported. To set up scenarios with composite messages, use content type *Text/XML*.
 
--   Enables Exactly-Once processing.
+    -   Enables message sequencing.
+
+    -   Enables Exactly-Once processing.
+
+        > ### Note:  
+        > The IDoc adapter uses the header `SapMessageId` within the integration flow processing. If header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. This may lead to duplicates in situations where an already delivered message is retried. If however the header `SapMessageId` is set, the IDoc receiver adapter reuses its value. For `Exactly-Once` processing in the backend, you need to ensure that the header `SapMessageId` remains the same in case that the message is retried.
+        > 
+        > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
+
+
+-   *Text/XML*
+
+    Allows multiple IDoc records for each request.
+
+    > ### Tip:  
+    > You can set up composite IDoc messages using an *Aggregator* step \(see [Define Aggregator](define-aggregator-aa23816.md)\).
+    > 
+    > If composite messages are processed, the the headers `SapIDocTransferId` and `SapIDocDbId` of the response contain the ID of the first IDoc only.
+    > 
+    > You can read all IDs from the response payload or alternatively from header `SapIDocAssignMap`.
 
     > ### Note:  
-    > The IDoc adapter uses the header `SapMessageId` within the integration flow processing. If header `SapMessageId` isn't defined, the IDoc receiver adapter automatically generates a unique ID. This may lead to duplicates in situations where an already delivered message is retried. If however the header `SapMessageId` is set, the IDoc receiver adapter reuses its value. For `Exactly-Once` processing in the backend, you need to ensure that the header `SapMessageId` remains the same in case that the message is retried.
-    > 
-    > See: [Quality of Service Exactly Once](quality-of-service-exactly-once-f96cf27.md)
+    > Using this content type, Exactly-Once processing isn’t supported. To set up scenarios with Exactly-Once processing, use content type *Application/x-sap.idoc*.
 
-
-*Text/XML*
-
--   Allows multiple IDoc records for each request.
 
 
 
@@ -238,8 +237,6 @@ You can select one of the following authentication methods:
 <td valign="top">
 
 Name of the *User Credentials* artifact that contains the credentials for basic authentication
-
-You can dynamically configure the *Credential Name* field of the adapter by using a Simple Expression \(see [http://camel.apache.org/simple.html](http://camel.apache.org/simple.html). For example, you can dynamically define the *Credential Name* of the receiver adapter by referencing a message header `${header.MyCredentialName}` or a message property `${property.MyCredentialName}`.
 
 </td>
 </tr>
@@ -327,6 +324,120 @@ This feature is disabled by default.
 <td valign="top">
 
 Select this option to clean up the adapter specific- headers after the receiver call.
+
+</td>
+</tr>
+</table>
+
+
+
+Select the *Processing* tab and provide values in the fields as follows.
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameters
+
+</th>
+<th valign="top">
+
+Definition
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP Message ID Determination*
+
+</td>
+<td valign="top">
+
+Select this option to specify how a target message ID \(referred to as SAP message ID\) shall be defined.
+
+> ### Note:  
+> You can use this feature to implement scenarios that guarantee end-to-end Exactly Once delivery. A receiver can use the target message ID, for example, to make sure that the receiver can process a certain message only once.
+> 
+> See: [Special Use Cases: SAP RM vs XI vs IDoc](special-use-cases-sap-rm-vs-xi-vs-idoc-5f7fa93.md)
+
+You can choose among the following options:
+
+-   *Generate* 
+
+    Generates a new SAP message ID.
+
+-   *Reuse* \(default\)
+
+    Take over the message ID passed with the header `SapMessageId`. If the header is not available in runtime, a new message ID is generated.
+
+-   *Map*
+
+    Maps a source message ID to the new target message ID.
+
+    This option generates a target message ID that is uniquely associated with the source message ID specified with parameter *Source for SAP Message ID*. Precisely spoken, the system sets the value of header `SapMessageId` to a globally unique identifier \(GUID\). This GUID identifies the target message.
+
+    To specify the source message ID, you can use a header or a property. If no header or property is specified, the system generates a source message ID.
+
+
+Note that source-to-target message ID mapping entries are deleted after 90 days. Furthermore, only the first 120 characters from the source message ID are considered by the mapping.
+
+> ### Tip:  
+> As example, let’s assume that you’ve chosen option *Map* for parameter *SAP Message ID Determination*, and in field *Source for SAP Message ID* you entered `${property.orderNo}`.
+> 
+> Furthermore, let’s assume that at runtime the property `orderNo` has the value `00001`. The IDoc receiver adapter generates a unique identifier \(GUID\) for the target message ID, for example, `12a900b1-08ab-4812-x3ff-4y375b25z290`. In the scenario, the receiver system can then associate the target message ID `12a900b1-08ab-4812-x3ff-4y375b25z290` with the source message ID `00001`.
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Source Message ID
+> 
+> </th>
+> <th valign="top">
+> 
+> Target Message ID
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Property name: `orderNo`
+> 
+> Property value: `00001`
+> 
+> </td>
+> <td valign="top">
+> 
+> Header name: `SapMessageId`
+> 
+> Header value: `12a900b1-08ab-4812-x3ff-4y375b25z290`
+> 
+> </td>
+> </tr>
+> </table>
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Source for SAP Message ID* \(only in case *Map* is selected for *SAP Message ID Determination*\)
+
+</td>
+<td valign="top">
+
+To map the source message ID to the SAP message ID you can enter the source message ID dynamically by using headers or properties \(`${header.headername}` or `${property.propertyname}`\).
+
+> ### Note:  
+> If no header or property is available at runtime, a new message ID is generated.
+
+
 
 </td>
 </tr>

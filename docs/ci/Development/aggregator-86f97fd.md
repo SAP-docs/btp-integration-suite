@@ -392,7 +392,7 @@ Source for SAP RM Message ID
 </td>
 <td valign="top">
 
-Source for SAP RM Message ID
+$\{header.orderNumber\}
 
 </td>
 </tr>

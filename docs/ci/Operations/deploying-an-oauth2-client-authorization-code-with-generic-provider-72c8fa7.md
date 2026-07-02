@@ -14,7 +14,7 @@ Cloud Integration supports OAuth Clients with various update processes for their
 
 -   *Refresh Tokens that expire and are invalidated*: There are some OAuth clients that create a new refresh token that automatically and immediately invalidates the old refresh token. This means, the old refresh token can no longer be used as soon the new refresh token is available.
 
-    Example: OAuth Client of GoToWebinar;
+    Example: OAuth Client of GoToWebinar.
 
 -   *Refresh Tokens that expire but aren't invalidated*: There are some OAuth Clients that create a new refresh token, however, the old refresh token is still valid until its expiry date. In this case, a refresh token is valid during the whole expiry period, that is from creation time to creation time + expiry period.
 
@@ -62,11 +62,15 @@ Cloud Integration supports these kinds of OAuth clients. You can just specify th
 
 ## Procedure
 
-1.  Click the tile in the *Manage Security Material* section.
+1.  Choose *Monitor*.
 
-2.  Choose *Create* \> *OAuth2 Authorization Code*.
+2.  Click the *Security Material* tile in the *Manage Security* section.
 
-3.  Specify the following attributes:
+3.  Choose *Add*.
+
+4.  As *Type*, select *OAuth2 Authorization Code*.
+
+5.  Specify the following attributes:
 
     ****
 
@@ -159,11 +163,6 @@ Cloud Integration supports these kinds of OAuth clients. You can just specify th
     Provide an amount of time \(in days\) after which the refresh token expires. The minimum value is 3 days.
 
     You can also leave this attribute blank \(don't type in anything\), in case your refresh token doesn't expire \(see: Supported OAuth Client Types in this chapter\). The default value is blank.
-
-    > ### Caution:  
-    > This field isn't available in the Cloud Foundry environment. In the Cloud Foundry environment, Cloud Integration doesn't yet support Refresh Tokens that expire.
-
-
     
     </td>
     </tr>
@@ -258,7 +257,7 @@ Cloud Integration supports these kinds of OAuth clients. You can just specify th
     > ### Note:  
     > Test your new setup regularly in the beginning, to waterproof the functionality of your setup. Especially test the replacement of refresh tokens, whether they expire or the new refresh token invalidates the old refresh token.
 
-4.  Choose *Deploy*.
+6.  Choose *Deploy*.
 
 
 **Related Information**  

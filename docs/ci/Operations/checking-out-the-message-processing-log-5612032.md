@@ -2,11 +2,11 @@
 
 # Checking Out the Message Processing Log
 
-In the *Operations* section, you can check out the status of processed messages.
+In the *Monitor* section, you can check out the status of processed messages.
 
-In particular, you out if message processing has failed for dedicated integration flows.
+In particular, you can check if message processing has failed for dedicated integration flows.
 
-To do that, open the *Operations* view and select a tile under *Monitor Message Processing*.
+To do that, open *Monitor* and select a tile under *Monitor Message Processing*.
 
 ![](images/MPL_Best_Practices_1_2884d86.png)
 

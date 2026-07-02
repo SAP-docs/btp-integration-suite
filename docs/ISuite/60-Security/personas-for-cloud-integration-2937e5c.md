@@ -195,7 +195,7 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 
     Using this role template, you need to define a role collection and assign the role collection to the IdP user.
 
-    More information: [Basic Authentication of IdP User for Integration Flow Processing](../40-RemoteSystems/basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
+    More information: [Basic Authentication of IdP User for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5d46e56550a048e99995f23e1e20083a.html "Use this procedure to connect a sender system to SAP Integration Suite using basic authentication of a user registered by an identity provider (IdP).") :arrow_upper_right:
 
 
 > ### Note:  
@@ -229,7 +229,7 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > Use SAP BTP cockpit to define a role collection that contains the predefined role template `MessagingSend` and assign the role collection to the IdP user \(under *Security* \> *Trust Configuration*\). The role template `MessagingSend` is provided by default in your subaccount to define permissions for sender systems to call integration flow endpoints for this use case.
 > 
-> See: [Basic Authentication of IdP User for Integration Flow Processing](../40-RemoteSystems/basic-authentication-of-idp-user-for-integration-flow-processing-5d46e56.md)
+> See: [Basic Authentication of IdP User for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5d46e56550a048e99995f23e1e20083a.html "Use this procedure to connect a sender system to SAP Integration Suite using basic authentication of a user registered by an identity provider (IdP).") :arrow_upper_right:
 > 
 > </td>
 > </tr>
@@ -247,11 +247,11 @@ In order to enable a sender system to process messages on Cloud Integration Usin
 > 
 > See:
 > 
-> -   [Client Certificate Authentication for Integration Flow Processing](../40-RemoteSystems/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
+> -   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 > 
-> -   [OAuth with Client Credentials Grant for Integration Flow Processing](../40-RemoteSystems/oauth-with-client-credentials-grant-for-integration-flow-processing-6c052ce.md)
+> -   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 > 
-> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](../40-RemoteSystems/basic-authentication-with-clientid-and-clientsecret-for-integration-flow-processing-647eeb3.md)
+> -   [Basic Authentication with clientId and clientsecret for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/647eeb3eca5d4c299009cacd1332247e.html "Use this procedure to connect a sender system to SAP Cloud Integration.") :arrow_upper_right:
 > 
 > 
 > 

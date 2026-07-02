@@ -25,12 +25,3 @@ Role collections enable you to group together the roles you create. The role col
 7.  Save your changes.
 
 
-**Related Information**  
-
-
-[Set Up API Portal Application](set-up-api-portal-application-29c281b.md "To create APIs, products, import policy templates, and view applications, set up the API portal application.")
-
-[Set Up Developer Hub Application Using the Standalone Tile](set-up-developer-hub-application-using-the-standalone-tile-80c0519.md "To discover, consume and monitor API from a centralized API catalog, set up the Developer Hub application.")
-
-[Shadow Users](shadow-users-a0f5fe5.md "Whenever a user authenticates at an application in your subaccount using any identity provider, it’s essential that user-related data provided by the identity provider is stored in the form of shadow users.")
-

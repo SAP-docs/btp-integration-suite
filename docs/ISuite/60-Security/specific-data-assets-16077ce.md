@@ -10,5 +10,5 @@ The following are the primary assets that are stored as part of Trading Partner 
 3.  Trading Partner Agreement Templates
 4.  Trading Partner Agreements
 
-There are several other configurations required and maintained as part of these primary data assets. Refer to [Update Properties](../50-Development/update-properties-ba066bb.md) for more details.
+There are several other configurations required and maintained as part of these primary data assets. Refer to [Update Properties](https://help.sap.com/viewer/4ca9c92a6c1641aea939927aa2b37f1b/CLOUD/en-US/ba066bbe0f214056a033454a0df918de.html "Update the properties in your agreements.") :arrow_upper_right: for more details.
 

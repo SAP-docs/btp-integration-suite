@@ -21,4 +21,6 @@ The following applies for software updates.
 
 -   If a specific integration flow stops working unnoticed after update, customers are asked to open a ticket. Choose the corresponding sub component under LOD-HCI-PI-OPS \(priority high\).
 
+-   For SAP to ensure proper service delivery, the customer must collaborate with SAP by providing the necessary support and any required professional services, for example, by adapting custom adapters to the latest runtime version, and testing custom integration content deployed on the tenant, if undocumented features are used. This collaboration is a prerequisite for proper service through SAP.
+
 

@@ -23,7 +23,7 @@ Since the tasks are performed by different roles, in different working environme
 
 [Developing an OData API Project](developing-an-odata-api-project-d961654.md "")
 
-[Developing Script and Script Collection](developing-script-and-script-collection-e60f706.md "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.")
+[Working with Script and Script Collection](working-with-script-and-script-collection-e60f706.md "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.")
 
 [Developing Custom Adapters](developing-custom-adapters-7392cc4.md "Develop adapters tailored for your specific requirements.")
 

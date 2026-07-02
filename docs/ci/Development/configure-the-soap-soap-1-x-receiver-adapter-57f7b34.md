@@ -11,7 +11,7 @@ The SOAP \(SOAP 1.x\) receiver adapter enables a SAP BTP tenant to exchange mess
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -45,11 +45,11 @@ Supported Header \(Receiver Adapter\):
 > -   Document/literal
 > 
 > 
-> RPC stands for *Remote Procedure Call*. For more information on these options and the meaning of *literal* and *encoded*, see [http://www.w3.org/TR/2001/NOTE-wsdl-20010315](http://www.w3.org/TR/2001/NOTE-wsdl-20010315).
+> RPC stands for *Remote Procedure Call*. For more information on these options and the meaning of *literal* and *encoded*, see: [http://www.w3.org/TR/2001/NOTE-wsdl-20010315](http://www.w3.org/TR/2001/NOTE-wsdl-20010315).
 
 
 
-Once you have created a receiver channel and selected the SOAP \(SOAP 1.x\) receiver Adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
+Once you have created a receiver channel and selected the SOAP \(SOAP 1.x\) receiver Adapter, you can configure the following attributes. See: [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
 Select the *General* tab and provide values in the fields as follows.
 
@@ -109,7 +109,7 @@ Description
 </td>
 <td valign="top">
 
-Endpoint address at which Cloud Integration posts the outgoing message, for example, `http://<host>:<port>/payment`.
+Endpoint address at which SAP Cloud Integration posts the outgoing message, for example, `http://<host>:<port>/payment`.
 
 You can dynamically configure the address field of the SOAP \(SOAP 1.x\) adapter.
 
@@ -147,8 +147,6 @@ The type of proxy that you are using to connect to the target system:
 
 -   If you select *Manual*, you can manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry fields\).
 
-    Furthermore, with the parameter *URL to WSDL* you can specify a Web Service Definition Language \(WSDL\) file defining the WS provider endpoint \(of the receiver\). You can specify the WSDL by either uploading a WSDL file from your computer \(option *Upload from File System*\) or by selecting an integration flow resource \(which needs to be uploaded in advance to the *Resources* view of the integration flow\).
-
     This option is only available if you have chosen a *Process Orchestration* product profile.
 
 
@@ -182,7 +180,7 @@ To select the WSDL from a source, you have the following options:
 
 -   Select a WSDL from your file system.
 
--   Select a WSDL from your integration flow resources \(see [Manage Resources of an Integration Flow](manage-resources-of-an-integration-flow-b5968b2.md)\).
+-   Select a WSDL from your integration flow resources \(see: [Manage References](manage-references-b5968b2.md)\).
 
     In the *Resources* view, you can upload an individual WSDL file or an archive file \(file ending with `.zip`\) that contains multiple WSDLs or XSDs, or both. For example, you can upload a WSDL that contains an imported XSD referenced by an `xsd:import` statement. This means that if you want to upload a WSDL and dependent resources, you need to add the parent file along with its dependencies in a single archive \(`.zip` file\).
 
@@ -273,20 +271,30 @@ You can select one of the following authentication methods:
 
     It is a prerequisite that the required key pair is installed and added to a keystore. This keystore has to be deployed on the related tenant. The receiver side has to be configured appropriately.
 
--   *Principal Propagation* \(only if *Proxy Type* is set to *On-Premise*\)
+-   *Principal Propagation* – only if the *Proxy Type* is *On-premise*. The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
 
-    The tenant authenticates itself against the receiver by forwarding the principal of the inbound user to the cloud connector, and from there to the back end of the relevant on-premise system.
+    > ### Note:  
+    > This authentication method can only be used with the following sender adapters: HTTP, AS2, SOAP, IDOC
+
+    Follow the steps to configure technical user in Cloud Foundry:
+
+    -   Add a Certificate to Subaccount - Create a new service instance using the Process Integration Runtime service with an Integration Flow plan. Once the instance is created, generate a new service key. Select key type as External Certificate from the dropdown. In the External Certificate, provide the X590 public certificate. Once the service key is created, the service key will generate a Client ID, which will be used as a technical user.
+    -   Configuration in the Cloud Connector - Cloud Connector should read the technical user principal and add it as Common Name \(CN\) in the certificate that is generated by Cloud Connector. To read the technical user principal there are two configuration options:
+        1.  Read the principal using the subject pattern \($\{client\_id\}\).
+        2.  In case of migration from Neo to Cloud Foundry and you don't want to change existing mapping in the *On-premise* system, then you can read the client\_id and map it against the actual user that is mapped in the *On-premise* system.
+
+            For example: In the *On-premise* system if you have mapped a string MIKE to a business user BSR\_USA, then in Cloud Connector in the condition, provide the pattern $\{client\_id\} and in the value provide the client id generated in CPI subaccount, In the subject pattern provide the string MIKE.
+
+
+    -   Map the Client ID to the actual user in the *On-premise* system.
+
+    Technical user *Principal Propagation* is supported from the Cloud Connector version 2.15 for Cloud Foundry.
 
     > ### Remember:  
     > When you want to use Principal Propagation as the authentication method to connect with an on-premise system, don't pass any authorization headers. Follow the approach recommended by SAP BTP Connectivity. See: [Authentication to the On-Premise System](https://help.sap.com/docs/CP_CONNECTIVITY/cca91383641e40ffbe03bdc78f00f681/67b0b94f09f2446598787eea0855e56b.html).
 
     > ### Note:  
-    > This authentication method can only be used with the following sender adapters: HTTP, SOAP, IDoc, AS2.
-
-    > ### Note:  
-    > The token for principal propagation expires after 30 minutes.
-    > 
-    > If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
+    > The token for principal propagation expires after 30 minutes. If it takes longer than 30 minutes to process the data between the sender and receiver channel, the token for principal propagation expires, which leads to errors in message processing.
 
 -   *OAuth 2.0 SAML Bearer Assertion Grant*
 
@@ -480,7 +488,7 @@ Specifies how WS-Security settings are to be configured.
 
 -   *Via Manual Configuration in Channel*
 
-    The security settings are to be configured manually \(see the attributes listed below\).
+    The security settings are to be configured manually \(see the attributes listed next\).
 
 -   *Based on Policies in WSDL*
 
@@ -523,6 +531,9 @@ If you have selected *Via Manual Configuration in Channel*, you have the followi
 If you have selected the option *Plain Text Password* or *Hashed Password*, enter the *Credential Name*, that is, the alias that was assigned to the authorized user and password during tenant deployment.
 
 > ### Note:  
+> When you use the *Username Token* in the SOAP receiver channel's WS Security Configuration, it is no longer possible to trace the message payload using the MPL log level trace, for security reasons. You can still set the log level and trace payloads from other steps, but the message payload sent by this channel will not be visible.
+
+> ### Note:  
 > It depends on additional adapter settings how the token is treated during runtime \(in particular, whether the token is encrypted or not\).
 > 
 > If the security settings are defined by the endpoint WSDL \(if you have selected *Based on Policies in WSDL*\), the token is treated according to what is defined within the WSDL.
@@ -547,7 +558,7 @@ If you have selected the option *Plain Text Password* or *Hashed Password*, ente
 </td>
 <td valign="top">
 
-Alias that was assigned to the authorized user and password during tenant deployment
+Alias that was assigned to the authorized user and password during tenant deployment.
 
 You can dynamically configure the *Credential Name* field of the adapter by using a Simple Expression \(see [http://camel.apache.org/simple.html](http://camel.apache.org/simple.html). For example, you can dynamically define the *Credential Name* of the receiver adapter by referencing a message header `${header.MyCredentialName}` or a message property `${property.MyCredentialName}`.
 
@@ -611,6 +622,8 @@ More information: [WS-Security Configuration for the Receiver SOAP 1.x Adapter](
 <td valign="top">
 
 Specify an alias for the public key that is to be used to encrypt the message.
+
+You can also enter `${header.headername}` or `${property.propertyname}` to read the name dynamically from a header or exchange property.
 
 The receiver \(WS provider\) public key is used to encrypt the request message \(that is sent to the receiver\). This key has to be part of the tenant keystore.
 

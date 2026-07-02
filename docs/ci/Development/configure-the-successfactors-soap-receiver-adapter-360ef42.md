@@ -11,7 +11,7 @@ The SuccessFactors SOAP receiver adapter connects a tenantSAP Cloud Integration 
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -82,6 +82,10 @@ Description
 <td valign="top">
 
 URL of the SuccessFactors data center that you want to connect to. You can browse to and select the SuccessFactors data center URL by using the *Select* option.
+
+You can also dynamically define the address using a header or property in the message exchange.
+
+You can edit and add the URL. For information on SuccessFactors URL list, see [List of SAP SuccessFactors API Servers](https://help.sap.com/docs/successfactors-platform/sap-successfactors-api-reference-guide-odata-v2/list-of-sap-successfactors-api-servers?version=2505)
 
 </td>
 </tr>
@@ -193,7 +197,9 @@ Select one of the following authentication methods:
 </td>
 <td valign="top">
 
-Credential name for your credentials that has been deployed on the tenant.
+Enter the credential name for the security artifact that has been deployed on the tenant.
+
+You can also dynamically define the credential using a header or property in the message exchange.
 
 </td>
 </tr>
@@ -392,7 +398,5 @@ To use *Process in Pages*, you must use the adapter in a *Local Integration Proc
 > 
 > 2.  X-SF-Client-Tenant-Id: Client/Tenant ID
 > 
-> 3.  X-SF-Process-Name: iFlow Name
-> 
-> 4.  X-Agent-Name: SAP Cloud Integration
+> 3.  4.  X-Agent-Name: SAP Cloud Integration
 

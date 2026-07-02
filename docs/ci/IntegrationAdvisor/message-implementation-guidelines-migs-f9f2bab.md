@@ -6,7 +6,7 @@
 
 
 
-Message implementation guideline, also referred to as MIG, is used as the source or target in a mapping guideline \(MAG\) of SAP Integration Advisor . This is created using one of the messages in the type system that is relevant to your scenario as the template.
+Message implementation guideline, also referred to as MIG, is used as the source or target in a mapping guideline \(MAG\) of SAP Integration Advisor. This is created using one of the messages in the type system that is relevant to your scenario as the template.
 
 The MIG contains all the information for implementing a customized message interface. SAP Integration Advisor uses the message in a type system as a starting point to ensure that you don't have to refer to any additional documents to implement the interface. By providing a MIG, you ensure that all users who are involved in the process of implementing the interface have a clear understanding of the guidelines.
 
@@ -16,9 +16,9 @@ The MIG contains all the information for implementing a customized message inter
 
 ## Filtering MIGs
 
-The *Message Implementation Guidelines* screen displays an overview of all the MIGs that you've created. Filters are used to search and display MIGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MIGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MIGs.
+The *Message Implementation Guidelines* screen displays an overview of all the MIGs that you've created. Filters are used to search and display MIGs based on various criteria. You can use the *Free text filter* search or the <span class="SAP-icons-V5"></span> \(Extended filter\)at the top of the screen to specify your search criteria. The *Free text filter* search allows you to filter and display MIGs that match your search text. It can be used as a quick filter to match your search text against multiple attributes of your MIGs.
 
-You can also choose <span class="SAP-icons"></span> \(Extended filter\)to filter MIGs based on specific criteria. You can use the required filter fields to list MIGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
+You can also choose <span class="SAP-icons-V5"></span> \(Extended filter\)to filter MIGs based on specific criteria. You can use the required filter fields to list MIGs that match your query. You can also customize the filter bar by choosing *Filters*. You can expand or collapse the filter area using *Show Filter Bar* or *Hide Filter Bar*.
 
 **Filter Criteria**
 
@@ -210,12 +210,12 @@ You can also view the version history of a specific message implementation guide
 
 -   *Last Imported By*: Displays the unique identifier of the user who imported the MIG.
 -   *Imported*: This column lets you know if the MIG is imported or not.
--   The action <span class="SAP-icons"></span> button allows you to copy, migrate or compare your MIG.
+-   Under <span class="SAP-icons-V5"></span> More Options, you can copy, migrate, or compare your MIG.
 
 
 
 Here are the next steps for you:
 
--   [Creating a New Message Implementation Guideline](creating-a-new-message-implementation-guideline-b894de0.md)
+-   [Creating Message Implementation Guidelines](creating-message-implementation-guidelines-b894de0.md)
 -   [Working with a Message Implementation Guideline](working-with-a-message-implementation-guideline-9d1c1df.md)
 

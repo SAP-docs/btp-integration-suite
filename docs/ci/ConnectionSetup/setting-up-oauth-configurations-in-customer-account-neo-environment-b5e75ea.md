@@ -2,7 +2,7 @@
 
 # Setting Up OAuth Configurations in Customer Account, Neo Environment
 
-Through a REST API you can manage roles and their assignments to users.
+With a REST API you can manage roles and their assignments to users.
 
 
 
@@ -11,7 +11,7 @@ Through a REST API you can manage roles and their assignments to users.
 > ### Note:  
 > This information is relevant only when you use SAP Cloud Integration in the Neo environment.
 
-You can setup OAuth configurations in the customer account for enabling the API using the following steps. These steps are one time manual steps per customer account when provisioning the Cloud Integration tenant.
+You can set up OAuth configurations in the customer account for enabling the API using the following steps. These steps are one time manual steps per customer account when provisioning the Cloud Integration tenant.
 
 
 
@@ -78,7 +78,7 @@ You can setup OAuth configurations in the customer account for enabling the API 
     </td>
     <td valign="top">
     
-    OAuth Token Enpoint Url.
+    OAuth Token Endpoint Url.
 
     Landscape host:
 

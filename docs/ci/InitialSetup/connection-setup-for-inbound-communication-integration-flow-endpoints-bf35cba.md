@@ -14,6 +14,11 @@ The following table provides an overview of the available authentication options
 
 Note that the following description doesn’t contain aspects that are common in both environments such like the role of the load balancer and the required security settings with regard to this component.
 
+> ### Note:  
+> For *Client Certificate Authentication*, ensure that you have the required service keys and access configured. To generate SAP Cloud Root CA based certificates via the Destination Service REST API using a locally generated CSR \(Certificate Signing Request\), see [Manage Certificates Issued by the SAP Cloud Root CA](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/manage-certificates-issued-by-sap-cloud-root-ca?version=Cloud) and the video below.
+
+
+
 
 <table>
 <tr>
@@ -43,11 +48,23 @@ Client certificate authentication
 
 Go to SAP BTP cockpit and define a service key for the *Process Integration* service and *integration-flow* plan. When defining the service instance, specify the role that is to be used to grant access to the integration flow endpoint \(you can either use the predefined role `ESBMessaging.send` or a custom role\). When defining a service key for the service instance, enter the client certificate \(public key\) used by the sender to authenticate itself against Cloud Integration.
 
+> ### Note:  
+> The client certificate is validated at the SAP BTP platform load balancer before the request reaches the Cloud Integration runtime. The certificate must include the Client Authentication Extended Key Usage \(EKU\) with `OID 1.3.6.1.5.5.7.3.2`.
+> 
+> Certificates without this EKU are rejected during the TLS handshake.
+> 
+> Ensure that the required EKU is present while renewing certificates from public Certificate Authorities. Some public CAs no longer include this EKU in newly issued TLS certificates.
+> 
+> Use certificates issued via SAP Cloud Root CA \(for example via SAP BTP Destination Service\) or configure a custom domain with a customer-managed certificate trust model.
+
+Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
+
+> ### Note:  
+> Ensure that you have the required service keys and access configured. To generate SAP Cloud Root CA based certificates via the Destination Service REST API using a locally generated CSR \(Certificate Signing Request\), see [Manage Certificates Issued by the SAP Cloud Root CA](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/manage-certificates-issued-by-sap-cloud-root-ca?version=Cloud)
+
 See:
 
 -   [Client Certificate Authentication for Integration Flow Processing](../ConnectionSetup/client-certificate-authentication-for-integration-flow-processing-7f84d16.md)
-
--   [Cloud Integration on CF – How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2019/08/14/cloud-integration-on-cf-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
 
 
@@ -166,13 +183,22 @@ Client certificate authentication with certificate-to-user mapping
 
 Create and deploy a *Certificate-to-User Mapping* artifact on the Cloud Integration tenant. This artifact relates a user with a client certificate \(used by the sender to authenticate itself against Cloud Integration when calling an integration flow\). When defining the integration flow \(sender adapter\), for *Authorization* select *User Role* and specify role to be used to grant access to the integration flow endpoint.
 
+> ### Note:  
+> The client certificate is validated at the SAP BTP platform load balancer before the request reaches the Cloud Integration runtime. The certificate must include the Client Authentication Extended Key Usage \(EKU\) with `OID 1.3.6.1.5.5.7.3.2`.
+> 
+> Certificates without this EKU are rejected during the TLS handshake.
+> 
+> Ensure that the required EKU is present while renewing certificates from public Certificate Authorities. Some public CAs no longer include this EKU in newly issued TLS certificates.
+> 
+> Use certificates issued via SAP Cloud Root CA \(for example via SAP BTP Destination Service\) or configure a custom domain with a customer-managed certificate trust model.
+
+Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
+
 Go to SAP BTP cockpit and assign to the user this role.
 
 See:
 
 -   [Setting Up Inbound HTTP Connections \(with Certificate-to-User Mapping\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-with-certificate-to-user-mapping-neo-environment-9949c61.md)
-
--   [Cloud Integration – How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
 
 
@@ -199,8 +225,6 @@ When defining the integration flow \(sender adapter\), for *Authorization* selec
 See:
 
 -   [Setting Up Inbound HTTP Connections \(with Client Certificate Authentication\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-with-client-certificate-authentication-neo-environmen-057f4a7.md)
-
--   [Cloud Integration – How to Setup Secure HTTP Inbound Connection with Client Certificates](https://blogs.sap.com/2017/06/05/cloud-integration-how-to-setup-secure-http-inbound-connection-with-client-certificates/)
 
 
 
@@ -229,8 +253,6 @@ Assign to user `oauth_client_<client ID>` a role that grants access to the integ
 See:
 
 -   [Setting Up Inbound HTTP Connections \(with OAuth\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-with-oauth-neo-environment-e5cb7ea.md)
-
--   [Cloud Integration – Inbound HTTP Connections using OAuth Client Credentials Grant](https://blogs.sap.com/2019/02/14/cloud-integration-inbound-http-connections-using-oauth-client-credentials-grant/)
 
 
 

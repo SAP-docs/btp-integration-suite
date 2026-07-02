@@ -11,7 +11,7 @@ The SFTP receiver adapter connects an SAP Cloud Integration tenant to a remote s
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -97,7 +97,7 @@ Use the relative path to write the file to a directory.
 
 Example: `parentdirectory/childdirectory`
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -111,7 +111,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Name of the file to be written.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 > ### Note:  
 > If you do not enter a file name and the parameter remains blank, the content of the `CamelFileName` header is used as file name. If this header is not specified, the Exchange ID is used as file name.
@@ -162,7 +162,7 @@ The appended timestamp relates to Greenwich Mean Time \(GMT\) time zone.
 
 Host name or IP address of the SFTP server and an optional port, for example, `my.host.org:22`.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -188,8 +188,77 @@ The type of proxy that you are using to connect to the target system.
 
     If you have selected this option and if the property is not defined \(for example, in a preceding step\), an error is raised at runtime.
 
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
 
 
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Protocol*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Specify the type of proxy server which is used to communicate to the SFTP server. Choose between the following options:
+
+-   *HTTP*
+
+-   *SOCKS Version 4*
+
+-   *SOCKS Version 5*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Host*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the name of the proxy host to be used. For example: `proxy.mycompany.com`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Port*
+
+\(only available if *Manual* is selected for *Proxy Type*\)
+
+</td>
+<td valign="top">
+
+Enter the proxy port number to be used.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Credential Name*
+
+\(only available if *Manual* is selected for *Proxy Type* and if *HTTP* or *SOCKS Version 5* is selected for *Proxy Protocol*\)
+
+</td>
+<td valign="top">
+
+Enter the referenced credential name used for proxy authentication.
 
 </td>
 </tr>
@@ -205,80 +274,14 @@ The type of proxy that you are using to connect to the target system.
 
 To connect to an SAP Cloud Connector instance associated with your account, enter the location ID that you defined for this instance in the destination configuration on the cloud side.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-*Authentication* 
-
-</td>
-<td valign="top">
-
-Authentication option for the connection to the SFTP server.
-
-You have the following options:
-
--   *Public Key*
-
-    SFTP server authenticates the calling component \(tenant\) based on a public key.
-
-    At runtime, the system evaluates the values of additional parameters in the following way:
-
-    The user specified by the *User Name* parameter and the key specified by the *Private Key Alias* parameter are used by the system to authenticate the tenant against the SFTP server.
-
--   *User Name/Password*
-
-    SFTP server authenticates the calling component \(tenant\) based on the user name and password. To make this configuration setting work, you need to define the user name and password in a *User Credential* artifact and deploy the artifact on the tenant.
-
--   *Dual*
-
-    SFTP server authenticates the calling component \(tenant\) with two authentication methods: based on a public key and based on user credentials.
-
-    At runtime, the system evaluates the values of additional parameters in the following way:
-
-    -   For the authentication step based on user credentials: Credentials from the deployed artifact with the name given by the *Credential Name* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-    -   For the authentication step based on public key: User name contained in the deployed artifact with name given by the *Credential Name* parameter and the key identified by the *Private Key Alias* parameter are evaluated by the system to authenticate the tenant against the SFTP server.
-
-
-    If selected, you can specify the User Credentials artifact \(that contains user name and password\) with the *Credential Name* parameter and the key to be used from the keystore with the *Private Key Alias* parameter.
-
--   *Dynamic*
-
-    The authentication method is determined dynamically based on the value of the property `SAP_FtpAuthMethod` \(possible values: `user`, `key`, or `dual`\). If the property is not defined \(for example, in a preceding step\), an error is raised at runtime.
-
-    If this option is selected, you can configure the following parameters to further specify how the dynamically determined authentication method is to be applied: *Credential Name*, *User Name*, and *Private Key Alias*. Depending on the value of property `SAP_FtpAuthMethod`, the system evaluates the values of the parameters relevant for the given authentication option.
-
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Credential Name*
-
-\(only if *User Name/Password*, *Dual*, or *Dynamic* is selected for *Authentication*\)
-
-</td>
-<td valign="top">
-
-Name of the *User Credential* artifact that contains the user name and password.
-
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*User Name*
-
-\(only if *Public Key* or *Dynamic* is selected for *Authentication*\)
+*User Name* 
 
 </td>
 <td valign="top">
@@ -287,7 +290,7 @@ ID of the user performing the file transfer.
 
 Make sure that the user name contains no other characters than `A-z`, `0-9`, `_` \(underscore\), `-` \(hyphen\), `/` \(slash\), `?` \(question mark\), `@` \(at\), `!` \(exclamation mark\), `$` \(dollar sign \), `'` \(apostrophe\), `(`, `)` \(brackets\), `*` \(asterisk\), `+` \(plus sign\), `,` \(comma\), `;` \(semicolon\), `=` \(equality sign\), `.` \(dot\), or `~` \(tilde\). Otherwise, an attempt for anonymous login is made which results in an error.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -303,7 +306,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 
 Alias to identify the private key in the keystore used for the communication with the SFTP server.
 
-You can configure this parameter by entering a dynamic expression such like `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
+You can configure this parameter by entering a dynamic expression such as `${property.property_name}` or `${header.header_name}` \(see: [Dynamically Configure Integration Flow Parameters](dynamically-configure-integration-flow-parameters-fff5b2a.md)\).
 
 </td>
 </tr>
@@ -315,7 +318,7 @@ You can configure this parameter by entering a dynamic expression such like `${p
 </td>
 <td valign="top">
 
-Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default ist set to `10000`.
+Maximum time \(in milliseconds\) to wait for the SFTP server to be contacted while establishing a connection or performing a read operation. Enter a minimum value bigger than `0`, and smaller than or equal to the maximum value of `299999`. The default is set to `10000`.
 
 If the property `SAP_FtpTimeout` is defined, its value is used to specify this parameter at runtime and will overrun the timeout specified in the UI.
 

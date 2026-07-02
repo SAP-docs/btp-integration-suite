@@ -117,10 +117,22 @@ You Can...
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`DataspaceConnectorAdmin`
+
+</td>
+<td valign="top">
+
+This role collection is currently under construction. Please don't assign it to your user.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  
 
 
-[Data Space Integration](../data-space-integration-8bb6972.md "Learn how to work with Data Space Integration as a provider or consumer.")
+[Data Space Integration](https://help.sap.com/viewer/c6f026f9206e4a60948e827535eef449/CLOUD/en-US/8bb6972c4e6f4de7ab95ab0e1bc84837.html "Learn how to work with Data Space Integration as a provider or consumer.") :arrow_upper_right:
 

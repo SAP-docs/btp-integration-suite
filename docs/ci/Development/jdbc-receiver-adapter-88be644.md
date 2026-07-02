@@ -2,7 +2,7 @@
 
 # JDBC Receiver Adapter
 
-The JDBC \(Java Database Connectivity\) adapter enables you to connect SAP Cloud Integration to cloud databases.
+The JDBC \(Java Database Connectivity\) adapter enables you to connect SAP Cloud Integration to cloud or on-premise databases.
 
 Use the JDBC receiver adapter in your integration flow to establish a connection with SAP-managed and third-party databases. Before deploying the integration flow, you’re required to do the following to establish connection with the database:
 
@@ -10,7 +10,9 @@ Use the JDBC receiver adapter in your integration flow to establish a connection
 
 -   Create a Data Source, to access the database, based on the uploaded JDBC driver. For more information, see [Managing JDBC Data Sources](../Operations/managing-jdbc-data-sources-4c873fa.md).
 
--   -   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
+-   If you're connecting to on-premise database, then you must validate the connection in the Cloud Connector. For more information, see [Configure Access Control](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f42fe4471d6a4a5fb09b7f3bb83c66a4.html).
+
+-   Configure the JDBC adapter to communicate with your database based on the environment that hosts your tenant.
 
 
 > ### Note:  
@@ -20,7 +22,7 @@ Use the JDBC receiver adapter in your integration flow to establish a connection
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -28,10 +30,8 @@ Use the JDBC receiver adapter in your integration flow to establish a connection
 The JDBC receiver adapter uses XML SQL Format message protocol. The adapter performs operations such as read, write, update, or delete database entries. For more information on modifying or structuring the content of the message payload, see [Defining XML Documents for Message Protocol XML SQL Format](https://help.sap.com/viewer/5cf7d2de571a45cc81f91261668b7361/7.5.4/en-US/2e96fd3f2d14e869e10000000a155106.html).
 
 > ### Note:  
-> -   UPSERT operation is currently not supported for XML SQL format. It’s recommended to use stored procedure to update an existing record. If the record doesn’t exist, then use INSERT.
-> 
 > -   Currently, only TCP connections are supported.
-> -   Deploy the public certificate in the keystore of your Cloud Integration tenant for verifying the response.
+> -   Deploy the public certificate in the keystore of your SAP Cloud Integration tenant for verifying the response.
 > 
 > -   While executing direct SQL queries, it’s recommended to use standard stored procedure method to read XML files.
 > 
@@ -45,42 +45,25 @@ To try out a simple demo, visit the [blog](https://blogs.sap.com/2019/02/19/clou
 
 ## Supported Databases
 
-The following table lists the databases currently supported for Cloud Foundry tenants.
-
-
-<table>
-<tr>
-<th valign="top">
-
-Database supported for Cloud Foundry
-
-</th>
-<th valign="top">
-
-Database supported for Neo only
-
-</th>
-</tr>
-<tr>
-<td valign="top">
+The following are the databases that are currently supported.
 
 -   [DB2](jdbc-for-db2-on-premise-9515cf8.md)
 -   [Microsoft SQL Server \(Cloud\)](jdbc-for-microsoft-sql-server-cloud-4173d0a.md)
+-   [Microsoft SQL Server \(On-Premise\)](jdbc-for-microsoft-sql-server-on-premise-9745e40.md)
 -   [Oracle \(Cloud\)](jdbc-for-oracle-cloud-f868182.md)
+-   [Oracle \(On-Premise\)](jdbc-for-oracle-on-premise-e6db38a.md)
 -   [PostgreSQL \(Cloud\)](jdbc-for-postgresql-cloud-4d5b488.md)
+-   [Postgres \(On-Premise\)](jdbc-for-postgres-on-premise-d31edb4.md)
 -   [SAP HANA \(Cloud\)](jdbc-for-sap-hana-cloud-187a8e8.md)
--   [JDBC for SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
+-   [SAP HANA Platform \(On-Premise\)](jdbc-for-sap-hana-platform-on-premise-ff29388.md)\`
+-   [SAP ASE Service \(Cloud\)](jdbc-for-sap-ase-service-cloud-d96c7c5.md)
+-   [SAP ASE Platform \(On-Premise\)](jdbc-for-sap-ase-platform-on-premise-dad011d.md)
+-   [MariaDB \(Cloud\)](jdbc-for-mariadb-cloud-1d320d6.md)
 
+The following are the databases that are currently supported only for Neo environment:
 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-</table>
+-   [SAP ASE Service](jdbc-for-sap-ase-service-neo-a6271cc.md)
+-   [SAP HANA Service](jdbc-for-sap-hana-service-neo-030e47e.md)
 
 
 
@@ -92,7 +75,7 @@ The following diagram shows how the JDBC adapter communicates with an HANA or AS
 
 ![](images/JDBC_Receiver_Adapter_96428a8.png)
 
-The following diagram shows the supported the databases for Cloud Integration tenants hosted on Neo Environment:
+The following diagram shows the supported the databases for tenants hosted on Neo Environment:
 
 ![](images/DB_Connection_from_Neo_Tenant_JDBC_Adapter_54d53ac.png)
 
@@ -113,7 +96,7 @@ For more information on allowing access and to generate a one-time access token 
 
 ## Using the JDBC Adapter, Cloud Foundry Environment
 
-You’ve a Cloud Integration tenant hosted on a Cloud Foundry or multi-cloud environment that needs access to the on-premise \(SQL server\) or cloud databases provided "as-a-service" managed by third-party vendors.
+You’ve a tenant hosted on a Cloud Foundry or multi-cloud environment that needs access to the on-premise \(SQL server\) or cloud databases provided "as-a-service" managed by third-party vendors.
 
 By configuring the JDBC adapter you can connect to these databases. In addition, the adapter supports connection to a relational database type that provides an easy access point to connect with another databases. Use Amazon Relational Database Service \(Amazon RDS\) for accessing and managing the following databases:
 
@@ -133,9 +116,11 @@ The following diagram shows the supported the databases for Cloud Integration..
 
 
 
+## Connection
 
 
-### Connection
+
+### 
 
 After adding the JDBC receiver adapter step in your integration flow, set up the connection based on the description mentioned in the table:
 
@@ -233,6 +218,18 @@ This enables you to process collection queries in a single request. For more det
 <td valign="top">
 
 Choose the behavior of batch operation. For more details, see [Batch Payload and Operation](batch-payload-and-operation-760b267.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Interpretation of Empty String Value*
+
+</td>
+<td valign="top">
+
+Select how empty XML tags in the payload are interpreted when generating SQL statements. Select **Empty String** to treat empty XML tags as empty string values \(`''`\). Select **Null Value** to treat them as `NULL`. This is useful for databases that distinguish between NULL and empty string values.
 
 </td>
 </tr>

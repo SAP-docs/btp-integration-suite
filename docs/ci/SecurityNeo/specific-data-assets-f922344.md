@@ -344,38 +344,6 @@ Business data
 <tr>
 <td valign="top">
 
-Message content stored by JMS adapter
-
-</td>
-<td valign="top">
-
-Message content stored in JMS message queues
-
-</td>
-<td valign="top">
-
-JMS queue
-
-</td>
-<td valign="top">
-
-Business data
-
-</td>
-<td valign="top">
-
-Can be defined by integration developer \(default value: 90 days\)
-
-</td>
-<td valign="top">
-
-Not supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Lock entries
 
 </td>
@@ -412,13 +380,13 @@ Limited retention times make sure that data is stored in the system only for a l
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="c138a1cc346f4dccba8ffcb9a3b97b88.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="c138a1cc346f4dccba8ffcb9a3b97b88.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
- <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="866b6a94a074487384a21377ec9f2eb2.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Define Data Store Operations](../Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
 
- <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" ?> 
+ <?sap-ot O2O class="- topic/link " href="9247e59fd76c441592da5724dc890f65.xml" text="" desc="" xtrc="link:4" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f9223443fb8b43abb602332d9be94cce.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Managing Security Material](../Operations/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
 

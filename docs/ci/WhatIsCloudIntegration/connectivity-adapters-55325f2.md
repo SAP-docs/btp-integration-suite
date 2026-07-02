@@ -166,6 +166,46 @@ See: [AMQP Receiver for SAP Event Mesh](../Development/amqp-receiver-for-sap-eve
 <tr>
 <td valign="top">
 
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Sender adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Cloud Integration to consume messages from SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQ Sender for SAP Integration Suite, advanced event mesh](../Development/amq-sender-for-sap-integration-suite-advanced-event-mesh-be1e496.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*AMQP for SAP Integration Suite, advanced event mesh*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Enables SAP Cloud Integration to send messages to SAP Integration Suite, advanced event mesh.
+
+Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
+
+Supported transport protocol: TCP
+
+See: [AMQP Receiver for SAP Integration Suite, advanced event mesh](../Development/amqp-receiver-for-sap-integration-suite-advanced-event-mesh-5f229c0.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *AMQP for Microsoft Azure Service Bus*
 
 Sender adapter
@@ -179,7 +219,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Microsoft Azure Service Bus](../Development/amqp-sender-for-microsoft-azure-service-bus-7384ac3.md)
+See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -199,7 +239,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Microsoft Azure Service Bus](../Development/amqp-receiver-for-microsoft-azure-service-bus-9c64d80.md)
+See: [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -219,7 +259,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Solace PubSub+](../Development/amqp-sender-for-solace-pubsub-c9ab47d.md)
+See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -239,7 +279,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Solace PubSub+](../Development/amqp-receiver-for-solace-pubsub-19f18d8.md)
+See: [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -259,7 +299,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Sender for Apache Qpid Broker-J](../Development/amqp-sender-for-apache-qpid-broker-j-b4983f7.md)
+See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -279,7 +319,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP, WebSocket
 
-See: [AMQP Receiver for Apache Qpid Broker-J](../Development/amqp-receiver-for-apache-qpid-broker-j-622aa1d.md)
+See: [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -299,7 +339,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../Development/amqp-sender-for-apache-activemq-5-and-apache-activemq-artemis-dc4c564.md)
+See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -319,7 +359,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for Apache ActiveMQ 5 and Apache ActiveMQ Artemis](../Development/amqp-receiver-for-apache-activemq-5-and-apache-activemq-artemis-76c4dd3.md)
+See: [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -339,7 +379,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Sender for IBM MQ](../Development/amqp-sender-for-ibm-mq-f6cc0e4.md)
+See: [Configure the AMQP Sender Adapter](../Development/configure-the-amqp-sender-adapter-99ce674.md)
 
 </td>
 </tr>
@@ -359,7 +399,7 @@ Supported message protocol: AMQP \(Advanced Message Queuing Protocol\) 1.0
 
 Supported transport protocol: TCP
 
-See: [AMQP Receiver for IBM MQ](../Development/amqp-receiver-for-ibm-mq-990fa99.md)
+See: [Configure the AMQP Receiver Adapter](../Development/configure-the-amqp-receiver-adapter-d5660c1.md)
 
 </td>
 </tr>
@@ -480,6 +520,38 @@ Receiver adapter:
 
 
 See: [AS4 Receiver Adapter](../Development/as4-receiver-adapter-3a2fde8.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*BigCommerce GraphQL*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce GraphQL Admin APIs using the GraphQL message protocol. The GraphQL message protocol is used to connect to the GraphQL-based Admin APIs of a BigCommerce store.
+
+See  <?sap-ot O2O class="- topic/xref " href="3dbf284ae5d54f59b7b9cc8f97d41fed.xml" text="" desc="" xtrc="xref:38" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*BigCommerce REST*
+
+Receiver adapter
+
+</td>
+<td valign="top">
+
+Connects SAP Integration Suite tenant to a BigCommerce REST Admin APIs, using the REST message protocol. The REST message protocol is used to connect to the REST-based Admin APIs of a BigCommerce store.
+
+See  <?sap-ot O2O class="- topic/xref " href="f36aab9b289a4d5b8d835ad100ed812a.xml" text="" desc="" xtrc="xref:39" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>
@@ -1030,7 +1102,7 @@ Supported versions:
 
 -   OData version 4.0
 
-    Supported operations: Create \(POST\), Query \(GET\), Update \(PUT\)
+    Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
 
 -   The outgoing request payload must be in XML format.
 
@@ -1195,7 +1267,7 @@ Connects SAP Cloud Integration to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 The sender adapter allows you to define a schedule for polling data from the connected system.
 
@@ -1217,7 +1289,7 @@ Connects SAP Cloud Integration to a remote system using the SSH File Transfer pr
 
 Supported versions:
 
-SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher
+SSH version 2 \(as specified at [The Secure Shell \(SSH\) Protocol Architecture](http://tools.ietf.org/html/rfc4251)\), SSH File Transfer Protocol \(SFTP\) version 3 or higher.
 
 See: [Configure the SFTP Receiver Adapter](../Development/configure-the-sftp-receiver-adapter-4ef52cf.md)
 

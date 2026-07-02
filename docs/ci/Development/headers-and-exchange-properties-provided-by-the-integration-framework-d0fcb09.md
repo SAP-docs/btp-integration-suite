@@ -102,12 +102,12 @@ Property
 
 Encoder
 
+Content Modifier
+
 </td>
 <td valign="top">
 
-Specifies the character encoding to be applied for message processing.
-
-Is relevant for content encoding steps.
+Specifies the character encoding to be applied for message processing. You can override the character encoding and avoid encoding issues when you use special characters.
 
 </td>
 </tr>
@@ -220,8 +220,12 @@ Header
 
 HTTPS Sender adapter
 
+HTTP Receiver adapter
+
 </td>
 <td valign="top">
+
+Overrides the existing path set directly in the Http based receiver endpoint.
 
 Refers to the dynamic part of the URL path of the integration flow endpoint.
 
@@ -298,6 +302,8 @@ Header
 
 HTTPS Sender adapter
 
+HTTP Receiver adapter
+
 </td>
 <td valign="top">
 
@@ -322,14 +328,14 @@ Header
 
 HTTPS Sender adapter
 
+HTTP Receiver adapter
+
 </td>
 <td valign="top">
 
 Refers to the complete URL called, without query parameters.
 
-For example, `CamelHttpUrl=https://test.bsn.neo.ondemand.com/http/hello`.
-
-The HTTPS sender adapter sets this header.
+For example, `CamelHttpUrl=http://test.bsn.neo.ondemand.com/http/hello`.
 
 </td>
 </tr>
@@ -811,7 +817,7 @@ Email address that the message comes from.
 <tr>
 <td valign="top">
 
-JMSCorrellationID
+JMSCorrelationID
 
 </td>
 <td valign="top">
@@ -1238,117 +1244,7 @@ If the sender channel is configured to use client certificate authentication, no
 <tr>
 <td valign="top">
 
-SAP\_AS2\_Inbound\_Decrypt\_Message
-
-</td>
-<td valign="top">
-
-Header
-
-</td>
-<td valign="top">
-
-AS2 Sender adapter
-
-</td>
-<td valign="top">
-
-Use it to ensure that the message is decrypted in AS2 sender.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP\_AS2\_Inbound\_Mdn\_Verify\_Mic
-
-</td>
-<td valign="top">
-
-Header
-
-</td>
-<td valign="top">
-
-AS2 MDN Sender adapter
-
-</td>
-<td valign="top">
-
-Use it to ensure that the Message Integrity Check \(MIC\) is verified in AS2 MDN sender.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP\_AS2\_Inbound\_Mdn\_Verify\_Signature
-
-</td>
-<td valign="top">
-
-Header
-
-</td>
-<td valign="top">
-
-AS2 MDN Sender adapter
-
-</td>
-<td valign="top">
-
-Use it to ensure that the signature is verified in AS2 MDN sender.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP\_AS2\_Inbound\_Verify\_Signature
-
-</td>
-<td valign="top">
-
-Header
-
-</td>
-<td valign="top">
-
-AS2 Sender adapter
-
-</td>
-<td valign="top">
-
-Use it to ensure that the signature is verified in AS2 sender.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP\_AS2\_MDN
-
-</td>
-<td valign="top">
-
-Header
-
-</td>
-<td valign="top">
-
-AS2 Sender adapter
-
-</td>
-<td valign="top">
-
-Use it to customize the original MDN found in the exchange header.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP\_AS2\_Outbound\_Async\_Mdn\_Url
+SAP\_AS2\_Outbound\_Authentication\_Type
 
 </td>
 <td valign="top">
@@ -1363,7 +1259,51 @@ AS2 Receiver adapter
 </td>
 <td valign="top">
 
-Use it to specify partner's AS2 URL.
+Use it to dynamically set the value of authentication method.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS2\_Outbound\_Content\_Transfer\_Encoding
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS2 Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set the value of the AS2 message encoding type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS2\_Outbound\_Proxy\_Type
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS2 Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set the type of proxy you want to use for connecting to receiver system.
 
 </td>
 </tr>
@@ -1429,7 +1369,7 @@ AS2 Receiver adapter
 </td>
 <td valign="top">
 
-Use it to ensures that the outbound message is encrypted.
+Use it to ensure that the outbound message is encrypted.
 
 </td>
 </tr>
@@ -1508,7 +1448,29 @@ AS2 Receiver adapter
 </td>
 <td valign="top">
 
-Use it to specify the public key alias to encrypt the AS2 message.
+Use it to specify the public key certificate to encrypt the AS2 message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS2\_Outbound\_Async\_Mdn\_Url
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS2 Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to specify partner's AS2 URL.
 
 </td>
 </tr>
@@ -1743,6 +1705,419 @@ Use it to specify the private key alias to sign the AS2 message.
 <tr>
 <td valign="top">
 
+SAP\_AS4\_Outbound\_Authentication\_Type
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Authentication Type* field and choose the authentication type to process the outbound message. The valid values are:
+
+-   saml
+-   basic
+-   clientCert
+-   none
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Username\_Token
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Username Token* field to specify the relevant password type to be used when a username token is generated from credentials. The valid values are:
+
+-   none
+-   hashedPasswordWithTimestamp
+-   plainTextPassword
+-   plainTextPasswordWithTimestamp
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Security\_Type
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Sign and Encrypt Message* field and choose whether to sign and encrypt the payload. The valid values are:
+
+-   sign
+-   signAndEncrypt
+-   none
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Sign\_Message
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Sign Message* field to ensure that outgoing AS4 message is signed. The valid values are:
+
+-   true
+-   false
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Signing\_Algorithm
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for*Signature Algorithm* field and set the relevant algorithm to sign the AS4 message. The valid values are:
+
+-   SHA256/RSA
+-   SHA384/RSA
+-   SHA512/RSA
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Encryption\_Cert
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically specify an alias for the public key that is to be used to encrypt the message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Encryption\_Algorithm
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Encryption Algorithm* field and specify an encryption algorithm to be applied when encrypting the message. The valid values are:
+
+-   *3DES*
+
+-   *AES128*
+
+-   *AES256*
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Save\_Receipt
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Save Incoming Receipt* to save incoming receipt in the Message Store for 90 days. The valid values are:
+
+-   true
+-   false
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Verify\_Receipt\_Username\_Token
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Verify Username Token* field and set the relevant option for username token verification. The valid values are:
+
+-   notRequired
+-   required
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Verify\_Receipt
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Push\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Verify Receipt Signature* field and choose whether to verify the incoming receipt signature against the public key alias. The valid values are:
+
+-   true
+-   false
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Pull\_Username\_Token
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Pull\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Username Token* field to specify the relevant password type to be used when a username token is generated from credentials. The valid values are:
+
+-   none
+-   hashedPasswordWithTimestamp
+-   plainTextPassword
+-   plainTextPasswordWithTimestamp
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Inbound\_Sign\_Message
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Pull\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for *Sign Message* field to ensure that outgoing AS4 message is signed. The valid values are:
+
+-   true
+-   false
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Inbound\_Signing\_Algorithm
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Pull\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically assign values for*Signature Algorithm* field and set the relevant algorithm to sign the AS4 message. The valid values are:
+
+-   SHA256/RSA
+-   SHA384/RSA
+-   SHA512/RSA
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Inbound\_Verify\_Sign
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Pull\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Verify Signature* field and choose whether to verify the incoming signature. The valid values are:
+
+-   true
+-   false
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_AS4\_Outbound\_Verify\_Response\_Username\_Token
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+AS4 \(ebMS3 Pull\) Receiver adapter
+
+</td>
+<td valign="top">
+
+Use it to dynamically set values for *Verify Username Token* field and set the relevant option for username token verification. The valid values are:
+
+-   notRequired
+-   required
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_BatchLineSeparator
 
 </td>
@@ -1843,6 +2218,28 @@ You can use this header to capture the number of retries performed by the data s
 <tr>
 <td valign="top">
 
+SAP\_DataStoreRetries
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+Data Store
+
+</td>
+<td valign="top">
+
+Indicates the number of retry attempts made by the message. Created by `DataStore` consumers, with a value of 0 on the initial attempt to process the message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_DataStoreExpiresAt
 
 </td>
@@ -1881,6 +2278,28 @@ EDI Splitter
 <td valign="top">
 
 Includes the document number for the single incoming EDI file.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_EDIFACT\_DECIMAL\_CHARACTER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to set the decimal character to be used during message validation. Possible values are 'dot' or 'fromIncomingPayload'.
 
 </td>
 </tr>
@@ -1969,6 +2388,28 @@ EDI Splitter
 <td valign="top">
 
 Allows the splitter to read the interchange number either from the EDI message or from an assigned set of number ranges.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_EDIFACT\_UNIQUE\_INTERCHANGE\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a unique interchange number while generating a acknowledgment message. Possible values are 'required' or 'notRequired'.
 
 </td>
 </tr>
@@ -2194,6 +2635,28 @@ Allows the splitter to read the interchange number either from the EDI message o
 <tr>
 <td valign="top">
 
+SAP\_EDISPLITTER\_X12\_UNIQUE\_INTERCHANGE\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a unique interchange number while generating a acknowledgment message. Possible values are 'required' or 'notRequired'.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP\_EDISPLITTER\_X12\_NUMBER\_RANGE
 
 </td>
@@ -2298,6 +2761,115 @@ EDI Splitter
 <td valign="top">
 
 Performs validation on incoming ASC X12 message against the XSD scheme.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_GROUP\_CONTROL\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to set the group segmnet number in the fucntional acknowledgement message. The values for the headers can be:
+
+-   numberRange
+-   useFromEDIMessage
+-   predefined
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_UNIQUE\_GROUP\_CONTROL\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a group segment set number while generating an acknowledgment message:
+
+-   required
+-   notrequired
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_TRANSACTION\_SET\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to set the transaction set number in the fucntional acknowledgement message. The values for the headers can be:
+
+-   numberRange
+-   predefined
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_EDISPLITTER\_997\_UNIQUE\_TRANSACTION\_SET\_NUMBER
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+EDI Splitter
+
+</td>
+<td valign="top">
+
+Use it to generate a unique transaction set number while generating an acknowledgment message:
+
+-   required
+-   notrequired
+
+
 
 </td>
 </tr>
@@ -2798,6 +3370,28 @@ The adapter parses the XML response and generates this header from it. The heade
 <tr>
 <td valign="top">
 
+SAP\_IntegrationFlowID
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+JMS Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the ID of the integration flow that sent a message to the JMS queue from which the JMS sender adapter reads it. The property value is set by the JMS receiver adapter that sent the message to the JMS queue. The JMS consumer can use this property to define further steps that depend on the integration flow ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SapQualityOfService
 
 </td>
@@ -3154,6 +3748,28 @@ If this message header is present for an incoming message, the processing of thi
 <tr>
 <td valign="top">
 
+SAP\_ODataV2\_RefreshCacheOnExpiry
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+OData V2 Receiver Adapter
+
+</td>
+<td valign="top">
+
+The adapter stores the metadata cache for 1 hour after which it gets invalidated. The adapter looks out for the metadata again that can cause dips in performance every hour. If you face such dips every hour, you can use the message property and set the value to `false`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 SAP-PASSPORT
 
 </td>
@@ -3323,6 +3939,32 @@ Soap adapter
 <td valign="top">
 
 Used looping process call modelling.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_XadesSigningTimeZone
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+XML Signer
+
+</td>
+<td valign="top">
+
+If this exchange property is set, the XML Signer step transforms the value of the XAdES `SigningTime` element into the time zone specified by the property value.
+
+The property shall contain a value of the format `GMT+HH:mm` or `GMT-HH:mm`, where HH are the hours and mm are the minutes after or before Greenwich Mean Time \(GMT\). The GMT zone is used if the given string property value can't be interpreted. If the property contains a non-string value, an exception is thrown. If the property is not set, the time zone GMT is used.
+
+For example, if you set the property value to `GMT+3:00`, the time zone 3 hours ahead Greenwich Mean Time is used.
 
 </td>
 </tr>
@@ -3522,6 +4164,11 @@ JMS Consumer
 
 Specifies the time when an alert needs to be sent.
 
+> ### Note:  
+> This header is only set for non-exclusive queues.
+
+
+
 </td>
 </tr>
 <tr>
@@ -3545,6 +4192,9 @@ JMS Consumer
 Number of retries of a JMS message.
 
 The JMS sender adapter sets this header.
+
+> ### Note:  
+> This is only the case if the *Non-Exclusive* access type is selected.
 
 You can use this header to specify that the behavior of the integration flow changes depending on the number of retries that are actually performed. For example, you can configure a scenario where a mail is sent to an administrator with the message as an attachment and the integration flow is terminated successfully after a specified number of retries.
 
@@ -3570,7 +4220,7 @@ JMS Consumer
 </td>
 <td valign="top">
 
-
+This header is set for queues with non-exclusive access type.
 
 </td>
 </tr>
@@ -3885,6 +4535,116 @@ Looping Process Call
 <td valign="top">
 
 Provides the index of the currently processed loop \(starting with 0\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SSAP\_OFTP\_Inbound\_Virtual\_File\_Dataset\_Name
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The name of the inbound virtual file dataset.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_SFID\_Origin
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The file originator \(SFIDORIG\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_SFID\_Destination
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The final file destination \(SFIDDEST\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_Own\_Id
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+Your own Odette identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP\_OFTP\_Inbound\_Partner\_Id
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+OFTP Sender Adapter
+
+</td>
+<td valign="top">
+
+The expected partners' Odette identifier.
 
 </td>
 </tr>

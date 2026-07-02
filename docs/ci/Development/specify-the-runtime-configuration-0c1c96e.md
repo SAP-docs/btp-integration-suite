@@ -93,6 +93,9 @@ Specify the runtime properties of the integration flow.
     
     Specify the headers to be retained when the incoming message is processed.
 
+    > ### Caution:  
+    > Only include the headers that are truly needed in the further processing of the message. This is the only way to ensure that no headers are processed that may have unwanted side effects or pose a security risk. Entering a wildcard character \(`*`\) bears the risk that you can’t control which headers will be processed by the integration flow.
+
     > ### Note:  
     > Enter one or more names of headers by separating them with the pipe character \(`|`\). Ensure that the header names separated with the pipe character don't have any whitespaces in between.
     > 
@@ -108,9 +111,9 @@ Specify the runtime properties of the integration flow.
     > 
     > -   The expression `AB_[0-9]|CD_[0-9]` matches `AB_` followed by one digit or `CD_` followed by one digit, for example: `AB_1`, `AB_2`, `CD_9`.
     > 
-    >     Note that contants separated with the pipe character \(`|`\) \(as mentioned above\) is also a regular expression.
+    >     Note that constants separated with the pipe character \(`|`\) \(as mentioned above\) is also a regular expression.
     > 
-    >     You can also combine contant values with regular expressions, separated by the pipe character \(`|`\).
+    >     You can also combine constant values with regular expressions, separated by the pipe character \(`|`\).
     > 
     >     Example: `AB_[0-9]|ABC`
     > 
@@ -171,7 +174,7 @@ Specify the runtime properties of the integration flow.
 **Related Information**  
 
 
-[Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md "Cloud Integration allows you to use integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
+[Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md "Cloud Integration allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.")
 
 [Define Content Modifier](define-content-modifier-8f04a70.md "")
 

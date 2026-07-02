@@ -36,7 +36,7 @@ The tasks of persons with integration developer permissions \(short: integration
 
 Note that the roles contained in this authorization group give an integration developer full control over message processing during runtime.
 
-More information: [Persona](persona-2937e5c.md)
+More information: [Personas](personas-2937e5c.md)
 
 During integration flow modeling, the integration developer defines how messages are mapped, which credentials are used, and to which recipients messages are sent. The set of roles provides very powerful permissions and in some cases allows the integration developer to access sensitive data.
 
@@ -199,5 +199,5 @@ Role-based authorization
 
 [Authentication and Authorization Options \(Inbound\)](../ConnectionSetup/authentication-and-authorization-options-inbound-983f2a5.md "When a client calls a server using a secure communication channel, two different kinds of checks are performed subsequently.")
 
-[Persona](persona-2937e5c.md "When you perform user management tasks using SAP BTP SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
+[Personas](personas-2937e5c.md "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
 

@@ -15,7 +15,7 @@
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 The *General Splitter* splits a composite message comprising N messages into N individual messages, each containing 1 message with the enveloping elements of the composite message. The term *enveloping elements* refers to these elements including the split point. Note elements that follow the one that is indicated as split point in the original message \(but on the same level\), are'nt counted as enveloping elements. They won't be part of the resulting messages.
 
@@ -38,7 +38,7 @@ If you use a Splitter step in a local integration process, the following limitat
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *General Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *General Splitter*.
 
 2.  Place the *General Splitter* element in the integration process and define the message path.
 
@@ -63,74 +63,14 @@ If you use a Splitter step in a local integration process, the following limitat
     <tr>
     <td valign="top">
     
-    *Expression Type* 
-    
-    </td>
-    <td valign="top">
-    
-    Specify the expression type you want to use to define the split point \(the element in the message structure below which the message is to be split\).
-
-    > ### Note:  
-    > The defined *Stop on Exception* handling takes priority over the end event defined in an exception subprocess with respect to continuing with the next split. It means that the next split is only executed if *Stop on Exception* isn't set.
-    > 
-    > If *Stop on Exception* is set, the next split isn't executed, irrespective of the end event used in an exception subprocess.
-
-    The following options are available:
-
-    -   *XPath*
-
-        The splitter argument is specified by an XPath expression.
-
-    -   *Line Break*
-
-        If the input message is a non-XML file, it's split according to the line breaks in the input message.
-
-        > ### Note:  
-        > The first line in the inbound message is treated as a root element.
-        > 
-        > Assume that your inbound message has the following content:
-        > 
-        > > ### Sample Code:  
-        > > ```
-        > > A, B
-        > > A1, B1
-        > > A2, B2
-        > > ```
-        > 
-        > The General Splitter with this *Expression Type* configuration produces the following 2 messages:
-        > 
-        > ```
-        > A, B
-        > A1, B1
-        > 
-        > ```
-        > 
-        > ```
-        > A, B
-        > A2, B2
-        > 
-        > ```
-
-        Empty lines in input messages are ignored and no empty messages are created.
-
-
-    For more examples, see [General and Iterating Splitter \(Examples\)](general-and-iterating-splitter-examples-698e594.md).
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     *XPath Expression* 
-
-    \(Enabled only if you select *XPath* in the *Expression Type* field\)
     
     </td>
     <td valign="top">
     
-    XPath to the split term
+    XPath to the split term.
 
-    You can specify the absolute or relative path.
+    You can specify the absolute or relative path or enter a reference to a header or property instead of a fixed value.
 
     > ### Note:  
     > Note that only the following types of XPath expressions are supported:
@@ -143,17 +83,6 @@ If you use a Splitter step in a local integration process, the following limitat
     > The following characters are **not** supported in an XPath expression:
     > 
     > |, +, \*, \>, <, \>=, <=, \[, \], @.
-
-    > ### Note:  
-    > When addressing elements with namespaces in the Splitter step, you have to specify them in a specific way in the XPath expression, and the namespace declaration in the incoming message must follow a certain convention:
-    > 
-    > Assume that the incoming message contains an element root with a namespace, for example:
-    > 
-    > `<root xmlns:n0=“http://myspace.com“></root>`
-    > 
-    > To address this element in the Splitter step, you need to enter the following XPath expression: `/n0:root`.
-    > 
-    > Using XPath expression `/root` leads to an error in that case.
 
     > ### Caution:  
     > You cannot split by **values** of message elements.
@@ -196,7 +125,7 @@ If you use a Splitter step in a local integration process, the following limitat
     </td>
     <td valign="top">
     
-    The size of the groups into which the composite message is to be split.
+    The size of the groups into which the composite message is to be split. You can also enter a reference to a header or property instead of a fixed value for Grouping.
 
     For example, if a message has 10 nodes and grouping is defined as 2, the message is split into 5 messages with 2 nodes each.
     
@@ -285,7 +214,7 @@ If you use a Splitter step in a local integration process, the following limitat
     > 
     > -   Processing of the 10 elements that are currently in processing continues until processing is finished.
     > 
-    >     However, these 10 messages are used in the *Gather* step.
+    >     However, these 10 messages aren't used in the *Gather* step.
     > 
     > -   The remaining 80 messages are ignored.
 
@@ -314,7 +243,7 @@ If you use a Splitter step in a local integration process, the following limitat
 
 ## Next Steps
 
-When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string `split_${exchangeId}_Index${header.CamelSplitIndex}` for *File Name*, the file name of the generated file on the SFTP server contains the Camel header `CamelSplitIndex`. In other words, the information on the number of split Exchanges induced by the Splitter step.
+When a message is split \(as configured in a Splitter step of an integration flow\), the Camel headers listed below are generated every time the runtime finishes splitting an Exchange. You have several options for accessing these Camel headers at runtime. For example, suppose that you are configuring an integration flow with a Splitter step before an SFTP receiver adapter. If you enter the string `split_${exchangeId}_Index${property.CamelSplitIndex}` for *File Name*, the file name of the generated file on the SFTP server contains the property `CamelSplitIndex`. This property contains the information on the number of split Exchanges induced by the Splitter step.
 
 -   CamelSplitIndex
 

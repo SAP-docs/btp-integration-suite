@@ -11,5 +11,5 @@
 
 [Using Custom IDP with SAP Cloud Integration](using-custom-idp-with-sap-cloud-integration-c59610d.md "")
 
-[Setting Up OAuth Configurations in Customer Account, Neo Environment](setting-up-oauth-configurations-in-customer-account-neo-environment-b5e75ea.md "Through a REST API you can manage roles and their assignments to users.")
+[Setting Up OAuth Configurations in Customer Account, Neo Environment](setting-up-oauth-configurations-in-customer-account-neo-environment-b5e75ea.md "With a REST API you can manage roles and their assignments to users.")
 

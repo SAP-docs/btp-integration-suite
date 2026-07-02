@@ -5,7 +5,7 @@
 You can store the payload as message processing log attachment.
 
 > ### Caution:  
-> Use this approach with ease due to the limited storage size of your SAP Cloud Integration tenant. If you expect high message volumes and the integration flow contains many persistency steps, there's the risk of exceeding the upper limit of your disk space. This means, you run into situations where the circuit breaker is opened, see [Persist Messages](persist-messages-8c35f3f.md).
+> Use this approach with ease due to the limited storage size of your SAP Cloud Integration tenant. If you expect high message volumes and the integration flow contains many persistency steps, there's the risk of exceeding the upper limit of your disk space. For more information, see [Persist Messages](persist-messages-8c35f3f.md).
 
 Depending on your use case, implement one of the following measures:
 

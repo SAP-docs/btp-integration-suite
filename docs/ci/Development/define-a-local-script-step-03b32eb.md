@@ -4,7 +4,7 @@
 
 # Define a Local Script Step
 
-You can create a script step that is specific to an integration artifact to execute custom scripts \(JavaScript or Groovy Script\).
+Learn how to use a script step that’s specific to an integration artifact to create custom scripts \(JavaScript or Groovy Script\).
 
 
 
@@ -38,7 +38,10 @@ Groovy Runtime
 </td>
 <td valign="top">
 
-2.4.12
+-   2.4.21 for Groovy script step version 1.1
+-   4.0.29 for Groovy script step version 2.0
+
+
 
 </td>
 </tr>
@@ -50,7 +53,9 @@ JavaScript Engine \(Rhino\)
 </td>
 <td valign="top">
 
-1.7 R4
+1.7.14
+
+Supports ECMAScript standards.
 
 </td>
 </tr>
@@ -60,7 +65,7 @@ JavaScript Engine \(Rhino\)
 
 ## Context
 
-Cloud Integration provides a Java API to support this use case.
+Cloud Integration provides a Java API to support scripting.
 
 > ### Note:  
 > The Java standard libraries of Java 8 can be used.
@@ -75,41 +80,51 @@ Cloud Integration provides a Java API to support this use case.
 
 2.  If you want to add a Script step to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Message Transformers\)and then choose <span class="SAP-icons"></span> \(Script\).
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Transformers\)and then choose <span class="SAP-icons-V5"></span> \(Script\).
 
     2.  Choose *Groovy Script* or *JavaScript*.
 
     3.  Place *Script* step in the integration process.
 
 
-3.  To open the script editor, click the *Create* icon next to the Script step shape.
 
-    ![](images/Script_Step_Create_dd8d09c.png)
+You can write the code manually or upload a script.
 
-4.  In the script editor, specify the script according to the requirements of your scenario.
+3.  To write your code manually, do the following:
 
-    For an overview of the classes and interfaces supported by the Script step, see [SDK API](sdk-api-c5c7933.md).
+    1.  To open the script editor, select *Create* next to the Script step shape.
 
-    For more information on how to use the dedicated interfaces and methods for specific use cases, refer to [Script Use Cases](script-use-cases-148851b.md).
+        ![](images/Script_Step_Create_dd8d09c.png)
 
-    You can also check out the design guidelines for using scripts at [Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md).
+    2.  In the script editor, write the script according to the requirements of your scenario.
 
-5.  When you've finished the definition of your script, click *OK*.
 
-6.  Save the integration flow.
+4.  To upload a script from your computer, do the following:
 
-    > ### Note:  
-    > When having selected the Script step shape in the integration flow model, you can do the following in the property sheet:
-    > 
-    > -   In the *General* tab, you can edit the name of the Script step shape.
-    > 
-    > -   In the *Processing* tab, choose *Select* to browse and upload a script file.
-    > 
-    >     You can add external jar files using the *Resource* view. You can then invoke functions from these external jar files in the script. You can also upload a script from your computer using *Upload from File System*.
-    > 
-    > -   In the *Script Function* field, enter the name of the function that you want to call from the script by default. Make sure that you enter the function name without any arguments.
-    > 
-    >     The field helps you define a default function when there are multiple functions defined in the script file. However, if the script contains the function *processData*, which is the default function created in the script, you can leave the field empty.
+    1.  Double-click the script step to launch the properties sheet.
+
+    2.  In the *Processing* tab, choose *Select*.
+
+    3.  In the *Local Resources* tab, upload a script file from your file system.
+
+        Alternatively, in the *Global Resources* tab, you can refer to an already existing script in a Script Collection artifact. By doing so, any changes to the source script are made available for all referencing script steps.
+
+    4.  Choose the script file to launch it in the script editor.
+
+    5.  In the script editor, edit the script according to the requirements of your scenario.
+
+
+5.  Improve the script with the available tools in the editor:
+
+    -   Include the recommendations provided in the *Problems* view. For more information, see: [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md).
+
+6.  When you've finished the definition of your script, choose *Apply*.
+
+7.  Optional: In the *Script Function* field, enter the name of the function that you want to call by default from the script. Make sure that you enter the function name without any arguments
+
+    The field helps you define a default function when there are multiple functions defined in the script file. However, if the script contains the function *processData*, which is the default function created in the script, you can leave the field empty.
+
+8.  Save the integration flow.
 
 
 
@@ -120,7 +135,7 @@ Cloud Integration provides a Java API to support this use case.
 
 When using the Script step, make sure that you follow guidelines about secure usage of the related script programming language.
 
-To make sure that your scenario meets highest standards with regard to security and other aspects, follow the design guidelines, in particular, the following ones:
+To make sure that your scenario meets the highest standards with regard to security and other aspects, follow the design guidelines, in particular, the following ones:
 
 -   [Apply the Highest Security Standards](apply-the-highest-security-standards-201fd43.md)
 
@@ -129,13 +144,13 @@ To make sure that your scenario meets highest standards with regard to security 
 
 To mention one particular aspect of scripting, note the following:
 
-Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks. More information can be found [here](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing).
+Any application that parses XML data is prone to the risk of XML External Entity \(XXE\) Processing attacks. More information can be found on the webpage [XML External Entity \(XXE\) Processing](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing) .
 
 To overcome this issue, you must take one of the following measures:
 
 -   Don't use XML parsing \(for example, DocumentBuilderFactory\) at all.
 
--   Switch off the processing of external entities as explained [here](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).
+-   Switch off the processing of external entities as explained on the webpage [XML External Entity Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).
 
 
 **Related Information**  

@@ -9,7 +9,7 @@ An integration flow is enterprise grade when it's designed in such a way that it
 > ### Note:  
 > For example, you can design your integration flows in many different ways to implement a certain integration scenario. However, there are certain guidelines that help you to optimize the performance of your scenario \(see [Optimize Performance](optimize-performance-491c80d.md)\).
 
-In this section, we introduce guidelines for designing enterprise-grade integration flows in SAP Cloud Integration.
+In this section, we introduce guidelines for designing enterprise-grade integration flows in .
 
 Enterprise-grade integration flows have the following qualities:
 
@@ -75,7 +75,7 @@ We deliver prepackaged integration content for various business processes. The p
 
 ## Application-Specific Guidelines Related to SAP Cloud Integration
 
-There are application-specific guidelines related to SAP Cloud Integration. For more information, see:
+There are application-specific guidelines related to SAP Integration Suite. For more information, see:
 
 
 <table>
@@ -146,5 +146,5 @@ SAP SuccessFactors
 
 [Use the Partner Directory Appropriately](use-the-partner-directory-appropriately-6e00412.md "When designing business-to-business scenarios, you can use the Partner Directory to store information on business partners that are connected to the tenant in the context of a larger business network.")
 
-[Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md "You can use the Script step to apply script operations on the message content.")
+[Use Scripting Appropriately](use-scripting-appropriately-d4dc13c.md "You can use the script step to apply script operations on the message content.")
 

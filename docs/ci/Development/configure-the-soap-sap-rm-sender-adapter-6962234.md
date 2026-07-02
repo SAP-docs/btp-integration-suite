@@ -11,7 +11,7 @@ The SOAP \(SAP RM\) Sender Adapter exchanges messages with a sender system based
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -58,7 +58,7 @@ Relative endpoint address at which the ESB listens to the incoming requests, for
 > ### Note:  
 > When you specify the endpoint address `/path`, a sender can also call the integration flow through the endpoint address `/path/<any string>` \(for example, `/path/test/`\).
 > 
-> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using completely separated endpoints for services.
+> Be aware of the following related implication: When you in addition deploy an integration flow with endpoint address `/path/test/`, a sender using the `/path/test` endpoint address will now call the newly deployed integration flow with the endpoint address `/path/test/`. When you now undeploy the integration flow with endpoint address `/path/test`, the sender again calls the integration flow with endpoint address `/path` \(original behavior\). Therefore, be careful *reusing* paths of services. It is better using separated endpoints for services.
 
 
 
@@ -105,109 +105,9 @@ When you use the up-to-date adapter version, the processing setting Robust is im
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-*Authorization* 
-
-</td>
-<td valign="top">
-
-Specifies the authorization option for the sender.
-
-> ### Note:  
-> The option *client certificate* is not recommended. Instead, it is recommended to use the more secure option *role-based authorization with certificate-to-user mapping*.
-
-You can select one of the following options:
-
--   *Client Certificate*: Sender authorization is checked on the tenant by evaluating the subject/issuer distinguished name \(DN\) of the certificate \(sent together with the inbound request\). You can use this option together with the following authentication option: *Client-certificate authentication \(without certificate-to-user mapping\)*.
-
--   *User Role*: Sender authorization is checked based on roles defined on the tenant for the user associated with the inbound request. You can use this option together with the following authentication options:
-
-    -   *Basic authentication* \(using the credentials of the user\)
-
-        The authorizations for the user are checked based on user-to-role assignments defined on the tenant.
-
-    -   *Client-certificate authentication and certificate-to-user mapping*
-
-        The authorizations for the user derived from the certificate-to-user mapping are checked based on user-to-role assignments defined on the tenant.
-
-
-
-Depending on your choice, you can also specify one of the following properties:
-
--   *Client Certificate*
-
-    Allows you to select one or more client certificates \(based on which the inbound authorization is checked\).
-
-    Choose *Add* to add a new certificate for inbound authorization for the selected adapter. You can then select a certificate stored locally on your computer. You can also delete certificates from the list.
-
-    For each certificate, the following attributes are displayed: *Subject DN* \(information used to authorize the sender\) and *Issuer DN* \(information about the certificate authority that issues the certificate\).
-
--   *User Role*
-
-    Allows you to select a role based on which the inbound authorization is checked.
-
-    Choose *Select* to get a list of all available roles.
-
-    The role *ESBMessaging.send* is provided by default. It is a predefined role provided by SAP that authorizes a sender system to process messages on a tenant. However, using SAP BTP Cockpit, you can also define *custom roles* for the runtime node as well. When you choose *Select*, a selection of all custom roles defined that way is offered.
-
-    > ### Note:  
-    > Note the following:
-    > 
-    > -   You can also type in a role name. This has the same result as selecting the role from the value help: Whether the inbound request is authenticated depends on the correct user-to-role assignment defined in SAP BTP Cockpit.
-    > 
-    > -   When you externalize the user role, the value help for roles is offered in the integration flow configuration as well.
-    > 
-    > -   If you have selected a product profile for SAP Process Orchestration, the value help will only show the default role *ESBMessaging.send*.
-
-
-
-
-</td>
-</tr>
 </table>
 
 Select the *Conditions* tab and provide values in the fields as follows.
-
-**Conditions**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Parameter
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Maximum Message Size
-
-</td>
-<td valign="top">
-
-This parameter allows you to configure a maximum size for inbound messages \(smallest value for a size limit is 1 MB\). All inbound messages that exceed the specified size \(per integration flow and on the runtime node where the integration flow is deployed\) are blocked.
-
-To configure the maximum message size, you can specify the following parameters:
-
--   Body Size
-
--   Attachment Size
-
-
-If a message is rejected because it exceeds the configured limit, the sender receives an error message.
-
-</td>
-</tr>
-</table>
 
 > ### Note:  
 > For Exactly-Once handling, the sender SOAP \(SAP RM\) adapter saves the protocol-specific message ID in the header SapMessageIdEx. If this header is set, SOAP \(SAP RM\) receiver use the content of this header as the message ID for outbound communication. Usually, this is the desired behavior and enables the receiver to identify any duplicates. However, if the sender system is also the receiver system, or several variants of the message are sent to the same system \(for example, in an external call or multicast\), the receiver system will incorrectly identify these messages as duplicates. In this case, the header SapMessageIdEx must be deleted \(for example, using a script\) or overwritten with a new generated message ID. This deactivates Exactly-Once processing \(that is, duplicates are no longer recognized by the protocol\).
@@ -295,13 +195,11 @@ If a message is rejected because it exceeds the configured limit, the sender rec
 **Related Information**  
 
 
-[Read and Modify SOAP Headers](read-and-modify-soap-headers-8a2827d.md "You can use the Script step to address SOAP headers.")
+ <?sap-ot O2O class="- topic/link " href="999aa87a429846a4a3f3f8d5818dd0d5.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/69622346a10c4d5086a9b3e4f052337a.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Setting Up Principal Propagation \(Example Scenario\)](../ConnectionSetup/setting-up-principal-propagation-example-scenario-34eff84.md "Use principal propagation to forward the principal (identity of a user) across several connections in a complex system landscape.")
 
 [https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original\_fqdn=wiki.sdn.sap.com](https://wiki.scn.sap.com/wiki/display/ABAPConn/Plain+SOAP?original_fqdn=wiki.sdn.sap.com)
 
-[Defining Permissions for Senders to Process Messages on a Runtime Node](../Operations/defining-permissions-for-senders-to-process-messages-on-a-runtime-node-24585cc.md "")
-
-[Setting Up Inbound HTTP Connections \(Integration Flow Processing\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-integration-flow-processing-neo-environment-778c7e7.md "You can use various sender adapters (for example, the SOAP adapters, the IDoc adapter, and the HTTP adapter) to connect the tenant to a sender system so that the sender can send messages to Cloud Integration over the HTTP protocol.")
+[Setting Up Inbound HTTP Connections \(Integration Flow Processing\)](../ConnectionSetup/setting-up-inbound-http-connections-integration-flow-processing-0f92842.md "Enable a sender system to send messages to Cloud Integration over the HTTP protocol.")
 

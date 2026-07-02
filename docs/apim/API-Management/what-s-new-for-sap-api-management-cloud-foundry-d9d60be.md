@@ -80,6 +80,76 @@ Version
 <tr>
 <td valign="top">
 
+
+
+</td>
+<td valign="top">
+
+-   
+
+
+</td>
+<td valign="top">
+
+API-Centric Integration
+
+</td>
+<td valign="top">
+
+SAP Integration Suite now provides API-centric Integration, a new approach for designing and managing APIs. API-centric Integration enables you to model security , traffic management, mediation , transformation and integration logic in a single API artifact.
+
+These API artifacts can be deployed to Integration Cell, providing a managed cloud runtime for executing, securing, and governing APIs. For more information, see [API-Centric Integration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-centric-integration?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 API Management
 
 </td>

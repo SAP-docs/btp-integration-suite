@@ -68,7 +68,7 @@ When deleting a MIG successfully, the following event is written:
 </td>
 <td valign="top">
 
-[Message Implementation Guidelines \(MIGs\)](../50-Development/message-implementation-guidelines-migs-f9f2bab.md) 
+[Message Implementation Guidelines (MIGs)](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/f9f2bab3ff3a4d86863199f6531ee695.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -97,7 +97,7 @@ Delete MIG version
 </td>
 <td valign="top">
 
-[Mapping Guidelines \(MAGs\)](../50-Development/mapping-guidelines-mags-42124f4.md) 
+[Mapping Guidelines (MAGs)](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/42124f465fc0472a8ab0de30aa14edef.html "Learn what mapping guidelines are and how to work with the mapping guideline page.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -124,7 +124,7 @@ Delete customer message
 </td>
 <td valign="top">
 
-[Adding a Custom Message](../50-Development/adding-a-custom-message-8b7eb45.md) 
+[Adding a Custom Message](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/8b7eb45224cb4162917ec7f5958d9c29.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -155,7 +155,7 @@ Delete global code value mapping version
 </td>
 <td valign="top">
 
-[Code Value Mapping](../50-Development/code-value-mapping-eb6dad8.md) 
+[Code Value Mapping](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/eb6dad8fdf6146cb980ee159738d5b16.html "Code value mappings represent the transformation of a code value that is set at the source element into a code value that is required at the target element. They're created within a specific MAG, accessible only by a particular node of that MAG, and are stored them as well.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -236,7 +236,7 @@ Delete customer codelist version
 </td>
 <td valign="top">
 
-[Deleting a Custom Codelist](../50-Development/deleting-a-custom-codelist-01ad9ee.md)
+[Deleting a Custom Codelist](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/01ad9ee34b48470d88292a8f91b502d3.html "Delete a codelist from the custom type system Custom Codelists.") :arrow_upper_right:
 
 </td>
 </tr>

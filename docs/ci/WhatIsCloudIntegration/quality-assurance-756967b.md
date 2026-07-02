@@ -6,7 +6,7 @@ Quality Assurance is central to the SAP Cloud Integration development process. S
 
 
 
-SAP Cloud Integration delivers increments after a four-week development cycle and a four week testing cycle. Each of the two cycles is governed by strong assessment and test criteria \(quality KPIs\) which form the basis for acceptance or rejection of the increment.
+SAP Cloud Integration delivers increments after a four-week development cycle and a four-week testing cycle. Each of the two cycles is governed by strong assessment and test criteria \(quality KPIs\) which form the basis for acceptance or rejection of the increment.
 
   
   
@@ -30,7 +30,7 @@ To deliver quality, a release build version is produced which is assessed by all
 
 A successful Development Close results in release build version, which is assessed as “ready for productive use” by our first internal customer during the Integration & Acceptance Test takt \(IAT takt\). The scope during the IAT takt is to simulate and validate real-time End-to-End \(E2E\) customer facing scenarios, along with active test engagement with our SAP Application teams and OEM Partners as part of our "Collaborative Quality Assurance".
 
-The acceptance test team challenges the development close assessment by executing the Product Acceptance Tests on a dedicated and well governed test landscape, covering the following quality aspects like:
+The acceptance test team challenges the development close assessment by executing the Product Acceptance Tests on a dedicated and well-governed test landscape, covering the following quality aspects like:
 
 -   Automated regression tests \(functional and performance\) for integration packs, adapters, manual exploratory tests on new features, software update, cloud qualities and so on, that are executed by Cloud Integration experts from development organization.
 
@@ -38,7 +38,7 @@ The acceptance test team challenges the development close assessment by executin
 
 -   Automated regression test suites as part of Customer Test Service \(CTS\):
 
-    SAP offers a customer specific regression test service focused specifically on a customer's integration flows. The service helps businesses test non-standard integration content that will ensure business continuity. It includes test automation and regular execution of a customer's scenarios in the context of one acceptance takt, executed by SAP on SAP internal systems. The SAP Cloud Integration development teams add the test success of a customer’s scenarios to the mandatory release criteria \(without extra investment on the test landscape for the customer\) and won’t update any system until the new features have passed the tests. Customers receive a corresponding test report before the system update including resolutions for solving arising issues. During this process, a customer's data is safe and protected.
+    SAP offers a customer-specific regression test service focused specifically on a customer's integration flows. The service helps businesses test non-standard integration content that will ensure business continuity. It includes test automation and regular execution of a customer's scenarios in the context of one acceptance takt, executed by SAP on SAP internal systems. The SAP Cloud Integration development teams add the test success of a customer’s scenarios to the mandatory release criteria \(without extra investment on the test landscape for the customer\) and won’t update any system until the new features have passed the tests. Customers receive a corresponding test report before the system update including resolutions for solving arising issues. During this process, a customer's data is safe and protected.
 
       
       
@@ -47,11 +47,11 @@ The acceptance test team challenges the development close assessment by executin
     ![](images/Quality_Assurance_2005_2216fc8.png "Customer Test Service")
 
     > ### Note:  
-    > If you are interested in more details and/or a commercial offer for this optional and complementary service, contact *sap\_cpi\_test\_automation@exchange.sap.corp*.
+    > If you are interested in more details and/or a commercial offer for this optional and complementary service, contact *SAP\_CPI\_Test\_Automation@sap.com*.
 
 
 **Related Information**  
 
 
-[https://blogs.sap.com/2018/06/08/sap-cloud-platform-integration-how-we-do-software-updates/](https://blogs.sap.com/2018/06/08/sap-cloud-platform-integration-how-we-do-software-updates/)
+[Blog: SAP Cloud Platform Integration - how we do software updates](https://blogs.sap.com/2018/06/08/sap-cloud-platform-integration-how-we-do-software-updates/)
 

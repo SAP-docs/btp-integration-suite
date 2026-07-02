@@ -36,7 +36,7 @@ Visit the [blog](https://blogs.sap.com/2018/05/13/configuring-sap-as4-receiver-a
 **Related Information**  
 
 
-[Configure Receiver Channel with Push Message Protocol](configure-receiver-channel-with-push-message-protocol-449f6e9.md "Configure the AS4 receiver channel as a sending Message Service Handler (MSH) to send business documents.")
+[Configure Receiver Channel with ebMS3 Push](configure-receiver-channel-with-ebms3-push-449f6e9.md "Configure the AS4 receiver channel as a sending Message Service Handler (MSH) to send business documents.")
 
-[Configure Receiver Channel with Pull Message Protocol](configure-receiver-channel-with-pull-message-protocol-7cdde30.md "Configure the AS4 receiver channel as a receiving MSH to exchange business documents.")
+[Configure Receiver Channel with ebMS3 Pull](configure-receiver-channel-with-ebms3-pull-7cdde30.md "Configure the AS4 receiver channel as a receiving MSH to exchange business documents.")
 

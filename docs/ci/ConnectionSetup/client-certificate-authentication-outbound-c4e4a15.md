@@ -29,3 +29,6 @@ This authentication option works the following way:
 
 4.  Authorization check: The permissions of the client \(tenant\) are checked in a subsequent step by the receiver.
 
+> ### Remember:  
+> If your tenant contains many key pairs in the Keystore, the tenant takes significantly more time to authenticate itself against the target endpoint.
+

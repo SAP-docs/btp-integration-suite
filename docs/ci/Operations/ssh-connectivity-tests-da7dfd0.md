@@ -80,11 +80,12 @@ Depending on the chosen authentication, the following is checked by the test:
     
     Select a proxy type from the drop-down list:
 
-    -   `Internet` 
+    -   *Internet* 
 
         or
 
-    -   `On-Premise`
+    -   *On-Premise*
+
 
     For more information, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md) 
     
@@ -94,12 +95,12 @@ Depending on the chosen authentication, the following is checked by the test:
     <td valign="top">
     
     *Location ID* 
+
+    \(only available if *On-Premise* is selected for *Proxy Type*\)
     
     </td>
     <td valign="top">
     
-    \(Only if `On-Premise` is selected as *Proxy Type*\)
-
     To connect to a Cloud Connector instance associated with your account, enter the location ID that you 've defined for this instance, in the destination configuration on the cloud side
     
     </td>
@@ -278,7 +279,7 @@ Depending on the chosen authentication, the following is checked by the test:
     > 
     > See:
     > 
-    > -   [Maintaining the Known Hosts File for SFTP Connectivity](../ConnectionSetup/maintaining-the-known-hosts-file-for-sftp-connectivity-514e383.md)
+    > -   [Maintaining SSH Known Hosts for SFTP Connectivity](../ConnectionSetup/maintaining-ssh-known-hosts-for-sftp-connectivity-514e383.md)
     > 
     > -   [Deploying an SSH Known Hosts Artifact](deploying-an-ssh-known-hosts-artifact-46da324.md)
 

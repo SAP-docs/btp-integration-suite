@@ -17,5 +17,5 @@ For more information on the **root certificates** that are supported by the load
 > 
 > The load balancer component is owned by SAP, and you, the customer, don't need to care how it is configured. However, you need to make sure that the client certificate in your sender keystore is signed by one CA that is listed at SAP Note [2801396](https://me.sap.com/notes/2801396).
 > 
-> Be aware that only **root certificates** are beeing imported into the *Keystore* of the *SAP Load Balancer*. Therefore you as a customer must always assign the whole certificate chain to the certificate to enable the connected component to evaluate the chain of trust.
+> Be aware that only **root certificates** are being imported into the *Keystore* of the *SAP Load Balancer*. Therefore you as a customer must always assign the whole certificate chain to the certificate to enable the connected component to evaluate the chain of trust.
 

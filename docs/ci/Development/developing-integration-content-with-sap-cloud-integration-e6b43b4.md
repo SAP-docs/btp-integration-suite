@@ -65,22 +65,6 @@ This component is also known as *customer workspace*.
 <tr>
 <td valign="top">
 
-*Monitor* 
-
-</td>
-<td valign="top">
-
-Monitor the message processing and manage integration artifacts such as integration flows, value mappings and security-related artifacts.
-
-You can check the status of messages and integration artifacts for your tenant cluster.
-
-You can also access the dedicated message monitor and integration content monitor to view more information.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 *Settings* 
 
 </td>
@@ -109,9 +93,9 @@ Select the runtime profile to specify the target runtime for your content.
 
 [Importing Custom Integration Adapter, Cloud Foundry Environment](importing-custom-integration-adapter-cloud-foundry-environment-482286e.md "Use the integration-adapter artifact type to import custom integration adapter in your integration package.")
 
-[Configure Integration Flow Components](configure-integration-flow-components-3171795.md "Cloud Integration allows you to configure integration flow components in an editor.")
+[Configure Integration Flow Components](configure-integration-flow-components-3171795.md "SAP Cloud Integration allows you to configure integration flow components in an editor.")
 
-[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or changes the same. You can also resolve if there are any errors.")
+[Simulation of an Integration Flow](simulation-of-an-integration-flow-2e2210b.md "The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide to deploy the integration flow or resolve any errors.")
 
 [Deploying Data Flows](deploying-data-flows-c3a913e.md "")
 

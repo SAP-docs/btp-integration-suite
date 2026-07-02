@@ -39,9 +39,8 @@ In addition to the above mentioned components that interact with each other when
 
 People with different roles can access the infrastructure – both on the SAP side \(as the provider of the integration infrastructure\) and on the customer side. Human access points \(for dialog users\) are:
 
-• Dedicated experts at SAP access the infrastructure to provide a tenant cluster for the customer.
-
-• Experts on the customer side access the infrastructure to design and deploy integration content and to monitor an integration scenario at runtime \(integration developers and tenant administrators\).
+-   Dedicated experts at SAP access the infrastructure to provide a tenant cluster for the customer.
+-   Experts on the customer side access the infrastructure to design and deploy integration content and to monitor an integration scenario at runtime \(integration developers and tenant administrators\).
 
 
 

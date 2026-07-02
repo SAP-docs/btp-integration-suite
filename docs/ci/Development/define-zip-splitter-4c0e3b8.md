@@ -16,7 +16,7 @@ When you have applied the Zip Splitter on a file archive, SAP Cloud Integration 
 
 ## Procedure
 
-1.  In the palette, choose <span class="SAP-icons"></span> \(Message Routing\), then *Splitter* \> *Zip Splitter*.
+1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Message Routing\), then *Splitter* \> *Zip Splitter*.
 
 2.  Place the *Zip Splitter* element in the integration process and define the message path.
 
@@ -93,6 +93,8 @@ When you have applied the Zip Splitter on a file archive, SAP Cloud Integration 
     > -   Streaming is activated for this step. That means, the system already starts processing parts of the archive file before the archive file is fully transferred to the memory \(of the runtime component\).
     > 
     > -   If the ZIP archive contains an entry with a data descriptor, the compression method must be DEFLATED due to a limitation of the JDK.
+    > 
+    > -   Ensure that the header `Content-Type` has the value `application/zip` to avoid incorrect output.
 
 5.  Save or deploy the configuration.
 

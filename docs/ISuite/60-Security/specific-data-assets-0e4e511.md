@@ -293,11 +293,11 @@ Lock entries that are created \(in the in-progress repository\) to avoid the sam
 **Related Information**  
 
 
-[Message Processing Log](../50-Development/message-processing-log-b32f8cd.md "The message processing log displays structured information of a message.")
+[Message Processing Log](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b32f8cda16034a8390ccaea98f8f68b1.html "The message processing log displays structured information of a message.") :arrow_upper_right:
 
-[Define Data Store Operations](../50-Development/define-data-store-operations-79f63a4.md "You can use the data store to temporarily store messages.")
+[Define Data Store Operations](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/79f63a4bf5a44b5996aa34c51e2f187f.html "You can use the data store to temporarily store messages.") :arrow_upper_right:
 
-[Managing Security Material](../50-Development/managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
+[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
-[Message Locks](../50-Development/message-locks-bce9ae0.md "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).")
+[Message Locks](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/bce9ae0cf9594b2d8a32fafc981b2076.html "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).") :arrow_upper_right:
 

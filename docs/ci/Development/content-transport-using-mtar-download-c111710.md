@@ -29,7 +29,7 @@ You can use the *MTAR Download* option to download a MTAR file/s of the integrat
 
 2.  Choose *Transport*.
 
-    If you don't see the *Transport* button, contact your tenant administrator to enable transport option in the tenant settings. For more information on the roles, see [Configuring User Access to Cloud Integration](../InitialSetup/configuring-user-access-to-cloud-integration-ed6033b.md) and [Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md).
+    If you don't see the *Transport* button, contact your tenant administrator to enable transport option in the tenant settings. For more information on the roles, see [Configuring User Access to Cloud Integration](../InitialSetup/configuring-user-access-to-cloud-integration-ed6033b.md) and[Tasks and Permissions](../SecurityNeo/tasks-and-permissions-556d557.md).
 
 3.  In the *Transport Comments* prompt, you can see the type of transport under the *Mode* field configured by the tenant administrator. Provide comments under the *Comments* section and choose *Transport*.
 

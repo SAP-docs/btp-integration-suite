@@ -8,19 +8,27 @@ This artifact type specifies the known hosts file used when configuring secure c
 
 ## Context
 
-The known hosts file contains the public keys and addresses of the trusted SFTP servers.
+An SSH known hosts artifact contains the public keys and addresses of trusted SFTP servers.
 
 
 
 ## Procedure
 
-1.  Click the tile in the *Manage Security Material* section.
+1.  Choose *Monitor*.
 
-2.  Choose *Upload* \> *Known Hosts \(SSH\)*.
+2.  Click the *Security Material* tile in the *Manage Security* section.
 
-3.  Browse to the known hosts file on your computer.
+3.  Choose *Create* and select *Known Hosts \(SSH\)*.
 
-4.  Choose *Deploy*.
+4.  In the *Create SSH Known Hosts* dialog, you can import entries from a file using *Browse*, add entries manually using *Add*, or edit entries directly in the table.
+
+    > ### Caution:  
+    > Using *Browse* replaces all existing known host entries in the table with the entries from the imported file.
+
+5.  Choose *Deploy*.
+
+    > ### Note:  
+    > For detailed instructions on creating, editing, and maintaining known host entries, see [Maintaining SSH Known Hosts for SFTP Connectivity](../ConnectionSetup/maintaining-ssh-known-hosts-for-sftp-connectivity-514e383.md).
 
 
 

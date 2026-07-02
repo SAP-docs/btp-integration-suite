@@ -4,7 +4,7 @@
 
 # Simulation of an Integration Flow
 
-The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide whether to continue and deploy the integration flow or changes the same. You can also resolve if there are any errors.
+The simulation feature allows you to test an integration flow or its subset and see if you can get the desired outcome even before you deploy the integration flow. Based on the simulation result, you can decide to deploy the integration flow or resolve any errors.
 
 <a name="concept_yxf_f5w_1lb"/>
 
@@ -105,8 +105,6 @@ All
 </tr>
 <tr>
 <td valign="top" rowspan="2">
-
-Call
 
 Call
 
@@ -288,7 +286,7 @@ Details
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -305,7 +303,7 @@ Place a Start Point at the beginning of your flow path. It feeds a simulation in
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -322,7 +320,7 @@ Place an End Point to end the simulation on your connection or the defined path 
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -355,7 +353,7 @@ For more information, see [Using Various Types of Body Files in the Simulation](
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -397,7 +395,7 @@ Used to run the simulation once the start and end point have been defined.
 </td>
 <td valign="top">
 
-<span class="SAP-icons"></span>
+<span class="SAP-icons-V5"></span>
 
 </td>
 <td valign="top">
@@ -419,7 +417,29 @@ Removes all of the simulation elements such as the start point, end point, and m
 </td>
 <td valign="top">
 
-When the simulation run is successful, the message envelope opens and you can find it between the start and end point. Choose the message envelope to display the message content. After simulation, you can download trace message content.
+When the simulation run is successful, the message envelope appears. You can find these between the start and end points. Choose the message envelope to display the message content.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Download Trace Message Content* 
+
+</td>
+<td valign="top">
+
+*Download* 
+
+</td>
+<td valign="top">
+
+After a successful simulation run, do the following:
+
+1.  Choose the *Message Envelope* to open the message content attributes.
+2.  Choose *Download* at the right to download the trace message content.
+
+
 
 </td>
 </tr>

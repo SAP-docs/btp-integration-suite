@@ -2,32 +2,7 @@
 
 # Salesforce Receiver Adapter
 
-The Salesforce receiver adapter enables an SAP Cloud Integration tenant to accelerate the implementation time and reduce the complexity of connecting to Salesforce.
-
-> ### Note:  
-> In the following cases certain features might not be available for your current integration flow:
-> 
-> -   You are using a runtime profile other than the one expected. See: [Runtime Profiles](../IntegrationSettings/runtime-profiles-8007daa.md).
-> 
-> -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
-> 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
-
-> ### Note:  
-> This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
-
-You configure the receiver channel with the Salesforce adapter to enable your tenant to send data to Salesforce customer relationship management \(CRM\) platform.
-
-> ### Note:  
-> You need to download the adapter from SAP Software Download Center. You can find more information on the download navigation path [here](https://api.sap.com/package/SalesforceAdapter?section=Overview).
-> 
-> After you complete the download, uncompress and extract the files to your local system. Then deploy the adapter on your tenant.
-> 
-> -   For more information on deploying the adapter in multicloud environment, see [Importing Custom Integration Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/482286e544014098874fde0da4bcca2c.html).
-> 
-> -   For tenants hosted on Neo environment, you must import the adapter to your Eclipse tool and deploy the adapter project. For more information see, [Develop Adapter](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f798db6491424460bb4b43d4a86ed1cf.html).
-
-Once you’ve created a receiver channel and selected the Salesforce receiver adapter, you can configure its parameters by referring the following description:
+You configure the receiver channel with the Salesforce adapter to enable your tenant to send data to Salesforce customer relationship management \(CRM\) platform. Once you’ve created a receiver channel and selected the Salesforce receiver adapter, you can configure its parameters by referring the following description:
 
 The General tab shows general information such as the adapter type, its direction \(receiver\), the transport protocol, and the message protocol.
 
@@ -50,7 +25,29 @@ Description
 <tr>
 <td valign="top">
 
+*Authentication*
+
+</td>
+<td valign="top">
+
+Select the type of authentication to be used when connecting to Salesforce:
+
+-   *OAuth 2.0 Username-Password*
+
+-   *OAuth 2.0 JWT Bearer*
+
+-   *OAuth 2.0 Client Credentials*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Address*
+
+\(if *Authentication* is *OAuth 2.0 Client Credentials* or *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
@@ -62,12 +59,14 @@ Specify the recipient's endpoint URL, the Salesforce login base URL, for user au
 <tr>
 <td valign="top">
 
-*Basic Credential Name*
+*Basic Credential Name* 
+
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
 
 </td>
 <td valign="top">
 
-Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the User Credential security material deployed in your Cloud Integration tenant.
+Specify the name of the **User Credentials** artifact that contains the credentials for basic authentication. This refers to the username-password pair used in authentication to Salesforce. This property enables the system to fetch the User Credential security material deployed in your SAP Cloud Integration tenant.
 
 </td>
 </tr>
@@ -76,10 +75,12 @@ Specify the name of the **User Credentials** artifact that contains the cred
 
 *Security Token Alias*
 
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
+
 </td>
 <td valign="top">
 
-Specify the name of the Secure Parameter artifact that contains the security token needed to connect to the Salesforce. This property enables the system to fetch the Security Token from the security material deployed in your Cloud Integration tenant. This field can be omitted if your IP is allow listed on Salesforce.
+Specify the name of the Secure Parameter artifact that contains the security token needed to connect to the Salesforce. This property enables the system to fetch the Security Token from the security material deployed in your SAP Cloud Integration tenant. This field can be omitted if your IP is allow listed on Salesforce.
 
 </td>
 </tr>
@@ -88,10 +89,107 @@ Specify the name of the Secure Parameter artifact that contains the security tok
 
 *OAuth Credential Name*
 
+\(if *Authentication* is *OAuth 2.0 Username-Password*\)
+
 </td>
 <td valign="top">
 
-Specify the name of the OAuth Credentials artifact that contains the Salesforce’s OAuth Consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed in your Cloud Integration tenant.
+Specify the name of the OAuth Credentials artifact that contains the Salesforce’s OAuth Consumer key-client secret pair. This property enables the system to retrieve the OAuth security material deployed in your SAP Cloud Integration tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Audience*
+
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
+
+</td>
+<td valign="top">
+
+Specifies the recipient's endpoint URL.
+
+By default, the URL `https://login.salesforce.com` is used. Based on your scenario, you can change this setting:
+
+-   For Salesforce production environments: `https://login.salesforce.com`.
+
+-   For Sandbox environments: `https://test.salesforce.com`
+
+-   If `MyDomain` is enabled on the org, you can use `https://<MyDomain>.my.salesforce.com`.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Subject Alias*
+
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
+
+</td>
+<td valign="top">
+
+The alias name of the deployed *Secure Parameter* artifact. It specifies the Salesforce username.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Issuer Alias*
+
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
+
+</td>
+<td valign="top">
+
+The alias name of the deployed *Secure Parameter* artifact. It specifies the OAuth Consumer Key of the connected app for which the certificate was registered.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Keystore Alias*
+
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
+
+</td>
+<td valign="top">
+
+The alias name of the added JKS file in the keystore as a key pair. It consists of a key and certificate to sign the JWT.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Expiration*
+
+\(if *Authentication* is *OAuth 2.0 JWT Bearer*\)
+
+</td>
+<td valign="top">
+
+Specifies the validity of the assertion in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*OAuth2 Client Credentials*
+
+\(if *Authentication* is *OAuth 2.0 Client Credentials*\)
+
+</td>
+<td valign="top">
+
+The alias name of the deployed OAuth2 Client Credentials artifact created using Consumer Key and Consumer Secret of your external client app.
 
 </td>
 </tr>
@@ -159,14 +257,116 @@ Description
 
 Specify the category of API that is used to interact with Salesforce. Select one of the following types:
 
--   REST
+-   *Apex Call*
+-   *Event Processing*
+-   *REST*
+-   *REST Bulk* 
+-   *REST Bulk 2.0* 
+-   *REST Place Order* 
 
--   REST Bulk
-
--   REST Place Order
 
 
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
 
+If you select *Apex Call*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Method Name*
+
+</td>
+<td valign="top">
+
+Select the Apex Rest Method used to specify the Method annotation in the Apex Class
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Resource Relative URL*
+
+</td>
+<td valign="top">
+
+Specify the relative URL of Apex requestURI. The relative path is the part of the requestURI after the instance URL and needs to start with /. Example: if the request URL is https://instance.salesforce.com/services/apexrest/Account/123, the relative URL will be "/services/apexrest/ Account/123". Note that the dynamic headers and properties are supported. Example: "/services/apexrest/$\{property.SObject\}/$ \{property.sobjectld\}".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*HTTP Protocol*
+
+</td>
+<td valign="top">
+
+Select the HTTP protocol version for Patch operations, the recommended option for use is "Default".
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+If you select *Event Processing*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Event Type*
+
+</td>
+<td valign="top">
+
+Specifies the category of the Event to be retrieved from Salesforce. Possible values include PushTopic Events, Platform Events, Change Data Capture Events, and Generic events.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Operation*
+
+</td>
+<td valign="top">
+
+Select the Operation to be performed:
+
+-   *Event - Polling*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Replay ID*
+
+</td>
+<td valign="top">
+
+Specifies the Replay Id which is populated by Salesforce and refers to the position of the Event in the event stream. Note that the Replay Id values are not guaranteed to be contiguous for consecutive events. By specifying the value of the Replay Id, the integration flow retrieves events that are within the retention window and that have followed the specified Replay Id. Example: In case a Replay Id 200 is specified, the integration flow receives all messages with a Replay Id greater than 200. This field supports dynamic properties and a header.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Channel Name*
+
+</td>
+<td valign="top">
+
+Consists of a Topic name preceded with a prefix. For instance, a PushTopic can be prefixed with “/topic/”. Example: /topic/MyPushTopic. Note that the names are case sensitive.
 
 </td>
 </tr>
@@ -178,7 +378,72 @@ Specify the category of API that is used to interact with Salesforce. Select one
 </td>
 <td valign="top">
 
-Specify the version of the API used for calling the Salesforce. Select one of the versions from 20.0 through 48.0.
+Specify the version of the API used for calling the Salesforce.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Wait Time \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specifies how long the Receiver Adapter connects to Salesforce to retrieve events. The Adapter automatically disconnects after this period.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Maximum Events Count*
+
+</td>
+<td valign="top">
+
+Specifies the maximum number of Events that will be collected in a single run.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Invalid Replay Id Approach*
+
+</td>
+<td valign="top">
+
+Select the approach to be applied when an invalid replayld has been found.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Buffer Size \(in bytes\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum permissible capacity \(in bytes\) of the response content, which may contain many messages.
+
+> ### Note:  
+> It is recommended to keep a minimum value of 10 MB \(which is the default value\) as suggested by Salesforce and only increase it for a high volume scenario.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Network Control \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the maximum network delay for subscription. This is the maximum time \(in milliseconds\) the client will wait for a response to a connect request before timing out.
 
 </td>
 </tr>
@@ -375,6 +640,95 @@ Specify the SOSL Search that is executed in Salesforce and returns the result ma
 </td>
 </tr>
 <tr>
+<td valign="top">
+
+*Request Payload Format*
+
+</td>
+<td valign="top">
+
+Select the request payload format in the API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Response Payload Format*
+
+</td>
+<td valign="top">
+
+Select the response payload format in the API.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Auto Pagination*
+
+</td>
+<td valign="top">
+
+Eanble to retrieve all records in case query result has more than one page.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Include deleted records in query result*
+
+</td>
+<td valign="top">
+
+Enable to include records that have been deleted or merged as part of the results.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Batch Processing*
+
+</td>
+<td valign="top">
+
+Enable to allow multiple round trips to Salesforce in case the number of records exceeds the allowed limit \(200 records\) for the SObject Collections. Note that this feature does not support allOrNone=true.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable Lookup Query*
+
+</td>
+<td valign="top">
+
+Enable this property to automatically resolve queries in the request body.
+
+> ### Note:  
+> Enable Query Lookup supports only XML Payload Format.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Treat all XML Payload Values as String*
+
+</td>
+<td valign="top">
+
+Select to treat all the values in the XML payload as string before sending it to Salesforce.
+
+</td>
+</tr>
+<tr>
 <td valign="top" colspan="2">
 
 If you select *REST Bulk*
@@ -487,6 +841,165 @@ Specify the Result ID in the response to the batch result list request. For Bulk
 <td valign="top">
 
 Specify the SOQL Query to be executed in Salesforce and that will return the results matching the query.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Data from Attachment*
+
+</td>
+<td valign="top">
+
+Enable to accept body from attachment.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Handle XML Null Values*
+
+</td>
+<td valign="top">
+
+Enable to use null values in the payload to nullify properties in Salesforce.
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+If you select *REST Bulk 2.0*
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Operation*
+
+</td>
+<td valign="top">
+
+Specify the operation to be performed.
+
+-   Job - Abort
+
+-   Job - Close
+
+-   Job - Create
+
+-   Job - Delete
+
+-   Job - Get
+
+-   Job - Get All Jobs
+
+-   Job Query - Abort
+
+-   Job Query - Create
+
+-   Job Query - Delete
+
+-   Job Query - Get All Query Jobs
+
+-   Job Query - Get Information
+
+-   Job Query - Get Results
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Advanced Job Properties*
+
+</td>
+<td valign="top">
+
+Enable to specify all the advanced properties in the adapter instead of in the payload.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Job Result Type*
+
+</td>
+<td valign="top">
+
+Select the type of records to be retrieved for the selected job ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Enable PkChunking*
+
+</td>
+<td valign="top">
+
+Enable to automatic primary key \(PK\) chunking. PK chunking splits bulk queries on large tables into chunks based on the record IDs, or primary keys, of the queried records.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Job Type*
+
+</td>
+<td valign="top">
+
+Select to filter based on the job type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Query Locator*
+
+</td>
+<td valign="top">
+
+Specify a querylocator with a locator value to get a specific set of job results.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Query Job ID*
+
+</td>
+<td valign="top">
+
+Specify the job id of the query.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Records*
+
+</td>
+<td valign="top">
+
+Specify the maximum number of records the adapter is expected to receive from Salesforce per page to prevent a timeout.Example: 2000.
+
+> ### Note:  
+> If working with a very large number of query results, then there is a possibility of timeout before receiving all the data from Salesforce.
+
+
 
 </td>
 </tr>

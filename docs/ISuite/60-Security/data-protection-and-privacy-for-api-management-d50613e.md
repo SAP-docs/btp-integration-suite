@@ -204,7 +204,7 @@ API Management stores the API portal administrator’s user ID. Storing the user
 
 API Management stores personal information such as first name, last name, user ID, and e-mail ID of users who have logged on to the Developer Hub. All the personal information stored in the application is deleted when the access for the corresponding user is revoked.
 
-In API Management, application developers can contact their Developer Hub administrators to have their personal data erased and access revoked. For more information, see [Revoke Access](../50-Development/revoke-access-ce609bb.md) and [Delete Data of Unregistered Users](../50-Development/delete-data-of-unregistered-users-d548233.md).
+In API Management, application developers can contact their Developer Hub administrators to have their personal data erased and access revoked. For more information, see [Revoke Access](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/ce609bb2392d496ab5da321a1a3c2cfb.html "Revoke the access of an application developer.") :arrow_upper_right: and [Delete Data of Unregistered Users](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/d548233bc966496a95c6d2a1132a5f13.html "SAP API Management stores the data of users who have logged on to the developer portal but have not registered. This topic describes the service used to delete the data of such users.") :arrow_upper_right:.
 
 
 

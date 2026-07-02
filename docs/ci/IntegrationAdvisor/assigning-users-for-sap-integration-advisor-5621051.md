@@ -39,7 +39,9 @@ Here's how you can do it:
         You can choose the role *Guidelines.ReadWrite* or *TypeSystem.Read* from the *Roles* table.
 
         > ### Note:  
-        > If you want to assign admin role to an user, then add the role *Guidelines.Administrator* to the user.
+        > -   If you want to assign admin role to an user, then add the role *Guidelines.Administrator* to the user.
+        > 
+        > -   If you want to assign read-only access to an user, then add the role *Guidelines.Read* to the user. This role allows user to view, simulate and export all artefacts \(MIGs, MAGs, Type Systems, Custom Type Systems\) with no editing and importing privileges.
 
     2.  If you want to assign the role to an individual user, choose *Assign* in the *Individual Users* screen area. Enter the ID of the user and choose *Assign*.
 

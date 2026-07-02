@@ -41,7 +41,12 @@ In the following, we provide guidelines about how to optimize the memory footpri
 
 *Why*: If you define variables in a script, the variables are kept in memory even if the processing of the script ended. The memory is kept until the entire integration process ends.
 
-*How*: Either remove particular variables from the script or purge all variables at the end of the script.
+*How*: Remove particular variables from the script.
+
+> ### Tip:  
+> To remove a variable, you can use the following method:
+> 
+> `binding.variables.remove 'varname'` 
 
 
 

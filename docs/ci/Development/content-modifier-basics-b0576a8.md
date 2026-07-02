@@ -54,6 +54,8 @@ On the *Message Header* tab of the Content Modifier, add a new entry. Specify *X
 
 
 
+<a name="loiob0576a824cdf46868fcc70fd9e697f16__section_dbs_hzq_b1c"/>
+
 ## Example
 
 The following example shows how to modify both the header and body data container of a message using the Content Modifier step.

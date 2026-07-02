@@ -36,5 +36,5 @@ An alias is a reference to a single keystore entry. You can use an alias to refe
 
 ## Next Steps
 
-Alternatively, you can change the alias of a keystore entry in the folowing way: Choose the *Keystore* tile in the *Manage Security* section and for a keystore entry click the <span class="SAP-icons"></span> \(Actions\) icon and choose *Rename*.
+Alternatively, you can change the alias of a keystore entry in the folowing way: Choose the *Keystore* tile in the *Manage Security* section and for a keystore entry click the <span class="SAP-icons-V5"></span> \(Actions\) icon and choose *Rename*.
 

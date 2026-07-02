@@ -4,7 +4,10 @@
 
 Get data from Message Stores for processed messages and resources of the used JMS queues.
 
-You can access the OData API at [Message Stores](https://api.sap.com/api/MessageStore/resource), where you can find the basic operations.
+You can access the OData API and learn about its basic operations at:
+
+-   [Message Stores](https://api.sap.com/api/MessageStore/resource) for Cloud Integration.
+-   [Message Stores](https://api.sap.com/api/sap-int-eic-message-store-v1/overview) for
 
 This documentation provides additional information.
 
@@ -205,6 +208,19 @@ Represents a data store.
 
 A data store entry is created by a Data Store Write step of an integration flow \(see [Define Data Store Write Operations](define-data-store-write-operations-46260ee.md)\).
 
+> ### Note:  
+> The DataStore API does not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+
+
+
 </td>
 </tr>
 <tr>
@@ -233,12 +249,30 @@ Represents a variable.
 
 A variable is created by a Write Variables step of an integration flow \(see [Define Write Variables](define-write-variables-de04b75.md)\).
 
+> ### Note:  
+> The Variables API does not support the following query options:
+> 
+> -   -   `$filter`
+> -   `$inlinecount`
+> -   `$orderby`
+> -   `$skip`
+> -   `$top`
+> -   `$expand`
+> -   `$select`
+
+
+
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Number Ranges
+
+> ### Note:  
+> Not supported in.
+
+
 
 </td>
 <td valign="top">
@@ -292,4 +326,9 @@ On SAP Business Accelerator Hub, you can test API calls against a sandbox tenant
 The part `https://<host address>/api/v1` is also referred to as service root URI of the API call. For more information on the address of an API call, see [HTTP Calls and URI Components](http-calls-and-uri-components-ca75e12.md).
 
 You can find the relative resource path for each operation on SAP Business Accelerator Hub.
+
+
+
+> ### Note:  
+> A sandbox environment isn't available for .
 

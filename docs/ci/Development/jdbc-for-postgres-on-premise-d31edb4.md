@@ -5,7 +5,7 @@
 JDBC receiver adapter supports Postgre On-Premise database.
 
 > ### Note:  
-> This adapter enables you to connect Cloud Integration to a remote database system. SAP can’t give advice on how to configure the external system nor does SAP provide support related to this system.
+> This adapter enables you to connect to a remote database system. SAP can’t give advice on how to configure the external system nor does SAP provide support related to this system.
 
 **Database Details**
 

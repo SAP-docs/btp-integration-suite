@@ -11,7 +11,7 @@ The FTP \(File Transfer Protocol\) sender adapter connects SAP Cloud Integration
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
@@ -165,7 +165,11 @@ The type of proxy that you are using to connect to the target system.
 
 -   Select *On-Premise* if you are connecting to an on-premise system.
 
-    See [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md).
+    For more informaiton, see [Using SAP Cloud Connector with Cloud Integration Adapters](../ConnectionSetup/using-sap-cloud-connector-with-cloud-integration-adapters-65a60e7.md)
+
+-   Select *Manual* to manually specify *Proxy Host* and *Proxy Port* \(using the corresponding entry field\).
+
+    This option is only available if *Edge* has been selected as runtime.
 
 
 
@@ -230,8 +234,6 @@ Name of the *User Credentials* artifact that contains the user name and password
 Maximum time \(in milliseconds\) to wait for the FTP server to be contacted while establishing connection or performing a read operation.
 
 Default value: `10000`
-
-The timeout should be more than 0, but less than five minutes.
 
 </td>
 </tr>
@@ -309,8 +311,6 @@ Prevents files that are in the process of being written from being read from the
 
 Select one of the following options based on the capabilities of the FTP server:
 
--   *None* \(default\): Does not use a read lock, which means that the endpoint can immediately read the file. *None* is the simplest option if the FTP server guarantees that a file only becomes visible on the server once the process of writing it to the server has been finished.
-
 -   *Content Change*: Monitors changes in the file length/modification timestamp to determine if the write operation on the file is complete and the file is ready to be read. If you have selected this option, the system waits for at least one second until there are no more file changes. Therefore, if you select this option, files cannot be read as quickly as with the other two options.
 
 -   *Done File Expected*: Uses a specific file to signal that the file to be processed is ready for consumption.
@@ -320,6 +320,8 @@ Select one of the following options based on the capabilities of the FTP server:
     Default:
 
     `${file:name}.done`
+
+-   *None* \(default\): Does not use a read lock, which means that the endpoint can immediately read the file. *None* is the simplest option if the FTP server guarantees that a file only becomes visible on the server once the process of writing it to the server has been finished.
 
 -   *Rename*: Renames the file on the FTP server before reading it.
 
@@ -511,7 +513,7 @@ You can select one of the following options from the dropdown list:
 
 You can select one of the following idempotent repository options:
 
--   *Database*\(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
+-   *Database* \(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
 
     > ### Note:  
     > The idempotent repository uses the username, host name, and file name as key values to identify files uniquely across integration flows of a tenant.
@@ -656,6 +658,52 @@ Monthly
 <td valign="top">
 
 Select the day of the month on which the operation has to be executed. Also indicate the time or the interval for the schedule to recur.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="2">
+
+*Advanced*
+
+\(Option is available for adapter version 1.4 and above\)
+
+</td>
+<td valign="top">
+
+-   *Seconds*
+
+-   *Minutes*
+
+-   *Hours*
+
+-   *Days*
+
+-   *Months*
+
+-   *Years*
+
+
+
+
+</td>
+<td valign="top">
+
+Create a schedule by choosing the different units of time measurement available in seconds, minutes, hours, days, months, and years. The resulting time schedule is a combined configuration from the multiple options that you choose. The default schedule recurs at every 5th minute starting at the 0th second.
+
+With the *Advanced* scheduler option, you can configure complex and granular schedules using a combination of various units of time measurement. For example, the last day of the month, the last weekday of the week, specific days in a month or year, every few minutes, between certain hours, and so on. For sample use cases, read the [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-integration-suite-advanced-scheduler-configuration/ba-p/13564143).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Time Zone*
+
+</td>
+<td valign="top">
+
+The time zone that you want to use as a reference for the configured date and time.
 
 </td>
 </tr>

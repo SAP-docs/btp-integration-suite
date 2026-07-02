@@ -4,14 +4,17 @@
 
 Reuse content across multiple tenants. Export integration content from one \(source\) tenant and import it on another \(target\) tenant.
 
-Let us consider an example where you've 2 tenants – test and production. You design and test an integration flow on the test landscape and it works as expected. Instead of redesigning the integration flow on the production landscape, you can reuse the integration content that you've tested in the test landscape in the production landscape as well.
+> ### Note:  
+> SAP Integration Suite supports the transport of various artifacts, including Integration Flows, Message Mappings, APIs, MCP Servers, and more.
+
+Let us consider an example where you have two tenants – test and production. You design and test an integration artifact on the test landscape and it works as expected. Instead of redesigning the integration artifact on the production landscape, you can reuse the integration content that you've tested in the test landscape in the production landscape as well.
 
 > ### Remember:  
 > The procedure to set up content transport depends on whether you use Cloud Integration in the Cloud Foundry or in the Neo environment.
 > 
-> Content transport across 2 different environments isn't supported. You can't transport content between a Neo and a Cloud Foundry tenant.
+> Content transport across two different environments isn't supported. You can't transport content between a Neo and a Cloud Foundry tenant.
 
-There are 4 content transport options:
+There are four content transport options:
 
 > ### Remember:  
 > There are different criteria that help you to decide on a transport option. Before you pick your choice of transport option, see [Decision Help for Choosing the Right Content Transport Option](decision-help-for-choosing-the-right-content-transport-option-19e0e73.md).
@@ -38,7 +41,7 @@ CTS+
 </td>
 <td valign="top">
 
-With a single click, transport integration content from one tenant to another through the CTS+ system.
+With a single step, transport integration content from one tenant to another through the CTS+ system.
 
 For more information, see [Content Transport Using CTS+](content-transport-using-cts-3cdfb51.md).
 
@@ -52,7 +55,7 @@ Transport Management Service
 </td>
 <td valign="top">
 
-With a single click, transport integration content from one tenant to another through Cloud Transport Management service.
+With a single step, transport integration content from one tenant to another through the Cloud Transport Management service.
 
 For more information, see [Content Transport Using Cloud Transport Management](content-transport-using-cloud-transport-management-d458b17.md).
 
@@ -93,9 +96,9 @@ For more information, see [Content Transport using Manual Export and Import](con
 > ### Note:  
 > -   If the configuration or the transport results in an error, the error codes are displayed along with the error message.
 > 
-> -   The externalized parameters/configured values of the integration flows aren't overwritten during a content retransport.
+> -   The externalized parameters/configured values of the integration artifacts aren't overwritten during a content re-transport.
 > 
-> -   If the standard/pre-shipped integration packages are transported to target tenant, the updates on those packages aren't available in the target tenant.
+> -   If the standard/pre-shipped integration packages are transported to the target tenant, the updates on those packages aren't available in the target tenant.
 
 
 
@@ -109,16 +112,18 @@ For more information, see [Content Transport using Manual Export and Import](con
 
 You can select one or more integration artifacts that were modified or updated, and transport them to another tenant. See blog on: [Transport at Artifact Level](https://blogs.sap.com/2021/06/21/sap-cloud-integration-transport-at-artifact-level/).
 
-> ### Note:  
-> -   A package is the container for an artifact. So, when you transport only a selected artifact, you would only see the package in your transport request. The transported package in the target tenant contains only the artifact that you transported.
+> ### Remember:  
+> -   A package is the container for an artifact. So, when you transport only a selected artifact, you only see the package in your transport request. The transported package in the target tenant contains only the artifact that you transported.
 > 
-> -   Artifacts in draft version can't be transported.
+> -   Artifacts in the draft version can't be transported.
+> 
+> -   A Function Libraries artifact can't be transported independently. You must transport the package that contains the Function Libraries artifact.
 
 You must ensure that the source and target tenants are hosted on the same cloud environment. This means – you can move selected artifacts from a tenant classified for testing purpose to a production tenant only if they both are hosted on Neo or both on Multi-Cloud environment.
 
-You can't transport those artifacts that are protected with access policies in the source tenant. The constraint is also applicable when you transport an artifact that is already present in the target tenant protected with access policies. For more information in how to manage access policies for cloud environments, see [Managing Access Policies, Cloud Foundry Environment](../Operations/managing-access-policies-cloud-foundry-environment-7db3c87.md).
+You can't transport those artifacts that are protected with access policies in the source tenant. The constraint is also applicable when you transport an artifact that is already present in the target tenant protected with access policies. For more information in how to manage access policies for cloud environments, see [Creating Custom Roles for Access Policies, Cloud Foundry Environment](../Operations/creating-custom-roles-for-access-policies-cloud-foundry-environment-7db3c87.md).
 
-For Neo environment, see [Managing Access Policies, Neo Environment](../Operations/managing-access-policies-neo-environment-18f06d4.md)
+For Neo environment, see [Creating Custom Roles for Access Policies, Neo Environment](../Operations/creating-custom-roles-for-access-policies-neo-environment-18f06d4.md)
 
 [Enabling Content Transport, Cloud Foundry Environment](enabling-content-transport-cloud-foundry-environment-452c677.md "All the tasks mentioned here are one-time activities. The tenant administrator performs these tasks to enable content transport.")
 

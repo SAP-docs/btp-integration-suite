@@ -43,7 +43,7 @@ To design an integration flow step to write a variable, perform the following st
 
 2.  If you want to add a *Write Variables* element to the integration flow, perform the following substeps:
 
-    1.  In the palette, choose <span class="SAP-icons"></span> \(Persistence\), then *Write Variables*.
+    1.  In the palette, choose <span class="SAP-icons-V5"></span> \(Persistence\), then *Write Variables*.
 
     2.  Place the *Write Variables* element in the integration process and define the message path.
 

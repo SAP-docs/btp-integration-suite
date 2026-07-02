@@ -6,7 +6,7 @@
 
 The *JDBC Data Sources* allows you to create and manage a cluster of artifact connections to interact with a database \(DB\). Each data source contains information on database type, and database-specific configuration parameters.
 
-Create a data source to handle a connection setup to a cloud database. For the list of supported databases for Cloud Foundry tenants, see [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
+Create a data source to handle a connection setup to a cloud or on-premise database. For the list of supported databases, see [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
 
 When you select a *JDBC Data Source*, the details are displayed to the right of the pane. The header area provides the following information on:
 
@@ -20,6 +20,23 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
 
 
 
+
+
+
+### Prerequisites to Configure Data Source for On-Premise Database
+
+Note the following when configuring the connection between a cloud application an an on-premise system using SAP Cloud Connector: The internal host and internal port configurations are different compared to virtual host and virtual port.
+
+1.  Log in to your Cloud Connector subaccount, to establish link between your tenant and the on-premise database.
+
+2.  Enable your cloud application to access a back-end system. For more information, see [Configure Access Control](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/f42fe4471d6a4a5fb09b7f3bb83c66a4.html).
+
+3.  Connect your cloud application to an on-premise system. For more information, see [Consuming the Connectivity Service](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/313b215066a8400db461b311e01bd99b.html).
+
+
+If you choose to access SAP HANA Platform database on SAP BTP, see [Configure a Service Channel for an SAP HANA Database](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/3dc28b456bb64fad89084d2d10af602c.html).
+
+After you complete the above configuration, now create a JDBC data source for your on-premise database.
 
 
 
@@ -63,7 +80,7 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     Define a name for the data source.
 
     > ### Note:  
-    > You allowed to enter only alphanumeric characters. Special characters and white space aren’t supported.
+    > You are allowed to enter only alphanumeric characters. Special characters and white space aren’t supported.
 
 
     
@@ -134,7 +151,7 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     
     *Database ID*
 
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
+    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP\)
     
     </td>
     <td valign="top">
@@ -148,7 +165,7 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     
     *Access Token*
 
-    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP Managed\)
+    \(only available for SAP ASE Service \(Neo\), SAP HANA Service \(Neo\) databases that are managed by SAP\)
     
     </td>
     <td valign="top">
@@ -168,6 +185,120 @@ When you select a *JDBC Data Source*, the details are displayed to the right of 
     Specify the database connection URL that the JDBC driver uses to connect with the cloud or on-premise database.
 
     For more information, see [JDBC Receiver Adapter](../Development/jdbc-receiver-adapter-88be644.md).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Location ID*
+
+    \(for on-premise database only\)
+    
+    </td>
+    <td valign="top">
+    
+    Identifies the location of this Cloud Connector for a specific subaccount. The location ID must be unique per subaccount and should be an identifier that can be used in a URI. To route requests to a Cloud Connector with a location ID, the location ID must be configured in the respective destinations.
+
+    If you don't specify any value for Location ID, the default is used.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Enable Connection Pool*
+    
+    </td>
+    <td valign="top">
+    
+    Select to activate connection pooling and configure connection pool settings.
+
+    > ### Note:  
+    > The **Maximum number of JDBC data sources** that can be created depends on whether connection pooling is enabled. Without connection pooling, up to **49 data sources** can be created. When **Connection Pooling** is enabled, up to **500 data sources** can be created in total across both cloud and on-premise databases, with a maximum of **200 data sources** allowed for **on-premise database connections.**
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="2">
+    
+    > ### Note:  
+    > The following fields appear only when "Enable Connection Pool" is checked.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Maximum Pool Size*
+    
+    </td>
+    <td valign="top">
+    
+    The upper limit on the number of database connections maintained by the connection pool, including active and idle connections. It controls peak resource usage and prevents database server overload.
+
+    -   Default value: 10
+    -   Valid range: 1 to database-supported connection limit
+
+    > ### Note:  
+    > Configure this value based on your database connection limits and system capacity. Ensure that your database is configured to support the connection limits you intend to use, and that these settings are aligned with the valid value ranges provided for this field.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Minimum Idle Connections*
+    
+    </td>
+    <td valign="top">
+    
+    The minimum number of database connections kept idle in the connection pool, ensuring immediate availability for new requests.
+
+    -   Default value: 1
+    -   Valid range: 0 to maximum pool size
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Idle Timeout*
+    
+    </td>
+    <td valign="top">
+    
+    The maximum duration a database connection may remain idle in the pool before being eligible for cleanup.
+
+    -   Default value: 600000 ms
+    -   Valid range: 10000 ms to unlimited
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Connection Timeout*
+    
+    </td>
+    <td valign="top">
+    
+    The maximum wait time to obtain a database connection from the pool when all connections are in use.
+
+    -   Default value: 30000 ms
+    -   Valid range: 250 ms to unlimited
+
+
     
     </td>
     </tr>
@@ -212,7 +343,7 @@ Helps to sort and filter the content of the table. You can define how the table 
 <tr>
 <td valign="top">
 
-<span class="SAP-icons"></span> \(Reload\)
+<span class="SAP-icons-V5"></span> \(Reload\)
 
 </td>
 <td valign="top">
@@ -226,5 +357,5 @@ Reloads the table content.
 **Related Information**  
 
 
-[Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md "Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration service.")
+[Configure JDBC Drivers](configure-jdbc-drivers-77c7d95.md "Learn how to upload and deploy JDBC type-4 compliant third-party drivers on Cloud Integration.")
 

@@ -11,10 +11,13 @@ The Ariba sender adapter connects SAP Cloud Integration to the Ariba Network. Us
 > 
 > -   A feature for a particular adapter or step was released after you created the corresponding shape in your integration flow.
 > 
->     To use the latest version of a flow step or adapter – edit your integration flow, delete the flow step or adapter, add the step or adapter, and configure the same. Finally, redeploy the integration flow. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
+>     To use the latest version of a flow step or adapter – select the adapter and choose *Update Version* from the property sheet. See: [Updating your Existing Integration Flow](updating-your-existing-integration-flow-1f9e879.md).
 
 > ### Note:  
 > This adapter exchanges data with a remote component that might be outside the scope of SAP. Make sure that the data exchange complies with your company’s policies.
+
+> ### Note:  
+> If the data is not retrieved, ensure that endpoint support for the pending queue is disabled in SAP Business Network \(Ariba\).
 
 Once you have created a sender channel and selected the Ariba sender adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -156,7 +159,7 @@ Specify the URL to which the cXML requests are posted, or from where the cXMLs a
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Production*: If you select this option, the Ariba Network processes the messages. This connection mode is set as the default deployment mode.
 
@@ -175,7 +178,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Buyer*: Select this option, if you hold a buyer account on the Ariba Network.
 
@@ -195,8 +198,6 @@ Select one of the options based on the description given below:
 <td valign="top">
 
 Select one of the options based on the request types of buyer/supplier that you want to poll.
-
-Use *Quote Message* to poll the quote request for *Buyer* account type.
 
 </td>
 </tr>
@@ -237,7 +238,7 @@ Provide the *System ID* for receiving the requests from a specific ERP system be
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Network ID*: A unique alphanumeric value assigned to every organization registered on Ariba SN; for example, AN01000000001.
 
@@ -256,7 +257,7 @@ Select one of the options based on the description given below:
 </td>
 <td valign="top">
 
-Select one of the options based on the description given below:
+Select one of the options based on the description given next:
 
 -   *Shared Key*: If you have set the shared key in your Ariba account.
 

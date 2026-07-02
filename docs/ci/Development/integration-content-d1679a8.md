@@ -6,7 +6,7 @@ Manage integration artifacts for your tenant.
 
 You can access the OData API at:
 
-[https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/)
+[Integration Content](https://api.sap.com/api/IntegrationContent/)
 
 There, you find the basic operations.
 
@@ -20,9 +20,9 @@ This documentation provides additional information.
 
 Operating an integration scenario requires certain integration artifacts. Using the OData API you can access integration artifacts.
 
-Integration artifacts contain the information required for the runtime components to process messages in the context of a certain integration scenario. First and foremost, an integration flow artifact contains all information about the connectivity settings and processing steps modeled in an integration flow model with the Web UI \(in the *Design* section\). When an integration developer has finished the modeling tasks, he or she deploys the integration - as an *integration artifact* - on the tenant and, that way, makes it executable.
+Integration artifacts contain the information required for the runtime components to process messages in the context of a certain integration scenario. First and foremost, an integration flow artifact contains all information about the connectivity settings and processing steps modeled in an integration flow model with the Web UI \(in the *Design* section\). When an integration developer has finished the modeling tasks, they deploy the integration - as an *integration artifact* - on the tenant and, that way, makes it executable.
 
-There are more kinds of artifacts, as summarized in the table below.
+There are more kinds of artifacts, as summarized in the following table.
 
 **Integration Artifact Types**
 
@@ -118,7 +118,7 @@ To authorize an API client to access the OData API, perform the steps as describ
 
 To be able to maintain custom tags:
 
--   In the **Cloud Foundry** environment assign the following role template:
+-   In the **Cloud Foundry** environment, assign the following role template:
 
     `WebToolingSettingsProductProfiles.savetenantconfiguration` \(part of role collection `PI_Administrator`\)
 
@@ -132,6 +132,8 @@ To be able to maintain custom tags:
 <a name="loiod1679a80543f46509a7329243b595bdb__section_uvw_dlf_t4b"/>
 
 ## Resources
+
+The following table contains a list of resources and their respective descriptions.
 
 ****
 
@@ -276,6 +278,9 @@ You can access integration flow resources through the `IntegrationDesigntimeArti
 > 
 > You can't download resources from configure-only content.
 
+> ### Note:  
+> For script type resources, the [Resource ODATA APIs](https://api.sap.com/api/IntegrationContent/resource/put_IntegrationDesigntimeArtifacts_Id___Id___Version___Version_____links_Resources_Name___Name___ResourceType___Type___) only support version v1.
+
 
 
 </td>
@@ -340,7 +345,7 @@ MDI Delta Token
 
 Represents the delta token for the SAP Master Data Integration receiver adapter \(MDI receiver adapter\).
 
-See:  <?sap-ot O2O class="- topic/xref " href="e91e373bbb5b49ccbc2977152def61a2.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/cvv1690968981196/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d1679a80543f46509a7329243b595bdb.xml" ?> 
+See:  <?sap-ot O2O class="- topic/xref " href="e91e373bbb5b49ccbc2977152def61a2.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/d1679a80543f46509a7329243b595bdb.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>
@@ -359,7 +364,7 @@ You can use resource `IntegrationRuntimeArtifacts` to read, deploy, and undeploy
 > ### Note:  
 > To deploy a runtime artifact, you've to include the artifact that you want to deploy as a binary stream into the body of your POST request. Refer to the OData Protocol specification for details on how to use Media Entities.
 > 
-> You can only deploy `BUNDLE` type integration artifacts \(integration flows, value mappings or OData services\).
+> You can only deploy `BUNDLE` type integration artifacts \(integration flows, value mappings, or OData services\).
 
 
 
@@ -436,7 +441,7 @@ For general information about query options, see [Query Options](query-options-9
 
 ## Example Requests
 
-You find various example requests on SAP Business Accelerator Hub at [https://api.sap.com/api/IntegrationContent/](https://api.sap.com/api/IntegrationContent/).
+You find various example requests on SAP Business Accelerator Hub at [Integration Content](https://api.sap.com/api/IntegrationContent/).
 
 For more example requests, see [Integration Content Example Requests](integration-content-example-requests-60cc8f1.md).
 

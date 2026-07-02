@@ -377,8 +377,6 @@ This does mean the following:
 
 -   Compression cannot be switched off. The Compressed Data packet is always mandatory.
 
-    However, it is possible to choose the UNCOMPRESSED algorithm. In this case, the Compressed Data packet is still there, but contains the Literal Data uncompressed.
-
 -   Encryption is always mandatory. It is not possible to only sign data.
 
 -   Only one password for all private keys in the keyring can be used. This simplifies password maintenance.

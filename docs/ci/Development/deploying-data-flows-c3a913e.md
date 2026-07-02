@@ -6,15 +6,11 @@
 
 
 
-## Context
-
-
-
 ## Procedure
 
 1.  In the *Integration Package Editor*, in the *Artifacts* section, select the required data flow from the list.
 
-2.  Choose :gear:to *Deploy*.
+2.  Choose :gear: to *Deploy*.
 
 3.  In the *Settings* dialog box that appears, enter the following details:
 
@@ -46,7 +42,7 @@
     > To switch to SAP Cloud Integration Web Catalog view from Data Integration using the [Back Button\] in the browser, perform the required substeps:
     > 
     > -   If you use Internet Explorer, from the context menu of [Back Button\], select Cloud Integration.
-    > -   If you use Google Chrome, click twice on[Back Button\].
+    > -   If you use Google Chrome, click twice on [Back Button\].
     > -   If you use Mozilla Firefox, from the context menu of [Back Button\], select Cloud Integration .
     > 
     > If you want to switch to SAP Cloud Integration Web *Catalog* view from Data Integration using the [Forward Button\] in the browser then by default, it displays the *Projects* tab page without the Settings option. This behavior remains the same for Internet Explorer, Google Chrome, and Mozilla Firefox.

@@ -6,7 +6,7 @@ Run the integration flow and check the result of message processing.
 
 When the integration flow has been deployed successfully, the message is processed without any further trigger \(based on the settings of the timer\).
 
-1.  Go to the Operations view and select a tile under *Monitor Message Processing*.
+1.  Go to the *Monitor* \> *Integrations and APIs* \> *Monitor Message Processing* view.
 
     If your integration flow has been processed successfully, the status *Completed* should be shown.
 
