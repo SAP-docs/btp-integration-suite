@@ -79,6 +79,85 @@ Patches for different components are associated with different major software ve
 
 
 
+## July 2026
+
+Software Increment: 2605
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.53.21
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Adds the missing User ID parameter and fixes download errors for the **Secret** and **Secret, Public** entry types on the PGP Entry page.
+-   Resolves filtering issues on the PGP Management page.
+-   Disables the CSV-to-XML schema cache by default to prevent collisions between same‑named schemas and eliminate conversion errors.
+-   Introduces enhanced security hardening for OData sender endpoints.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.80.80
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixes the issue where Aggregator V1.1 remains active indefinitely. A race condition caused timeout-based completion to fail because of optimistic locking.
+-   Fixes agreement activation failures caused by custom mapping and adapter type/direction incompatibilities.
+-   Disables the CSV-to-XML schema cache by default to prevent collisions between same‑named schemas and eliminate conversion errors.
+-   Introduces enhanced security hardening for OData sender endpoints.
+-   Restores missing OAuth2 configuration settings for the HANA database administration service to ensure reliable service‑to‑service authentication in multi‑tenant environments.
+-   Fixes reference‑mode agreement activation and export defects by correcting identical sender/receiver IDs and ensures successful import of trading‑partner parameters from templates.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## June 2026
 
 Software Increment: 2604

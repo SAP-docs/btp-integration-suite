@@ -1168,7 +1168,7 @@
             -   [Initial Setup of SAP Integration Advisor in Neo Environment](IntegrationAdvisor/initial-setup-of-sap-integration-advisor-in-neo-environment-7085d3a.md)
                 -   [Subscribing to SAP Integration Advisor](IntegrationAdvisor/subscribing-to-sap-integration-advisor-6a18444.md)
                 -   [Assigning Users for SAP Integration Advisor](IntegrationAdvisor/assigning-users-for-sap-integration-advisor-5621051.md)
-                -   [Managing Licence for Type Systems](IntegrationAdvisor/managing-licence-for-type-systems-ed1e961.md)
+                -   [Managing License for Type Systems](IntegrationAdvisor/managing-license-for-type-systems-ed1e961.md)
         -   [Library of Type Systems](IntegrationAdvisor/library-of-type-systems-740136b.md)
             -   [Overview Of B2B Standards](IntegrationAdvisor/overview-of-b2b-standards-c339707.md)
         -   [Custom Type Systems](IntegrationAdvisor/custom-type-systems-884bb25.md)

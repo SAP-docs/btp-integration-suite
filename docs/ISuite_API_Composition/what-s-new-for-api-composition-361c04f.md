@@ -134,7 +134,7 @@ Capability of API Management within SAP Integration Suite
 </td>
 <td valign="top">
 
-2026-07-06
+2026-07-26
 
 </td>
 </tr>
@@ -163,7 +163,7 @@ To include the destinations for API Composition to create and activate business 
 For more information, see [Additional SAP BTP Destination Properties](https://help.sap.com/docs/api-composition/dev-api-composition/connect-to-your-business-systems?version=CLOUD#additional-sap-btp-destination-properties).
 
 > ### Note:  
-> The `graph.ignore` destination property is no longer available. Please use the `IntegrationCell.Include` destination property.
+> The `graph.ignore` destination property will no longer be available after **24 July 2026**. Please use the `IntegrationCell.Include` destination property.
 
 
 
@@ -205,7 +205,7 @@ Capability of API Management within SAP Integration Suite
 </td>
 <td valign="top">
 
-2026-07-06
+2026-07-26
 
 </td>
 </tr>

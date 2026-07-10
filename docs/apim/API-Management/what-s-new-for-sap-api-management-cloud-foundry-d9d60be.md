@@ -80,12 +80,82 @@ Version
 <tr>
 <td valign="top">
 
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
--   
+Expose Enterprise APIs to AI Agents with the MCP Gateway
+
+</td>
+<td valign="top">
+
+SAP Integration Suite now supports Model Context Protocol \(MCP\) through the new MCP Gateway, enabling you to expose enterprise APIs, tools, and backend services as MCP-compatible endpoints for AI agents. The MCP Gateway provides enterprise-grade capabilities such as security, traffic management, routing, and multi-protocol connectivity, allowing AI agents to securely discover and interact with enterprise systems while leveraging existing APIs and services. For more information, see[Model Context Protocol \(MCP\)](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/build-your-integrations-and-apis?version=CLOUD) and [Subscribe to Products to Make MCP Servers Agent-Ready.](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/subscribe-to-products-to-make-mcp-servers-agent-ready?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
 
 
 </td>

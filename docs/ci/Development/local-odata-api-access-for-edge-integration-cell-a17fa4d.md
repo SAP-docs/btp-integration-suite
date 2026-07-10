@@ -83,7 +83,7 @@ To distinguish the local API calls from the calls via cloud, you need to add the
 -   `<YOUR_DEFINED_VIRTUAL_HOST>`: This is the Virtual Host that you have defined for your edge Runtime in the *Edge Lifecycle Management*
 
 -   `/local`: The addition of this prefix to the endpoint call is required to distinguish local calls from the calls via cloud
--   `/api/v1`: Same as used for the calls over the cloud
+-   `/api/v1`: Depending on which API is called, the path is `/api/v1` for Message Processing Log and Message Store, or `/api/eic/v1` for Operations Cockpit.
 -   `/<DESIRED_ENDPOINT_TO_BE_CALLED>`: This is the same as used for the calls over cloud.
 
 
@@ -92,7 +92,7 @@ To distinguish the local API calls from the calls via cloud, you need to add the
 > 
 > -   `https://edge-runtime.acme.com/local/api/v1/MessageProcessingLogs`
 > -   `https://edge-runtime.acme.com/local/api/v1/MessageStoreEntries`
-> -   `https://edge-runtime.acme.com/local/api/v1/Components`
+> -   `https://edge-runtime.acme.com/local/api//eic/v1/Components`
 
 > ### Note:  
 > If you do not use the `/local` prefix then a 401 Unauthorized error will occur, even if you use a valid credential.
@@ -199,7 +199,7 @@ You can find the JMS APIs on SAP Business Accelerator Hub at: [JMS Resources | M
 <tr>
 <td valign="top">
 
-Components
+ <?sap-ot O2O class="- topic/xref " href="da1abc0c46514798bea0d283f0fb418a.xml" text="" desc="" xtrc="xref:13" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a17fa4df7744455c8a35d1c3c2e45787.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">
@@ -220,29 +220,10 @@ Components
 </td>
 <td valign="top">
 
-Access Edge Integration Cell system monitoring data, including components, pods, events, metrics, and runtime parameters.
+Access your Edge Integration Cell data even during offline mode when the Operations Cockpit user interface is unavailable.
 
 > ### Note:  
 > This API is implemented based on OData version 4 specification.
-
-You can find the Components API on SAP Business Accelerator Hub at: [ODATA V4 API | SAP Edge Integration Cell | SAP Business Accelerator Hub](https://api.sap.com/package/sap-int-eic-eic-operations/odatav4)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- <?sap-ot O2O class="- topic/xref " href="da1abc0c46514798bea0d283f0fb418a.xml" text="" desc="" xtrc="xref:14" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a17fa4df7744455c8a35d1c3c2e45787.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-Access your Edge Integration Cell data even during offline mode when the Operations Cockpit user interface is unavailable.
 
 You can retrieve information such as component statuses, pods, event logs, metrics, and runtime parameters. You can also restart components.
 

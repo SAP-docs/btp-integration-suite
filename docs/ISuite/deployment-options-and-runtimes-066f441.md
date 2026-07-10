@@ -12,8 +12,6 @@ Depending on your choice, different runtime environments execute your integratio
 
 -   Hybrid Deployment
 
-    Powered by the Edge Integration Cell in your own Kubernetes cluster, this deployment model allows you to run integration scenarios within your private landscape. This hybrid approach enables you to design and monitor your integration content in the cloud, while deploying and running it directly in your local environment.
-
-    To learn more about hybrid deployment using Edge Integration Cell, how to set it up, security, and troubleshooting guidance, see [What is Edge Integration Cell?](https://help.sap.com/docs/integration-suite/edge-integration-cell-test/what-is-edge-integration-cell?version=CLOUD).
+    Powered by the Edge Integration Cell in your own Kubernetes cluster, this deployment model allows you to run integration scenarios within your private landscape. This hybrid approach enables you to design and monitor your integration content in the cloud, while deploying and running it directly in your local environment. To learn more about hybrid deployment using Edge Integration Cell, how to set it up, security, and troubleshooting guidance, see [What is Edge Integration Cell](https://help.sap.com/docs/integration-suite/edge-integration-cell-test/what-is-edge-integration-cell?version=CLOUD).
 
 

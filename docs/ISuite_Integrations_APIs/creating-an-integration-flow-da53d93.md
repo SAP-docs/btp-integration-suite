@@ -1,0 +1,161 @@
+<!-- loioda53d93cd8fb47ff9ea55b6b278cd85e -->
+
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
+# Creating an Integration Flow
+
+Add an integration flow to an integration package.
+
+
+
+## Prerequisites
+
+You’ve created an integration package. For more information, see [Creating an Integration Package](creating-an-integration-package-9126d79.md).
+
+
+
+## Context
+
+You can create an integration flow in different ways:
+
+-   Let AI generate your integration flow based on the descriptions you provide. See [Generating Integration Flows with AI Assistance](generating-integration-flows-with-ai-assistance-e0b9e8a.md) .
+
+-   Import integration flows from GitHub repositories. See
+-   Manually add an integration flow either by creating or uploading.
+
+
+<a name="task_hrn_4f5_jjc"/>
+
+<!-- task\_hrn\_4f5\_jjc -->
+
+## Add Integrations Manually
+
+<a name="task_ik5_5wl_wbc"/>
+
+<!-- task\_ik5\_5wl\_wbc -->
+
+## Create Integration Flow
+
+
+
+<a name="task_ik5_5wl_wbc__steps_xsp_ywl_wbc"/>
+
+## Procedure
+
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
+
+2.  Select the integration package in which you want to add an integration flow and choose *Edit*.
+
+3.  Navigate to the *Artifacts* tab and choose *Add* \> *Integration Flow*.
+
+4.  In the *Add Integration Flow* dialog, choose the method *Add Integrations manually*.
+
+5.  If you want to create a new integration flow, execute the following substeps:
+
+    1.  Choose the *Create* radio button.
+
+    2.  Enter a valid name for the integration flow in the *Name* field. The *ID* field gets auto-filled.
+
+        For a new integration flow you can define two attributes, *Name* and *ID*.
+
+        > ### Note:  
+        > -   The integration flow *ID* needs to be unique across the tenant, but you can specify the same *Name* multiple times. When you create a new integration flow, by default the entry for *ID* is generated automatically based on the string entered for *Name* \(with underscore replacing space characters\).
+        > 
+        > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
+
+    3.  You can select the runtime profile for the integration flow in the *Runtime Profile* field. The integration flow templates used during creation adhere to the latest version of a component available in the runtime profile. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
+
+    4.  Enter *Description* for the integration flow.
+
+    5.  Choose <span class="SAP-icons-V5"></span> search values to add *Sender* and *Receiver* systems. The search values provide a list of sender and receiver systems maintained by SAP.
+
+        > ### Tip:  
+        > If you don't find a sender or receiver system of your choice, or want to add your own values, type in the *Sender* and *Receiver* fields and press [tab\] button in your keyboard. You can also add multiple values if it's necessary.
+
+    6.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
+
+
+6.  If you want to upload an integration flow, execute the following substeps:
+
+    1.  Choose the *Upload* radio button.
+
+    2.  Choose *Browse* to select the integration project archive from your local file system. When you select the archive file, the *Name* and *ID* fields in the dialog box are filled automatically.
+
+        > ### Note:  
+        > -   The integration flow *ID* needs to be unique across the tenant, but you can specify the same *Name* multiple times. When you create a new integration flow, by default the entry for *ID* is generated automatically based on the string entered for *Name* \(with underscore replacing space characters\).
+        > 
+        > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
+
+    3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
+
+
+
+
+
+<a name="task_ik5_5wl_wbc__result_r3d_3ws_c5b"/>
+
+## Results
+
+An integration flow with the following shapes is created:
+
+-   *Sender*: Represents your sender system.
+
+-   *Receiver*: Represents the receiver system.
+
+-   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant.
+
+
+<a name="task_cy1_yf5_jjc"/>
+
+<!-- task\_cy1\_yf5\_jjc -->
+
+## Upload Integration Flow
+
+
+
+## Procedure
+
+1.  Choose *Design* \> *Integrations and APIs* to view the list of integration packages.
+
+2.  Select the integration package in which you want to add an integration flow and choose *Edit*.
+
+3.  Navigate to the *Artifacts* tab and choose *Add* \> *Integration Flow*.
+
+4.  In the *Add Integration Flow* dialog, choose the method *Add Integrations manually*.
+
+5.  To upload an integration flow, execute the following substeps:
+
+    1.  Choose the *Upload* radio button.
+
+    2.  Choose *Browse* to select the integration project archive from your local file system. When you select the archive file, the *Name* and *ID* fields in the dialog box are filled automatically.
+
+        > ### Note:  
+        > -   The integration flow *ID* needs to be unique across the tenant, but you can specify the same *Name* multiple times. When you create a new integration flow, by default the entry for *ID* is generated automatically based on the string entered for *Name* \(with underscore replacing space characters\).
+        > 
+        > -   However, you can also manually edit the *ID* field and, once it’s modified manually, changing the name of the integration flow doesn’t make any auto-changes to the *ID* field again.
+
+    3.  Choose *Add* to just create an integration flow or *Add and Open in Editor* to open the integration flow in its editor. Alternatively, you can press the [Enter\]/[Return\] key to create an integration flow.
+
+
+
+
+
+## Results
+
+An integration flow with the following shapes is created:
+
+-   *Sender*: Represents your sender system.
+
+-   *Receiver*: Represents the receiver system.
+
+-   *Integration Process*: The shape where you add all the steps that define how a message is processed in the tenant.
+
+
+<a name="concept_e1l_bqv_jjc"/>
+
+<!-- concept\_e1l\_bqv\_jjc -->
+
+## Related Information
+
+[Configure Integration Flow Components](configure-integration-flow-components-3171795.md)
+

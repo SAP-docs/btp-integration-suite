@@ -1,0 +1,68 @@
+<!-- loio46da32434a4e4bb8a86c5bf7e7de214d -->
+
+# Deploying an SSH Known Hosts Artifact
+
+This artifact type specifies the known hosts file used when configuring secure connectivity based on SSH File Transfer Protocol \(SFTP\).
+
+
+
+## Context
+
+An SSH known hosts artifact contains the public keys and addresses of trusted SFTP servers.
+
+
+
+## Procedure
+
+1.  Choose *Monitor* \> *Integrations and APIs*.
+
+2.  Select the target runtime \(*Runtime* parameter\).
+
+    This information is only relevant for Edge Integration Cell runtime.
+
+    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/1783cf87caa2449e96082f0cf754449d.html "The manage security section allows you to manage various kinds of security-related artifacts according to the runtime deployment possibilities.") :arrow_upper_right:.
+
+3.  Click the *Security Material* tile in the *Manage Security* section.
+
+4.  Choose *Create* and select *Known Hosts \(SSH\)*.
+
+5.  In the *Create SSH Known Hosts* dialog, you can import entries from a file using *Browse*, add entries manually using *Add*, or edit entries directly in the table.
+
+    > ### Caution:  
+    > Using *Browse* replaces all existing known host entries in the table with the entries from the imported file.
+
+6.  Choose *Deploy*.
+
+    > ### Note:  
+    > For detailed instructions on creating, editing, and maintaining known host entries, see [Maintaining SSH Known Hosts for SFTP Connectivity](40-RemoteSystems/maintaining-ssh-known-hosts-for-sftp-connectivity-514e383.md).
+
+
+
+
+## Results
+
+When you refresh the *Manage Security Material* page, the new artifact is displayed in the table.
+
+> ### Note:  
+> The following applies when you have activated Edge Integration Cell:
+> 
+> -   You can assign one *Known Hosts \(SSH\)* artifact exactly to one runtime.
+> 
+> -   Apply the following rules for the artifact name:
+> 
+>     -   The maximum number of characters is 30.
+> 
+>     -   Use only lower-case ASCII alphanumeric characters.
+> 
+>     -   The artifact name must start and end with a letter.
+> 
+> 
+> -   If you leave the *Name* parameter empty, the system sets the artifact name to *known.hosts*.
+> 
+>     If you don't leave the *Name* parameter empty, the system sets the name to *known.hosts-<custom name\>*. In other words, the prefix *known.hosts-* is added by the system.
+
+**Related Information**  
+
+
+[Managing Security Material](managing-security-material-b8ccb53.md "The Manage Security Material area provides an overview of security-related artifacts.")
+

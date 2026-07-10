@@ -119,7 +119,7 @@ Upon activation, you can create integration flows with assistance from Generativ
 
 You can activate these features together. See
 
--   [Generate Integrations with AI Assistance](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+-   [Generating Integration Flows with AI Assistance](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/generating-integration-flows-with-ai-assistance?version=CLOUD)
 -   [Optimize Groovy Scripts with AI](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/3b7a5a1258ea469b963dc047c3f443a0.html "Enhance your Groovy scripts using Generative AI.") :arrow_upper_right: 
 
 

@@ -33,7 +33,7 @@ Integrations and APIs
 </td>
 <td valign="top">
 
-[Accessibility in APIs and Integrations | SAP Help Portal](https://help.sap.com/docs/integration-suite/integrations-and-apis/accessibility-in-apis-and-integrations)
+[Accessibility in APIs and Integrations | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/accessibility-in-apis-and-integrations?version=CLOUD)
 
 </td>
 </tr>
@@ -45,7 +45,7 @@ Integration Advisor
 </td>
 <td valign="top">
 
-[Accessibility Features in Integration Advisor | SAP Help Portal](https://help.sap.com/docs/integration-suite/integration-advisor/accessibility-features-in-integration-advisor)
+[Accessibility Features in Integration Advisor | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/accessibility-features-in-integration-advisor?version=CLOUD)
 
 </td>
 </tr>
@@ -57,19 +57,19 @@ Integration Assessment
 </td>
 <td valign="top">
 
-[Accessibility Features in Integration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/integration-assessment/accessibility-features-in-integration-assessment)
+[Accessibility Features in Integration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integration-assessment/accessibility-features-in-integration-assessment?version=CLOUD)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-SAP Trading Partner Management
+Trading Partner Management
 
 </td>
 <td valign="top">
 
-[Accessibility Features in SAP Trading Partner Management | SAP Help Portal](https://help.sap.com/docs/integration-suite/trading-partner-management/accessibility-features-in-sap-trading-partner-management)
+[Accessibility Features in SAP Trading Partner Management | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management/trading-partner-management?version=CLOUD)
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ Data Space Integration
 </td>
 <td valign="top">
 
-[Accessibility Features in Data Space Integration | SAP Help Portal](https://help.sap.com/docs/integration-suite/data-space-integration/accessibility-features-in-data-space-integration)
+[Accessibility Features in Data Space Integration | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-data-space-integration/accessibility-features-in-data-space-integration?version=CLOUD)
 
 </td>
 </tr>
@@ -93,7 +93,7 @@ Event Mesh
 </td>
 <td valign="top">
 
-[Accessibility Features in Event Mesh | SAP Help Portal](https://help.sap.com/docs/integration-suite/event-mesh/accessibility-features-in-event-mesh)
+[Accessibility Features in Event Mesh | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-event-mesh/accessibility-features-in-event-mesh?version=CLOUD)
 
 </td>
 </tr>
@@ -105,7 +105,7 @@ OData Provisioning
 </td>
 <td valign="top">
 
-[Accessibility Features in OData Provisioning | SAP Help Portal](https://help.sap.com/docs/integration-suite/odata-provisioning/accessibility-features-in-odata-provisioning)
+[Accessibility Features in OData Provisioning | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-odata-provisioning/accessibility-features-in-odata-provisioning?version=CLOUD)
 
 </td>
 </tr>
@@ -117,7 +117,7 @@ Migration Assessment
 </td>
 <td valign="top">
 
-[Accessibility Features in Migration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/migration-assessment/accessibility-features-in-migration-assessment)
+[Accessibility Features in Migration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/accessibility-features-in-migration-assessment?version=CLOUD)
 
 </td>
 </tr>

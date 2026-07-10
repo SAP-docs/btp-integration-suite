@@ -97,6 +97,23 @@ Yes
 </td>
 </tr>
 <tr>
+<td valign="top">
+
+Maximum Recommended API products per application
+
+</td>
+<td valign="top">
+
+It is recommended to group API products logically based on your business scenarios and maintain an average of 20–30 API products per application.
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
 <td valign="top" colspan="3">
 
 Certificates

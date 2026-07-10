@@ -12,13 +12,13 @@ Define access policies to specify which Edge Integration Cell artifacts need pro
 
 ## Prerequisites
 
-To create and edit access policies, users must have the role collection PI\_Administrator. For more details, see [Access Policies](https://help.sap.com/docs/integration-suite/integration-cell-beta/access-policies?version=CLOUD).
+To create and edit access policies, users must have the role collection PI\_Administrator. For more details, see [Access Policies](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/access-policies?version=CLOUD).
 
 
 
 ## Context
 
-Access policies let you restrict access to selected artifacts and their data. In the *Maintain Access Policies* screen, you can create new access policies and define the set of artifacts protected by these policies. For more information, see [Access Policies](https://help.sap.com/docs/integration-suite/integration-cell-beta/access-policies?version=CLOUD).
+Access policies let you restrict access to selected artifacts and their data. In the *Maintain Access Policies* screen, you can create new access policies and define the set of artifacts protected by these policies. For more information, see [Access Policies](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/access-policies?version=CLOUD).
 
 To manage access policies, go to the *Monitor* section of the SAP Integration Suite. You can find the *Access Policies* tile under *Manage Security*.
 
@@ -131,7 +131,7 @@ You can use the *Runtime* dropdown to view a list of all available policies in y
     
     Select an artifact type from the list. The default setting is `Integration Flow`.
 
-    For more information about artifact types, see [Defining Access Policies](https://help.sap.com/docs/integration-suite/integration-cell-beta/defining-access-policies?version=CLOUD).
+    For more information about artifact types, see [Defining Access Policies](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/defining-access-policies?version=CLOUD).
     
     </td>
     </tr>

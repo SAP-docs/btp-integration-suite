@@ -20,7 +20,7 @@ Here is a simple overview of your journey to implement a B2B/A2A/B2G integration
 -   [Terminology & Glossary for SAP Integration Advisor](terminology-glossary-for-sap-integration-advisor-9c221b4.md)
 -   [Subscribing to SAP Integration Advisor](subscribing-to-sap-integration-advisor-6a18444.md)
 -   [Library of Type Systems](library-of-type-systems-740136b.md)
--   [Managing Licence for Type Systems](managing-licence-for-type-systems-ed1e961.md)
+-   [Managing License for Type Systems](managing-license-for-type-systems-ed1e961.md)
 -   [Message Implementation Guidelines \(MIGs\)](message-implementation-guidelines-migs-f9f2bab.md)
     -   [Creating Message Implementation Guidelines](creating-message-implementation-guidelines-b894de0.md)
     -   [Working with a Message Implementation Guideline](working-with-a-message-implementation-guideline-9d1c1df.md)

@@ -36,6 +36,7 @@
 -   [Test Messaging](test-messaging-84c6882.md)
 -   [Monitor Event Mesh](monitor-event-mesh-d975934.md)
 -   [Security Aspects of Data, Data Flow for Event Mesh](security-aspects-of-data-data-flow-for-event-mesh-8713813.md)
+-   [Troubleshooting for Event Mesh](troubleshooting-for-event-mesh-b7a4e49.md)
 -   [Accessibility Features in Event Mesh](accessibility-features-in-event-mesh-a1a5ce8.md)
 -   [Identity and Access Management for Event Mesh](identity-and-access-management-for-event-mesh-7a91c65.md)
     -   [Personas in Event Mesh](personas-in-event-mesh-ee79946.md)

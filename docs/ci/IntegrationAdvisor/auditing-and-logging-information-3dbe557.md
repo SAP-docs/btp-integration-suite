@@ -187,7 +187,7 @@ Create new license
 </td>
 <td valign="top">
 
-[Managing Licence for Type Systems](managing-licence-for-type-systems-ed1e961.md) 
+[Managing License for Type Systems](managing-license-for-type-systems-ed1e961.md) 
 
 </td>
 </tr>
@@ -214,7 +214,7 @@ Delete license
 </td>
 <td valign="top">
 
-[Managing Licence for Type Systems](managing-licence-for-type-systems-ed1e961.md) 
+[Managing License for Type Systems](managing-license-for-type-systems-ed1e961.md) 
 
 </td>
 </tr>

@@ -508,8 +508,9 @@ Reading the message payload writes the following audit log event:
 > {
 >   "action": "Read",
 >   "objectType": "Message Payload (Trace)",
->   "objectId": "mplId\1234-xyz;traceId\abcd;stepId\u003dEndEvent_2; Odata-Read",
+>   "objectId": "mplId\\1234-xyz;traceId\\abcd;stepId\\u003dEndEvent_2; Odata-Read",
 >   "attributes": {
+>     "runtime ID": "edgeintegrationcell",
 >     "message": "Reading Content for Message Payload (Trace) with Id 1353"
 >   },
 >   "changedAttributes": {},
@@ -545,6 +546,25 @@ Read message processing log attachment
 -   action: Read
 
 -   objectType: MPL Attachment
+
+-   > ### Output Code:  
+    > ```
+    > {
+    >   "action": "Read",
+    >   "objectType": "MPL Attachment",
+    >   "objectId": "mplAtt-1234",
+    >   "attributes": {
+    >     "runtime ID": "edgeintegrationcell",
+    >     "message": "Reading Content for MPL Attachment with Id mplAtt-1234"
+    >   },
+    >   "changedAttributes": {},
+    >   "customDetails": {
+    >     "agentGeneratedId": "generate-agent-id-here",
+    >     "ingestedByAgentTimestamp": "2021-07-05T10:09:35.531Z"
+    >   }
+    > }
+    > 
+    > ```
 
 
 

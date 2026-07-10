@@ -1,0 +1,121 @@
+<!-- loioadbd94c3dc9e486b8e0acb846112ac39 -->
+
+# Configure a BTP Destination for API Invocation of a Discovered API \(Internet-Based\)
+
+After discovering APIs via the **internet-based** SAP Gateway service destination, select an **internet-based** destination for making runtime calls for the created API artifact. You can reuse the same destination used for discovery.
+
+
+
+## Procedure
+
+1.  Log on to SAP BTP Cockpit and navigate to your subaccount.
+
+2.  From the left navigation pane, choose *Connectivity* \> *Destinations*.
+
+3.  Choose *Create*. The *Create New Destination* window appears.
+
+4.  Choose *From Scratch* to create a new destination manually.
+
+5.  In the *Destination Details* section, enter all the required information as described in the table below:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Parameter
+    
+    </th>
+    <th valign="top">
+
+    Value
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Provide a unique name for the destination.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Type
+    
+    </td>
+    <td valign="top">
+    
+    Choose *HTTP* as the supported type.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Proxy Type
+    
+    </td>
+    <td valign="top">
+    
+    Choose *Internet* as the supported proxy type.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Description \(optional\)
+    
+    </td>
+    <td valign="top">
+    
+    Enter a brief description stating the purpose of creating a new destination in the *Description* field.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    URL
+    
+    </td>
+    <td valign="top">
+    
+    Enter the base/host URL of your backend systems.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Authentication
+    
+    </td>
+    <td valign="top">
+    
+    Select the authentication method to be used for connection requests to the server.
+
+    Supported authentication mechanisms includes:
+
+    -   Basic Auth
+    -   No Auth
+    -   OAuth2ClientCredentials
+    -   OAuth2Password
+    -   ClientCertificateAuthentication
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    Scroll down to the *Labels* section, choose *Add* and add the following label:*IntegrationCell.Include*and set its value to *true*.
+
+

@@ -57,6 +57,6 @@
     -   [API Composition Navigator on Developer Hub](api-composition-navigator-on-developer-hub-8e75d31.md)
 -   [Security](security-7a9198c.md)
     -   [Data Protection and Privacy for API Composition](data-protection-and-privacy-for-api-composition-9b09c0e.md)
--   [Troubleshooting for API Composition](troubleshooting-for-api-composition-2cfb06c.md)
+-   [Getting Support for API Composition](getting-support-for-api-composition-2cfb06c.md)
     -   [Limits](limits-a61f1ce.md)
 

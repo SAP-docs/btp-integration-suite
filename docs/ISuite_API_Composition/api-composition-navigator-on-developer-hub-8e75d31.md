@@ -41,7 +41,7 @@ You have created a Process Integration Runtime \(Client Credentials\) service in
 ### Procedure
 
 1.  Go to SAP BTP cockpit *Services* \> *Instances and Subscriptions* and search for your *Process Integration Runtime* service instance. Note down the contents of the service key.
-2.  Go to *SAP Integration Suite* \> *Design* \> *API Composition*. In the upper right-hand corner, choose the <span class="SAP-icons-V5">&amp;#xe05c</span> information icon and copy down your API Composition tenant domain.
+2.  Go to *SAP Integration Suite* \> *Design* \> *API Composition*. In the upper right-hand corner, choose the <span class="SAP-icons-V5"></span> information icon and copy down your API Composition tenant domain.
 3.  Go back to the SAP BTP cockpit *Connectivity* \> *Destinations*. Choose *Create* \> *From Scratch* \> *Create* and enter the following:
 
 
@@ -102,7 +102,7 @@ You have created a Process Integration Runtime \(Client Credentials\) service in
     </td>
     <td valign="top">
     
-    https://<Your API Composition tenant domain\>
+    https://<Your API Composition tenant domain\>/graph
     
     </td>
     </tr>

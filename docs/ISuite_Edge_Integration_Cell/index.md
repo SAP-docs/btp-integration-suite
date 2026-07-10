@@ -80,6 +80,7 @@
     -   [Kubernetes](kubernetes-f06bfa1.md)
     -   [Pod Security Standards](pod-security-standards-2557e81.md)
     -   [Manually Rotate Signing Keys of Access Tokens](manually-rotate-signing-keys-of-access-tokens-0e38815.md)
+    -   [Auditing and Logging Information for Edge Integration Cell](auditing-and-logging-information-for-edge-integration-cell-62d2121.md)
 -   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
     -   [Fix Entitlements Issues](fix-entitlements-issues-27ae42c.md)
     -   [Fix Connectivity Issues](fix-connectivity-issues-59e80e4.md)

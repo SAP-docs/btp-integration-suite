@@ -52,12 +52,12 @@ You use this procedure to configure XML to CSV converter.
     <tr>
     <td valign="top">
     
-    *Path to Source Element in XSD*
+    *Path to Source Element in XML*
     
     </td>
     <td valign="top">
     
-    Path to the source element in the XSD file
+    Path to the source element in the XML file
     
     </td>
     </tr>

@@ -39,7 +39,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-[Troubleshooting for Cloud Integration](https://help.sap.com/docs/integration-suite/integrations-and-apis/troubleshooting-for-cloud-integration?version=CLOUD)
+[Troubleshooting for Cloud Integration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/troubleshooting-for-cloud-integration?version=CLOUD)
 
 </td>
 </tr>
@@ -51,7 +51,7 @@ API Management on Integration Cell
 </td>
 <td valign="top">
 
-[Troubleshooting for API Management on Integration Cell](https://help.sap.com/docs/integration-suite/integrations-and-apis/troubleshooting-for-api-management-on-integration-cell?version=CLOUD)
+[Troubleshooting for API Management on Integration Cell](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/troubleshooting-for-api-management-on-integration-cell?version=CLOUD)
 
 </td>
 </tr>
@@ -63,7 +63,7 @@ Classic API Management
 </td>
 <td valign="top">
 
-[Troubleshooting for Classic API Management](https://help.sap.com/docs/integration-suite/integrations-and-apis/troubleshooting-for-api-management?version=CLOUD)
+[Troubleshooting for Classic API Management](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/troubleshooting-for-api-management?version=CLOUD)
 
 </td>
 </tr>
@@ -75,7 +75,7 @@ API Composition
 </td>
 <td valign="top">
 
-[Troubleshooting API Composition](https://help.sap.com/docs/graph/graph-wip/support?version=CLOUD)
+[Troubleshooting API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/troubleshooting?version=CLOUD)
 
 </td>
 </tr>
@@ -87,7 +87,7 @@ Trading Partner Management
 </td>
 <td valign="top">
 
-[Troubleshooting for Trading Partner Management](https://help.sap.com/docs/integration-suite/trading-partner-management/troubleshooting-for-trading-partner-management?version=CLOUD)
+[Troubleshooting for Trading Partner Management](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management/troubleshooting-for-trading-partner-management?version=CLOUD)
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ Integration Advisor
 </td>
 <td valign="top">
 
-[Troubleshooting for Integration Advisor](https://help.sap.com/docs/integration-suite/integration-advisor/troubleshooting-for-integration-advisor?version=CLOUD)
+[Troubleshooting for Integration Advisor](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/troubleshooting-for-integration-advisor?version=CLOUD)
 
 </td>
 </tr>
@@ -111,7 +111,7 @@ OData Provisioning
 </td>
 <td valign="top">
 
-[Troubleshooting for OData Provisioning](https://help.sap.com/docs/integration-suite/odata-provisioning/troubleshooting-for-odata-provisioning?version=CLOUD)
+[Troubleshooting for OData Provisioning](https://help.sap.com/docs/integration-suite/isuite-odata-provisioning/troubleshooting-for-odata-provisioning?version=CLOUD)
 
 </td>
 </tr>
@@ -123,7 +123,7 @@ Data Space Integration
 </td>
 <td valign="top">
 
-[Troubleshooting for Data Space Integration](https://help.sap.com/docs/integration-suite/data-space-integration/troubleshooting-for-data-space-integration?version=CLOUD)
+[Troubleshooting for Data Space Integration](https://help.sap.com/docs/integration-suite/isuite-data-space-integration/troubleshooting-for-data-space-integration?version=CLOUD)
 
 </td>
 </tr>
@@ -135,7 +135,7 @@ Migration Assessment
 </td>
 <td valign="top">
 
-[Troubleshooting for Migration Assessment](https://help.sap.com/docs/integration-suite/migration-assessment/troubleshooting-for-migration-assessment?version=CLOUD)
+[Troubleshooting for Migration Assessment](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/troubleshooting-for-migration-assessment?version=CLOUD)
 
 </td>
 </tr>

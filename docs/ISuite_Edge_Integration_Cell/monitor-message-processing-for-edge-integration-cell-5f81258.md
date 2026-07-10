@@ -8,9 +8,9 @@ Open the message monitor by clicking on a tile in the *Monitor Message Processin
 
 If you navigate to the message monitor, only message processing logs from the chosen runtime are displayed.
 
+For general monitoring details, see [Monitor Message Processing](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/monitor-message-processing).
+
 > ### Restriction:  
-> For general monitoring details, see  <?sap-ot O2O class="- topic/xref " href="650995cc65b4459681abfe6d89b64306.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loio46fb8a3b516b4f81bfc9b33d19cdb701_en-US/src/content/localization/en-us/5f81258a30ed42cfbef7141a8e08bb9d.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  in the SAP Integration Suite.
-> 
 > For the artifacts deployed on Edge Integration Cell, only the monitoring functions described in the following topics are available:
 > 
 > -   [Message Status](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/733a57b10f504ac9b2b5aa7fda664dc5.html "The message processing status indicates how a messages has been processed at runtime.") :arrow_upper_right:

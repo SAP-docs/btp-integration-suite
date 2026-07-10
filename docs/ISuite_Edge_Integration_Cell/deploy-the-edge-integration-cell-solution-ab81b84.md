@@ -421,7 +421,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > ### Note:  
     > The Internal option is for non-production environments only.
     > 
-    > PostgreSQL and HANA DB refer to external databases.
+    > PostgreSQL and HANA DB refer to external databases. If selected, you need to provide a new, empty database schema for each new deployment.
 
 
     
@@ -616,7 +616,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > If you select *Reuse HANA DB*, the same connection details as for the Database Type will be used. Otherwise, a different HANA DB instance can be specified.
 
     > ### Note:  
-    > For production workloads that demand consistent and scalable performance, particularly when implementing Quota and Surge protection policies on your API artifact, it is recommended you use Redis as the backing datastore to achieve optimal performance. See, [Policy Definition and Types of Policies](https://help.sap.com/viewer/6afa6d14ff6d4006b5614676722ef006/CLOUD/en-US/c744df5a043f49059e8c224240eb51e5.html "You can define the behavior of an API by using policies.") :arrow_upper_right:.
+    > For production workloads that demand consistent and scalable performance, particularly when implementing Quota and Surge protection policies on your API artifact, it is recommended you use Redis as the backing datastore to achieve optimal performance. See, [Working with Policies and Mediation Steps](https://help.sap.com/viewer/6afa6d14ff6d4006b5614676722ef006/CLOUD/en-US/c744df5a043f49059e8c224240eb51e5.html "A policy is a program that executes a specific function at runtime. Policies provide the flexibility to add common functionalities to an API without having to code them individually each time. They enable you to secure APIs, control API traffic, and mediate messages by transforming, mapping, routing, or persisting data as it flows through the API.") :arrow_upper_right:.
 
 
     

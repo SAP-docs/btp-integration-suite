@@ -22,11 +22,9 @@ You can access the OData APIs available for Data Space Integration at [Data Spac
 
 ## Using APIs vs. User Interface
 
-For some actions in Data Space Integration, you can decide if you either want to use APIs or manually complete the action in the user interface of SAP Integration Suite.
+For some actions in Data Space Integration, you can decide whether you want to use APIs or manually complete the action in the user interface of SAP Integration Suite.
 
-Be aware that the features offered via the API and the user interface can differ. While the **API** adheres to the open-source prerequisites set by the Eclipse Dataspace Connector, the **user interface** of Data Space Integration is developed by SAP and is updated regularly.
-
-Currently, you can only consume assets from other data space participants if you use the API [Data Space Integration \(SAP Business Accelerator Hub\)](https://api.sap.com/package/dataspaceintegration/rest). See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
+Be aware that the features offered using the API and the user interface can differ. For example, you can only complete the onboarding in the user interface of SAP Integration Suite. Also, currently, you can only consume assets from other data space participants if you use the API [Data Space Integration \(SAP Business Accelerator Hub\)](https://api.sap.com/package/dataspaceintegration/rest). See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
 
 
 
@@ -54,7 +52,7 @@ To get access to Data Space Integration using APIs, you must first create a serv
 ### Procedure
 
 1.  Go to the SAP BTP cockpit and navigate to your subaccount that has SAP Integration Suite enabled. From there, go to *Cloud Foundry* \> *Spaces* \> *Your space* \> *Services* \> *Instances*.
-2.  Select **Create** to create a new service instance and select `Data Space Integration API Access`. In the **Plan** field, enter `api`, and add an instance name. Then, choose **Next**.
+2.  Select *Create* to create a new service instance and select `Data Space Integration API Access`. In the *Plan* field, enter `api`, and add an instance name. Then, choose *Next*.
 3.  Next, select the applicable role to enforce authorization, `AuthGroup_DataspaceConsumer` or `AuthGroup_DataspaceProvider`, or both, depending on the needs of the business application that wants to exchange data within the data space. For an overview of the available roles and their authorizations, see [Personas and Roles](identity-and-access-management-for-data-space-integration-211c66a.md#loio211c66a2f65e4bf0ad0e93e68cfff984__section_cxz_vsk_pcc).
 
     Once you've selected the role, select `client_credentials` as the grant type and enter your *Connector Name*. Then, choose *Next*.
@@ -64,6 +62,7 @@ To get access to Data Space Integration using APIs, you must first create a serv
 
     For the service instance that was created, select *Create Service Key*. Enter a name for the service key and for the *Key Type* select `ClientID/Secret` or `Certificate`. Leave the rest of the fields as they are. Select *Create*.
 
+6.  If you have multiple connectors, create one service instance for each connector by repeating steps 1 to 5.
 
 
 

@@ -9,5 +9,5 @@
 
 [Assigning Users for SAP Integration Advisor](assigning-users-for-sap-integration-advisor-5621051.md "")
 
-[Managing Licence for Type Systems](managing-licence-for-type-systems-ed1e961.md "")
+[Managing License for Type Systems](managing-license-for-type-systems-ed1e961.md "")
 

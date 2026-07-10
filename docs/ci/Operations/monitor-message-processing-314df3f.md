@@ -111,7 +111,7 @@ Filter all artifacts by a specific type:
 
 -   *Integration Flow*
 
--   *API \(Edge runtimes only\)*
+-   *API*
 
 -   *OData API*
 
