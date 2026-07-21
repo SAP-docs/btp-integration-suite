@@ -119,7 +119,7 @@ Method can also be determined dynamically by reading a value from a message head
 
 OData
 
-Sender adapter
+Receiver adapter
 
 </td>
 <td valign="top">
@@ -163,7 +163,7 @@ Supported versions: OData version 2.0
 
 OData
 
-Receiver adapter
+Sender adapter
 
 </td>
 <td valign="top">
