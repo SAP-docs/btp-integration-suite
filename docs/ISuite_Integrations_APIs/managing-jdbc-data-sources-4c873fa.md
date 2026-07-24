@@ -252,10 +252,7 @@ After you complete the above configuration, now create a JDBC data source for yo
     The upper limit on the number of database connections maintained by the connection pool, including active and idle connections. It controls peak resource usage and prevents database server overload.
 
     -   Default value: 10
-    -   Valid range: 1 to database-supported connection limit
-
-    > ### Note:  
-    > Configure this value based on your database connection limits and system capacity. Ensure that your database is configured to support the connection limits you intend to use, and that these settings are aligned with the valid value ranges provided for this field.
+    -   Valid range: 1 to 10
 
 
     

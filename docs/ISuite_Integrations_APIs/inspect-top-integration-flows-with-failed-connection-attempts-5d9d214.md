@@ -10,7 +10,7 @@ Inspect the integration flows that requested a database connection but for which
 Integration flows are sorted from top to bottom according to the number of unsuccessful attempts to request a database connection \(divided by the absolute number of attempts\).
 
 > ### Tip:  
-> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15. The total number of integration flows displayed are the flows for which there's available data.
 
 The number of unsuccessful attempts to request a database connection during the selected time period is indicated by the cell color \(from green for a low number, up to red for a critical number of unsuccessful attempts\).
 

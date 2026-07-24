@@ -83,6 +83,59 @@ Avoid using incomplete statements, incorrect declarations, or unsupported langua
 
 
 
+## Use import statements supported by the script runtime
+
+This design guideline ensures that groovy scripts use import statements compatible with its runtime version. Incompatible import statements can lead to compilation failures and upgrade readiness issues when scripts are executed on the runtimes.
+
+The guideline identifies imports that are not supported by the target runtime and recommends the appropriate runtime-compatible alternatives.
+
+This guideline scans version 2 of the script only. See [Upgrading Script](upgrading-script-917e014.md)
+
+> ### Example:  
+
+The import `import groovy.util.XmlSlurper`is incompatible with the Groovy 4 runtime. It should be replaced with `import groovy.xml.XmlSlurper`.
+
+
+
+## Restrict usage to supported frameworks and libraries
+
+This guideline helps identify the use of internal, unsupported, or restricted classes and libraries in groovy scripts. Using unsupported frameworks can result in runtime failures, upgrade incompatibilities, maintenance challenges, and unexpected behavior after software updates.
+
+No automatic fix is provided for this; you must manually replace or remove unsupported implementations.
+
+> ### Note:  
+> The guideline scans both versions of groovy scripts version 1 and version 2. See [Upgrading Script](upgrading-script-917e014.md)
+
+To ensure long-term stability and upgrade readiness:
+
+-   **Use Supported Libraries**: Always use libraries and APIs provided or approved by SAP. This helps maintain compatibility across upgrades and reduces dependency-related issues.
+
+-   **Bundle External Libraries Carefully**: If a required library is not available in SAP Integration Suite, it can be bundled with the integration flow. However, additional libraries may increase artifact size and startup time.
+
+-   **Avoid Restricted System Access**: Do not directly access the operating system, file system, network resources, or runtime environment. Use SAP-provided APIs for secure and supported operations.
+
+-   **Avoid Unsupported System Classes**: Using internal or unsupported classes can lead to runtime instability and upgrade issues. Prefer supported SAP APIs and extensions.
+
+
+The guideline detects usage of unsupported class groups, including:
+
+-   OSGi \(`org.osgi.framework.*`, `org.osgi.service.event.*`\)
+
+-   Quartz \(`org.quartz.*`\)
+
+-   Spring \(`org.springframework*`\)
+
+-   HikariCP \(`com.zaxxer.hikari.*`\)
+
+-   Groovy SQL \(`groovy.sql.*`\)
+
+-   Saxon \(`net.sf.saxon.*`\)
+
+-   Selected Apache Camel internal classes \(`org.apache.camel.*`\)
+
+
+
+
 ## How to Fix?
 
 **How to Fix?**: In the script editor’s *Problems* view, navigate to the *Upgrade Readiness Check* tab, locate the problem description for above design guideline checks, and select *Fix* from the *Actions* column to understand the details and then automatically fix the issue. The incompatibilities \(like few libraries and classes\) for which an automatic Fix is not provided, should be removed from the script manually. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md)

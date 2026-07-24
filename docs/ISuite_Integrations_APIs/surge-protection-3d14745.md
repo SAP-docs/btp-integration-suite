@@ -93,6 +93,50 @@ Supported units are seconds, and milliseconds.
 </tr>
 </table>
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+429
+
+</td>
+<td valign="top">
+
+Surge protection limit exceeded. Surge Protection limit exceeded. Too many requests were received within the configured time interval. Please reduce the request rate and retry after some time.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Surge protection invalid unit. An invalid value was specified for the Surge Protection unit. Please provide a valid unit in the Surge Protection policy configuration and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

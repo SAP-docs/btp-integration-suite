@@ -7,7 +7,7 @@ Information about the data that is collected by the knowledge base for generatin
 To generate and provide better proposals, SAP Integration Advisor collects some data respective to each artifact for its knowledge base. To know more about the contract information, refer to the section **SAP Integration Suite** here: [SAP Cloud Service Description Guide](https://cloudplatform.sap.com/support/service-description.html#section_11).
 
 > ### Note:  
-> To avoid the data collection for proposal service, you can opt out of proposal service completely. You can use this opt-out feature if you don’t want to use the proposal service and don’t want your content to be collected. To know more, see [Settings for MIGs and MAGs](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/4c442af844e54848ad66f071ae8233ee.html "") :arrow_upper_right:.
+> To avoid the data collection for proposal service, you can opt out of proposal service completely. You can use this opt-out feature if you don’t want to use the proposal service and don’t want your content to be collected. To know more, see [Settings for MIGs and MAGs](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/4c442af844e54848ad66f071ae8233ee.html "Documentation export templates and administrative settings that allow you to customize the appearance of exported MIG and MAG documents and control participation in the proposal service.") :arrow_upper_right:.
 
 The sections below pertaining to each artifact mention the details of the data which will and which will not be a part of the knowledge base.
 

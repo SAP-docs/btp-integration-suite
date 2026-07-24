@@ -70,6 +70,6 @@ A Developer Hub administrator can perform the following tasks:
     > ### Note:  
     > You can create a maximum of 18 custom attributes per application. You cannot modify the name of a created custom attribute. However, you can modify its value whenever required. You can delete a custom attribute if it is no longer needed.
 
-    For more information on the usage of custom attributes in a subscription, see [Example: Accessing the Custom Attributes a Subscription](example-accessing-the-custom-attributes-a-subscription-1cbd94c.md).
+    For more information on the usage of custom attributes in a subscription, see [Using Custom Attributes in Product Subscriptions](using-custom-attributes-in-product-subscriptions-1cbd94c.md).
 
 

@@ -6,6 +6,7 @@
 > -   If you are configuring the sender channel to receive asynchronous AS2 MDN, select the AS2 MDN message protocol.
 > -   If you want to call the AS2 MDN sender channel, use http://<host\>:<port\>/as2/mdn .
 > -   You must [Activate Enterprise Messaging](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/activating-enterprise-messaging?locale=en-US&version=Cloud)/ [Message Queue](managing-message-queues-cdcce24.md) to use this adapter.
+> -   The option "Skip Authentication" is available exclusively for the Edge Integration Cellruntime, from the AS2 MDN Sender adapter version 1.11.
 
 > ### Note:  
 > For Edge Integration Cell runtime fetching the values dynamically from partner directory is not supported.
@@ -43,6 +44,29 @@ Description
 Specify the relative path of the endpoint URL.
 
 For example, if the URL is `http://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Skip Authentication* 
+
+</td>
+<td valign="top">
+
+Select this option if authentication and authorization are not required for inbound AS2 calls. When selected, the adapter accepts incoming messages without validating HTTP-level credentials, relying instead on AS2 message-level security \(such as message encryption and digital signing\). This option is only available on the Edge Integration Cell runtime profile.
+
+> ### Note:  
+> When this option is selected, the **Authorization** and **User Role** fields are hidden, as they are not applicable in a no-authentication scenario.
+
+> ### Note:  
+> Operating an AS2 endpoint without authentication increases the risk of partner identity spoofing, message tampering, and challenges in establishing message ownership during audits or dispute investigations. To mitigate these risks, you can
+> 
+> -   Use message signing and encryption to ensure message integrity and prevent unauthorized modification during transit.
+> -   Restrict AS2 access to trusted partner IP addresses and continuously monitor for anomalous activity.
+
+
 
 </td>
 </tr>
@@ -149,6 +173,9 @@ Select among the following values to determine the source of Partner ID:
 
 > ### Note:  
 > The source of partner ID determines the behaviour of other dynamic supported fields of AS2 MDN Sender adapter like *Verify Signature*, *Verify MIC* and *Public Key Alias*.
+
+> ### Note:  
+> When **Skip Authentication** is selected in the **Connection** tab, only **AS2 Partner ID Header** is supported as the resolution source.
 
 
 

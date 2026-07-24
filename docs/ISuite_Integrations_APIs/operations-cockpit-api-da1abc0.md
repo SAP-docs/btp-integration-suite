@@ -72,6 +72,20 @@ For more information, see [Component Monitor](https://help.sap.com/docs/integrat
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Job Management
+
+</td>
+<td valign="top">
+
+Access scheduled background jobs running on your Edge Integration Cell. These include monitoring data cleanup, monitoring data aggregation, and diagnostic data cleanup.
+
+For more information, see [Job Management](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/job-management?version=CLOUD).
+
+</td>
+</tr>
 </table>
 
 
@@ -153,6 +167,42 @@ RuntimeParameter
 <td valign="top">
 
 Components define a set of runtime parameters that you can change to adjust component configurations.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Job
+
+</td>
+<td valign="top">
+
+This entity represents scheduled background tasks that run on Edge Integration Cell. It's the abstract base type for all job parameters and stores the currently configured values for specific job instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JobParameter
+
+</td>
+<td valign="top">
+
+This entity stores the current configured values of job parameters for specific job instances.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JobSchedule
+
+</td>
+<td valign="top">
+
+This entity is the abstract base type for all scheduled configurations.
 
 </td>
 </tr>

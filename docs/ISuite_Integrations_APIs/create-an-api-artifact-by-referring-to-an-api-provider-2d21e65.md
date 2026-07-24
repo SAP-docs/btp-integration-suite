@@ -15,6 +15,6 @@ There are two ways to create an API artifact via the API provider method:
 
     For the configuration steps, see [Creating API Artifact By Referring to a Business Systems](create-an-api-artifact-using-a-discoverable-system-bd5c1f4.md).
 
--   **Discover an API by referring to an SAP BTP destination**: Create an API artifact by directly referring to a SAP BTP destination that has been created in the subaccount. For the configuration steps, see [Create an API Artifact by Referring to a Destination](create-an-api-artifact-by-referring-to-a-destination-a0bdfd4.md).
+-   **Discover an API by referring to an SAP BTP destination**: Create an API artifact by directly referring to a SAP BTP destination that has been created in the subaccount. For the configuration steps, see [Create an API Artifact Using a Destination](create-an-api-artifact-using-a-destination-a0bdfd4.md).
 
 

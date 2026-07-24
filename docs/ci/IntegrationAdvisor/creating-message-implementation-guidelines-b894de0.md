@@ -24,7 +24,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 
 ## Procedure
 
-1.  Choose MIGs <span class="SAP-icons-V5"></span> icon from the left pane.
+1.  Go to <span class="SAP-icons-V5"></span> MIGs.
 
 2.  Choose *Create* in the resulting screen to create a MIG.
 
@@ -88,22 +88,21 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 8.  In the *Node Selection* step, you can select nodes that are automatically qualified in your MIG based on the qualifier values present in your payload.
 
     > ### Note:  
-    > This works only if required qualifying values are available in the payload. If available, the nodes selected for qualification are automatically qualified with the qualifier values contained in the payload thereby simplifying the qualification process.
+    > This step works only if required qualifying values are available in the payload. If available, the nodes selected for qualification are automatically qualified with the qualifier values contained in the payload thereby simplifying the qualification process.
     > 
-    > Nodes that do not have a unique qualification marker are disabled for selection.
+    > Nodes without a unique qualification marker are disabled for selection.
 
-    To learn more, see the blog [Integration Advisor – payload-based qualification at time of MIG creation](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-payload-based-qualification-at-time-of-mig-creation/ba-p/13990599).
+    See also the blog [Integration Advisor – payload-based qualification at time of MIG creation](https://community.sap.com/t5/technology-blogs-by-sap/integration-advisor-payload-based-qualification-at-time-of-mig-creation/ba-p/13990599).
 
 9.  In the *MIG Creation* step, maintain the following fields:
 
-    1.  *Name*: Name of the MIG
+    1.  *Name*: Name of the message implementation guideline
 
     2.  *Direction*: Direction is used together with your *Own Business Context* and your *Partners Business Context* to make the *Proposal Service* more precise. The values given describe the direction from a B2B interaction point of view.
 
-        -   *In* - The MIG describes a message that you receive from a Business Partner.
-
-        -   *Out* - The MIG describes a message that you send to a Business Partner.
-        -   *Both* - The MIG describes a message that can both be received from a partner or sent to a partner. Or the MIG describes an A2A communication where only the *Own Business Context* is set \(and where *Partner Business Context* isn't relevant\).
+        -   *In*: The MIG describes a message that you receive from a business partner.
+        -   *Out*: The MIG describes a message that you send to a business partner.
+        -   *Both*: The MIG describes a message that can both be received from a partner or sent to a partner. Alternatively, the MIG describes an A2A communication where only the *Own Business Context* is set \(and where *Partner Business Context* isn't relevant\).
 
         *Example*: Say you receive an EDIFACT message from your Business Partner and map it to an IDoc message that is sent to your backend system. In this case, you should classify both your Source EDIFACT MIG and your Target IDoc MIG as “*In*”, because they both represent a message where your Business Partner is the logical sender and your company is the logical receiver.
 
@@ -115,7 +114,7 @@ A message implementation guideline \(MIG\) is the source/target that you use in 
 10. Choose *Create*.
 
     > ### Note:  
-    > You can also create a MIG from the Library of Type Systems. Navigate to the *Type Systems* <span class="SAP-icons-V5"></span> icon from the left pane, choose the type systems based on your requirement and navigate to the *Messages* tab.
+    > You can also create a MIG from the Library of Type Systems. Navigate to <span class="SAP-icons-V5"></span> Type Systems, choose the type systems based on your requirement and navigate to the *Messages* tab.
     > 
     > -   Select your message and the respective version and choose <span class="SAP-icons-V5"></span> to create the MIG.
     > 

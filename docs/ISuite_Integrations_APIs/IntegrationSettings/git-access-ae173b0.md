@@ -24,7 +24,7 @@ Cloud Integration enables seamless integration of web based online platform, Git
 ### Procedure
 
 1.  Navigate to *Settings* \> *Integrations* and choose *Git Access*.
-2.  Choose *Edit* in the *Repository Details* table.
+2.  Choose *Edit* below the *Repository Details* table.
 3.  Choose *Add*.
 4.  In the dialog, enter the *PAT token*.
 5.  Enter the *Repository URL*.

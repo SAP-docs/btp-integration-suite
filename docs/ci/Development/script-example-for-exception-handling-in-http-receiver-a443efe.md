@@ -12,6 +12,8 @@ This Groovy Script example performs the following tasks:
 -   Copies the value of the HTTP error to the message body
 -   Copies the HTTP error text and error code to exchange properties
 
+The below sample is for version 1 scripts:
+
 > ### Sample Code:  
 > ```
 > import com.sap.gateway.ip.core.customdev.util.Message;

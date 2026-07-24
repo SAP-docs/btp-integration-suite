@@ -58,7 +58,7 @@ You can build a real-life API proxy that exposes a Web service from a backend sy
 
 You can group API proxies together into units that represent all the services needed to perform some larger business under a data object known as a product, or create a product when you want to expose one or more APIs to the application developer. For more information, see [Create a Product](create-a-product-d769622.md).
 
-You can also view the applications you’ve subscribed to. To know more, see [View Applications](view-applications-feac368.md).
+You can also view the applications you’ve subscribed to. To know more, see [View Applications](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/feac3687b4d842cb903bdbd9e13ace54.html "In the context of API Management, an application is the unit of API consumption.") :arrow_upper_right:.
 
 **Related Information**  
 

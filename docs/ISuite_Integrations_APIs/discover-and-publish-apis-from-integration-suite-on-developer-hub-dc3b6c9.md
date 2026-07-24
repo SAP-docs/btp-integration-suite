@@ -146,7 +146,7 @@ Subscribe to Consume the APIs and View Products on Developer Hub Catalog
 </td>
 <td valign="top">
 
-To consume the APIs, the application developer must subscribe to the product by adding it to a new or existing application. For more information, see [Subscribe to a Product to Consume APIs in an Application](subscribe-to-a-product-to-consume-apis-in-an-application-f74f47d.md).
+To consume the APIs, the application developer must subscribe to the product by adding it to a new or existing application. For more information, see [Subscribe to a Product to Consume APIs and Events in an Application](subscribe-to-a-product-to-consume-apis-and-events-in-an-application-f74f47d.md).
 
 </td>
 </tr>
@@ -155,5 +155,5 @@ To consume the APIs, the application developer must subscribe to the product by 
 **Related Information**  
 
 
-[Subscribe to a Product to Consume APIs in an Application](subscribe-to-a-product-to-consume-apis-in-an-application-f74f47d.md "As an application developer, you need to subscribe to a product to consume the APIs within it. As part of the subscription process, you can either create a new application and add the product to it, or add the product to an existing application.")
+[Subscribe to a Product to Consume APIs and Events in an Application](subscribe-to-a-product-to-consume-apis-and-events-in-an-application-f74f47d.md "As an application developer, you need to subscribe to a product to consume the APIs and Events within it. As part of the subscription process, you can either create a new application and add the product to it, or add the product to an existing application.")
 

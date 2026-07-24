@@ -184,11 +184,11 @@ Each primitive serves a distinct purpose and is exposed through the MCP protocol
 
 [API Artifact](api-artifact-a4f87b1.md "API artifacts are the core building blocks used to design, configure, publish, and manage APIs in SAP Integration Suite, API Management. These artifacts define how APIs behave, how they interact with backend systems, and how they are exposed to consumers.")
 
-[Deploy an Artifact](deploy-an-artifact-b70e7ec.md "After creating an API or an MCP server artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
+[Deploy APIs and MCP Servers](deploy-apis-and-mcp-servers-b70e7ec.md "After creating an API or an MCP server artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
-[Copy an Artifact](copy-an-artifact-820c9e8.md "Create a copy of an existing API artifact or an MCP server with all its configurations and policies intact. This can be useful when you want to create a similar artifact but with some modifications or variations.")
+[Copy an API or an MCP Server Artifact](copy-an-api-or-an-mcp-server-artifact-820c9e8.md "Create a copy of an existing API artifact or an MCP server with all its configurations and policies intact. This can be useful when you want to create a similar artifact but with some modifications or variations.")
 
-[Delete an Artifact](delete-an-artifact-81694d6.md "Use this procedure to delete an API or an MCP Server artifact from an integration package in the Design workspace.")
+[Delete APIs and MCP Servers](delete-apis-and-mcp-servers-81694d6.md "Use this procedure to delete an API or an MCP Server artifact from an integration package in the Design workspace.")
 
 [How Model Context Protocol \(MCP\) Server Enables AI Integration](how-model-context-protocol-mcp-server-enables-ai-integration-572e7fd.md "The MCP server enables AI agents to interact with enterprise systems through a structured process.")
 

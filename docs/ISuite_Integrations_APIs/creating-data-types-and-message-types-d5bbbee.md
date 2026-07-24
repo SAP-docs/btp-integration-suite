@@ -57,7 +57,7 @@ You’ve created an integration package and opened it in edit mode. For more inf
 
 2.  In the dialog box, choose *Import from ES Repository*.
 
-3.  *ES Repository* appears as the *Source*. In the *Name* list, select an ES Repository from the list of connected systems. The *Address* is automaticaly populated.
+3.  *ES Repository* appears as the *Source*. In the *Name* list, select an ES Repository from the list of connected systems. The *Address* and *Location ID* are automaticaly populated.
 
 4.  Choose *Connect*. A list of available data types or message types in ES repository appears.
 

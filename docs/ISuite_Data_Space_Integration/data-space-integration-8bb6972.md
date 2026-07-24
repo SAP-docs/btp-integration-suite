@@ -23,6 +23,6 @@ The following is an overview of what you can learn about Data Space Integration:
 -   [Identity and Access Management for Data Space Integration](identity-and-access-management-for-data-space-integration-211c66a.md): Learn about the roles and authorizations that you need to work with Data Space Integration.
 -   [Monitoring Agreements](monitoring-agreements-a247cc4.md): Keep an overview of the active agreements that you're involved with.
 
--   [Troubleshooting for Data Space Integration](troubleshooting-for-data-space-integration-166fa88.md): If you're facing issues, report an incident in our SAP Support Portal.
+-   [Getting Support for Data Space Integration](getting-support-for-data-space-integration-166fa88.md): If you're facing issues, report an incident in our SAP Support Portal.
 
 

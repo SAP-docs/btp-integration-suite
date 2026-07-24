@@ -131,7 +131,7 @@ See [Edge Integration Cell Runtime Scope](https://help.sap.com/viewer/caeaa5e76f
 </td>
 <td valign="top">
 
-[Different Methods for Creating an API Artifact](../different-methods-for-creating-an-api-artifact-c2fe62c.md) 
+[Creating an API Artifact](../creating-an-api-artifact-c2fe62c.md) 
 
 </td>
 </tr>

@@ -142,7 +142,7 @@ The specification-driven approach allows you to quickly create an API artifact b
         </td>
         <td valign="top">
         
-        API artifacts can be exposed as REST, ODATA, and SOAP.
+        API artifacts can be exposed as REST, ODATA, and SOAP. For more information, [Service Types for API Artifacts](service-types-for-api-artifacts-4dd2dde.md).
         
         </td>
         </tr>
@@ -242,6 +242,10 @@ The specification-driven approach allows you to quickly create an API artifact b
             -   **Target** – Select the configured destination.
             -   **Relative URL** – Specify the relative path that should be appended to the destination URL.
 
+                > ### Note:  
+                > The relative URL must contain only the path component, such as `/api/orders`. Do not include query parameters \(for example, `?status=active&id=123`\) as part of the relative URL.
+
+
         -   *URL*: Use this option when you want to directly specify the backend service endpoint.
 
             Provide the following details:
@@ -263,6 +267,6 @@ The specification-driven approach allows you to quickly create an API artifact b
     -   *Previous*: Returns to the previous step to modify the selected method or runtime profile.
     -   *Cancel*: Closes the wizard without creating the API artifact.
 
-    After adding the API artifact, you can further configure and manage it as needed. For information, see [Govern and Manage an API Artifact](govern-and-manage-an-api-artifact-79aee17.md).
+    After adding the API artifact, you can further configure and manage it as needed. For information, see [Configure an API Artifact](configure-an-api-artifact-79aee17.md).
 
 

@@ -17,6 +17,62 @@ See the following video for visual instructions on how to add and configure the 
 > 
 > The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us assume that the quota allotted is 3 requests in the specified period of 5 minutes. At 00:03, if the quota limit is reached, the subsequent requests post 00:03 are rejected until the window is reset at 00:05.
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+429
+
+</td>
+<td valign="top">
+
+Quota exceeded. The maximum number of allowed API calls has been reached. Please wait until the quota resets or contact your administrator.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Quota invalid counter key. The counter key for the quota is invalid or could not be found. Please verify the counter key configuration in the Quota policy and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Quota invalid unit. An invalid value was specified for the quota unit. Please provide a valid unit in the Quota policy configuration and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

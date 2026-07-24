@@ -17,6 +17,8 @@ The steps described here explains the process of running a *Simulation* in both 
 
 
 
+<a name="loio45a71f8ffd74436aaf02a3536f3c6992__procedure"/>
+
 ## Procedure
 
 1.  Choose your package and then select the *Artifact*.
@@ -52,7 +54,7 @@ The steps described here explains the process of running a *Simulation* in both 
     > 
     > -   Simulation of looping process call with maximum number of iterations more than 10 is not supported.
 
-6.  Choose :arrow_forward: to run the simulation. Once the simulation run is successful, a message :envelope:envelope appears with a tracing information. Choosing the envelope you can see the details.
+6.  Choose :arrow_forward: to run the simulation. Once the simulation run is successful, a message :envelope:envelope appears alongside each flow component with a tracing information. Choosing the envelope you can see the details.
 
 7.  Choose <span class="SAP-icons-V5"></span>to clear the simulation and you can start with fresh flow steps to begin new set of simulation.
 

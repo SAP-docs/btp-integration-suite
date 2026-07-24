@@ -1478,6 +1478,13 @@ In this tab, you create a system. Each system has a type system to define the B2
     > ### Note:  
     > Communications created before the version 6.80.\* of Cloud Integration can still show an *Inactive* *Activation Status* although they're in use. **No action is required** for you to continue using them. You can use the switch button in the *Activation Status* column to change their status to *Active*.
 
+17. If the newly created communication is a receiver communication and reuse mode is enabled in the Configuration Manager \(see [Optimized Agreement Activation](configuration-manager-7daf06c.md#loio7daf06ceece84dc09d3ca63fc62d0a61__section_optimized_agreement_activation)\), you can push its configuration to the Partner Directory before it can be used by an agreement.
+
+    To activate your communication, use the switch button in the *Activation Status* column.
+
+    > ### Note:  
+    > Communications created before Cloud Integration version 6.81.\* can still have an inactive activation status despite being actively used. No action is required from you to continue using them, but for clarity, you can also activate them.
+
 
 
 

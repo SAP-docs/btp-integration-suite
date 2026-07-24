@@ -54,7 +54,7 @@ Tenant Administrator
 
 -   [Security for Edge Integration Cell](security-for-edge-integration-cell-b9871b2.md)
 
--   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
+-   [Getting Support for Edge Integration Cell](getting-support-for-edge-integration-cell-816d9e4.md)
 
 
 
@@ -71,7 +71,7 @@ Integration Developer
 
 -   [Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
--   [Troubleshooting for Edge Integration Cell](troubleshooting-for-edge-integration-cell-816d9e4.md)
+-   [Getting Support for Edge Integration Cell](getting-support-for-edge-integration-cell-816d9e4.md)
 
 
 

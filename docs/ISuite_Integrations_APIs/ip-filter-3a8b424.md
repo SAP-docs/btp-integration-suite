@@ -265,6 +265,110 @@ Set of supported headers -
 </tr>
 </table>
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+403
+
+</td>
+<td valign="top">
+
+IP forbidden access. Access is forbidden for the caller IP address. Please contact your administrator.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+IP missing header containing IP list. The client IP address is not present in the configured header containing the IP list. Please ensure the request includes the required header with a valid IP and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Header containing IP list not supported. The specified header containing the IP list is not supported:`X-Forwarded-IP`. Please configure a supported header \(e.g., `X-Forwarded-For`\) and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+CIDR format error. Unable to parse the CIDR address range `192.168.1.0/33`. Error details: invalid prefix length. Please correct the CIDR format and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+IP preservation variable not set fail request. IP Filter policy execution failed because Client IP Preservation is disabled. Please enable Client IP Preservation in the environment configuration and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+IP preservation variable not set fail deployment. Failed to deploy the API because Client IP Preservation is disabled. Please enable Client IP Preservation in the environment configuration before deploying.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+Unable to determine IP preservation variable. Unable to determine the Client IP Preservation variable. Please verify that the Client IP Preservation setting is correctly configured in the environment and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

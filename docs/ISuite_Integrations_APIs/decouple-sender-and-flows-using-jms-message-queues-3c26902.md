@@ -43,7 +43,7 @@ The integration process performs the following steps:
     
     ```
 
-3.  In a *Send* step, the message is passed to a JSM queue with name *DecoupleFlows*.
+3.  In a *Send* step, the message is passed to a JMS queue with name *DecoupleFlows*.
 
     Once the message has been stored successfully, a response is to be created and sent back to the calling client.
 

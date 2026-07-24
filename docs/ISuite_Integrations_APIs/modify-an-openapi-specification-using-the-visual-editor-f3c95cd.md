@@ -10,7 +10,7 @@ Use this tool to efficiently manage and modify your API definitions without manu
 
 ## Prerequisites
 
-You have existing APIs that need to be updated. See [Different Methods for Creating an API Artifact](different-methods-for-creating-an-api-artifact-c2fe62c.md).
+You have existing APIs that need to be updated. See [Creating an API Artifact](creating-an-api-artifact-c2fe62c.md).
 
 
 

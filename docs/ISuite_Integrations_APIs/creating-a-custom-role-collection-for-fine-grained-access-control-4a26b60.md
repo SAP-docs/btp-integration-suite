@@ -51,6 +51,18 @@ Description
 <tr>
 <td valign="top">
 
+API.invoke
+
+</td>
+<td valign="top">
+
+Default role for calling API and MCP Server with an IdP user.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 CredentialsEdit
 
 </td>

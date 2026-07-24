@@ -4,6 +4,8 @@
 
 # Configuration Manager
 
+Configuration Manager provides centralized settings for managing B2B transaction monitoring, including custom search attributes, retry policies, acknowledgment timeouts, custom rules for agreement lookup, certificate alerts, and optimized agreement activation. Use it to customize system behavior, improve operational efficiency, and maintain control over B2B integration scenarios
+
 
 
 <a name="loio7daf06ceece84dc09d3ca63fc62d0a61__section_x2f_xb2_jzb"/>
@@ -244,4 +246,50 @@ The alert tag shows up as follows:
 If no certificates have expired or are expiring soon, there's no alert tag.
 
 Choose the tag to expand the *Certificate Expiration Overview*. This overview lists all certificates that have expired or are expiring soon. To navigate to the affected profile and certificate, choose <span class="SAP-icons-V5"></span> Go to Profile. You can then upload a new certificate.
+
+
+
+<a name="loio7daf06ceece84dc09d3ca63fc62d0a61__section_optimized_agreement_activation"/>
+
+## Optimized Agreement Activation
+
+In the *Optimized Agreement Activation* section, you can enable or disable the reuse mode for your tenant. With the reuse mode, you can optimize the activation of agreements by reusing selective configurations. Receiver communication channels and MIGs and MAGs that are reused across multiple agreements are stored as independent entries in the Partner Directory. This means that changes to a reused resource no longer require you to mass reactivate every agreement that references it.
+
+More specifically, reuse mode has the following advantages for agreements with `Bound with Template` mode:
+
+-   **Fewer reactivation when a shared MAG changes**: If a MAG is reused by multiple agreements, which is always the case with agreements with `Bound with Template` mode, changes to the MAG no longer require you to mass activate all affected agreements. After the initial enabling, you only reactivate the one agreement that uses the changed MAG to forward the change to the Partner Directory. This optimization also works when using a newer version of the same MAG.
+
+    > ### Restriction:  
+    > This feature applies only when you use MAGs as the mapping option. If you use custom mapping integration flow or sequential mappings, the used MIGs are still generated the standard way.
+
+-   **Update receiver communication channels independently**: Reactivate a receiver communication channel that's shared across agreements independently after you've modified it. You don't have to reactivate affected agreements to apply changes. For information on activating and deactivating communications, see [Systems](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management/systems-company-profile).
+
+
+
+### Prerequisites
+
+-   Before enabling reuse mode, ensure that the version of the integration flow `Cloud Integration – Trading Partner Management V2` is **2.10.0 or higher**. If the Integration flow version is lower than 2.10.0, it continues to read receiver communication configurations from the computed PID. Since the reuse mode stores those configurations in separate Partner Directory entries, the integration flow is unable to locate them and runtime processing errors occurs.
+
+-   If you're using customized integration flows for Trading Partner Management using the SAP Business Accelerator Hub, check with your solution provider to confirm the flows' compatibility with this feature.
+-   Reuse mode only affects agreements with `Bound with Template` mode. It has no impact on agreements with `Copied from Template` mode.
+
+
+
+### Enabling Reuse Mode
+
+Perform the following steps to activate or deactivate reuse mode.
+
+1.  In *Design* \> *B2B Scenarios*, go to the tab *Configuration Manager*.
+2.  In the section *Optimized Agreement Activation*, enable the reuse mode by switching the toggle button to **ON**.
+3.  In the confirmation dialog, confirm your action by choosing *Enable*.
+
+Once the reuse mode is enabled, the receiver communication channels are eligible for independent activation or deactivation.
+
+> ### Note:  
+> The first time you enable reuse mode, you have to **mass activate all agreements sharing the same MIG or MAG once**. After this initial synchronization, you only have to reactivate single agreements when there are future changes in the MIG/MAG.
+
+> ### Note:  
+> After activating a receiver communication, you have to **mass activate all agreements sharing this receiver communication once** so that reference from agreements to independent receiver communication are established. After this initial synchronization step, you don't have to reactive any agreements when there are future changes of a receiver communication.
+
+To **disable** the reuse mode, toggle the switch to **OFF** and confirm your action in the upcoming dialog.
 

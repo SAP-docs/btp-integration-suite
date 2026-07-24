@@ -91,7 +91,7 @@ To know more about the available flow steps for Edge Integration Cell, see [Edge
 
 7.  Configure the policies that you've added to the *Policy Model*.
 
-    Double-click on the policy, and fill in all the necessary details under the *General* and the *Policy Settings* tab. For more information on the *Policy Settings* , see [Working with Traffic Management Policies](working-with-traffic-management-policies-165db68.md) and [Working with Security Policies](working-with-security-policies-aebf968.md).
+    Double-click on the policy, and fill in all the necessary details under the *General* and the *Policy Settings* tab. For more information on the *Policy Settings* , see [Traffic Management Policies](traffic-management-policies-165db68.md) and [Security Policies](security-policies-aebf968.md).
 
     ![](images/Policy_4_883203a.png)
 

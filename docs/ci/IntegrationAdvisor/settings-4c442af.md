@@ -4,9 +4,11 @@
 
 # Settings 
 
+Documentation export templates and administrative settings that allow you to customize the appearance of exported MIG and MAG documents and control participation in the proposal service.
+
 The user profile section in the tenant allows you to maintain personalized content such as administrative settings and setting a template for your documentation export. This template is later picked up by the system whenever you export a message implementation guideline \(MIG\) or a mapping guideline \(MAG\) in the documentation format.
 
-The administrative settings allow you to opt-in/opt out of the proposal service.
+The administrative settings allow you to opt in or out of the proposal service.
 
 
 
@@ -216,7 +218,6 @@ Change your administrative settings as follows:
     > **Disabling** the proposal service has the following consequences:
     > 
     > -   The proposal service stops collecting Integration Advisor data, such as MIG and MAG data.
-    > 
     > -   MIG and MAG proposals are no longer accessible to this tenant.
     > 
     > The change to this setting takes effect in the future, but it doesn't have any impact on previously collected data.
@@ -224,7 +225,6 @@ Change your administrative settings as follows:
     > **Enabling** the proposal service has the following impact:
     > 
     > -   The proposal service starts gathering Integration Advisor data, such as MIGs and MAGs from both past and future sources.
-    > 
     > -   MIG and MAG proposals are accessible to this tenant.
 
 3.  Choose *Save*.

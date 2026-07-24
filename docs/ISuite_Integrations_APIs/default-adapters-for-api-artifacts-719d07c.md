@@ -48,9 +48,7 @@ Related Topic
 <tr>
 <td valign="top">
 
-HTTPS
-
-Sender adapter
+HTTPS Sender Adapter
 
 </td>
 <td valign="top">
@@ -79,9 +77,7 @@ You can connect to an internet-accessible endpoint using a URL or use a destinat
 <tr>
 <td valign="top">
 
-HTTP
-
-Receiver adapter
+HTTP Receiver Adapter
 
 </td>
 <td valign="top">
@@ -117,9 +113,7 @@ Method can also be determined dynamically by reading a value from a message head
 <tr>
 <td valign="top">
 
-OData
-
-Sender adapter
+OData Sender Adapter
 
 </td>
 <td valign="top">
@@ -154,16 +148,14 @@ Supported versions: OData version 2.0
 </td>
 <td valign="top">
 
-[OData Receiver Adapter for API Artifact](odata-receiver-adapter-for-api-artifact-c34c22f.md) 
+[OData Sender Adapter for API Artifact](odata-sender-adapter-for-api-artifact-a636209.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-OData
-
-Receiver adapter
+OData Receiver Adapter
 
 </td>
 <td valign="top">
@@ -195,16 +187,14 @@ Supported versions:
 </td>
 <td valign="top">
 
-[OData Sender Adapter for API Artifact](odata-sender-adapter-for-api-artifact-a636209.md)
+[OData Receiver Adapter for API Artifact](odata-receiver-adapter-for-api-artifact-c34c22f.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-SOAP SOAP 1.x
-
-Sender Adapter
+SOAP \(SOAP 1.x\) Sender Adapter
 
 </td>
 <td valign="top">
@@ -230,16 +220,14 @@ A size limit for the inbound message can be configured for the sender adapter.
 </td>
 <td valign="top">
 
-[SOAP Receiver Adapter for API and MCP Server](soap-receiver-adapter-for-api-and-mcp-server-2a69e87.md) 
+[SOAP Sender Adapter for API and MCP Server](soap-sender-adapter-for-api-and-mcp-server-f0e2535.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-SOAP SOAP 1.x
-
-Receiver adapter
+SOAP \(SOAP 1.x\) Receiver Adapter
 
 </td>
 <td valign="top">
@@ -261,7 +249,7 @@ The adapter supports Web services Security \(WS-Security\).
 </td>
 <td valign="top">
 
-[SOAP Sender Adapter for API and MCP Server](soap-sender-adapter-for-api-and-mcp-server-f0e2535.md) 
+[SOAP Receiver Adapter for API and MCP Server](soap-receiver-adapter-for-api-and-mcp-server-2a69e87.md) 
 
 </td>
 </tr>

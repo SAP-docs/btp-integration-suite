@@ -40,17 +40,27 @@ Message implementation guideline \(MIG\)
 </td>
 <td valign="top">
 
-Delete MIG entity
+-   Create MIG entity
+-   Copy MIG entity
+-   Create draft MIG version
+-   Update MIG version
+-   Activate MIG version
+-   Delete MIG entity
+-   Delete MIG version
 
-Delete MIG version
+
 
 </td>
 <td valign="top">
 
--   Message Implementation Guideline
+Message implementation guideline
 
+-   created successfully/creation failed
+-   copied from source ... successfully/copy from source ... failed
+-   draft created from source ... successfully/draft creation from source ... failed
+-   updated successfully/update failed
+-   activated successfully/activation failed
 -   deleted successfully/deletion failed
-
 
 Example:
 
@@ -58,7 +68,7 @@ When deleting a MIG successfully, the following event is written:
 
 > ### Output Code:  
 > ```
-> Configuration modification message. Attribute with name "Message Implementation Guideline" and value "abcd1234" was deleted. 
+> Data modification message. Attribute with name "Message Implementation Guideline" and value "abcd1234" was deleted. 
 > The attribute is a part of an object with type "Message Implementation Guideline" and id consisting of: message 
 > "Message Implementation Guideline with objectGuid abcd1234 deleted successfully".
 > ```
@@ -80,17 +90,27 @@ Mapping Guideline \(MAG\)
 </td>
 <td valign="top">
 
-Delete MAG entity
+-   Create MAG entity
+-   Copy MAG entity
+-   Create draft MAG version
+-   Update MAG version
+-   Activate MAG version
+-   Delete MAG entity
+-   Delete MAG version
 
-Delete MIG version
+
 
 </td>
 <td valign="top">
 
--   Mapping Guideline
+Mapping guideline
 
+-   created successfully/creation failed
+-   copied from source ... successfully/copy from source ... failed
+-   draft created from source ... successfully/draft creation from source ... failed
+-   updated successfully/update failed
+-   activated successfully/activation failed
 -   deleted successfully/deletion failed
-
 
 
 
@@ -104,20 +124,57 @@ Delete MIG version
 <tr>
 <td valign="top">
 
+Pre-Transformation Script \(PTS\)
+
+</td>
+<td valign="top">
+
+-   Create PTS entity
+-   Update PTS entity
+-   Delete PTS entity
+
+
+
+</td>
+<td valign="top">
+
+Pre-transformation script
+
+-   created successfully/creation failed
+-   updated successfully/update failed
+-   deleted successfully/deletion failed
+
+
+
+</td>
+<td valign="top">
+
+[Mapping Guidelines (MAGs)](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/42124f465fc0472a8ab0de30aa14edef.html "Learn what mapping guidelines are and how to work with the mapping guideline page.") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Customer message
 
 </td>
 <td valign="top">
 
-Delete customer message
+-   Create customer message
+-   Update customer message
+-   Delete customer message
+
+
 
 </td>
 <td valign="top">
 
--   Custom Message
+Custom message
 
+-   created successfully/creation failed
+-   updated successfully/update failed
 -   deleted successfully/deletion failed
-
 
 
 
@@ -131,24 +188,70 @@ Delete customer message
 <tr>
 <td valign="top">
 
+Custom codelist
+
+</td>
+<td valign="top">
+
+-   Create custom codelist
+-   Create draft custom codelist
+-   Update custom codelist
+-   Activate custom codelist
+-   Delete custom codelist entity or version
+
+
+
+</td>
+<td valign="top">
+
+Custom codelist
+
+-   created successfully/creation failed
+-   draft created from source ... successfully/draft creation from source ... failed
+-   updated successfully/update failed
+-   activated successfully/activation failed
+-   deleted successfully/deletion failed
+
+
+
+</td>
+<td valign="top">
+
+[Code Value Mapping](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/eb6dad8fdf6146cb980ee159738d5b16.html "Code value mappings represent the transformation of a code value that is set at the source element into a code value that is required at the target element. They're created within a specific MAG, accessible only by a particular node of that MAG, and are stored them as well.") :arrow_upper_right:
+
+[Deleting a Custom Codelist](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/01ad9ee34b48470d88292a8f91b502d3.html "Delete a codelist from the custom type system Custom Codelists.") :arrow_upper_right:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Value mapping
 
 </td>
 <td valign="top">
 
-Delete global code value mapping
+-   Create global code value mapping
+-   Copy global code value mapping entity
+-   Create draft global code value mapping version
+-   Update global code value mapping version
+-   Activate global code value mapping version
+-   Delete global code value mapping entity
+-   Delete global code value mapping version
 
-Delete global code value mapping entity
 
-Delete global code value mapping version
 
 </td>
 <td valign="top">
 
--   Code Value Mapping
+Code value mapping
 
+-   created successfully/creation failed
+-   copied from source ... successfully/copy from source ... failed
+-   draft created from source ... successfully/draft creation from source ... failed
+-   updated successfully/update failed
+-   activated successfully/activation failed
 -   deleted successfully/deletion failed
-
 
 
 
@@ -167,15 +270,24 @@ Licenses
 </td>
 <td valign="top">
 
-Create new license
+-   Create new license
+-   Delete license
+-   Refresh license list
+
+
 
 </td>
 <td valign="top">
 
--   Customer License
+Customer license
 
--   updated successfully/refresh failed for ...
+-   updated successfully/refresh failed
+-   created successfully/creation failed
+-   deleted successfully/deletion failed
 
+License list
+
+-   refreshed successfully/refresh failed
 
 
 
@@ -189,54 +301,79 @@ Create new license
 <tr>
 <td valign="top">
 
-Licenses
+Artifact
 
 </td>
 <td valign="top">
 
-Delete license
-
-</td>
-<td valign="top">
-
--   Customer License
-
--   deleted successfully/deletion failed
-
+-   Import artifacts
+-   Export artifacts
 
 
 
 </td>
 <td valign="top">
 
-[Managing License for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right: 
+Artifact
+
+-   imported successfully/import failed
+-   exported successfully/export failed
+
+
+
+</td>
+<td valign="top">
+
+[Message Implementation Guidelines (MIGs)](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/f9f2bab3ff3a4d86863199f6531ee695.html "") :arrow_upper_right:
+
+[Mapping Guidelines (MAGs)](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/42124f465fc0472a8ab0de30aa14edef.html "Learn what mapping guidelines are and how to work with the mapping guideline page.") :arrow_upper_right:
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Customer Codelist
+Authorization and Security
 
 </td>
 <td valign="top">
 
-Delete customer codelist entity
-
-Delete customer codelist version
-
-</td>
-<td valign="top">
-
--   Customer Codelist
--   deleted successfully/deletion failed
+-   User authorization failure
+-   License validation failure
+-   Entity access validation failure
+-   Trial license expiration
+-   Unlock artifact \(admin only\)
+-   Virus scan failure
 
 
 
 </td>
 <td valign="top">
 
-[Deleting a Custom Codelist](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/01ad9ee34b48470d88292a8f91b502d3.html "Delete a codelist from the custom type system Custom Codelists.") :arrow_upper_right:
+Authorization
+
+-   User authorization for resource ... failed
+
+License
+
+-   License validation for TypeSystem ... failed
+-   Entity access validation for TypeSystem ... failed
+-   Trial license expired for TypeSystem ...
+
+Artifact
+
+-   unlocked successfully/unlocked failed
+
+Virus scan
+
+-   Virus scan failed for resource ...
+
+
+
+</td>
+<td valign="top">
+
+[Managing License for Type Systems](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/ed1e961c636f4835aaa7248cf2488112.html "") :arrow_upper_right:
 
 </td>
 </tr>

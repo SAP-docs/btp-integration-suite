@@ -13,7 +13,7 @@ Inspect temporary storage usage and maximum file size per integration flow for a
 Inspect the volume of temporary storage used by different integration flows during a specific time period \(as selected with the *Time* parameter\). Only those integration flows that are identified as top consumers are shown, sorted top-down by average storage usage.
 
 > ### Tip:  
-> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15. The total number of integration flows displayed are the flows for which there's available data.
 
 The color shade of the cells reflects the level of storage usage. The darkest shade reflects the highest usage observed during the selected time period.
 

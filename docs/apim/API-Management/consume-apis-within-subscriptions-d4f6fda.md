@@ -2,19 +2,17 @@
 
 # Consume APIs within Subscriptions
 
-Once you create a subscription, you can then consume the APIs based on your business requirements.
-
 On subscribing, the application developer receives an API key that the subscription must pass on every request to the API. API keys provide a simple mechanism for authenticating subscriptions.
 
 API Management generates API keys for subscriptions, and enables you to add API key-based authentication to your APIs using policies. However, enforcement of the key is performed at the API proxy level, not by the API product itself. Therefore, you must ensure that all API proxies, and the corresponding resources defined by those API proxies, implement some form of key validation.
 
-Before you use the API keys, ensure you are aware of the policies that support API keys and their functionality. There are two popular ways how APIKeys are provisioned. They are provided either as part of a Simple APIKey verification or as part of OAuth verification.
+Before you use the API keys, ensure you are aware of the policies that support API keys and their functionality. There are two popular ways how API keys are provisioned. They are provided either as part of a simple API key verification or as part of OAuth verification.
 
 
 
 ## VerifyAPIKey Validation
 
-If you define an API proxy to perform key validation by using the VerifyAPIKey policy, provide the API Key details to gain access to the subscriptions.
+If the API proxy is defined to perform key validation by using the VerifyAPIKey policy, you must provide the API Key details to gain access to the subscriptions.
 
 
 

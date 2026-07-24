@@ -27,6 +27,7 @@
 > -   You must activate [Enterprise Messaging](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/a74cddceacb34abb958e817c1f6782d2.html "Activate SAP Event Mesh.") :arrow_upper_right:/ [Message Queue](managing-message-queues-cdcce24.md) to use AS2 Sender adapter version 1.6 and further. From version 1.7 and before, the activation is not required if you select [Quality of Service](configure-the-as2-sender-adapter-5d7ee17.md#loio5d7ee17e554841df8ef355413b88e056__table_m23_m42_n2b) as *Best Effort*.
 > -   The expiration period for stored messages is 90 days, after which the messages are deleted.
 > -   The retention threshold for alerting is two days, by which the messages have to be fetched before an alert is raised.
+> -   The option "Skip Authentication" is available exclusively for the Edge Integration Cellruntime, from the AS2 Sender adapter version 1.17.
 
 Once you have created a sender channel and selected the AS2 adapter, you can configure the following attributes. See [Overview of Integration Flow Editor](overview-of-integration-flow-editor-db10beb.md).
 
@@ -61,6 +62,29 @@ Description
 Specify the relative path of the endpoint URL.
 
 For example, if the URL is `https://<tenant address>/as2/<mdn or as2>/orders`, then enter the value as `/orders`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Skip Authentication* 
+
+</td>
+<td valign="top">
+
+Select this option if authentication and authorization are not required for inbound AS2 calls. When selected, the adapter accepts incoming AS2 messages without validating HTTP-level credentials, relying instead on AS2 message-level security \(such as message encryption and digital signing\). This option is only available on the Edge Integration Cell runtime profile.
+
+> ### Note:  
+> When this option is selected, the **Authorization** and **User Role** fields are hidden, as they are not applicable in a no-authentication scenario.
+
+> ### Note:  
+> Operating an AS2 endpoint without authentication increases the risk of partner identity spoofing, message tampering, and challenges in establishing message ownership during audits or dispute investigations. To mitigate these risks, you can
+> 
+> -   Use message signing and encryption to ensure message integrity and prevent unauthorized modification during transit.
+> -   Restrict AS2 access to trusted partner IP addresses and continuously monitor for anomalous activity.
+
+
 
 </td>
 </tr>
@@ -167,6 +191,9 @@ Select among the following values to determine the source of Partner ID:
 
 > ### Note:  
 > This field does not impact any *Private Key Alias* fields.
+
+> ### Note:  
+> When **Skip Authentication** is selected in the **Connection** tab, only **AS2 Partner ID Header** is supported as the resolution source.
 
 
 

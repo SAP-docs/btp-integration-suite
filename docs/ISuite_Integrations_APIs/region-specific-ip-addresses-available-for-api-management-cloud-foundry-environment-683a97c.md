@@ -253,6 +253,43 @@ Microsoft Azure
 </td>
 <td valign="top">
 
+uk20
+
+</td>
+<td valign="top">
+
+UK South \(London\)
+
+</td>
+<td valign="top">
+
+cf-uk20
+
+</td>
+<td valign="top">
+
+uksouth
+
+</td>
+<td valign="top">
+
+20.90.188.157, 20.90.185.120
+
+</td>
+<td valign="top">
+
+40.120.54.123, 20.117.141.160
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
 us21
 
 </td>

@@ -105,6 +105,122 @@ Determines whether the headers need to be validated against the provided API spe
 > ### Note:  
 > When the API validation policy is modeled inside a reusable API, the schema validation is performed against the API specification of the consuming API. This applies if you intend to deploy the API artifact with the validation policy on the Edge Integration Cell runtime.
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Invalid path. The requested path `/v2/customer/orders` is invalid or not supported by the API. Please verify the path against the API specification and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Invalid path parameter. The path parameter`customerId` is missing or has an invalid value. Please provide a valid value for `customerId` in the request path and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Missing header. The required header `X-Correlation-ID` is missing or has an invalid value. Please include the `X-Correlation-ID` header with a valid value in the request and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Missing query parameters. The required query parameter `version` is missing or has an invalid value. Please include the `version` query parameter with a valid value in the request and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Invalid payload structure. The request payload is not in the expected structure. Please verify the payload against the API specification and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+Invalid payload format. The request payload is not in the expected JSON format. Please ensure the payload is valid JSON and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+API spec size exceeded. API validation failed because the API definition exceeds the maximum allowed size limit of 20 MB. Please reduce the size of the API specification and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+API validation policy max payload size exceeded system limit. The configured maximum payload size in the API Validation policy exceeds the allowed system limit. Please reduce the maximum payload size in the policy configuration and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

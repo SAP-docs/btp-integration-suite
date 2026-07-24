@@ -99,12 +99,29 @@ Yes
 <tr>
 <td valign="top">
 
-Maximum Recommended API products per application
+Maximum length of a resource path
 
 </td>
 <td valign="top">
 
-It is recommended to group API products logically based on your business scenarios and maintain an average of 20–30 API products per application.
+The length of each resource can be a maximum of 1024 characters.
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum recommended API products per application
+
+</td>
+<td valign="top">
+
+For better performance, group API products logically based on your business scenarios and assign up to 20–30 API products to each application.
 
 </td>
 <td valign="top">

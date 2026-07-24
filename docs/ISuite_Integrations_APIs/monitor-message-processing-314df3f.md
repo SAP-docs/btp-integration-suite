@@ -113,6 +113,8 @@ Filter all artifacts by a specific type:
 
 -   *API*
 
+-   *MCP*
+
 -   *OData API*
 
 -   *SOAP API*

@@ -1241,5 +1241,5 @@
                 -   [Security-Relevant Logging and Tracing](IntegrationAdvisor/security-relevant-logging-and-tracing-509c20e.md)
                 -   [Data Collection for Knowledge Base](IntegrationAdvisor/data-collection-for-knowledge-base-e5bd17f.md)
             -   [Auditing and Logging Information](IntegrationAdvisor/auditing-and-logging-information-3dbe557.md)
-        -   [Troubleshooting for Integration Advisor](IntegrationAdvisor/troubleshooting-for-integration-advisor-2de873e.md)
+        -   [Getting Support for Integration Advisor](IntegrationAdvisor/getting-support-for-integration-advisor-2de873e.md)
 

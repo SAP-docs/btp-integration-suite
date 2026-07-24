@@ -34,14 +34,18 @@ Create an MCP server by connecting to an RFC-based backend system and exposing s
     -   SWO\_QUERY\_API\_METHODS
     -   RFC\_METADATA\_GET
     -   RFC\_GET\_STRUCTURE\_DEFINITION
+    -   BAPI\_TRANSACTION\_COMMIT
+
+        > ### Note:  
+        > Ensure that BAPI\_TRANSACTION\_COMMIT is exposed through the SAP Cloud Connector, as it is required for BAPI calls.
+
+    -   BAPI\_TRANSACTION\_ROLLBACK
+
 
 
 
 
 ## Context
-
-> ### Note:  
-> The MCP server feature is available only with the Premium and Enhanced editions of SAP Integration Suite.
 
 An MCP server can be created using an RFC-based backend to enable access to business logic implemented in SAP systems such as SAP S/4HANA or SAP ECC.
 
@@ -55,6 +59,61 @@ To achieve this, you:
 
 -   This approach allows you to reuse existing backend functionality without building new APIs.
 
+
+> ### Note:  
+> MCP over RFC is available for the following SAP systems:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> SAP Systems
+> 
+> </th>
+> <th valign="top">
+> 
+> Level of Support
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> SAP ECC 6.0 \(NetWeaver 7.0 up to 7.5\)
+> 
+> </td>
+> <td valign="top">
+> 
+> Fully supported
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> SAP ECC 5.0 \(NetWeaver 2004\)
+> 
+> </td>
+> <td valign="top">
+> 
+> Fully supported
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> SAP S/4 HANA
+> 
+> </td>
+> <td valign="top">
+> 
+> Fully Supported
+> 
+> </td>
+> </tr>
+> </table>
 
 
 

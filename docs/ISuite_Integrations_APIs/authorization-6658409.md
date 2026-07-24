@@ -146,7 +146,7 @@ For example, if you’ve configured a role called `APIArtifactUser` in *User Rol
 
 Once the `APIArtifactUser` role is configured in *User Roles*, it is automatically added to the *Roles* in SAP BTP Cockpit.
 
-To execute an API with the Authorization policy successfully on the runtime node, the `APIArtifactUser` role should be associated to the *Process Integration Runtime* instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API Artifact by Obtaining API Credentials through Process Integration Runtime](invoke-an-api-artifact-by-obtaining-api-credentials-through-process-integration-runtime-b63baa2.md).
+To execute an API with the Authorization policy successfully on the runtime node, the `APIArtifactUser` role should be associated to the *Process Integration Runtime* instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API or an MCP Server Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-or-an-mcp-server-artifact-by-obtaining-credentials-through-process-integrat-b63baa2.md).
 
 </td>
 <td valign="top">
@@ -205,12 +205,17 @@ Trust Upstream MCP Authorization
 </td>
 <td valign="top">
 
-Select this option to establish trust with the authorization policy of the upstream MCP server when the API acts as the source. When enabled, the authorization policy is executed only once at the MCP layer, and the API-level authorization policy is bypassed.
+Select this option to establish trust with the authorization policy of the upstream MCP server when the API acts as the source. When enabled, the authorization policy is executed only once at the MCP layer, and the API-level authorization policy is bypassed. By default this setting is disabled.
 
 </td>
 <td valign="top">
 
-This option is available only in the Premium or Enhanced edition.
+This option is available only in the Premium, Enhanced, Trial, and Free tier edition.
+
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+
 
 </td>
 </tr>
@@ -616,6 +621,50 @@ Rejected
 </table>
 
 
+
+</td>
+</tr>
+</table>
+
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+403
+
+</td>
+<td valign="top">
+
+Forbidden. User doesn’t have the authorization to perform this operation. Please contact your administrator.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+403
+
+</td>
+<td valign="top">
+
+Not allowed. Request unauthenticated. User is not allowed to perform this operation. Please authenticate and ensure you have the necessary permissions.
 
 </td>
 </tr>

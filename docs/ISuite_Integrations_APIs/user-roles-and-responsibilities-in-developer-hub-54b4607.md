@@ -285,7 +285,7 @@ Access to different features on Developer Hub depends on the service plan you've
     </td>
     <td valign="top">
     
-    [Test Runtime Behavior of APIs](test-runtime-behavior-of-apis-15c7d52.md) 
+    [Test Runtime Behavior of APIs](https://help.sap.com/viewer/66d066d903c2473f81ec33acfe2ccdb4/Cloud/en-US/15c7d528449c4636abc2a1120f5ab8e9.html "Use the API Test Environment to test the runtime behavior of APIs.") :arrow_upper_right: 
     
     </td>
     </tr>

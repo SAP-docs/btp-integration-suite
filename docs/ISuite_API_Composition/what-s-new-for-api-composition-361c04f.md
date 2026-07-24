@@ -437,7 +437,7 @@ Add optional OData containment entities to your business data graph
 </td>
 <td valign="top">
 
-OData containment controls how contained entities appear in a business data graph. An entity is contained when a `NavigationProperty` from another entity exists in the business data graph with the annotation `ContainsTarget=True`. Using OData containment, you choose how these contained entities are accessed in the Business Data Graph API. For more information, see [OData Containment \(Optional\)](https://help.sap.com/docs/graph/graph-wip/business-data-graph-configuration-file?state=DRAFT#odata-containment-(optional)).
+OData containment controls how contained entities appear in a business data graph. An entity is contained when a `NavigationProperty` from another entity exists in the business data graph with the annotation `ContainsTarget=True`. Using OData containment, you choose how these contained entities are accessed in the Business Data Graph API. For more information, see [OData Containment \(Optional\)](https://help.sap.com/docs/api-composition/isuite-api-composition/business-data-graph-configuration-file?version=CLOUD#odata-containment-(optional)).
 
 </td>
 <td valign="top">
@@ -567,7 +567,7 @@ New *GraphNavigator.Tryout* role
 
 You must be assigned to the *GraphNavigator.Tryout* role to make requests to business data graphs on the API Composition Navigator on the Developer Hub. For more information, see:
 
--   [Define Users for Graph](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#3.-define-users-for-graph)
+-   [Define Users for API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/initial-setup?version=CLOUD#3.-define-users-for-api-composition)
 -   [API Composition Navigator on Developer Hub](api-composition-navigator-on-developer-hub-8e75d31.md)
 
 
@@ -646,7 +646,7 @@ The new service plan is *integration-flow* under the *Process Integration Runtim
 
 For more information, see:
 
--   [Configure Entitlement for Graph](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#1-configure-entitlement-for-graph)
+-   [Configure Entitlement for API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/initial-setup?version=CLOUD#1.-configure-entitlement-for-api-composition)
 -   [Authentication](https://help.sap.com/docs/integration-suite/sap-integration-suite/authentication-fa6eec4f9ffc45aa89f8a2155b855ca4)
 
 
@@ -713,10 +713,10 @@ Enabling client applications to access API Composition business data graph
 </td>
 <td valign="top">
 
-Client applications must know certain secrets, known as API Composition service credentials in order to be able to consume Business Data Graph APIs. There is a new way of getting these secrets. See [Enabling Client Applications](https://help.sap.com/docs/graph/graph-wip/enabling-client-applications).
+Client applications must know certain secrets, known as API Composition service credentials in order to be able to consume Business Data Graph APIs. There is a new way of getting these secrets. See [Enabling Client Applications](https://help.sap.com/docs/api-composition/isuite-api-composition/enable-client-applications).
 
 > ### Note:  
-> By June 30th, 2025, no new instance of API Composition with the *api* service plan can be created. If you are still using the *api* service plan from Graph, we recommend you now use *integration-flow* plan in the *Process Integration Runtime* service. For more information, see [Configure Entitlement for Graph](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#1-configure-entitlement-for-graph).
+> By June 30th, 2025, no new instance of API Composition with the *api* service plan can be created. If you are still using the *api* service plan from Graph, we recommend you now use *integration-flow* plan in the *Process Integration Runtime* service. For more information, see [Configure Entitlement for API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/initial-setup?version=CLOUD#1.-configure-entitlement-for-api-composition).
 
 
 
@@ -1050,9 +1050,9 @@ New API Composition Guest user role for read-only access
 
 You can enable users to have read-only access to API Composition and the API Composition Configuration API by assigning the API Composition guest role to one or more users. For more information, see:
 
--   [Enabling Guest Users](https://help.sap.com/docs/graph/graph/enabling-users?version=PROD)
+-   [Enabling Guest Users](https://help.sap.com/docs/api-composition/isuite-api-composition/enabling-users?version=CLOUD&q=Enabling+Guest+Users#enabling-guest-users)
 
--   [Define Users for Graph](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#3.-define-users-for-graph)
+-   [Define Users for API Composition](https://help.sap.com/docs/api-composition/isuite-api-composition/initial-setup?version=CLOUD#3.-define-users-for-api-composition)
 
 
 
@@ -1259,7 +1259,7 @@ API Composition documentation is now available in the following sections of the 
 
 -   [Design](https://help.sap.com/docs/integration-suite/sap-integration-suite/design)
 
--   [Monitoring and Troubleshooting for Graph](https://help.sap.com/docs/integration-suite/sap-integration-suite/monitoring-and-troubleshooting)
+-   [Getting Support for API Composition](https://help.sap.com/docs/integration-suite/sap-integration-suite/monitoring-and-troubleshooting)
 
 
 
@@ -1396,7 +1396,7 @@ The primary focus is to enable a seamless integration of business data graph man
 
 For more information, see:
 
--   [Configure Entitlement for Graph](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#1.-configure-entitlement-for-graph)
+-   [Configure Entitlement for API Composition](https://help.sap.com/docs/graph/graph/initial-setup?version=PROD#1.-configure-entitlement-for-graph)
 
 -   [Manage Business Data Graphs using API Composition Configuration API](manage-business-data-graphs-using-api-composition-configuration-api-655bf12.md)
 

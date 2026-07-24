@@ -235,7 +235,7 @@ Sets the number of replicas for this component.
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="4">
+<td valign="top" rowspan="6">
 
 *Edge API Application* 
 
@@ -284,6 +284,30 @@ Additional JVM parameters.
 <td valign="top">
 
 Sets memory limit for this component.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`DIAG_HEAPDUMPANALYZER_JOB_CPU_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets the CPU limit for the heap dump analysis job.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`DIAG_HEAPDUMPANALYZER_JOB_MEMORY_LIMIT`
+
+</td>
+<td valign="top">
+
+Sets the memory limit for heap dump analysis jobs.
 
 </td>
 </tr>

@@ -292,6 +292,230 @@ Defines a limit on the maximum number of characters allowed in the value length 
 > ### Note:  
 > When the API validation policy is modeled inside a reusable API, the schema validation is performed against the API specification of the consuming API. This applies if you intend to deploy the API artifact with the validation policy on the Edge Integration Cell runtime.
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+413
+
+</td>
+<td valign="top">
+
+XML validation size exceeded. XML payload has exceeded the allowed size limit. Please reduce the payload size and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation depth exceeded. XML payload has exceeded the allowed depth limit. Please reduce the nesting level and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation children exceeded. XML payload has exceeded the allowed number of child elements. Please reduce the number of child elements and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation attributes exceeded. XML payload has exceeded the allowed number of attributes. Please reduce the number of attributes and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation namespaces exceeded. XML payload has exceeded the allowed number of namespaces. Please reduce the number of namespace declarations and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation element key length exceeded. XML payload has exceeded the allowed element key length. Please reduce the length of element names and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation attribute key length exceeded. XML payload has exceeded the allowed attribute key length. Please reduce the length of attribute names and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation namespace key length exceeded. XML payload has exceeded the allowed namespace key length. Please reduce the length of namespace prefixes and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation processing instructions length exceeded. XML payload has exceeded the allowed processing instruction length. Please reduce the length of processing instructions and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation text length exceeded. XML payload has exceeded the allowed text value length. Please reduce the length of text content and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation attribute value length exceeded. XML payload has exceeded the allowed attribute value length. Please reduce the length of attribute values and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation namespace value length exceeded. XML payload has exceeded the allowed namespace value length. Please reduce the length of namespace URIs and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation processing instructions value length exceeded. XML payload has exceeded the allowed processing instruction value length. Please reduce the length of processing instruction values and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation comment length exceeded. XML payload has exceeded the allowed comment length. Please reduce the length of comments and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+XML validation invalid payload. The XML payload is not in a valid format. Please verify the XML syntax and structure, then retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+XML validation unit evaluation error. An error occurred while evaluating the unit for XML size. Please verify the size unit configuration in the policy and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+XML validation max size evaluation error. An error occurred while evaluating the maximum size for the XML payload. Please verify the maximum size configuration in the policy and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

@@ -23,89 +23,15 @@ Create an MCP Server from any HTTP endpoint by providing its OpenAPI specificati
     > ### Note:  
     > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
 
-    > ### Note:  
-    > Only destinations with the *Proxy Type* set to `Internet` or `OnPremise` are currently supported.
-    > 
-    > The following authentication mechanisms are supported:
-    > 
-    > 
-    > <table>
-    > <tr>
-    > <th valign="top">
-    > 
-    > Proxy Type
-    > 
-    > </th>
-    > <th valign="top">
-    > 
-    > Authentication Mechanism
-    > 
-    > </th>
-    > </tr>
-    > <tr>
-    > <td valign="top">
-    > 
-    > Internet
-    > 
-    > </td>
-    > <td valign="top">
-    > 
-    > -   ClientCertificateAuthentication
-    > 
-    > -   OAuth2ClientCredentials
-    > 
-    > -   NoAuthentication
-    > 
-    > -   BasicAuthentication
-    > 
-    > -   OAuth2Password
-    > 
-    > -   OAuth2JWTBearer
-    > 
-    > -   OAuth2JWTBearer
-    > 
-    > -   SAMLAssertion
-    > 
-    > 
-    > 
-    > 
-    > </td>
-    > </tr>
-    > <tr>
-    > <td valign="top">
-    > 
-    > OnPremise
-    > 
-    > </td>
-    > <td valign="top">
-    > 
-    > -   OAuth2ClientCredentials
-    > 
-    > -   NoAuthentication
-    > 
-    > -   BasicAuthentication
-    > 
-    > -   OAuth2Password
-    > 
-    > -   OAuth2JWTBearer
-    > 
-    > -   OAuth2JWTBearer
-    > 
-    > -   SAMLAssertion
-    > 
-    > 
-    > 
-    > 
-    > </td>
-    > </tr>
-    > </table>
-
 
 
 
 ## Context
 
 This topic explains how to create an MCP server by connecting to an external HTTP endpoint using its OpenAPI specification. It guides you through configuring the required details, choosing between generating or uploading an API specification, and selecting API resources to expose as MCP tools. By following this process, you can make REST-based services available for AI-driven interactions within SAP Integration Suite.
+
+> ### Note:  
+> The OpenAPI specification must be a version between 3.0.0 and 3.0.3. Swagger 2.0 and earlier versions are not supported.
 
 
 
@@ -153,10 +79,11 @@ This topic explains how to create an MCP server by connecting to an external HTT
         > In the *Create Tools* step:
         > 
         > -   Select the API resources that you want to expose as MCP tools.
-        > -   Choose *Create* to finalize the MCP server.
         > 
         >     > ### Note:  
-        >     > If resources are not available, then you can skip this step and choose *Create*.
+        >     > Each MCP server supports up to 15 tools.
+        > 
+        > -   Choose *Create* to finalize the MCP server. If resources are not available, then you can skip this step and choose *Create*.
 
     -   *Upload*: Upload an API specification file in JSON format.
 
@@ -247,8 +174,81 @@ This topic explains how to create an MCP server by connecting to an external HTT
     </tr>
     </table>
     
+    > ### Note:  
+    > Only destinations with the *Proxy Type* set to `Internet` or `OnPremise` are currently supported.
+    > 
+    > The following authentication mechanisms are supported:
+    > 
+    > 
+    > <table>
+    > <tr>
+    > <th valign="top">
+    > 
+    > Proxy Type
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Authentication Mechanism
+    > 
+    > </th>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > Internet
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > -   ClientCertificateAuthentication
+    > 
+    > -   OAuth2ClientCredentials
+    > 
+    > -   NoAuthentication
+    > 
+    > -   BasicAuthentication
+    > 
+    > -   OAuth2Password
+    > 
+    > -   OAuth2JWTBearer
+    > 
+    > -   SAMLAssertion
+    > 
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > OnPremise
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > -   OAuth2ClientCredentials
+    > 
+    > -   NoAuthentication
+    > 
+    > -   BasicAuthentication
+    > 
+    > -   OAuth2Password
+    > 
+    > -   OAuth2JWTBearer
+    > 
+    > -   SAMLAssertion
+    > 
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > </table>
+
 7.  After selecting the required API resources and choosing *Create*, the MCP server is created and opens in the editor view.
 
-    Choose *Edit* to update the configuration \(all fields except ID\). Use the *MCP Configuration* tab to modify *Source*, *Tools*, *Resources*, and *Prompts*, and the *Policies* tab to configure traffic management and security policies. For detailed information, see [Govern and Manage an MCP Server Created Using an HTTP Endpoint](govern-and-manage-an-mcp-server-created-using-an-http-endpoint-f58f7b0.md).
+    Choose *Edit* to update the configuration \(all fields except ID\). Use the *MCP Configuration* tab to modify *Source*, *Tools*, *Resources*, and *Prompts*, and the *Policies* tab to configure traffic management and security policies. For detailed information, see [Configure an MCP Server Created from an HTTP Endpoint](configure-an-mcp-server-created-from-an-http-endpoint-f58f7b0.md).
 
 

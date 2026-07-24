@@ -9,7 +9,10 @@ You can choose to display information about global or local data stores by using
 The heat map displays only the data stores identified as top database volume consumers. These are sorted from highest to lowest based on database volume usage. The color shade of each cell reflects the level of database volume usage.
 
 > ### Tip:  
-> You can use the **Top Data Stores** filter to adjust the number of data stores shown on the chart. The default is six, and the maximum is 15.
+> You can use the **Top Data Stores** filter to adjust the number of data stores shown on the chart. The default is six, and the maximum is 15. The total number of data stores displayed is the data stores for which there's available data.
+
+> ### Note:  
+> When you navigate from the usage overview page, the time period you selected is automatically highlighted in the heat map.
 
 Select a cell to get more context information and to get access to the following functions:
 

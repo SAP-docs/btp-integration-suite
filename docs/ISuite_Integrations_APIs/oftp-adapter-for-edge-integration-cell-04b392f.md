@@ -141,7 +141,7 @@ The TLS server requests a client certificate but does not require one.
 
 The OFTP receiver adapter manages TLS communication internally. It supports optional client authentication and hostname verification. You can maintain the trust material and key used for client authentication in the keystore assigned to your Edge node. For more information, see [Managing Keystore Entries](managing-keystore-entries-2dc8942.md).
 
-Message-level protection is based on Cryptographic Message Syntax \(CMS\). To use CMS options, you must maintain a key pair in the keystore. The adapter uses it for secure authentication, file signing, and decryption. You must also upload the partner's public certificate to the keystore. The adapter uses it for file encryption and signature verification. After you maintain the key pair and public certificate in the keystore, configure them in the OFTP adapter as *Own Certificate Alias* and *Partner Certificate Alias*. Your partner must perform similar configuration on their side.
+Message-level protection is based on Cryptographic Message Syntax \(CMS\). To use CMS options, you must maintain a key pair in the keystore. The adapter uses it for secure authentication, file signing, and decryption. You must also upload the partner's public certificate to the keystore. The adapter uses it for file encryption and signature verification. After you maintain the key pair and public certificate in the keystore, configure them in the OFTP adapter as *Private key Alias* and *Partner Certificate Alias*. Your partner must perform similar configuration on their side.
 
 
 

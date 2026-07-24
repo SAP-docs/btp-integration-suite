@@ -142,7 +142,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -182,7 +182,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -196,7 +196,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -210,7 +210,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -224,7 +224,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -324,13 +324,13 @@ Specify the name of the file to be written. If the field on the left is not fill
 
 Specify which property should be used for sorting while polling files. The sorting will be done in ascending order of the selected property. It is possible to choose from the following options:
 
--   None
+-   *None*
 
--   File Name
+-   *File Name*
 
--   File Size
+-   *File Size*
 
--   Time Stamp
+-   *Time Stamp*
 
 
 
@@ -371,15 +371,15 @@ Select this checkbox to execute post-processing step only when the file is succe
 
 Select the action that should be taken after the file has been processed. It is possible to choose from the following options:
 
--   Delete File
+-   *Delete File*
 
--   Keep File and Process Again
+-   *Keep File and Process Again*
 
--   Move File to an Archive directory
+-   *Move File to an Archive directory*
 
--   Copy file to an Archive Bucket
+-   *Copy file to an Archive Bucket*
 
--   Move file to an Archive Bucket
+-   *Move file to an Archive Bucket*
 
 
 
@@ -425,6 +425,72 @@ Select to enable the server-side encryption when archiving the file in AWS.
 <tr>
 <td valign="top">
 
+*Encryption Option*
+
+\(Only available when *Apply Encryption When Archiving* is enabled.\)
+
+</td>
+<td valign="top">
+
+Select the server-side encryption used for storing the file in AWS.
+
+Example: SSE-S3.
+
+-   *SSE-C \(with Customer-Provided Key\)*
+-   *SSE-KMS \(with Customer Master Keys Stored in AWS Key Management Service\)*
+-   *SSE-S3 \(with Amazon S3-Managed Keys\)*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Encryption Key Alias*
+
+\(Only available when Encryption Option is set to*SSE-C*.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter which stores the customer-provided encryption key \(256-bit, base64-encoded\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Customer Managed Key ID*
+
+\(Only available when Encryption Option is set to*SSE-KMS*.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter which stores the ID of the symmetric customer-managed AWS KMS CMK.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Custom Metadata*
+
+\(Only available when *Apply Encryption When Archiving* is enabled.\)
+
+</td>
+<td valign="top">
+
+Header: Specify the custom header name to be passed in the request to AWS.
+
+Value: Specify the custom header value to be passed in the request to AWS.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Archive Bucket*
 
 </td>
@@ -463,24 +529,24 @@ Select this option to generate a pre-signed URL. Select the HTTP method and the 
 
 *HTTP Method of Pre-Signed URL*
 
-\(Only available when S3 Pre-Signed URL is enabled.\)
+\(Only available when *S3 Pre-Signed URL* is enabled.\)
 
 </td>
 <td valign="top">
 
 Select the HTTP method that should be used for the pre-signed URL. Select from the following options:
 
--   GET
+-   *GET*
 
--   DELETE
+-   *DELETE*
 
--   HEAD
+-   *HEAD*
 
--   PATCH
+-   *PATCH*
 
--   POST
+-   *POST*
 
--   PUT
+-   *PUT*
 
 
 
@@ -492,7 +558,7 @@ Select the HTTP method that should be used for the pre-signed URL. Select from t
 
 *Expired Duration of Pre-Signed URL \(secs\)*
 
-\(Only available when S3 Pre-Signed URL is enabled.\)
+\(Only available when *S3 Pre-Signed URL* is enabled.\)
 
 </td>
 <td valign="top">
@@ -518,7 +584,7 @@ Enable this option to avoid duplicate message processing for the period which wi
 
 *Duplication Key*
 
-\(Only available when Duplicate Check is enabled.\)
+\(Only available when *Duplicate Check* is enabled.\)
 
 </td>
 <td valign="top">
@@ -527,8 +593,8 @@ Select the Key on which the duplication check should be performed.
 
 It is possible to choose from the following options:
 
--   S3 Object Key
--   S3 File Name
+-   *S3 Object Key*
+-   *S3 File Name*
 
 
 
@@ -539,7 +605,7 @@ It is possible to choose from the following options:
 
 *Message Expiration Period \(in secs\)*
 
-\(Only available when Duplicate Check is enabled.\)
+\(Only available when *Duplicate Check* is enabled.\)
 
 </td>
 <td valign="top">
@@ -694,7 +760,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -734,7 +800,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -748,7 +814,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -762,7 +828,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -776,7 +842,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -849,9 +915,9 @@ Specifies the duration in seconds that the message is hidden from subsequent ret
 
 Specifies the action to be performed after the message processing in the queue. It is possible to choose from the following options:
 
--   Keep Message in the queue
+-   *Keep Message in the queue*
 
--   Delete Message from the queue
+-   *Delete Message from the queue*
 
 
 
@@ -899,7 +965,7 @@ Select this option to avoid duplicate message processing based on SQS message ID
 
 *Message Expiration Period \(in secs\)*
 
-\(Only available when Duplicate Check On Message ID is enabled.\)
+\(Only available when *Duplicate Check On Message ID* is enabled.\)
 
 </td>
 <td valign="top">

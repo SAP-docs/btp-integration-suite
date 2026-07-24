@@ -239,7 +239,7 @@ How to use SAP API Management
                 -   [Add Product Subscription to an Existing Subscription](API-Management/add-product-subscription-to-an-existing-subscription-1b18544.md)
                 -   [Creating a Subscription for Application with Application Developer Role](API-Management/creating-a-subscription-for-application-with-application-developer-role-99515fc.md)
                 -   [Creating a Subscription with Developer Hub Administrator Role](API-Management/creating-a-subscription-with-developer-hub-administrator-role-df4f777.md)
-                -   [Example: Accessing the Custom Attributes a Subscription](API-Management/example-accessing-the-custom-attributes-a-subscription-1cbd94c.md)
+                -   [Using Custom Attributes in Product Subscriptions](API-Management/using-custom-attributes-in-product-subscriptions-1cbd94c.md)
                 -   [View Susbcriptions, Costs, and Analyze Reports](API-Management/view-susbcriptions-costs-and-analyze-reports-fca4d8c.md)
                 -   [Consume APIs within Subscriptions](API-Management/consume-apis-within-subscriptions-d4f6fda.md)
         -   [Analyze Applications](API-Management/analyze-applications-deb57dd.md)

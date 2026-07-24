@@ -35,7 +35,7 @@ Be aware that the features offered using the API and the user interface can diff
 To get access to Data Space Integration using APIs, you must first create a service instance and service key for inbound authentication.
 
 > ### Note:  
-> If you create multiple connectors, you require one api access and service instance for each connector. If you have multiple connectors, you typically share them with different users or business applications. Sharing the wrong service instance can lead to data leaks in which a party can gain access to another party’s data.
+> If you create multiple connectors, you require **one API access and service instance for each connector**. If you have multiple connectors, you typically share them with different users or business applications. Sharing the wrong service instance can lead to data leaks in which a party can gain access to another party’s data.
 > 
 > We recommend that you follow a strict naming convention for service instances, such as including the connector name and environment in the name. This helps to easily identify and manage service instances, thereby reducing the risk of confusion and security issues.
 
@@ -76,12 +76,4 @@ Now that you've created a new service key, you can start interacting with Data S
 [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md "In Data Space Integration, as a consumer, you want to consume data assets provided by other members of the data space.")
 
 [Discovering Offers Through a Catalog](discovering-offers-through-a-catalog-90f3619.md "Before you can consume an asset of another data space participant, you must discover their catalog and decide on an offer.")
-
-[Consuming Assets Into Amazon S3 Storage](consuming-assets-into-amazon-s3-storage-4afdf5c.md "Learn how to trigger a contract negotiation, agree with a provider on the conditions for using their assets, and transfer assets to your desired location.")
-
-[Consuming HTTP Assets](consuming-http-assets-735300c.md "Learn how to initiate contract negotiations and transfer HTTP assets from a provider's catalog.")
-
-[Triggering Contract Negotiations and Transferring Assets with EDR Management APIs](triggering-contract-negotiations-and-transferring-assets-with-edr-management-apis-eace95e.md "To consume assets, you must agree with the provider on the conditions. This process happens in a contract negotiation, after which you can transfer your assets.")
-
-[Consuming Assets](consuming-assets-f6b27ac.md "You've successfully negotiated the usage of a provider's asset, and you've triggered the transfer process. Now, you can consume the chosen asset.")
 

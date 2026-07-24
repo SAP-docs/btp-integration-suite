@@ -180,8 +180,11 @@ This destination contains a full specification of the access information for a s
 
     > ### Note:  
     > In a REST API, it is recommended not to include query parameters in the URL field. For example, the URL should be in the format `https://<host>:<port>/anything` instead of `https://<host>:<port>/anything?$format=json`. Including query parameters in the URL can cause the validation of the artifact to fail during deployment.
+
+    > ### Note:  
+    > The relative URL must contain only the path component, such as `/api/orders`. Do not include query parameters \(for example, `?status=active&id=123`\) as part of the relative URL.
     > 
-    > If you need to use query parameters, it is best to append them during the execution of the API rather than including them in the URL field.
+    > If you need to use query parameters, append them during the execution of the API artifact.
 
 
     

@@ -33,8 +33,8 @@ This section explains the end-to-end process of how API requests flow through th
 
     Once designed, the API artifacts are deployed to the Integration Cell runtime:
 
-    -   Security policies handle authentication, authorization, and threat detection. For more information, see [Working with Security Policies](working-with-security-policies-aebf968.md).
-    -   Traffic management enforces rate limits, surge control, and other performance safeguards. For more information, see [Working with Traffic Management Policies](working-with-traffic-management-policies-165db68.md).
+    -   Security policies handle authentication, authorization, and threat detection. For more information, see [Security Policies](security-policies-aebf968.md).
+    -   Traffic management enforces rate limits, surge control, and other performance safeguards. For more information, see [Traffic Management Policies](traffic-management-policies-165db68.md).
 
 -   **Request Forwarded to Target System**
 
@@ -50,9 +50,9 @@ This section explains the end-to-end process of how API requests flow through th
 
 [Model Context Protocol \(MCP\)](model-context-protocol-mcp-9eb9239.md "Model Context Protocol (MCP) is an open-source protocol designed to bridge the gap between AI applications or agents and enterprise tools and data. Just as REST APIs connect web applications to data and services, MCP enables AI-native integrations by exposing tools, APIs, and data sources to AI Agents.")
 
-[Deploy an Artifact](deploy-an-artifact-b70e7ec.md "After creating an API or an MCP server artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
+[Deploy APIs and MCP Servers](deploy-apis-and-mcp-servers-b70e7ec.md "After creating an API or an MCP server artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
 
-[Copy an Artifact](copy-an-artifact-820c9e8.md "Create a copy of an existing API artifact or an MCP server with all its configurations and policies intact. This can be useful when you want to create a similar artifact but with some modifications or variations.")
+[Copy an API or an MCP Server Artifact](copy-an-api-or-an-mcp-server-artifact-820c9e8.md "Create a copy of an existing API artifact or an MCP server with all its configurations and policies intact. This can be useful when you want to create a similar artifact but with some modifications or variations.")
 
-[Delete an Artifact](delete-an-artifact-81694d6.md "Use this procedure to delete an API or an MCP Server artifact from an integration package in the Design workspace.")
+[Delete APIs and MCP Servers](delete-apis-and-mcp-servers-81694d6.md "Use this procedure to delete an API or an MCP Server artifact from an integration package in the Design workspace.")
 

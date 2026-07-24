@@ -89,7 +89,7 @@
         -   [Specific Data Assets](specific-data-assets-16077ce.md)
     -   [Auditing and Logging Information for Trading Partner Management](auditing-and-logging-information-for-trading-partner-management-0503127.md)
 -   [Accessibility Features in SAP Trading Partner Management](accessibility-features-in-sap-trading-partner-management-c17213a.md)
--   [Troubleshooting for Trading Partner Management](troubleshooting-for-trading-partner-management-c5eaae5.md)
+-   [Getting Support for Trading Partner Management](getting-support-for-trading-partner-management-c5eaae5.md)
 -   [Glossary for SAP Trading Partner Management](glossary-for-sap-trading-partner-management-81860a4.md)
 -   [Go to SAP Integration Suite](go-to-sap-integration-suite-311907b.md)
 

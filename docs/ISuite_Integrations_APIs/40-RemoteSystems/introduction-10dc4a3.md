@@ -251,7 +251,7 @@ Receiver Adapter
 
 Enables SAP Integration Suite to connect to Adobe Sign to access APIs related to Agreement, Library Documents, and Message Templates etc.
 
-See:  <?sap-ot O2O class="- topic/xref " href="e73852e5cebf40558eb5903195e214b8.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  
+See: [Adobe Sign Receiver Adapter](../adobe-sign-receiver-adapter-e73852e.md) 
 
 </td>
 </tr>
@@ -949,7 +949,7 @@ Receiver adapter
 
 Enables SAP Integration Suite to communicate with BambooHR. The BambooHR adapter enables you to connect to BambooHR to access APIs related to employee, organizational, time off data etc.
 
-See  <?sap-ot O2O class="- topic/xref " href="4f52e6269dbe45e98e27768fe8a37a1e.xml" text="" desc="" xtrc="xref:40" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+See [BambooHR Receiver Adapter](../bamboohr-receiver-adapter-4f52e62.md)
 
 </td>
 </tr>
@@ -1803,7 +1803,7 @@ Sender adapter
 
 Connects SAP Integration Suite to read and process mail messages from Microsoft Outlook mailbox.
 
-See:  <?sap-ot O2O class="- topic/xref " href="47704aaf438143f2ad7574abe60ddc8f.xml" text="" desc="" xtrc="xref:94" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+See: [Microsoft Outlook Sender Adapter](../microsoft-outlook-sender-adapter-47704aa.md)
 
 </td>
 </tr>
@@ -1819,7 +1819,7 @@ Receiver adapter
 
 Connects SAP Integration Suite to Microsoft Outlook to manage resources such as Calendar, Mail Folders, Attachments, and Messages etc.
 
-See:  <?sap-ot O2O class="- topic/xref " href="0d61459af2c64e9a9f123dcbb619d5a9.xml" text="" desc="" xtrc="xref:95" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+See: [Microsoft Outlook Receiver Adapter](../microsoft-outlook-receiver-adapter-0d61459.md)
 
 </td>
 </tr>
@@ -2767,7 +2767,7 @@ Receiver adapter
 
 Enables SAP Integration Suite to connect to Zendesk.
 
-See:  <?sap-ot O2O class="- topic/xref " href="01bd8bb1ad2f44a48f160de6442dc672.xml" text="" desc="" xtrc="xref:148" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/86bec2393d194e4ca47c49f997d465f8.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+See: [Zendesk Receiver Adapter](../zendesk-receiver-adapter-01bd8bb.md)
 
 </td>
 </tr>

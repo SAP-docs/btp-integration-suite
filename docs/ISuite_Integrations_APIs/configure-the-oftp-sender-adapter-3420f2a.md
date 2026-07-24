@@ -491,7 +491,7 @@ When enabled, you can configure file decryption, signature verification, and sec
 <tr>
 <td valign="top">
 
-*Own Certificate Alias\**
+*Own Key Pair Alias\**
 
 > ### Note:  
 > Only visible if *CMS Settings* is not Enabled.
@@ -511,7 +511,7 @@ Text
 </td>
 <td valign="top">
 
-Alias for your certificate and private key. Used for signing ERP or decrypting inbound content.
+Alias for your certificate and key pair alias. Used for signing ERP or decrypting inbound content.
 
 > ### Remember:  
 > You need to create and maintain certificate aliases \(keystore\) as security material in SAP Integration Suite.
@@ -844,7 +844,7 @@ DELIVERY ASSURANCE PARAMETERS
     > ### Note:  
     > The name of the JMS queue is automatically generated and contains the following parts:
     > 
-    > ***OFTP.<Integration Flow Name\>.<Channel Name\>.<Guide\>***
+    > ***OFTP.<Integration Flow Name\>.<Channel Name\>.<Guid\>***
 
     > ### Note:  
     > This option is only available if you have an *Enterprise Edition* license.

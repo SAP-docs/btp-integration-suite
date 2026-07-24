@@ -27,5 +27,5 @@ For example, the following adapters support this feature:
 
 To illustrate this rule, you can consult the integration flow *Manage Resources - Size Integration Flow* \(in the *Integration Flow Design Guidelines - Run an Integration Flow Under Well-Defined Boundary Conditions* integration package\) that is described in [Manage Large Batch Sizes](manage-large-batch-sizes-825d2cf.md).
 
-In the example integration flow, a timeout of 10 minutes is configured for the OData receiver adapter \(in the *Timeout* parameter in the *Processing* tab\).
+In the example integration flow, a timeout of 10 minutes is configured for the OData receiver adapter \(in the *Timeout \(in min\)* parameter in the *Processing* tab\).
 

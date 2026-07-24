@@ -10,7 +10,7 @@ Understand how to create queues.
 
 ## Context
 
-When you send a message via AMQP 1.0 over WebSocket, it can be published to a queue or topic. To send messages to a queue, create a queue with the correct naming syntax as follows:
+When you send a message via AMQP 1.0 or MQTT 3.1.1 over WebSocket, or via HTTP, it can be published to a queue or topic. To send messages to a queue, create a queue with the correct naming syntax as follows:
 
 -   The queue name must be limited to 164 characters.
 

@@ -85,7 +85,7 @@ Cloud Integration
 </td>
 <td valign="top">
 
-AI recommends the next flow steps, while adding flowsteps in your integration flow to help simplify the design process.
+AI recommends the next flow steps, while adding flow steps in your integration flow to help simplify the design process.
 
 </td>
 <td valign="top">
@@ -254,7 +254,7 @@ Upon deactivation of this service, MIG and MAG proposals will not be accessible 
 </td>
 <td valign="top">
 
-[Settings for MIGs and MAGs](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/4c442af844e54848ad66f071ae8233ee.html "") :arrow_upper_right:
+[Settings for MIGs and MAGs](https://help.sap.com/viewer/986600e940714dee8ed03f126ee7efca/CLOUD/en-US/4c442af844e54848ad66f071ae8233ee.html "Documentation export templates and administrative settings that allow you to customize the appearance of exported MIG and MAG documents and control participation in the proposal service.") :arrow_upper_right:
 
 </td>
 <td valign="top">

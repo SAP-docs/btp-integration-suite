@@ -2,7 +2,63 @@
 
 # Publish and Consume Events
 
-Event Mesh capability supports the following messaging protocol:
+Event Mesh enables applications to publish and consume events using industry-standard messaging protocols including AMQP 1.0, MQTT 3.1.1, and HTTP.
+
+Event Mesh supports 3 messaging protocols. Select the protocol that best matches your application landscape, device constraints, and reliability requirements.
+
+**Supported Messaging Protocols**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Protocol
+
+</th>
+<th valign="top">
+
+Recommended For
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+AMQP 1.0 over WebSocket
+
+</td>
+<td valign="top">
+
+Reliable business messaging between enterprise applications
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MQTT 3.1.1 over WebSocket
+
+</td>
+<td valign="top">
+
+Constrained devices, low bandwidth, or non-cloud applications
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+HTTP \(REST APIs\)
+
+</td>
+<td valign="top">
+
+Lightweight, REST-based integration using standard web tooling
+
+</td>
+</tr>
+</table>
 
 
 
@@ -10,7 +66,9 @@ Event Mesh capability supports the following messaging protocol:
 
 ## Advanced Message Queuing Protocol \(AMQP\) 1.0 over WebSocket
 
-The Advanced Message Queuing Protocol \(AMQP\) is an open standard for passing business messages between applications or organizations. It connects systems, feeds business processes with the information they need, and reliably transmits onward the instructions that achieve their goals. Event Mesh supports the use of AMQP 1.0 over websocket for messaging between applications.
+The Advanced Message Queuing Protocol \(AMQP\) is an open standard for passing business messages between applications or organizations.
+
+AMQP connects systems, feeds business processes with the information they need, and reliably transmits onward the instructions that achieve their goals. Event Mesh supports the use of AMQP 1.0 over WebSocket for messaging between applications.
 
 Refer to the [Specifications for AMQP 1.0 over Websocket](https://docs.oasis-open.org/amqp-bindmap/amqp-wsb/v1.0/amqp-wsb-v1.0.html) to publish and consume messages.
 
@@ -22,13 +80,69 @@ Also, refer to the [protocal implementation for AMQP 1.0](https://www.npmjs.com/
 
 ## Message Queuing Telemetry Transport \(MQTT\) 3.1.1 over WebSocket
 
-It’s a lightweight messaging protocol designed specifically for constrained devices, low bandwidth, high latency, or unreliable devices. We recommend that you use MQTT 3.1.1 over WebSocket for messaging to a service from applications not running on the Cloud, for example, SAP S/4HANA. For more information, see [Specification for MQTT 3.1.1 over WebSocket](https://help.sap.com/docs/link-disclaimer?site=http%3A%2F%2Fdocs.oasis-open.org%2Fmqtt%2Fmqtt%2Fv3.1.1%2Fcsprd02%2Fmqtt-v3.1.1-csprd02.html).
+It’s a lightweight messaging protocol designed specifically for constrained devices, low bandwidth, high latency, or unreliable devices.
+
+Use MQTT 3.1.1 over WebSocket for messaging to a service from applications not running on the Cloud, for example, SAP S/4HANA. For more information, see [Specification for MQTT 3.1.1 over WebSocket](https://help.sap.com/docs/link-disclaimer?site=http%3A%2F%2Fdocs.oasis-open.org%2Fmqtt%2Fmqtt%2Fv3.1.1%2Fcsprd02%2Fmqtt-v3.1.1-csprd02.html).
 
 > ### Note:  
-> Quality of Service \(QoS\) is a feature of MQTT, where the protocol handles retransmission and guarantees that the message is delivered regardless of network reliability. MQTT 3.1.1 over WebSocket supports only QoS 0, and QoS 1. The supported QoS levels are:
+> QoS is a feature of MQTT where the protocol handles retransmission and guarantees message delivery regardless of network reliability. MQTT 3.1.1 over WebSocket supports the following QoS levels:
 > 
-> -   At most once \(0\) - It guarantees best effort with delivery. A message isn't acknowledged by the receiver, stored or redelivered by the sender.
-> -   At least once \(1\) - It guarantees that a message is delivered at least once to the receiver. The message can also be delivered more than once.
+> **Supported MQTT QoS Levels**
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> QoS Level
+> 
+> </th>
+> <th valign="top">
+> 
+> Name
+> 
+> </th>
+> <th valign="top">
+> 
+> Description
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 0
+> 
+> </td>
+> <td valign="top">
+> 
+> At most once
+> 
+> </td>
+> <td valign="top">
+> 
+> Best-effort delivery. Messages aren't acknowledged, stored, or redelivered.
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> 1
+> 
+> </td>
+> <td valign="top">
+> 
+> At least once
+> 
+> </td>
+> <td valign="top">
+> 
+> Guarantees delivery at least once. Messages may be delivered more than once.
+> 
+> </td>
+> </tr>
+> </table>
 
 
 
@@ -36,7 +150,9 @@ It’s a lightweight messaging protocol designed specifically for constrained de
 
 ## Hypertext Transfer Protocol \(HTTP\)
 
-Hypertext Transfer Protocol \(HTTP\) is a fundamental protocol of the Internet, enabling the transfer of data between a client and a server. Event Mesh supports the use of HTTP for messaging between applications.
+Event Mesh supports the use of HTTP for messaging between applications.
+
+Hypertext Transfer Protocol \(HTTP\) is a fundamental protocol of the Internet, enabling the transfer of data between a client and a server.
 
 Use a REST client tool to leverage the supported REST APIs to publish and consume messages.
 
@@ -85,7 +201,7 @@ At Most Once
 </td>
 <td valign="top">
 
-Event Mesh attempts only once to deliver the messages. Event Mesh doesn't wait for acknowledgement from your application and deletes the messages from the queue after attempting to deliver, even if the messages are not successfully delivered.
+Event Mesh attempts only once to deliver the messages. Event Mesh doesn't wait for acknowledgment from your application and deletes the messages from the queue after attempting to deliver, even if the messages aren't successfully delivered.
 
 </td>
 </tr>
@@ -102,7 +218,7 @@ At Least Once
 </td>
 <td valign="top">
 
-Event Mesh attempts to deliver the messages to your to your application at least once, that is, waits for an acknowledgement from your application. If your application responds with a 2XX HTTP response code, the messages are deleted from the queue. If your application responds with other codes, Event Mesh keeps trying to redeliver the message until your application responds with a 2XX response code.
+Event Mesh attempts to deliver the messages to your application at least once, that is, waits for an acknowledgment from your application. If your application responds with a 2XX HTTP response code, the messages are deleted from the queue. If your application responds with other codes, Event Mesh keeps trying to redeliver the message until your application responds with a 2XX response code.
 
 </td>
 </tr>

@@ -46,7 +46,11 @@ You can design the following integration artifact types with the Cloud Integrati
 
 -   Data type
 
-    Contains the structure of data that defines the message \(see[Working with Data Types & Message Types](working-with-data-types-message-types-cf1d397.md) \).
+    Contains the structure of data that defines the message \(see [Working with Data Types & Message Types](working-with-data-types-message-types-cf1d397.md) \).
+
+-   Fault Message Type
+
+    Allows you to create a Fault Message Type \(See [Creating Fault Message Type](creating-fault-message-type-789b394.md)\)
 
 -   Message type
 

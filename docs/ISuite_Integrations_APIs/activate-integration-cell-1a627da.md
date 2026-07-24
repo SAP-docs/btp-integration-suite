@@ -40,7 +40,7 @@ Integration Cell is a cloud-based runtime included in the SAP Integration Suite.
 
 3.  Choose *Activate* next to Integration Cell to activate the runtime.
 
-    Once the Integration Cell is activated, the URL to manage the virtual host is displayed. You require the **PI\_Admin** role collection to access this page. To manage virtual hosts, navigate to *Monitor* \> *Manage Virtual Hosts*. For more information, see [View and Edit Virtual Host for API Artifacts](view-and-edit-virtual-host-for-api-artifacts-a87d799.md).
+    Once the Integration Cell is activated, the URL to manage the virtual host is displayed. You require the **PI\_Administrator** role collection to access this page. To manage virtual hosts, navigate to *Monitor* \> *Manage Virtual Hosts*. For more information, see [View and Edit Virtual Host for API Artifacts](view-and-edit-virtual-host-for-api-artifacts-a87d799.md).
 
     To create, design, and monitor integration and API artifacts, ensure that the **PI\_Integration\_Developer** role collection is assigned to you.
 

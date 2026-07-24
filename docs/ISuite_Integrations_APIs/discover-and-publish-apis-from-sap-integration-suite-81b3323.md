@@ -31,10 +31,8 @@ Use the *Authentication Provider* filter to narrow down the list of APIs and loc
 > ### Note:  
 > A product can include APIs from only one authentication provider. APIs that use different authentication methods, such as Internal and External OAuth, can't be combined within the same product.
 
-Use the *Runtime* filter to narrow down the list of APIs based on the runtime where the APIs are deployed.
-
 > ### Note:  
-> If an API is deployed to multiple runtimes \(for example, Edge Integration Cell 1, Edge Integration Cell 2, and others\), only one runtime deployment can be published within a product.
+> Only APIs from SAP Integration Suite business systems deployed on the **Integration Cell** runtime can be discovered and published to Developer Hub.
 
 
 

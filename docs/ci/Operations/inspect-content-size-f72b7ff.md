@@ -19,7 +19,7 @@ The default value of the entitlement is 2GB, as documented at [What Is SAP Cloud
 
 The bar chart shows the artifacts that put the highest load on the file system for a given time period, each represented by a different color as shown below:![](images/Inspect_Content_Size_f9e2357.png)
 
-You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval.
+You can change the displayed time period by selecting a different option in the dropdown box under *Time*. You can select *Past Day*, *Past Week*, *Past Month*, or *Custom* for a custom time interval. You can also use the *Previous* and *Next* buttons on the time filter to switch the time interval.
 
 > ### Note:  
 > When you select the option *Custom* for the *Time* filter, you can adjust the date and time intervals with the calendar and watch elements. You can select dates up to 30 days in the past. However, selection of dates in the future is disabled.
@@ -39,7 +39,7 @@ The legend lists the top consuming integration artifacts and associates a color 
 
 Choose a bar to get more context information and access the following functions:
 
--   *Inspect Artifact*
+-   *Inspect Content*
 
     Navigate to the more detailed *Inspect Artifact* screen to inspect the selected artifact further. For more information, see [Inspect Resource Consumption for Individual Integration Flow](inspect-resource-consumption-for-individual-integration-flow-3380bd6.md).
 

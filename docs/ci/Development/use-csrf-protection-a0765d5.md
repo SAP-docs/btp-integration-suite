@@ -2,16 +2,22 @@
 
 # Use CSRF Protection
 
-When using HTTPS-based sender channels to enable integration flows to receive HTTP requests, make sure to protect the system against cross site request forgery \(CSRF\) attacks.
+CSRF \(Cross Site Request Forgery\) protection prevents malicious attacks where users are tricked into executing unwanted API calls through their browser session. Use CSRF protection when integration flows can be directly called by users and allow modifying HTTP requests \(POST, PUT, DELETE, PATCH\), while it can be omitted for pure backend-to-backend technical communication.
 
-HTTP-based adapters are subject to CSRF attacks \(see: [Cross Site Request Forgery \(CSRF\) on OWASP.org](https://owasp.org/www-community/attacks/csrf)\). Therefore, they offer the possibility to be protected against such attacks. This option \(parameter *CSRF Protected*\) is enabled by default. When an integration flow can be called via modifying HTTP requests \(POST, PUT, DELETE, PATCH\), make sure that the *CSRF Protected* option is always activated.
+If users directly call APIs using a browser, they can be tricked into executing unwanted calls in the same session, which is called [Cross Site Request Forgery \(CSRF\)](https://owasp.org/www-community/attacks/csrf).
+
+HTTP-based sender adapters can be protected against such attacks. This option \(parameter *CSRF Protected*\) is enabled by default. When an integration flow can be directly called by users and allows modifying HTTP requests \(POST, PUT, DELETE, PATCH\), make sure that the *CSRF Protected* option is always activated.
+
+For pure technical \(backend to backend\) communication, CSRF is usually not an issue. You can omit the CRSF protection to simplify the communication.
+
+If a receiver system is CSRF protected, you might need to apply additional steps to fetch an CRSF token before executing the actual API call \(see the following examples\).
 
 > ### Note:  
 > When dealing with receiver adapters that support CSRF protection, apply the following rules:
 > 
-> -   It's determined by the configuration of the receiver system if CSRF protection for the outbound connection is required or not. If supported and required by the receiver, keep the *CSRF Protected* option enabled in the receiver adapter \(if the receiver adapter offers this feature\) or explicitly implement CSRF token handling.
+> -   It's determined by the configuration of the receiver system if CSRF protection for the outbound connection is required or not. If supported and required by the receiver, keep the *CSRF Protected* option enabled in the receiver adapter \(if the receiver adapter offers this feature\), or explicitly implement CSRF token handling.
 > 
->     If CSRF protection isn't required by the receiver, you also don’t need to configure the outbound connection accordingly. In this case, such a setting doesn't increase the security level of your scenario. Moreover, the scenario can even fail if you have configured CSRF token handling but the receiver doesn't expect any CSRF fetch request.
+>     If CSRF protection isn't required by the receiver, you also don’t need to configure the outbound connection accordingly. In this case, such a setting doesn't increase the security level of your scenario. Moreover, the scenario can even fail if you've configured CSRF token handling but the receiver doesn't expect any CSRF fetch request.
 > 
 > -   Activating HTTP session reuse is a **prerequisite** for the operation of the CSRF-protected scenario.
 > 
@@ -32,7 +38,7 @@ This guideline applies to both the sender and receiver channel direction and is 
 
 Both integration flows communicate with each other as shown in the figure.
 
-![](images/CSRF_Flows_1c47eb6.png)
+![Diagram showing CSRF protection flow between HTTP client and tenant with sender and receiver channels.](images/CSRF_Flows_1c47eb6.png)
 
 As indicated, integration flow *Apply Security - Use CSRF Protection - Receiver Channel* \(which is initially called by the HTTP client\) calls integration flow *Apply Security - Use CSRF Protection - Sender Channel*. Although we assume that you deploy both integration flows on the same tenant, the communication exceeds the borders of the tenant and is passed through the load balancer \(as described under [Setting Up Inbound HTTP Connections \(Integration Flow Processing\), Neo Environment](../ConnectionSetup/setting-up-inbound-http-connections-integration-flow-processing-neo-environment-778c7e7.md)\). From the perspective of the first integration flow, the message is sent towards a remote tenant \(using the HTTP receiver adapter\). Likewise, from the perspective of the 2nd integration flow, the message is received from a remote component. This behavior is different than when using ProcessDirect adapters for the communication between the integration flows.
 
@@ -47,7 +53,7 @@ Note the following prerequisite to run the integration flows: To allow integrati
 
 Reference integration flow *Apply Security - Use CSRF Protection - Receiver Channel* is modeled in the following way:
 
-![](images/CSRF_Receiver_8cb8ac3.png)
+![CSRF protection receiver channel workflow diagram showing message flow from sender through token fetch to payload.](images/CSRF_Receiver_8cb8ac3.png)
 
 For the HTTP receiver channel, the CSRF token handling must be modeled explicitly. In other words, integration flow *Apply Security - Use CSRF Protection - Receiver Channel* needs to explicitly retrieve the CSRF token \(in a header\) from the receiver \(implemented by integration flow *Apply Security - Use CSRF Protection - Sender Channel*\).
 
@@ -67,9 +73,9 @@ To implement this step, the integration flow is designed in the following way:
     > ### Note:  
     > Alternatively, you can also use the HTTP *GET* method for this step. Consider the case that, before placing a POST request, you first like to fetch data from the remote component using a GET request. In this case, you can use the GET request \(that is anyway required by the scenario\) to also fetch the CSRF token. That way, you can reduce the number of required communication steps in your scenario to a minimum.
 
-    In order to be able to respond to this request in the expected way, the target system expects a header `x-csrf-token` with value `fetch` that has been set in the preceding Content Modifier.
+    To be able to respond to this request in the expected way, the target system expects a header `x-csrf-token` with value `fetch` that has been set in the preceding Content Modifier.
 
-    ![](images/HTTP_Channel_1_48f9715.png)
+    ![HTTP Connection Details configuration form with fields for address, query, proxy type, method, authentication, and credentials.](images/HTTP_Channel_1_48f9715.png)
 
 3.  Content Modifier *Set Payload* sets the payload based on the property created in the previous Content Modifier.
 
@@ -81,7 +87,7 @@ To implement this step, the integration flow is designed in the following way:
 
 Reference integration flow *Apply Security - Use CSRF Protection - Sender Channel* is modeled in the following way:
 
-![](images/CSRF_Sender_9c5e355.png)
+![Workflow diagram showing CSRF protection flow from Sender through HTTPS to Start and End nodes, then to ProcessDirect.](images/CSRF_Sender_9c5e355.png)
 
 This integration flow forwards the received message to the generic receiver integration flow \(to store the message content as Data Store entry\).
 
@@ -89,7 +95,8 @@ Before deployment, verify that the option *CSRF Protected* is enabled in the HTT
 
 For more information, check out the following sources:
 
-[Cross-Site Request Forgery \(CSRF\) Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+-   [Cross-Site Request Forgery \(CSRF\) Prevention Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
 
-[Authentication](authentication-bd2fbd5.md) \(SAP Help Portal\)
+-   [Authentication](authentication-bd2fbd5.md) \(SAP Help Portal\)
+
 

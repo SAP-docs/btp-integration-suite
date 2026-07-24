@@ -56,7 +56,7 @@ Select the appropriate authentication mechanism for your API.
 > If you select the *Enable Default Virtual Host HTTP* option while deploying the Edge Integration Cell solution, the Client Certificate authentication type won't work for HTTP-based calls. However, the *Basic* and *OAuth* authentication types will still function. It's important to note that the authorization header for *Basic* and *OAuth* is transmitted in plaintext format. Therefore, without HTTPS, it's vulnerable to interception attacks.
 
 > ### Note:  
-> To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API Artifact by Obtaining API Credentials through Process Integration Runtime](invoke-an-api-artifact-by-obtaining-api-credentials-through-process-integration-runtime-b63baa2.md).
+> To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API or an MCP Server Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-or-an-mcp-server-artifact-by-obtaining-credentials-through-process-integrat-b63baa2.md).
 > 
 > Now, if you execute the API, the Authentication policy should be able to successfully authenticate the request.
 
@@ -402,26 +402,28 @@ One common use case is to use this expression in the **Quota Identifier** field 
 <tr>
 <th valign="top">
 
-Error Code
+HTTP Status Code
 
 </th>
 <th valign="top">
 
-HTTP Status
-
-</th>
-<th valign="top">
-
-Example Runtime Message
+Description
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-unauthorized
+401
 
 </td>
+<td valign="top">
+
+Unauthorized. Unable to authenticate user. Access token has expired. Please obtain a new token.
+
+</td>
+</tr>
+<tr>
 <td valign="top">
 
 401
@@ -429,16 +431,11 @@ unauthorized
 </td>
 <td valign="top">
 
-Unauthorized: Unable to authenticate user. Access token has expired. Please obtain a new token.
+Invalid token. Unable to authenticate user. The provided token is invalid. Please verify the token and retry.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-invalidToken
-
-</td>
 <td valign="top">
 
 401
@@ -446,33 +443,11 @@ invalidToken
 </td>
 <td valign="top">
 
-InvalidToken: Unable to authenticate user. The provided token is invalid. Please verify the token and retry.
+Token not present. Unable to authenticate user. No token was provided in the Authorization header. Please include a valid token and retry.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-tokenNotPresent
-
-</td>
-<td valign="top">
-
-401
-
-</td>
-<td valign="top">
-
-tokenNotPresent: Unable to authenticate uer. No token was provided in the Authorization header. Please include a valid token and retry.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-invalidWellKnownURL
-
-</td>
 <td valign="top">
 
 400
@@ -480,16 +455,11 @@ invalidWellKnownURL
 </td>
 <td valign="top">
 
-InvalidWellKnownURL: Unable to reach the well-known configuration endpoint. Please verify the URL and network connectivity.
+Invalid wellknown URL. Unable to reach the well-known configuration endpoint. Please verify the URL and network connectivity.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-badRequest
-
-</td>
 <td valign="top">
 
 400
@@ -497,16 +467,11 @@ badRequest
 </td>
 <td valign="top">
 
-badRequest: Required Authorization header is missing from the request. Please include it and retry.
+Bad request. Required Authorization header is missing from the request. Please include it and retry.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-noCredentials
-
-</td>
 <td valign="top">
 
 401
@@ -514,16 +479,11 @@ noCredentials
 </td>
 <td valign="top">
 
-NoCredentials: Credentials are not present in the request. Please provide valid authentication credentials and retry.
+No credentials. Credentials are not present in the request. Please provide valid authentication credentials and retry.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-authModeNotSupported
-
-</td>
 <td valign="top">
 
 401
@@ -531,16 +491,11 @@ authModeNotSupported
 </td>
 <td valign="top">
 
-authModeNotSupported: User not authenticated. The provided authentication mode is not supported. Supported authentication types: OAuth2, JWT, Basic.
+Auth mode not supported. User not authenticated. The provided authentication mode is not supported. Supported authentication types: OAuth2, JWT, Basic.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-authHandlerConfigurationError
-
-</td>
 <td valign="top">
 
 500
@@ -548,16 +503,11 @@ authHandlerConfigurationError
 </td>
 <td valign="top">
 
-authHandlerConfigurationError: Error configuring authentication handler. Please verify the authentication policy configuration and try again.
+Auth handler configuration error. Error configuring authentication handler. Please verify the authentication policy configuration and try again.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-authTypeInitializationError
-
-</td>
 <td valign="top">
 
 500
@@ -565,16 +515,11 @@ authTypeInitializationError
 </td>
 <td valign="top">
 
-authTypeInitializationError: An error occurred while initializing OAuth2 authentication. Please verify the OAuth2 configuration and try again.
+Auth type initialization error. An error occurred while initializing OAuth2 authentication. Please verify the OAuth2 configuration and try again.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-authTypeIdentificationError
-
-</td>
 <td valign="top">
 
 401
@@ -582,16 +527,11 @@ authTypeIdentificationError
 </td>
 <td valign="top">
 
-authTypeIdentificationError: Invalid authentication type specified. Please provide a valid authentication type: OAuth2 or JWT.
+Auth type identification error. Invalid authentication type specified. Please provide a valid authentication type: OAuth2 or JWT.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-tokenFetchError
-
-</td>
 <td valign="top">
 
 500
@@ -599,16 +539,11 @@ tokenFetchError
 </td>
 <td valign="top">
 
-tokenFetchError: An error occurred while fetching the access token from the authorization server. Please verify the authorization server configuration and try again.
+Token fetch error. An error occurred while fetching the access token from the authorization server. Please verify the authorization server configuration and try again.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-tokenValidationError
-
-</td>
 <td valign="top">
 
 500
@@ -616,16 +551,11 @@ tokenValidationError
 </td>
 <td valign="top">
 
-tokenValidationError: An error occurred during token validation. Please verify the token and try again.
+Token validation error. An error occurred during token validation. Please verify the token and try again.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-tokenUpdateInCacheError
-
-</td>
 <td valign="top">
 
 500
@@ -633,16 +563,11 @@ tokenUpdateInCacheError
 </td>
 <td valign="top">
 
-tokenUpdateInCacheError: An error occurred while updating the authentication token cache. Please retry the request.
+Token update in cache error. An error occurred while updating the authentication token cache. Please retry the request.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-timestampValidationAuthenticationError
-
-</td>
 <td valign="top">
 
 500
@@ -650,16 +575,11 @@ timestampValidationAuthenticationError
 </td>
 <td valign="top">
 
-timestampValidationAuthenticationError: Error occurred during token validation. Timestamp validation for the authentication token has failed. Current time in UTC is `2026-07-06T12:15:30Z`, Token expiry time in UTC is`2026-07-06T12:00:00Z` 
+Timestamp validation authentication error. Error occurred during token validation. Timestamp validation for the authentication token has failed. Current time in UTC is `2026-07-06T12:15:30Z`, Token expiry time in UTC is`2026-07-06T12:00:00Z` 
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-jkuUrlValidationAuthenticationError
-
-</td>
 <td valign="top">
 
 500
@@ -667,16 +587,11 @@ jkuUrlValidationAuthenticationError
 </td>
 <td valign="top">
 
-jkuUrlValidationAuthenticationError: Error occurred during token validation. Validation failed for the JKU URL of the authentication token. Please verify the token issuer configuration.
+JKU URL validation authentication error. Error occurred during token validation. Validation failed for the JKU URL of the authentication token. Please verify the token issuer configuration.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-jkuPublicKeyValidationAuthenticationError
-
-</td>
 <td valign="top">
 
 500
@@ -684,16 +599,11 @@ jkuPublicKeyValidationAuthenticationError
 </td>
 <td valign="top">
 
-jkuPublicKeyValidationAuthenticationError: Error occurred during token validation. Token validation failed while validating with the public key retrieved from the JKU URL.
+JKU public key validation authentication error. Error occurred during token validation. Token validation failed while validating with the public key retrieved from the JKU URL.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-audienceValidationError
-
-</td>
 <td valign="top">
 
 500
@@ -701,16 +611,11 @@ audienceValidationError
 </td>
 <td valign="top">
 
-audienceValidationError: Error occurred during token validation. Audience validation failed, audience from access token = `api://orders-service`.
+Audience validation error. Error occurred during token validation. Audience validation failed, audience from access token = `api://orders-service`.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-scopeValidationError
-
-</td>
 <td valign="top">
 
 500
@@ -718,16 +623,11 @@ scopeValidationError
 </td>
 <td valign="top">
 
-scopeValidationError: Error validating scope in the token. The token does not have the required scope to access this resource.
+Scope validation error. Error validating scope in the token. The token does not have the required scope to access this resource.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
-
-aclCheckFailed
-
-</td>
 <td valign="top">
 
 403
@@ -735,7 +635,7 @@ aclCheckFailed
 </td>
 <td valign="top">
 
-Forbidden: Access denied due to insufficient permissions. Your identity does not have the required ACL rights to access this resource. Please contact your administrator to request access.
+ACL check failed. Access denied due to insufficient permissions. Your identity does not have the required ACL rights to access this resource. Please contact your administrator to request access.
 
 </td>
 </tr>

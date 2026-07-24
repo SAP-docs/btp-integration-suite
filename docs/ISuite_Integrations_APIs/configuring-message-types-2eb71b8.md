@@ -137,7 +137,7 @@ Data Type Used
 </td>
 <td valign="top">
 
-To assign another user-defined data type, choose *Select*. Choose the integration packages from which you wish to list the data types and select the one to be used. The structure of the selected data type gets loaded in the tree table.
+From the *Overview* or *Structure* tab, to assign another user-defined data type, choose *Select*. Choose the integration packages from which you wish to list the data types and select the one to be used. The structure of the selected data type gets loaded in the tree table.
 
 > ### Note:  
 > You can edit the referenced data type of the root node only.
@@ -231,7 +231,7 @@ Choose *Save* to save the draft. Choose *Save as version* to save the message ty
 > ### Note:  
 > You can save the artifact even if you have validation errors in your structure tab.
 
-The displayed value range [restrictions](editing-data-type-7136a31.md#loio7136a3141d294a8a86884a3b03aad5b4__table_xtn_yqp_l5b) can't be edited for Message Types.
+The displayed value range [restrictions](editing-data-type-7136a31.md#loio7136a3141d294a8a86884a3b03aad5b4__table_xtn_yqp_l5b) can't be edited for message types.
 
 
 
@@ -239,7 +239,7 @@ The displayed value range [restrictions](editing-data-type-7136a31.md#loio7136a3
 
 ## Overview
 
-From Cloud Integration Web UI you can view the following general details of a Message Type. To edit the referenced data type or namespace, choose *Edit*.
+From Cloud Integration Web UI you can view the following general details of a message type. To edit the referenced data type or namespace, choose *Edit*.
 
 ****
 
@@ -265,7 +265,7 @@ Name
 </td>
 <td valign="top">
 
-Displays the name of the Message Type. The name of the root node is the same as the Message Type.
+Displays the name of the message type. The name of the root node is the same as the Message Type.
 
 </td>
 </tr>
@@ -289,7 +289,7 @@ XML Namespace
 </td>
 <td valign="top">
 
-Displays the namespace to which Message Type belongs to or where it's created.
+Displays the namespace to which message type belongs to or where it's created.
 
 You can edit the existing namespace or define a new one if it's not already created.
 
@@ -305,7 +305,7 @@ Data Type Used & Data Type's Package
 
 Displays the data type of this message type and name of the package in which the data type exists.
 
-Choose *Select* to assign a new data type to refer to from the displayed list of data types. All the related fields are updated. The Structure and XSD schema of the Message type is also updated in the respective tabs.
+Choose *Select* to assign a new data type to refer to from the displayed list of data types. All the related fields are updated. The Structure and XSD schema of the message type is also updated in the respective tabs.
 
 > ### Note:  
 > Data Type of only the root node can be edited.
@@ -346,7 +346,7 @@ Description
 </td>
 <td valign="top">
 
-Displays the description associated with the Message Type, if any.
+Displays the description associated with the message type, if any.
 
 </td>
 </tr>
@@ -358,8 +358,8 @@ ES Repository Information
 </td>
 <td valign="top">
 
--   Software Component Version: Displays the software component version to which the Message Type belongs to in ES repository.
--   Namespace: Displays the ES repository namespace where the Message Type is created.
+-   Software Component Version: Displays the software component version to which the message type belongs to in ES repository.
+-   Namespace: Displays the ES repository namespace where the message type is created.
 
 
 

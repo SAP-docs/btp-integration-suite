@@ -132,7 +132,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -172,7 +172,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -186,7 +186,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -200,7 +200,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -214,7 +214,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -459,22 +459,22 @@ Select this option to upload each message attachment in the exchange as an S3 ob
 
 *Post-Processing*
 
-\(only if  Operation is Read Operation\)
+\(only available if *Operation* is Read\)
 
 </td>
 <td valign="top">
 
 Specify the action taken after the file is processed. Select from the following options:
 
--   Delete File
+-   *Delete File*
 
--   Keep File
+-   *Keep File*
 
--   Move File to an Archive directory
+-   *Move File to an Archive directory*
 
--   Copy file to an Archive Bucket
+-   *Copy file to an Archive Bucket*
 
--   Move file to an Archive Bucket
+-   *Move file to an Archive Bucket*
 
 
 
@@ -486,7 +486,7 @@ Specify the action taken after the file is processed. Select from the following 
 
 *Customer Decryption Key Alias*
 
-\(only if  Operation is Read Operation\)
+\(only available if *Operation* is Read\)
 
 </td>
 <td valign="top">
@@ -545,13 +545,13 @@ Example: "place\_holder".
 
 The property on which sorting should be done while listing the files. The sorting will be done in ascending order of the option selected. Available options:
 
--   File Name: The sorting is performed based on the filename.
+-   *File Name*: The sorting is performed based on the filename.
 
--   File Size: Sorting is performed based on file size.
+-   *File Size*: Sorting is performed based on file size.
 
--   Time Stamp: Sorting is performed based on the timestamp.
+-   *Time Stamp*: Sorting is performed based on the timestamp.
 
--   None \(default\): No sorting is performed. This is the default option for sorting.
+-   *None* \(default\): No sorting is performed. This is the default option for sorting.
 
 
 
@@ -586,16 +586,44 @@ Description
 
 Select the server-side encryption, used for storing the file in AWS, from the following options:
 
--   SSE-C \(with Customer-Provided Key\)
+-   *SSE-C \(with Customer-Provided Key\)*
 
--   SSE-KMS \(with Customer Master Keys Stored in AWS Key Management Service\)
+-   *SSE-KMS \(with Customer Master Keys Stored in AWS Key Management Service\)* 
 
--   SSE-S3 \(with Amazon S3-Managed Keys\)
+-   *SSE-S3 \(with Amazon S3-Managed Keys\)* 
 
--   The default value is NONE
+-   The default value is *NONE*
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Encryption Key Alias*
+
+\(Only available when Encryption Option is set to*SSE-C*.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter which stores the customer-provided encryption key \(256-bit, base64-encoded\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Customer Managed Key ID*
+
+\(Only available when Encryption Option is set to*SSE-KMS*.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the secure parameter which stores the ID of the symmetric customer-managed AWS KMS CMK.
 
 </td>
 </tr>
@@ -736,7 +764,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -776,7 +804,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -790,7 +818,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -804,7 +832,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -818,7 +846,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -926,7 +954,7 @@ Enable the checkbox to process large-size messages. If this option is enabled, t
 
 *Message Size Threshold*
 
-\(Only available when Enable Large Payload is enabled.\)
+\(Only available when *Enable Large Payload* is enabled.\)
 
 </td>
 <td valign="top">
@@ -942,7 +970,7 @@ The Default Value is 262144 \(256Kb\).
 
 *Bucket Name*
 
-\(Only available when Enable Large Payload is enabled.\)
+\(Only available when *Enable Large Payload* is enabled.\)
 
 </td>
 <td valign="top">
@@ -1083,7 +1111,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1123,7 +1151,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1137,7 +1165,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1151,7 +1179,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1165,7 +1193,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1202,9 +1230,8 @@ Description
 
 Select the type of topic to be used. Possible options include:
 
-> ### Note:  
-> -   Standard
-> -   FIFO
+-   *Standard*
+-   *FIFO*
 
 
 
@@ -1237,9 +1264,9 @@ Specify the subject of the message.
 
 Select the structure of the message from the following options:
 
--   Identical Payload for all Delivery Protocols
+-   *Identical Payload for all Delivery Protocols* 
 
--   Custom Payload for each Delivery Protocol
+-   *Custom Payload for each Delivery Protocol*
 
 
 
@@ -1263,7 +1290,7 @@ Enable the checkbox to process large-size messages. If this option is enabled, t
 
 *Message Size Threshold*
 
-\(Only available when Enable Large Payload is
+\(Only available when *Enable Large Payload* is
 
 enabled.\)
 
@@ -1283,7 +1310,7 @@ Default Value: 262144 \(256Kb\).
 
 *Bucket Name*
 
-\(Only available when Enable Large Payload is
+\(Only available when *Enable Large Payload* is
 
 enabled.\)
 
@@ -1309,9 +1336,9 @@ The name of the S3 bucket where the large files should be written.
 
 Specify any additional message attribute name-datatype-value pairs that you can send to AWS.
 
--   Name: Specify the custom header name to be passed in the request to AWS. Value can also be read dynamically.
--   Datatype: Specify the required datatype. The available options include String, String.Array, Number, and Binary actions. Value can also be read dynamically.
--   Value: Specify the custom header value to be passed in the request to AWS. Value can also be read dynamically.
+-   *Name*: Specify the custom header name to be passed in the request to AWS. Value can also be read dynamically.
+-   *Datatype*: Specify the required datatype. The available options include String, String.Array, Number, and Binary actions. Value can also be read dynamically.
+-   *Value*: Specify the custom header value to be passed in the request to AWS. Value can also be read dynamically.
 
 
 
@@ -1325,7 +1352,12 @@ Specify any additional message attribute name-datatype-value pairs that you can 
 </td>
 <td valign="top">
 
-Specify the format of the response message sent by AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
+Specify the format of the response message sent by AWS. Possible values include:
+
+-   *Application/XML*
+-   *Application/JSON*
+
+The default value is *Application/XML*.
 
 </td>
 </tr>
@@ -1425,7 +1457,7 @@ Specify the name of the Secure Parameter artifact that contains the AWS secret k
 
 *OIDC Credential Name*
 
-\(Only available when Security Token Service \(AssumeRoleWithWebldentity\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRoleWithWebldentity\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1465,7 +1497,7 @@ Specify the Role Session Name for a session of the same role assumed with differ
 
 *External ID Alias*
 
-\(Only available when Security Token Service \(AssumeRole\) is selected.\)
+\(Only available when *Security Token Service \(AssumeRole\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1479,7 +1511,7 @@ Specify the name of the secure parameter that stores the External ID, as defined
 
 *Profile ARN Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1493,7 +1525,7 @@ Specify the name of the secure parameter that stores the profile ARN. A profile 
 
 *Trust Anchor Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1507,7 +1539,7 @@ Specify the name of the secure parameter that stores the Trust Anchor ARN. A tru
 
 *Key Pair Alias*
 
-\(Only available when Security Token Service \(IAMRolesAnywhere\) is selected.\)
+\(Only available when *Security Token Service \(IAMRolesAnywhere\)* is selected.\)
 
 </td>
 <td valign="top">
@@ -1559,7 +1591,12 @@ Select the API action to be performed in AWS Simple Workflow.
 </td>
 <td valign="top">
 
-Specify the format of the request message to send to AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
+Specify the format of the request message to send to AWS. Possible values include:
+
+-   *Application/XML*
+-   *Application/JSON*
+
+The default value is *Application/XML*.
 
 </td>
 </tr>
@@ -1571,7 +1608,12 @@ Specify the format of the request message to send to AWS. Possible values includ
 </td>
 <td valign="top">
 
-Specify the format of the response message sent by AWS. Possible values include Application/XML and Application/JSON. The default value is Application/XML.
+Specify the format of the response message sent by AWS. Possible values include:
+
+-   *Application/XML*
+-   *Application/JSON*
+
+The default value is *Application/XML*.
 
 </td>
 </tr>

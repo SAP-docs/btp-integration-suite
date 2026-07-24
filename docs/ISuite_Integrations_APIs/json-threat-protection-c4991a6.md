@@ -170,6 +170,134 @@ Maximum size allowed for a JSON payload in KB. The maximum value is 10000 KB.
 
 If the Max JSON Size field is left empty and the incoming payload exceeds 10000 KB, the policy enforces the system-level limit of **10,000 KB**, resulting in a failure. However, if the **On Error** field is set to **Continue**, the error is ignored, and flow execution proceeds.
 
+
+
+## Error Codes
+
+
+<table>
+<tr>
+<th valign="top">
+
+HTTP Status Code
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+413
+
+</td>
+<td valign="top">
+
+JSON validation size exceeded. JSON payload has exceeded the allowed size limit. Please reduce the payload size and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation depth exceeded. JSON payload has exceeded the allowed depth limit. Please reduce the nesting level and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation string length exceeded. JSON payload has exceeded the allowed string length limit. Please reduce the length of string values and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation key string length exceeded. JSON payload has exceeded the allowed key length limit. Please reduce the length of property names and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation array length exceeded. JSON payload has exceeded the allowed number of array elements. Please reduce the array size and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation object count exceeded. JSON payload has exceeded the allowed number of object entries. Please reduce the number of properties and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+400
+
+</td>
+<td valign="top">
+
+JSON validation invalid payload. Payload is not in valid JSON format. Please verify the payload structure and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+JSON validation unit evaluation error. Error evaluating unit for JSON size. Please verify the size unit configuration in the policy and retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+500
+
+</td>
+<td valign="top">
+
+JSON validation max size evaluation error. Error evaluating maximum size for JSON payload. Please verify the maximum size configuration in the policy and retry.
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

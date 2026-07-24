@@ -112,6 +112,125 @@ Cloud Integration
 </td>
 <td valign="top">
 
+8.44.24
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixes failures with generating integrations with AI by updating the UCL Discovery host URL and adding a Null Pointer Check.
+-   Resolves an issue causing `SAP_AS2_SND_*` parameters to go missing in the PD environment after deploying a second bind-mode agreement.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.80.90
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Upgrades the HANA driver version to enable use of the latest HANA features.
+-   Fixes agreement activation failures caused by undefined signature encoding.
+-   Corrects bind‑mode agreement activation being incorrectly blocked by incongruent ruleset IDs.
+-   Restores the ability to update or reactivate CCT-used active security through the TPM backend.
+-   Adds the `javax.sql` and `javax.sql.rowset` packages to the message mapping artifact manifest to enable JDBC API use cases.
+-   Fixes failures with generating integrations with AI by updating the UCL Discovery host URL and adding a Null Pointer Check.
+-   Resolves an issue causing `SAP_AS2_SND_*` parameters to go missing in the PD environment after deploying a second bind-mode agreement.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.53.23
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixes a security issue in CXF and Knative HTTP endpoints by adding inbound header filtering to CXF filter strategy.
+-   Upgrades the HANA driver version to enable use of the latest HANA features.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.44.23
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Disables the CSV-to-XML schema cache by default to prevent collisions between same‑named schemas and eliminate conversion errors.
+-   Introduces enhanced security hardening for OData sender endpoints.
+-   Fixes RNIF adapter conflicts with the CiG custom adapter by renaming the standard adapter and removing redundant bundling to prevent runtime issues.
+-   Fixes a security issue in CXF and Knative HTTP endpoints by adding inbound header filtering to CXF filter strategy.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.80.84
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixes RNIF adapter conflicts with the CiG custom adapter by renaming the standard adapter and removing redundant bundling to prevent runtime issues.
+-   Enables SPC communication for the BIC Trial plan.
+-   Introduces DSI 2.0, with dsi-package instance metering now executed for the standard, premium, enhanced, and enterprise agreement editions, supported by multiple connectors per instance and metering configuration updates.
+-   Fixes a security issue in CXF and Knative HTTP endpoints by adding inbound header filtering to CXF filter strategy.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
 7.53.21
 
 </td>

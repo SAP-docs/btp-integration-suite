@@ -17,15 +17,119 @@ SAP Integration Suite provides comprehensive analytics capabilities to understan
 
 -   You have the *PI\_Integration\_Developer* or *PI\_Read\_Only* role assigned to you.
 
--   The *PI\_Integration\_Developer* role:
+    -   The *PI\_Integration\_Developer* role:
 
-    -   Gives you access to customize charts for API and MCP server metrics.
-    -   Allows you to perform CRUD \(Create, Read, Update and Delete\) operations for charts.
+        -   Gives you access to customize charts for API and MCP server metrics.
+        -   Allows you to perform CRUD \(Create, Read, Update and Delete\) operations for charts.
 
-    With *PI\_Read\_Only* role, you can only view charts.
+    -   With *PI\_Read\_Only* role, you can only view charts.
 
--   Analytics data availability depends on Message Processing Log \(MPL\) log level configuration. For more information about monitoring and log configuration, see [Monitor APIs and MCP Servers](monitor-apis-and-mcp-servers-399b6c6.md).
 
+-   The MPL log level is set to *Info* or higher.
+
+    > ### Note:  
+    > Analytics data availability for API and MCP Server artifacts depends on the Message Processing Log \(MPL\) log level, which determines what data is captured and displayed. The default log level is *Info*.
+
+    **Log Level Reference**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Log Level
+    
+    </th>
+    <th valign="top">
+
+    Analytics Behavior
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    None
+    
+    </td>
+    <td valign="top">
+    
+    No analytics data is captured. The analytics dashboard will show no results.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Info \(default, recommended\)
+    
+    </td>
+    <td valign="top">
+    
+    All standard API and MCP Server analytics data is available.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Error
+    
+    </td>
+    <td valign="top">
+    
+    Analytics data is available only for **failed** API or MCP Server calls.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Debug
+    
+    </td>
+    <td valign="top">
+    
+    All standard API and MCP Server analytics data is available.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Trace
+    
+    </td>
+    <td valign="top">
+    
+    The log level `trace` is currently not supported for API or MCP Server artifacts.
+    
+    </td>
+    </tr>
+    </table>
+    
+
+
+
+## Configuring the Log Level
+
+To adjust the MPL log level for an API or MCP Server artifact:
+
+1.  Log on to **SAP Integration Suite**.
+
+2.  From the left navigation pane, choose *Monitor* \> *Integrations and APIs*.
+
+3.  Choose *Manage Integration Content* and select the deployed API or MCP Server artifact.
+
+4.  Navigate to the *Log Configuration* section and select the desired log level.
+
+    > ### Note:  
+    > The default log level is *Info*.
+
+5.  Save your changes.
+
+
+For more information about monitoring and log configuration, see [Monitor APIs and MCP Servers](monitor-apis-and-mcp-servers-399b6c6.md).
 
 
 
@@ -223,7 +327,7 @@ Subscriptions for Applications for the Week
 </td>
 <td valign="top">
 
-Displays the daily average number of API calls per subscription for applications, highlighting the top applications.
+Displays the daily average number of API calls per subscription for applications.
 
 </td>
 </tr>
@@ -235,7 +339,7 @@ Developers for the Week
 </td>
 <td valign="top">
 
-Displays the daily average number of API calls made by each developer, highlighting the most active developers.
+Displays the daily average number of API calls made by each developer.
 
 </td>
 </tr>
@@ -702,7 +806,7 @@ Top MCP Servers of the Week
 </td>
 <td valign="top">
 
-Displays the top 5 most frequently called MCP servers for the week, showing the call count per agent for each MCP server.
+Displays the top 5 MCP servers of the week based on the number of calls per agent.
 
 </td>
 </tr>
@@ -714,19 +818,19 @@ Top Subscriptions for Agents for the Week
 </td>
 <td valign="top">
 
-Displays the top 5 most active subscriptions for agents for the week, showing the call count per subscription for each agent.
+Displays the top 5 subscriptions for agents based on the number of calls made through each subscription during the week.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-Top API Products of the Week
+Top AI Products of the Week
 
 </td>
 <td valign="top">
 
-Displays the top 5 products of the week based on the number of calls received for each product.
+Displays the top 5 AI products for the week based on the number of calls made by agents.
 
 </td>
 </tr>
@@ -738,7 +842,7 @@ Top Developers of the Week
 </td>
 <td valign="top">
 
-Displays the top 5 most active developers of the week.
+Displays the top 5 developers for the week based on the number of calls made by each developer.
 
 </td>
 </tr>
@@ -750,7 +854,7 @@ Subscriptions for Agents for the Week
 </td>
 <td valign="top">
 
-Displays the daily call count for each agent subscription during the week.
+Displays the daily number of calls made through subscriptions for agents during the week.
 
 </td>
 </tr>
@@ -762,7 +866,7 @@ Tools for the Week by Agent
 </td>
 <td valign="top">
 
-Displays the call count per agent for each tool during the week.
+Displays the number of calls made by each agent for each tool during the week.
 
 </td>
 </tr>
@@ -774,7 +878,7 @@ Resources for the Week by Agent
 </td>
 <td valign="top">
 
-Displays the call count per agent for each resource during the week.
+Displays the number of calls made by each agent for each resource during the week.
 
 </td>
 </tr>
@@ -786,7 +890,7 @@ Tools/Resource Counts per Response Code
 </td>
 <td valign="top">
 
-Displays a comparison of tool and resource call counts across response codes.
+Compares the number of tool calls versus resource calls for each response code.
 
 </td>
 </tr>
@@ -798,7 +902,7 @@ Tool Errors by Agent
 </td>
 <td valign="top">
 
-Displays the failed call count per agent for each tool.
+Displays the number of failed calls made by each agent for each tool during the week.
 
 </td>
 </tr>
@@ -810,7 +914,7 @@ Resource Errors by Agent
 </td>
 <td valign="top">
 
-Displays the failed call count per agent for each resource.
+Displays the number of failed calls made by each agent for each resource during the week.
 
 </td>
 </tr>
@@ -860,7 +964,7 @@ MCP Server Errors by Tool vs Resource
 </td>
 <td valign="top">
 
-Displays a comparison of failed tool and resource calls across MCP servers.
+Compares the number of failed tool and resource calls for each MCP server.
 
 </td>
 </tr>
@@ -872,7 +976,7 @@ MCP Policy Errors
 </td>
 <td valign="top">
 
-Displays the number of failed calls caused by policy errors for each MCP server.
+Displays the number of failed calls due to policy errors for each MCP server.
 
 </td>
 </tr>
@@ -884,7 +988,7 @@ Tool Errors by API
 </td>
 <td valign="top">
 
-Displays the number of failed tool calls, grouped by API.
+Displays the number of failed tool calls by API for each tool.
 
 </td>
 </tr>
@@ -896,7 +1000,7 @@ Resource Errors by API
 </td>
 <td valign="top">
 
-Displays the number of failed resource calls, grouped by API.
+Displays the number of failed resource calls by API for each resource.
 
 </td>
 </tr>
@@ -908,7 +1012,7 @@ Tool Errors by HTTP URL
 </td>
 <td valign="top">
 
-Displays the number of failed tool calls, grouped by HTTP URL.
+Displays the number of failed tool calls by HTTP URL for each tool.
 
 </td>
 </tr>
@@ -920,7 +1024,7 @@ Resource Errors by HTTP URL
 </td>
 <td valign="top">
 
-Displays the number of failed resource calls, grouped by HTTP URL.
+Displays the number of failed resource calls by HTTP URL for each resource.
 
 </td>
 </tr>
@@ -932,7 +1036,7 @@ Tool Errors by RFC Destination
 </td>
 <td valign="top">
 
-Displays the number of failed tool calls, grouped by RFC destination.
+Displays the number of failed tool calls by RFC destination for each tool.
 
 </td>
 </tr>
@@ -944,7 +1048,7 @@ Slowest MCP Servers
 </td>
 <td valign="top">
 
-Displays the average response time per MCP server, showing up to 5 of the slowest-performing MCP servers.
+Displays the average response time for the top 5 slowest MCP servers, based on the final response time of each MCP call.
 
 </td>
 </tr>
@@ -956,7 +1060,7 @@ Slowest Tools
 </td>
 <td valign="top">
 
-Displays the average response time per tool, showing up to 5 of the slowest-performing tools.
+Displays the average response time for the top 5 slowest MCP tools, based on the response time of the underlying target call \(API, RFC, or HTTP endpoint\).
 
 </td>
 </tr>
@@ -968,7 +1072,7 @@ Slowest Resources
 </td>
 <td valign="top">
 
-Displays the average response time per resource, showing up to 5 of the slowest-performing resources.
+Displays the average response time for the top 5 slowest MCP resources, based on the response time of the underlying target call \(API, RFC, or HTTP endpoint\).
 
 </td>
 </tr>
@@ -1021,7 +1125,7 @@ APIs by Agents vs APIs by Applications
 </td>
 <td valign="top">
 
-Displays a comparison of API calls made by agents and applications for each API.
+Compares the number of API calls made through agents and applications for each API.
 
 </td>
 </tr>
@@ -1033,7 +1137,7 @@ APIs by Agents
 </td>
 <td valign="top">
 
-Displays the number of API calls made by each agent.
+Displays the number of agent calls that triggered API calls by agent for each API.
 
 </td>
 </tr>
@@ -1045,7 +1149,7 @@ HTTP URLs by Agents
 </td>
 <td valign="top">
 
-Displays the number of calls made by each agent, grouped by HTTP URL.
+Displays the number of agent calls that triggered HTTP endpoint calls by agent for each HTTP URL.
 
 </td>
 </tr>
@@ -1057,7 +1161,7 @@ RFCs by Agents
 </td>
 <td valign="top">
 
-Displays the number of calls made by each agent, grouped by RFC destination.
+Displays the number of agent calls that triggered RFC calls by agent for each RFC.
 
 </td>
 </tr>
@@ -1069,7 +1173,7 @@ Tools by API
 </td>
 <td valign="top">
 
-Displays the number of calls for each tool, grouped by API.
+Displays the number of tool calls that triggered API calls by API for each tool.
 
 </td>
 </tr>
@@ -1081,7 +1185,7 @@ Resources by API
 </td>
 <td valign="top">
 
-Displays the number of calls for each resource, grouped by API.
+Displays the number of resource calls that triggered API calls by API for each resource.
 
 </td>
 </tr>
@@ -1093,7 +1197,7 @@ Tools by HTTP URL
 </td>
 <td valign="top">
 
-Displays the number of calls for each tool, grouped by HTTP URL.
+Displays the number of tool calls that triggered HTTP endpoint calls by HTTP URL for each tool.
 
 </td>
 </tr>
@@ -1105,7 +1209,7 @@ Resources by HTTP URL
 </td>
 <td valign="top">
 
-Displays the number of calls for each resource, grouped by HTTP URL.
+Displays the number of resource calls that triggered HTTP endpoint calls by HTTP URL for each resource.
 
 </td>
 </tr>
@@ -1117,7 +1221,7 @@ Tools by RFC Destination
 </td>
 <td valign="top">
 
-Displays the number of calls for each tool, grouped by RFC destination.
+Displays the number of tool calls that triggered RFC calls by RFC destination for each tool.
 
 </td>
 </tr>

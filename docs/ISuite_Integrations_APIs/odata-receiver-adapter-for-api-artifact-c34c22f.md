@@ -38,12 +38,12 @@ Property
 </th>
 <th valign="top">
 
-Value/Options
+Description
 
 </th>
 <th valign="top">
 
-Description
+Value/Options
 
 </th>
 </tr>
@@ -60,12 +60,12 @@ Name
 </td>
 <td valign="top">
 
-User-defined
+Specifies a unique name for the OData receiver adapter.
 
 </td>
 <td valign="top">
 
-Specifies a unique name for the OData receiver adapter.
+User-defined
 
 </td>
 </tr>
@@ -77,12 +77,12 @@ Description
 </td>
 <td valign="top">
 
-User-defined
+Specifies an optional description for the adapter configuration.
 
 </td>
 <td valign="top">
 
-Specifies an optional description for the adapter configuration.
+User-defined
 
 </td>
 </tr>
@@ -94,12 +94,12 @@ Type
 </td>
 <td valign="top">
 
-OData \(Read-only\)
+Displays the adapter type. This value is automatically set to **OData** and cannot be changed.
 
 </td>
 <td valign="top">
 
-Displays the adapter type. This value is automatically set to **OData** and cannot be changed.
+OData \(Read-only\)
 
 </td>
 </tr>
@@ -116,12 +116,12 @@ Type
 </td>
 <td valign="top">
 
-URL \(Read-only\)
+Specifies that the adapter connects directly to an OData service using its service URL.
 
 </td>
 <td valign="top">
 
-Specifies that the adapter connects directly to an OData service using its service URL.
+URL \(Read-only\)
 
 </td>
 </tr>
@@ -133,12 +133,12 @@ Proxy Type
 </td>
 <td valign="top">
 
-Internet
+Specifies the network through which the adapter connects to the target OData service. Currently, only **Internet** is supported for URL-based connections.
 
 </td>
 <td valign="top">
 
-Specifies the network through which the adapter connects to the target OData service. Currently, only **Internet** is supported for URL-based connections.
+Internet
 
 </td>
 </tr>
@@ -146,6 +146,11 @@ Specifies the network through which the adapter connects to the target OData ser
 <td valign="top">
 
 Authentication
+
+</td>
+<td valign="top">
+
+Specifies the authentication method used to connect to the target OData service. The available options depend on the target service requirements.
 
 </td>
 <td valign="top">
@@ -171,11 +176,6 @@ You can select one of the following authentication methods:
 
 
 </td>
-<td valign="top">
-
-Specifies the authentication method used to connect to the target OData service. The available options depend on the target service requirements.
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -185,12 +185,12 @@ CSRF Protected
 </td>
 <td valign="top">
 
-Enabled
+Keep this option selected \(default setting\) to ensure that your integration artifact is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
 
 </td>
 <td valign="top">
 
-Keep this option selected \(default setting\) to ensure that your integration artifact is protected against Cross-Site-Request-Forgery, a kind of attack where a malicious party can perform harmful actions by masquerading as the logged in user.
+Enabled
 
 </td>
 </tr>
@@ -207,12 +207,12 @@ Operation Details
 </td>
 <td valign="top">
 
-Dynamic
+Specifies how the adapter determines the OData operation during runtime. The operation is resolved dynamically based on the incoming request.
 
 </td>
 <td valign="top">
 
-Specifies how the adapter determines the OData operation during runtime. The operation is resolved dynamically based on the incoming request.
+Dynamic
 
 </td>
 </tr>
@@ -224,12 +224,12 @@ Attach Error Details on Failure
 </td>
 <td valign="top">
 
-Enabled
+Specifies whether request and response details are included in the generated error attachment when message processing fails.
 
 </td>
 <td valign="top">
 
-Specifies whether request and response details are included in the generated error attachment when message processing fails.
+Enabled
 
 </td>
 </tr>
@@ -241,12 +241,12 @@ Request Headers
 </td>
 <td valign="top">
 
-User-defined
+Specifies the HTTP request headers that are forwarded to the target OData service. You can specify individual headers or use wildcard patterns \(for example, `*`\).
 
 </td>
 <td valign="top">
 
-Specifies the HTTP request headers that are forwarded to the target OData service. You can specify individual headers or use wildcard patterns \(for example, `*`\).
+User-defined
 
 </td>
 </tr>
@@ -258,12 +258,12 @@ Response Headers
 </td>
 <td valign="top">
 
-User-defined
+Specifies the HTTP response headers returned by the OData service that are propagated back to the API artifact. You can specify individual headers or use wildcard patterns \(for example, `*`\).
 
 </td>
 <td valign="top">
 
-Specifies the HTTP response headers returned by the OData service that are propagated back to the API artifact. You can specify individual headers or use wildcard patterns \(for example, `*`\).
+User-defined
 
 </td>
 </tr>
@@ -286,12 +286,12 @@ Property
 </th>
 <th valign="top">
 
-Value/Options
+Description
 
 </th>
 <th valign="top">
 
-Description
+Value/Options
 
 </th>
 </tr>
@@ -308,12 +308,12 @@ Name
 </td>
 <td valign="top">
 
-User-defined
+Specifies a unique name for the OData receiver adapter.
 
 </td>
 <td valign="top">
 
-Specifies a unique name for the OData receiver adapter.
+User-defined
 
 </td>
 </tr>
@@ -325,12 +325,12 @@ Description
 </td>
 <td valign="top">
 
-User-defined
+Specifies an optional description for the adapter configuration.
 
 </td>
 <td valign="top">
 
-Specifies an optional description for the adapter configuration.
+User-defined
 
 </td>
 </tr>
@@ -342,12 +342,12 @@ Type
 </td>
 <td valign="top">
 
-OData \(Read-only\)
+Displays the adapter type. This value is automatically set to **OData** and cannot be changed.
 
 </td>
 <td valign="top">
 
-Displays the adapter type. This value is automatically set to **OData** and cannot be changed.
+OData \(Read-only\)
 
 </td>
 </tr>
@@ -364,12 +364,12 @@ Type
 </td>
 <td valign="top">
 
-URL \(Read-only\)
+Specifies that the adapter connects directly to an OData service using its service URL.
 
 </td>
 <td valign="top">
 
-Specifies that the adapter connects directly to an OData service using its service URL.
+URL \(Read-only\)
 
 </td>
 </tr>
@@ -381,12 +381,12 @@ Destination
 </td>
 <td valign="top">
 
- 
+Specifies the SAP BTP destination that defines the endpoint and connectivity settings for the target OData service.
 
 </td>
 <td valign="top">
 
-Specifies the SAP BTP destination that defines the endpoint and connectivity settings for the target OData service.
+ 
 
 </td>
 </tr>
@@ -398,12 +398,12 @@ Proxy Type
 </td>
 <td valign="top">
 
-Internet, On-Premise
+Specifies the connectivity type used to access the target OData service. Select **Internet** for cloud-based services or **On-Premise** to connect through SAP Cloud Connector.
 
 </td>
 <td valign="top">
 
-Specifies the connectivity type used to access the target OData service. Select **Internet** for cloud-based services or **On-Premise** to connect through SAP Cloud Connector.
+Internet, On-Premise
 
 </td>
 </tr>
@@ -411,6 +411,11 @@ Specifies the connectivity type used to access the target OData service. Select 
 <td valign="top">
 
 Authentication
+
+</td>
+<td valign="top">
+
+Specifies the authentication method used to connect to the target OData service. The available options depend on the target service requirements.
 
 </td>
 <td valign="top">
@@ -436,11 +441,6 @@ You can select one of the following authentication methods:
 
 
 </td>
-<td valign="top">
-
-Specifies the authentication method used to connect to the target OData service. The available options depend on the target service requirements.
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -450,12 +450,12 @@ URL
 </td>
 <td valign="top">
 
-System-generated
+Displays the endpoint URL resolved from the selected destination. This value is read-only and is automatically populated after a destination is selected.
 
 </td>
 <td valign="top">
 
-Displays the endpoint URL resolved from the selected destination. This value is read-only and is automatically populated after a destination is selected.
+System-generated
 
 </td>
 </tr>
@@ -472,12 +472,12 @@ Operation Details
 </td>
 <td valign="top">
 
-Dynamic
+Specifies how the adapter determines the OData operation during runtime. The operation is resolved dynamically based on the incoming request.
 
 </td>
 <td valign="top">
 
-Specifies how the adapter determines the OData operation during runtime. The operation is resolved dynamically based on the incoming request.
+Dynamic
 
 </td>
 </tr>
@@ -489,12 +489,12 @@ Attach Error Details on Failure
 </td>
 <td valign="top">
 
-Enabled
+Specifies whether request and response details are included in the generated error attachment when message processing fails.
 
 </td>
 <td valign="top">
 
-Specifies whether request and response details are included in the generated error attachment when message processing fails.
+Enabled
 
 </td>
 </tr>
@@ -506,12 +506,12 @@ Request Headers
 </td>
 <td valign="top">
 
-User-defined
+Specifies the HTTP request headers that are forwarded to the target OData service. You can specify individual headers or use wildcard patterns \(for example, `*`\).
 
 </td>
 <td valign="top">
 
-Specifies the HTTP request headers that are forwarded to the target OData service. You can specify individual headers or use wildcard patterns \(for example, `*`\).
+User-defined
 
 </td>
 </tr>
@@ -523,12 +523,12 @@ Response Headers
 </td>
 <td valign="top">
 
-User-defined
+Specifies the HTTP response headers returned by the OData service that are propagated back to the API artifact. You can specify individual headers or use wildcard patterns \(for example, `*`\).
 
 </td>
 <td valign="top">
 
-Specifies the HTTP response headers returned by the OData service that are propagated back to the API artifact. You can specify individual headers or use wildcard patterns \(for example, `*`\).
+User-defined
 
 </td>
 </tr>

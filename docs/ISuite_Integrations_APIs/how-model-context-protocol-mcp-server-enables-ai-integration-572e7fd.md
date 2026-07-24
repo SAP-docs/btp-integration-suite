@@ -28,11 +28,13 @@ In SAP Integration Suite's Integration Cell runtime, artifacts are self-containe
 
 ### **What can be exposed as an MCP Server?**
 
-An MCP Server on Integration Cell bridges AI agents and your integration ecosystem. It can expose:
+An MCP server on Integration Cell enables AI agents to securely access and interact with enterprise systems.
 
--   **Managed APIs** — REST, OData, and SOAP APIs within SAP Integration Suite \(including SAP and third-party backends, plus optional HTTP-connected data sources\)
--   **External HTTP endpoints**— Any publicly accessible HTTP service, regardless of origin
--   **SAP RFCs** — Native RFC function modules, allowing agents to invoke ABAP business logic directly
+You can create an MCP server from the following source types:
+
+-   **APIs** — Create an MCP server from an API artifact deployed on Integration Cell.
+-   **HTTP Endpoint with OpenAPI Specification**— Create an MCP server from any HTTP endpoint by providing the endpoint URL and an OpenAPI specification.
+-   **RFCs** — Create an MCP server from an RFC-based backend by modeling and exposing RFC operations as MCP tools.
 
 
 
@@ -92,7 +94,7 @@ After creating the MCP server, you can edit it to manage its configuration, incl
 </td>
 <td valign="top">
 
-After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy an Artifact](deploy-an-artifact-b70e7ec.md).
+After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy APIs and MCP Servers](deploy-apis-and-mcp-servers-b70e7ec.md).
 
 </td>
 </tr>

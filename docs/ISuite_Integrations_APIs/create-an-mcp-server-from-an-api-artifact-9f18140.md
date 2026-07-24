@@ -166,8 +166,6 @@ Create an MCP Server from an existing API artifact deployed on Integration Cell 
 
 8.  Choose *Add* to finalize and create the MCP server.
 
-9.  After selecting the required API resources and choosing *Create*, the MCP server is created and opens in the editor view.
-
-    Choose *Edit* to update the configuration \(all fields except ID\). Use the *MCP Configuration* tab to modify *Source*, *Tools*, *Resources*, and *Prompts*, and the *Policies* tab to configure traffic management and security policies. For detailed information, see [Govern and Manage an MCP Server Created from an API Artifact](govern-and-manage-an-mcp-server-created-from-an-api-artifact-81b30d1.md).
+    Choose *Edit* to update the configuration \(all fields except ID\). Use the *MCP Configuration* tab to modify *Source*, *Tools*, *Resources*, and *Prompts*, and the *Policies* tab to configure traffic management and security policies. For detailed information, see [Configure an MCP Server Created from an API Artifact](configure-an-mcp-server-created-from-an-api-artifact-81b30d1.md).
 
 

@@ -2,7 +2,7 @@
 
 # Developer Hub
 
-The Developer Hubis a web-based platform that serves as a centralized catalog for APIs, events, and MCP servers, empowering developers to discover, explore, and consume the integration capabilities offered by your organization. Acting as a unified and curated storefront, it consolidates APIs, events, and MCP servers in a single location, enabling application developers to discover, explore, and consume APIs and events, while enabling AI agents to discover and consume MCP servers.
+The Developer Hub is a web-based platform that serves as a centralized catalog for APIs, events, and MCP servers, empowering developers to discover, explore, and consume the integration capabilities offered by your organization. Acting as a unified and curated storefront, it consolidates APIs, events, and MCP servers in a single location, enabling application developers to discover, explore, and consume APIs and events, while enabling AI agents to discover and consume MCP servers.
 
 To enable external application developers and AI agents to consume APIs, events, and MCP servers from different business systems, these artifacts must be published to Developer Hub. Publishing involves organizing APIs, events, and MCP servers into products that can be discovered and consumed through a single catalog.
 

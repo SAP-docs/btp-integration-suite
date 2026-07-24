@@ -95,6 +95,156 @@ Integration Advisor
 </td>
 <td valign="top">
 
+Updated Behavior for Fixed Value in Date Time Conversion
+
+</td>
+<td valign="top">
+
+When defining fixed values in date time conversion, you can now set `Z` as a fixed value for the UTC marker.
+
+Additionally, Integration Advisor now supports the new date time format **CCYY'-'MM'-'DD'T'hh':'mm':'ss\['.'ff\*\]Z**.
+
+See [Date Time Conversion](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/date-time-conversion).
+
+As Cloud Integration \(standalone\) customer, see [Date Time Conversion](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/date-time-conversion).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Integration Advisor: 2.15.\*
+-   Increment: 2606
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
 Additional Matching Rules for Overlay Mapping Guidelines
 
 </td>

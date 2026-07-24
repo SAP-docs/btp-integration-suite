@@ -75,6 +75,6 @@
     -   [Auditing and Logging Information for Integration Advisor](auditing-and-logging-information-for-integration-advisor-3dbe557.md)
 -   [Accessibility Features in Integration Advisor](accessibility-features-in-integration-advisor-2b33756.md)
 -   [Terminology & Glossary for SAP Integration Advisor](terminology-glossary-for-sap-integration-advisor-9c221b4.md)
--   [Troubleshooting for Integration Advisor](troubleshooting-for-integration-advisor-2de873e.md)
+-   [Getting Support for Integration Advisor](getting-support-for-integration-advisor-2de873e.md)
 -   [Go to SAP Integration Suite](go-to-sap-integration-suite-d683cfd.md)
 

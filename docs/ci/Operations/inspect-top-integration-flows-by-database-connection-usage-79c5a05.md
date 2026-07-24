@@ -7,7 +7,7 @@ Inspect database connection usage per integration flow for a given time period \
 The chart shows those integration flows identified as the top consumers of database connections. They're sorted top-down based on either average or maximum usage, as selected with the *Database Connection Usage* filter.
 
 > ### Tip:  
-> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+> You can use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15. The total number of integration flows displayed are the flows for which there's available data.
 
 The color shade of a cell reflects the level of database connection usage. The darkest shade reflects the highest usage observed during the selected time period.
 

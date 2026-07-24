@@ -367,7 +367,7 @@ TLS SETTINGS
 </td>
 <td valign="top">
 
-Select *Enable* to perform client authentication by validating the security certificates with your private key alias.
+Select *Enable* to perform client authentication by validating the security certificates with your key pair alias.
 
 Select *Dynamic* to allow per-message override by using the `SAP_OFTP_Outbound_Client_Authentication`header.
 
@@ -376,7 +376,7 @@ Select *Dynamic* to allow per-message override by using the `SAP_OFTP_Outbound_C
 <tr>
 <td valign="top">
 
-*Private Key Alias\**
+*Key Pair Alias\**
 
 > ### Note:  
 > Only visible if *Client Authentication* is *Enable* or *Dynamic*.
@@ -396,7 +396,7 @@ Text
 </td>
 <td valign="top">
 
-Alias of your client TLS certificate/private key.
+Alias of your client TLS certificate/key pair.
 
 
 
@@ -999,7 +999,7 @@ Select *Dynamic* to allow a per-message override using the `SAP_OFTP_Outbound_CM
 <tr>
 <td valign="top">
 
-*Own Certificate Alias*
+*Own Key Pair Alias*
 
 > ### Note:  
 > Only visible if *CMS Settings* is *Enable* or *Dynamic*.
@@ -1019,7 +1019,7 @@ Text
 </td>
 <td valign="top">
 
-Specify the alias for your certificates or private keys used for signing.
+Specify the alias for your certificates or key pairs used for signing.
 
 > ### Note:  
 > You can enter `${header.headername}` or `${property.propertyname}` to retrieve the value dynamically from a header or a property.

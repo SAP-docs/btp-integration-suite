@@ -21,7 +21,8 @@ For more information about region availability, see SAP Note [3461547](https://m
 Event Mesh supports the following protocols:
 
 -   AMQP
-
+-   MQTT
+-   HTTP
 
 
 

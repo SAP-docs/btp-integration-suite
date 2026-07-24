@@ -97,6 +97,385 @@ Software Version Update
 </td>
 <td valign="top">
 
+-   SAP Cloud Integration: 8.45.\*
+-   Increment: 2606
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 6.81.\*
+-   Increment: 2606
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 7.54.\*
+-   Adapter Development Kit for SAP Cloud Integration: 2.53.\*
+
+-   Increment: 2606
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Fault Message Type Artifact Available Now
+
+</td>
+<td valign="top">
+
+You can now create and configure Fault Message Type Artifacts.
+
+See
+
+-   [Creating Fault Message Type](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-fault-message-type?)
+-   [Configuring Fault Message Type](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configuring-fault-message-type?)
+-   [Consuming Fault Message Type in Service Interface](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/consuming-fault-message-type-in-service-interface)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New Integration flow design guidelines available now
+
+</td>
+<td valign="top">
+
+New design guideline under ensure upgrade readiness available now
+
+See
+
+-   [Use import statements supported by the script runtime](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/scripts?state=Cloud#use-import-statements-supported-by-the-script-runtime)
+-   [Restrict usage to supported frameworks and libraries](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/scripts?state=Cloud#restrict-usage-to-supported-frameworks-and-libraries)
+
+SAP Cloud Integration customers, see
+
+-   [Use import statements supported by the script runtime](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/groovy-script?version=Cloud#use-import-statements-supported-by-the-script-runtime)
+-   [Restrict usage to supported frameworks and libraries](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/groovy-script?version=Cloud#restrict-usage-to-supported-frameworks-and-libraries)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
 -   SAP Cloud Integration: 8.44.\*
 -   Increment: 2605
 

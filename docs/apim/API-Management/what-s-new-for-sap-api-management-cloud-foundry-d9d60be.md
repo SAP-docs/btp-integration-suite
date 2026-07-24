@@ -92,6 +92,491 @@ API Management
 </td>
 <td valign="top">
 
+Consume MCP Servers from AI Applications
+
+</td>
+<td valign="top">
+
+You can configure AI applications to securely consume deployed Model Context Protocol \(MCP\) servers. Depending on the authentication mechanism configured for the MCP server, AI applications can authenticate using either a technical user token or an identity provider \(IdP\) user token before discovering and invoking the tools exposed by the server. For more information, see [Consuming MCP Servers](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/consuming-mcp-servers?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Analyze APIs with AI Assistance
+
+</td>
+<td valign="top">
+
+You can now analyze your API data using natural language with the new AI Assistant in the API Analytics dashboard. Ask about traffic trends, response times, error patterns, or usage forecasts and receive AI-generated insights as charts, tables, or text summaries. You can also save AI-generated charts to an existing custom view or create a new one. For more information, see [Analyze APIs with AI Assistance](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/analyze-apis-with-ai-assistance?locale=en-US&version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Principal Propagation Support for On-Premise MCP Server Flows
+
+</td>
+<td valign="top">
+
+You can now configure principal propagation for MCP servers to connect to on-premise systems. This enhancement enables the authenticated user identity to be propagated securely from the MCP server to supported on-premise back-end systems, allowing requests to be executed with the end user's authorization while maintaining secure end-to-end identity propagation. See, [Create an MCP Server from an HTTP Endpoint](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-from-http-endpoint?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+API Product Subscriptions for API Artifacts on Integration Cell
+
+</td>
+<td valign="top">
+
+You can now subscribe to API products that contain API artifacts deployed on the Integration Cell runtime. During the subscription process, you can either create a new application or add the API product to an existing application. This streamlines the onboarding process for application developers by providing quick access to the APIs included in the subscribed product, enabling them to start consuming the APIs in their applications with minimal effort. For more information, see [Discover and Publish APIs from SAP Integration Suite](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/discover-and-publish-apis-from-sap-integration-suite?locale=en-US&version=CLOUD&state=PRODUCTION), and [Subscribe to a Product to Consume APIs in an Application](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/subscribe-to-product-to-consume-apis-in-application?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Gain Health and Usage Insights for APIs and MCP Servers
+
+</td>
+<td valign="top">
+
+Gain real-time insights into the performance and adoption of your API artifacts with the enhanced analytics dashboard. API owners can monitor health metrics, usage analytics, traffic patterns, and errors to better understand API performance and consumer engagement. The dashboard includes a Health page with performance metrics for the last seven days by default and a Usage page with user engagement and traffic insights for the last two months and the current month to date. For more information, see [Analyze APIs and MCP Servers](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/analyze-apis-and-mcp-servers?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Subscribe to MCP Server Products on Developer Hub
+
+</td>
+<td valign="top">
+
+To make your MCP server agent-ready, you can now create product subscriptions that allow AI agents to securely discover and consume the MCP servers included in those products. Developer Hub now supports publishing, discovering, and subscribing to products containing MCP servers. This capability also supports MCP servers secured with external OAuth authorization servers, enabling secure access and consumption by AI agents. For more information, see [Discover and Publish MCP Servers with External Authentication](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/discover-and-publish-mcp-servers-with-external-authentication?locale=en-US&version=CLOUD&state=PRODUCTION) and [Subscribe to Products to Make MCP Servers Agent-Ready](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/subscribe-to-products-to-make-mcp-servers-agent-ready?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Visual Editor for Modifying OpenAPI Specifications
+
+</td>
+<td valign="top">
+
+A visual editor has been added to API Management that enables the modification of the OpenAPI specifications through an intuitive graphical interface. This editor simplifies the API design and documentation by allowing you to edit API definitions without manually writing code, enabling faster updates to endpoints, parameters, and schemas while maintaining specification accuracy.
+
+For more information, see [Modify an OpenAPI Specification Using the Visual Editor](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/modify-openapi-specification-using-visual-editor?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Expose Enterprise APIs to AI Agents with the MCP Gateway
 
 </td>
@@ -169,6 +654,282 @@ API-Centric Integration
 SAP Integration Suite now provides API-centric Integration, a new approach for designing and managing APIs. API-centric Integration enables you to model security , traffic management, mediation , transformation and integration logic in a single API artifact.
 
 These API artifacts can be deployed to Integration Cell, providing a managed cloud runtime for executing, securing, and governing APIs. For more information, see [API-Centric Integration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-centric-integration?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Reusable API Artifact
+
+</td>
+<td valign="top">
+
+You can now create reusable APIs to encapsulate common API logic, such as authentication, transformation, and validation, into modular, internal-only components that are not exposed through HTTP endpoints. Calling APIs can invoke these reusable components using the API Direct adapter, enabling centralized management, reduced duplication, consistent policy enforcement, and independent lifecycle management for improved scalability and governance. For more information, see [Reusable API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/reusable-api-artifact?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Simplified API Artifact Creation
+
+</td>
+<td valign="top">
+
+We've streamlined the API artifact creation experience on the Integration Cell runtime by introducing a unified URL or Specification option. You can now create an API artifact by specifying a backend endpoint URL, uploading an existing OpenAPI specification or API artifact bundle, or designing and editing the API directly using the integrated OpenAPI Specification editor. This simplified workflow provides greater flexibility while reducing the steps required to create and maintain API artifacts. For more information, see [Create an API Artifact Using a Target URL or an OpenAPI Specification](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-api-artifact-using-target-url?locale=en-US&version=CLOUD&state=PRODUCTION).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Discover Backend APIs Through SAP Gateway
+
+</td>
+<td valign="top">
+
+You can now securely expose and proxify your internet or on-premise gateway systems and create API artifacts on top of it. By configuring a destination to an SAP Gateway system, you can retrieve and browse the available backend APIs, then select an API to create an API artifact. This simplifies API discovery and accelerates the creation of API artifacts from SAP Gateway-based backend systems. For more information, see [Connecting to SAP Gateway System for API Discovery](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/discover-sap-gateway-system?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2026-07-05
+
+</td>
+<td valign="top">
+
+2605
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Monitor Message Processing for API and MCP Artifacts
+
+</td>
+<td valign="top">
+
+You can now monitor message processing for API and MCP server artifacts on the Integration Cell runtime. The **Message Processing** monitor provides an overview of the messages processed on a tenant and lets you view the details of individual messages. For more information, see [Monitor APIs and MCP Servers](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/monitor-apis?version=CLOUD).
 
 </td>
 <td valign="top">
