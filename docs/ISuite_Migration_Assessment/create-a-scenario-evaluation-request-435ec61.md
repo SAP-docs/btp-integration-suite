@@ -64,6 +64,7 @@ You've created at least one data extraction request as described in [Create a Da
             -   Request and response message types
             -   Message throughput and mappings usage
             -   Performance data: Message size and processing time
+            -   Migration readiness per scenario
 
             > ### Note:  
             > Values that exceed the maximum length of 32767 characters for a single cell won't be displayed in the export.
@@ -76,6 +77,7 @@ You've created at least one data extraction request as described in [Create a Da
             -   Standard adapter usage
             -   Migration effort estimation
             -   Modernization recommendations for your scenarios
+            -   Migration readiness distribution for all accessed scenarios
 
             > ### Note:  
             > Custom adapters details are only included in the *Export* file.

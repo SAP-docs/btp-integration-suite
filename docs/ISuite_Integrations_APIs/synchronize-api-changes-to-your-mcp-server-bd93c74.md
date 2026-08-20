@@ -109,7 +109,7 @@ When the source API artifact undergoes changes, such as updated endpoints, modif
     The MCP server definition is updated with the latest OAS and all identified changes are incorporated.
 
     > ### Note:  
-    > Confirming the synchronization alone does not apply the updates to the MCP server configuration.
+    > Confirming the synchronization alone does not apply the updates to the MCP server configuration. Please ensure to save the MCP server explicitly.
 
 8.  Navigate to the *MCP Configuration* tab to verify that the MCP tools and MCP resources reflect the synchronized changes.
 

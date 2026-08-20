@@ -85,5 +85,5 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 
 To remove the lock entry and retrigger message processing, select the entry and choose *Release*.
 
-For more information about the JMS Adapter, see: [JMS Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
+For more information about the JMS Adapter, see: [JMS Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/0993f2aa14124376a4adc7c5ba95d3f8.html "You configure the JMS adapter to enable asynchronous messaging using message queues.") :arrow_upper_right:
 

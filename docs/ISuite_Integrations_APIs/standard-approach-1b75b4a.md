@@ -2,7 +2,7 @@
 
 # Standard Approach
 
-Migrate supported integration objects from your on-premise system to SAP Integration Suite as Integration Flows via standard aproach.
+Migrate supported integration objects from your on-premise system to SAP Integration Suite as Integration Flows via standard approach.
 
 
 
@@ -27,7 +27,7 @@ Migrate supported integration objects from your on-premise system to SAP Integra
 
     The migration wizard comes up.
 
-2.  In the *Process Orchestration System* tab, select the *Name* of the SAP Process Orchestration system.
+2.  In the *Process Orchestration System* step, select the *Name* of the SAP Process Orchestration system.
 
     All the systems that are added as a part of [Configuring Connectivity to an SAP Process Orchestration System](IntegrationSettings/configuring-connectivity-to-an-sap-process-orchestration-system-8c36fd2.md) are listed here.
 
@@ -38,7 +38,7 @@ Migrate supported integration objects from your on-premise system to SAP Integra
 
 3.  Choose *Next Step*.
 
-4.  In the *Process Orchestration Artifacts* tab, select an *Object Type*. You can use *Show Filters* to drill down to the correct object that you want to select.
+4.  In the *Process Orchestration Artifacts* step, select an *Object Type*. You can use *Show Filters* to drill down to the correct object that you want to select.
 
     The supported object types are:
 
@@ -47,13 +47,13 @@ Migrate supported integration objects from your on-premise system to SAP Integra
     -   *Receiver Determination* – an object supported only in the SAP Process Integration dual-stack installations \(from release 7.31 on dual usage type\) where messages are processed on both the ABAP as well as the Java stack.
 
 
-5.  In the *Process Orchestration Artifacts* tab, select the *Name* of the object that you want to migrate. You can use *Show Filters* to drill down to the correct object that you want to select.
+5.  In the *Process Orchestration Artifacts* step, select the *Name* of the object that you want to migrate. You can use *Show Filters* to drill down to the correct object that you want to select.
 
     You can use regular expression in any of the filters to locate your objects. You can use the character \* to combine multiple search terms.
 
 6.  Choose *Next Step*.
 
-7.  In the *Pattern* tab, a pattern that is associated to your object is automatically preselected.
+7.  In the *Pattern* step, a pattern that is associated to your object is automatically preselected.
 
     > ### Note:  
     > If there are no associated patterns available and yet the object is ready for migration, the migration tooling falls back to the default pattern. The default pattern creates a point-to-point integration design; this pattern doesn't contain the integration scenario or the communication channels from the source object.
@@ -79,12 +79,12 @@ If the preselected pattern is *Point-to-Point Asynchronous*, there are additiona
 
 Handle the dependent message mapping objects and its resources in an efficient way.
 
-10. In the *Message Mapping from ESR* tab, select the import method for the message mapping objects that are associated to the leading object.
+10. In the *Message Mapping from ESR* step, select the import method for the message mapping objects that are associated to the leading object.
 
     > ### Note:  
-    > By default, the option *Enable Reusable Message Mapping Artifacts* is enabled to so that you import the message mappings objects from ESR as message mapping artifacts to SAP Integration Suite. This approach helps you to benefit from the advantages of reusable artifacts. See: [Creating Message Mapping as an Artifact](creating-message-mapping-as-an-artifact-1d52a7b.md).
+    > By default, the option *Enable Reusable Artifacts* is enabled so that you import the objects from ESR as global artifacts to SAP Integration Suite. This approach helps you to benefit from the advantages of reusable artifacts. See: [Creating Message Mapping as an Artifact](creating-message-mapping-as-an-artifact-1d52a7b.md). De-selecting this option imports the message mapping as a local resource within the integration flow. This is useful when the message mapping is specific to a particular integration flow and isn't intended for reuse. It also reduces the need to create and maintain additional global artifacts after migration.
     > 
-    > If you disable the option, upon successful migration, only the message mapping objects from ESR are imported directly to the integration flow as local resources. Other resources like function library objects and archives are not migrated. In this approach, you must edit a local resource in all places where it's used. If you opt to disable the option, skip the substeps that follow and move to the [next step](standard-approach-1b75b4a.md#loio1b75b4a724ce4a48b914b133dd576ce0__flib).
+    > If you disable the option, upon successful migration, only the message mapping and its referenced objects from ESR are imported directly to the integration flow as local resources. Other resources like function libraries and archive objects will be created as global artifacts are not migrated. In this approach, you must edit a local resource in all places where it's used. If you opt to disable the option, skip the substeps that follow and move to the [next step](standard-approach-1b75b4a.md#loio1b75b4a724ce4a48b914b133dd576ce0__flib).
 
     1.  In the *Artifact Package* column, select the integration package to which you want to import the message mapping object.
 
@@ -105,16 +105,143 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
 11. Choose *Next Step*.
 
-12. In the *Message Mapping Resources* tab, identify and appropriately import the dependent resources of the message mapping objects like function library, message and data types, WSDL, and a few more.
+12. In the *Message Mapping Resources* step, identify and appropriately import the dependent resources of the local or global objects like function library, message and data types, WSDL, and a few more. Refer to the *Target Reference Type* column to understand whether the resource is being imported as a local resource or global. Function Libraries and Imported Archives are always imported as global references.
 
-    This step is applicable only if you're creating at least one message mapping object in the previous step. If you're reusing all associated message mapping objects in the previous step, skip the substeps that follow and move to the [next step](standard-approach-1b75b4a.md#loio1b75b4a724ce4a48b914b133dd576ce0__iflow).
+    For local message mappings, the dependent resources are handled as follows:
+
+    **Resource Handling for Local Message Mappings**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Resource Type
+    
+    </th>
+    <th valign="top">
+
+    Migration Behavior
+    
+    </th>
+    <th valign="top">
+
+    Target Reference Type
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Message Mapping \(MM\)
+    
+    </td>
+    <td valign="top">
+    
+    Imported into the integration flow
+    
+    </td>
+    <td valign="top">
+    
+    Local
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    WSDL
+    
+    </td>
+    <td valign="top">
+    
+    Imported into the integration flow
+    
+    </td>
+    <td valign="top">
+    
+    Local
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Function Library \(FL\)
+    
+    </td>
+    <td valign="top">
+    
+    Referenced as an existing artifact
+    
+    </td>
+    <td valign="top">
+    
+    Global
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Imported Archive \(IA\)
+    
+    </td>
+    <td valign="top">
+    
+    Referenced as an existing artifact
+    
+    </td>
+    <td valign="top">
+    
+    Global
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Message Type \(MT\)
+    
+    </td>
+    <td valign="top">
+    
+    Replaced by the imported local WSDL resource
+    
+    </td>
+    <td valign="top">
+    
+    Local
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Data Type \(DT\)
+    
+    </td>
+    <td valign="top">
+    
+    Replaced by the imported local WSDL resource
+    
+    </td>
+    <td valign="top">
+    
+    Global
+    
+    </td>
+    </tr>
+    </table>
+    
+    This step is applicable only if you're creating at least one message mapping object in the previous step. If you're reusing all associated message mapping objects in the previous step, skip the substeps that follow and move to the [next step](standard-approach-1b75b4a.md#loio1b75b4a724ce4a48b914b133dd576ce0__iflow)
 
     1.  Enable the option *Import Only Supported Message Mappings* if you like to skip the import of message mapping objects \(and the dependent resources\) that aren't supported by Integration Suite.
 
         > ### Remember:  
         > By default, the option is disabled letting you import all message mapping objects associated to the leading integration object. By doing so, the unsupported message mapping objects are only partially imported. The specific dependent resources that aren't supported are skipped during the import process.
 
-    2.  For the dependent function library objects associated to the message mapping object, select a Function Libraries artifact in SAP Integration Suite.
+    2.  For the dependent function library and imported archive objects associated to the message mapping object, select a respective artifact in SAP Integration Suite.
 
         > ### Note:  
         > Both supported and unsupported function libraries can be imported. If any function library is unsupported it will be highlighted in the *Details* column.
@@ -124,32 +251,39 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
 13. Choose *Next Step*.
 
-14. In the *Scenario* tab, provide a *Name* and *ID* for the integration flow that is about to be created in SAP Integration Suite.
+14. In the *Java Mapping from ESR* step, to migrate custom Java-based mapping artifacts, see [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md)
+
+15. In the *Scenario* step, provide a *Name* and *ID* for the integration flow that is about to be created in SAP Integration Suite.
 
     Following details are automatically populated:
 
-    -   *ID* based on on the scenario name.
+    -   *ID* based on the scenario name.
 
     -   The Runtime is preset as Cloud Integration.
 
     -   *Sender Details*: For a *Sender Interface* if the object that is being migrated includes multiple *Sender Components*, each component will be listed here and a *Sender Integration Flow Name* corresponding to each component is created. You can edit the sender integration flow name in this view.
 
 
-15. Choose *Review*.
+16. Choose *Review*.
 
-16. In the *Review* tab, check all your entries. If needed, use the *Edit* option for the associated tab to make changes.
+17. In the *Review* step, check all your entries. If needed, use the *Edit* option for the associated step to make changes.
 
-17. Choose *Migrate*.
+    > ### Note:  
+    > If you're using AI-based integration content migration feature for java mapping conversion into groovy scripts, verify the AI-Generated groovy scripts before usage in the integration flow.
+
+18. Choose *Migrate*.
 
     An integration flow that is equivalent to the source object is created. The sender and receiver channels, other flow steps like mappings, and attributes from the source object are migrated too.
 
     For the sender and receiver adapter, only necessary attributes from the source object are externalized in the newly created integration flow. This design helps you configure the parameters for SAP Integration Suite without having to edit the integration flow.
 
-18. Look out for useful information in the *Migration Success* page. Choose *Report* at the top-right corner to download the migration report in PDF format. Also, review the [Known Limitations](known-limitations-of-migration-tooling-7a552d4.md) to understand any potential restrictions.
+19. Look out for useful information in the *Migration Success* page. Choose *Report* at the top-right corner to download the migration report in PDF format. Also, review the [Known Limitations](known-limitations-of-migration-tooling-7a552d4.md) to understand any potential restrictions.
 
     In the *Channels and Resources* section, you see the mappings for the sender and receiver channels. For the sender and receiver adapter types used in the source object, you see the equivalent adapter types that the migration tooling creates in the integration flow.
 
-    In the *Next Steps* section, you see information about the manual steps that are required to ensure that the integration flow is deployable.
+    In the *Artifact Details* section, you see a list of created scenario-specific integration flows. You also see a list of java lookup integration flows if you've used [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md) feature to convert java mapping to groovy scripts.
+
+    In the *Next Steps* section, you see information about the manual steps that are required to ensure that the integration flow can be deployed.
 
 
 

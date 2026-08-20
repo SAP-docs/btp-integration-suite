@@ -37,6 +37,23 @@ At runtime, the system checks if a service key is available that contains the cl
 > 
 > Use certificates issued via SAP Cloud Root CA \(for example via SAP BTP Destination Service\) or configure a custom domain with a customer-managed certificate trust model.
 
+> ### Remember:  
+> The maximum validity period for [TLS Certificate](https://www.digicert.com/tls-ssl/tls-ssl-certificates) is being reduced in phases:
+> 
+> -   Until March 15, 2026: Maximum validity is 398 days.
+> -   From March 15, 2026: Maximum validity is 200 days.
+> -   From March 15, 2027: Maximum validity is 100 days.
+> -   From March 15, 2029: Maximum validity is 47 days.
+> 
+> As a result, server certificates are renewed more frequently. Configure your HTTP\(S\) clients to trust the appropriate Root CA instead of relying on individual server certificates.
+> 
+> See [TLS Certificate Lifetimes Will Officially Reduce to 47 Days | DigiCert](https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days) and [Certificate Lifetime - Custom Domains](https://pages.github.tools.sap/psecrypto/custom-domains/articles/certificate_lifetime/)
+
+> ### Note:  
+> SAP periodically renews load balancer server certificates as part of standard security maintenance. Configure your HTTP\(S\) clients to trust the appropriate Root CA instead of relying on a specific server certificate, intermediate certificate, or certificate chain. This allows server certificate renewals without requiring customer-side trust configuration changes.
+> 
+> You will be notified only if a change to the trusted Root CA requires updates to their trust configuration. See [3478796](https://me.sap.com/notes/3478796)
+
 Public CAs started excluding the Client Authentication EKU from newly issued certificates in September 2025. By May 2026 it may no longer be included by default.
 
 > ### Note:  

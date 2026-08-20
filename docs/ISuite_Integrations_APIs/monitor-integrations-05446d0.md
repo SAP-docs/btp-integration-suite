@@ -4,6 +4,8 @@
 
 Check the status of messages and integration content artifacts for a tenant cluster.
 
+Select the runtime of your choice from the *Runtime* dropdown. You can switch to another runtime later in the individual monitoring sections.
+
 The start page is subdivided into the following sections, each covering a specific task area.
 
 **Sections on Monitor Start Page**

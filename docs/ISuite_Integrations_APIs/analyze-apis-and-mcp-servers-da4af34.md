@@ -164,7 +164,7 @@ In the Analytics dashboard, you access all your reports in report pages. The rep
 
     -   *API:* View metrics for API artifacts.
 
-    -   *MCP Server:* View metrics for MCP server artifacts. For more information on the MCP server feature, see [Model Context Protocol \(MCP\)](model-context-protocol-mcp-9eb9239.md).
+    -   *MCP Server:* View metrics for MCP server artifacts. For more information on the MCP server feature, see [MCP Server](mcp-server-9eb9239.md).
 
 
     > ### Note:  

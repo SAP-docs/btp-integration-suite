@@ -46,7 +46,17 @@ Follow the following procedure to activate agreements:
     > Only one version can be selected for activation, even if an agreement group has more than one version, and only selected agreement groups are activated.
 
 5.  Choose *Activate*.
-6.  The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
+6.  Select one of the following **activation modes** to decide how the system manages referenced objects during the activation:
+
+    -   *Default*: Activate the agreement and communication channels. The system doesn't try to activate any security configurations, identifier groups, or custom rules used.
+
+        If identifier groups, security configurations, or custom rules are still inactive, the activation fails.
+
+    -   *Full*: Activate the agreement and all referenced communication channels, identifier groups, security configurations, and custom rules, even if they're already active.
+
+    Confirm your choice with *Activate*.
+
+7.  The *Actions Logs* table displays the progress of your task. Choose and open your log to view the task in detail.
 
 
 

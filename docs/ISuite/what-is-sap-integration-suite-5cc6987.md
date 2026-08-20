@@ -330,7 +330,7 @@ Assess your existing integration scenarios to migrate them to SAP Integration Su
 </tr>
 </table>
 
-For more information on the connectivity options, see [Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:.
+For more information on the connectivity options, see [Connectivity Options](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:.
 
 > ### Note:  
 > Read the SAP Note [2903776](https://me.sap.com/notes/2903776) to understand the service plans offered for SAP Integration Suite. You also find information on the supported feature sets for each service plans.
@@ -343,7 +343,7 @@ For SAP Integration Suite, the free service plan is available. For more informat
 
 ## Connectivity Options
 
-More information: [Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
+More information: [Connectivity Options](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 
 
 
@@ -371,5 +371,5 @@ Check out the following resources:
 **Related Information**  
 
 
-[Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
+[Connectivity Options](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 

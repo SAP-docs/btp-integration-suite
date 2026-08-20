@@ -36,7 +36,10 @@ Follow these simple steps to enable or disable all or a subset of available desi
 
 2.  Choose *Edit*.
 
-3.  Enable the design guidelines that you think are appropriate for your organization's requirements. Similarly, disable the ones that you think aren't appropriate anymore.
+3.  Use to toggle in the *Activate* column to enable the design guidelines that you think are appropriate for your organization's requirements. Similarly, disable the ones that you think aren't appropriate anymore.
+
+    > ### Note:  
+    > Consider the severity of each guideline to take this decision. Severity indicates how strongly it should be followed.
 
 4.  Choose *Save*.
 

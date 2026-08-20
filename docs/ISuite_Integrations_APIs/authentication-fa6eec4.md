@@ -56,7 +56,7 @@ Select the appropriate authentication mechanism for your API.
 > If you select the *Enable Default Virtual Host HTTP* option while deploying the Edge Integration Cell solution, the Client Certificate authentication type won't work for HTTP-based calls. However, the *Basic* and *OAuth* authentication types will still function. It's important to note that the authorization header for *Basic* and *OAuth* is transmitted in plaintext format. Therefore, without HTTPS, it's vulnerable to interception attacks.
 
 > ### Note:  
-> To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API or an MCP Server Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-or-an-mcp-server-artifact-by-obtaining-credentials-through-process-integrat-b63baa2.md).
+> To execute the API with Authentication policy, configure the*Process Integration Runtime* instance, and access the endpoint using the client id/ secret or certificate from that instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-artifact-by-obtaining-credentials-through-process-integration-runtime-b63baa2.md).
 > 
 > Now, if you execute the API, the Authentication policy should be able to successfully authenticate the request.
 

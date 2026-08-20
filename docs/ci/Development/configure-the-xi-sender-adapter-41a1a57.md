@@ -233,6 +233,35 @@ Description
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Keep SOAP Envelope*
+
+</td>
+<td valign="top">
+
+Enable this option to retain any existing SOAP envelope from the payload when the messages are sent through the adapters.
+
+Below is the SOAP envelope example:
+
+> ### Sample Code:  
+> ```
+>   <soap:Envelope xmlns:soap=http://schemas.xmlsoap.org/soap/envelope/>
+>     <soap:Body>
+>       <Test>Payload</Test>
+>     </soap:Body>
+>   </soap:Envelope>
+> 
+> ```
+
+> ### Note:  
+> When using the XI sender and receiver adapters with Best Effort in the same Integration Process and expecting the XI sender to return a response payload with a SOAP envelope, ensure that the *Keep SOAP Envelope* is enabled in both the sender and receiver adapters. Otherwise, the envelope will be removed from the response payload.
+
+
+
+</td>
+</tr>
 </table>
 
 Select the *Delivery Assurance* tab and provide values in the fields as follows.

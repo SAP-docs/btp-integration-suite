@@ -12,22 +12,30 @@ To activate your trading partner agreement, perform the following steps:
 2.  Choose *Design* \> *B2B Scenarios*.
 3.  Navigate to the *Agreements* tab. The tab displays the list of agreements created in the system. The *Status* column displays the activation status of the agreements.
 4.  Search for and open the agreement that you want to activate.
-5.  Choose *Activate*.
+5.  Choose *Activate* and select one of the following **activation modes** to decide how the system manages referenced objects during the activation:
+
+    -   *Default*: Activate the agreement and communication channels. The system doesn't try to activate any security configurations, identifier groups, or custom rules used.
+
+        If identifier groups, security configurations, or custom rules are still inactive, the activation fails.
+
+    -   *Full*: Activate the agreement and all referenced communication channels, identifier groups, security configurations, and custom rules, even if they're already active.
+
+    Confirm your choice with *Activate*.
+
+    A successful activation sends the agreement details to the Partner Directory.
+
+    If the activation fails, choose the *Failed* status to learn more about the activation failure.
 
     > ### Note:  
-    > All the business transaction activities created under the *B2B Scenarios* tab is activated and the agreement details are sent to the partner directory.
-    > 
-    > If the activation fails, choose the *Failed* status to learn more about the activation failure.
+    > Company-side AS2 inbound decryption configurations must always be activated manually since they have no direct relation with any agreement.
 
-6.  You can also view the partner directory details under your B2B transactions using the *Partner Directory Data* field available next to the transactions.
-7.  Depending on the transaction type, the *Partner Directory Data* field displays the following button:
-    -   Inbound
+6.  In the *B2B Scenarios* tab, you can view the partner directory details for each transaction using the *Partner Directory Data* field available next to the transactions. Depending on the transaction type, the field displays either *Inbound* or *Outbound*.
 
-    -   Outbound
+    Whrn you choose the drop-down next to these buttons, you can select the following:
 
-8.  Choose the drop-down next to these buttons and select either *Copy PID* or *View Data*.
-9.  *Copy PID* copies the partner directory ID of the transaction.
-10. *View Data* directs you to the *Partner Directory Data* tab. See [Partner Directory Data](partner-directory-data-1d92d5c.md).
+    -   *Copy PID* copies the partner directory ID of the transaction.
+    -   *View Data* directs you to the *Partner Directory Data* tab. See [Partner Directory Data](partner-directory-data-1d92d5c.md).
+
 
 
 
@@ -40,11 +48,19 @@ To modify an activated agreement and reactivate it, perform the following steps:
 1.  In your active agreement, choose *Edit*.
 
 2.  Make the necessary changes in your transaction activities and choose *Save*.
-3.  Choose *Update*. The *Select Transaction* dialog appears with the list of transaction activities associated with the agreement.
-4.  Select the transaction from the list that you want to update and choose *Update*.
+3.  Select one of the following **activation modes** to decide how the system manages referenced objects during the update:
 
-    Now, only the selected transaction is reactivated and updated in the Partner Directory. You can check the status of the update under the *Status* field.
+    -   *Default*: Activate the agreement and communication channels. The system doesn't try to activate any security configurations, identifier groups, or custom rules used.
 
+        If identifier groups, security configurations, or custom rules are still inactive, the activation fails.
+
+    -   *Full*: Activate the agreement and all referenced communication channels, identifier groups, security configurations, and custom rules, even if they're already active.
+
+    > ### Note:  
+    > Company-side AS2 inbound decryption configurations must always be activated manually since they have no direct relation with any agreement.
+
+4.  Next, from the list of transactions associated with the agreement, select the transaction that you want to update.
+5.  Confirm your choices with *Update*.
 
 **Related Information**  
 

@@ -101,10 +101,14 @@ Choose <span class="SAP-icons-V5"></span> for graphical view.
 
 Choose <span class="SAP-icons-V5"></span> for tabular view.
 
+For details on data retention and reactivation behavior when the feature is disabled, see  <?sap-ot O2O class="- topic/xref " href="1d6756e093da4bd0882eb6e34ff8cb0e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/47f349ccd1cb4d1087707983f1f3830d.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
 **Related Information**  
 
 
-[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.")
+[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate Anomaly Detection, Intelligent Recommendations, and API Call Predictions to enhance monitoring and forecasting capabilities for API calls.")
 
 [Predictions](predictions-823bcd7.md "In addition to anomaly detection, we have now introduced Predictions, an AI-based feature that can forecast future API call volumes based on past call data. With this new feature, you can identify trends in API traffic and view predictions for upcoming API call volumes. Predictions are available for all APIs that meet the minimum data requirement of at least 3 months of API call volume data. Additionally, it offers customizable options, allowing you to select specific APIs, choose the prediction duration, and set the frequency according to your preferences.")
+
+ <?sap-ot O2O class="- topic/link " href="1d6756e093da4bd0882eb6e34ff8cb0e.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/47f349ccd1cb4d1087707983f1f3830d.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

@@ -79,6 +79,206 @@ Patches for different components are associated with different major software ve
 
 
 
+## August 2026
+
+Software Increment: 2606
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.45.17
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Resolved an issue where the AS2 filename configured in AS2 Receiver CCT could not be pushed to Process Direct.
+-   Resolved a Process Direct exception "Failed to determine address from expression" triggered after a TPM upgrade.
+-   Resolved a TPM application crash.
+-   Resolved an out-of-memory issue in the migration tool summary report.
+-   Resolved an issue where updating configurations via the Configuration OData API reset values to defaults for edge locations.
+-   Resolved an issue preventing users from starting and stopping message queues.
+-   Resolved an issue preventing users from assigning and unassigning PGP keyrings when an inactive runtime is assigned. Inactive runtimes can now be unassigned.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.54.12
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Existing Graph customers can now onboard API Management onto Integration Cell. The activation button for Integration Cell is now enabled in the user interface, allowing customers to click and activate this capability.
+-   Enhanced state transition handling to reduce delays in heavily loaded systems.
+-   Resolved an issue preventing users from uploading new public and secret keyrings in the PGP view.
+-   Enhanced logging to provide insights into how Kafka headers are used. This change does not affect runtime behavior.
+-   Resolved an issue where a failure in SAP-Passport header parsing logic prevented Message Processing Log \(MPL\) creation.
+-   Resolved an issue preventing users from applying table settings in the keystore view
+
+.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.81.49
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Resolved an issue where the `it-op-multicloud-rest` component was not released properly during the IAT phase.
+-   Resolved an issue where the message body and headers were missing in the exception subprocess when an XI receiver adapter failed during the send process before any HTTP response was received \(for example, due to an `UnknownHostException`\). Failures where a response was received \(such as HTTP 500\) were not affected and continued to work correctly.
+
+-   A function library containing a UDF \(User-Defined Function\) with dynamic configurations was failing to deploy. The severity has been reduced from *error* to *warning*, allowing the function library to deploy successfully.
+-   Addressed inconsistencies related to managing tenant resources.
+-   Fixed an issue that prevented the use of proxy host/port settings for the XI adapter on Edge Integration Cell. Previously, the generator did not write the corresponding parameters into `beans.xml`. The XI adapter generator now includes these parameters, so proxy host/port settings work as expected.
+-   Enhanced state transition handling to reduce delays in heavily loaded systems.
+-   Existing Graph customers can now onboard API Management onto Integration Cell. The activation button for Integration Cell is now enabled in the user interface, allowing customers to click and activate this capability.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.45.11
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Resolved an issue where the message body and headers were missing in the exception subprocess when an XI receiver adapter failed during the send process before any HTTP response was received \(for example, due to an `UnknownHostException`\). Failures where a response was received \(such as HTTP 500\) were not affected and continued to work correctly.
+
+-   Enhanced state transition handling to reduce delays in heavily loaded systems.
+
+
+
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td valign="top">
+
+Resolved an out-of-memory issue in the migration tool summary report.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Resolved an issue where updating configurations via the Configuration OData API reset values to defaults for edge locations.
+
+</td>
+</tr>
+</table>
+
+
+
+## July 2026
+
+Software Increment: 2606
+
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.54.8
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed an issue where the it-op-multicloud-rest component was not released correctly during the IAT phase, causing the backend to not recognize MCP Server and Connector instances when loading the Message Status Overview page.
+-   Fixed an issue where the message body and headers were missing in the exception subprocess when an XI receiver adapter failed during the send process before receiving an HTTP response \(for example, due to an UnknownHostException\). The original message content is now preserved and available in the exception subprocess.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## July 2026
 
 Software Increment: 2605
@@ -103,6 +303,23 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.80.91
+
+</td>
+<td valign="top">
+
+This patch fixes a persistence error during data extraction.
+
+</td>
 </tr>
 <tr>
 <td valign="top">

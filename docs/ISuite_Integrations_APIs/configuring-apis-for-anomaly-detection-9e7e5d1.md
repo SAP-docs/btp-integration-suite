@@ -74,7 +74,7 @@ After enabling APIs for anomaly detection, the system begins monitoring the sele
 **Related Information**  
 
 
-[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.")
+[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate Anomaly Detection, Intelligent Recommendations, and API Call Predictions to enhance monitoring and forecasting capabilities for API calls.")
 
 [Working with Detected Anomalies](working-with-detected-anomalies-1c677b2.md "Access and analyze anomalies in the analytics dashboard. Discover details about the various types of anomalies, evaluate and resolve them.")
 

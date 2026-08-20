@@ -17,7 +17,7 @@ In this procedure, we assume that you’re aware of the process of creating cert
 You need to create key store and trust store certificates to configure 2-way SSL \(Secure Sockets Layer\). SSL is the standard security technology for establishing an encrypted link between a web server and a web client, such as a browser or an app. An encrypted link ensures that all data passing between the server and the client remains private. To use SSL, a client makes a secure request to the server by using the encrypted https:// protocol, instead of the unencrypted http:// protocol. In SAP Integration Suite, you can associate the certificates with the API Provider at the time of API provider registration. This process provides more secure way to access API provider.
 
 > ### Caution:  
-> When renewing your existing certificate, always create a new Keystore/Truststore and add the renewed certificate to it. Be sure to reference the newly created Keystore/Truststore in your API providers, API proxies, and related configurations.
+> When renewing your existing certificate, always create a new Keystore and add the renewed certificate to it. Be sure to reference the newly created Keystore in your API providers, API proxies, and related configurations.
 
 The following are the supported file format for :
 

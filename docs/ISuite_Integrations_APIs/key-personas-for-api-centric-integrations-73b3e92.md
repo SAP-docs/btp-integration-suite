@@ -97,7 +97,7 @@ PI\_Integration\_Developer
 
 The PI\_Integration\_Developer role:
 
--   Grants access to the *Design* and *Monitor* sections in the SAP Integration Suite side navigation. For more information, see [Design APIs and MCP Servers](design-apis-and-mcp-servers-94957bc.md) and [Monitor APIs and MCP Servers](monitor-apis-and-mcp-servers-399b6c6.md).
+-   Grants access to the *Design* and *Monitor* sections in the SAP Integration Suite side navigation. For more information, see [Design API-Centric Integration Artifacts](design-api-centric-integration-artifacts-94957bc.md) and [Monitor APIs and MCP Servers](monitor-apis-and-mcp-servers-399b6c6.md).
 -   Enables you to create, design, deploy, copy, import, download, and delete integration and API artifacts from the Design section.
 -   Allows you to monitor integration artifacts and processes from the *Monitor* section.
 

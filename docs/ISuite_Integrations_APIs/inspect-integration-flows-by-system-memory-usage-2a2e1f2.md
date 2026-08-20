@@ -14,7 +14,7 @@ The chart shows memory allocation and allows you to do a relative comparison of 
 The top chart displays only those integration flows that are identified as the top consumers of memory in terms of allocation. The bottom chart shows the integration flows with the largest message sizes.
 
 > ### Tip:  
-> -   Use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15.
+> -   Use the *Top Integration Flows* filter to adjust the number of integration flows shown on the chart. The default is six, and the maximum is 15. The total number of integration flows displayed are the flows for which there's available data.
 > 
 > -   Use the *Aggregation* filter to display the top integration flows with the maximum detected memory consumption.
 

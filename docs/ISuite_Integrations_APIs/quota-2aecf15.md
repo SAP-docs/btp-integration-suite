@@ -4,7 +4,7 @@
 
 The Quota policy defines the number of requests an application can submit to an API endpoint over a given period of time.
 
-Quota policy limits the total number of requests allowed over a defined time period to manage overall usage, whereas Surge Protection policy regulates the rate of incoming requests in real time to prevent sudden traffic spikes from overwhelming the system.
+Quota policy limits the total number of requests allowed over a defined time period to manage overall usage, whereas Surge Protection policy regulates the rate of incoming requests in real time to prevent sudden traffic spikes from overwhelming the system. For more information, see [Add Quota Policy to API Endpoint](add-quota-policy-to-api-endpoint-8d1b56b.md).
 
 The period of time can be an hour, a day, or a month and so on. You can apply this policy on the context of requests.
 
@@ -16,62 +16,6 @@ See the following video for visual instructions on how to add and configure the 
 > When the Quota limit specified in the policy is reached, the subsequent calls to the API artifact are rejected with the response code 429 \( request limit exceeded\). The rejection period lasts until the end of the quota window. Let's illustrate this with the following example:
 > 
 > The quota window opens at 00:00 \(12 AM\) and ends at 00:05 \(12:05 AM\). Let us assume that the quota allotted is 3 requests in the specified period of 5 minutes. At 00:03, if the quota limit is reached, the subsequent requests post 00:03 are rejected until the window is reset at 00:05.
-
-
-
-## Error Codes
-
-
-<table>
-<tr>
-<th valign="top">
-
-HTTP Status Code
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-429
-
-</td>
-<td valign="top">
-
-Quota exceeded. The maximum number of allowed API calls has been reached. Please wait until the quota resets or contact your administrator.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-500
-
-</td>
-<td valign="top">
-
-Quota invalid counter key. The counter key for the quota is invalid or could not be found. Please verify the counter key configuration in the Quota policy and retry.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-400
-
-</td>
-<td valign="top">
-
-Quota invalid unit. An invalid value was specified for the quota unit. Please provide a valid unit in the Quota policy configuration and retry.
-
-</td>
-</tr>
-</table>
 
 **Related Information**  
 

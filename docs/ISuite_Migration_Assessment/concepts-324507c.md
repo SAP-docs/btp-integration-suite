@@ -38,9 +38,41 @@ A classification that indicates if your integration scenarios are ready to be mi
 > ### Note:  
 > The Migration Assessment categories classify integration scenarios according to the degree of implementation possible in SAP Integration Suite based on the features used. These categories don't indicate the level of automation or support provided by the Migration Tooling, which is a feature in the Cloud Integration capability of SAP Integration Suite that helps you migrate integration scenarios from SAP Process Orchestration to SAP Integration Suite.
 > 
-> For example, the *Ready to Migrate* assessment category means that all features currently used in your Process Orchestration environment are available in SAP Integration Suite. It does not mean that the Migration Tooling will automatically handle the migration process. For details on using the Migration Tooling, see [Migration Tooling](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/60610163aec44849ac4783c92fb2e55c.html "Understand how to consume the migration tooling and the steps involved in the migration.") :arrow_upper_right:.
+> For example, the *Ready to Migrate* assessment category means that all features currently used in your Process Orchestration environment are available in SAP Integration Suite. It does not mean that the Migration Tooling will automatically handle the migration process. For details on using the Migration Tooling, see [Migration Tooling](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/60610163aec44849ac4783c92fb2e55c.html "Understand how to consume the migration tooling and the steps involved in the migration.") :arrow_upper_right:.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Migration Readiness
+
+</td>
+<td valign="top">
+
+It is a consolidated view of how prepared your scenario or landscape is for migration. For each integration scenario, Migration Assessment calculates the weighted distribution across the three assessment categories, Ready to Migrate, Adjustment Required, and Evaluation Required, based on the rules triggered and their respective effort/weights.
+
+You find *Migration Readiness* results per scenario in the *Integration Scenarios* tab of the scenario evaluation dashboard or in the spreadsheet export.
+
+For a *Migration Readiness Overview* of the entire landscape, the individual distributions are aggregated across all assessed scenarios to produce a landscape-level readiness profile. This information is seen in the *Overview* tab of the scenario evaluation dashboard or in the PDF export.
+
+Migration Readiness gives you an understanding of the migration effort ahead: how much of the landscape can be migrated to SAP Integration Suite with a zero or low effort post-migration, how much requires some adaptation on source or target systems, and how much demands deeper evaluation and possible redesign.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Migration Tool Coverage
+
+</td>
+<td valign="top">
+
+It shows the extent to which the SAP migration tooling can support the migration of each scenario.
+
+At rule level, it identifies whether a specific feature is supported by SAP migration tooling. Find this information in the *Migration Tool Coverage* column of each rule's *Parameters* section. The whole integration scenarios are then classified into four coverage levels: Low, Medium, High, and Very High. Each coverage level corresponds to the estimated tooling support percentage. Low means up to 30 percent, Medium up to 60 percent, High up to 80 percent, and Very High above 80 percent. This scenario-level migration tool coverage is shown in the scenario evaluation *Dashboard* and in the evaluation results export.
 
 </td>
 </tr>

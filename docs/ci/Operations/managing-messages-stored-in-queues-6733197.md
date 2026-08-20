@@ -302,6 +302,24 @@ Deletes the selected message. To be able to delete a message, you need the follo
 
 </td>
 </tr>
+</table>
+
+For each message displayed on the *Messages* table, select <span class="SAP-icons-V5"></span> Actions from the *Actions* column for the following options:
+
+
+<table>
+<tr>
+<th valign="top">
+
+Action
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
 <tr>
 <td valign="top">
 
@@ -347,6 +365,25 @@ To be able to download a message, you need the following authorization:
 `AuthGroup.BusinessExpert` \(in the Neo environment\)
 
 `PI_Business_Expert` \(in the Cloud Foundry environment\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*View Payload*
+
+</td>
+<td valign="top">
+
+Downloads the ZIP file, and opens a dedicated dialog that displays the message body, headers, properties, and attachments. The dialog also provides the *Download* \(the original ZIP file\) and the *Copy Body Content* actions, so that you can keep working with the entry without leaving the page.
+
+> ### Note:  
+> The viewer displays XML, JSON, and string content.
+> 
+> If the payload contains binary content, it is not displayed in the viewer. You can still download it to view its contents.
+
+
 
 </td>
 </tr>

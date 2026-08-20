@@ -92,6 +92,602 @@ Cloud Integration
 </td>
 <td valign="top">
 
+Enhancements in Monitor Message Processing
+
+</td>
+<td valign="top">
+
+The *Monitor Message Processing* UI has been updated and new filters are available.
+
+See: [Monitor Message Processing](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/monitor-message-processing?version=CLOUD)
+
+[Using Additional Filter Criteria](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/using-additional-filter-criteria?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Keep SOAP Envelope option Available Now
+
+</td>
+<td valign="top">
+
+You can now retain an existing SOAP envelope in the payload when sending messages for XI Adapters.
+
+See
+
+-   [Configure the XI Sender Adapter](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-xi-sender-adapter?version=CLOUD)
+-   [Configure the XI Receiver Adapter](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-xi-receiver-adapter?version=CLOUD)
+
+SAP Cloud Integration customers, see
+
+-   [Configure the XI Sender Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-xi-sender-adapter?version=Cloud)
+-   [Configure the XI Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-xi-receiver-adapter?version=Cloud)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Mass Migration of Integration Configuration Objects Available Now
+
+</td>
+<td valign="top">
+
+You can now migrate multiple integration scenarios from SAP Process Integration/SAP Process Orchestration to your SAP Integration Suite tenant.
+
+See [Modernize](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/modernize?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Enhancements in SuccessFactors OData \(V2 or V4\) and REST receiver adapters Available Now
+
+</td>
+<td valign="top">
+
+For SuccessFactors OData \(V2 or V4\) and REST receiver adapters, the X-SF-Correlation-Id header sent back as HTTP request header is now deprecated and replaced with X-Correlation-Id.
+
+See
+
+-   [SuccessFactors OData Adapter](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/successfactors-odata-adapter?)
+-   [Configure the SuccessFactors REST Receiver Adapter](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/configure-successfactors-rest-receiver-adapter?)
+
+SAP Cloud Integration customers, see
+
+-   [Configure the SuccessFactors REST Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-successfactors-rest-receiver-adapter?version=Cloud&ai=true)
+-   [SuccessFactors OData V4 Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/successfactors-odata-v4-receiver-adapter?version=Cloud&ai=true&locale=en-US) 
+-   [SuccessFactors OData V2 Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/configure-successfactors-odata-v2-receiver-adapter?version=Cloud&ai=true&locale=en-US)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+AI-based Memory Profiling Available Now
+
+</td>
+<td valign="top">
+
+You can now use AI-based integration flow memory profiling feature to enhance the existing integration flow simulation.
+
+See [AI-based Memory Profiling](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/ai-memory-insights?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Accurate Execution of Multiple Basic Timer Schedules Available Now
+
+</td>
+<td valign="top">
+
+You can now configure an integration with more than one basic timer schedule to execute all configured schedules accurately.
+
+See [Define a Timer Start Event](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/define-timer-start-event?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Handling Message Mapping Resources Available Now
+
+</td>
+<td valign="top">
+
+In migration tooling, you can now choose how to handle the dependent message mapping resources when you are importing message mapping as local resource.
+
+See
+
+-   [Standard Approach](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/standard-approach?)
+-   [Pipeline Approach](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/pipeline-approach?)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+AI-based Integration Content Migration Available Now
+
+</td>
+<td valign="top">
+
+You can now use the integration content migration feature to convert java mappings into groovy scripts while using migration tooling.
+
+See [AI-based Integration Content Migration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/java-mapping?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Software Version Update
 
 </td>
@@ -769,7 +1365,9 @@ Update in endpoint for content transport
 <td valign="top">
 
 -   Supported endpoint for content transport in SAP Cloud Integration via TMS/CTS+ is updated as part of SAP Cloud Deployment Service enhancements.
--   The legacy endpoint `https://deploy-service.cfapps.<domain>`is now deprecated; switch to the new `https://deploy-service.cf.<domain>` endpoint before Q4 to ensure future compatibility.
+-   The legacy endpoint `https://deploy-service.cfapps.<domain>`is now deprecated.
+
+**Action:** Switch to the new `https://deploy-service.cf.<domain>` endpoint before Q4 to ensure future compatibility.
 
 See [Creating HTTP Destinations and Transport Route](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-http-destinations-and-transport-route?)
 
@@ -808,7 +1406,7 @@ SAP Business Technology Platform
 </td>
 <td valign="top">
 
-2026-12-31
+2026-07-02
 
 </td>
 <td valign="top">

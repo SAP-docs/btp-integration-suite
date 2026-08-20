@@ -648,5 +648,5 @@ Follow the procedure to know how to efficiently use the **Monitor** tab to view 
 
 ## Next Steps
 
-To resend or restart failed interchanges, or to duplicate and retry completed interchanges, see [Restart, Retry, or Duplicate and Retry Interchanges](restart-retry-or-duplicate-and-retry-interchanges-8626727.md).
+To resend or restart failed interchanges, or to duplicate and retry completed interchanges, see [Restart or Retry, or Duplicate and Retry Interchanges](restart-or-retry-or-duplicate-and-retry-interchanges-8626727.md).
 

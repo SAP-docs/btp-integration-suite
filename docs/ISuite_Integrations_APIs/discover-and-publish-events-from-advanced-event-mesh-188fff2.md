@@ -41,6 +41,6 @@ You need to have the*AuthGroup.Content.Admin* role collection assigned to you. A
     > 
     > When creating a product, you can select shared events from your current application domain as well as shared events from other application domains.
 
-    You can easily view and manage the products you have created from the *Products* tab. For more information, see  <?sap-ot O2O class="- topic/xref " href="f5b93449e843434282bdf7f24e9dfee7.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/188fff20e77d4b0dbee58013a325a686.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    You can easily view and manage the products you have created from the *Products* tab. For more information, see [Publish Events from Advanced Event Mesh](publish-events-from-advanced-event-mesh-f5b9344.md).
 
 

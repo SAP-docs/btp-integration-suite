@@ -1,5 +1,7 @@
 <!-- loioac39f1d1bd2f427c97b3694e54370bda -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Managing Data Stores
 
 
@@ -253,18 +255,6 @@ The *Manage Stores* section provides an overview of storages that are temporaril
     <tr>
     <td valign="top">
     
-    *Download* 
-    
-    </td>
-    <td valign="top">
-    
-    Downloads an entry to your computer. You can download only one entry at a time.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     *Reload Content* 
     
     </td>
@@ -295,6 +285,55 @@ The *Manage Stores* section provides an overview of storages that are temporaril
     <td valign="top">
     
     You can use this option to delete multiple entries or to download a single entry .
+    
+    </td>
+    </tr>
+    </table>
+    
+8.  For each entry, select <span class="SAP-icons-V5"></span> Actions from the *Actions* column for the following options:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Action
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Download* 
+    
+    </td>
+    <td valign="top">
+    
+    Downloads an entry to your computer. You can download only one entry at a time.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *View Payload* 
+    
+    </td>
+    <td valign="top">
+    
+    Downloads the ZIP file, and opens a dedicated dialog that displays the message body, headers, properties and attachments. The dialog also provides the *Download* \(the original ZIP file\) and the *Copy Body Content* actions, so that you can keep working with the entry without leaving the page.
+
+    > ### Note:  
+    > The viewer displays XML, JSON, and string content.
+    > 
+    > If the payload contains binary content, it is not displayed in the viewer. You can still download it to view its contents.
+
+
     
     </td>
     </tr>

@@ -32,7 +32,7 @@ Once you have your source and target system ready, you can clone your API Manage
     > ### Note:  
     > If you are using the version of the Tenant Cloning Tool prior to 1.5.2, make sure that you update to the latest version 1.5.2 or above. This is done to handle the critical vulnerability CVE-2021-44228 and CVE-2021-45046, which was detected in the open-source library log4j2.
 
--   The system running the API Management Tenant Cloning Tool must have Java Runtime Environment 8 or above supported.
+-   The system running the API Management Tenant Cloning Tool must have Java Runtime Environment 25 or above supported.
 -   Microsoft Excel File Reader
 
 

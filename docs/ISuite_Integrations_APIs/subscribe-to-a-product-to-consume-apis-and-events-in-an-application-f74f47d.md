@@ -82,7 +82,7 @@ You should be onboarded as an application developer on Developer Hub. For more i
 
 
     > ### Note:  
-    > Developer Hub doesn't support product versioning. As a result, it always displays the details of the latest product version.
+    > Developer Hub doesn't support product versioning. As a result, the subscription always displays the details of the latest product version.
 
 
 

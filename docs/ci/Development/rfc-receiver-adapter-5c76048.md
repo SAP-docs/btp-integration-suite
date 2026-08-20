@@ -16,6 +16,8 @@ RFC executes the function call using synchronous communication, which means that
 
     The RFC destination configuration settings are used by the SAP JAVA Connector \(SAP JCo\) to establish and manage the connection with on-premise and S/4 HANA cloud system available in public internet. While you configure a destination make sure to select internet as the proxy type to establish connection with an application over the internet.
 
+    The RFC Receiver Adapter is built on top of the JCo library; however, support for a JCo feature within the adapter is not automatic or implicit. Each JCo capability must be explicitly tested and validated against the adapter's configuration and runtime environment before it can be made available through the RFC Receiver Adapter. Please do not assume that a feature supported by JCo is, by default, supported by the RFC Receiver Adapter. If you require a specific JCo-based capability, verify its availability in the adapter through appropriate testing with the correct configuration before using it in a productive scenario.
+
 -   You must have the remote function module XSD file.
 
     > ### Tip:  

@@ -21,7 +21,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
 
 -   You've a domain name to be used for exposing the Edge Integration Cell endpoints.
 
--   You have a valid key pair for the domain name to enable TLS for the Istio gateway configuration. For more information, see [Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:.
+-   You have a valid key pair for the domain name to enable TLS for the Istio gateway configuration. For more information, see [Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:.
 
 -   You've a load balancer to be used for exposing the Edge Integration Cell endpoints. On cloud platforms, a load balancer is an infrastructure service, which is available out of the box. For other environments, it has to be part of your Kubernetes infrastructure.
 
@@ -1043,7 +1043,7 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > ### Caution:  
     > Be aware that changing the assigned keystore of a specific runtime after its initial setup could lead to errors in message processing. This is because the keystore becomes temporarily unavailable during the changeover process. For this reason, an initial careful selection of the runtime to a keystore is crucial.
 
-13. To upload the key pair for the default virtual host into the keystore which you have assigned to the new runtime, choose the *Keystore* tile in the *Manage Security* section. Use the alias that you specified as the *Default Virtual Host Key Alias* during the deployment of the ELM solution as your alias. For instance "edge.integration.int.cloud.sap". For more information, see [Uploading a Key Pair](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/083911ea02864f02a17bd24318b25cf9.html "Upload a private/public key pair to the tenant keystore.") :arrow_upper_right:.
+13. To upload the key pair for the default virtual host into the keystore which you have assigned to the new runtime, choose the *Keystore* tile in the *Manage Security* section. Use the alias that you specified as the *Default Virtual Host Key Alias* during the deployment of the ELM solution as your alias. For instance "edge.integration.int.cloud.sap". For more information, see [Uploading a Key Pair](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/083911ea02864f02a17bd24318b25cf9.html "Upload a private/public key pair to the tenant keystore.") :arrow_upper_right:.
 
 
 

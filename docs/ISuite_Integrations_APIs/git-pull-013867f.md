@@ -10,9 +10,9 @@ Git Pull is a Git operation used to retrieve and integrate the latest changes fr
 
 ## Prerequisites
 
-Ensure that repositories are configured by your tenant administrator. See [Git Access](IntegrationSettings/git-access-ae173b0.md)
+-   Ensure that repositories are configured by your tenant administrator, see [Git Access](IntegrationSettings/git-access-ae173b0.md). Git Pull is available only for artifacts that are already imported from a Git repository.
+-   Your Personal Access Token \(PAT\) must have sufficient permissions to access the added GitHub repositories. See [Generate a Personal Access Token \(PAT\) with Required Permissions](generate-a-personal-access-token-pat-with-required-permissions-7436351.md)
 
-Git Pull is available only for artifacts that are already imported from a Git repository.
 
 
 

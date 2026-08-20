@@ -24,5 +24,5 @@ The following lists common features on the dashboard:
 **Related Information**  
 
 
-[Working with the Analytics Dashboard](working-with-the-analytics-dashboard-e07e815.md "The analytics dashboard provides a comprehensive view of API performance and errors in the form of charts and KPIs.")
+[Working with the API Analytics Dashboard](working-with-the-api-analytics-dashboard-e07e815.md "The API analytics dashboard provides a comprehensive view of API performance and errors in the form of charts and KPIs.")
 

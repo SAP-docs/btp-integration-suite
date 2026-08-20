@@ -146,7 +146,7 @@ For example, if you’ve configured a role called `APIArtifactUser` in *User Rol
 
 Once the `APIArtifactUser` role is configured in *User Roles*, it is automatically added to the *Roles* in SAP BTP Cockpit.
 
-To execute an API with the Authorization policy successfully on the runtime node, the `APIArtifactUser` role should be associated to the *Process Integration Runtime* instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API or an MCP Server Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-or-an-mcp-server-artifact-by-obtaining-credentials-through-process-integrat-b63baa2.md).
+To execute an API with the Authorization policy successfully on the runtime node, the `APIArtifactUser` role should be associated to the *Process Integration Runtime* instance. For step-by-step instruction on how to create a *Process Integration Runtime* instance, see [Invoke an API Artifact by Obtaining Credentials through Process Integration Runtime](invoke-an-api-artifact-by-obtaining-credentials-through-process-integration-runtime-b63baa2.md).
 
 </td>
 <td valign="top">

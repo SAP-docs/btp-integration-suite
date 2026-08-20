@@ -53,10 +53,10 @@ The steps below will guide you through the process of setting up SNC on Edge Int
 
 ## Results
 
-You have enabled SNC on the Edge Integration Cell. You can now proceed to enable and configure SNC communication in the RFC Sender and Receiver adapter. For more information, see [RFC Sender Adapter for Edge Integration Cell](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f5568be44b474e44b267fc284a509094.html "The RFC sender adapter for Edge Integration Cell (EIC) enables direct, on-premise communication with SAP and third-party systems without relying on the SAP Cloud Connector, allowing these systems to initiate RFC calls.") :arrow_upper_right: and [RFC Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5c76048b04594888a47e74d35a91c08a.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right:.
+You have enabled SNC on the Edge Integration Cell. You can now proceed to enable and configure SNC communication in the RFC Sender and Receiver adapter. For more information, see [RFC Sender Adapter for Edge Integration Cell](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f5568be44b474e44b267fc284a509094.html "The RFC sender adapter for Edge Integration Cell (EIC) enables direct, on-premise communication with SAP and third-party systems without relying on the SAP Cloud Connector, allowing these systems to initiate RFC calls.") :arrow_upper_right: and [RFC Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/5c76048b04594888a47e74d35a91c08a.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right:.
 
 **Related Information**  
 
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 

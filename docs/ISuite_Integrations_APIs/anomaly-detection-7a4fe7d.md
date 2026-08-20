@@ -67,3 +67,13 @@ To use the Anomaly Detection feature for individual APIs, it must meet the follo
 -   **Identification of Irregularities**: Visualizing the data enables quick identification of irregularities or patterns that deviate from normal behavior.
 -   **Notification Alerts**: You now have the option to subscribe to the **SAP Alert Notification Service** and start receiving alerts whenever an anomaly is detected through your preferred communication channel. This enables immediate action, minimizing the potential impact of the anomaly and ensuring timely resolution of any issues. For more information, see [Subscribing to Notification Alerts](subscribing-to-notification-alerts-88e96f4.md).
 
+
+
+## Intelligent Recommendations
+
+Intelligent Recommendations is an optional AI-based capability within Anomaly Detection that provides detailed observations of detected anomalies, including likely causes and recommended actions to resolve issues. By offering insights alongside detected anomalies, it helps you troubleshoot faster and make informed decisions.
+
+Enabling or disabling *Intelligent Recommendations* does not affect the functioning of Anomaly Detection or API Call Predictions.
+
+For steps to enable this feature, see [Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md).
+

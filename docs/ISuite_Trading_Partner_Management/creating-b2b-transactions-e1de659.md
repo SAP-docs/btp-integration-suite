@@ -138,12 +138,21 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     > 
     >     -   cXML
     > 
-    >         Note that cXML only supports message implementation guidelines with envelopes, and no assembly is applied to cXML outbound payloads. In mapping guidelines, you can consume the Trading Partner Management runtime properties in the mapping logic using global parameters in the mapping guidelines of Integration Advisor. The following properties are used frequently:
+    >         CXML only supports message implementation guidelines with envelopes, and no assembly is applied to cXML outbound payloads. In mapping guidelines, you can consume the Trading Partner Management runtime properties in the mapping logic using global parameters in the mapping guidelines of Integration Advisor. The following properties are used frequently:
     > 
     >         -   `SAP_EDI_REC_Sender_ID` can be used for `/cXML/Header[1]/From[1]/Credential[1]/Identity[1]`.
     >         -   `SAP_EDI_REC_Receiver_ID` can be used for `/cXML/Header[1]/To[1]/Credential[1]/Identity[1]`.
     >         -   `SAP_EDI_REC_Interchange_Control_Number` can be used for `/cXML/@payloadID`.
     >         -   `SAP_EDI_REC_Usage_Indicator` can be used for `/cXML/Request[1]/@deploymentMode`.
+    > 
+    >     -   Custom Message
+    > 
+    >         > ### Note:  
+    >         > -   `Custom Message` only supports XML-based payloads and no assembly is applied to outbound custom message payloads.
+    >         > -   If you use custom message as the sender type system in an agreement, you must create custom rules for custom message type systems.
+    >         > -   In the custom rule entry, you can combine custom keys and default keys to define how to collect the necessary information from the original payloads to match the agreements.
+    >         > -   For default keys, you can define XPaths for sender identifier, receive identifier, sender type system version, and sender message type. Ensure that the values collected by the XPaths match the ones configured in the agreements.
+    >         > -   If custom messages only depend on custom keys without any default key, the default search fields in the B2B monitoring don’t work. Instead, specify custom search attributes to filter the interchanges.
 
 13. For type systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
 

@@ -104,7 +104,7 @@ Create a custom rule by following these steps:
 1.  Go to *Design* \> *B2B Scenarios* \> *Configuration Manager*.
 2.  In the section *Custom Rules*, choose *Create*.
 3.  Enter a *Name* for the rule.
-4.  Select a *Type System* from the list. The type systems currently supported are `GS1 XML`, `SAP S/4HANA Cloud SOAP`, and `SAP S/4HANA On Premise IDoc`.
+4.  Select a *Type System* from the list. The type systems currently supported are `GS1 XML`, `SAP S/4HANA Cloud SOAP`, `Custom Message`, and `SAP S/4HANA On Premise IDoc`.
 5.  For the message types the custom rule applies to, either select *All*, or *Selected*. If you choose *Selected*, you can select multiple entries from a list of messages.
 6.  Finally, save your new custom rule.
 7.  Before you can activate the custom rule, it needs at least one custom key or one default key that has been configured. Custom keys define what element of a message is used to determine the correct association of the configured trading partner agreement and business transaction activity, while default keys refer to predefined properties with default XPaths.
@@ -133,6 +133,8 @@ Create a custom rule by following these steps:
 12. You can also configure **default keys**. Default keys refer to predefined properties with default XPaths, such as sender identifier, receiver identifier, type system version, and message type. Currently, you can customize the XPath keys of the sender identifier and the receiver identifier to extract values from non-default locations for runtime PID calculation.
 
     To configure a default key, in the table *Default Keys*, choose *Edit*. The default XPath is listed for each default key. After updating the XPaths of the *Sender Identifier in Sender System* and *Receiver Identifier in Sender System*, save your changes.
+
+    For **custom message** type systems, no default XPath keys are defined in the default keys. Instead, you can configure the XPath key for the nodes *Sender Identifier in Sender System*, *Receiver Identifier in Sender System*, *Sender Type System Version*, and *Sender Message Type*.
 
 13. Since your new custom rule is still in draft mode, you have to activate it to push its configurations to the Partner Directory.
 

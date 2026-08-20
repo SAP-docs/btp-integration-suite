@@ -118,19 +118,16 @@ OData Sender Adapter
 </td>
 <td valign="top">
 
-Supports callouts to both OData V2 and OData V4 services.
+Connects SAP Integration Suite to systems using the Open Data \(OData\) protocol.
 
-Supports standard OData operations, including create, query, update, patch, and delete, and exchanges messages in ATOM or JSON format.
+Supported versions:
 
-Connects SAP Integration Suite to systems using the Open Data \(OData\) protocol in either ATOM or JSON format \(only synchronous communication is supported\).
+-   OData version 2.0: Supported operations: Create \(POST\), Delete \(DELETE\), Merge \(MERGE\), Query \(GET\), Read \(GET\), Update \(PUT\), Patch \(PATCH\)
 
-Supported versions: OData version 2.0
+-   OData version 4.0: Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
 
--   The adapter receives incoming requests in either ATOM or JSON format.
-
--   Supported operations: Create \(POST\), Delete \(DELETE\), Query \(GET\), Read \(GET\), Update \(PUT\)
-
--   Using the GET or POST method, the sender adapter can also invoke operations that are not covered by the standard CRUD \(Create, Retrieve, Update, and Delete\) methods \(function import\).
+    > ### Note:  
+    > The default adapter does not support OData V4.
 
 
 
@@ -160,16 +157,19 @@ OData Receiver Adapter
 </td>
 <td valign="top">
 
-Connects SAP Integration Suite to systems using the Open Data \(OData\) protocol.
+Supports callouts to both OData V2 and OData V4 services.
 
-Supported versions:
+Supports standard OData operations, including create, query, update, patch, and delete, and exchanges messages in ATOM or JSON format.
 
--   OData version 2.0: Supported operations: Create \(POST\), Delete \(DELETE\), Merge \(MERGE\), Query \(GET\), Read \(GET\), Update \(PUT\), Patch \(PATCH\)
+Connects SAP Integration Suite to systems using the Open Data \(OData\) protocol in either ATOM or JSON format \(only synchronous communication is supported\).
 
--   OData version 4.0: Supported operations: Create \(POST\), Query \(GET\), Delete \(DELETE\), Update \(PUT\), and Patch \(PATCH\)
+Supported versions: OData version 2.0
 
-    > ### Note:  
-    > The default adapter does not support OData V4.
+-   The adapter receives incoming requests in either ATOM or JSON format.
+
+-   Supported operations: Create \(POST\), Delete \(DELETE\), Query \(GET\), Read \(GET\), Update \(PUT\)
+
+-   Using the GET or POST method, the sender adapter can also invoke operations that are not covered by the standard CRUD \(Create, Retrieve, Update, and Delete\) methods \(function import\).
 
 
 
@@ -220,7 +220,7 @@ A size limit for the inbound message can be configured for the sender adapter.
 </td>
 <td valign="top">
 
-[SOAP Sender Adapter for API and MCP Server](soap-sender-adapter-for-api-and-mcp-server-f0e2535.md) 
+[SOAP Sender Adapter for API Artifact](soap-sender-adapter-for-api-artifact-f0e2535.md) 
 
 </td>
 </tr>
@@ -249,7 +249,7 @@ The adapter supports Web services Security \(WS-Security\).
 </td>
 <td valign="top">
 
-[SOAP Receiver Adapter for API and MCP Server](soap-receiver-adapter-for-api-and-mcp-server-2a69e87.md) 
+[SOAP Receiver Adapter for API Artifact](soap-receiver-adapter-for-api-artifact-2a69e87.md) 
 
 </td>
 </tr>

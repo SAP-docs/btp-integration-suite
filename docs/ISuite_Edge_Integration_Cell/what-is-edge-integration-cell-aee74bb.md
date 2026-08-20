@@ -32,7 +32,7 @@ Edge Integration Cell supports the following use cases:
     > ### Note:  
     > If you want to use integration flows to integrate your on-premise applications, you can use SAP Process Orchestration in addition to SAP Integration Suite. SAP Integration Suite comes with a set of runtime profiles that make sure that the integration flow editor allows you to design only those features that are supported by the runtime components of a specific SAP Process Orchestration release.
     > 
-    > For more information, see [Runtime Profiles](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/8007daa7b193409580ba151b1df77fa4.html "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.") :arrow_upper_right:.
+    > For more information, see [Runtime Profiles](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8007daa7b193409580ba151b1df77fa4.html "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.") :arrow_upper_right:.
     > 
     > However, this option requires you to install a separate product, SAP Process Orchestration, for processing and monitoring messages.
     > 

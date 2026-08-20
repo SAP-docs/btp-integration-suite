@@ -121,7 +121,7 @@ Import the Postman collection provided with the integration package and select t
 
 [Define an Encoder](define-an-encoder-89f8bdd.md "You use this task to encode messages using an encoding scheme to secure any sensitive message content during transfer over the network.")
 
-[Message Mapping](message-mapping-459ccdf.md "")
+[Message Mapping](message-mapping-459ccdf.md "This is a transformation feature used to convert and map data from a source message structure to a target message structure. It enables seamless integration between different applications by applying field mappings, functions, and transformation rules during message processing.")
 
 [Access Header and Properties in Message Mapping](access-header-and-properties-in-message-mapping-4f2a8c9.md "Learn how to access header and exchange properties in a message mapping.")
 

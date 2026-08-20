@@ -2,11 +2,11 @@
 
 # Raise Fault
 
-The RaiseFault policy allows you to create custom messages in case of error conditions. This policy returns a FaultResponse to the requesting application if it encounters an error condition.
+The Raise Fault policy allows you to create custom messages in case of error conditions. This policy returns a Fault Response to the requesting application if it encounters an error condition.
 
-A FaultResponse can consist of HTTP headers, query parameters, and a message payload. These elements can be populated using variables. This enables you to send customized FaultResponses that are specific to the error conditions.
+A Fault Response can consist of HTTP headers, query parameters, and a message payload. These elements can be populated using variables. This enables you to send customized Fault Responses that are specific to the error conditions.
 
-During execution, the RaiseFault policy transfers the message flow to the default ErrorFlow, which in turn returns the designated FaultResponse to the requesting application. When the message flow switches to the default ErrorFlow, no further policy processing occurs. All remaining processing steps are bypassed, and the FaultResponse is returned directly to the requesting app.
+During the execution, the Raise Fault policy transfers the message flow to the default Error Flow, which in turn returns the designated Fault Response to the requesting application. When the message flow switches to the default Error Flow, no further policy processing occurs. All remaining processing steps are bypassed, and the Fault Response is returned directly to the requesting app.
 
 You can attach this policy in the following locations:![](images/Flow_policy_116062b.png)
 
@@ -31,45 +31,425 @@ An example payload for the policy is as follows::
 > 
 > ```
 
+**`<FaultResponse>` element**
+
 
 <table>
 <tr>
 <th valign="top">
 
-**Field Name**
+Element
 
 </th>
 <th valign="top">
 
-**Description**
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-IgnoreUnresolvedVariables\(Optional\)
+`FaultResponse` 
 
 </td>
 <td valign="top">
 
-Ignores any unresolved variable error in the flow.
-
-Valid values: `true` or `false`
-
-Default value: `true`
+N/A
 
 </td>
-</tr>
-<tr>
 <td valign="top">
 
-FaultResponse\(Optional\)
+N/A
 
 </td>
 <td valign="top">
 
 Defines the response message returned to the requesting application.
+
+> ### Sample Code:  
+> ```
+> 
+> 	 <FaultResponse>
+>         <Set>
+>             <Headers/>
+>             <Payload contentType="text/plain"> </Payload>
+>             <StatusCode>500</StatusCode>
+>             <ReasonPhrase>Server Error</ReasonPhrase>
+>         </Set>
+>     </FaultResponse>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<FaultResponse>`/`<Set>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`Set` 
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+Sets information in the error message.
+
+> ### Sample Code:  
+> ```
+> 
+> 		 <Set>
+>             <Headers/>
+>             <Payload contentType="text/plain"> </Payload>
+>             <StatusCode>500</StatusCode>
+>             <ReasonPhrase>Server Error</ReasonPhrase>
+>         </Set>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<FaultResponse>`/`<Set>`/`<Headers>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`Headers` \(Optional\)
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Sets or overwrites HTTP headers in the error message.
+
+> ### Sample Code:  
+> ```
+> 
+> 		 <Set>
+>             <Headers/>
+>         </Set>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<FaultResponse>`/`<Set>`/`<Payload>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`Payload` \(Optional\)
+
+</td>
+<td valign="top">
+
+N/A
+
+</td>
+<td valign="top">
+
+String
+
+</td>
+<td valign="top">
+
+Sets the payload of the error message.
+
+> ### Sample Code:  
+> ```
+> <Set>
+>             <Payload contentType="text/plain">Sample Payload</Payload>
+>         </Set>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<FaultResponse>`/`<Set>`/`<StatusCode>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`StatusCode` \(Optional\)
+
+</td>
+<td valign="top">
+
+false
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+Sets the status code of the response.
+
+> ### Sample Code:  
+> ```
+> <Set>
+>             <StatusCode>500</StatusCode>
+>         </Set>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<FaultResponse>`/`<Set>`/`<ReasonPhrase>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`ReasonPhrase` \(Optional\)
+
+</td>
+<td valign="top">
+
+false
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+Sets the reason phrase of the response.
+
+> ### Sample Code:  
+> ```
+> <Set>
+>             <ReasonPhrase>Server Error</ReasonPhrase>
+>         </Set>
+> ```
+
+
+
+</td>
+</tr>
+</table>
+
+**`<IgnoreUnresolvedVariables>` element**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element
+
+</th>
+<th valign="top">
+
+Default
+
+</th>
+<th valign="top">
+
+Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`IgnoreUnresolvedVariables` 
+
+</td>
+<td valign="top">
+
+true
+
+</td>
+<td valign="top">
+
+Boolean
+
+</td>
+<td valign="top">
+
+Ignores any unresolved variable error in the Flow
+
+> ### Sample Code:  
+> ```
+> <Set>
+>             <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+>         </Set>
+> ```
+
+
 
 </td>
 </tr>

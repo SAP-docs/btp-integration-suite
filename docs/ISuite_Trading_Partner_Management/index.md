@@ -77,7 +77,7 @@
     -   [Publish B2B Data to SAP Cloud ALM](publish-b2b-data-to-sap-cloud-alm-5ec23a5.md)
 -   [Monitor B2B Scenarios](monitor-b2b-scenarios-9dc75c8.md)
     -   [Monitor Interchanges](monitor-interchanges-42c1199.md)
-        -   [Restart, Retry, or Duplicate and Retry Interchanges](restart-retry-or-duplicate-and-retry-interchanges-8626727.md)
+        -   [Restart or Retry, or Duplicate and Retry Interchanges](restart-or-retry-or-duplicate-and-retry-interchanges-8626727.md)
     -   [Monitor Unassigned Interchanges](monitor-unassigned-interchanges-c86bd69.md)
     -   [Payload Indicator in Integration Flow Message Processing](payload-indicator-in-integration-flow-message-processing-7f322c0.md)
 -   [Security](security-0a1ac96.md)

@@ -65,7 +65,7 @@ Perform the following steps to solve this error:
     -   ESR Destination: `PO_<system name>_ESR`
 
     > ### Note:  
-    > For more information on destinations, see [Configuring Connectivity to an SAP Process Orchestration System](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/8c36fd29df9a4e7bae8ce2699f6abbfd.html "Learn how to connect an SAP Process Orchestration system.") :arrow_upper_right:
+    > For more information on destinations, see [Configuring Connectivity to an SAP Process Orchestration System](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8c36fd29df9a4e7bae8ce2699f6abbfd.html "Learn how to connect an SAP Process Orchestration system.") :arrow_upper_right:
 
     If the destination connection works, move to the next step. Otherwise, raise a support ticket with screenshots of the error and destination configurations.
 

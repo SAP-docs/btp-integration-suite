@@ -28,6 +28,17 @@ The SuccessFactors OData V2 receiver adapter supports externalization. To extern
 > -   Retry for *Upsert* operation is now enabled for inner error code 412. Retry will be executed once and after 1 minute only.
 > -   Learn how to construct the required payload for SuccessFactors OData V2 Upsert operation from the [blog](https://blogs.sap.com/2019/09/15/payload-structure-for-successfactors-upsert-in-sap-cloud-platform-integration/).
 
+Whenever the SuccessFactors OData receiver adapters \(V2 or V4\) are used, the following headers with the specified values will be sent to the SuccessFactors back end as HTTP request headers:
+
+-   X-Correlation-Id : MPL ID
+
+-   X-SF-Client-Tenant-Id : Client/Tenant ID
+
+-   X-SF-Process-Name : Integration flow Name
+
+-   X-Agent-Name : SAP Cloud Integration
+
+
 Select the *General* tab and provide information as described as follows:
 
 

@@ -10,7 +10,7 @@ A reusable API artifact is created so that its components and services can be le
 
 ## Prerequisites
 
-The *PI\_Integration\_Developer*role collection should be assigned to you.
+The *PI\_Integration\_Developer* role collection should be assigned to you.
 
 Create a content package. See, [Creating an Integration Package](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-integration-package?version=CLOUD).
 
@@ -38,7 +38,7 @@ Create a content package. See, [Creating an Integration Package](https://help.sa
 
 ## Context
 
-Reusable API artifacts encompass policies for managing concerns such as authentication and rate limiting, schemas to maintain consistent data structures, named values for centralized configuration, products to group APIs and control access, API versions to enable smooth transitions, and documentation templates to ensure uniform API descriptions. By leveraging these reusable artifacts, you can simplify API development, enhance governance, and deliver a more seamless experience for API consumers.
+Reusable API artifacts encompass policies for managing concerns such as authentication and rate limiting, schemas to maintain consistent data structures, named values for centralized configuration, products to group APIs and control access, API versions to enable smooth transitions, and documentation templates to ensure uniform API descriptions. By leveraging these reusable artifacts, you can simplify API development, enhance governance, and deliver a more seamless experience for API consumers. For more information, see [Reusable API Artifact](reusable-api-artifact-26a9db1.md).
 
 
 
@@ -54,7 +54,7 @@ Reusable API artifacts encompass policies for managing concerns such as authenti
 
     The *Create API* wizard opens.
 
-5.  Select the *Edge Integration Cell* as the *Runtime Profile* and choose *Next*.
+5.  Select the *Runtime Profile* and choose *Next*.
 
     This profile determines the runtime on which you will create and process your API artifact.
 

@@ -7,7 +7,7 @@
 PGP Keyrings are required to support message level security based on PGP Standard. For Edge Integration Cell, since you can have more than one keyring, you can decide whether to create a new, add, remove, or delete an existing keyring.
 
 > ### Note:  
-> For more general information on keyring functionalities, see: [PGP Keys](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/9e7e8f999b2d4ea88b1183eaa19e4ea9.html "") :arrow_upper_right:.
+> For more general information on keyring functionalities, see: [PGP Keys](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/9e7e8f999b2d4ea88b1183eaa19e4ea9.html "") :arrow_upper_right:.
 
 > ### Note:  
 > The *pubring* and *secring* keyrings are considered default keyring artifacts. They are always displayed in the keyring list, cannot be deleted, and remain permanently assigned to the runtime cloudintegration. However, you can still assign additional runtimes as needed.

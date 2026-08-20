@@ -215,6 +215,8 @@ This topic explains how to create an MCP server by connecting to an external HTT
     > 
     > -   SAMLAssertion
     > 
+    > -   OAuth2SAMLBearerAssertion
+    > 
     > 
     > 
     > 
@@ -234,11 +236,15 @@ This topic explains how to create an MCP server by connecting to an external HTT
     > 
     > -   BasicAuthentication
     > 
+    > -   PrinciplePropagation
+    > 
     > -   OAuth2Password
     > 
     > -   OAuth2JWTBearer
     > 
     > -   SAMLAssertion
+    > 
+    > -   OAuth2SAMLBearerAssertion
     > 
     > 
     > 

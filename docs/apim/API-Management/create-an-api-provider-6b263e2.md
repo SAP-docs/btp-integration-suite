@@ -37,6 +37,9 @@ If you want to configure the API Management solution to access data from a serve
 > ### Note:  
 > You can see the following tutorial for visual instructions on how to [Create an API Provider System](https://developers.sap.com/tutorials/hcp-apim-create-provider.html).
 
+> ### Note:  
+> When you create, update, or delete an API provider using the API, changes may not be immediately reflected in subsequent GET API provider requests. API provider data is cached to reduce calls to the destination service, which can result in stale data being returned for a short period after a modification. The updated data is typically available within approximately 20 seconds.
+
 
 
 <a name="loio6b263e2c1b2d4d9ba20bcd7872eedd9e__steps_w2l_3cn_fdb"/>

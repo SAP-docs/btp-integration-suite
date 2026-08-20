@@ -21,5 +21,5 @@ Examples of standard KPIs include:
 
 [Analytics Dashboard](analytics-dashboard-ee416ac.md "The analytics dashboard has some common features such as the views you can choose, the time range for which you want to display data, resize charts, and so on.")
 
-[Working with the Analytics Dashboard](working-with-the-analytics-dashboard-e07e815.md "The analytics dashboard provides a comprehensive view of API performance and errors in the form of charts and KPIs.")
+[Working with the API Analytics Dashboard](working-with-the-api-analytics-dashboard-e07e815.md "The API analytics dashboard provides a comprehensive view of API performance and errors in the form of charts and KPIs.")
 

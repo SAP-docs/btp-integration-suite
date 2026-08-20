@@ -95,6 +95,228 @@ Integration Advisor
 </td>
 <td valign="top">
 
+Create MIGs by Payload
+
+</td>
+<td valign="top">
+
+Create new message implementation guidelines using an existing payload. Integration Advisor takes a payload you provide as base for a new MIG and suggests the best fitting objects during the creating process.
+
+See [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/creating-message-implementation-guidelines-by-payload).
+
+As Cloud Integration \(standalone\) customer, see [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/creating-message-implementation-guidelines-by-payload).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Automatic Reordering of Repeating Composites
+
+</td>
+<td valign="top">
+
+You can now enable automatic reordering of repeating composite data elements in UN/EDIFACT segments to match the message implementation guideline sequence. Use this feature to handle business partner payloads where composite instances arrive in varying orders, removing the need for complex mapping logic to accommodate different positioning.
+
+See [Enabling Arbitrary Composite Ordering](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/enabling-arbitrary-composite-ordering).
+
+As Cloud Integration \(standalone\) customer, see [Enabling Arbitrary Composite Ordering](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/enabling-arbitrary-composite-ordering).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Integration Advisor: 2.16.\*
+-   Increment: 2607
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
 Updated Behavior for Fixed Value in Date Time Conversion
 
 </td>

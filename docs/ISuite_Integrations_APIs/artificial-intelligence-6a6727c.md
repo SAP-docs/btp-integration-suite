@@ -61,14 +61,14 @@ Use artificial intelligence to analyze and resolve message processing errors.
 </td>
 <td valign="top">
 
-[AI-assisted Error Resolution](ai-assisted-error-resolution-f27f95d.md)
+[AI-assisted Error Resolution](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/ai-assisted-error-resolution?version=CLOUD&ai=true) 
 
 </td>
 <td valign="top">
 
-[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
-[PI\_Integration\_Developer](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+[PI\_Integration\_Developer](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
 </td>
 </tr>
@@ -90,7 +90,9 @@ AI recommends the next flow steps, while adding flow steps in your integration f
 </td>
 <td valign="top">
 
-This feature is always activated to ensure optimized designing of integration flows and can't be deactivated. See [Creating an Integration Flow](creating-an-integration-flow-da53d93.md)
+This feature is always activated to ensure optimized designing of integration flows and can't be deactivated. See
+
+[Creating an Integration Flow](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/creating-integration-flow?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -120,14 +122,16 @@ Upon activation, you can create integration flows with assistance from Generativ
 You can activate these features together. See
 
 -   [Generating Integration Flows with AI Assistance](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/generating-integration-flows-with-ai-assistance?version=CLOUD)
--   [Optimize Groovy Scripts with AI](optimize-groovy-scripts-with-ai-3b7a5a1.md) 
+
+-   [Optimize Groovy Scripts with AI](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/optimize-groovy-scripts-with-ai?version=CLOUD&ai=true)
+
 
 
 
 </td>
 <td valign="top">
 
-[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
 </td>
 </tr>
@@ -149,7 +153,61 @@ Upon activation, enhance your Groovy scripts using Generative AI.
 </td>
 <td valign="top">
 
-[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Memory Profiling
+
+</td>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+Shows the memory insights derived during integration flow simulation and suggests improvements.
+
+</td>
+<td valign="top">
+
+[AI-based Memory Profiling](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/ai-memory-insights?) 
+
+</td>
+<td valign="top">
+
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Content Migration
+
+</td>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+Converts Java mappings to Groovy scripts during the migration of SAP Process Integration and Process Orchestration scenarios to integration flows.
+
+</td>
+<td valign="top">
+
+[Java Mapping](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/java-mapping?) 
+
+</td>
+<td valign="top">
+
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true) 
 
 </td>
 </tr>
@@ -203,7 +261,7 @@ Upon activation, identifies API traffic trends and provides predictions for upco
 </td>
 <td valign="top">
 
-[APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD)
+[APIPortal.Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/roles-collections-in-api-management-draft?version=CLOUD) 
 
 </td>
 </tr>
@@ -225,12 +283,12 @@ Upon activation, you can leverage AI assistance to automatically generate an Ope
 </td>
 <td valign="top">
 
-[Generate OpenAPI Specification with AI Assistance](generate-openapi-specification-with-ai-assistance-5ec68db.md) 
+[Generate OpenAPI Specification with AI Assistance](generate-openapi-specification-with-ai-assistance-5ec68db.md)
 
 </td>
 <td valign="top">
 
-[PI\_Administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/persona-2937e5ca6ef448cfb21451a2461cc2a6?locale=en-US)
+[PI\_Administrator](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/personas-for-cloud-integration?version=CLOUD&ai=true)
 
 </td>
 </tr>
@@ -259,7 +317,7 @@ Upon deactivation of this service, MIG and MAG proposals will not be accessible 
 </td>
 <td valign="top">
 
-[iadv-content-administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?locale=en-US)
+[iadv-content-administrator](https://help.sap.com/docs/integration-suite/sap-integration-suite/configuring-user-access?locale=en-US) 
 
 </td>
 </tr>

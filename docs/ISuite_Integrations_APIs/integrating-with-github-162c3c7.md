@@ -51,8 +51,13 @@ The GitHub integration follows a simple workflow across roles:
     You can track the deployed integration flow as usual and also view the repository and branch details for these artifacts in the monitoring view to ensure transparency. See [Manage Integration Content](manage-integration-content-09a7223.md)
 
 
+> ### Remember:  
+> You would a need Personal Access Token \(PAT\) with required permissions to perform each operation.
+
 **Related Information**  
 
 
 [Personas for Cloud Integration](60-Security/personas-for-cloud-integration-2937e5c.md "When you perform user management tasks using SAP BTP cockpit, you find a set of predefined roles that you can assign to users of the account. According to the main tasks associated with integration projects, these roles are associated to certain persona relevant for an integration project.")
+
+[Generate a Personal Access Token \(PAT\) with Required Permissions](generate-a-personal-access-token-pat-with-required-permissions-7436351.md "Understand the PAT permissions based on your role and the type of Git operation you wish to perform.")
 

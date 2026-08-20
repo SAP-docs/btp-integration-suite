@@ -12,6 +12,8 @@ The supported Git operations are:
 **Related Information**  
 
 
+[Generate a Personal Access Token \(PAT\) with Required Permissions](generate-a-personal-access-token-pat-with-required-permissions-7436351.md "Understand the PAT permissions based on your role and the type of Git operation you wish to perform.")
+
 [Git Access](IntegrationSettings/git-access-ae173b0.md "")
 
 [Git Push](git-push-1860d2a.md "Git Push is a Git operation used to upload local changes from an integration artifact to a connected remote Git repository, ensuring that the repository is updated with the latest modifications.")

@@ -11,7 +11,10 @@ You can also configure the heat map to show either the average message size of t
 The heat map displays only data stores identified as having the highest message sizes, sorted top-down by database volume usage. The color shade of a cell reflects the file size level.
 
 > ### Note:  
-> You can use the **Top Data Stores** filter to adjust the number of data stores shown on the chart. The default is six, and the maximum is 15.
+> You can use the **Top Data Stores** filter to adjust the number of data stores shown on the chart. The default is six, and the maximum is 15. The total number of data stores displayed is the data stores for which there's available data.
+
+> ### Note:  
+> When you navigate from the usage overview page, the time period you selected is automatically highlighted in the heat map.
 
 Select a cell to get more context information and to get access to the following functions:
 

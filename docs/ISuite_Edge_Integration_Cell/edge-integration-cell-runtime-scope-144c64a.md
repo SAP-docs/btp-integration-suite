@@ -296,7 +296,7 @@ JMS resources
 
 Depends on cluster node storage size.
 
-See: [JMS Resource Limits for Edge Integration Cell](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/17366b34b1714492ae60c8f01562ed6b.html "The following JMS resources are available per Edge Integration Cell node.") :arrow_upper_right:
+See: [JMS Resource Limits for Edge Integration Cell](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/17366b34b1714492ae60c8f01562ed6b.html "The following JMS resources are available per Edge Integration Cell node.") :arrow_upper_right:
 
 </td>
 </tr>

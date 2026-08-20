@@ -13,10 +13,7 @@ Cloud Integration enables seamless integration of web based online platform, Git
 **Prerequisite**
 
 -   You've tenant admin role assigned to your user. See [Personas for Cloud Integration](60-Security/personas-for-cloud-integration-2937e5c.md)
--   Your Personal Access Token \(PAT\) must have sufficient permissions to access the added GitHub repositories.
-
-    > ### Note:  
-    > To generate a PAT token, login to your GitHub account. From your profile, navigate to *Settings* \> *Developer Settings* \> *Personal Access Tokens* \> *Fine-Grained Tokens or Tokens \(Classic\)* \> *Generate New Token*.
+-   Your Personal Access Token \(PAT\) must have sufficient permissions to access the added GitHub repositories. See [Generate a Personal Access Token \(PAT\) with Required Permissions](generate-a-personal-access-token-pat-with-required-permissions-7436351.md)
 
 
 

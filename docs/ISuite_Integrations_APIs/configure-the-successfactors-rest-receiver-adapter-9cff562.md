@@ -21,6 +21,17 @@ Once you have created a receiver channel and selected the SuccessFactors \(REST\
 > ### Note:  
 > The adapter only supports SuccessFactors Learning Management System \(LMS\) OData V4 entities.
 
+Whenever the SuccessFactors OData REST receiver adapter is used, the following headers with the specified values will be sent to the SuccessFactors back end as HTTP request headers:
+
+-   X-Correlation-Id : MPL ID
+
+-   X-SF-Client-Tenant-Id : Client/Tenant ID
+
+-   X-SF-Process-Name : Integration flow Name
+
+-   X-Agent-Name : SAP Cloud Integration
+
+
 Select the *General* tab and provide values in the fields as follows.
 
 **General**

@@ -23,7 +23,7 @@ This section provides simple example integration flows to show how to implement 
 **Related Information**  
 
 
-[Aggregator](aggregator-5f5e01b.md "You want to combine related individual messages so that they can be processed in bulk. Using an Aggregator pattern, you can collect and store individual messages until a complete set of related messages has been received. The aggregated message is then sent to the actual receiver.")
+ <?sap-ot O2O class="- topic/link " href="5f5e01bfa534465eab55c8751f72a5bc.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/eaf929e1e9ac4185b18b545df104f50f.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 [Composed Message Processor](composed-message-processor-353a119.md "You want to handle a message with multiple elements, and each element requires different processing. You use a Composed Message Processor pattern to split the message into multiple sub messages, route the split messages to different destinations, and then reaggregate the responses back into one single message.")
 

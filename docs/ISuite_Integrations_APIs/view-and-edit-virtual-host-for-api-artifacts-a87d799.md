@@ -29,7 +29,7 @@ You can view and edit this virtual host through the *Manage Virtual Host* tile o
 > ### Note:  
 > The virtual host configured in the API artifact at design time and the virtual host selected during deployment can be different. If you select a different virtual host during deployment, the runtime endpoint is generated using the deployed virtual host. Therefore, in *Monitor* \> *Manage Integration Content*, the URL for the API artifact displayed under *Endpoints* reflects the virtual host currently used by the deployed runtime artifact.
 > 
-> If the API artifact is configured with the virtual host `api-dev.company.com` at design time, but you select `api-prod.company.com` during deployment, the design-time configuration continues to show `api-dev.company.com`. However, after deployment, the endpoint URL displayed in *Monitor* \> *Manage Integration Content* uses `api-prod.company.com`, because it reflects the virtual host associated with the deployed runtime artifact.
+> If the API artifact is configured with the virtual host `api-dev.<sap default domain>.com` at design time, but you select `api-prod.<sap default domain>.com` during deployment, the design-time configuration continues to show `api-dev.<sap default domain>.com`. However, after deployment, the endpoint URL displayed in *Monitor* \> *Manage Integration Content* uses `api-prod.<sap default domain>.com`, because it reflects the virtual host associated with the deployed runtime artifact.
 
 To view and edit the virtual host, execute the following steps:
 
@@ -49,9 +49,9 @@ To view and edit the virtual host, execute the following steps:
 
 5.  On the following screen, search for a virtual host or select one from the list and choose the :pencil2: icon.
 
-6.  On the *Edit Virtual Host* dialog, you can modify the *Vitual Host* alias and set the *Client Certificate Authentication* to the following:
+6.  On the *Edit Virtual Host* dialog, you can modify the *Virtual Host* alias and set the *Client Certificate Authentication* to the following:
 
-    -   *Optional* \(default\): Users can make the API call with or without a certificate.
+    -   *Optional*: \(default\): Users can make the API call with or without a certificate.
 
     -   *Enforced*: Only users with a Process Integration Runtime certificate instance can make the API call using the required certificates.
 

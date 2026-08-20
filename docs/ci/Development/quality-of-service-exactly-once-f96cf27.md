@@ -542,7 +542,7 @@ See: [Idempotent Process Call Handles Duplicates \(With Alternative Response\)](
 
 This scenario combines the aggregator pattern with the quality of service Exactly Once.
 
-See: [Aggregator](aggregator-86f97fd.md)
+See:  <?sap-ot O2O class="- topic/xref " href="86f97fd7bb944349946f94ec0a8375b9.xml" text="" desc="" xtrc="xref:18" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/f96cf276c37d424f9a5b3e63778cf0ae.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 </tr>

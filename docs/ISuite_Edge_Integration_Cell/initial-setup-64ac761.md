@@ -69,7 +69,7 @@ Integration Developer
 </td>
 <td valign="top">
 
--   [Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+-   [Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 -   [Getting Support for Edge Integration Cell](getting-support-for-edge-integration-cell-816d9e4.md)
 

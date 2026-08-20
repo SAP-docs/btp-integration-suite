@@ -1,5 +1,7 @@
 <!-- loiof3c95cdefa9744ec8d1745401a4b2cdb -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Modify an OpenAPI Specification Using the Visual Editor
 
 The OpenAPI Specification visual editor provides an interactive interface to easily update and extend API objects, such as resources and schemas, for existing APIs.
@@ -237,7 +239,11 @@ You can add or update existing request parameters or request headers for a speci
     </td>
     <td valign="top">
     
-    Select the data type, such as *string*, *boolean,* and so forth.
+    1.  Select the data type, such as *string*, *boolean*, and so forth.
+    2.  Select an available *Format* \(optional\), such as *byte*, *binary*, *date*, and so forth. You can add a custom format if it is not available in the drop-down list.
+    3.  Use all or delete specific *Enums* that already exist in the list. You can also add enums that are available in the OpenAPI specification, but are not in the list by choosing :heavy_plus_sign:. Choose *Add* to add them to the data type.
+
+    Depending on the *Type* of data type you choose, such as *Integer*, the other fields, such as *Minimum Value*, *Exclusive Minimum*, *Multiple Of*, *Nullable*, and so forth will be automatically populated according to how the type is definied in your OpenAPI specification.
     
     </td>
     </tr>
@@ -414,7 +420,10 @@ Basic
 </td>
 <td valign="top">
 
-Select the data type, such as string, boolean, and so forth.
+1.  Select the data type, such as string, boolean, and so forth.
+2.  Use all or delete specific *Enums* that already exist in the list. You can also add enums that are available in the OpenAPI specification, but are not in the list by choosing :heavy_plus_sign:. Choose *Add* to add them to the data type.
+
+Depending on the *Type* of data type you choose, such as *Integer*, the other fields, such as *Minimum Value*, *Exclusive Minimum*, *Multiple Of*, *Nullable*, and so forth will be automatically populated according to how the type is definied in your OpenAPI specification.
 
 </td>
 </tr>
@@ -612,7 +621,10 @@ You can update an existing response body for a specific resource by searching an
     </td>
     <td valign="top">
     
-    Select the data type, such as string, boolean, and so forth.
+    1.  Select the data type, such as string, boolean, and so forth.
+    2.  Use all or delete specific *Enums* that already exist in the list. You can also add enums that are available in the OpenAPI specification, but are not in the list by choosing :heavy_plus_sign:. Choose *Add* to add them to the data type.
+
+    Depending on the *Type* of data type you choose, such as *Integer*, the other fields, such as *Minimum Value*, *Exclusive Minimum*, *Multiple Of*, *Nullable*, and so forth will be automatically populated according to how the type is definied in your OpenAPI specification.
     
     </td>
     </tr>
@@ -827,7 +839,10 @@ Basic
 </td>
 <td valign="top">
 
-Select the data type, such as string, boolean, and so forth.
+1.  Select the data type, such as string, boolean, and so forth.
+2.  Use all or delete specific *Enums* that already exist in the list. You can also add enums that are available in the OpenAPI specification, but are not in the list by choosing :heavy_plus_sign:. Choose *Add* to add them to the data type.
+
+Depending on the *Type* of data type you choose, such as *Integer*, the other fields, such as *Minimum Value*, *Exclusive Minimum*, *Multiple Of*, *Nullable*, and so forth will be automatically populated according to how the type is definied in your OpenAPI specification.
 
 </td>
 </tr>

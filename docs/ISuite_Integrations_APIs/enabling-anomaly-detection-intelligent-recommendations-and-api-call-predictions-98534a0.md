@@ -2,7 +2,7 @@
 
 # Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions
 
-Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.
+Activate **Anomaly Detection**, **Intelligent Recommendations**, and **API Call Predictions** to enhance monitoring and forecasting capabilities for API calls.
 
 
 
@@ -12,7 +12,7 @@ Activate anomaly detection, intelligent recommendations, and API call prediction
 
 The role collection *APIPortal.Administrator* must be assigned to you.
 
-The role collection *APIManagement.SelfService.Administrator* must be assigned to you to enable intelligent recommendations.
+To enable Intelligent Recommendations, the role collection *APIManagement.SelfService.Administrator* must be assigned to you.
 
 > ### Note:  
 > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
@@ -26,32 +26,34 @@ The role collection *APIManagement.SelfService.Administrator* must be assigned t
 
 ## Context
 
-To enable anomaly detection and API call prediction through the SAP Integration Suite, follow the steps below:
+To enable Anomaly Detection, Intelligent Recommendations, and API Call Predictions in SAP Integration Suite, perform the following steps:
 
 
 
 ## Procedure
 
-1.  Log on to the **SAP Integration Suite**.
+1.  Log on to **SAP Integration Suite**.
 
-2.  Choose *Settings* \> *Artificial Intelligence* from the left navigation pane.
+2.  From the left navigation pane, choose *Settings* \> *Artificial Intelligence*.
 
-3.  Locate the following AI features and switch the toggle button to the *ON* position:
+3.  Locate the following AI features in the features list and toggle *Activation Status* to *ON*:
 
     -   Anomaly Detection
-    -   API Call Prediction
+    -   API Call Predictions
 
         > ### Note:  
-        > A single toggle button controls both the anomaly detection and prediction features simultaneously.
+        > A single toggle button controls both the Anomaly Detection and Prediction features simultaneously.
 
 
-    > ### Caution:  
-    > Disabling the anomaly detection feature will delete all associated anomaly data.
+4.  \(Optional\) Enable Intelligent Recommendations:
 
-4.  \(Optional\) Under anomaly detection, select the checkbox *Intelligent Recommendations* and accept the terms and conditions to enable the feature.
+    1.  Under *Anomaly Detection*, select the *Intelligent Recommendations* checkbox.
+
+    2.  Review and accept the terms and conditions in the dialog that appears.
+
 
     > ### Note:  
-    > Intelligent recommendations provides detailed observations of detected anomalies, including likely causes and recommended actions to resolve issues. The activation or deactivation of this feature has no impact on anomaly detection or API call prediction.
+    > For details on data retention and reactivation behavior when the feature is disabled, see  <?sap-ot O2O class="- topic/xref " href="1d6756e093da4bd0882eb6e34ff8cb0e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/98534a0f8d1d4c4d98bea4b84e762787.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -60,7 +62,7 @@ To enable anomaly detection and API call prediction through the SAP Integration 
 
 ## Results
 
-Anomaly detection, API call prediction, and intelligent recommendations are now enabled.
+The selected AI features are enabled. Anomaly Detection begins monitoring API traffic, and predictions are generated based on historical data patterns.
 
 **Related Information**  
 

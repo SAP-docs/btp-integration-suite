@@ -24,7 +24,7 @@ Once the **SAP Alert Notification Service** is setup or configured successfully,
 **Related Information**  
 
 
-[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate anomaly detection, intelligent recommendations, and API call prediction to enhance monitoring and forecasting capabilities for API calls.")
+[Enabling Anomaly Detection, Intelligent Recommendations, and API Call Predictions](enabling-anomaly-detection-intelligent-recommendations-and-api-call-predictions-98534a0.md "Activate Anomaly Detection, Intelligent Recommendations, and API Call Predictions to enhance monitoring and forecasting capabilities for API calls.")
 
 [Configuring APIs for Anomaly Detection](configuring-apis-for-anomaly-detection-9e7e5d1.md "View or configure APIs for anomaly detection.")
 

@@ -92,6 +92,144 @@ API Management
 </td>
 <td valign="top">
 
+Tenant Cloning Tool: Java 17 to Java 25 Upgrade
+
+</td>
+<td valign="top">
+
+The API Management Tenant Cloning Tool has been upgraded from Java 17 to Java 25. The system running the tool must have Java Runtime Environment \(JRE\) 25 or later. See, [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/clone-api-management-content-between-cloud-foundry-environments?version=CLOUD&ai=true) and [Clone API Management Content](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/clone-api-management-content?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Event Discovery from Advanced Event Mesh
+
+</td>
+<td valign="top">
+
+Events published via Advanced Event Mesh can now be consumed by the application developers on Developer Hub. This significantly reduces complexity by eliminating the need to switch between multiple portals or tools, enabling faster onboarding as developers can find and consume both APIs and event products from a single catalog. See, [Discover and Publish Events from Advanced Event Mesh](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/discover-and-publish-events-from-advanced-event-mesh?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Consume MCP Servers from AI Applications
 
 </td>
@@ -1496,6 +1634,79 @@ Enhanced Product Creation Experience
 <td valign="top">
 
 As part of ongoing UI improvements, the product creation workflow has been optimized to provide a more streamlined and consistent experience. You can now create products from APIs and events in a single step using a consolidated creation dialog. See, [Discover and Publish APIs from SAP Integration Suite on Developer Hub](https://help.sap.com/docs/integration-suite/sap-integration-suite/discover-and-publish-apis-from-sap-integration-suite-on-developer-hub?version=CLOUD), [Publish SAP S/4HANA APIs from Business Systems](https://help.sap.com/docs/integration-suite/sap-integration-suite/create-products-from-consumption-bundles?version=CLOUD), and [Discover and Publish Events from Business Systems](https://help.sap.com/docs/integration-suite/sap-integration-suite/discovering-events-from-business-systems-and-publishing-them-in-catalog?version=CLOUD).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-05-03
+
+</td>
+<td valign="top">
+
+2026-05-03
+
+</td>
+<td valign="top">
+
+2603
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of request.header Expression in Quota Policy
+
+</td>
+<td valign="top">
+
+The use of the expression $\{request.header.<headerName\>\} in Quota policies has been deprecated.
+
+Going forward, you should use the simplified expression $\{header.<headerName\>\} instead. This change standardizes header access syntax and ensures consistency across policy configurations.
+
+We recommend updating existing Quota policies to use the new expression to avoid potential issues in future releases. See, [Add Quota Policy to an API Endpoint](https://help.sap.com/docs/integration-suite/sap-integration-suite/adding-quota-policy-step-to-api-endpoint).
 
 </td>
 <td valign="top">

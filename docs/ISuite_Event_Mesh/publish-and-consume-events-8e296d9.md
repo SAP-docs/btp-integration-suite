@@ -161,6 +161,9 @@ Use a REST client tool to leverage the supported REST APIs to publish and consum
 -   The REST APIs are protected with an OAuth bearer token. You must first authenticate your applications to be able to publish and consume messages. See [Authenticate Your REST API Requests](authenticate-your-rest-api-requests-027e47a.md) to know more.
 
 
+> ### Note:  
+> The limitations for the REST Gateway can be found in the SAP Note [3461547](https://me.sap.com/notes/3461547).
+
 
 
 ### Quality of Service For Consuming Messages

@@ -4,6 +4,8 @@
 
 # Message Mapping
 
+This is a transformation feature used to convert and map data from a source message structure to a target message structure. It enables seamless integration between different applications by applying field mappings, functions, and transformation rules during message processing.
+
 > ### Remember:  
 > There are currently certain limitations when working in the Cloud Foundry environment. For more information on the limitations, see SAP Note [2752867](https://me.sap.com/notes/2752867).
 

@@ -767,5 +767,5 @@ Defines the time at which the SFTP Sender is triggered to read files from SFTP S
 </tr>
 </table>
 
-For details on the timer configuration, see [Define a Timer Start Event](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ae14ad7916c04ecbaba3d26e2404410a.html "You can configure an integration flow to automatically start and run on a particular schedule.") :arrow_upper_right:.
+For details on the timer configuration, see [Define a Timer Start Event](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ae14ad7916c04ecbaba3d26e2404410a.html "You can configure an integration flow to automatically start and run on a particular schedule.") :arrow_upper_right:.
 

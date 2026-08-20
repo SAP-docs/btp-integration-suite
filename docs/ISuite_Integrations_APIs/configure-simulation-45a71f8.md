@@ -8,6 +8,23 @@ Use *Simulation* feature to test an integration flow and check the desired outco
 
 
 
+## Prerequisites
+
+> ### Note:  
+> Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
+
+-   A tenant admin must enable the memory profiling feature on from [Artificial Intelligence](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/artificial-intelligence?) settings page.
+
+-   If the integration flow contains groovy script step:
+
+    -   The Integration flow must be in edit mode as the [optimization](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/optimize-groovy-scripts-with-ai?) inputs for groovy scripts are needed to be opened in the groovy editor.
+
+    -   A tenant admin must enable the script optimization feature from Artificial Intelligence settings page. See [Artificial Intelligence](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/artificial-intelligence?)
+
+
+
+
+
 ## Context
 
 The steps described here explains the process of running a *Simulation* in both read and edit mode of an integration flow.
@@ -21,7 +38,7 @@ The steps described here explains the process of running a *Simulation* in both 
 
 ## Procedure
 
-1.  Choose your package and then select the *Artifact*.
+1.  Choose your package and then select the integration flow.
 
 2.  You can see simulation tool on the palette.
 
@@ -40,7 +57,9 @@ The steps described here explains the process of running a *Simulation* in both 
 
     2.  A dialog opens to add a simulation input. Provide the necessary details. You can add input that could be *Payload* or *Headers* or *Properties*. You can also upload input payload from your local file system.
 
-    3.  Choose *OK* to submit input. For more information, see [Using Various Types of Body Files in the Simulation](using-various-types-of-body-files-in-the-simulation-2e3cf3b.md).
+    3.  Under AI configuration, select *Enable Memory Profiling* to obtain memory profiling insights after a successful simulation run. Read this [blog](https://community.sap.com/t5/technology-blog-posts-by-sap/ai-based-memory-profiling-for-integration-flow-simulation-optimize-before/ba-p/14461815) or watch a short [video](https://video.sap.com/media/t/1_bmqaway5) for this AI feature.
+
+    4.  Choose *OK* to submit input. For more information, see [Using Various Types of Body Files in the Simulation](using-various-types-of-body-files-in-the-simulation-2e3cf3b.md).
 
 
 5.  Choose <span class="SAP-icons-V5"></span>to end the defined simulation flow step.
@@ -56,7 +75,14 @@ The steps described here explains the process of running a *Simulation* in both 
 
 6.  Choose :arrow_forward: to run the simulation. Once the simulation run is successful, a message :envelope:envelope appears alongside each flow component with a tracing information. Choosing the envelope you can see the details.
 
-7.  Choose <span class="SAP-icons-V5"></span>to clear the simulation and you can start with fresh flow steps to begin new set of simulation.
+    > ### Note:  
+    > If you have enabled Memory profiling and the flow step is one of the top memory-contributing flow step, you'll be able to view the memory profiling insights.
+    > 
+    > If the integration flow contains Groovy script step, choose *Optimize in Editor* and then *Optimize* to view the recommendations in the script editor. See [Optimize Groovy Scripts with AI](optimize-groovy-scripts-with-ai-3b7a5a1.md)
+
+7.  **\(Only if memory profiling is enabled\)**: Review the reported top memory contributors and the recommendations. Apply the suggested fix to that flow step and re-run simulation to identify other significant memory issues.
+
+8.  Choose <span class="SAP-icons-V5"></span>to clear the simulation and you can start with fresh flow steps to begin new set of simulation.
 
     > ### Note:  
     > -   Changing integration flow mode \(Read or Edit\) loses the configuration of an integration flow simulation.

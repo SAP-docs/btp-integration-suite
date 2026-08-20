@@ -298,7 +298,7 @@ When aggregating messages, the system temporarily stores data on the tenant duri
 
 You can only use this data storage option to implement a message aggregator pattern; you can't use this option for permanent data storage.
 
-See: [Aggregator](aggregator-5f5e01b.md)
+See:  <?sap-ot O2O class="- topic/xref " href="5f5e01bfa534465eab55c8751f72a5bc.xml" text="" desc="" xtrc="xref:31" xtrf="file:/home/builder/src/dita-all/zpk1713331951414/loio3268cb35959d4b368fb49de861bfe8a1_en-US/src/content/localization/en-us/a836b4e38d1a45f6be7071b9b697c2a3.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 
 </td>
 <td valign="top">

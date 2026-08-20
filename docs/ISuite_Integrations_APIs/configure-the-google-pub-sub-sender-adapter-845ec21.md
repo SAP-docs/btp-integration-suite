@@ -296,6 +296,27 @@ Specify the interval in milliseconds to verify the connection validity of the gR
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Error Handling*
+
+</td>
+<td valign="top">
+
+Select the action to perform when an error occurs in the adapter:
+
+-   *Create Error MPL* creates an error message processing log \(MPL\).
+-   *Change iFlow Status to Error* changes the iFlow to the error state without creating an error MPL.
+-   *Add to System Trace Logs* records the error in the system trace logs without creating an Error MPL or changing the iFlow status.
+
+    Default: *Create Error MPL* 
+
+
+
+
+</td>
+</tr>
 </table>
 
 **Processing**
@@ -676,6 +697,27 @@ Specify the proxy type:
 <td valign="top">
 
 Specify the Location ID from Cloud Connector.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Error Handling*
+
+</td>
+<td valign="top">
+
+Select the action to perform when an error occurs in the adapter:
+
+-   *Create Error MPL* creates an error message processing log \(MPL\).
+-   *Change iFlow Status to Error* changes the iFlow to the error state without creating an error MPL.
+-   *Add to System Trace Logs* records the error in the system trace logs without creating an Error MPL or changing the iFlow status.
+
+    Default: *Create Error MPL* 
+
+
+
 
 </td>
 </tr>

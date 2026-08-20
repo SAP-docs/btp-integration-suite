@@ -94,7 +94,7 @@ After creating the MCP server, you can edit it to manage its configuration, incl
 </td>
 <td valign="top">
 
-After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy APIs and MCP Servers](deploy-apis-and-mcp-servers-b70e7ec.md).
+After configuring your MCP server, deploy it on Integration Cell runtime to make it active. See, [Deploy an API Artifact](deploy-an-api-artifact-b70e7ec.md).
 
 </td>
 </tr>

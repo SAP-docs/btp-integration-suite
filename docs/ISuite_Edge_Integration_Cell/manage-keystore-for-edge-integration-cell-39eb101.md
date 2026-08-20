@@ -12,7 +12,7 @@ A keystore is used to secure message exchange both at transport level and at mes
 
 For Edge Integration Cell, you can have multiple keystores to separate the artifact assignment for the different runtimes.
 
-For more general information on keystore functionalities, see [Keystore](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b1635139eb1f42728e249004ae2d617b.html "Certificates and key pairs are stored in one keystore per tenant, referred to also as tenant keystore.") :arrow_upper_right:.
+For more general information on keystore functionalities, see [Keystore](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b1635139eb1f42728e249004ae2d617b.html "Certificates and key pairs are stored in one keystore per tenant, referred to also as tenant keystore.") :arrow_upper_right:.
 
 > ### Note:  
 > For Edge Integration Cell, there are specific security artifact conditions in place. For more information, see [Copying Keystore Entries in Edge Integration Cell](copying-keystore-entries-in-edge-integration-cell-0800f7b.md)

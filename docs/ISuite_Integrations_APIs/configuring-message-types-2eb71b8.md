@@ -378,5 +378,5 @@ Displays the XML Schema Definition \(XSD\) that is, the text view of the message
 **Related Information**  
 
 
-[Message Mapping](message-mapping-459ccdf.md "")
+[Message Mapping](message-mapping-459ccdf.md "This is a transformation feature used to convert and map data from a source message structure to a target message structure. It enables seamless integration between different applications by applying field mappings, functions, and transformation rules during message processing.")
 

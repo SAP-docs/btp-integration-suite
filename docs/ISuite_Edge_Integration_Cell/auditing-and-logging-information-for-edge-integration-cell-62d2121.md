@@ -87,7 +87,7 @@ Deletion of data store entry `126` of global data store `CustomerReviews` writes
 </td>
 <td valign="top">
 
-[Managing Data Stores](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
+[Managing Data Stores](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -135,7 +135,7 @@ Deletion of global data store `CustomerReviews` writes the following audit log e
 </td>
 <td valign="top">
 
-[Managing Data Stores](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
+[Managing Data Stores](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -207,7 +207,7 @@ Download of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
-[Managing Variables](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
+[Managing Variables](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -281,7 +281,7 @@ Deletion of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
-[Managing Variables](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
+[Managing Variables](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -308,7 +308,7 @@ Move messages to another queue
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -354,7 +354,7 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -402,7 +402,7 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -450,7 +450,7 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -477,7 +477,7 @@ Retry message from message queue
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -526,7 +526,7 @@ Reading the message payload writes the following audit log event:
 </td>
 <td valign="top">
 
-[Monitor Message Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
+[Monitor Message Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -572,7 +572,7 @@ Read message processing log attachment
 </td>
 <td valign="top">
 
-[Monitor Message Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
+[Monitor Message Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -585,5 +585,5 @@ Read message processing log attachment
 
 [Audit Logging in the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/02c39712c1064c96b37c1ea5bc9420dc.html)
 
-[Auditing and Logging Information for Cloud Integration](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/d1c7bfe00b7c448ab56d7b4d454475f9.html "Here you can find a list of the security events that are logged by Cloud Integration.") :arrow_upper_right:
+[Auditing and Logging Information for Cloud Integration](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d1c7bfe00b7c448ab56d7b4d454475f9.html "Here you can find a list of the security events that are logged by Cloud Integration.") :arrow_upper_right:
 

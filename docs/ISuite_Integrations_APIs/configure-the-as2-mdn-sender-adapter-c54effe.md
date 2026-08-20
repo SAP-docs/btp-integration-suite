@@ -61,6 +61,9 @@ Select this option if authentication and authorization are not required for inbo
 > When this option is selected, the **Authorization** and **User Role** fields are hidden, as they are not applicable in a no-authentication scenario.
 
 > ### Note:  
+> To use the Skip Authentication feature, ensure that multiple sender adapters are not used in the same integration flow.
+
+> ### Note:  
 > Operating an AS2 endpoint without authentication increases the risk of partner identity spoofing, message tampering, and challenges in establishing message ownership during audits or dispute investigations. To mitigate these risks, you can
 > 
 > -   Use message signing and encryption to ensure message integrity and prevent unauthorized modification during transit.

@@ -80,7 +80,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -147,14 +147,14 @@ AS2
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the AS2 Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5d7ee17e554841df8ef355413b88e056.html "") :arrow_upper_right:
+See also: [Configure the AS2 Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/5d7ee17e554841df8ef355413b88e056.html "") :arrow_upper_right:
 
 </td>
 </tr>
@@ -180,14 +180,14 @@ AS2 MDN
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the AS2 MDN Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/c54effed7f1643979326e6a461899904.html "") :arrow_upper_right:
+See also: [Configure the AS2 MDN Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/c54effed7f1643979326e6a461899904.html "") :arrow_upper_right:
 
 </td>
 </tr>
@@ -213,14 +213,14 @@ AS4
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [AS4 Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/a448605c3c5545a9970704778cf4236a.html "You use AS4 message exchange protocol to securely process incoming business documents using Web services.") :arrow_upper_right:
+See also: [AS4 Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/a448605c3c5545a9970704778cf4236a.html "You use AS4 message exchange protocol to securely process incoming business documents using Web services.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -274,7 +274,7 @@ N.A. as no connection with a remote component
 </td>
 <td valign="top">
 
-[Data Store Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4f5ef3f724c2480da421daa7880bb040.html "This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.") :arrow_upper_right: 
+[Data Store Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4f5ef3f724c2480da421daa7880bb040.html "This adapter enables Cloud Integration to consume messages from a data store. This feature helps you to enable asynchronous decoupling of inbound and outbound processing by using the data store as temporary storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -293,7 +293,7 @@ Dropbox
 </td>
 <td valign="top">
 
-[Configure the Dropbox Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/de619914e2a24c53a1253d90b79b814f.html "The Dropbox sender adapter enables SAP Integration Suite to receive files from the Dropbox storage.") :arrow_upper_right: 
+[Configure the Dropbox Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/de619914e2a24c53a1253d90b79b814f.html "The Dropbox sender adapter enables SAP Integration Suite to receive files from the Dropbox storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -317,7 +317,7 @@ FTP
 </td>
 <td valign="top">
 
-[Configure the FTP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/239042f2328a406a8647b93b937921a3.html "The FTP (File Transfer Protocol) sender adapter connects SAP Integration Suite to a remote system using TCP (Transmission Control Protocol) to receive files from the system.") :arrow_upper_right: 
+[Configure the FTP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/239042f2328a406a8647b93b937921a3.html "The FTP (File Transfer Protocol) sender adapter connects SAP Integration Suite to a remote system using TCP (Transmission Control Protocol) to receive files from the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -343,9 +343,9 @@ HTTPS
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
@@ -376,14 +376,14 @@ IDoc
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the IDoc Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/bf769d68d95b458d87290dd2d37024b3.html "The IDoc sender adapter enables SAP Integration Suite to receive Intermediate Document (IDoc) messages from a sender.") :arrow_upper_right:
+See also: [Configure the IDoc Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/bf769d68d95b458d87290dd2d37024b3.html "The IDoc sender adapter enables SAP Integration Suite to receive Intermediate Document (IDoc) messages from a sender.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -400,7 +400,7 @@ N.A. as no connection with a remote component
 </td>
 <td valign="top">
 
-[Configure the JMS Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/161791b8cb98485ba00d81efa4197a49.html "The JMS (Java Message Service) sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.") :arrow_upper_right: 
+[Configure the JMS Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/161791b8cb98485ba00d81efa4197a49.html "The JMS (Java Message Service) sender adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The sender adapter consumes messages from a JMS queue.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -421,7 +421,7 @@ Kafka
 </td>
 <td valign="top">
 
-[Configure the Kafka Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0d849e5b2ea749ff890d7e78db2f3a0b.html "You use the Kafka Sender adapter to connect to an external Kafka broker via Kafka protocol and to fetch messages.") :arrow_upper_right: 
+[Configure the Kafka Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/0d849e5b2ea749ff890d7e78db2f3a0b.html "You use the Kafka Sender adapter to connect to an external Kafka broker via Kafka protocol and to fetch messages.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -442,7 +442,7 @@ Mail - IMAP4
 </td>
 <td valign="top">
 
-[Mail Sender for IMAP](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5b94e4298d70447f92a5ce728d7e25e3.html "You use the mail sender adapter to download e-mails from mailboxes using the Internet Message Access Protocol (IMAP) protocol, to access the content of the e-mail body, and to access e-mail attachments.") :arrow_upper_right: 
+[Mail Sender for IMAP](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/5b94e4298d70447f92a5ce728d7e25e3.html "You use the mail sender adapter to download e-mails from mailboxes using the Internet Message Access Protocol (IMAP) protocol, to access the content of the e-mail body, and to access e-mail attachments.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -462,7 +462,7 @@ Mail - POP3
 </td>
 <td valign="top">
 
-[Mail Sender for POP3](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/c52a4da2877f4827b2a2f6bfeb90c670.html "You use the mail sender adapter to download e-mails from mailboxes using the Post Office Protocol (POP3) protocol, to access the content of the e-mail body, and to access e-mail attachments.") :arrow_upper_right: 
+[Mail Sender for POP3](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/c52a4da2877f4827b2a2f6bfeb90c670.html "You use the mail sender adapter to download e-mails from mailboxes using the Post Office Protocol (POP3) protocol, to access the content of the e-mail body, and to access e-mail attachments.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -505,7 +505,7 @@ Microsoft SharePoint
 </td>
 <td valign="top">
 
-[Configure the Microsoft SharePoint Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ce41e85abcc140dca0b6f638ff5d0cd4.html "The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant to a remote system using the HTTP/HTTPS protocol to read files from the system.") :arrow_upper_right: 
+[Configure the Microsoft SharePoint Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ce41e85abcc140dca0b6f638ff5d0cd4.html "The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant to a remote system using the HTTP/HTTPS protocol to read files from the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -531,14 +531,14 @@ OData
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the OData Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/de7aee5160134b74a949ac2b84cb7412.html "") :arrow_upper_right:
+See also: [Configure the OData Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/de7aee5160134b74a949ac2b84cb7412.html "") :arrow_upper_right:
 
 </td>
 </tr>
@@ -555,7 +555,7 @@ N.A. as no connection with a remote component
 </td>
 <td valign="top">
 
-[Configure the ProcessDirect Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e340d4c4bce948d4ba6cc5b4fc24ad45.html "You use the ProcessDirect sender adapter to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.") :arrow_upper_right: 
+[Configure the ProcessDirect Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e340d4c4bce948d4ba6cc5b4fc24ad45.html "You use the ProcessDirect sender adapter to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -575,7 +575,7 @@ RabbitMQ
 </td>
 <td valign="top">
 
-[Configure the RabbitMQ Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4e3c55458ee542d28408ce041ab74831.html "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.") :arrow_upper_right: 
+[Configure the RabbitMQ Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4e3c55458ee542d28408ce041ab74831.html "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -616,7 +616,7 @@ SFTP
 </td>
 <td valign="top">
 
-[Configure the SFTP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2de9ee58737247969eb7dc9e68b1b121.html "The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).") :arrow_upper_right: 
+[Configure the SFTP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2de9ee58737247969eb7dc9e68b1b121.html "The SFTP sender adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to read files from the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -635,7 +635,7 @@ Slack
 </td>
 <td valign="top">
 
-[Configure the Slack Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d93850b43504c50b87c6c62ef0ffc5a.html "Enables SAP Integration Suite to receive search-related information from the Slack storage.") :arrow_upper_right: 
+[Configure the Slack Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d93850b43504c50b87c6c62ef0ffc5a.html "Enables SAP Integration Suite to receive search-related information from the Slack storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -678,14 +678,14 @@ SOAP - SAP RM
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the SOAP (SAP RM) Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/69622346a10c4d5086a9b3e4f052337a.html "The SOAP (SAP RM) Sender Adapter exchanges messages with a sender system based on the SOAP communication protocol (1.1. and 1.2) and SAP Reliable Messaging (SAP RM) as the message protocol. SAP RM is a simplified communication protocol for asynchronous Web service communication that does not require the use of Web Service Reliable Messaging standards. A size limit for the inbound message can be configured for the sender adapter.") :arrow_upper_right:
+See also: [Configure the SOAP (SAP RM) Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/69622346a10c4d5086a9b3e4f052337a.html "The SOAP (SAP RM) Sender Adapter exchanges messages with a sender system based on the SOAP communication protocol (1.1. and 1.2) and SAP Reliable Messaging (SAP RM) as the message protocol. SAP RM is a simplified communication protocol for asynchronous Web service communication that does not require the use of Web Service Reliable Messaging standards. A size limit for the inbound message can be configured for the sender adapter.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -711,14 +711,14 @@ SOAP - SOAP 1.x
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
 
-See also: [Configure the SOAP (SOAP 1.x) Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/a178913a4d3245ab9bff2a0edcc331d5.html "The SOAP (SOAP 1.x) sender adapter enables a SAP BTP tenant to exchange messages with a sender system that supports Simple Object Access Protocol (SOAP) 1.1 and 1.2.") :arrow_upper_right:
+See also: [Configure the SOAP (SOAP 1.x) Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/a178913a4d3245ab9bff2a0edcc331d5.html "The SOAP (SOAP 1.x) sender adapter enables a SAP BTP tenant to exchange messages with a sender system that supports Simple Object Access Protocol (SOAP) 1.1 and 1.2.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -738,7 +738,7 @@ Splunk
 </td>
 <td valign="top">
 
-[Configure the Splunk Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/271ad20bef0b4bb5a4e0977b1f6a3a11.html "Enables SAP Integration Suite to receive search-related information from the Splunk storage.") :arrow_upper_right: 
+[Configure the Splunk Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/271ad20bef0b4bb5a4e0977b1f6a3a11.html "Enables SAP Integration Suite to receive search-related information from the Splunk storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -757,7 +757,7 @@ SuccessFactors - REST
 </td>
 <td valign="top">
 
-[Configure the SuccessFactors REST Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/9f0646b481764b4b890a342c3e14a002.html "The SuccessFactors (REST) sender adapter connects an SAP Cloud Integration tenant to a SuccessFactors sender system using the REST message protocol.") :arrow_upper_right: 
+[Configure the SuccessFactors REST Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/9f0646b481764b4b890a342c3e14a002.html "The SuccessFactors (REST) sender adapter connects an SAP Cloud Integration tenant to a SuccessFactors sender system using the REST message protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -777,7 +777,7 @@ SuccessFactors - SOAP
 </td>
 <td valign="top">
 
-[Configure the SuccessFactors (SOAP) Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/874e4b1e7d754b08a0b9e0b606e18a7f.html "The SuccessFactors (SOAP) sender adapter connects an SAP Cloud Integration tenant to SOAP-based Web Services of a SuccessFactors sender system (synchronous or asynchronous communication).") :arrow_upper_right: 
+[Configure the SuccessFactors (SOAP) Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/874e4b1e7d754b08a0b9e0b606e18a7f.html "The SuccessFactors (SOAP) sender adapter connects an SAP Cloud Integration tenant to SOAP-based Web Services of a SuccessFactors sender system (synchronous or asynchronous communication).") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -803,9 +803,9 @@ Xl
 
 Sender adapter: Select the *User Role* option for the *Authorization* parameter. SAP Business Technology Platform cockpit: Create a service instance and an associated service key as described at:
 
--   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
+-   [Client Certificate Authentication for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7f84d16aa42741efb08dc9875743e47c.html "The sender authenticates itself with a client certificate when calling the integration flow deployed on the worker node. At runtime, the system checks if a service key is available that contains the client certificate provided by the sender. If a service key is available, the system then checks if the associated service instance has a role specified that grants permissions to call the integration flow endpoint.") :arrow_upper_right:
 
--   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
+-   [OAuth with Client Credentials Grant for Integration Flow Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/6c052ce62b27449385d3e75aeeb08f05.html "You can configure OAuth authentication, in particular the Client Credentials Grant variant, for inbound calls from sender systems to the integration platform. That way, the sender (client) application is granted access to the associated worker node through OAuth authentication.") :arrow_upper_right:
 
 -   [Set Up Inbound OAuth Client Credentials Grant Authentication for Senders Calling Integration Flows with SAP-Generated Certificate](https://developers.sap.com/tutorials/btp-integration-suite-oauth-integration-flow..html)
 
@@ -909,7 +909,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -930,7 +930,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -990,7 +990,7 @@ AS2
 </td>
 <td valign="top">
 
-[Configure the AS2 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/9db62be7f6024c45b36ded818b75e6c8.html "") :arrow_upper_right: 
+[Configure the AS2 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/9db62be7f6024c45b36ded818b75e6c8.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1012,7 +1012,7 @@ AS4
 </td>
 <td valign="top">
 
-[AS4 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/3a2fde8f52cf4ac38770eb843d3b3943.html "Provides basic insights on how the AS4 messaging protocol enables message exchange between message service handlers (MSHs).") :arrow_upper_right: 
+[AS4 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/3a2fde8f52cf4ac38770eb843d3b3943.html "Provides basic insights on how the AS4 messaging protocol enables message exchange between message service handlers (MSHs).") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1087,7 +1087,7 @@ Dropbox
 </td>
 <td valign="top">
 
-[Configure the Dropbox Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/16ef7b42f5084db28fd2644a0825ec87.html "The Dropbox receiver adapter enables SAP Integration Suite to write files and folders to the Dropbox storage.") :arrow_upper_right: 
+[Configure the Dropbox Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/16ef7b42f5084db28fd2644a0825ec87.html "The Dropbox receiver adapter enables SAP Integration Suite to write files and folders to the Dropbox storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1104,7 +1104,7 @@ Message Signing and Encryption
 </td>
 <td valign="top">
 
-[ELSTER Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e374ef7fb342413caf55ad6fd50384bb.html "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.") :arrow_upper_right: 
+[ELSTER Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e374ef7fb342413caf55ad6fd50384bb.html "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1147,7 +1147,7 @@ FTP
 </td>
 <td valign="top">
 
-[Configure the FTP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/c16d331e8ebb4a0e8c58af96bf519561.html "The FTP (File Transfer Protocol) receiver adapter connects SAP Integration Suite to a remote system using TCP (Transmission Control Protocol) to write files to the system.") :arrow_upper_right: 
+[Configure the FTP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/c16d331e8ebb4a0e8c58af96bf519561.html "The FTP (File Transfer Protocol) receiver adapter connects SAP Integration Suite to a remote system using TCP (Transmission Control Protocol) to write files to the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1171,7 +1171,7 @@ HTTP
 </td>
 <td valign="top">
 
-[HTTP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2da452effb764b3bb28f8e0a2f5bd480.html "Use the HTTP receiver adapter to communicate with target systems using HTTP message protocol.") :arrow_upper_right: 
+[HTTP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2da452effb764b3bb28f8e0a2f5bd480.html "Use the HTTP receiver adapter to communicate with target systems using HTTP message protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1215,7 +1215,7 @@ IDoc
 </td>
 <td valign="top">
 
-[Configure the IDoc Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/018aa88b6d284ca2b8476b6e6053cfeb.html "The IDoc receiver adapter enables SAP Integration Suite to send Intermediate Document (IDoc) messages to a receiver.") :arrow_upper_right: 
+[Configure the IDoc Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/018aa88b6d284ca2b8476b6e6053cfeb.html "The IDoc receiver adapter enables SAP Integration Suite to send Intermediate Document (IDoc) messages to a receiver.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1232,7 +1232,7 @@ Database User, Password and Access Token
 </td>
 <td valign="top">
 
-[JDBC Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/88be64412f1b46d684dfba11f2767c5b.html "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud or on-premise databases.") :arrow_upper_right: 
+[JDBC Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/88be64412f1b46d684dfba11f2767c5b.html "The JDBC (Java Database Connectivity) adapter enables you to connect SAP Integration Suite to cloud or on-premise databases.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1266,7 +1266,7 @@ N.A. as no connection with a remote component
 </td>
 <td valign="top">
 
-[Configure the JMS Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/79edc04c91574a6bb8c15ae3e1a27b03.html "The JMS (Java Message Service) receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue.") :arrow_upper_right: 
+[Configure the JMS Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/79edc04c91574a6bb8c15ae3e1a27b03.html "The JMS (Java Message Service) receiver adapter enables asynchronous decoupling of inbound and outbound processing by using message queues. The receiver adapter stores messages and schedules them for processing in a queue.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1286,7 +1286,7 @@ Kafka
 </td>
 <td valign="top">
 
-[Configure the Kafka Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/fc6ee1fb1c1843c195f3cc8cdbfd4b15.html "You use the Kafka Receiver adapter to connect to an external Kafka broker via Kafka protocol.") :arrow_upper_right: 
+[Configure the Kafka Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/fc6ee1fb1c1843c195f3cc8cdbfd4b15.html "You use the Kafka Receiver adapter to connect to an external Kafka broker via Kafka protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1305,7 +1305,7 @@ LDAP
 </td>
 <td valign="top">
 
-[LDAP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/06a753f90fd64272af1692603cdd3b9e.html "The Lightweight Directory Access Protocol (LDAP) Receiver Adapter enables you to communicate with systems that expose data through LDAP service.") :arrow_upper_right: 
+[LDAP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/06a753f90fd64272af1692603cdd3b9e.html "The Lightweight Directory Access Protocol (LDAP) Receiver Adapter enables you to communicate with systems that expose data through LDAP service.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1327,7 +1327,7 @@ Mail
 </td>
 <td valign="top">
 
-[Configure the Mail Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/f68d5e03fd574f509f89474f6a6e272a.html "You use the mail receiver adapter to send encrypted messages by e-mail.") :arrow_upper_right: 
+[Configure the Mail Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/f68d5e03fd574f509f89474f6a6e272a.html "You use the mail receiver adapter to send encrypted messages by e-mail.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1371,7 +1371,7 @@ Microsoft SharePoint
 </td>
 <td valign="top">
 
-[Configure the Microsoft SharePoint Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b12b33a903ac4e388d1892a2febdc732.html "The Microsoft SharePoint receiver adapter connects an SAP Integration Suite tenant to a remote system using HTTP protocol to write files to the system.") :arrow_upper_right: 
+[Configure the Microsoft SharePoint Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b12b33a903ac4e388d1892a2febdc732.html "The Microsoft SharePoint receiver adapter connects an SAP Integration Suite tenant to a remote system using HTTP protocol to write files to the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1412,7 +1412,7 @@ OData - V2
 </td>
 <td valign="top">
 
-[Configure the OData V2 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/c5c2e38e0c87472e996dfda04920bfc4.html "Configure the OData receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
+[Configure the OData V2 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/c5c2e38e0c87472e996dfda04920bfc4.html "Configure the OData receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1434,7 +1434,7 @@ OData - V4
 </td>
 <td valign="top">
 
-[Configure the OData V4 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cd66a12cc2054e36a5dfa6b93d56c7bb.html "You configure the ODataV4 receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
+[Configure the OData V4 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cd66a12cc2054e36a5dfa6b93d56c7bb.html "You configure the ODataV4 receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1454,7 +1454,7 @@ ODC
 </td>
 <td valign="top">
 
-[ODC Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/3cdbc29ca2b641738513ab8665bab9fd.html "The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.") :arrow_upper_right: 
+[ODC Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/3cdbc29ca2b641738513ab8665bab9fd.html "The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1491,7 +1491,7 @@ N.A. as no connection with a remote component
 </td>
 <td valign="top">
 
-[Configure the ProcessDirect Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5b7327df4f874e4986e4e397e5aab3b8.html "You use the ProcessDirect receiver adapter to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.") :arrow_upper_right: 
+[Configure the ProcessDirect Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/5b7327df4f874e4986e4e397e5aab3b8.html "You use the ProcessDirect receiver adapter to establish fast and direct communication between integration flows by reducing latency and network overhead provided both of them are available within a same tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1511,7 +1511,7 @@ RabbitMQ
 </td>
 <td valign="top">
 
-[Configure the RabbitMQ Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e9dfc37fb5b349d5ad1d6e43e194e69e.html "You use the RabbitMQ receiver adapter to send messages from SAP Integration Suite to exchanges or queues on the RabbitMQ server.") :arrow_upper_right: 
+[Configure the RabbitMQ Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e9dfc37fb5b349d5ad1d6e43e194e69e.html "You use the RabbitMQ receiver adapter to send messages from SAP Integration Suite to exchanges or queues on the RabbitMQ server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1528,7 +1528,7 @@ Via Remote Function Call
 </td>
 <td valign="top">
 
-[RFC Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/5c76048b04594888a47e74d35a91c08a.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right: 
+[RFC Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/5c76048b04594888a47e74d35a91c08a.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1565,7 +1565,7 @@ OAuth2 Client Credentialsis
 </td>
 <td valign="top">
 
-[SAP Master Data Integration Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e91e373bbb5b49ccbc2977152def61a2.html "Use SAP Master Data Integration (MDI) receiver adapter to synchronize your master data from SAP applications like SAP ECC and other third-party applications with SAP MDI service.") :arrow_upper_right: 
+[SAP Master Data Integration Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e91e373bbb5b49ccbc2977152def61a2.html "Use SAP Master Data Integration (MDI) receiver adapter to synchronize your master data from SAP applications like SAP ECC and other third-party applications with SAP MDI service.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1606,7 +1606,7 @@ SFTP
 </td>
 <td valign="top">
 
-[Configure the SFTP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4ef52cf6c89b44219ab7c23ef8a1df31.html "The SFTP receiver adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to write files to the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).") :arrow_upper_right: 
+[Configure the SFTP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4ef52cf6c89b44219ab7c23ef8a1df31.html "The SFTP receiver adapter connects an SAP Integration Suite tenant to a remote system using the SSH File Transfer protocol to write files to the system. SSH File Transfer protocol is also referred to as Secure File Transfer protocol (or SFTP).") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1627,7 +1627,7 @@ Slack
 </td>
 <td valign="top">
 
-[Configure the Slack Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7c2ea64f931640afb01c6a9d82abdfa1.html "Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.") :arrow_upper_right: 
+[Configure the Slack Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7c2ea64f931640afb01c6a9d82abdfa1.html "Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1686,7 +1686,7 @@ SOAP - SAP RM
 </td>
 <td valign="top">
 
-[Configure the SOAP (SAP RM) Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/8366495128624ec895f239888ef1e3ec.html "Exchanges messages with a receiver system based on the SOAP communication protocol and SAP Reliable Messaging (SAP RM) as the message protocol. SAP RM is a simplified communication protocol for asynchronous Web service communication that does not require the use of Web Service Reliable Messaging standards.") :arrow_upper_right: 
+[Configure the SOAP (SAP RM) Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8366495128624ec895f239888ef1e3ec.html "Exchanges messages with a receiver system based on the SOAP communication protocol and SAP Reliable Messaging (SAP RM) as the message protocol. SAP RM is a simplified communication protocol for asynchronous Web service communication that does not require the use of Web Service Reliable Messaging standards.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1709,7 +1709,7 @@ SOAP - SOAP 1.x
 </td>
 <td valign="top">
 
-[Configure the SOAP (SOAP 1.x) Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/57f7b34b9b86438d9cb760c5c541f88c.html "The SOAP (SOAP 1.x) receiver adapter enables a SAP BTP tenant to exchange messages with a receiver system that supports Simple Object Access Protocol (SOAP) 1.1.") :arrow_upper_right: 
+[Configure the SOAP (SOAP 1.x) Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/57f7b34b9b86438d9cb760c5c541f88c.html "The SOAP (SOAP 1.x) receiver adapter enables a SAP BTP tenant to exchange messages with a receiver system that supports Simple Object Access Protocol (SOAP) 1.1.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1730,7 +1730,7 @@ Splunk
 </td>
 <td valign="top">
 
-[Configure the Splunk Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e8e6ba6a38a14041bdd630d3386a5d3e.html "Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.") :arrow_upper_right: 
+[Configure the Splunk Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e8e6ba6a38a14041bdd630d3386a5d3e.html "Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1750,7 +1750,7 @@ SuccessFactors - OData V2
 </td>
 <td valign="top">
 
-[Configure the SuccessFactors OData V2 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d16dd12c5c5649e99c8939879a77f9c0.html "Configure the SuccessFactors OData V2 receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
+[Configure the SuccessFactors OData V2 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d16dd12c5c5649e99c8939879a77f9c0.html "Configure the SuccessFactors OData V2 receiver adapter by understanding the adapter parameters.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1770,7 +1770,7 @@ SuccessFactors - OData V4
 </td>
 <td valign="top">
 
-[SuccessFactors OData V4 Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cd091fc8051d42ee95eda2858ca2a2f0.html "The SuccessFactors receiver adapter enables you to communicate with the SuccessFactors system. You use the OData V4 message protocol to connect to the OData V4-based Web services of the SuccessFactors system.") :arrow_upper_right: 
+[SuccessFactors OData V4 Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cd091fc8051d42ee95eda2858ca2a2f0.html "The SuccessFactors receiver adapter enables you to communicate with the SuccessFactors system. You use the OData V4 message protocol to connect to the OData V4-based Web services of the SuccessFactors system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1789,7 +1789,7 @@ SuccessFactors - REST
 </td>
 <td valign="top">
 
-[Configure the SuccessFactors REST Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/9cff562cd220458db0aca97ac24887a0.html "The SuccessFactors (REST) receiver adapter connects an SAP Cloud Integration tenant to a SuccessFactors receiver system using the REST message protocol.") :arrow_upper_right: 
+[Configure the SuccessFactors REST Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/9cff562cd220458db0aca97ac24887a0.html "The SuccessFactors (REST) receiver adapter connects an SAP Cloud Integration tenant to a SuccessFactors receiver system using the REST message protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1809,7 +1809,7 @@ SuccessFactors - SOAP
 </td>
 <td valign="top">
 
-[Configure the SuccessFactors SOAP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/360ef42b1d4e4b86a6867b6f0adce4ce.html "The SuccessFactors SOAP receiver adapter connects a tenantSAP Cloud Integration to SOAP-based Web services of a SuccessFactors receiver system (synchronous or asynchronous communication).") :arrow_upper_right: 
+[Configure the SuccessFactors SOAP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/360ef42b1d4e4b86a6867b6f0adce4ce.html "The SuccessFactors SOAP receiver adapter connects a tenantSAP Cloud Integration to SOAP-based Web services of a SuccessFactors receiver system (synchronous or asynchronous communication).") :arrow_upper_right: 
 
 </td>
 </tr>

@@ -46,6 +46,16 @@ To get started with migration, you must:
 
 
 
+<a name="loio1a3bfbcb4b7d48fbbd394d3e4a09fc62__section_mrg_kmx_r2c"/>
+
+## Migration Approach
+
+Based on the requirement and use case, you can choose between the [pipeline approach](pipeline-approach-efc40f8.md) or standard approach for migrating your integration objects from SAP Process Orchestration and SAP Process Integration to SAP Integration Suite.
+
+See: [Migration Approaches](migration-approaches-9ddb257.md)
+
+
+
 <a name="loio1a3bfbcb4b7d48fbbd394d3e4a09fc62__section_qnb_q5j_dvb"/>
 
 ## Usage of Patterns

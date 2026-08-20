@@ -37,6 +37,8 @@ As you know, MCP server consumption typically involves bundling MCP servers into
 
         3.  In the *Create Subscription for Agent* dialog, enter a title for the agent and, optionally, provide a short description and a detailed description.
 
+            Provide the URL of an subscription that is chosen to receive an authorization code on behalf of the client subscription in the *Callback URL* field.
+
             While creating the subscription, if you select the checkbox *Take me to this new application now*, you'll be directly navigated to the newly created subscription for the agent.
 
         4.  Choose *Create*.

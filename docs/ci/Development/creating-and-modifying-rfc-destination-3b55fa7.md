@@ -23,16 +23,29 @@ This section outlines on how to create or modify a RFC Destination for your runt
 
 
 
-3.  Choose *Create Destination*.
+3.  Choose *Create* \> *From Scratch* \> *Create*.
 
-4.  In the *Destination Configuration* section, do use the *Blank Template* tab as *Service Instance* only applies for HTTP destinations. Choose *Save*.
+    ![](images/1_359c1ce.png)
 
-5.  Enter the details for the parameters *<Name\>*, *<URL\>*, *<User\>*, *<Password\>*, and select *<Type\>* as *RFC*.
+4.  Enter the details for the parameters *<Name\>*, *<User\>*, *<Password\>*, and select *<Type\>* as *RFC*.
+
+5.  From the *<Proxy Type\>* dropdown box, select `Internet`, `OnPremise`, or `Local`, depending on the connection type you want to provide for your application.
+
+    ![](images/2_7628187.png)
 
     > ### Note:  
-    > -   For Cloud Integration runtime profile, setting up an RFC connectivity for ABAP environment using principal propagation. Select *OnPremise* from the value help and then for *<Authentication\>*, select *PrincipalPropagation*.
+    > -   When using *<Proxy Type\>* `Internet` , you can connect your application to any target service that is exposed to the Internet. *<Proxy Type\>* `OnPremise` requires the to access resources within your on-premise network.
 
-6.  Add the following properties and assign appropriate values:
+6.  As *Authorization Type*, choose `CONFIGURED_USER`, `PrincipalPropagation` \(for *OnPremise* connections only\), or `TechnicalUserPropagation` \(for *OnPremise* connections only\), and enter the required parameters for the selected authorization type.
+
+    > ### Note:  
+    > -   For Cloud Integration runtime profile, setting up an RFC connectivity for ABAP environment using principal propagation, select `OnPremise` from *<Proxy Type\>* and then for *<Authentication Type\>*, select `PrincipalPropagation`.
+    > 
+    > -   `PrincipalPropagation` is only supported on Cloud Foundry but is not supported on Edge Integration Cell runtime.
+    > 
+    > -   `TechnicalUserPropagation` is not supported on Cloud Foundry and Edge Integration Cell runtime.
+
+7.  Add the following properties and assign appropriate values:
 
     **Java Connectivity Parameters**
 
@@ -143,6 +156,13 @@ This section outlines on how to create or modify a RFC Destination for your runt
     <td valign="top">
     
     While configuring for principal propagation the value for the property is "jco.destination.auth\_type = PrincipalPropagation".
+
+    > ### Note:  
+    > -   `PrincipalPropagation` is only supported on Cloud Foundry but is not supported on Edge Integration Cell runtime.
+    > 
+    > -   `TechnicalUserPropagation` is not supported on Cloud Foundry and Edge Integration Cell runtime.
+
+
     
     </td>
     </tr>
@@ -181,6 +201,11 @@ This section outlines on how to create or modify a RFC Destination for your runt
     <td valign="top" colspan="2">
     
     WebSocket Connection
+
+    > ### Note:  
+    > WebSocket RFC via Cloud Connector is not supported on Cloud Foundry and Edge Integration Cell; WebSocket RFC over Internet is supported on Cloud Foundry only and is not supported on Edge Integration Cell.
+
+
     
     </td>
     </tr>
@@ -254,19 +279,21 @@ This section outlines on how to create or modify a RFC Destination for your runt
     </td>
     <td valign="top">
     
-    Set the value to 0 that helps you to minimizes the number of roundtrip calls made to the server
+    The default value is 1, which helps you to minimizes the number of roundtrip calls made to the server
     
     </td>
     </tr>
     </table>
     
-7.  Once you have verified all the details, choose *Save* and then perform a connection check.
+8.  Once you have verified all the details, choose *Save* and then perform a connection check.
 
 
 
-8.  To modify an existing destination, choose the *Destination* and choose *Edit*. Make the necessary edits and choose *Save*.
+9.  To modify an existing destination, choose the *Destination* and choose *Edit*. Make the necessary edits and choose *Save*.
 
 
+
+10. When you are done, choose *Create*.
 
 
 **Related Information**  

@@ -95,7 +95,7 @@ Contains a list of all available policies. Each policy is available as a separat
 </td>
 <td valign="top">
 
-Contains the header information of all the available policies.
+Contains the header information of all the available policies \(including the policies associated with the default fault rules or a post-client flow\).
 
 </td>
 </tr>

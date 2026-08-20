@@ -7,7 +7,8 @@
 ## Prerequisites
 
 -   Ensure that repositories are configured by your tenant admin. See [Git Access](IntegrationSettings/git-access-ae173b0.md) 
--   Your Personal Access Token must have sufficient permissions to access the added GitHub repositories.
+-   Your Personal Access Token \(PAT\) must have sufficient permissions to access the added GitHub repositories. See [Generate a Personal Access Token \(PAT\) with Required Permissions](generate-a-personal-access-token-pat-with-required-permissions-7436351.md)
+
 
 
 

@@ -12,7 +12,7 @@ PGP Keyrings are required to support message level security based on PGP Standar
 
 PGP Keyrings come with two types of artifacts. For Edge Integration Cell, you can have multiple keyrings to separate the artifact assignment for the different runtimes.
 
-For more general information on keyring functionalities, see [PGP Keys](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/9e7e8f999b2d4ea88b1183eaa19e4ea9.html "") :arrow_upper_right:.
+For more general information on keyring functionalities, see [PGP Keys](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/9e7e8f999b2d4ea88b1183eaa19e4ea9.html "") :arrow_upper_right:.
 
 > ### Note:  
 > For details on the list view and how to create, add, or upload PGP key material, see [Managing PGP Keys](https://help.sap.com/docs/integration-suite/integrations-and-apis-9519789d5664487f8b9cd89eba514477/managing-pgp-keys?version=CLOUD).

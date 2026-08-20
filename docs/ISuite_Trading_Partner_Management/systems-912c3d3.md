@@ -1108,7 +1108,7 @@ Create and maintain system-related configurations for your partner profile.
     -   Select *Internet* to connect directly to the SFTP server.
     -   Select *On-Premise* to connect to an on-premise SFTP server.
 
-    See [Using SAP Cloud Connector with Cloud Integration Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/65a60e750eca49328fef93c0723ad4b8.html "") :arrow_upper_right:.
+    See [Using SAP Cloud Connector with Cloud Integration Adapters](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/65a60e750eca49328fef93c0723ad4b8.html "") :arrow_upper_right:.
 
     For more information on how to use the **On-Premise** option to connect to an on-premise SFTP server, see the SAP Community blog [Cloud Integration – How to Connect to an On-Premise SFTP Server via Cloud Connector](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fblogs.sap.com%2F2018%2F11%2F16%2Fcloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector%2F).
     
@@ -1332,7 +1332,7 @@ Create and maintain system-related configurations for your partner profile.
     -   Select *Internet* to connect directly to the SFTP server.
     -   Select *On-Premise* to connect to on-premise system.
 
-    See [Using SAP Cloud Connector with Cloud Integration Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/65a60e750eca49328fef93c0723ad4b8.html "") :arrow_upper_right:.
+    See [Using SAP Cloud Connector with Cloud Integration Adapters](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/65a60e750eca49328fef93c0723ad4b8.html "") :arrow_upper_right:.
 
     For more information on how to use the **On-Premise** option to connect to an on-premise SFTP server, see the SAP Community blog [Cloud Integration – How to Connect to an On-Premise SFTP Server via Cloud Connector](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fblogs.sap.com%2F2018%2F11%2F16%2Fcloud-integration-how-to-connect-to-an-on-premise-sftp-server-via-cloud-connector%2F).
     

@@ -12,7 +12,7 @@ Learn how to upgrade your script to the latest version to utilize advanced featu
 
 Upgrading the script including Groovy and Java to the latest version will yield following benefits:
 
--   Future-ready scripts: Receive automatic fixes for incompatible libraries and classes. This helps prepare your scripts for a seamless migration during runtime and software upgrades. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [Use recommended libraries and classes](scripts-fa29f02.md#loiofa29f02c19e744528b50fd721959f337__proxy-usecase)
+-   Future-ready scripts: Receive automatic fixes for incompatible libraries and classes. This helps prepare your scripts for a seamless migration during runtime and software upgrades. See [Fix Script Incompatibilities](fix-script-incompatibilities-7397c42.md) and [fa29f02c19e744528b50fd721959f337.md\#loiofa29f02c19e744528b50fd721959f337\_\_proxy-usecase](scripts-fa29f02.md#loiofa29f02c19e744528b50fd721959f337__proxy-usecase)
 
 -   Advance Features: With the runtime 4.0.29, stay compliant with the product standards and use modern language elements such as switch expressions and other capabilities. See release notes
 

@@ -593,5 +593,5 @@ This means that there's no handling of invalid XML characters. The value "substi
 **Related Information**  
 
 
-[RFC Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/98a3c1900d0744e89d0e7dd29de6401b.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right:
+[RFC Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/98a3c1900d0744e89d0e7dd29de6401b.html "Connects an SAP Cloud Integration tenant to a remote receiver system using Remote Function Call (RFC).") :arrow_upper_right:
 

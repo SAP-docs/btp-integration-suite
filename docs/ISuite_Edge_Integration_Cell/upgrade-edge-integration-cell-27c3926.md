@@ -35,7 +35,7 @@ To get the latest upgrade and troubleshooting information, see SAP Note [3250441
 
 To have a quick look at the latest Edge Integration Cell version, choose the *Show Notifications* icon on the top right of the screen. Look out for the *Edge Integration Cell Upgrade* section.
 
-To know the current version of all your Edge Integration Cell runtimes, navigate to *Settings* \> *Integrations*. In the *Runtime Profiles* tab, you see the available runtime profiles and their current versions. For more information, see: [Runtime Profiles](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/8007daa7b193409580ba151b1df77fa4.html "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.") :arrow_upper_right:.
+To know the current version of all your Edge Integration Cell runtimes, navigate to *Settings* \> *Integrations*. In the *Runtime Profiles* tab, you see the available runtime profiles and their current versions. For more information, see: [Runtime Profiles](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8007daa7b193409580ba151b1df77fa4.html "Integration Suite allows you to design integration content for different target integration platforms. Accordingly, different runtime profiles are available to adapt the user interface of the integration content designer to the specifications and capabilities of the target integration platform.") :arrow_upper_right:.
 
 **Related Information**  
 

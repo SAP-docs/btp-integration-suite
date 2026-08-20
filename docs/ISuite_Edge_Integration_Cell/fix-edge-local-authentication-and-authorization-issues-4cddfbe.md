@@ -111,5 +111,5 @@ To resolve the authentication error, perform the following steps:
 **Related Information**  
 
 
-[Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/19af5e205fe14af6a4f8a9fd80d4dc92.html "With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.") :arrow_upper_right:
+[Creating Service Instance and Service Key for Inbound Authentication](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/19af5e205fe14af6a4f8a9fd80d4dc92.html "With a service instance, you define how to access a certain SAP BTP service. In the context of SAP Integration Suite , a service instance is the definition of an OAuth client.") :arrow_upper_right:
 

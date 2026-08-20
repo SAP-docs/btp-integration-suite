@@ -10,7 +10,7 @@ Activate Integration Cell runtime in SAP Integration Suite.
 
 ## Prerequisites
 
--   You have subscribed to SAP Integration Suite in your SAP Business Technology Platform subaccount and have assigned the **Integration\_Provisioner** role collection to yourself. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/8a3c8b7a6b1c4f249bb81d11644ef806.html "Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration_Provisioner role to gain access.") :arrow_upper_right:.
+-   You have subscribed to SAP Integration Suite in your SAP Business Technology Platform subaccount and have assigned the **Integration\_Provisioner** role collection to yourself. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8a3c8b7a6b1c4f249bb81d11644ef806.html "Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration_Provisioner role to gain access.") :arrow_upper_right:.
 
 -   You have activated the API Management capability. For more information, see [Activate and Configure the API Management Capability and Access Developer Hub](activate-and-configure-the-api-management-capability-and-access-developer-hub-2111650.md).
 
@@ -26,7 +26,7 @@ Integration Cell is a cloud-based runtime included in the SAP Integration Suite.
 > ### Note:  
 > The Integration Cell runtime can be activated within designated SAP BTP regions and Cloud Service Providers.
 > 
-> For more information, including the full list of supported regions and the future availability schedule, see [3754563](https://me.sap.com/notes/3754563).
+> For more information, including the full list of supported regions and the future availability schedule, see SAP Note [3769634](https://me.sap.com/notes/3769634).
 
 
 

@@ -20,7 +20,7 @@ This section explains the end-to-end process of how API requests flow through th
 
 -   **Design Phase \(Design Time\)**
 
-    During the design phase, the API Developer uses the API Management capability to create and manage API artifacts. See, [Design APIs and MCP Servers](design-apis-and-mcp-servers-94957bc.md).
+    During the design phase, the API Developer uses the API Management capability to create and manage API artifacts. See, [Design API-Centric Integration Artifacts](design-api-centric-integration-artifacts-94957bc.md).
 
     During this phase, you can:
 
@@ -48,11 +48,5 @@ This section explains the end-to-end process of how API requests flow through th
 **Related Information**  
 
 
-[Model Context Protocol \(MCP\)](model-context-protocol-mcp-9eb9239.md "Model Context Protocol (MCP) is an open-source protocol designed to bridge the gap between AI applications or agents and enterprise tools and data. Just as REST APIs connect web applications to data and services, MCP enables AI-native integrations by exposing tools, APIs, and data sources to AI Agents.")
-
-[Deploy APIs and MCP Servers](deploy-apis-and-mcp-servers-b70e7ec.md "After creating an API or an MCP server artifact, it is necessary to deploy it on the chosen runtime in order to make it executable and ready for use.")
-
-[Copy an API or an MCP Server Artifact](copy-an-api-or-an-mcp-server-artifact-820c9e8.md "Create a copy of an existing API artifact or an MCP server with all its configurations and policies intact. This can be useful when you want to create a similar artifact but with some modifications or variations.")
-
-[Delete APIs and MCP Servers](delete-apis-and-mcp-servers-81694d6.md "Use this procedure to delete an API or an MCP Server artifact from an integration package in the Design workspace.")
+[MCP Server](mcp-server-9eb9239.md "An MCP Server is an artifact you create in SAP Integration Suite to expose your enterprise APIs and data to AI agents in a structured, governed way. It is built on the Model Context Protocol (MCP) which is an open-source protocol designed to bridge the gap between AI applications or agents and enterprise tools and data. Just as REST APIs connect web applications to data and services, MCP enables AI-native integrations by exposing tools, APIs, and data sources to AI Agents.")
 

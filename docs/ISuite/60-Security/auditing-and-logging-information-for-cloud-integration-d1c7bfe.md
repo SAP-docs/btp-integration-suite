@@ -100,7 +100,7 @@ Transport integration package
 </td>
 <td valign="top">
 
-[Content Transport](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right: 
+[Content Transport](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e3c79d65aa604b80992e20609881ad7a.html "Reuse content across multiple tenants. Export integration content from one (source) tenant and import it on another (target) tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -174,15 +174,15 @@ When creating an integration flow, the `objectType` parameter is `IntegrationFlo
 
 Covers the following kinds of integration artifacts: integration flow, value mapping, OData API, SOAP API, REST API, integration adapter.
 
-[Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+[Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 [Developing an OData API Project](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d961654cd36b46ad83b668e4434c9f04.html "") :arrow_upper_right:
 
-[Working with Script and Script Collection](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
+[Working with Script and Script Collection](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
 
-[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
+[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
 
-[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
+[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
 
 [Developing Custom Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7392cc44de7c4450a65b8cd8f1042420.html "Develop adapters tailored for your specific requirements.") :arrow_upper_right:
 
@@ -231,15 +231,15 @@ When updating a value mapping, the `objectType` parameter is `ValueMapping`, and
 
 Covers the following kinds of integration artifacts: integration flow, value mapping, OData API, SOAP API, REST API, integration adapter.
 
-[Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+[Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 [Developing an OData API Project](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d961654cd36b46ad83b668e4434c9f04.html "") :arrow_upper_right:
 
-[Working with Script and Script Collection](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
+[Working with Script and Script Collection](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
 
-[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
+[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
 
-[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
+[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
 
 [Developing Custom Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7392cc44de7c4450a65b8cd8f1042420.html "Develop adapters tailored for your specific requirements.") :arrow_upper_right:
 
@@ -270,15 +270,15 @@ Update integration artifact as version
 
 Covers the following kinds of integration artifacts: integration flow, value mapping, OData API, SOAP API, REST API, integration adapter.
 
-[Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+[Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 [Developing an OData API Project](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d961654cd36b46ad83b668e4434c9f04.html "") :arrow_upper_right:
 
-[Working with Script and Script Collection](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
+[Working with Script and Script Collection](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
 
-[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
+[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
 
-[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
+[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
 
 [Developing Custom Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7392cc44de7c4450a65b8cd8f1042420.html "Develop adapters tailored for your specific requirements.") :arrow_upper_right:
 
@@ -307,7 +307,7 @@ Update integration flow configuration
 </td>
 <td valign="top">
 
-[Configure Externalized Parameters of an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/462a4782db7b485b94ffce5b6fe22c31.html "") :arrow_upper_right: 
+[Configure Externalized Parameters of an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/462a4782db7b485b94ffce5b6fe22c31.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -336,15 +336,15 @@ Deploy integration artifact
 
 Covers the following kinds of integration artifacts: integration flow, value mapping, OData API, SOAP API, REST API, integration adapter.
 
-[Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+[Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 [Developing an OData API Project](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d961654cd36b46ad83b668e4434c9f04.html "") :arrow_upper_right:
 
-[Working with Script and Script Collection](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
+[Working with Script and Script Collection](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
 
-[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
+[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
 
-[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
+[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
 
 [Developing Custom Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7392cc44de7c4450a65b8cd8f1042420.html "Develop adapters tailored for your specific requirements.") :arrow_upper_right:
 
@@ -397,15 +397,15 @@ Delete integration artifact
 
 Covers the following kinds of integration artifacts: integration flow, value mapping, OData API, SOAP API, REST API, integration adapter.
 
-[Creating an Integration Flow](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
+[Creating an Integration Flow](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/da53d93cd8fb47ff9ea55b6b278cd85e.html "Add an integration flow to an integration package.") :arrow_upper_right:
 
 [Developing an OData API Project](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d961654cd36b46ad83b668e4434c9f04.html "") :arrow_upper_right:
 
-[Working with Script and Script Collection](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
+[Working with Script and Script Collection](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e60f7061fe4b45d69d028b24d5a76901.html "Cloud Integration lets you create and upload scripts, assemble them into script collection artifacts, and reuse them across different integration artifacts.") :arrow_upper_right:
 
-[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
+[Creating Message Mapping as an Artifact](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d52a7ba8c71438d90f3ea0d8e13a052.html "Helps you to reuse message mapping resources in different integration scenarios by directly accessing the mapping artifacts.") :arrow_upper_right:
 
-[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
+[Develop API-Based Integration Artifacts](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/997501da152d419d96c92f7bfbd7b6f3.html "Develop REST, SOAP, and OData API-based integration scenarios, deploy, and manage your artifacts in one place.") :arrow_upper_right:
 
 [Developing Custom Adapters](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7392cc44de7c4450a65b8cd8f1042420.html "Develop adapters tailored for your specific requirements.") :arrow_upper_right:
 
@@ -607,7 +607,7 @@ When restoring a certificate in the *Backup* keystore:
 
 More information on the keystore:
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 
 </td>
 </tr>
@@ -650,7 +650,7 @@ Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509, or S
 
 More information on the keystore:
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 
 </td>
 </tr>
@@ -688,7 +688,7 @@ Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509, or S
 
 More information on the keystore:
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 
 </td>
 </tr>
@@ -844,7 +844,7 @@ Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509 key p
 
 More information on the keystore:
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 
 </td>
 </tr>
@@ -875,7 +875,7 @@ Covers the following kinds of keystore entry: X.509 or SSH key pair, X.509 key p
 
 More information on the keystore:
 
-[Managing Keystore Entries](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
+[Managing Keystore Entries](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2dc8942e02de4be59bd2afaa3bfdc591.html "The Keystore Monitor allows a tenant administrator to manage the tenant keystore and its entries (X.509 certificates and key pairs).") :arrow_upper_right:
 
 </td>
 </tr>
@@ -904,7 +904,7 @@ Create security material
 
 Covers the following kinds of artifact: User Credentials, OAuth2 Client Credentials, OAuth2 SAML Bearer Assertion, OAuth2 Authorization Code, Secure Parameter.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -933,7 +933,7 @@ Update security material
 
 Covers the following kinds of artifact: User Credentials, OAuth2 Client Credentials, OAuth2 SAML Bearer Assertion, OAuth2 Authorization Code, Secure Parameter.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -962,7 +962,7 @@ Delete security material
 
 Covers the following kinds of artifact: User Credentials, OAuth2 Client Credentials, OAuth2 SAML Bearer Assertion, OAuth2 Authorization Code, Secure Parameter.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -991,7 +991,7 @@ Upload security material
 
 Covers the following kinds of artifact: known hosts, PGP public keyring, PGP secret keyring.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1031,7 +1031,7 @@ During the undeployment of a PGP secret keyring, the following event is written:
 
 Covers the following kinds of artifact: known hosts, PGP public keyring, PGP secret keyring.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1071,7 +1071,7 @@ For the download of a known hosts file, the following event is written:
 
 Covers the following kinds of artifact: known hosts, PGP public keyring, PGP secret keyring.
 
-[Managing Security Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
+[Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
 </td>
 </tr>
@@ -1350,7 +1350,7 @@ For the deployment of JDBC material, the following event is written:
 </td>
 <td valign="top">
 
-[Managing JDBC Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/32ee7cdff9e3492fa755338cadff14eb.html "Learn how JDBC Materials supports SAP Integration Suite for interacting with your database server.") :arrow_upper_right: 
+[Managing JDBC Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/32ee7cdff9e3492fa755338cadff14eb.html "Learn how JDBC Materials supports SAP Integration Suite for interacting with your database server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1377,7 +1377,7 @@ Undeploy JDBC material
 </td>
 <td valign="top">
 
-[Managing JDBC Material](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/32ee7cdff9e3492fa755338cadff14eb.html "Learn how JDBC Materials supports SAP Integration Suite for interacting with your database server.") :arrow_upper_right: 
+[Managing JDBC Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/32ee7cdff9e3492fa755338cadff14eb.html "Learn how JDBC Materials supports SAP Integration Suite for interacting with your database server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1399,7 +1399,7 @@ Create user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
-[Managing User Roles](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
+[Managing User Roles](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1421,7 +1421,7 @@ Update user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
-[Managing User Roles](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
+[Managing User Roles](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1443,7 +1443,7 @@ Delete user role \(only Cloud Foundry\)
 </td>
 <td valign="top">
 
-[Managing User Roles](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
+[Managing User Roles](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4e86f0dcb41f49e99ea43e82a0e99c73.html "The user role monitor allows a tenant administrator to manage user roles which then can be used during inbound authorization of an integration flow execution.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1481,7 +1481,7 @@ Downloading data store entry `HT-1037` of global data store `Products` writes th
 </td>
 <td valign="top">
 
-[Managing Data Stores](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
+[Managing Data Stores](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1519,7 +1519,7 @@ Deletion of data store entry `126` of global data store `CustomerReviews` writes
 </td>
 <td valign="top">
 
-[Managing Data Stores](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
+[Managing Data Stores](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1556,7 +1556,7 @@ Deletion of global data store `CustomerReviews` writes the following audit log e
 </td>
 <td valign="top">
 
-[Managing Data Stores](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
+[Managing Data Stores](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ac39f1d1bd2f427c97b3694e54370bda.html "") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1604,7 +1604,7 @@ Download of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
-[Managing Variables](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
+[Managing Variables](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1653,7 +1653,7 @@ Deletion of local variable `ProductId` \(related to integration flow `Write_Prod
 </td>
 <td valign="top">
 
-[Managing Variables](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
+[Managing Variables](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ca93653ec211457190ff8466e42ff9cd.html "The Variables view allows you to monitor variables used in integration flows.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1680,7 +1680,7 @@ Move messages to another queue
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1717,7 +1717,7 @@ Deletion of message queue `MyQueue` writes the following audit log event:
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1754,7 +1754,7 @@ Deletion of a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1791,7 +1791,7 @@ Downloading a message from message queue `MyQueue` writes the following audit lo
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1818,7 +1818,7 @@ Retry message from message queue
 </td>
 <td valign="top">
 
-[Managing Message Queues](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
+[Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1857,7 +1857,7 @@ Reading the message payload writes the following audit log event:
 </td>
 <td valign="top">
 
-[Monitor Message Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
+[Monitor Message Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1884,7 +1884,7 @@ Read message processing log attachment
 </td>
 <td valign="top">
 
-[Monitor Message Processing](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
+[Monitor Message Processing](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/314df3f8f4334dd8829c62e865cc6d02.html "The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.") :arrow_upper_right: 
 
 </td>
 </tr>

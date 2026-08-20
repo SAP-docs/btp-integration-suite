@@ -9,5 +9,5 @@ To begin using the Integration Cell runtime:
 1.  Ensure your SAP Integration Suite tenant is configured correctly and API Management capability is enabled. See, [Activate and Configure the API Management Capability and Access Developer Hub](activate-and-configure-the-api-management-capability-and-access-developer-hub-2111650.md).
 
 2.  Activate the Integration Cell from the tenant settings. For detailed instruction, see [Activate Integration Cell](activate-integration-cell-1a627da.md).
-3.  Start designing APIs using the unified modeling experience and deploy them directly to the new runtime. See, [Design APIs and MCP Servers](design-apis-and-mcp-servers-94957bc.md).
+3.  Start designing APIs using the unified modeling experience and deploy them directly to the new runtime. See, [Design API-Centric Integration Artifacts](design-api-centric-integration-artifacts-94957bc.md).
 

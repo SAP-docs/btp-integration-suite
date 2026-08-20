@@ -101,7 +101,7 @@ Describes …
 
 [Security Aspects of Data, Data Flow for Cloud Integration](security-aspects-of-data-data-flow-for-cloud-integration-7895724.md)
 
-[Connectivity Options](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
+[Connectivity Options](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/93d82e8ff860450da10ad2c16bf5e971.html "SAP Integration Suite provides you with a comprehensive set of options to connect to SAP and non-SAP systems.") :arrow_upper_right:
 
 </td>
 <td valign="top">
@@ -113,9 +113,9 @@ The supported transport protocols and connectivity options
 <tr>
 <td valign="top">
 
-[Using Data Storage Features When Designing Integration Flows](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/a836b4e38d1a45f6be7071b9b697c2a3.html "SAP Integration Suite comes with various options for storing data during the execution of an integration scenario. There are also various options for consuming such data during message processing or after message processing has finished.") :arrow_upper_right:
+[Using Data Storage Features When Designing Integration Flows](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/a836b4e38d1a45f6be7071b9b697c2a3.html "SAP Integration Suite comes with various options for storing data during the execution of an integration scenario. There are also various options for consuming such data during message processing or after message processing has finished.") :arrow_upper_right:
 
-[Data Storages](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/31efe35bdf65422a8df18a08c4e4160f.html "Cloud Integration comes with the following data storage features.") :arrow_upper_right:
+[Data Storages](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/31efe35bdf65422a8df18a08c4e4160f.html "Cloud Integration comes with the following data storage features.") :arrow_upper_right:
 
 </td>
 <td valign="top">

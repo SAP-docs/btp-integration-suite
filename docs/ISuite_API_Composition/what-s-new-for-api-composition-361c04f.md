@@ -158,9 +158,11 @@ API Composition
 </td>
 <td valign="top">
 
-To include the destinations for API Composition to create and activate business data graphs, you must add the `IntegrationCell.Include` destination property.
+API Composition has a new custom destination that enables the creation and activation of business data graphs.
 
-For more information, see [Additional SAP BTP Destination Properties](https://help.sap.com/docs/api-composition/dev-api-composition/connect-to-your-business-systems?version=CLOUD#additional-sap-btp-destination-properties).
+Action: You must add the `IntegrationCell.Include` destination property to create and activate business data graphs.
+
+For more information, see [Additional SAP BTP Destination Properties](https://help.sap.com/docs/api-composition/isuite-api-composition/connect-to-your-business-systems?version=CLOUD&ai=true#additional-sap-btp-destination-properties).
 
 > ### Note:  
 > The `graph.ignore` destination property will no longer be available after **24 July 2026**. Please use the `IntegrationCell.Include` destination property.

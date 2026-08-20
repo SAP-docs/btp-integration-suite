@@ -150,7 +150,11 @@ Select between the two types of access to the JMS queue:
 </td>
 <td valign="top">
 
-Enter the number of concurrent processes for each worker node. The recommended value depends on the number of worker nodes, the number of queues on the tenant, and the incoming load. Make sure to enter a value that is as small as possible \(1-5\) because JMS resources are limited, see: [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) and [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/).
+Enter the number of concurrent processes used to consume messages from the queue, applied to each worker node. There is no single correct value. The appropriate setting depends on your scenario, mainly the number of worker nodes, the number of queues on the tenant, and the incoming load.
+
+We recommend keeping this value as small as possible, typically in the range of 1 to 5. This is a recommendation rather than an enforced maximum, but a low value is important because JMS resources, such as consumers and transactions, are limited and shared across all your JMS, AS2, and XI scenarios on the tenant. The value you enter here is applied on each worker node, so it contributes to that shared pool once per node. Setting a higher value is possible, but even when the system is otherwise idle it consumes more of these shared resources and reduces what remains available for your other scenarios. When large messages are processed, a high number of concurrent processes can also lead to out-of-memory situations.
+
+For details on the individual resource limits, how they are consumed per worker node, and how they affect one another, see [Cloud Integration – JMS Resource and Size Limits](https://blogs.sap.com/2017/10/04/cloud-integration-jms-resource-and-size-limits-in-cpi-enterprise-edition/) and [Cloud Integration – Configure Asynchronous Messaging with Retry Using JMS Adapter](https://blogs.sap.com/2017/06/19/cloud-integration-configure-asynchronous-messaging-with-retry-using-jms-adapter/).
 
 > ### Note:  
 > Default number of concurrent processes is `1`. Increase this number only if parallel processing is required for your scenario. However, be aware of the fact that, when processing large messages, a high number of concurrent processes can lead to out of memory problems.

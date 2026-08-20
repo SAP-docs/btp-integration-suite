@@ -28,7 +28,7 @@ Before you use the Operations Cockpit API, make sure you follow these prerequisi
 
     -   Certificate-based authentication . You need to use a public and a private key for a TLS connection. See [Client Certificate Authentication for API Clients](https://help.sap.com/docs/integration-suite/sap-integration-suite/client-certificate-authentication-for-api-clients?locale=en-US&state=DRAFT&version=DEV) for more details.
 
-    -   ClientId/clientsecret authentication. Use OAuth client credentials for authentication. See  <?sap-ot O2O class="- topic/xref " href="db55f0d917754e999954c2796b11b114.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loio46fb8a3b516b4f81bfc9b33d19cdb701_en-US/src/content/localization/en-us/da1abc0c46514798bea0d283f0fb418a.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?>  for more details.
+    -   ClientId/clientsecret authentication. Use OAuth client credentials for authentication. See [Basic Authentication with clientId and clientsecret for API Clients](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/db55f0d917754e999954c2796b11b114.html "You can use basic authentication based on the user credentials (clientid and clientsecret) that are generated with the service key.") :arrow_upper_right: for more details.
 
 
 -   You have the required authorizations to operate Edge Integration Cell. For more details, see [Initial Setup | SAP Help Portal](https://help.sap.com/docs/integration-suite/sap-integration-suite/initial-setup-edge?version=CLOUD).

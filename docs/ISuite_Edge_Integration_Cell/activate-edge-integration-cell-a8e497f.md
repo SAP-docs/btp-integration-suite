@@ -10,7 +10,7 @@ Activate Edge Integration Cell in SAP Integration Suite.
 
 ## Prerequisites
 
--   You've subscribed to SAP Integration Suite in your SAP Business Technology Platform subaccount and have assigned the **Integration\_Provisioner** role to the user. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/8a3c8b7a6b1c4f249bb81d11644ef806.html "Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration_Provisioner role to gain access.") :arrow_upper_right:.
+-   You've subscribed to SAP Integration Suite in your SAP Business Technology Platform subaccount and have assigned the **Integration\_Provisioner** role to the user. For more information, see [Subscribing and Configuring Initial Access to SAP Integration Suite](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/8a3c8b7a6b1c4f249bb81d11644ef806.html "Subscribe to the SAP Integration Suite in SAP BTP cockpit and assign the Integration_Provisioner role to gain access.") :arrow_upper_right:.
 
 -   You've activated the *Cloud Integration* capability. For more information, see [Activating and Managing Capabilities](https://help.sap.com/viewer/51ab953548be4459bfe8539ecaeee98d/CLOUD/en-US/2ffb343c163c48a4b3a90f9f3c487328.html "Activate capabilities for SAP Integration Suite.") :arrow_upper_right:.
 

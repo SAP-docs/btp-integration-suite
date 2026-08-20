@@ -18,9 +18,10 @@ An SSH known hosts artifact contains the public keys and addresses of trusted SF
 
 2.  Select the target runtime \(*Runtime* parameter\).
 
-    This information is only relevant for Edge Integration Cell runtime.
-
-    For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/1783cf87caa2449e96082f0cf754449d.html "The manage security section allows you to manage various kinds of security-related artifacts according to the runtime deployment possibilities.") :arrow_upper_right:.
+    > ### Note:  
+    > This information is only relevant for Edge Integration Cell runtime.
+    > 
+    > For more information on how to manage security artifacts for Edge Integration Cell, see [Manage Security for Edge Integration Cell](https://help.sap.com/viewer/caeaa5e76f8c486ebea167938fa1f40b/CLOUD/en-US/1783cf87caa2449e96082f0cf754449d.html "The manage security section allows you to manage various kinds of security-related artifacts according to the runtime deployment possibilities.") :arrow_upper_right:.
 
 3.  Click the *Security Material* tile in the *Manage Security* section.
 

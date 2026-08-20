@@ -51,3 +51,29 @@ To view the business document number on the SAP Cloud ALM dashboard, you need to
     If no document ID is configured for activities, the *Document ID* column remains empty in SAP Cloud ALM.
 
 
+
+
+## Next Steps
+
+If the B2B monitoring link in the SAP Cloud ALM dashboard is incorrect, you can **manually configure the host name** for B2B monitoring by doing the following:
+
+1.  Log in to SAP BTP cockpit and navigate to your subaccount.
+2.  Go to *Connectivity* \> *Destinations*.
+3.  Find the destination named `B2BTPM_Reprocess_Endpoint` and choose *Edit*.
+
+    If the destination doesn't exist, create it by following the instructions in the prerequisites of [Restart or Retry, or Duplicate and Retry Interchanges](restart-or-retry-or-duplicate-and-retry-interchanges-8626727.md).
+
+4.  In the *Additional Properties*, choose *Add Property* and enter the following:
+
+    -   *Key*: `CustomAttributeAndTypeNamesMapping`
+
+        If this key already exists in the additional properties, add `b2bm:hostname` and its value to the JSON.
+
+    -   *Value*: `{"b2bm:hostname": "https://<the hostname of B2B Monitoring>"}`
+
+        > ### Example:  
+        > If the B2B monitoring link is `https://<tenant-subdomain>.integrationsuite.cfapps.eu21.hana.ondemand.com/shell/b2bmonitor/landing`, the value is `{"b2bm:hostname": "https://<tenant-subdomain>.integrationsuite.cfapps.eu21.hana.ondemand.com"}`.
+
+
+5.  Save your changes.
+
