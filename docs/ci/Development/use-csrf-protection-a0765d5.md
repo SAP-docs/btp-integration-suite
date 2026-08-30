@@ -8,9 +8,9 @@ If users directly call APIs using a browser, they can be tricked into executing 
 
 HTTP-based sender adapters can be protected against such attacks. This option \(parameter *CSRF Protected*\) is enabled by default. When an integration flow can be directly called by users and allows modifying HTTP requests \(POST, PUT, DELETE, PATCH\), make sure that the *CSRF Protected* option is always activated.
 
-For pure technical \(backend to backend\) communication, CSRF is usually not an issue. You can omit the CRSF protection to simplify the communication.
+For pure technical \(backend to backend\) communication, CSRF is usually not an issue. You can omit the CSRF protection to simplify the communication.
 
-If a receiver system is CSRF protected, you might need to apply additional steps to fetch an CRSF token before executing the actual API call \(see the following examples\).
+If a receiver system is CSRF protected, you might need to apply additional steps to fetch an CSRF token before executing the actual API call \(see the following examples\).
 
 > ### Note:  
 > When dealing with receiver adapters that support CSRF protection, apply the following rules:
