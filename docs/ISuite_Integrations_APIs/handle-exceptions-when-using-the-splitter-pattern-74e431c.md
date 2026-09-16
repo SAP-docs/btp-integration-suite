@@ -23,7 +23,7 @@ If you set the *Stop on Exception* flag in the Splitter step, choose o
 
 If you don't set the *Stop on Exception* flag in the Splitter step, choose one of the following options:
 
--   Use no Exception Subprocess.
+-   Use Exception Subprocess.
 
 -   If you need a specific error handling, configure the Exception Subprocess to end with a Message End event.
 
