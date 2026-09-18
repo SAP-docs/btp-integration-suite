@@ -80,7 +80,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
+[Configure the AMQP Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/99ce6748400b4dbfbadf633aeb111067.html "You use the Advanced Message Queuing Protocol (AMQP) sender adapter to consume messages in SAP Integration Suite from queues in an external message broker or from the SAP Event Mesh.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -121,7 +121,7 @@ Ariba
 </td>
 <td valign="top">
 
-[Configure the Ariba Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0629b58d4a764a0b8bcf9aa884503e78.html "The Ariba sender adapter connects SAP Integration Suite to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.") :arrow_upper_right: 
+[Configure the Ariba Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/0629b58d4a764a0b8bcf9aa884503e78.html "The Ariba sender adapter connects SAP Integration Suite to the Ariba Network. Using this adapter, SAP and non-SAP cloud applications can receive business-specific documents in commerce eXtensible Markup Language (cXML) format from the Ariba network. The sender adapter allows you to define a schedule for polling data from Ariba.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -293,7 +293,7 @@ Dropbox
 </td>
 <td valign="top">
 
-[Configure the Dropbox Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/de619914e2a24c53a1253d90b79b814f.html "The Dropbox sender adapter enables SAP Integration Suite to receive files from the Dropbox storage.") :arrow_upper_right: 
+[Configure the Dropbox Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/de619914e2a24c53a1253d90b79b814f.html "The Dropbox sender adapter enables SAP Integration Suite to receive files from the Dropbox storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -421,7 +421,7 @@ Kafka
 </td>
 <td valign="top">
 
-[Configure the Kafka Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/0d849e5b2ea749ff890d7e78db2f3a0b.html "You use the Kafka Sender adapter to connect to an external Kafka broker via Kafka protocol and to fetch messages.") :arrow_upper_right: 
+[Configure the Kafka Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/0d849e5b2ea749ff890d7e78db2f3a0b.html "You use the Kafka Sender adapter to connect to an external Kafka broker via Kafka protocol and to fetch messages.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -505,7 +505,7 @@ Microsoft SharePoint
 </td>
 <td valign="top">
 
-[Configure the Microsoft SharePoint Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/ce41e85abcc140dca0b6f638ff5d0cd4.html "The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant to a remote system using the HTTP/HTTPS protocol to read files from the system.") :arrow_upper_right: 
+[Configure the Microsoft SharePoint Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/ce41e85abcc140dca0b6f638ff5d0cd4.html "The Microsoft SharePoint sender adapter connects an SAP Integration Suite tenant to a remote system using the HTTP/HTTPS protocol to read files from the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -575,7 +575,7 @@ RabbitMQ
 </td>
 <td valign="top">
 
-[Configure the RabbitMQ Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/4e3c55458ee542d28408ce041ab74831.html "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.") :arrow_upper_right: 
+[Configure the RabbitMQ Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/4e3c55458ee542d28408ce041ab74831.html "The RabbitMQ sender adapter allows you to consume messages in SAP Integration Suite from queues on the RabbitMQ server. In addition, you use the adapter to send acknowledgements to the RabbitMQ server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -635,7 +635,7 @@ Slack
 </td>
 <td valign="top">
 
-[Configure the Slack Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/1d93850b43504c50b87c6c62ef0ffc5a.html "Enables SAP Integration Suite to receive search-related information from the Slack storage.") :arrow_upper_right: 
+[Configure the Slack Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/1d93850b43504c50b87c6c62ef0ffc5a.html "Enables SAP Integration Suite to receive search-related information from the Slack storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -738,7 +738,7 @@ Splunk
 </td>
 <td valign="top">
 
-[Configure the Splunk Sender Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/271ad20bef0b4bb5a4e0977b1f6a3a11.html "Enables SAP Integration Suite to receive search-related information from the Splunk storage.") :arrow_upper_right: 
+[Configure the Splunk Sender Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/271ad20bef0b4bb5a4e0977b1f6a3a11.html "Enables SAP Integration Suite to receive search-related information from the Splunk storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -909,7 +909,7 @@ AMQP - TCP
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -930,7 +930,7 @@ AMQP - WebSocket
 </td>
 <td valign="top">
 
-[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
+[Configure the AMQP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/d5660c146a93483692335e9d79a8c58f.html "You use the Advanced Message Queuing Protocol (AMQP) receiver adapter to send messages from SAP Integration Suite to queues or topics in an external message broker.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -967,7 +967,7 @@ Ariba
 </td>
 <td valign="top">
 
-[Configure the Ariba Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/49dffa3da5784b7bb5dd6d8bf975939c.html "The Ariva receiver adapter connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.") :arrow_upper_right: 
+[Configure the Ariba Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/49dffa3da5784b7bb5dd6d8bf975939c.html "The Ariva receiver adapter connects SAP Integration Suite to the Ariba network. Using this adapter, SAP and non-SAP cloud applications can send business-specific documents in commerce eXtensible Markup Language (cXML) format to the Ariba network.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1087,7 +1087,7 @@ Dropbox
 </td>
 <td valign="top">
 
-[Configure the Dropbox Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/16ef7b42f5084db28fd2644a0825ec87.html "The Dropbox receiver adapter enables SAP Integration Suite to write files and folders to the Dropbox storage.") :arrow_upper_right: 
+[Configure the Dropbox Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/16ef7b42f5084db28fd2644a0825ec87.html "The Dropbox receiver adapter enables SAP Integration Suite to write files and folders to the Dropbox storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1104,7 +1104,7 @@ Message Signing and Encryption
 </td>
 <td valign="top">
 
-[ELSTER Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e374ef7fb342413caf55ad6fd50384bb.html "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.") :arrow_upper_right: 
+[ELSTER Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e374ef7fb342413caf55ad6fd50384bb.html "This adapter enables an SAP BTP tenant to send a tax document to the ELSTER server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1171,7 +1171,7 @@ HTTP
 </td>
 <td valign="top">
 
-[HTTP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/2da452effb764b3bb28f8e0a2f5bd480.html "Use the HTTP receiver adapter to communicate with target systems using HTTP message protocol.") :arrow_upper_right: 
+[HTTP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/2da452effb764b3bb28f8e0a2f5bd480.html "Use the HTTP receiver adapter to communicate with target systems using HTTP message protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1286,7 +1286,7 @@ Kafka
 </td>
 <td valign="top">
 
-[Configure the Kafka Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/fc6ee1fb1c1843c195f3cc8cdbfd4b15.html "You use the Kafka Receiver adapter to connect to an external Kafka broker via Kafka protocol.") :arrow_upper_right: 
+[Configure the Kafka Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/fc6ee1fb1c1843c195f3cc8cdbfd4b15.html "You use the Kafka Receiver adapter to connect to an external Kafka broker via Kafka protocol.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1305,7 +1305,7 @@ LDAP
 </td>
 <td valign="top">
 
-[LDAP Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/06a753f90fd64272af1692603cdd3b9e.html "The Lightweight Directory Access Protocol (LDAP) Receiver Adapter enables you to communicate with systems that expose data through LDAP service.") :arrow_upper_right: 
+[LDAP Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/06a753f90fd64272af1692603cdd3b9e.html "The Lightweight Directory Access Protocol (LDAP) Receiver Adapter enables you to communicate with systems that expose data through LDAP service.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1371,7 +1371,7 @@ Microsoft SharePoint
 </td>
 <td valign="top">
 
-[Configure the Microsoft SharePoint Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b12b33a903ac4e388d1892a2febdc732.html "The Microsoft SharePoint receiver adapter connects an SAP Integration Suite tenant to a remote system using HTTP protocol to write files to the system.") :arrow_upper_right: 
+[Configure the Microsoft SharePoint Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/b12b33a903ac4e388d1892a2febdc732.html "The Microsoft SharePoint receiver adapter connects an SAP Integration Suite tenant to a remote system using HTTP protocol to write files to the system.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1454,7 +1454,7 @@ ODC
 </td>
 <td valign="top">
 
-[ODC Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/3cdbc29ca2b641738513ab8665bab9fd.html "The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.") :arrow_upper_right: 
+[ODC Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/3cdbc29ca2b641738513ab8665bab9fd.html "The ODC adapter enables you to communicate with systems that expose data through the OData Channel for SAP Gateway.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1511,7 +1511,7 @@ RabbitMQ
 </td>
 <td valign="top">
 
-[Configure the RabbitMQ Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e9dfc37fb5b349d5ad1d6e43e194e69e.html "You use the RabbitMQ receiver adapter to send messages from SAP Integration Suite to exchanges or queues on the RabbitMQ server.") :arrow_upper_right: 
+[Configure the RabbitMQ Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e9dfc37fb5b349d5ad1d6e43e194e69e.html "You use the RabbitMQ receiver adapter to send messages from SAP Integration Suite to exchanges or queues on the RabbitMQ server.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1627,7 +1627,7 @@ Slack
 </td>
 <td valign="top">
 
-[Configure the Slack Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/7c2ea64f931640afb01c6a9d82abdfa1.html "Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.") :arrow_upper_right: 
+[Configure the Slack Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/7c2ea64f931640afb01c6a9d82abdfa1.html "Enables SAP Integration Suite to get data from the Slack storage or to create, modify, or delete data on the Slack storage.") :arrow_upper_right: 
 
 </td>
 </tr>
@@ -1730,7 +1730,7 @@ Splunk
 </td>
 <td valign="top">
 
-[Configure the Splunk Receiver Adapter](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/e8e6ba6a38a14041bdd630d3386a5d3e.html "Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.") :arrow_upper_right: 
+[Configure the Splunk Receiver Adapter](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/e8e6ba6a38a14041bdd630d3386a5d3e.html "Enables SAP Integration Suite to get data from the Splunk storage or to create, modify, or delete data on the Splunk storage.") :arrow_upper_right: 
 
 </td>
 </tr>

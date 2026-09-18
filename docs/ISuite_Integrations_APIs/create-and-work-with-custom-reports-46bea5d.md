@@ -224,5 +224,5 @@ You can create customized charts for API metrics that are critical to your busin
 **Related Information**  
 
 
-[Analyze APIs and MCP Servers](analyze-apis-and-mcp-servers-da4af34.md "SAP Integration Suite provides comprehensive analytics capabilities to understand consumption and performance patterns across APIs and MCP servers.")
+[Analyze APIs and MCP Servers](analyze-apis-and-mcp-servers-da4af34.md "Analyze the usage and performance of your APIs and MCP servers.")
 

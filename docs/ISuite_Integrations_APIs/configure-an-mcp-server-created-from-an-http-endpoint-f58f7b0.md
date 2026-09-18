@@ -45,7 +45,7 @@ To add and define MCP tools:
 2.  Select the API operations that you want to expose as tools based on the HTTP method and resource path, and choose *Add*.
 
 > ### Note:  
-> Each MCP server supports up to 15 tools.
+> Each MCP server supports up to 30 tools.
 
 The selected operations are added as tools. For each tool, you can:
 
@@ -147,6 +147,85 @@ Policies govern how tools are accessed and executed.
     > 
     > 
     > By default, all MCP tools are protected with an Authentication and Authorization policy. This ensures that only authenticated and authorized AI agents—typically with proper credentials and identity assertions—can invoke the tool. To maintain system performance and prevent overload during traffic spikes, you can configure a Surge Protection Policy—for example, limit each agent to 4 calls every 10 seconds. Any calls beyond this threshold will be temporarily blocked or throttled to protect backend systems.
+
+    > ### Note:  
+    > Only destinations with the *Proxy Type* set to `Internet` or `OnPremise` are currently supported.
+    > 
+    > The following authentication mechanisms are supported:
+    > 
+    > 
+    > <table>
+    > <tr>
+    > <th valign="top">
+    > 
+    > Proxy Type
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Authentication Mechanism
+    > 
+    > </th>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > Internet
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > -   ClientCertificateAuthentication
+    > 
+    > -   OAuth2ClientCredentials
+    > 
+    > -   NoAuthentication
+    > 
+    > -   BasicAuthentication
+    > 
+    > -   OAuth2Password
+    > 
+    > -   OAuth2JWTBearer
+    > 
+    > -   SAMLAssertion
+    > 
+    > -   OAuth2SAMLBearerAssertion
+    > 
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > OnPremise
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > -   OAuth2ClientCredentials
+    > 
+    > -   NoAuthentication
+    > 
+    > -   BasicAuthentication
+    > 
+    > -   PrincipalPropagation
+    > 
+    > -   OAuth2Password
+    > 
+    > -   OAuth2JWTBearer
+    > 
+    > -   SAMLAssertion
+    > 
+    > -   OAuth2SAMLBearerAssertion
+    > 
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > </table>
 
 
 

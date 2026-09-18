@@ -156,3 +156,108 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 -   To undeploy an artifact, select the artifact in the table and choose *Undeploy*.
 
 
+
+
+## Adding a Number Range
+
+-   To create or deploy a new artifact, choose *Add* and in the *Add Number Ranges* dialog, provide the following:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Name* 
+    
+    </td>
+    <td valign="top">
+    
+    A unique name for the number range artifact. Must not already exist on any of the selected runtimes.
+
+    > ### Note:  
+    > The following name validation rules apply when deploying to multiple runtimes:
+    > 
+    > -   If you select runtimes first and then enter a name, the system checks whether the name already exists on any of the selected runtimes. If a conflict is found, a duplication error is displayed.
+    > 
+    > -   If you enter a name first and then open the **Runtimes** dropdown, any runtime on which that name already exists is greyed out and cannot be selected.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Description* 
+    
+    </td>
+    <td valign="top">
+    
+    An optional description of the artifact.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Runtimes* 
+    
+    </td>
+    <td valign="top">
+    
+    One or more runtime nodes to deploy the artifact to. The field is pre-filled with the runtime currently selected from the dropdown on the page. You can add further runtimes, including Cloud Integration and any active Edge Integration Cell nodes.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Maximum Value* 
+    
+    </td>
+    <td valign="top">
+    
+    The maximum value of the number range. Must be fewer than 15 digits.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Minimum Value* 
+    
+    </td>
+    <td valign="top">
+    
+    The minimum value of the number range. Must be greater than or equal to 0.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Rotate* 
+    
+    </td>
+    <td valign="top">
+    
+    If selected, the current value resets to the minimum value when the maximum value is reached.
+    
+    </td>
+    </tr>
+    </table>
+    
+-   Choose *Add*.
+

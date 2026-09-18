@@ -6,6 +6,12 @@ After discovering APIs via the **internet-based** SAP Gateway service destinatio
 
 
 
+## Prerequisites
+
+The **Subaccount Administrator** role collection should be assigned to you.
+
+
+
 ## Procedure
 
 1.  Log on to SAP BTP Cockpit and navigate to your subaccount.

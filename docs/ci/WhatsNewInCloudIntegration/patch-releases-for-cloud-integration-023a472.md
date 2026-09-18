@@ -79,6 +79,318 @@ Patches for different components are associated with different major software ve
 
 
 
+## September 2026
+
+Software Increment: 2607
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.46.27
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Prevents unnecessary DNS resolution of SAP Cloud Connector virtual hostnames in the JDBC adapter.
+
+-   Enhances the Configuration API UPDATE and GET operations as a stop-gap solution. When multiple runtime profiles exist, updating a value will now reflect across all runtime profiles.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.55.19
+
+</td>
+<td valign="top">
+
+This patch prevents unnecessary DNS resolution of SAP Cloud Connector virtual hostnames in the JDBC adapter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.82.110
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Optimizes the business logic for delete operations, effectively reducing database CPU load.
+
+-   Resolves a database full table scan issue and optimizes query performance during data extraction and evaluation.
+
+-   Prevents unnecessary DNS resolution of SAP Cloud Connector virtual hostnames in the JDBC adapter.
+
+-   Enhances the Configuration API UPDATE and GET operations as a stop-gap solution. When multiple runtime profiles exist, updating a value will now reflect across all runtime profiles.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.46.25
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed trace enhancement that missed retaining the incoming trace parent in the context.
+
+-   Corrects custom separator handling, avoids corrupted data in agreements and agreement templates, and guarantees proper GS Controller number usage within agreements.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.55.18
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Fixed missing imports that prevented the artifacts and filter search in the Message Processing Logs page.
+
+-   Certificate chains using the connectivity test can be viewed and downloaded.
+
+-   Fixed trace enhancement that missed retaining the incoming trace parent in the context.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.82.105
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   User experience improvement on mass migration jobs.
+
+-   Fixed missing imports that prevented the artifacts and filter search in the Message Processing Logs page.
+
+-   Numbering of custom rules in Partner Directory now correctly start with 1.
+
+-   Certificate chains using the connectivity test can be viewed and downloaded.
+
+-   XPath Injection in Alert Rule Merge Processor fix \(Single Quote Issue\).
+
+-   Deployment issue for Integration Adapter where adapters get stuck in the starting state and never go to the STARTED state is fixed.
+
+-   Fix for the concurrent requests causing MaaS push failures.
+
+-   Resolved the issue with graph messages not being metered for tenants that have Graph activated but do not have Cloud Integration activated.
+
+-   Fixed trace enhancement that missed retaining the incoming trace parent in the context.
+
+-   Corrects custom separator handling, avoids corrupted data in agreements and agreement templates, and guarantees proper GS Controller number usage within agreements.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.46.24
+
+</td>
+<td valign="top">
+
+This patch resolved an issue due to missing Spring XML bean definitions in the IDoc sender adapter *Remove* and *Substitute* options for Invalid XML Character Handling.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.82.96
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Unified Customer Landscape integration has been restored by migrating the Unified Customer Landscape registration to the MAP v1 REST API \(mTLS\). This resolves a broken integration caused by the previously used GraphQL API being deprecated, and ensures the ISUITE\_SUBSCRIPTION\_LIST is correctly populated during provisioning.
+
+-   Retry mechanism was added to resolve Message Processing Log clean up jobs rare limit issue.
+
+-   Resolved an issue due to missing Spring XML bean definitions in the IDoc sender adapter *Remove* and *Substitute* options for Invalid XML Character Handling.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+## August 2026
+
+Software Increment: 2607
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.46.22
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where a custom query would yield an invalid URL when the OData V4 adapter invokes a call to the service document to fetch the CSRF token.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+7.55.13
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where a custom query would yield an invalid URL when the OData V4 adapter invokes a call to the service document to fetch the CSRF token.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+6.82.91
+
+</td>
+<td valign="top">
+
+This patch includes the following updates:
+
+-   Subsidiary Communication channel is now able to add an Agreement Template by taking the accurate ID value.
+-   It fixes an inconsistent switch of artifact status on the Web UI for the Integration Cell runtime.
+-   Recent entities API is optimized to improve performance, showing the correct deploy status for MCP server and few API related artifacts in APIM GA tenant.
+-   Fixed the issue where a custom query would yield an invalid URL when the OData V4 adapter invokes a call to the service document to fetch the CSRF token.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
 ## August 2026
 
 Software Increment: 2606
@@ -101,6 +413,28 @@ Software Version
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+8.45.18
+
+</td>
+<td valign="top">
+
+This patch fixes the following:
+
+-   Fixed an issue where the B2B archiving POST endpoint required authentication with specific scopes, which could prevent task execution.
+-   Fixed an issue preventing the automatic removal of content in EIC due to an incorrect status reported by the runtime.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">

@@ -22,13 +22,18 @@ In a contract definition, policies can function either as **access policy** or *
 
 1.  Go to *Design* \> *Data Spaces* \> *Policies* and choose *Create*.
 
-2.  In the *Overview* section, enter a *Name* and *Description* \(optional\).
+2.  In the *Overview* section, enter the following details:
+
+    -   *Name*
+    -   *ID* \(optional\)
+    -   *Type*: `Access` or `Usage`
+    -   *Description* \(optional\)
 
 3.  In the *Rules* section, choose *Add* to create a new rule. Rules define the policy.
 
-    -   If you want to create a policy that you want to use as an **access policy**, add the following parameters:
+    -   If you're creating an **access policy**, add the following parameters:
 
-        ****
+        **Rule Parameters for Access Policies**
 
 
         <table>
@@ -54,12 +59,9 @@ In a contract definition, policies can function either as **access policy** or *
         
         Select one of the following attributes to define your rule:
 
-        -   *Membership*
         -   *Business Partner Number*
         -   *Business Partner Group*
-
-        > ### Caution:  
-        > Selecting any other attributes in an access policy can lead to consumers not being able to see your offers.
+        -   *Membership*
 
 
         
@@ -106,9 +108,9 @@ In a contract definition, policies can function either as **access policy** or *
         </tr>
         </table>
         
-    -   If you want to create a policy that you want to use as a **usage policy**, add the following parameters:
+    -   If you're creating a **usage policy**, add the following parameters:
 
-        ****
+        **Rule Parameters for Usage Policies**
 
 
         <table>
@@ -134,15 +136,10 @@ In a contract definition, policies can function either as **access policy** or *
         
         Select one of the following attributes to define your rule:
 
-        -   *Membership*
         -   *Framework Agreement*
         -   *Usage Purpose*
         -   *Contract Reference*
-
-        > ### Caution:  
-        > Don't use *Business Partner Number* and *Business Partner Group* in a policy you want to use as a **usage policy**.
-        > 
-        > Since consumers can see all details of a usage policy, wrong configuration of a usage policy can lead to consumers being able to gain insights into your business. For example, the business partner number constraint in a policy can point out what business partners you're working with.
+        -   *Membership*
 
 
         

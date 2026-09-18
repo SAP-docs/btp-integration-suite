@@ -212,7 +212,24 @@ PurgeChildEntries
 </td>
 <td valign="top">
 
-true to purge child cache entries when invalidating the cache. Default is false.
+> ### Caution:  
+> There is a known issue with this element `<PurgeChildEntries>`. Setting this element to `true` purges all cache values instead of purging only the values associated with `<KeyFragment>`. As a workaround, use [Key Value Map Operations](key-value-map-operations-b72dc3f.md) policy to implement cache versioning and avoid cache invalidation.
+
+Set this element to `true` to purge cache entries that have the same value specified by a `<KeyFragment>` element configured for this policy. Values in other parts of the cache key, such as `<Prefix>` elements, are not taken into account.
+
+The `<KeyFragment>` element must be specified. If it is not specified, setting `<PurgeChildEntries>` to `true` may purge all entries in the cache.
+
+Purging all cache entries with the same key fragment value is useful when you want to invalidate multiple related entries at the same time.
+
+```
+<PurgeChildEntries>true_to_purge_child_entries</PurgeChildEntries>
+```
+
+-   **Default:** false
+-   **Presence:** Optional
+-   **Type:** Boolean
+
+
 
 </td>
 </tr>

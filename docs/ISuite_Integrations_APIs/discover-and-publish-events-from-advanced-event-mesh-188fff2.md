@@ -5,7 +5,7 @@
 As a content administrator, you can discover and publish events from [Advanced Event Mesh](https://help.pubsub.em.services.cloud.sap/Get-Started/get-started-lp.htm) business system on Developer Hub.
 
 > ### Note:  
-> In Developer Hub, event APIs from Advanced Event Mesh are displayed as **events**. In this section, *events* refers only to events discovered from Advanced Event Mesh.
+> In Developer Hub, event APIs from Advanced Event Mesh are displayed as *events*.
 
 
 

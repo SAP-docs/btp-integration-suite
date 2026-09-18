@@ -1,10 +1,12 @@
 <!-- loio314df3f8f4334dd8829c62e865cc6d02 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Monitor Message Processing 
 
 The message monitor provides an overview of the messages processed on a tenant and allows you to display the details for individual messages.
 
-To access the message monitor, choose a tile in the *Monitor Message Processing* area. The system displays messages based on the filter settings of the tile.
+To access the message monitor, choose a tile in the *Monitor Message Processing* area. The system displays a table with all processed messages based on the selected filter settings.
 
 > ### Note:  
 > The system separates message counting from message retrieval. It loads the message list \(up to 50 messages at once\) first and computes the message count in the background. During high load scenarios, the system displays three dots instead of the message count to indicate that counting is in progress. This way, you can see all retrieved messages even if counting fails. This reduces the risk of timeouts when the number of messages in the selected time interval is too high.
@@ -39,9 +41,7 @@ Description
 </td>
 <td valign="top">
 
-Select from the following predefined time intervals:
-
--   *All*
+Specify the time interval freely with the option *Last X Minutes/Hours*, or select from the following predefined time intervals:
 
 -   *Past Minute*
 
@@ -53,10 +53,10 @@ Select from the following predefined time intervals:
 
 -   *Past Month*
 
--   *Custom*
+-   *Custom Date Range*
 
     > ### Note:  
-    > When you select the *Custom* option, you can display messages based on when their status last changed within a specific time period. Define this period with the *From* and *To* filters. Select *Last Updated* to load the message list more quickly and avoid timeouts.
+    > When you select the *Custom Date Range* option, you can display messages based on when their status last changed within a specific time period. Define this period with the *From* and *To* filters. Select *Last Updated* to load the message list more quickly and avoid timeouts.
 
     > ### Tip:  
     > If you encounter timeouts, reduce the time period to hours or minutes.
@@ -172,17 +172,21 @@ See: [Using IDs to Filter Messages](using-ids-to-filter-messages-a820752.md)
 </tr>
 </table>
 
-Choose *Use More Fields* to display additional filter criteria.
+> ### Remember:  
+> After selecting the appropriate filters, choose *Go* to see the list of messages.![](images/MPL_Go_1dd4b77.png)
 
-See: [Using Additional Filter Criteria](using-additional-filter-criteria-6891f9e.md)
+Choose *Filters* to display additional filter criteria. For more information, see [Using Additional Filter Criteria](using-additional-filter-criteria-6891f9e.md).
 
 
 
 ## Messages Table
 
-After you select the filters, a list of all relevant messages appears under *Messages*. If the number of filtered messages exceeds 50, the list is divided across multiple pages. You can browse the different pages by selecting the navigation options. You can also enter a page number to go directly to a specific page in the list.
+After you select the filters, a list of all relevant messages appears under *Messages*.
 
-The following attributes appear for each message:
+> ### Note:  
+> If the number of filtered messages exceeds 50, the list is divided across multiple pages. You can browse the different pages by selecting the navigation options. You can also enter a page number to go directly to a specific page in the list.
+
+You can adjust the table view by choosing the settings icon \(:gear:\) and selecting the information you want to see about each message. The following attributes are available for each message:
 
 **Message Attributes in Message Overview**
 
@@ -210,7 +214,10 @@ Description
 
 The name of the artifact. For example, this is the name of the integration flow that specifies message processing.
 
-The tooltip shows the technical name, the artifact, and the package name.
+> ### Note:  
+> The tooltip shows the technical name, the artifact, and the package name.
+
+
 
 </td>
 </tr>
@@ -250,6 +257,150 @@ The total message processing time.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Artifact Type*
+
+</td>
+<td valign="top">
+
+The type of integration artifact.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Log Level*
+
+</td>
+<td valign="top">
+
+The granularity of information that the message processing log collects
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Sender*
+
+</td>
+<td valign="top">
+
+The system from which the message originates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Receiver*
+
+</td>
+<td valign="top">
+
+The system to which the message is sent.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Application Message Type*
+
+</td>
+<td valign="top">
+
+The identifier set by a dedicated header \(***SAP\_MessageType***\)..
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Application Message ID*
+
+</td>
+<td valign="top">
+
+The identifier of the application message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Archiving Status*
+
+</td>
+<td valign="top">
+
+Indicates whether the message processing log has been archived
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Artifact ID*
+
+</td>
+<td valign="top">
+
+The identifier used to correlate different messages with each other that are processed jointly in the context of an integration scenario.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Correlation ID*
+
+</td>
+<td valign="top">
+
+The identifier used to correlate different messages with each other that are processed jointly in the context of an integration scenario.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Custom Status*
+
+</td>
+<td valign="top">
+
+A custom processing status that can be set by the user.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message ID*
+
+</td>
+<td valign="top">
+
+The unique identifier that is associated with the message processing log.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Predecessor ID*
+
+</td>
+<td valign="top">
+
+The identifier of the previous message processing log in a chain of interconnected integration flows.
+
+</td>
+</tr>
 </table>
 
 
@@ -258,7 +409,7 @@ The total message processing time.
 
 ## Message Details
 
-You can select a message from the list to view more information about it.
+Select a message from the table to view more information about it. When you choose a message, the table slides to the left and a message details pane opens on the right. You can expand the *Message Details* screen by choosing the full screen icon \(<span class="SAP-icons-V5"></span>\). To close the details and return to the message table, choose *X*.
 
 In the new pane that opens, select one of the following tabs to view more details about the selected message:
 
@@ -307,7 +458,7 @@ In the new pane that opens, select one of the following tabs to view more detail
     -   **Archiving Pending**: *Data Archiving* is activated for logs of this integration artifact.
     -   **Archived**: *Data Archiving* is completed for this log.
 
--   *Attachments*.This section appears only when the message processing log includes attachments. The system displays a list of all attachments that can be displayed as text. You can browse the different pages to view the complete list of attachments. Select the relevant navigation options to do so.
+-   *Attachments*. This section appears only when the message processing log includes attachments. The system displays a list of all attachments that can be displayed as text. You can browse the different pages to view the complete list of attachments. Select the relevant navigation options to do so.
 
     The following attachment formats are supported:
 

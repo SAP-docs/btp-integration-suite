@@ -732,12 +732,12 @@ You can select one of the following options:
 
 You can select one of the following idempotent repository options:
 
--   *Database*\(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days.
+-   *Database*\(default\): Stores the file names in a database to synchronize between multiple worker nodes and to prevent the files from being read again when the runtime node is restarted. File name entries are deleted by default after 90 days. This is the recommended option.
 
     > ### Note:  
     > The idempotent repository uses the username, host name, and file name as key values to identify files uniquely across integration flows of a tenant.
 
--   *In Memory*: Keeps the file names in the memory. Files are read again from the SFTP server when the runtime node is restarted. It is not recommended to use the *In Memory* option if multiple runtime nodes are used. In this case the other nodes would pick the file and process it because the memory is specific to the runtime node.
+-   *In Memory \(deprecated\)*: Keeps the file names in the memory. Files are read again from the SFTP server when the runtime node is restarted. It is not recommended to use the *In Memory* option if multiple runtime nodes are used because the memory is specific to each runtime node. The In Memory option is deprecated and will be removed in a future version. Use *Database* instead.
 
 
 

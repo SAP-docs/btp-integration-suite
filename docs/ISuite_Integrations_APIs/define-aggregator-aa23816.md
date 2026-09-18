@@ -4,6 +4,8 @@
 
 # Define Aggregator
 
+Use the Aggregator pattern to collect and store individual messages until a complete set of related messages has been received
+
 
 
 ## Prerequisites

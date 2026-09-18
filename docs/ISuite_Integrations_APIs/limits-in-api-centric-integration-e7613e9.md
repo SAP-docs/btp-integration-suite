@@ -70,12 +70,12 @@ Tool
 </td>
 <td valign="top">
 
-A maximum of 15 tools can be generated and exposed per MCP Server, regardless of the source type.
+A maximum of 30 tools can be generated and exposed per MCP Server, regardless of the source type.
 
 </td>
 <td valign="top">
 
-15
+30
 
 </td>
 <td valign="top">

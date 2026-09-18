@@ -76,7 +76,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard and v
     Select encoding format for the incoming payload. The following encoding formats are available:
 
     -   UTF-8
+
     -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_XMLTOEDI_EDIFACT_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
 
 
     
@@ -265,7 +271,13 @@ XML to EDI Converter version 2.0 and above supports the TRADACOMS standard and v
     Select encoding format for the incoming payload. The following encoding formats are available:
 
     -   UTF-8
+
     -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_XMLTOEDI_X12_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
 
 
     

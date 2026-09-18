@@ -81,7 +81,7 @@ This topic explains how to create an MCP server by connecting to an external HTT
         > -   Select the API resources that you want to expose as MCP tools.
         > 
         >     > ### Note:  
-        >     > Each MCP server supports up to 15 tools.
+        >     > Each MCP server supports up to 30 tools.
         > 
         > -   Choose *Create* to finalize the MCP server. If resources are not available, then you can skip this step and choose *Create*.
 
@@ -236,7 +236,7 @@ This topic explains how to create an MCP server by connecting to an external HTT
     > 
     > -   BasicAuthentication
     > 
-    > -   PrinciplePropagation
+    > -   PrincipalPropagation
     > 
     > -   OAuth2Password
     > 

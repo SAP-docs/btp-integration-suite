@@ -26,7 +26,7 @@ You should be onboarded as an application developer on Developer Hub. For more i
 
     You can either choose*Create New Subscription for Application* or *Add to ExistingSubscription for Application*.
 
-    -   Create a new subscription for application from the Developer Hub catalog:
+    -   **Create a new subscription for application from the Developer Hub catalog**:
 
         1.  In the *Create New Subscription for Application* dialog box, enter a *Title*, *Short Text*, a *Description* \(optional\), and a *Callback URL* \(optional\) for the application.
 
@@ -43,14 +43,27 @@ You should be onboarded as an application developer on Developer Hub. For more i
 
             You can find the details of the application you just created under the*Application Details* tab. On the *Products* tab, you can find the product you were trying to subscribe to.
 
-        4.  To add additional products, choose *Add Products*.
+        4.  Choose **Create** to create the subscription. If governance is enabled, choose **Submit for Approval** instead.
 
-        5.  In the *Add Products* dialog box, select the products that you want to associate with the application and choose *Add*.
+        > ### Note:  
+        > For Event products, once the subscription is created, make a note of the following information:
+        > 
+        > 1.  *Credentials* required to establish a connection under the *Overview* tab.
+        > 2.  *Queue details* created for the subscription under the *Products* tab.
+        > 
+        > You can also download the **AsyncAPI specification** for the event product. To download it, select the event product and, under the **Events** tab, choose **Download JSON**.
+        > 
+        > From the AsyncAPI specification, make a note of the following:
+        > 
+        > -   Broker details
+        > -   Topics and channels
+        > -   Event payload definitions
+        > 
+        > By combining the information from the subscription with the AsyncAPI specification, you can configure your application and start consuming events from Advanced Event Mesh.
 
+    -   **Add to Existing Subscription for Application from the Developer Hub catalog**
 
-    -   Add to ExistingSubscription for Application **From the Developer Hub Catalog**
-
-        In the *Add to ExistingSubscription for Application* dialog box, select the application and choose *Add*.
+        In the *Add to Existing Subscription for Application* dialog box, select the application and choose *Add*.
 
         The product gets added to the application you selected.
 

@@ -57,7 +57,6 @@ The adapter supports both sender and receiver channels:
 > 
 > -   The adapter does not integrate with the Partner Directory.
 > -   B2B monitoring is not supported.
-> -   Asynchronous acknowledgements \(ERPs on the sender side\) are not supported.
 > -   OFTP restart is not supported.
 > -   Automatic certificate exchange and partner information exchange via XML \(PDX\) are not supported.
 > 

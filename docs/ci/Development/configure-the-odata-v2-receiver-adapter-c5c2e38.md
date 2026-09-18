@@ -172,6 +172,8 @@ The following options are enabled only if you choose *Proxy Type* as *Internet*.
 
 -   *OAuth2 Client Credentials*: Use this grant type to access web resources by authorizing the client application to perform required actions on behalf of a user.
 
+-   *OAuth2 Password Credentials*: You can connect to a system that uses OAuth 2.0 authentication. See [Deploying an OAuth2 Password Credentials](../Operations/deploying-an-oauth2-password-credentials-37c919d.md)
+
 -   *OAuth2 SAML Bearer Assertion*: If you've chosen this option, the identity of the user associated with the sender application is forwarded from the sender account to the receiver account.
 
 

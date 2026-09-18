@@ -162,7 +162,7 @@ Create an MCP Server from an existing API artifact deployed on Integration Cell 
     Check the checkbox next to each API resource you want to include.
 
     > ### Note:  
-    > Each MCP server supports up to 15 tools.
+    > Each MCP server supports up to 30 tools.
 
 8.  Choose *Add* to finalize and create the MCP server.
 

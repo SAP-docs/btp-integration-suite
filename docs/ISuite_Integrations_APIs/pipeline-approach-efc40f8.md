@@ -261,7 +261,7 @@ You can watch a short video to understand the pipeline approach in a nutshell:
 
 14. Choose *Next Step*.
 
-15. In the *Java Mapping from ESR* step, to migrate custom Java-based mapping artifacts, see [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md)
+15. In the *Java Mapping from ESR* step, to migrate custom Java-based mapping artifacts, see [Integration Content Migration Agent](integration-content-migration-agent-28a8698.md)
 
 16. In the *Scenario* step, enter the *Name* for the scenario you are migrating.
 
@@ -308,7 +308,7 @@ You can watch a short video to understand the pipeline approach in a nutshell:
 
 20. Look out for useful information in the *Migration Success* page. Choose *Report* at the top-right corner to download the migration report in PDF format. Also, review the [Known Limitations](known-limitations-of-migration-tooling-7a552d4.md) to understand any potential restrictions.
 
-    In the *Artifact Details* section, you see a list of created scenario-specific integration flows. You also see a list of java lookup integration flows if you've used [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md) feature to convert java mapping to groovy scripts.
+    In the *Artifact Details* section, you see a list of created scenario-specific integration flows. You also see a list of java lookup integration flows if you've used [Integration Content Migration Agent](integration-content-migration-agent-28a8698.md) feature to convert java mapping to groovy scripts.
 
     In the *Channels and Resources* section, you see the mappings for the sender and receiver channels. For the sender and receiver adapter types used in the source object, you see the equivalent adapter types that the migration tooling creates in the integration flow.
 

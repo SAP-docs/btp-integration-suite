@@ -134,7 +134,7 @@ Java Mapping
 </td>
 <td valign="top">
 
-Java mapping with supported functions and methods on Cloud Integration are migrated directly using groovy script wrapper. More complex Java mappings might not be supported using groovy script wrapper approach. For more information, see [Migrating Java Mappings](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/migrating-java-mappings?locale=en-US) 
+The conversion of java mappings is done via Integration Content Migration Agent. The java mapping unsupported by this agent, but contains supported functions and methods on Cloud Integration are migrated directly using groovy script wrapper. More complex Java mappings might not be supported using groovy script wrapper approach. For more information, see [Migrating Java Mappings](https://help.sap.com/docs/migration-guide-po/migration-guide-for-sap-process-orchestration/migrating-java-mappings?locale=en-US) 
 
 </td>
 </tr>

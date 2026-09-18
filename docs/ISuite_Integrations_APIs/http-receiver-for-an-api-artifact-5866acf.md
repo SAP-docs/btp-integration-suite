@@ -50,7 +50,7 @@ Value/Options
 <tr>
 <td valign="top" rowspan="3">
 
-General
+**General** 
 
 </td>
 <td valign="top">
@@ -104,7 +104,7 @@ HTTP
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="6">
+<td valign="top" rowspan="7">
 
 Connection
 
@@ -277,6 +277,56 @@ User-defined
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Send Body
+
+\(only if you select for Method the option GET, DELETE, HEAD, or Dynamic.\)
+
+</td>
+<td valign="top">
+
+Select this checkbox if you want to send the body of the message with the request. For methods GET, DELETE, and HEAD, the body isn't sent by default because some HTTP servers don't support this function.
+
+</td>
+<td valign="top">
+
+User-defined
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Retry
+
+</td>
+<td valign="top">
+
+Throw Exception on Failure
+
+</td>
+<td valign="top">
+
+By default, the option is enabled. This option throws an exception when there are failed HTTP responses from the remote server. If there are failed HTTP responses, then the message processing fails too.
+
+To receive the exception and yet continue with the message processing of the integration scenario, disable the option.
+
+This option allows you to receive all responses irrespective of the HTTP status code. The failure responses don't include other failure scenarios like timeout, network, or handshake issues.
+
+> ### Note:  
+> If you use the HTTP Receiver adapter in the End Message Event and enable this option, the status shown for the message process log is Completed.
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
 </table>
 
 
@@ -310,9 +360,9 @@ Value/Options
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
-General
+*General* 
 
 </td>
 <td valign="top">
@@ -370,7 +420,24 @@ HTTP
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="6">
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="9">
 
 Connection
 
@@ -514,6 +581,125 @@ The default value is 60000 milliseconds \(1 minute\).
 <td valign="top">
 
 60000
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Request Headers
+
+</td>
+<td valign="top">
+
+Enter a list of custom headers, separated by a pipe \(|\), that you want to send to the target system. By default, no custom headers are sent. Alternatively, use an `*` to send all custom headers to the target system. Alternatively, you can dynamically pass on the values by defining a property that includes a list of headers.
+
+For adapter version 1.19 and above, ***traceparent*** is included by default in the Request Headers field.
+
+**Remember**
+
+Use an `*` separately. If you use an `*` and custom header together that are separated by a pipe \(|\), only the custom header is considered.
+
+You must have defined the custom headers in the previous flow steps like content modifiers or scripts before you mention them in the HTTPReceiver Adapter.
+
+The adapter doesn't support regular expressions like `SAP*`.
+
+All Camel-specific headers \(that starts with ***camel*** or ***org.apache.camel***\) and the below listed HTTP protocol headers are excluded even if you specify them.
+
+-   content-length
+
+-   host
+
+-   cache-control
+
+-   connection
+
+-   pragma
+
+-   trailer
+
+-   transfer-encoding
+
+-   upgrade
+
+-   via
+
+-   warning
+
+
+
+
+</td>
+<td valign="top">
+
+User-defined
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Response Headers
+
+</td>
+<td valign="top">
+
+Enter a list of headers coming from the target system's response, separated by a pipe \(|\), to be received in the message. Use an \* to receive all the headers from the target system, which is also the default value.
+
+</td>
+<td valign="top">
+
+User-defined
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Send Body
+
+\(only if you select for Method the option GEge T, DELETE, HEAD, or Dynamic.\)
+
+</td>
+<td valign="top">
+
+Select this checkbox if you want to send the body of the messawith the request. For methods GET, DELETE, and HEAD, the body isn't sent by default because some HTTP servers don't support this function.
+
+</td>
+<td valign="top">
+
+User-defined
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Retry
+
+</td>
+<td valign="top">
+
+Throw Exception on Failure
+
+</td>
+<td valign="top">
+
+By default, the option is enabled. This option throws an exception when there are failed HTTP responses from the remote server. If there are failed HTTP responses, then the message processing fails too.
+
+To receive the exception and yet continue with the message processing of the integration scenario, disable the option.
+
+This option allows you to receive all responses irrespective of the HTTP status code. The failure responses don't include other failure scenarios like timeout, network, or handshake issues.
+
+> ### Note:  
+> If you use the HTTP Receiver adapter in the End Message Event and enable this option, the status shown for the message process log is Completed.
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>

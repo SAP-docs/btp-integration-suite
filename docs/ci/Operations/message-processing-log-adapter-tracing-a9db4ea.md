@@ -65,7 +65,7 @@ SAP's internal correlation identifier. When two SAP systems communicate, the mes
 
 SAP Cloud Integration adopts the W3C Trace Context standard as the universal trace identifier for cross-system tracing. W3C Trace Context is an open web standard defined by the World Wide Web Consortium \(W3C\). Cloud Integration includes the W3C Trace ID inside the SAP Passport so that the correlation chain is preserved when a message crosses from an OpenTelemetry-instrumented system into the SAP ecosystem.
 
-If the incoming request includes a W3C trace context header \(`traceparent`\), Cloud Integration captures the Trace ID in the Message Processing Log. This allows you to correlate the MPL entry with the corresponding record in an external monitoring tool.
+If the incoming request includes a W3C trace context header \(`traceparent`\), Cloud Integration captures the trace parent in the message processing log. This allows you to correlate the MPL entry with the corresponding record in an external monitoring tool.
 
 > ### Remember:  
 > For SAP-to-SAP communication, the SAP Passport remains the primary carrier of trace information. Cloud Integration includes the W3C Trace ID inside the SAP Passport so that the correlation chain is preserved when a message crosses from an OpenTelemetry-instrumented system into the SAP ecosystem.

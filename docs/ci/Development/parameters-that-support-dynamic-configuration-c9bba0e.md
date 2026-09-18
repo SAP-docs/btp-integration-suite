@@ -4,6 +4,8 @@
 
 The following tables list all parameters that can be configured dynamically \(for the various adapter types and integration flow steps\).
 
+
+
 For more information on the individual adapter and step types, see the documentation of the related integration flow component.
 
 **Adapters**

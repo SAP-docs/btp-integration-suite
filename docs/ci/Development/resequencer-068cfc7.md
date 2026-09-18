@@ -212,5 +212,5 @@ To test the scenario, perform the following steps:
 **Related Information**  
 
 
-[Define Aggregator](define-aggregator-aa23816.md "")
+[Define Aggregator](define-aggregator-aa23816.md "Use the Aggregator pattern to collect and store individual messages until a complete set of related messages has been received")
 

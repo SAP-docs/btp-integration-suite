@@ -6,7 +6,7 @@
 
 
 
-**2025**
+**2026**
 
 
 <table>
@@ -76,6 +76,353 @@ Available as of
 Version
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Connect to Remote MCP Servers
+
+</td>
+<td valign="top">
+
+You can now connect to remote Model Context Protocol \(MCP\) servers and expose their capabilities through a single, managed endpoint.
+
+Discover available tools, resources, and prompts, synchronize the tool catalog, and selectively expose the capabilities required by AI agents. You can also apply security and traffic policies at the proxy layer without modifying the underlying remote MCP server. See, [Create an MCP Server Using a Remote MCP Server as the Source](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-using-remote-mcp-server-as-source?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Update Client SDK to Version 3.0.0
+
+</td>
+<td valign="top">
+
+The Client SDK has been updated from version 2.0.1 to version 3.0.0. As part of this update, the outdated libraries in the Client SDK have been upgraded to their latest versions. For more information, see [API Services](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-services?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Increased Tool Limit for MCP Servers
+
+</td>
+<td valign="top">
+
+You can now configure up to 30 tools per MCP server, increased from the previous limit of 15. See, [Create an MCP Server from an API Artifact](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/create-mcp-server-from-api-artifact?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Cloning Tool version 3.0.2
+
+</td>
+<td valign="top">
+
+The 3.0.2 version of the Tenant Cloning Tool is now available. See, [Clone API Management Content](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/clone-api-management-content?version=CLOUD&ai=true) and [Clone API Management Content between Cloud Foundry Environments](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/clone-api-management-content-between-cloud-foundry-environments?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Updated Trace Data Handling for APIs in Integration Cell
+
+</td>
+<td valign="top">
+
+You can now use the Trace log level for APIs in Integration Cell to capture detailed message processing information, including message content. See, [Monitor APIs and MCP Servers](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/monitor-apis?version=CLOUD&ai=true).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -166,7 +513,7 @@ Event Discovery from Advanced Event Mesh
 </td>
 <td valign="top">
 
-Events published via Advanced Event Mesh can now be consumed by the application developers on Developer Hub. This significantly reduces complexity by eliminating the need to switch between multiple portals or tools, enabling faster onboarding as developers can find and consume both APIs and event products from a single catalog. See, [Discover and Publish Events from Advanced Event Mesh](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/discover-and-publish-events-from-advanced-event-mesh?version=CLOUD).
+Events published via Advanced Event Mesh can now be consumed by the application developers on Developer Hub. This significantly reduces complexity by eliminating the need to switch between multiple portals or tools, enabling faster onboarding as developers can find and consume both APIs and event products from a single catalog. See, [Discover and Publish Events from Advanced Event Mesh](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/discover-and-publish-events-from-advanced-event-mesh-in-developer-hub?version=CLOUD).
 
 </td>
 <td valign="top">

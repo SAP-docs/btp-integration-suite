@@ -6,6 +6,12 @@ To create an API artifact by discovering your SAP cloud backends through an **in
 
 
 
+## Prerequisites
+
+The **Subaccount Administrator** role collection should be assigned to you.
+
+
+
 ## Context
 
 To enable API discovery:

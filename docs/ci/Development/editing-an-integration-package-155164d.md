@@ -42,9 +42,9 @@ Edit your integration package to revise the header and overview sections, add or
 
     Furthermore, you've the option to upload a package image. The image is placed on top of the overview page.
 
-6.  In the *Artifacts* tab, choose <span class="SAP-icons-V5"></span>.
+6.  In the *Artifacts* tab, you can add various artifacts, see [Integration Artifact Types](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/integration-artifact-types). To easily categorize the artifacts, choose <span class="SAP-icons-V5"></span>to group the artifacts by type. For each artifact, choose <span class="SAP-icons-V5"></span> to get the following functions.
 
-    You get the following functions. The list of functions varies for different artifact types.
+    The list of functions varies for different artifact types.
 
     -   Delete
 
@@ -56,7 +56,7 @@ Edit your integration package to revise the header and overview sections, add or
 
     -   Configure \(only for integration flows\)
 
-    -   Deploy \(only for data flows and integration flows\)
+    -   Deploy
 
 
 7.  To edit the metadata of an artifact, perform the following steps:

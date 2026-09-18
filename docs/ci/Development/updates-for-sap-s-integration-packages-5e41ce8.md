@@ -2,7 +2,7 @@
 
 # Updates for SAP's Integration Packages
 
-SAP provides preshipped content to address various integration scenarios. You can copy these integration packages from the *Discover* view to the *Design* space. SAP also publishes updates with new enhancements and bug fixes.
+SAP provides pre-shipped content to address various integration scenarios. You can copy these integration packages from the *Discover* view to the *Design* space. SAP also publishes updates with new enhancements and bug fixes.
 
 Whenever there's an update \(planned or available\) for the content that you've copied into your workspace, you're informed by an *Update Available* label that is displayed your corresponding artifact along this documentation.
 

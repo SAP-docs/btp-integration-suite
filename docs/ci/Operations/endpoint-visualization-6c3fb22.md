@@ -97,23 +97,6 @@ AS2
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-XI Adapter
-
-</td>
-<td valign="top">
-
-**X**
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
 </table>
 
 

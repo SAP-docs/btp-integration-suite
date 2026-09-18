@@ -23,7 +23,7 @@ You want to ensure that a message is delivered and processed at the receiver exa
 
 ## Scenarios
 
-The scenarios provided in this section show how to guarantee end-to-end *Exactly Once* delivery between systems integrated via SAP Integration Suite .
+The scenarios provided in this section show how to guarantee end-to-end *Exactly Once* delivery between systems integrated via SAP Integration Suite.
 
 The way how to achieve the quality of service Exactly Once depends on the actual scenario. The following scenarios show how to ensure guaranteed delivery:
 

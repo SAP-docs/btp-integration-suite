@@ -134,6 +134,12 @@ To create a destination, perform the steps below:
     > -   *Do anything to any Event API* \> *event\_api:\*:\**
     > 
     > -   *Access to Event Portal Designer* \> *event\_designer:access* 
+    > 
+    > -   *Event API Product* \> *event\_api\_product:\*:\** 
+    > 
+    > -   *Do anything to any Application* \> *application:\*:\** 
+    > 
+    > -   *Get Event Broker in Event Portal* \> *modeled\_event\_broker:get:\*:\** 
 
 
     
@@ -175,5 +181,8 @@ To create a destination, perform the steps below:
 6.  Choose *Create*.
 
     You can also do a *Check Connection* to verify whether you've added the destination correctly.
+
+    > ### Note:  
+    > If you need to connect to a different Advanced Event Mesh event portal, create a new destination pointing to the new event portal. Do not update the connection details of an existing destination that is already used by products created in Developer Hub, as changing the destination URL will break the connection for those existing products.
 
 

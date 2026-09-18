@@ -31,7 +31,7 @@ Component Description
 <tr>
 <td valign="top">
 
-OPU-API-OD-DT
+BC-CP-IS-APIM-DT
 
 </td>
 <td valign="top">
@@ -43,7 +43,7 @@ API Management - Design time
 <tr>
 <td valign="top">
 
-OPU-API-OD-PE
+BC-CP-IS-APIM-RT
 
 </td>
 <td valign="top">
@@ -55,7 +55,7 @@ API Management - Runtime
 <tr>
 <td valign="top">
 
-OPU-API-OD-DH
+BC-CP-IS-APIM-CATALG
 
 </td>
 <td valign="top">
@@ -67,12 +67,48 @@ API Management - Developer Hub
 <tr>
 <td valign="top">
 
-OPU-API-OD-AN
+BC-CP-IS-APIM-COMP
+
+</td>
+<td valign="top">
+
+API Management - API Composition
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BC-CP-IS-APIM-AN
 
 </td>
 <td valign="top">
 
 API Management - Analytics
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BC-CP-IS-APIM-OPS
+
+</td>
+<td valign="top">
+
+API Management - Operations
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BC-CP-IS-APIM-OUTAGE
+
+</td>
+<td valign="top">
+
+API Management - Outage Management
 
 </td>
 </tr>

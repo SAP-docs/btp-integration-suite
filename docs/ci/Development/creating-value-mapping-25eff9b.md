@@ -2,11 +2,13 @@
 
 # Creating Value Mapping
 
+Understand how to create or upload a value mapping.
+
 
 
 ## Context
 
-You use the value mapping artifact to represent multiple values for a single object. For example, a product in Company A is referred by the last three letters as "IDE". The same product is referred in Company B by product code ''0100IDE". When Company A sends message to Company B, it needs to take care of the difference in the representations of the same product. So, Company A defines an integration flow with a mapping element that contains reference to the value mapping definition. You create such value mapping groups in a *Value Mapping* artifact.
+Define how the same object is identified differently across systems. For example, if one system refers to a product as "IDE" and another as "0100IDE", a *value mapping* translates between these representations during message processing.
 
 
 
@@ -36,31 +38,9 @@ You use the value mapping artifact to represent multiple values for a single obj
 
     You see a message confirming that the value mapping artifact is created successfully. Configure the value mapping artifact by referring to [Editing Value Mapping](editing-value-mapping-6c8847f.md).
 
-5.  If you want to import a value mapping from your Integration Directory in a PI landscape, perform the following substeps:
 
-    > ### Note:  
-    > Availability of this feature depends upon the SAP Integration Suite service plan that you use. For more information about different service plans and their supported feature set, see SAP Note [2903776](https://launchpad.support.sap.com/#/notes/2903776).
-
-    > ### Note:  
-    > The supported service packs for importing a value mapping are SAP Process Orchestration 7.5 SP22 and onwards.
-
-    1.  Choose *Integration Directory*.
-
-        The properties of the ES Repository to which connection is already established by the tenant admin gets auto-populated.
-
-    2.  Choose *Connect*.
-
-        All value mappings from the ES Repository get listed.
-
-    3.  Select a value mapping from the list. You can use the filter to search for a specific value mapping. Choose *OK*.
-
-        Properties like Name, ID, and Description of the value mapping comes up.
-
-    4.  Edit the name and description, if needed. Choose *OK*.
-
-        You see a message confirming that the value mapping artifact is created successfully.
+**Related Information**  
 
 
-6.  Configure the value mapping artifact by referring to [Editing Value Mapping](editing-value-mapping-6c8847f.md).
-
+[Importing Value Mapping from Integration Directory](importing-value-mapping-from-integration-directory-26dd264.md "You can import value mappings from the Integration Directory and view in .")
 

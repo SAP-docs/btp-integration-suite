@@ -161,12 +161,4 @@ Cloud Integration also provides options to integrate various kinds of remote dat
 
     If you like to integrate a permanent data storage in your scenario, you can set up a remote database system and connect Cloud Integration to it using the JDBC adapter.
 
--   Remote Kafka server
-
-    You can connect Cloud Integration to an external Kafka server via Kafka protocol. With the help of the Kafka sender adapter you can receive messages; with the help of the Kafka receiver adapter you can send messages to the Kafka server.
-
--   Remote message broker
-
-    You can connect Cloud Integration to an external message broker. With the help of the AMQP sender adapter you can receive messages; with the help of the AMQP receiver adapter you can send messages to the message broker.
-
 

@@ -10,6 +10,6 @@
 -   [Manage Metadata Validation and Cache Settings for OData Services](manage-metadata-validation-and-cache-settings-for-odata-services-dd4df7a.md)
 -   [Accessibility Features in OData Provisioning](accessibility-features-in-odata-provisioning-15c5c36.md)
 -   [Identity and Access Management for OData Provisioning](identity-and-access-management-for-odata-provisioning-e6bdc84.md)
--   [Troubleshooting for OData Provisioning](troubleshooting-for-odata-provisioning-cdcbaa2.md)
+-   [Getting Support for OData Provisioning](getting-support-for-odata-provisioning-cdcbaa2.md)
 -   [Go to SAP Integration Suite](go-to-sap-integration-suite-311907b.md)
 

@@ -104,11 +104,16 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     -   *Exclude* \(default\): Exclude the empty tags in the outgoing converted payload.
     -   *Include*: Include the empty tags in the outgoing converted payload.
 
-10. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field.
+10. For the type systems `UN/EDIFACT`, `GS1 EANCOM`, `Odette EDIFACT`, `VDA EDIFACT`, and `ASC X12`, you can select a *Transaction Mode* to define how the system validates EDI message transactions:
 
-11. In the *Select MIG* dialog, the list of MIGs available in the system is displayed in a table. Use the fields provided \(MIG Name, Version, Status, and so on\) to search for a specific MIG.
+    -   *Message* \(default\): The EDI Splitter validates each EDI message within an interchange as an independent entity. If one message fails validation, the EDI Splitter only rejects the faulty message, while valid messages continue to downstream processing.
+    -   *Interchange*: The EDI Splitter validates the entire EDI interchange as a single unit. If any message within the interchange fails validation, the EDI Splitter rejects the whole interchange.
 
-12. Select a MIG from the list along with the required version and select *Choose*.
+11. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field.
+
+12. In the *Select MIG* dialog, the list of MIGs available in the system is displayed in a table. Use the fields provided \(MIG Name, Version, Status, and so on\) to search for a specific MIG.
+
+13. Select a MIG from the list along with the required version and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field. You can also directly view the message type used in the MIG displayed under the *Message Type* field.
 
@@ -154,9 +159,9 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     >         > -   For default keys, you can define XPaths for sender identifier, receive identifier, sender type system version, and sender message type. Ensure that the values collected by the XPaths match the ones configured in the agreements.
     >         > -   If custom messages only depend on custom keys without any default key, the default search fields in the B2B monitoring don’t work. Instead, specify custom search attributes to filter the interchanges.
 
-13. For type systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
+14. For type systems *ASC X12*, *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, you can edit their version numbers in the *Type System Version* field.
 
-14. For the type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, and *ASC X12*, you can select a value for *Send Test Interchange to Target System*:
+15. For the type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, and *ASC X12*, you can select a value for *Send Test Interchange to Target System*:
 
     -   Select *No* if you don't want to send the test payload to the target system.
     -   Select *Yes* if you want to send the test payload to the target system.
@@ -166,7 +171,7 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     -   For type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, and *VDA EDIFACT*, the usage indicator is located at the last position of the UNB segment. `1` signifies a test message, while `2` or the absence of `1` indicates a production message.
     -   For the type system *ASC X12*, ISA15 holds the usage indicator. `T` signifies a test message, whereas `P` or the absence of `T` indicates a production message.
 
-15. Select a value from the drop-down list for the field *Create Functional Acknowledgement*.
+16. Select a value from the drop-down list for the field *Create Functional Acknowledgement*.
 
     This field appears only for the following type systems:
 
@@ -259,23 +264,23 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     </tr>
     </table>
     
-    You can view the status of the Functional Acknowledgement through the *Monitor* tab. To learn more, see [Update Agreements](update-agreements-b5e1fc9.md).
+    You can view the status of the Functional Acknowledgment through the *Monitor* tab. To learn more, see [Update Agreements](update-agreements-b5e1fc9.md).
 
-16. If you are planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox under *Custom Integration Flow*.
+17. If you're planning to use custom integration flows for Pre-Processing of your interchange step, then enable the checkbox under *Custom Integration Flow*.
 
-17. Provide the address of your custom integration flow in the *Process Direct Address* field.
+18. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-18. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+19. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
 
     Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
 
-19. If you want to enable the payload validation, select the checkbox *Enable Payload Validation* under *Validation Option* section.
+20. If you want to enable the payload validation, select the checkbox *Enable Payload Validation* under *Validation Option* section.
 
     If enabled, the generic integration flow performs a validation check for the sender interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
-20. The *Syntax Validation* checkbox is selected by default to enable syntax validation through the EDI splitter. If you do not want to use this validation, you can disable this option.
+21. The *Syntax Validation* checkbox is selected by default to enable syntax validation through the EDI splitter. If you do not want to use this validation, you can disable this option.
 
     This field appears only for the following type systems:
 
@@ -292,42 +297,42 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
 
     If the identifier used in the agreement has **Custom Scheme Code**, then this option is skipped irrespective of the field selection.
 
-21. For sender type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, *ASC X12*, or *TRADACOMS*: use the field *Source Encoding* to let the generic integration flow know the source encoding so it can convert the sender payload to UTF-8 correctly.
+22. For sender type systems *UN/EDIFACT*, *GS1 EANCOM*, *Odette EDIFACT*, *VDA EDIFACT*, *ASC X12*, or *TRADACOMS*: use the field *Source Encoding* to let the generic integration flow know the source encoding so it can convert the sender payload to UTF-8 correctly.
 
     To do so, under the field *Source Encoding*, select a value from the list.
 
-22. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+23. To archive the sender payload, select the checkbox for the field *Archive Sender Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-23. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
+24. Similarly, choose the *Communication Channel* on the receiver side and enter a value for the field *Communication*.
 
-24. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
+25. Select a value from the drop-down list for the field *Receiver Functional Acknowledgement Channel*.
 
     This field appears only for the AS2 adapter.
 
-25. Select the *Interchange* shape on the receiver side.
+26. Select the *Interchange* shape on the receiver side.
 
-26. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
+27. Choose the value help provided for the *Message Implementation Guideline \(MIG\)* field and select a MIG from the list and select *Choose*.
 
     If you want to view the details of the MIG that you chose, you can use the link provided under the *Version* field.
 
-27. Enter an alias value for the field *Number Range Alias*.
+28. Enter an alias value for the field *Number Range Alias*.
 
     > ### Note:  
     > A number range is used to insert unique sequence numbers.
     > 
     > You need to configure this number range in the Cloud Integration tenant. To do so, see [Number Ranges](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/b6e17fa17a70491da4a54216db298f84.html).
 
-28. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
+29. Similar to the Sender, if you want to use custom integration flows for your Post-Processing of the interchange step, enable the checkbox under *Custom Integration Flow*.
 
-29. Provide the address of your custom integration flow in the *Process Direct Address* field.
+30. Provide the address of your custom integration flow in the *Process Direct Address* field.
 
     This step is carried out using the ProcessDirect adapter. To know more about how it works, see [Interchange Processing Flow](interchange-processing-flow-7d3bce9.md).
 
-30. In the ​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+31. In the ​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
 
     Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
 
-31. Select the *Enable Receiver Functional Acknowledgement* checkbox if you want to enable the functional acknowledgment for the receiver.
+32. Select the *Enable Receiver Functional Acknowledgement* checkbox if you want to enable the functional acknowledgment for the receiver.
 
     Once it's enabled, use the drop-down list of *Mark Partially Accepted Acknowledgment* to indicate whether the interchange should be marked as *Failed* or *Completed* upon receiving a partially accepted acknowledgment.
 
@@ -342,7 +347,7 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
 
     You can view the status of the functional acknowledgment through the *Monitor* tab. See [Update Agreements](update-agreements-b5e1fc9.md).
 
-32. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
+33. If you want to use custom separators for your payload, enable the *Use Custom Separators* checkbox and maintain the values for the following fields:
 
     This option is available only for UN/EDIFACT, GS1 EANCOM, Odette EDIFACT, VDA EDIFACT, and ASC X12 type systems.
 
@@ -355,30 +360,30 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     4.  Escape Character
 
 
-33. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
+34. If you want to enable the payload validation, select the checkbox for the field *Enable Payload Validation* under *Validation Option*.
 
     1.  If enabled, the generic integration flow performs a validation check for the receiver interchange. And regardless of the outcome, the interchange processing continues to run. If you want to stop processing the interchange when payload validation fails, enable the checkbox for the field *Stop Processing if Payload Validation Fails*.
 
 
-34. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
+35. To archive the receiver payload, select the checkbox for the field *Archive Receiver Payload*. To know more about archiving data, see [Archiving Payload Data](archiving-payload-data-b927e01.md).
 
-35. If your receiver type system is UN/EDIFACT, GS1 EANCOM, Odette EDIFACT, VDA EDIFACT, ASC X12, or TRADACOMS, you can set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
+36. If your receiver type system is UN/EDIFACT, GS1 EANCOM, Odette EDIFACT, VDA EDIFACT, ASC X12, or TRADACOMS, you can set a target encoding. To do so, under the field *Target Encoding*, select a value from the list.
 
-36. Select the *Mapping* step of the transaction.
+37. Select the *Mapping* step of the transaction.
 
-37. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline \(MAG\)* field.
+38. Select a mapping guideline and its corresponding version using the value help for the *Mapping Guideline \(MAG\)* field.
 
-38. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
+39. If you want to custom integration flow for the mapping processing, enable the checkbox for the field *Customized Mapping Processing*.
 
-39. Provide the address of your integration flow in the *Process Direct Address* field.
+40. Provide the address of your integration flow in the *Process Direct Address* field.
 
-40. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
+41. In the ​​*Integration Flow Link* field, open the integration flow dialog to select a custom integration flow. After you choose the relevant package and artifact, the corresponding SAP Integration Suite URL is auto-populated in the URL field. Alternatively, you can manually enter or paste the URL.
 
     Once the link is configured and you're in display mode, the *Process Direct Address* field becomes clickable. Choose it to open the associated custom integration flow in a new window. 
 
-41. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any parameters to the template.
+42. Choose anywhere outside the transaction and the common properties get displayed below the transaction. Choose the *Activity Parameters* tab if you want to add any parameters to the template.
 
-42. Choose *Add Parameters*. This displays the following options:
+43. Choose *Add Parameters*. This displays the following options:
 
     -   *Extend from Company*: This option allows you to use the dynamic parameters from the company profile used in the agreement template. If you've created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Select a parameter from the list and choose *Save*.
 
@@ -390,11 +395,11 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
 
     -   *Create Activity Parameters*: You can also create your own activity parameters using this option. If you've created a *two-way* business transaction, you can choose between *Inbound* or *Outbound* parameters. Maintain the values of the fields *Parameter Key* and *Value* and choose *Save*.
 
-43. Navigate to the *Custom Search Attributes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
+44. Navigate to the *Custom Search Attributes* tab if you want to add any custom search values which are picked up for the B2B monitoring.
 
     Before adding custom search attributes, you need to maintain them in the *Configuration Manager*. To know more, see [Configuration Manager](configuration-manager-7daf06c.md).
 
-44. Choose *Add* and maintain the following fields:
+45. Choose *Add* and maintain the following fields:
 
 
     <table>
@@ -472,7 +477,7 @@ Under *B2B Scenarios* \> *Create Business Transaction*, you can initiate B2B tra
     </tr>
     </table>
     
-45. Choose *Save*.
+46. Choose *Save*.
 
 
 

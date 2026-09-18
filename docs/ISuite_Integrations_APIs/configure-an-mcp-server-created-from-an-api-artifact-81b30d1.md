@@ -47,7 +47,7 @@ To add and define MCP tools:
 2.  Select the API operations that you want to expose as tools based on the HTTP method and resource path, and choose *Add*.
 
     > ### Note:  
-    > Each MCP server supports up to 15 tools.
+    > Each MCP server supports up to 30 tools.
 
 
 The selected operations are added as tools. For each tool, you can:

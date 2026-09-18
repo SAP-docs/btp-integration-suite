@@ -58,5 +58,11 @@ In general, perform the following steps to consume an asset:
     -   [Consuming HTTP Assets](consuming-http-assets-f6b27ac.md)
 
 
-Alternatively, you can also use the **Convenient Data Request API**, which orchestrates the full data exchange workflow for you. Access it at the SAP Business Accelerator Hub under [Convenient Data Request](https://hub.sap.com/api/DSIAPI/resource/Convenient_Data_Request).
+
+
+## Convenient Data Request API
+
+You can also use the **Convenient Data Request API**, which orchestrates the full data exchange workflow for you. Access it at the SAP Business Accelerator Hub under [Convenient Data Request](https://hub.sap.com/api/DSIAPI/resource/Convenient_Data_Request).
+
+See [Consuming Assets Using the Convenient API](consuming-assets-using-the-convenient-api-7e6ebaf.md).
 

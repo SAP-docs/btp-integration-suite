@@ -207,7 +207,7 @@ Description
 <tr>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Cloud Integration" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Cloud Integration | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/cloud-integration?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -219,9 +219,9 @@ Integrate SAP and non-SAP, cloud, and on-premise applications and process messag
 <tr>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="API Management" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[API Management | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-management?version=CLOUD&ai=true)
 
-[API Composition](https://help.sap.com/docs/graph)
+[What Is API Composition? | SAP Help Portal](https://help.sap.com/docs/api-composition/isuite-api-composition/what-is-api-composition?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -235,7 +235,7 @@ Expose all your business data in the form of a semantically connected data graph
 <tr>
 <td valign="top">
 
-[Event Mesh](https://help.sap.com/viewer/a01a83f4826d486b9fc66d1df0de9da4/CLOUD/en-US/3129673ca39d4055b4a4152d65e7f525.html "The Event Mesh capability in SAP Integration Suite helps you manage your business events. You can publish and consume events across applications using Event Mesh.") :arrow_upper_right:
+[Event Mesh | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-event-mesh/event-mesh?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -259,7 +259,7 @@ Build seamless integrations with over 160 non-SAP applications using prebuilt co
 <tr>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Integration Advisor" desc="" xtrc="xref:11" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Integration Advisor | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/integration-advisor?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -271,7 +271,7 @@ Accelerate the development of business-oriented interfaces and mappings, generat
 <tr>
 <td valign="top">
 
- <?sap-ot O2O class="- topic/xref " href="de1ae814218247c6bac4975cb486e431.xml" text="Trading Partner Management" desc="" xtrc="xref:12" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiocc0ab4c7365e43bbbee9eae27deb32da_en-US/src/content/localization/en-us/5cc6987511104c418b7cb4c25f3d9cb0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Trading Partner Management | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-trading-partner-management/trading-partner-management?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -283,7 +283,7 @@ Manage B2B relationships with multiple trading partners through this easy-to-use
 <tr>
 <td valign="top">
 
-[OData Provisioning](https://help.sap.com/viewer/c0ec55d6862d4b01af33a70e79ed1a2e/CLOUD/en-US/d257fc3a8cc2494cbafce8b2789939de.html "OData Provisioning, a capability of SAP Integration Suite, exposes business data and business logic as OData services on SAP Business Technology Platform, enabling you to run user-centric applications.") :arrow_upper_right: 
+[OData Provisioning | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-odata-provisioning/odata-provisioning?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -295,7 +295,7 @@ Access data from SAP Business Suite using OData services.
 <tr>
 <td valign="top">
 
-[Data Space Integration](https://help.sap.com/viewer/c6f026f9206e4a60948e827535eef449/CLOUD/en-US/8bb6972c4e6f4de7ab95ab0e1bc84837.html "Learn how to work with Data Space Integration as a provider or consumer.") :arrow_upper_right:
+[Data Space Integration | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-data-space-integration/data-space-integration?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -307,7 +307,7 @@ Offer, consume, and maintain assets in a data space.
 <tr>
 <td valign="top">
 
-[Integration Assessment](https://help.sap.com/viewer/70da72e10fd6446ab24db52465b1fa5c/CLOUD/en-US/310067e3e49342ddbe5a90c8f33a1910.html "Integration Assessment implements the Integration Solution Advisory Methodology thus supporting the definition of the integration landscape. It helps you to define integration patterns and to ensure consistent usage of the integration technology.") :arrow_upper_right:
+[Integration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-integration-assessment/integration-assessment?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">
@@ -319,7 +319,7 @@ Define integration landscape, based on the Integration Solution Advisor Methodol
 <tr>
 <td valign="top">
 
-[Migration Assessment](https://help.sap.com/viewer/37c02ad991d24d33b1472b00c1a05378/CLOUD/en-US/5c5e50ee2d644cc59d864409d5b7871c.html "Find out how to migrate your existing integration scenarios to SAP Integration Suite with Migration Assessment.") :arrow_upper_right:
+[Migration Assessment | SAP Help Portal](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/migration-assessment?version=CLOUD&ai=true)
 
 </td>
 <td valign="top">

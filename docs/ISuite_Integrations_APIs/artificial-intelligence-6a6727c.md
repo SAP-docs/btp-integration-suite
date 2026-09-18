@@ -187,7 +187,7 @@ Shows the memory insights derived during integration flow simulation and suggest
 <tr>
 <td valign="top">
 
-Integration Content Migration
+Integration Content Migration Agent
 
 </td>
 <td valign="top">

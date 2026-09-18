@@ -40,7 +40,7 @@ For other processes of transferring assets, see [Consuming Assets Into S3 Storag
     }
     ```
 
-    As result, you receive the **transfer process ID**.
+    As a result, you receive the **transfer process ID**.
 
 2.  Confirm that the transfer process has reached the status **COMPLETED** before continuing.
 
@@ -52,10 +52,16 @@ For other processes of transferring assets, see [Consuming Assets Into S3 Storag
 
     In the EDR details, you can find the URL \(`endpoint`\) and the authorization token \(`authCode` and `authorization`\) with which you can access the asset's details.
 
-4.  Call the provider data plane and retrieve the asset.
+4.  Using the EDR details, create an HTTP request to call the provider URL:
+
+    -   As provider URL, use the `endpoint`.
+    -   Add a header called `authorization`.
+    -   As value of the header, add the `authorization` value contained in the EDR details.
 
     > ### Restriction:  
     > Only HTTPS connections are supported. If the asset provider relies on HTTP connections to provide assets, the data transfer is disrupted due to security concerns.
+
+5.  Finally, retrieve your asset.
 
 
 

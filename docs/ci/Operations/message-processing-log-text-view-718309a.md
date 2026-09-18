@@ -247,6 +247,18 @@ Is set during creation of a new MPL, if the message header SAP\_MessageProcessin
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+TransactionId
+
+</td>
+<td valign="top">
+
+This is the unique identifier for the processing transaction. It correlates fully to the trace ID from the `traceparent` header when received, helping correlate log entries and trace message activity across systems. If no `traceparent` header is present, it correlates to the SAP password. If neither exists, the transaction ID is generated at runtime.
+
+</td>
+</tr>
 </table>
 
 The log steps show the following properties:

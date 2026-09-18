@@ -147,7 +147,7 @@ Edge Integration Cell
 </td>
 <td valign="top">
 
-[Troubleshooting for Edge Integration Cell](https://help.sap.com/docs/integration-suite/edge-integration-cell-test/troubleshooting-for-edge-integration-cell?version=CLOUD)
+[Troubleshooting for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/troubleshooting-for-edge-integration-cell)
 
 </td>
 </tr>

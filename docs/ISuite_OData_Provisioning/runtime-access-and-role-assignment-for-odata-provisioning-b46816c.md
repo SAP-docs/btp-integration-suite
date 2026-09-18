@@ -157,7 +157,7 @@ To create the service key, do the following:
     > > }
     > > ```
     > 
-    > Please raise a support ticket to resolve this issue. Provide the service instance ID for the Serverless Runtime instance which can be obtained from the Instances section of the BTP Cockpit. See [Troubleshooting for OData Provisioning](troubleshooting-for-odata-provisioning-cdcbaa2.md) 
+    > Please raise a support ticket to resolve this issue. Provide the service instance ID for the Serverless Runtime instance which can be obtained from the Instances section of the BTP Cockpit. See [Getting Support for OData Provisioning](getting-support-for-odata-provisioning-cdcbaa2.md) 
 
 
     

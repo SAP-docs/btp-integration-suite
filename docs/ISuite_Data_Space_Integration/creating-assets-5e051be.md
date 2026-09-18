@@ -6,9 +6,15 @@ Create an asset and add properties in Data Space Integration.
 
 
 
+## Prerequisites
+
+Before you create an asset, check whether the asset, folder, or bucket is **IP protected**. If it's IP protected, you can't access it during the transfer process, even after a successful negotiation. For push-based assets, such as S3 or Azure, also check with your business partner whether their buckets are IP protected. In such cases, to ensure that the asset can be accessed during the transfer process, contact Data Space Integration by creating an incident as described in [Getting Support for Data Space Integration](getting-support-for-data-space-integration-166fa88.md).
+
+
+
 ## Context
 
-You want to define assets, which can later be shared with other members of the data space as defined by policies. This process, as described in this topic, is available via the UI.
+You want to define assets, which can later be shared with other members of the data space as defined by policies. This process, as described in this topic, is available using the UI.
 
 
 
@@ -116,162 +122,272 @@ You want to define assets, which can later be shared with other members of the d
     </tr>
     </table>
     
-6.  Enter the data address by specifying the following information, and then choose *Next Step*:
+6.  To enter the data address, first select the *Source*, `HTTP` or `S3 Storage`. Depending on your choice, specify the following information, and then choose *Next Step*:
+
+    -   **HTTP Assets**
 
 
-    <table>
-    <tr>
-    <th valign="top">
+<table>
+<tr>
+<th valign="top">
 
-    Option
-    
-    </th>
-    <th valign="top">
+Field
 
-    Description
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Data Plane**
-    
-    </td>
-    <td valign="top">
-    
-    Define the data plane.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Base URL**
-    
-    </td>
-    <td valign="top">
-    
-    Enter the base URL. Example: `http://www.example.com`
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **URL Path**
-    
-    </td>
-    <td valign="top">
-    
-    Define the incoming path type either by selecting *Use Incoming Path* or by entering the incoming path manually.
+</th>
+<th valign="top">
 
-    > ### Caution:  
-    > Make sure to add `https` connections only. `http` is not supported for security reasons.
+Description
 
+</th>
+</tr>
+<tr>
+<td valign="top">
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Query Parameters**
-    
-    </td>
-    <td valign="top">
-    
-    Define the incoming query either by selecting *Use Incoming Query* or by entering the incoming query manually.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **HTTP Method**
-    
-    </td>
-    <td valign="top">
-    
-    Select the HTTP method:
+Source
 
-    -   *GET \(default\)*
+</td>
+<td valign="top">
 
-    -   *Use incoming method*
+`HTTP`
 
-    -   *PUT*
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-    -   *POST* 
+HTTP Method
+
+</td>
+<td valign="top">
+
+Select the HTTP method:
+
+-   *GET \(default\)*
+
+-   *Use incoming method*
+
+-   *PUT*
+
+-   *POST* 
 
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Content Type**
-    
-    </td>
-    <td valign="top">
-    
-    Define incoming content type either by selecting *Use Incoming Content Type* or by entering the content type manually.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Authentication Type**
-    
-    </td>
-    <td valign="top">
-    
-    Choose the authentication type *Basic*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **User**
-    
-    </td>
-    <td valign="top">
-    
-    Enter a user name. Example: `username@example.com`
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Password**
-    
-    </td>
-    <td valign="top">
-    
-    Define a password.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **HTTP Headers**
-    
-    </td>
-    <td valign="top">
-    
-    If you want to transfer specific HTTP headers with certain values to the back end when fetching the asset, specify them in this field.
-    
-    </td>
-    </tr>
-    </table>
-    
-    > ### Note:  
-    > **For S3 assets:** If your S3 asset is bigger than 5 GB, please open a ticket on the support component `BC-CP-IS-DSI` so we can check that the data plane is prepared for an asset transfer of this size.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Base URL
+
+</td>
+<td valign="top">
+
+Enter the base URL. Example: `http://www.example.com`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+URL Path
+
+</td>
+<td valign="top">
+
+Define the incoming path type either by selecting *Use Incoming Path* or by entering the incoming path manually.
+
+> ### Caution:  
+> Make sure to add `https` connections only. `http` is not supported for security reasons.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Query Parameters
+
+</td>
+<td valign="top">
+
+Define the incoming query either by selecting *Use Incoming Query* or by entering the incoming query manually.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Content Type
+
+</td>
+<td valign="top">
+
+Define incoming content type either by selecting *Use Incoming Content Type* or by entering the content type manually.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Authentication Type
+
+</td>
+<td valign="top">
+
+Choose the authentication type *Basic*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+User
+
+</td>
+<td valign="top">
+
+Enter a user name. Example: `username@example.com`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Password
+
+</td>
+<td valign="top">
+
+Enter a password.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+HTTP Headers
+
+</td>
+<td valign="top">
+
+If you want to transfer specific HTTP headers with certain values to the back end when fetching the asset, specify them in this section.
+
+</td>
+</tr>
+</table>
+
+    -   **S3 Storage Assets**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Option
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Source
+
+</td>
+<td valign="top">
+
+`S3 Storage`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Region Name
+
+</td>
+<td valign="top">
+
+Select the region.
+
+> ### Caution:  
+> If your bucket isn't hosted by Amazon but is instead custom managed, select *Custom*. In the additional field *Custom Endpoint*, you can then enter the custom region. Make sure not to enter the port, or else you run into errors during runtime.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Bucket Name
+
+</td>
+<td valign="top">
+
+Enter the bucket name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Access Key
+
+</td>
+<td valign="top">
+
+Enter the access key.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Access Secret
+
+</td>
+<td valign="top">
+
+Enter the access secret.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Type
+
+</td>
+<td valign="top">
+
+Select the asset type, either *Single File* or *Folder*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Path
+
+</td>
+<td valign="top">
+
+Enter the file or folder path, for example `folder/file.txt` or `folder/subfolder`.
+
+</td>
+</tr>
+</table>
+
+        > ### Note:  
+        > If your S3 asset is bigger than 5 GB, please open a ticket on the support component `BC-CP-IS-DSI` so we can check that the data plane is prepared for an asset transfer of this size.
+
 
 7.  Review your information.
 

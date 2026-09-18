@@ -224,6 +224,32 @@ Choose the behavior of batch operation. For more details, see [Batch Payload and
 <tr>
 <td valign="top">
 
+*Enable Prepared statement*
+
+</td>
+<td valign="top">
+
+Select to execute SQL using a PreparedStatement. The SQL query is compiled once at the database level and executed multiple times with different bind parameter values. Use this option for high-volume scenarios where similar queries are executed repeatedly on the same table.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Allow Inline Database Functions*
+
+\(only available if *Enable Prepared statement* is selected\)
+
+</td>
+<td valign="top">
+
+Select to allow native database functions, for example, `SYSDATE` or `NOW()`, to be used alongside bind parameters in the PreparedStatement.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Interpretation of Empty String Value*
 
 </td>

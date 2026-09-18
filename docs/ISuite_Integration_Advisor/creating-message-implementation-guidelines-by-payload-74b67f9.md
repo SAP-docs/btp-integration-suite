@@ -14,7 +14,12 @@ Use payload-based creation to automatically generate a message implementation gu
 
 -   You've logged into SAP Integration Suite.
 
--   Only EDI flat files are currently supported for payload-based MIG creation. For XML payloads, please use the standard creation wizard. See [Creating Message Implementation Guidelines](creating-message-implementation-guidelines-b894de0.md).
+-   Automatic recommendations are possible for the following files:
+    -   **EDI files**: all EDI type systems \(ASC X12, UN/EDIFACT and its subsets, Odette, TRADACOMS, VDA\)
+    -   **XML files**: only SAP IDoc and Custom IDocs
+
+        For other XML-based standards, you can still use the wizard, but it doesn't give recommendations based on the payload.
+
 
 
 
@@ -41,13 +46,13 @@ If there's no match, you choose from the full list of available options.
 
 2.  Choose *Create* \> *Create by Payload*.
 
-3.  In the first step of the wizard, browse for or upload a payload file, either an EDI payload or a ZIP file containing EDI payloads. If you select a ZIP file, you can then select the exact file before continuing.
+3.  In the first step of the wizard, browse for or upload a payload file, either an EDI payload or a ZIP file containing EDI payloads, or an XML payload or a ZIP file containing XML payloads. If you select a ZIP file, you can then select the exact file before continuing.
 
-    In the next steps, the wizard then suggests available options for type systems, message types, versions, and envelopes by how closely they match this payload file.
+    In the next steps, the wizard then suggests available options for type systems, message types, versions, and envelopes by how closely they match this payload file. For XML payloads, suggestions are only available for SAP IDocs and Custom IDocs.
 
 4.  In the next step, choose a type system from the list of matches and other available options.
 
-    By default, all standard type systems are listed. If you want to select a custom type system, select the *Custom* button.
+    By default, all standard type systems are listed. If you want to select a custom type system, select the *Custom* button. If custom IDocs are the best match, the wizard automatically selects *Custom*.
 
 5.  Next, the list of messages under the selected type system is displayed under the *Messages* step. Choose a message from the list of matches and other available options.
 

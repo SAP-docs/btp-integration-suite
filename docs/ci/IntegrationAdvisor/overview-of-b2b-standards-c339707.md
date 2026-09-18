@@ -35477,4 +35477,5 @@ Rec 5 - Abbreviations of Incoterms
 -   [Integration Advisor: Early UN/EDIFACT Versions with Syntax Version 2 Now Available](https://community.sap.com/t5/integration-blog-posts/integration-advisor-early-un-edifact-versions-with-syntax-version-2-now/ba-p/14233189)
 -   [Integration Advisor: GS1 XML Messages of the Version 2.X Series \(EAN.UCC\)](https://community.sap.com/t5/integration-blog-posts/integration-advisor-gs1-xml-messages-of-the-version-2-x-series-ean-ucc/ba-p/14295817)
 -   [Using cXML Envelopes in Integration Advisor](https://community.sap.com/t5/integration-blog-posts/using-cxml-envelopes-in-integration-advisor/ba-p/14356754)
+-   [Integration Advisor - VDA Message Standard](https://community.sap.com/t5/integration-blog-posts/integration-advisor-vda-message-standard/ba-p/14394864)
 

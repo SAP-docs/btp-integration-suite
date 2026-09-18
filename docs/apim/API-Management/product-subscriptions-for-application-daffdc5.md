@@ -7,7 +7,7 @@ A product subscription for application is a discrete representation of the actua
 Here’s a breakdown of what an application represents:
 
 -   **API access and credentials:** The developers obtain the necessary credentials—such as keys or OAuth tokens—to interact with SAP APIs. These credentials ensure secure communication and access control, safeguarding against unauthorized use.
--   **Monitoring and analytics:**: These subscriptions also offer tools for monitoring API usage and performance. Developers can access analytics regarding API calls, error rates, and other metrics that help optimize application performance and troubleshoot issues. For more information, see [View Susbcriptions, Costs, and Analyze Reports](view-susbcriptions-costs-and-analyze-reports-fca4d8c.md).
+-   **Monitoring and analytics:**: These subscriptions also offer tools for monitoring API usage and performance. Developers can access analytics regarding API calls, error rates, and other metrics that help optimize application performance and troubleshoot issues. For more information, see [View Subscriptions, Costs, and Analyze Reports](view-subscriptions-costs-and-analyze-reports-fca4d8c.md).
 
 When subscribing to a product for an application, developers have the following options:
 

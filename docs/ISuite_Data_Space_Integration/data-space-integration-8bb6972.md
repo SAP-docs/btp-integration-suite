@@ -2,13 +2,11 @@
 
 # Data Space Integration
 
-Learn how to work with Data Space Integration as a provider or consumer.
-
-Data Space Integration is a capability of SAP Integration Suite that helps you exchange data within data spaces. You can offer, consume, and maintain data space assets.
+Data Space Integration is a capability of SAP Integration Suite for offering, consuming, and managing data assets within data spaces as a provider or consumer
 
 For information about the regions in which Data Space Integration is available, see SAP Note [3518230](https://me.sap.com/notes/3518230).
 
-The following is an overview of what you can learn about Data Space Integration:
+Data Space Integration covers these areas:
 
 -   [Initial Setup](initial-setup-b2bdea7.md): Set up Data Space Integration for the first time, configure user access, and get started in the application.
 
@@ -21,7 +19,7 @@ The following is an overview of what you can learn about Data Space Integration:
 -   [Configure in Data Spaces](configure-in-data-spaces-7b65115.md): Create company policies to define rules for requesting and accepting offers made by another participant of a data space.
 
 -   [Identity and Access Management for Data Space Integration](identity-and-access-management-for-data-space-integration-211c66a.md): Learn about the roles and authorizations that you need to work with Data Space Integration.
--   [Monitoring Agreements](monitoring-agreements-a247cc4.md): Keep an overview of the active agreements that you're involved with.
+-   [Monitoring in Data Spaces](monitoring-in-data-spaces-a247cc4.md): Keep an overview of the active agreements that you're involved with.
 
 -   [Getting Support for Data Space Integration](getting-support-for-data-space-integration-166fa88.md): If you're facing issues, report an incident in our SAP Support Portal.
 

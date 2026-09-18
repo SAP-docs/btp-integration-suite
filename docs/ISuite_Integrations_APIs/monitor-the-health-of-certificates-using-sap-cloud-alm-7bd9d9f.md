@@ -36,5 +36,5 @@ You can monitor the health of centralized Developer Hub certificates by integrat
 
 [Limits in API Management](limits-in-api-management-f70f425.md "This topic describes the product configuration and the naming conventions for API Management.")
 
-[API Management FAQs](api-management-faqs-2d16070.md "Frequently asked questions for SAP API Management.")
+[Classic API Management FAQs](classic-api-management-faqs-2d16070.md "Frequently asked questions for Classic API Management.")
 

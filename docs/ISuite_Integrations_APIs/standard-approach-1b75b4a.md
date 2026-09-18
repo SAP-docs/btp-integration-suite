@@ -251,7 +251,7 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
 13. Choose *Next Step*.
 
-14. In the *Java Mapping from ESR* step, to migrate custom Java-based mapping artifacts, see [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md)
+14. In the *Java Mapping from ESR* step, to migrate custom Java-based mapping artifacts, see [Integration Content Migration Agent](integration-content-migration-agent-28a8698.md)
 
 15. In the *Scenario* step, provide a *Name* and *ID* for the integration flow that is about to be created in SAP Integration Suite.
 
@@ -281,7 +281,7 @@ Handle the dependent message mapping objects and its resources in an efficient w
 
     In the *Channels and Resources* section, you see the mappings for the sender and receiver channels. For the sender and receiver adapter types used in the source object, you see the equivalent adapter types that the migration tooling creates in the integration flow.
 
-    In the *Artifact Details* section, you see a list of created scenario-specific integration flows. You also see a list of java lookup integration flows if you've used [AI-based Integration Content Migration](ai-based-integration-content-migration-28a8698.md) feature to convert java mapping to groovy scripts.
+    In the *Artifact Details* section, you see a list of created scenario-specific integration flows. You also see a list of java lookup integration flows if you've used [Integration Content Migration Agent](integration-content-migration-agent-28a8698.md) feature to convert java mapping to groovy scripts.
 
     In the *Next Steps* section, you see information about the manual steps that are required to ensure that the integration flow can be deployed.
 

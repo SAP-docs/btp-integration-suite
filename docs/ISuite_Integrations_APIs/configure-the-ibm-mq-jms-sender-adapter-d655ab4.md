@@ -18,6 +18,7 @@ The adapter supports the following variants:
 
 -   JMS Poll
 -   JMS Subscribe
+-   JMS Subscribe In Order
 
 
 
@@ -919,6 +920,415 @@ Specify the name of the Another Queue to which the message should be moved if JM
 Specify the value for the properties to be selected.
 
 Example: `Order=Completed`
+
+</td>
+</tr>
+</table>
+
+
+
+### JMS Subscribe In Order
+
+**Connection**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Hostname*
+
+</td>
+<td valign="top">
+
+Specify the hostname to connect to IBM MQ.
+
+Example: `mqd-b57b.qm.eu-de.mq.appdomain.cloud`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Port*
+
+</td>
+<td valign="top">
+
+Specify the port number to connect to IBM MQ.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Authentication*
+
+</td>
+<td valign="top">
+
+Select the type of authentication for connecting to IBM MQ:
+
+-   *Basic*: Provides authentication using User Credentials.
+-   *Client Certificate*: The server authenticates the client by receiving the client's certificate during the SSL handshake and verifying the certificate is valid.
+-   *None*: Direct connection can be made without User Credentials.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Private Key Alias*
+
+\(only available when *Client Certificate* is selected\)
+
+</td>
+<td valign="top">
+
+Specify the alias that stores the private key to communicate with IBM MQ servers.
+
+Example: `IBM_MQ_KeyAlias`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Credential Name*
+
+</td>
+<td valign="top">
+
+Specify the User Credential artifact that stores the username-password pair.
+
+Example: `IBM_MQ_54`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Proxy Type*
+
+</td>
+<td valign="top">
+
+Select the proxy type:
+
+-   *Internet*
+-   *On-Premise*
+
+    > ### Note:  
+    > -   *Basic* authentication is only supported when *Proxy Type* is set to *Internet* \(includes Edge integration Cell\).
+    > -   When using the Cloud Connector setup, only *Client Certificate* authentication is supported.
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Location ID* 
+
+</td>
+<td valign="top">
+
+Specify the location ID from the Cloud Connector.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SSL Cipher Suite*
+
+</td>
+<td valign="top">
+
+Specify the Cipher Suite value.
+
+Example: `*TLS12HIGHER`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Queue Manager Name*
+
+</td>
+<td valign="top">
+
+Specify the name of the queue manager to connect for messaging.
+
+Example: `QMGR`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Channel Name*
+
+</td>
+<td valign="top">
+
+Specify the Channel Name in IBM MQ.
+
+Example: `CLOUD.APP.SVRCONN`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Application Name*
+
+</td>
+<td valign="top">
+
+Specify the Application Name for the connection.
+
+Example: `MainApp`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Transport/Network Protocol*
+
+</td>
+<td valign="top">
+
+Select the type of protocol for connecting to IBM MQ:
+
+-   *TCP/IP*
+-   *WebSphereMQ*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Character Set ID \(CCSID\) for Non-ASCII Names*
+
+</td>
+<td valign="top">
+
+Specify the Character Set ID for Non-ASCII Names for the JMS connection.
+
+Example: `819`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Check Connection Interval \(in ms\)*
+
+</td>
+<td valign="top">
+
+Specify the interval in milliseconds to verify the connection validity to IBM MQ.
+
+> ### Note:  
+> The value must be a positive number, with a minimum of 300000 ms.
+
+
+
+</td>
+</tr>
+</table>
+
+**Processing**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+*Message Destination Type*
+
+</td>
+<td valign="top">
+
+Select the Message Destination Type for which operation needs to be performed:
+
+-   *Queue*
+-   *Topic*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Queue Name*
+
+\(only available when *Message Destination Type* is set to *Queue*\)
+
+</td>
+<td valign="top">
+
+Specify the name of the queue from where the message is read.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Topic Name/String*
+
+\(only available when *Message Destination Type* is set to *Topic*\)
+
+</td>
+<td valign="top">
+
+Specify the name or string of the Topic from which the message will be read.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Client ID*
+
+\(only available when *Message Destination Type* is set to *Topic*\)
+
+</td>
+<td valign="top">
+
+Specify the Client ID for connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Subscription ID*
+
+\(only available when *Message Destination Type* is set to *Topic*\)
+
+</td>
+<td valign="top">
+
+Specify the Subscription ID for connection.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Target Client*
+
+</td>
+<td valign="top">
+
+Select the target client type for messages sent to IBM MQ:
+
+-   *JMS-Compliant*: JMS message properties and headers are accessible.
+-   *WebSphereMQ \(Non-JMS\)*: JMS message properties and headers are excluded.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Failed Transaction Handling*
+
+</td>
+<td valign="top">
+
+Select the operation when transaction fails:
+
+-   *Keep Message and Process Again*
+-   *Move Message to Another Queue*
+
+> ### Note:  
+> JMS sessions are transactional by default.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Max Delivery Count*
+
+\(only available when *Failed Transaction Handling* is set to *Move Message to Another Queue*.\)
+
+</td>
+<td valign="top">
+
+Specify the count for maximum attempts for JMS Message delivery.
+
+> ### Note:  
+> This value refers to JMS header JMSXDeliveryCount. Message excess of this value is moved to the Another Queue.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Queue Name*
+
+\(only available when *Failed Transaction Handling* is set to *Move Message to Another Queue*.\)
+
+</td>
+<td valign="top">
+
+Specify the name of the Another Queue to which the message should be moved if JMS message delivery backout threshold is reached on transaction failure.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Message Selector*
+
+</td>
+<td valign="top">
+
+Specify the value for the properties to be selected.
+
+Example: `Order=Executed`
 
 </td>
 </tr>

@@ -95,6 +95,224 @@ Integration Advisor
 </td>
 <td valign="top">
 
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Create MIGS by Payload Supports IDocs and Custom IDocs
+
+</td>
+<td valign="top">
+
+The recently introduced wizard that uses payloads to create message implementation guidelines now also supports SAP IDocs and custom IDocs.
+
+See [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/integration-suite/isuite-integration-advisor/creating-message-implementation-guidelines-by-payload).
+
+As Cloud Integration \(standalone\) customer, see [Creating Message Implementation Guidelines by Payload](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/creating-message-implementation-guidelines-by-payload).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Integration Advisor: 2.17.\*
+-   Increment: 2608
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integration Advisor
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
 Create MIGs by Payload
 
 </td>

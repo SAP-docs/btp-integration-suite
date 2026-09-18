@@ -195,7 +195,7 @@ Enabled
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="4">
+<td valign="top" rowspan="5">
 
 Processing
 
@@ -213,6 +213,25 @@ Specifies how the adapter determines the OData operation during runtime. The ope
 <td valign="top">
 
 Dynamic
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Timeout \(in ms\)
+
+</td>
+<td valign="top">
+
+Specifies the time \(in milliseconds\) that the client waits for a response before the connection is interrupted.
+
+The default value is 60000 milliseconds \(1 minute\).
+
+</td>
+<td valign="top">
+
+60000
 
 </td>
 </tr>
@@ -460,7 +479,7 @@ System-generated
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="4">
+<td valign="top" rowspan="5">
 
 Processing
 
@@ -478,6 +497,25 @@ Specifies how the adapter determines the OData operation during runtime. The ope
 <td valign="top">
 
 Dynamic
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Timeout \(in ms\)
+
+</td>
+<td valign="top">
+
+Specifies the time \(in milliseconds\) that the client waits for a response before the connection is interrupted.
+
+The default value is 60000 milliseconds \(1 minute\).
+
+</td>
+<td valign="top">
+
+60000
 
 </td>
 </tr>

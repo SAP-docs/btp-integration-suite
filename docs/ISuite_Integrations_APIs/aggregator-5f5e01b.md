@@ -282,5 +282,5 @@ The subsequent Filter step removes the multimapping from the message. It uses th
 **Related Information**  
 
 
-[Define Aggregator](define-aggregator-aa23816.md "")
+[Define Aggregator](define-aggregator-aa23816.md "Use the Aggregator pattern to collect and store individual messages until a complete set of related messages has been received")
 

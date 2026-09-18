@@ -151,7 +151,7 @@ To sort and filter the content of the table, choose *Table Settings* \(:gear:\).
 </td>
 <td valign="top">
 
-To create/deploy a new artifact, choose *Create* and select the artifact type \(possible for the following artifact types: *User Credentials*, *OAuth2 Client Credentials*, *OAuth2 SAML Bearer Assertion*, *OAuth2 Authorization Code* and *Secure Parameter*\).
+To create/deploy a new artifact, choose *Create* and select the artifact type \(possible for the following artifact types: *User Credentials*, *OAuth2 Client Credentials*, *OAuth2 Password Credentials*, *OAuth2 SAML Bearer Assertion*, *OAuth2 Authorization Code* and *Secure Parameter*\).
 
 </td>
 </tr>

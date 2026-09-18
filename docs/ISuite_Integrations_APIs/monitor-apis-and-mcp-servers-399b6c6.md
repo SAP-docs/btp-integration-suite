@@ -4,9 +4,9 @@
 
 # Monitor APIs and MCP Servers
 
-Check the runtime logs and the status of an API artifact.
+Check the runtime logs and the status of API artifacts and MCP servers.
 
-To monitor an API artifact, log on to SAP Integration Suite, go to *Monitor* \> *Integrations and APIs*, and select the runtime from the *Runtime* drop-down menu under *Overview*.
+To monitor an API artifact and MCP servers, log on to SAP Integration Suite, go to *Monitor* \> *Integrations and APIs*, and select the runtime from the *Runtime* drop-down menu under *Overview*.
 
 **Tiles in the Integrations and APIs Monitoring Page**
 
@@ -30,7 +30,7 @@ Runtime
 </th>
 <th valign="top">
 
-Allows you to ...
+Description
 
 </th>
 </tr>
@@ -55,7 +55,7 @@ Monitor Status Overview
 </td>
 <td valign="top">
 
-Monitor the status overview of your messages according to your custom filters. See, [Monitor Message Status Overview](monitor-message-status-overview-0cde046.md)
+Monitors the status overview of your messages according to your custom filters. See, [Monitor Message Status Overview](monitor-message-status-overview-0cde046.md)
 
 .
 
@@ -82,7 +82,7 @@ Monitor Message Processing
 </td>
 <td valign="top">
 
-Monitor message processing on the tenant.
+Monitors message processing on the tenant.
 
 Tiles in this section show the number and status of processed messages within a specified time window. See, [Monitor Message Processing](monitor-message-processing-314df3f.md).
 
@@ -109,7 +109,7 @@ Manage Integration Content
 </td>
 <td valign="top">
 
-Manage integration content for the tenant.
+Manages integration content for the tenant.
 
 Tiles in this section show the number and status of integration content artifacts \(such as integration flows\). See, [Manage Integration Content](manage-integration-content-09a7223.md).
 
@@ -136,7 +136,7 @@ Security Material
 </td>
 <td valign="top">
 
-The Security Material tile provides access to and allows you to deploy security-related artifacts such as user credentials artifacts. See, [Manage Security for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-security-for-edge-integration-cell?version=CLOUD).
+Provides access to and allows you to deploy security-related artifacts such as user credentials artifacts. See, [Manage Security for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-security-for-edge-integration-cell?version=CLOUD).
 
 </td>
 </tr>
@@ -156,7 +156,7 @@ Keystore
 </td>
 <td valign="top">
 
-The Keystore tile provides access to the content of the tenant keystore and allows you to manage its content and also the lifecycle of keys and certificates. See,[Manage Keystore for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-keystore-for-edge-integration-cell?version=CLOUD).
+Provides access to the content of the tenant keystore and allows you to manage its content and also the lifecycle of keys and certificates. See,[Manage Keystore for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-keystore-for-edge-integration-cell?version=CLOUD).
 
 </td>
 </tr>
@@ -175,7 +175,7 @@ PGP Keys
 </td>
 <td valign="top">
 
-The PGP Keys tile allows you to check the information of the PGP keys. See,[Manage PGP Keyrings for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-pgp-keyrings-for-edge-integration-cell?version=CLOUD).
+Allows you to check the information of the PGP keys. See,[Manage PGP Keyrings for Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/manage-pgp-keyrings-for-edge-integration-cell?version=CLOUD).
 
 </td>
 </tr>
@@ -194,7 +194,7 @@ Access Policies
 </td>
 <td valign="top">
 
-The Access Policies tile provides an overview of the existing access policies and allows you to maintain them. See, [Access Management for API Artifact](access-management-for-api-artifact-2a89115.md).
+Provides an overview of the existing access policies and allows you to maintain them. See, [Access Management for API Artifact](access-management-for-api-artifact-2a89115.md).
 
 </td>
 </tr>
@@ -213,7 +213,7 @@ JDBC Material
 </td>
 <td valign="top">
 
-The JDBC Material tile provides an overview of the used JDBC data sources \(artifact connections interacting with a database\) as well as of the JDBC drivers. See, [Managing JDBC Material](managing-jdbc-material-32ee7cd.md).
+Provides an overview of the used JDBC data sources \(artifact connections interacting with a database\) as well as of the JDBC drivers. See, [Managing JDBC Material](managing-jdbc-material-32ee7cd.md).
 
 </td>
 </tr>
@@ -233,7 +233,7 @@ User Roles
 </td>
 <td valign="top">
 
-The User Roles tile provides an overview of the existing user roles and allows you to maintain them. See,[Managing User Roles](managing-user-roles-4e86f0d.md).
+Provides an overview of the existing user roles and allows you to maintain them. See,[Managing User Roles](managing-user-roles-4e86f0d.md).
 
 </td>
 </tr>
@@ -252,7 +252,7 @@ Connectivity Tests
 </td>
 <td valign="top">
 
-The Connectivity Tests tile allows you to test the connectivity to a receiver system. See, [Performing Connectivity Tests](performing-connectivity-tests-d5b2fae.md).
+Allows you to test the connectivity to a receiver system. See, [Performing Connectivity Tests](performing-connectivity-tests-d5b2fae.md).
 
 </td>
 </tr>
@@ -276,7 +276,7 @@ Data Stores
 </td>
 <td valign="top">
 
-The Data Stores tile provides an overview of storages on the tenant, which are temporarily used to persist data of different kind during message processing \(when using the Data Store Operations step type\). See, [Managing Data Stores](managing-data-stores-ac39f1d.md)
+Provides an overview of storages on the tenant, which are temporarily used to persist data of different kind during message processing \(when using the Data Store Operations step type\). See, [Managing Data Stores](managing-data-stores-ac39f1d.md)
 
 </td>
 </tr>
@@ -295,7 +295,7 @@ Variables
 </td>
 <td valign="top">
 
-The Variables tile allows you to monitor variables used in integration flows. See, [Managing Variables](managing-variables-ca93653.md).
+Allows you to monitor variables used in integration flows. See, [Managing Variables](managing-variables-ca93653.md).
 
 </td>
 </tr>
@@ -319,7 +319,7 @@ Message Locks
 </td>
 <td valign="top">
 
-The Message Lock tile provides an overview of the lock entries that are created \(in the in-progress repository\) to avoid the same message being processed several times in parallel, and allows you to manage them. See, [Message Locks](message-locks-bce9ae0.md).
+Provides an overview of the lock entries that are created \(in the in-progress repository\) to avoid the same message being processed several times in parallel, and allows you to manage them. See, [Message Locks](message-locks-bce9ae0.md).
 
 </td>
 </tr>
@@ -339,7 +339,7 @@ Design time Artifact Locks
 </td>
 <td valign="top">
 
-The Design time Artifact Locks tile provides an overview of the locked design time artifacts and allows you to manage them. See, [Designtime Artifact Locks](designtime-artifact-locks-5b3ecb8.md).
+Provides an overview of the locked design time artifacts and allows you to manage them. See, [Designtime Artifact Locks](designtime-artifact-locks-5b3ecb8.md).
 
 </td>
 </tr>
@@ -363,7 +363,7 @@ Manage Access Logs
 </td>
 <td valign="top">
 
-The Access Logs section allows you to monitor and to analyze errors that occurred during inbound HTTP processing \(and documented in system log files\). See, [Access Logs](access-logs-c1649cd.md).
+Allows you to monitor and to analyze errors that occurred during inbound HTTP processing \(and documented in system log files\). See, [Access Logs](access-logs-c1649cd.md).
 
 </td>
 </tr>
@@ -393,16 +393,16 @@ Defines the public-facing host name and base path through which your API and MCP
 </tr>
 </table>
 
-In the *Manage Integration Content* area, a set of tiles is displayed that show the number of deployed APIs.
+In the *Manage Integration Content* area, a set of tiles is displayed that show the number of deployed artifacts.
 
 When you click on a tile, a list of deployed artifacts is displayed, filtered according to the settings defined for the tile. On the left side of the screen, the list of artifacts is shown in a table with the following attributes for each artifact:
 
 -   *Name*: Below the name, the artifact type \(for example, API\) is shown.
 
--   *Status*: Indicates the status of the deployed API. For more information on the available statuses, see [Runtime Status](runtime-status-c14a7b1.md).
+-   *Status*: Indicates the status of the deployed artifact. For more information on the available statuses, see [Runtime Status](runtime-status-c14a7b1.md).
 
 
-To customize the list of displayed API artifacts, you can either search for specific API name or ID **or** you can filter the content of the table by attributes such as Status or Type.
+To customize the list of displayed artifacts, you can either search for specific API/MCP server name or ID **or** you can filter the content of the table by attributes such as *Status* or *Type*.
 
 To sort and filter the content of the table, choose *Table Settings* \(:gear:\). On the subsequent screen, you can define how the table entries are to be sorted \(by specifying an attribute and whether the entries are to be sorted for that attribute in ascending or descending order\). You can also filter the table entries for certain attributes.
 
@@ -440,7 +440,7 @@ Description
 </td>
 <td valign="top">
 
-Time when the API was deployed
+Time when the artifact was deployed
 
 </td>
 </tr>
@@ -452,7 +452,7 @@ Time when the API was deployed
 </td>
 <td valign="top">
 
-User who deployed the API
+User who deployed the artifact
 
 </td>
 </tr>
@@ -464,7 +464,7 @@ User who deployed the API
 </td>
 <td valign="top">
 
-Version of the API
+Version of the artifact
 
 </td>
 </tr>
@@ -476,7 +476,7 @@ Version of the API
 </td>
 <td valign="top">
 
-API artifact ID
+Artifact ID
 
 </td>
 </tr>
@@ -498,27 +498,29 @@ The header area also provides certain functions:
 
 -   *Restart*
 
-    Allows you to restart an artifact \(for example, an integration flow that has been stopped on the node\).
+    Allows you to restart an artifact, for example, an API artifact, that is no longer running on the Integration Cell runtime.
 
 -   *Undeploy*
 
-    Allows you to undeploy an API.
+    Allows you to undeploy an artifact.
 
 -   *Download*
 
-    Allows you to download the API to your computer.
+    Allows you to download the artifact to your computer.
 
     > ### Note:  
-    > Importing an API using the ZIP file downloaded from *Monitor* \> *Integrations and APIs* \> *Integration Content Details* is not supported. These ZIP files may contain runtime-specific or system-generated artifacts that are not intended for design-time import.
+    > Importing an API or MCP server artifact using the ZIP file downloaded from *Monitor* \> *Integrations and APIs* \> *Integration Content Details* is not supported. These ZIP files may contain runtime-specific or system-generated artifacts that are not intended for design-time import.
     > 
-    > Always export APIs directly from *Design* by opening the content package, selecting the API artifact, and choosing *Export*. Avoid using the *Download* option under *Integration Content Details* for this purpose.
+    > To export an API, go to ***Design***, open the content package, select the API artifact, and choose ***Export***. Do not use the ***Download*** option under *Integration Content Details* for this purpose.
+    > 
+    > Exporting an individual MCP server artifact is not supported. However, you can export the **complete content package** containing both the API and MCP server artifacts.
 
 
 Below the header, the following sections contain detailed information about the selected artifact:
 
--   *Endpoints*: Shows the URLs of the services exposed by the API for a sending application. You can copy the URL by choosing the Copy button ![](images/CI_Copy_Icon_93e3262.png).
+-   *Endpoints*: Shows the URLs of the services exposed by the artifact for a sending application. You can copy the URL by choosing the Copy button ![](images/CI_Copy_Icon_93e3262.png).
 
--   *Status Details*: Indicates whether the API is currently deployed or undeployed.
+-   *Status Details*: Indicates whether the artifact is currently deployed or undeployed.
 
 -   *Artifact Details*: The type of the selected artifact determines which kind of information is displayed.
 
@@ -558,7 +560,7 @@ Below the header, the following sections contain detailed information about the 
     </tr>
     </table>
     
--   *Log Configuration*: In the Log Configuration section of the selected API, specify the desired log level to determine the level of detail in the message processing log.
+-   *Log Configuration*: In the Log Configuration section of the selected artifact, specify the desired log level to determine the level of detail in the message processing log.
 
     **Log Configuration**
 
@@ -645,7 +647,13 @@ Below the header, the following sections contain detailed information about the 
     </td>
     <td valign="top">
     
-    The log level trace is currently not supported for API artifact on Edge Integration Cell.
+    The message processing log records detailed information for all steps during message processing and additionally tracks the message content. The trace function expires after a certain period of time \(default value: 10 minutes\). After expiry, the log level switches back to the log level set before. The recorded message content is also only retained for a certain time \(default value: 1 hour\).
+
+    Specifics for log level **Trace**:
+
+    -   If the downloaded trace data, such as header value size and exchange properties exceed 10000 characters, they're truncated.
+
+
     
     </td>
     </tr>

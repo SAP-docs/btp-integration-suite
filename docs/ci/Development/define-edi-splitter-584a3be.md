@@ -132,11 +132,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
     -   *UTF-8*
 
     -   *ISO-8859-1*
+    -   *Dynamic*
 
-    You can also set this field using the header `SAP_EDISPLITTER_EDIFACT_SOURCE_ENCODING`. The values for the headers can be one of the following:
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_EDISPLITTER_EDIFACT_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
 
-    -   `UTF-8`
-    -   `ISO-8859-1`
 
 
     
@@ -536,11 +535,10 @@ You use the EDI splitter to split inbound bulk EDI messages, and configure the s
 
     -   *ISO-8859-1*
 
+    -   *Dynamic*
 
-    You can also set this field using the header `SAP_EDISPLITTER_X12_SOURCE_ENCODING`. The values for the headers can be one of the following:
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_EDISPLITTER_X12_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
 
-    -   `UTF-8`
-    -   `ISO-8859-1`
 
 
     

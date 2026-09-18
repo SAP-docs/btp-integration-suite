@@ -10,6 +10,8 @@ The *Variables* view allows you to monitor variables used in integration flows. 
 
 Since certain adapters allow you to store messages in queues, you can view the messages by choosing *Message Queues*. For more information, see [Managing Message Queues](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/cdcce24f484a41c08ab46d12ab666451.html "You can monitor queues that are active for a tenant.") :arrow_upper_right:.
 
+The *Number Ranges* view allows you to manage unique sequence numbers used for message processing, such as EDI interchanges. For more information, see [Managing Number Ranges](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/managing-number-ranges?version=CLOUD).
+
 > ### Note:  
 > You can always switch the runtime in all stores displayed.
 

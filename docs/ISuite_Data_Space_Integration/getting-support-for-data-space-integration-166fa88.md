@@ -56,5 +56,5 @@ When you submit the incident, we recommend including the following information:
 **Related Information**  
 
 
-[Data Space Integration](data-space-integration-8bb6972.md "Learn how to work with Data Space Integration as a provider or consumer.")
+[Data Space Integration](data-space-integration-8bb6972.md "Data Space Integration is a capability of SAP Integration Suite for offering, consuming, and managing data assets within data spaces as a provider or consumer")
 

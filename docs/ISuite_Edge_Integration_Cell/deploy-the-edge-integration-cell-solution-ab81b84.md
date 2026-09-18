@@ -73,6 +73,9 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > ### Note:  
     > You can't change this property after the initial deployment.
 
+    > ### Caution:  
+    > You need to enable a shared file system in order to use *Diagnostics* on your Edge Integration Cell. See: [Diagnostics](diagnostics-80f3050.md).
+
 
     
     </td>
@@ -308,6 +311,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     > You can't change this property after the initial deployment.
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Enable Worker based on Java 17**
+    
+    </td>
+    <td valign="top">
+    
+    Select this checkbox to use Workers based on Java 17 as fallback.
     
     </td>
     </tr>
@@ -946,26 +961,18 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <tr>
     <td valign="top">
     
-    Client IP Preservation
+    Ingress Service Type
     
     </td>
     <td valign="top">
     
-    Select this option if a client’s source IP is to be preserved. This option requires to have a network load balancer capable of forwarding the source IP. On cloud platforms, a network load balancer is used for this option.
+    Type of the Istio ingress gateway service:
 
-    This option is a prerequisite for using client IP filtering policies. For more information, see [https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/\#network](https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/#network).
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Load Balancer Provider
-    
-    </td>
-    <td valign="top">
-    
-    Select the Load Balancer Provider. Based on the provider, you can enable an internal Load Balancer.
+    -   LoadBalancer
+    -   NodePort
+    -   ClusterIP
+
+
     
     </td>
     </tr>
@@ -1002,6 +1009,32 @@ Get to know the steps needed to create the Edge Node as a *Runtime Location* in 
     <td valign="top">
     
     Additional TLS ports to be opened on the Istio ingress gateway.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Client IP Preservation
+    
+    </td>
+    <td valign="top">
+    
+    Select this option if a client’s source IP is to be preserved. This option requires to have a network load balancer capable of forwarding the source IP. On cloud platforms, a network load balancer is used for this option.
+
+    This option is a prerequisite for using client IP filtering policies. For more information, see [https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/\#network](https://istio.io/latest/docs/tasks/security/authorization/authz-ingress/#network).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Load Balancer Provider
+    
+    </td>
+    <td valign="top">
+    
+    Select the Load Balancer Provider. Based on the provider, you can enable an internal Load Balancer.
     
     </td>
     </tr>

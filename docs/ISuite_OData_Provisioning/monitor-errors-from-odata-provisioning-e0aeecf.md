@@ -37,5 +37,5 @@ You can view the errors logged for the technical and registered OData services c
 
 [Manage Metadata Validation and Cache Settings for OData Services](manage-metadata-validation-and-cache-settings-for-odata-services-dd4df7a.md "Enable or disable metadata validation for a registered OData service. You can also allow caching of metadata, which significantly improves performance of the OData service calls. Additionally, you can view the list of services which has cached metadata. You can clear the metadata cache of the selected service or all the services.")
 
-[Troubleshooting for OData Provisioning](troubleshooting-for-odata-provisioning-cdcbaa2.md "Access information about troubleshooting for OData Provisioning.")
+[Getting Support for OData Provisioning](getting-support-for-odata-provisioning-cdcbaa2.md "Access information about troubleshooting for OData Provisioning.")
 

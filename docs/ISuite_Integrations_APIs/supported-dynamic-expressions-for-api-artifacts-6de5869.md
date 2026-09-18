@@ -92,9 +92,8 @@ Header Expressions
     -   contains
     -   startsWith
     -   endsWith
-    -   equals
     -   equalsIgnoreCase
-    -   getClientID\(\)
+    -   length\(\)
 
 
 For a detailed list of supported functions, refer to [Supported Functions](supported-dynamic-expressions-for-api-artifacts-6de5869.md#loio6de5869b77b0468db601494e75862e04__section_x2k_5r4_bjc) section below.
@@ -161,9 +160,8 @@ Property Expressions
     -   contains
     -   startsWith
     -   endsWith
-    -   equals
     -   equalsIgnoreCase
-    -   getClientID\(\)
+    -   length\(\)
 
 
 For a detailed list of supported functions, refer to [Supported Functions](supported-dynamic-expressions-for-api-artifacts-6de5869.md#loio6de5869b77b0468db601494e75862e04__section_x2k_5r4_bjc) section below.
@@ -393,8 +391,8 @@ substring
 -   Minimum number of arguments allowed: 1 argument
 -   Maximum number of arguments allowed: 2 arguments
 -   Argument type:
-    1.  First argument: integer or another valid Camel expression.
-    2.  Second argument: integer or another valid Camel expression.
+    1.  First argument: integer
+    2.  Second argument: integer
 
 
 
@@ -409,11 +407,11 @@ replace
 </td>
 <td valign="top">
 
--   Minimum number of aruguments allowed: 2 arguments
--   Maximum number of arugements allowed: 2 arguments
+-   Minimum number of arguments allowed: 2 arguments
+-   Maximum number of arguments allowed: 2 arguments
 -   Argument type:
-    1.  First argument: string or another valid Camel expression.
-    2.  Second argument: string or another valid Camel expression.
+    1.  First argument: string
+    2.  Second argument: string
 
 
 
@@ -431,7 +429,7 @@ contains
 -   Minimum number of arguments allowed: 1 argument
 -   Maximum number of arguments allowed: 1 argument
 -   Argument type:
-    -   First argument: string or another valid Camel expression.
+    -   First argument: string
 
 
 
@@ -446,10 +444,10 @@ startsWith
 </td>
 <td valign="top">
 
--   Minimum number of arugements allowed: 1 argument
+-   Minimum number of arguments allowed: 1 argument
 -   Maximum number of arguments allowed: 1 argument
 -   Argument type:
-    -   First argument: string or another valid Camel expression.
+    -   First argument: string
 
 
 
@@ -467,7 +465,7 @@ endsWith
 -   Minimum number of arguments allowed: 1 argument
 -   Maximum number of arguments allowed: 1 argument
 -   Argument type:
-    -   First argument: string or another valid Camel expression.
+    -   First argument: string
 
 
 
@@ -485,7 +483,7 @@ equalsIgnoreCase
 -   Minimum number of arguments allowed: 1 argument
 -   Maximum number of arguments allowed: 1 argument
 -   Argument type:
-    -   First argument: string or another valid Camel expression.
+    -   First argument: string
 
 
 
@@ -495,7 +493,7 @@ equalsIgnoreCase
 <tr>
 <td valign="top">
 
-getClientID\(\)
+length\(\)
 
 </td>
 <td valign="top">

@@ -501,7 +501,10 @@ MonitoringDataRead
 </td>
 <td valign="top">
 
-Read number ranges
+-   Read number ranges
+-   Activate and deactivate agreements
+
+
 
 </td>
 </tr>

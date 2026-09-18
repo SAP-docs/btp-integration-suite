@@ -12,7 +12,9 @@ Run diagnostic tasks and collect the necessary information for troubleshooting y
 
 ## Prerequisites
 
-A file system is required in order to use *Diagnostics*. This is because the information collected by the diagnostic tasks is stored in the file system. If you didn't enable the file system during the installation of your Edge Integration Cell you need to reinstall it and choose the *Enable Shared File System*option. For more information, see [Deploy the Edge Integration Cell Solution](deploy-the-edge-integration-cell-solution-ab81b84.md).
+A file system is required in order to use *Diagnostics*. This is because the information collected by the diagnostic tasks is stored in the file system.
+
+If you didn't enable the file system during the installation of your Edge Integration Cell you need to reinstall it and choose the *Enable Shared File System*option. For more information, see [Deploy the Edge Integration Cell Solution](deploy-the-edge-integration-cell-solution-ab81b84.md).
 
 
 

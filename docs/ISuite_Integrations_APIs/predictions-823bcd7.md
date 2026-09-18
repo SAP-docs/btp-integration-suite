@@ -40,5 +40,5 @@ These insights can help to optimize resource allocation, manage system load, and
 
 [Viewing Predictions and Trends](viewing-predictions-and-trends-47f349c.md "Analyze potential API call traffic and identify trends.")
 
- <?sap-ot O2O class="- topic/link " href="1d6756e093da4bd0882eb6e34ff8cb0e.xml" text="" desc="" xtrc="link:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/823bcd7727944ba9b09b659988d394f2.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Disabling Anomaly Detection](disabling-anomaly-detection-1d6756e.md "Deactivate the Anomaly Detection feature and understand its impact on associated data.")
 

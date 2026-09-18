@@ -4,7 +4,7 @@
 
 # Configuring Service Interface
 
-A service interface can be defined by using [Message Types](working-with-data-types-message-types-cf1d397.md). This two-layer structure uses Web Service Description Language \(WSDL\) and is oriented towards maximum reusability. To handle application-specific errors, you have the option of using fault-message types.
+A service interface can be defined by using [Message Types](working-with-data-types-cf1d397.md). This two-layer structure uses Web Service Description Language \(WSDL\) and is oriented towards maximum reusability. To handle application-specific errors, you have the option of using fault-message types.
 
 Cloud Integration allows you to view and edit your service interfaces.
 
@@ -438,7 +438,7 @@ Follow these steps to add and configure an operation:
     </td>
     <td valign="top">
     
-    Displays whether the referenced artifact is a [message type](working-with-data-types-message-types-cf1d397.md), fault message type, WSDL, or XSD.
+    Displays whether the referenced artifact is a [message type](working-with-data-types-cf1d397.md), fault message type, WSDL, or XSD.
 
     Fault Message Type: This is a special message type that is used in service interface. These are designed for application-specific errors that occur at the provider \(inbound side\) and are reported back to the sender or persisted in monitoring.
     

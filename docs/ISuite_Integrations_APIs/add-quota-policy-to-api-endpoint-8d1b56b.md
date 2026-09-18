@@ -12,9 +12,28 @@ Adding quota policy to an API artifact for traffic management.
 
 ## Prerequisites
 
--   Enable Cloud Integration and API Management capabilities.
+The *PI\_Integration\_Developer* role collection should be assigned to you.
 
--   Provision Edge Integration Cell runtime.
+Create a content package. See, [Creating an Integration Package](https://help.sap.com/docs/integration-suite/sap-integration-suite/creating-integration-package?version=CLOUD).
+
+-   To deploy API artifacts to an*Integration Cell* runtime, complete the following prerequisites:
+
+    -   Activate API Management capability. See, [Activate and Configure the API Management Capability](activate-and-configure-the-api-management-capability-f6eb433.md).
+
+    -   Activate Integration Cell runtime. [Activate Integration Cell](activate-integration-cell-1a627da.md).
+
+    -   *PI\_Integration\_Developer* role collection should be assigned to you.
+
+
+
+-   To deploy API artifacts to an *Edge Integration Cell* runtime, complete the following prerequisites:
+
+    -   Activate API Management capability. See, [Activate and Configure the API Management Capability](activate-and-configure-the-api-management-capability-f6eb433.md).
+
+    -   Activate Cloud Integration capability. See, [Activating and Managing Capabilities](https://help.sap.com/docs/integration-suite/sap-integration-suite/activating-and-managing-capabilities?version=CLOUD).
+
+    -   Activate Edge Integration Cell runtime. See, [Activate Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/activate-edge-integration-cell?version=CLOUD&q=Activate+Edge+Inte)
+
 
 
 
@@ -35,22 +54,11 @@ Define the number of request messages an application can submit to an API endpoi
 
 3.  Select the *<integration package\>* where you want to add an API artifact and choose *Edit*.
 
-4.  On the*<integration package\>* details page, choose *Artifacts* and under the *Add* option, select *API*.
+4.  On the*<integration package\>* details page, choose *Artifacts*.
 
-5.  The *Create API* dialog opens.
-
-    Create an API artifact using one of the following methods:
-
-    -   [Create an API Artifact Using a Target URL or an OpenAPI Specification](create-an-api-artifact-using-a-target-url-or-an-openapi-specification-914f57e.md) 
-
-    -    <?sap-ot O2O class="- topic/xref " href="fb99a7d787334598a44d5b12db210511.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/8d1b56b225f444e7ae98c0e13a6339b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
-    -    <?sap-ot O2O class="- topic/xref " href="39c2b30f5bbc45ca9b3396a188650b7d.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/8d1b56b225f444e7ae98c0e13a6339b6.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
-
+5.  Select the required API artifact and choose *Edit*.
 
 6.  To add a policy to the API artifact, navigate to the *Policies* tab on the details screen.
-
-    image
 
     Use *Policy Model* to add a policy to the API artifact.
 
@@ -71,15 +79,9 @@ Define the number of request messages an application can submit to an API endpoi
 
 7.  Double-click on the *Authentication* policy to edit its properties. By default, only *Client Certificate* and *OAuth* are selected. Let us select the *Basic* option as well.
 
-    image
-
 8.  Now add the quota policy. To add the policy, click on the request flow and choose :heavy_plus_sign: .
 
-    image
-
 9.  Select *Quota* under *Traffic Management* from the *Add Flow Step* dialog.
-
-    image
 
     Alternatively, select the <span class="BusinessSuiteInAppSymbols-V2"></span> Traffic Management policies icon from the palette and choose *Quota*
 
@@ -230,7 +232,7 @@ Define the number of request messages an application can submit to an API endpoi
     <tr>
     <td valign="top">
     
-    $\{request.header.<headerName\>
+    $\{request.header.<headerName\>\}
 
     `${header.<headerName>}`
     

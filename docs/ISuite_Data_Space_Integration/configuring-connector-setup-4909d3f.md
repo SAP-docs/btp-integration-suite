@@ -51,7 +51,7 @@ Onboard with Catena-X and get started in Data Space Integration by entering your
         > ### Note:  
         > Before you can use Decentralized Identity Verification here, you must have activated it in the capability management. The activation automatically creates a wallet for you, and you can find its details, such as the dashboard URL of the newly created instance, in your SAP BTP subaccount.
         > 
-        > For the setup process with a wallet in Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md). See also [Activating the Capability](activating-the-capability-b49ad35.md) and, to learn more about Decentralized Identity Verification, see [What Is Decentralized Identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
+        > For the setup process with a wallet in Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md). See also [Activating the Capability](activating-the-capability-b49ad35.md) and, to learn more about Decentralized Identity Verification, see [What is Decentralized Identity Verification](https://help.sap.com/docs/decentralized-identity-verification/service-guide/what-is-decentralized-identity-verification-7339437.html).
 
         Provide the following information:
 
@@ -109,7 +109,7 @@ Depending on your role, you can now get started with one of the following tasks:
 
 -   Learn how to discover offers and consume assets provided by other participants of a data space. See [Consuming Data Space Assets](consuming-data-space-assets-5c0cdb8.md).
 
--   Monitor your active contract agreements. See [Monitoring Agreements](monitoring-agreements-a247cc4.md).
+-   Monitor your active contract agreements. See [Monitoring in Data Spaces](monitoring-in-data-spaces-a247cc4.md).
 
 -   Discover the APIs Data Space Integration provides on the SAP Business Accelerator Hub and how to work with them. See [Using APIs to Work With Data Space Integration](using-apis-to-work-with-data-space-integration-411fd1e.md).
 

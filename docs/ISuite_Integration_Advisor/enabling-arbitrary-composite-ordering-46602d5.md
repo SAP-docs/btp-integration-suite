@@ -51,3 +51,8 @@ The <span class="SAP-icons-V5"></span> Arbitrary Order of Composites icon is 
 
 During preprocessing, Integration Advisor now automatically sorts the composites according to the order defined in the message implementation guideline.
 
+**Related Information**  
+
+
+[Integration Advisor - Advanced Support for Repeating Composites in UN/EDIFACT](https://community.sap.com/t5/integration-blog-posts/integration-advisor-advanced-support-for-repeating-composites-in-un-edifact/ba-p/14458761)
+

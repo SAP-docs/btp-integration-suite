@@ -16,7 +16,7 @@ SAP Integration Suite brings together the features and functionality of various 
 -   [Data Space Integration](https://help.sap.com/docs/integration-suite/isuite-data-space-integration/data-space-integration?version=CLOUD)
 -   [Open Connectors](https://help.openconnectors.ext.hana.ondemand.com/home)
 -   [Integration Assessment](https://help.sap.com/docs/integration-suite/isuite-integration-assessment/integration-assessment?version=CLOUD)
--   [Migration Assessment](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/migration-assessment?version=CLOUD).
+-   [Migration Assessment](https://help.sap.com/docs/integration-suite/isuite-migration-assessment/migration-assessment?version=CLOUD)
 
 To work with these capabilities, you must:
 

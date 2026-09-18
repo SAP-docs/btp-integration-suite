@@ -71,7 +71,13 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     Select encoding format for the incoming payload. The following encoding formats are available:
 
     -   UTF-8
+
     -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_XMLTOEDI_EDIFACT_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
 
 
     
@@ -260,7 +266,13 @@ Use the converter to convert XML message either to EDIFACT, ODETTE, or ASC-X12 f
     Select encoding format for the incoming payload. The following encoding formats are available:
 
     -   UTF-8
+
     -   ISO-8859-1
+
+    -   Dynamic
+
+        If selected, the encoding format is set dynamically at runtime using the header `SAP_XMLTOEDI_X12_SOURCE_ENCODING` \(possible values: `UTF-8`, `ISO-8859-1`\).
+
 
 
     

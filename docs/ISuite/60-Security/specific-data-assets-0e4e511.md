@@ -299,5 +299,5 @@ Lock entries that are created \(in the in-progress repository\) to avoid the sam
 
 [Managing Security Material](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/b8ccb53b9ec44652b885476f02184a0f.html "The Manage Security Material area provides an overview of security-related artifacts.") :arrow_upper_right:
 
-[Message Locks](https://help.sap.com/viewer/9519789d5664487f8b9cd89eba514477/CLOUD/en-US/bce9ae0cf9594b2d8a32fafc981b2076.html "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).") :arrow_upper_right:
+[Message Locks](https://help.sap.com/viewer/42631d23a21b4178b35c41f971cdd2c9/CLOUD/en-US/bce9ae0cf9594b2d8a32fafc981b2076.html "This section allows you to display and manage lock entries that are created (in the in-progress repository) to avoid the same message being processed several times in parallel (for example, by different runtime nodes).") :arrow_upper_right:
 

@@ -839,6 +839,28 @@ Specifies the application correlation identifier. This header corresponds to the
 <tr>
 <td valign="top">
 
+JMSCorrelationID
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the MQ correlation identifier. This header corresponds to the Correlation ID field.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSDeliveryMode
 
 </td>
@@ -855,6 +877,28 @@ AMQP adapter
 <td valign="top">
 
 Specifies durability requirements. This header corresponds to the AMQP header durable.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSDeliveryMode
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies durability requirements. This header corresponds to the Delivery Mode field.
 
 </td>
 </tr>
@@ -905,6 +949,28 @@ Specifies the address of node that acts as message destination. This header corr
 <tr>
 <td valign="top">
 
+JMSDestination
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the destination \(queue or topic\) to which the message is sent.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSExpiration
 
 </td>
@@ -921,6 +987,28 @@ JMS Consumer
 <td valign="top">
 
 Sets an expiration date for messages that are only relevant for a certain amount of time in milliseconds. This header corresponds to the AMQP header absolute-expiry-time.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSExpiration
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the message expiration time in milliseconds. A value of zero means the message never expires. This header corresponds to the Expiry field.
 
 </td>
 </tr>
@@ -949,6 +1037,28 @@ Time when a JMS message was created.
 <tr>
 <td valign="top">
 
+JMSTimestamp
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Represents when the send operation occurs, not necessarily when the message reaches the consumer. This header corresponds to the Time Stamp field.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSMessageID
 
 </td>
@@ -971,6 +1081,28 @@ Uniquely identifies a message.
 <tr>
 <td valign="top">
 
+JMSMessageID
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+A unique identifier assigned to each message. Intended to help trace and identify individual messages.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSPriority
 
 </td>
@@ -987,6 +1119,28 @@ AMQP adapter
 <td valign="top">
 
 Specifies the relative message priority. This header corresponds to the AMQP header priority.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSPriority
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+The priority level for the message, ranging from 0 \(lowest\) to 9 \(highest\). This header corresponds to the Priority field.
 
 </td>
 </tr>
@@ -1037,6 +1191,28 @@ Specifies the node that the message consumer replies to. This header corresponds
 <tr>
 <td valign="top">
 
+JMSReplyTo
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the destination that the message consumer replies to. This header corresponds to the ReplyTo Destination field.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSType
 
 </td>
@@ -1059,6 +1235,28 @@ Identifies the message structure and type of payload. This header corresponds to
 <tr>
 <td valign="top">
 
+JMSType
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the message structure and type of payload, such as Byte or Text. This header corresponds to the Message Type field.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 JMSXDeliveryCount
 
 </td>
@@ -1075,6 +1273,28 @@ AMQP adapter
 <td valign="top">
 
 Specifies the number of processings for this message. Value 1 means that it is the first attempt to process this message, value 2 means that it is the second attempt, meaning it is the first retry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSXDeliveryCount
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the number of delivery attempts made for this message, starting at 1 for the first attempt. Incremented each time the message is redelivered.
 
 </td>
 </tr>
@@ -1141,6 +1361,50 @@ AMQP adapter
 <td valign="top">
 
 Specifies the ID of the user creating the message. This header corresponds to the AMQP header user-id.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSXUserID
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the user who sent the message.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JMSXAppID
+
+</td>
+<td valign="top">
+
+Property
+
+</td>
+<td valign="top">
+
+IBM MQ adapter
+
+</td>
+<td valign="top">
+
+Specifies the application that sent the message \(name or identifier of the producing application\).
 
 </td>
 </tr>
@@ -4645,6 +4909,121 @@ OFTP Sender Adapter
 <td valign="top">
 
 The expected partners' Odette identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP-PASSPORT
+
+> ### Note:  
+> RFC sender adapter specific setter.
+
+
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+RFC Sender adapter
+
+</td>
+<td valign="top">
+
+The RFC sender adapter stores the encoded SAP-Passport value received with the incoming RFC call in this header. The SAP-Passport enables end-to-end tracing across all SAP solutions. The adapter sets this header only if the calling system transmitted a passport.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RfcDestination
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+RFC Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the name of the RFC destination that the calling SAP system used to reach the integration flow. The RFC sender adapter sets this header from the connection attributes of the incoming call. Use this header to route or branch based on the calling destination.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SenderSystemSID
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+RFC Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the system ID \(SID\) of the SAP system that sent the RFC call. The RFC sender adapter sets this header from the connection attributes of the incoming call.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SenderSystemClient
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+RFC Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the client of the SAP system that sent the RFC call. The RFC sender adapter sets this header from the connection attributes of the incoming call.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RfcFunctionModuleName
+
+</td>
+<td valign="top">
+
+Header
+
+</td>
+<td valign="top">
+
+RFC Sender adapter
+
+</td>
+<td valign="top">
+
+Contains the name of the remote-enabled function module that the calling SAP system invoked. The RFC sender adapter sets this header so that you can identify the function module in the integration flow, for example, for routing or content-based processing.
 
 </td>
 </tr>

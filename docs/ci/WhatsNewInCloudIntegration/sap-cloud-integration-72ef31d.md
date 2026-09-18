@@ -92,6 +92,1237 @@ Cloud Integration
 </td>
 <td valign="top">
 
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 8.47.\*
+-   Increment: 2608
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 6.83.\*
+-   Increment: 2608
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 7.56.\*
+-   Adapter Development Kit for SAP Cloud Integration: 2.53.\*
+
+-   Increment: 2608
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Edge Integration Cell
+
+</td>
+<td valign="top">
+
+-   Other
+
+
+
+</td>
+<td valign="top">
+
+Number Range Object Support for Edge Integration Cell
+
+</td>
+<td valign="top">
+
+You can now manage number range objects on Edge Integration Cell runtime. You can deploy number range objects to one or more runtimes, copy them across Cloud Integration and Edge Integration Cell runtimes, and monitor the deployed objects per runtime node.
+
+See [Managing Number Ranges](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/managing-number-ranges?version=CLOUD&ai=true)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Dynamic support for source encoding property in EDI convertors
+
+</td>
+<td valign="top">
+
+Now the EDI to XML, XML to EDI converters, and EDI Splitter supports dynamic support for source encoding property.
+
+See [Define EDI to XML Converter](https://help.sap.com/docs/integration-suite/sap-integration-suite/define-edi-to-xml-converter?version=CLOUD)
+
+[Define XML to EDI Converter](https://help.sap.com/docs/integration-suite/sap-integration-suite/define-xml-to-edi-converter?version=CLOUD)
+
+[Define EDI Splitter](https://help.sap.com/docs/integration-suite/sap-integration-suite/define-edi-splitter?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Enabling Prepared Statement Support in JDBC Receiver Adapter
+
+</td>
+<td valign="top">
+
+You can now enable prepared statement execution on the JDBC Receiver Adapter. When enabled, the adapter compiles the SQL query once and runs it repeatedly with bound parameters, improving throughput for high-volume database operations.
+
+See [JDBC Receiver Adapter](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/jdbc-receiver-adapter?version=Cloud)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+RNIF Adapter
+
+</td>
+<td valign="top">
+
+Use the RNIF \(RosettaNet Implementation Framework\) adapter to exchange RosettaNet business messages with trading partners.
+
+See: [RNIF Adapter](https://help.sap.com/docs/integration-suite/dev-integrations-and-apis/rnif-adapter?version=CLOUD) 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+W3C Trace Message Header
+
+</td>
+<td valign="top">
+
+SAP Cloud Integration adopts the W3C Trace Context \(***traceparent***\) standard as the universal trace identifier for cross-system tracing.
+
+See: [Message Processing Log - Adapter Tracing](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/message-processing-log-adapter-tracing?version=CLOUD) 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Where-Used View for Security Material Available Now
+
+</td>
+<td valign="top">
+
+You can now identify all the integration flows that refer to a specific security material.
+
+See [Where Used](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/where-used?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+⁠Fixed Incorrect HTTP Status Code in OData V2 Sender
+
+</td>
+<td valign="top">
+
+Fixed an issue where the OData V2 sender adapter returned `401` Unauthorized instead of `403` Forbidden when an authenticated user did not have the required role assigned. The adapter now returns the correct HTTP status code.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Importing Multiple Value Mapping from Integration Directory Available Now
+
+</td>
+<td valign="top">
+
+You can now import multiple value mappings from the Integration Directory and view in Cloud Integration.
+
+See [Import Value Mapping from Integration Directory](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/import-value-mapping-from-integration-directory?version=CLOUD&ai=true)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Deploying an OAuth2 Password Credentials Available Now
+
+</td>
+<td valign="top">
+
+You can now deploy an OAuth2 Password Credentials artifact.
+
+See [Deploying an OAuth2 Password Credentials](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/deploying-oauth2-password-credentials?)
+
+SAP Cloud Integration customers, see [Deploying an OAuth2 Password Credentials](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/deploying-oauth2-password-credentials?)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deletable Element Available Now
+
+</td>
+<td valign="top">
+
+You can now choose the element can be deleted at runtime while editing the data type.
+
+See [Editing Data Type](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/editing-data-type?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2026-09-20
+
+</td>
+<td valign="top">
+
+2608
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 8.46.\*
+-   Increment: 2607
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 6.82.\*
+-   Increment: 2607
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Neo
+
+
+
+</td>
+<td valign="top">
+
+Software Version Update
+
+</td>
+<td valign="top">
+
+-   SAP Cloud Integration: 7.55.\*
+-   Adapter Development Kit for SAP Cloud Integration: 2.53.\*
+
+-   Increment: 2607
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Grouping of artifacts
+
+</td>
+<td valign="top">
+
+In the *Artifacts* tab of your integration package, you can now group the artifacts by type.
+
+See: [Editing Integration Package](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/editing-integration-package?locale=en-US)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Enhancements in Monitor Message Processing
 
 </td>
@@ -102,6 +1333,79 @@ The *Monitor Message Processing* UI has been updated and new filters are availab
 See: [Monitor Message Processing](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/monitor-message-processing?version=CLOUD)
 
 [Using Additional Filter Criteria](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/using-additional-filter-criteria?version=CLOUD)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2026-08-23
+
+</td>
+<td valign="top">
+
+2607
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New Payload Viewer for Data Stores and Message Queues
+
+</td>
+<td valign="top">
+
+You can now inspect message payloads using the *View Payload* action directly from the *Manage Data Stores* and *Manage Message Queues* UIs. This action opens a dialogue that shows you the body, headers, properties and attachments from your payload file. You can also download the original file or copy its body content.
+
+See: [Managing Data Stores](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/managing-data-stores?version=Cloud&ai=true)
+
+[Managing Messages Stored in Queues](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/managing-messages-stored-in-queues?version=Cloud&ai=true)
 
 </td>
 <td valign="top">
@@ -406,7 +1710,7 @@ AI-based Memory Profiling Available Now
 
 You can now use AI-based integration flow memory profiling feature to enhance the existing integration flow simulation.
 
-See [AI-based Memory Profiling](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/ai-memory-insights?)
+See [AI-based Memory Profiling](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/ai-based-memory-profiling?version=CLOUD)
 
 </td>
 <td valign="top">
@@ -617,14 +1921,14 @@ Cloud Integration
 </td>
 <td valign="top">
 
-AI-based Integration Content Migration Available Now
+Integration Content Migration Agent Available Now
 
 </td>
 <td valign="top">
 
-You can now use the integration content migration feature to convert java mappings into groovy scripts while using migration tooling.
+You can now use the integration content migration agent to convert java mappings into groovy scripts while using migration tooling.
 
-See [AI-based Integration Content Migration](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/java-mapping?)
+See [Integration Content Migration Agent](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/java-mapping?)
 
 </td>
 <td valign="top">
@@ -861,6 +2165,79 @@ General Availability
 <td valign="top">
 
 Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+SAP Business Technology Platform
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2026-07-26
+
+</td>
+<td valign="top">
+
+2606
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Integration
+
+</td>
+<td valign="top">
+
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Status for Message Queues
+
+</td>
+<td valign="top">
+
+You can now define and view a custom status for messages stored in message queues to monitor and diagnose message processing outcomes.
+
+See [Managing Messages Stored in Queues](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/managing-messages-stored-in-queues).
+
+SAP Cloud Integration customers, see [Managing Messages Stored in Queues](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/managing-messages-stored-in-queues).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
 
 </td>
 <td valign="top">
@@ -1364,7 +2741,7 @@ Update in endpoint for content transport
 </td>
 <td valign="top">
 
--   Supported endpoint for content transport in SAP Cloud Integration via TMS/CTS+ is updated as part of SAP Cloud Deployment Service enhancements.
+-   Supported endpoint for content transport in SAP Cloud Integration via SAP Cloud Transport Management Service is updated as part of SAP Cloud Deployment Service enhancements.
 -   The legacy endpoint `https://deploy-service.cfapps.<domain>`is now deprecated.
 
 **Action:** Switch to the new `https://deploy-service.cf.<domain>` endpoint before Q4 to ensure future compatibility.

@@ -20,8 +20,6 @@ Data exchange in Data Space Integration is based on the Dataspace Protocol. The 
 
 The International Data Spaces \(IDS\) initiative aims to establish a uniform standard for data sharing \(IDS\) that can be applied in any professional and private areas based on the European Privacy Policy \(DPP\) to enforce data sovereignty. An IDS data space is a virtual place that enables sovereign data governance, based on interoperable standardized components, among involved persons and companies. Data spaces are typically organized by industry or topic.
 
-
-
 > ### Restriction:  
 > Currently, Data Space Integration supports connections to the following data spaces:
 > 
@@ -117,7 +115,7 @@ Decentralized Identity Verification is a service on SAP BTP based on self-sovere
 
 During the activation of Data Space Integration, you can enable Decentralized Identity Verification and later use the wallet from it during the onboarding. See [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md).
 
-See [What Is Decentralized identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
+See [What is Decentralized Identity Verification?](https://help.sap.com/docs/decentralized-identity-verification/service-guide/what-is-decentralized-identity-verification-7339437.html).
 
 </td>
 </tr>

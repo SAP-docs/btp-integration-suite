@@ -27,9 +27,8 @@ Before you configure the OFTP Receiver Adapter, make sure that you have complete
 
 -   **Dynamic Configuration**: Provides dynamic configuration. You can override most fields for each message through headers or exchange properties. See [Dynamic Configuration and Per-message Overrides](configure-the-oftp-receiver-adapter-8a6b283.md#loio8a6b283dade6419eb907920117983156__dynamic).
 
+-   **Timestamp Determination**: You can control how the SFID timestamp is determined for resend and retry handling. By default, the system generates a unique timestamp for each transmission.
 
-> ### Note:  
-> There is no built-in duplicate detection. You can handle this in the integration flow if needed. The adapter generates unique timestamps for sent files.
 
 
 
@@ -938,6 +937,105 @@ Specify a custom SFID user field.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Timestamp Determination*
+
+</td>
+<td valign="top">
+
+TECHNICAL SETTINGS
+
+</td>
+<td valign="top">
+
+-   *Generate*. This is the default value. The system generates a unique timestamp per transmission.
+
+-   *Reuse*. The system reuses the timestamp provided in the *Timestamp Expression* field. You can enter a fixed timestamp value directly or use an expression resolving to one via a header \(`${header.x}`\) or exchange property \(`${property.x}`\).
+
+    > ### Note:  
+    > If the resolved value is missing or too short, the system automatically falls back to *Generate*.
+
+-   *Correlate*. You can map a configurable correlation key `(constant, ${header.x}`, or `${property.x})`to a timestamp and persist it for consistent retries. The system automatically falls back to *Generate* if the key is missing.
+
+    > ### Note:  
+    > If you have parallel integration flows that use the same correlation key and file name, the system reuses the timestamp in correlation mode.
+
+-   *Dynamic*. The system reads the `SAP_OFTP_Outbound_Timestamp_Mode` message header at runtime and applies one of the corresponding modes from above.
+
+    > ### Note:  
+    > If the header is missing or contains an unsupported value, the system displays an error.
+
+
+
+
+</td>
+<td valign="top">
+
+Control how the SFID timestamp is determined for resend and retry handling. By default, the system generates a unique timestamp for each transmission.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Timestamp Expression* 
+
+> ### Note:  
+> Only visible if *Reuse* is selected as the *Timestamp Determination*
+
+
+
+</td>
+<td valign="top">
+
+TECHNICAL SETTINGS
+
+</td>
+<td valign="top">
+
+Use the following format: `yyyyMMddHHmmssSSS` 
+
+> ### Example:  
+> $\{header.myTimestamp\}\)
+
+
+
+</td>
+<td valign="top">
+
+The expression or value resolving to a timestamp. If absent or invalid, the system generates a new timestamp.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Correlation Key*
+
+> ### Note:  
+> Only visible if *Correlate* is selected as the *Timestamp Determination*.
+
+
+
+</td>
+<td valign="top">
+
+TECHNICAL SETTINGS
+
+</td>
+<td valign="top">
+
+Parameterized text
+
+</td>
+<td valign="top">
+
+The expression or value to use as the correlation key. When you first send a message, the system generates a unique timestamp and stores it for this key. The system reuses this timestamp on retry.
+
+</td>
+</tr>
 </table>
 
 
@@ -971,7 +1069,7 @@ Description
 <tr>
 <td valign="top">
 
-*CMS Settings*
+*CMS Settings* 
 
 </td>
 <td valign="top">
@@ -999,10 +1097,104 @@ Select *Dynamic* to allow a per-message override using the `SAP_OFTP_Outbound_CM
 <tr>
 <td valign="top">
 
+*Partner Certificate Source* 
+
+> ### Note:  
+> Only visible if *CMS Settings* is set to*Dynamic*.
+
+
+
+</td>
+<td valign="top">
+
+CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
+
+</td>
+<td valign="top">
+
+-   *Alias*. The security material alias for the partner's CMS public certificate.
+-   *Dynamic*. Specify the header or property dynamically to fetch the certificate.
+
+
+
+</td>
+<td valign="top">
+
+Specify the source of the partner certificate used for signature verification, secure handshake, and encryption.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Partner Certificate Alias*
+
+> ### Note:  
+> Only visible if **Partner Certificate Source** is set to **Alias**.
+
+
+
+</td>
+<td valign="top">
+
+CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
+
+</td>
+<td valign="top">
+
+Text
+
+</td>
+<td valign="top">
+
+Enter the security material alias for the partner's CMS public certificate. The alias is fetched from the keystore under security materials.
+
+> ### Note:  
+> You can enter `${header.headername}` or `${property.propertyname}` to read the value dynamically from a header or property.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Partner Certificate*
+
+> ### Note:  
+> Only visible if **Partner Certificate Source** is set to **Dynamic**.
+
+
+
+</td>
+<td valign="top">
+
+CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
+
+</td>
+<td valign="top">
+
+Text
+
+</td>
+<td valign="top">
+
+Enter the partner certificate from the exchange configuration.
+
+> ### Caution:  
+> If this field is empty, the system skips the CMS partner setup and displays a warning message.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Own Key Pair Alias*
 
 > ### Note:  
-> Only visible if *CMS Settings* is *Enable* or *Dynamic*.
+> Only visible if *CMS Settings* is set to *Enable* or *Dynamic*.
 
 
 
@@ -1024,39 +1216,8 @@ Specify the alias for your certificates or key pairs used for signing.
 > ### Note:  
 > You can enter `${header.headername}` or `${property.propertyname}` to retrieve the value dynamically from a header or a property.
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Partner Certificate Alias*
-
-> ### Note:  
-> Only visible if *CMS Settings* is *Enable* or *Dynamic*.
-
-
-
-</td>
-<td valign="top">
-
-CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
-
-</td>
-<td valign="top">
-
-Text
-
-</td>
-<td valign="top">
-
-Specify the alias of the partner’s certificate used for encryption.
-
-The alias is fetched from the keystore under security materials.
-
-> ### Note:  
-> You can enter `${header.headername}` or `${property.propertyname}` to retrieve the value dynamically from a header or a property.
+> ### Caution:  
+> If this field is empty, the system skips the CMS partner setup and displays a warning message.
 
 
 
@@ -1075,7 +1236,7 @@ CRYPTOGRAPHIC MESSAGE SYNTAX PARAMETERS
 </td>
 <td valign="top">
 
--   *None*
+-   *None*. Security material alias for the partner's CMS public certificate. You can also set it dynamically
 -   *Dynamic*
 -   *AES\_256\_CBC*
 -   *3DES\_EDE\_CBC\_3K*
@@ -1100,7 +1261,7 @@ Choose *Dynamic* to allow a per-message override using the header `SAP_OFTP_Outb
 *Signing Algorithm*
 
 > ### Note:  
-> Only visible if *CMS Settings* is *Enable* or *Dynamic*.
+> Only visible if *CMS Settings* is set to *Enable* or *Dynamic*.
 
 
 
@@ -1140,7 +1301,7 @@ Select *Dynamic* to allow a per-message override using header `SAP_OFTP_Outbound
 *Secure Handshake*
 
 > ### Note:  
-> Only visible if *CMS Settings* is *Enable* or *Dynamic*.
+> Only visible if *CMS Settings* is set to *Enable* or *Dynamic*.
 
 
 

@@ -26,11 +26,11 @@ To integrate your REST services into API Composition, you'll need to create two 
 
 -   Data Destination
 
-    This destination points to the actual REST service and is annotated with `Graph.destinationType = REST`.
+    This destination points to the actual REST service and is annotated with `APIComposition.destinationtype = REST`.
 
 -   Metadata Destination
 
-    This destination points to a metadata document for your REST service, expressed in OpenAPI format, and is annotated with `Graph.metadataFor: <name of the referenced data destination>` and `Graph.destinationType: OpenAPI`.
+    This destination points to a metadata document for your REST service, expressed in OpenAPI format, and is annotated with `APIComposition.metadataFor: <name of the referenced data destination>` and `APIComposition.destinationType: OpenAPI`.
 
 
 
@@ -43,7 +43,7 @@ As an SAP BTP administrator, create a destination with the following specificati
 
 -   Authentication: Choose the appropriate authentication method based on your REST service configuration. BasicAuthentication can be used for services requiring basic HTTP authentication. NoAuthentication, can be used for public services \(not recommended for production due to security concerns\).
 
--   Annotations: Add the property `Graph.REST.data: true` to specify that this destination is used for data access.
+-   Annotations: Add the property `APIComposition.REST.data: true` to specify that this destination is used for data access.
 
 
 Additionally, if your REST service requires special HTTP headers, define them using additional `URL.headers` properties in the destination configuration.
@@ -56,7 +56,7 @@ Create a destination for the OpenAPI metadata with the following specifications:
 
 -   URL: The endpoint where the OpenAPI metadata document of your REST service can be accessed.
 
--   Annotations: Include the property `Graph.metadataFor: <name of the referenced data destination>` to link this metadata destination to the corresponding data destination established earlier.
+-   Annotations: Include the property `APIComposition.metadataFor: <name of the referenced data destination>` to link this metadata destination to the corresponding data destination established earlier.
 
 
 Ensure that the OpenAPI specification outlines the available resources of your REST service.

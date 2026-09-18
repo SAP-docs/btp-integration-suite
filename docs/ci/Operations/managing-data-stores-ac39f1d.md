@@ -144,8 +144,6 @@ The *Manage Stores* section provides an overview of storages that are temporaril
     <td valign="top">
     
     ID of the message processing associated with the data store entry
-
-    Allows you to navigate to the related message processing log.
     
     </td>
     </tr>

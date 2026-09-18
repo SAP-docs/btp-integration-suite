@@ -27,7 +27,7 @@ Learn how to activate the Data Space Integration capability within SAP Integrati
 
 5.  If you want to use a wallet located in Decentralized Identity Verification, mark the checkbox to *Enable Decentralized Identity Verification*. A wallet is then automatically created for you. If you want to use a wallet from your landscape portal or a third party, leave the checkbox empty.
 
-    To learn more about Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md) and [What Is Decentralized Identity Verification?](https://help.sap.com/docs/DECENTRALIZED_IDENTITY_VERIFICATION/a1fc8fb2d89041b3849442692b2504b0/7339437b59eb4b1e99115e004f31b71b.html).
+    To learn more about Decentralized Identity Verification, see [Onboarding With a Wallet in Decentralized Identity Verification](onboarding-with-a-wallet-in-decentralized-identity-verification-afb114e.md) and [What is Decentralized Identity Verification?](https://help.sap.com/docs/decentralized-identity-verification/service-guide/what-is-decentralized-identity-verification-7339437.html).
 
     Choose *Next*.
 

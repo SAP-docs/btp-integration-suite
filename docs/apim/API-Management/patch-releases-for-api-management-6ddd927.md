@@ -6,6 +6,48 @@ This topic provides information on patch releases for API Management that are pr
 
 
 
+## September 2026
+
+
+<table>
+<tr>
+<th valign="top">
+
+Technical Component
+
+</th>
+<th valign="top">
+
+Software Version
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+API Management
+
+</td>
+<td valign="top">
+
+2.19.3
+
+</td>
+<td valign="top">
+
+This patch fixes the issue where APIPortal UI navigation was throwing a 500 error for some customers using a custom IDP, both in Integration Suite and standalone deployments, blocking them from performing design-time operations.
+
+</td>
+</tr>
+</table>
+
+
+
 ## August 2026
 
 

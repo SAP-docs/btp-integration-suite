@@ -204,7 +204,7 @@ Type
 </td>
 <td valign="top">
 
-Displays the referenced [Consuming Data Types](consuming-data-types-97ad101.md) assigned to the root node and built-in data type \(decimal, string, or integer\) of the child nodes.
+Displays the referenced [Configuring Data Types](configuring-data-types-97ad101.md) assigned to the root node and built-in data type \(decimal, string, or integer\) of the child nodes.
 
 </td>
 </tr>

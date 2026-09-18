@@ -16,7 +16,7 @@ After creating the data type artifact, you can perform various actions on it.
 
 ## Prerequisites
 
-You have created a data type. See [Creating Data Types and Message Types](creating-data-types-and-message-types-d5bbbee.md).
+You have created a data type. See [Creating Data Types](creating-data-types-d5bbbee.md).
 
 
 
@@ -201,6 +201,27 @@ You wish to edit the data type by performing various actions.
     <td valign="top">
     
     Specify the minimum and maximum occurrence of an element.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Deletable
+    
+    </td>
+    <td valign="top">
+    
+    Indicates that the element can be deleted at runtime. When enabled, the element is treated as optional and can be absent from the message payload without violating the schema.
+
+    The *Deletable* property can only be set for elements with ***minOccurs="0"*** and ***maxOccurs="1"***.
+
+    Once the *Deletable* property is set for an element, the *Occurrence* field for that element cannot be changed to prevent changes that could affect compatibility with connected systems.
+
+    > ### Note:  
+    > This property is only available for Complex Data Type.
+
+
     
     </td>
     </tr>

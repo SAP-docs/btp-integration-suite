@@ -53,7 +53,7 @@ To enable Anomaly Detection, Intelligent Recommendations, and API Call Predictio
 
 
     > ### Note:  
-    > For details on data retention and reactivation behavior when the feature is disabled, see  <?sap-ot O2O class="- topic/xref " href="1d6756e093da4bd0882eb6e34ff8cb0e.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/slu1713332208086/loiod8a6092f89b24b5e8531d35c034be3aa_en-US/src/content/localization/en-us/98534a0f8d1d4c4d98bea4b84e762787.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    > For details on data retention and reactivation behavior when the feature is disabled, see [Disabling Anomaly Detection](disabling-anomaly-detection-1d6756e.md).
 
 
 

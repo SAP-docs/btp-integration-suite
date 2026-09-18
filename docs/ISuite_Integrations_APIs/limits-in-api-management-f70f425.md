@@ -756,5 +756,5 @@ Numeric
 
 [Monitor the Health of Certificates Using SAP Cloud ALM](monitor-the-health-of-certificates-using-sap-cloud-alm-7bd9d9f.md "You can use SAP Cloud Application Lifecycle Management (ALM) application to proactively detect issues and monitor the health of certificates in API Management.")
 
-[API Management FAQs](api-management-faqs-2d16070.md "Frequently asked questions for SAP API Management.")
+[Classic API Management FAQs](classic-api-management-faqs-2d16070.md "Frequently asked questions for Classic API Management.")
 

@@ -57,8 +57,6 @@ You can copy the JMS Message ID by choosing <span class="SAP-icons-V5"></span
 
 ID of the message processing log.
 
-On clicking the *Message ID* link, you navigate to the message processing log for the message \(*Monitor Message Processing* screen\). Here, you can find the integration flow name, the time the message was sent, and other message processing details \([Monitor Message Processing](monitor-message-processing-314df3f.md)\).
-
 </td>
 </tr>
 <tr>

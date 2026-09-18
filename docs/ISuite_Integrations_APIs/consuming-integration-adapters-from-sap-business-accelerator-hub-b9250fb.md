@@ -25,19 +25,16 @@ Like consuming the prebundled adapters, consuming these integration adapters is 
 Each adapter that’s available in the SAP Business Accelerator Hub in contained in a package that is exclusively created for containing only the adapter. When you consume an adapter from SAP Business Accelerator Hub, Cloud Integration creates a package in your design workspace along with the adapter.
 
 > ### Remember:  
-> -   When you choose the adapter in your integration flow, it triggers the importing of the adapter and its package from SAP Business Accelerator Hub to your design workspace. While doing so, Cloud Integration looks out for an already existing package with the same name. If a package with the same name doesn't exist, then the import and deploy of the adapter succeeds upon which you can use the adapter for your design. Else, import of the adapter fails.
+> -   When you choose the adapter in your integration flow, Cloud Integration imports its along with its package from SAP Business Accelerator Hub to your design view. The import succeeds only if no package with the same name exists in your tenant; otherwise, it fails. If the adapter is already available in your tenant, it is reused and re-import isn't needed.
 > 
->     The adapter gets auto-deployed to the runtime profile configured in the integration flow. See: [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md). If you want to deploy the adapter to more than one runtime profile, you must manually deploy to each one of them. For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
+> -   **Auto-deployment behavior**: The adapter gets auto-deployed to the runtime profile configured in the integration flow. See: [Specify the Runtime Configuration](specify-the-runtime-configuration-0c1c96e.md). For more information, see [Runtime Profiles](IntegrationSettings/runtime-profiles-8007daa.md).
 > 
+> -   **Deploying to multiple runtime profiles**: The adapter is not automatically deployed to other runtime profiles. You must manually deploy it to each additional runtime profile before deploying the integration flow there, or the flow will fail. The same applies when the runtime profile of an integration flow is changed.
 > -   Alternatively, you can copy the package that contains the adapter from the *Discover* view like you do for standard prepackaged content. This way, you need not import from SAP Business Accelerator Hub during design time. You must first deploy the adapter to a runtime profile of your choice before using it in an integration flow.
 > 
 >     In this case too, if you want to deploy the adapter to more than one runtime profile, you must manually deploy to each one of them.
 > 
-> -   You can reuse a deployed adapter multiple times. That is, if the adapter \(and its package\) from SAP Business Accelerator Hub is already available in your tenant, the adapter gets picked upon selecting it. You need not import and deploy every time you want to use it.
-> 
-> -   You can't edit or add new artifacts to the adapter's package.
-> 
-> -   For the purpose of protecting the intellectual property, you can't download the adapter.
+> -   **Restrictions**: You cannot edit the adapter package, add artifacts to it, or download it.
 
 
 
