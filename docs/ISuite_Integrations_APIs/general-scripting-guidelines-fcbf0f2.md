@@ -77,7 +77,7 @@ Follow these general guidelines when using the *Script* step.
 
     This pattern can be applied, for example, when you construct the output message payload iteratively and compose it from smaller pieces put together.
 
-    With regards to the differences between StringBuilder and StrinBuffer \(while both are used to create mutable objects that can be further stringified\), StringBuffer's public methods are synchronized, leading to thread safety of StringBuffer objects in a multi-threaded environment; whereas StringBuilder is not thread-safe. Yet, thread safety comes at the cost of performance overhead. As a result, as a user, evaluate and assess if thread safety / synchronization is needed. If so, consider using StringBuffer. If thread safety is not a concern, the performance can be further optimized by using StringBuilder instead.
+    With regards to the differences between StringBuilder and StringBuffer \(while both are used to create mutable objects that can be further stringified\), StringBuffer's public methods are synchronized, leading to thread safety of StringBuffer objects in a multi-threaded environment; whereas StringBuilder is not thread-safe. Yet, thread safety comes at the cost of performance overhead. As a result, as a user, evaluate and assess if thread safety / synchronization is needed. If so, consider using StringBuffer. If thread safety is not a concern, the performance can be further optimized by using StringBuilder instead.
 
 -   Don't use the script editor in the Cloud Integration *Design* section, if the code isn’t a simple transformation. Use other external tools \(like IntelliJ IDEA, for example\), which enhance the developer experience.
 
