@@ -492,6 +492,18 @@ The HEC endpoint path appended to the base URL. The default value is `/services/
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*CompressData*
+
+</td>
+<td valign="top">
+
+In some cases you need to disable compression `false`. E.g. error "Splunk Error (6): Invalid data format"
+
+</td>
+</tr>
 </table>
 
 
